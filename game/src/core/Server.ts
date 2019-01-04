@@ -337,7 +337,8 @@ class Server extends egret.EventDispatcher {
 		}	
 		switch (Number(nameId)) {
 			case 0://登录成功
-				this.onLoginSucc();
+				let uid: number = parseInt(bytes.readUTFBytes(bytes.bytesAvailable));
+				this.onLoginSucc(uid);
 				break;
 			case 1://登录失败
 				let errorId: number = parseInt(bytes.readUTFBytes(bytes.bytesAvailable));
@@ -514,10 +515,10 @@ class Server extends egret.EventDispatcher {
 		}
 	}
 
-	private onLoginSucc():void{
+	private onLoginSucc(uid:number):void{
 		this.sendHeartPackage();
 		alien.Schedule.start(this._sendHeartTimer);
-		this.dispatchEventWith(EventNames.USER_LOGIN_RESPONSE, false, { code: 0 });
+		this.dispatchEventWith(EventNames.USER_LOGIN_RESPONSE, false, { code: 0 , uid:uid});
 	}
 
 	private inShowList(name: string): boolean {
@@ -653,6 +654,10 @@ class Server extends egret.EventDispatcher {
 	 */
 	get uid(): number {
 		return this._uid;
+	}
+
+	setuid(uid:number):void {
+		this._uid = uid;
 	}
 
 	/**

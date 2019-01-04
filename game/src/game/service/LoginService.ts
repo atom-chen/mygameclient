@@ -63,6 +63,8 @@ class LoginService extends Service {
         this._clearReconnectInterval();
         switch(data.code) {
             case 0:
+                this._loginData.uid = data.uid;
+                server.setuid(data.uid);
                 this._onWebLoginSucc();
                 break;
             default:
