@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PanelMatchCountDownSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="match_panel_bg" scale9Grid="81,98,486,5" height="433"/>
+	<e:Image source="match_panel_bg_2" y="80" scale9Grid="283,42,14,254" x="184" locked="true"/>
+	<e:Label id="labTitle" text="斗地主新手赛" y="25" textColor="0xF4B64B" horizontalCenter="0" bold="true"/>
+	<e:Group id="time_group" x="238" y="260">
+		<e:Image source="common_progress_track" x="0" y="0" scale9Grid="55,4,332,26" width="324"/>
+		<e:BitmapLabel id="labCD" y="2" font="font_num_0" text="00:00:00" letterSpacing="3" horizontalCenter="0"/>
+	</e:Group>
+	<e:Label y="180" textColor="0xE73100" text="..." size="25" id="labReward" x="219" width="366" textAlign="center"/>
+	<e:Label id="tit_label" y="145" textColor="0x875300" text="冠军奖励:" size="25" bold="true" x="344"/>
+	<e:Group id="grpButtons" width="100%" height="100%" touchEnabled="false">
+		<e:Button x="26.5" y="242" name="match_intro">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="match_btn_help_n" source.down="match_btn_help_h"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button y="146" x="26.5" name="reward_intro">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="match_btn_reward_n" source.down="match_btn_reward_h"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button y="306" horizontalCenter="87" name="cancel">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="match_btn_exit_n" source.down="match_btn_exit_h"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button right="0" y="0" name="close">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:ns1="*">
+					<e:Image width="100%" height="100%" source="common_close_n" source.down="common_close_h"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+	<e:Group id="persion_group" x="260" y="220" width="300">
+		<e:Label id="sign_label" text="报名人数:{0}人" fontFamily="Arial" textColor="0x000000" size="25"/>
+		<e:Image source="icon_amount" height="26"/>
+		<e:layout>
+			<e:HorizontalLayout/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

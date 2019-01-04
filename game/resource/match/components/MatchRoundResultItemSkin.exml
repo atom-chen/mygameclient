@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.MatchRoundResultItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgBg" width="100%" height="100%" source="match_player_bg"/>
+
+	<e:Group horizontalCenter="0" top="12">
+		<e:Image id="bg_img" source="common_avatar_bg" touchEnabled="false" width="80" height="80" x="0" y="0"/>
+		<e:Image id="imgMask" touchEnabled="false" source="common_avatar_mask" width="80" height="80" verticalCenter="0" horizontalCenter="0"/>
+		<e:Image id="imgAvatar" width="64" height="64" verticalCenter="0" horizontalCenter="0" source="common_avatar_mask"/>
+
+	</e:Group>
+	<e:Label id="lblName" text="玩家xxx" size="20" textAlign="center" fontFamily="Microsoft YaHei" verticalCenter="0" textColor="0xffffff" horizontalCenter="0" width="180" verticalAlign="middle" height="22"/>
+	<e:BitmapLabel id="lblScore" y="150" text="+16" horizontalCenter="0" font="font_match_1"/>
+
+	<e:Label id="lblMax" text="单局最高：24" size="20" textAlign="left" fontFamily="Microsoft YaHei" textColor="0x543617" horizontalCenter="0" bottom="32"/>
+</e:Skin>

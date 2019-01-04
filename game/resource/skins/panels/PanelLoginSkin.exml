@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PanelLoginSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="1280" height="640">
+
+	<e:Group id="grpButton" horizontalCenter="0" verticalCenter="200">
+
+
+		<e:Button name="confirm" y="0" x="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="login_btn_dl_n" source.down="login_btn_dl_h"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:layout>
+			<e:BasicLayout/>
+		</e:layout>
+	</e:Group>
+	<e:TextInput id="tiID" y="230" width="215" maxChars="18" restrict="a-z A-Z 0-9 _" height="80" skinName="ui.TextInputSkin" horizontalCenter="8"/>
+	<e:TextInput id="tiPassword" y="341" width="215" displayAsPassword="true" height="80" skinName="ui.TextInputSkin" horizontalCenter="8"/>
+
+	<e:Button id="btnClose" x="761" y="107.67">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_close_n" source.down="common_close_h"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label text="账号:" x="442" y="247" fontFamily="Microsoft YaHei" bold="true" size="40"/>
+	<e:Label text="密码:" x="442" y="357.6" bold="true" fontFamily="Microsoft YaHei" size="40"/>
+</e:Skin>

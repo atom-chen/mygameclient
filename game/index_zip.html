@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>好手气斗地主</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="true"/>
+    <meta name="screen-orientation" content="landscape"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+    <style>
+        html, body {
+            -ms-touch-action: none;
+            background: #000000;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+<div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
+     data-entry-class="Main"
+     data-orientation="landscape"
+     data-scale-mode="fixedHeight"
+     data-resolution-mode="retina"
+     data-frame-rate="60"
+     data-content-width="1280"
+     data-content-height="640"
+     data-show-paint-rect="false"
+     data-multi-fingered="2"
+     data-show-fps="false" data-show-log="false"
+     data-log-filter="" data-show-fps-style="x:0,y:0,size:20,textColor:0x00d8ff,bgAlpha:0.6">
+     <input id="ddzCopyTex" type ="text" value="" style="visibility: hidden"/>
+     <button id="ddzCopyBtn" type="button" class="copyBtn" style="visibility: hidden" data-clipboard-action="copy" data-clipboard-target="#ddzCopyTex" />
+</div>
+
+<script type="text/javascript" src="lib.min.js"></script>
+<script type="text/javascript" src="main.min.js"></script>
+
+<script type="text/javascript">
+    var _mtac = {};
+    (function() {
+        var mta = document.createElement("script");
+        mta.src = "http://pingjs.qq.com/h5/stats.js?v2.0.2";
+        mta.setAttribute("name", "MTAH5");
+        mta.setAttribute("sid", "500485827");
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(mta, s);
+    })();
+    
+    egret.runEgret({renderMode:"canvas"});
+    </script>
+</body>
+</html>

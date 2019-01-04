@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="scenes.SceneDzpkPlaySkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:alien="alien.*" xmlns:ns1="*" >
+	<e:Image id="bgImg" x="0" y="0" width="100%" height="100%" source="play_dzpk_bg"/>
+	<e:Image id="myWinImg" source="play_myWin" horizontalCenter="0" bottom="279"/>
+
+	<e:Group id="topGrp" width="100%" height="60" x="0" top="20">
+		<e:Image id="soundImg" scaleX="1" scaleY="1" anchorOffsetX="28" anchorOffsetY="28" source="play_son" verticalCenter="0" right="30"/>
+		<e:Image id="arrDownImg" source="play_down" scaleX="1" scaleY="1" verticalCenter="0" anchorOffsetX="28" anchorOffsetY="28" rotation="90" x="58"/>
+		<e:Image id="shopImg" x="140" source="play_shop" scaleX="1" scaleY="1" verticalCenter="0" anchorOffsetX="28" anchorOffsetY="28" rotation="0"/>
+	</e:Group>
+	<e:Group id="bottomGrp" width="100%" height="60" bottom="20" x="0">
+		<e:Image id="historyImg" scaleX="1" scaleY="1" anchorOffsetX="21.5" anchorOffsetY="28" verticalCenter="0" right="30" source="play_dzpk_history"/>
+		<e:Image id="ruleImg" scaleX="1" scaleY="1" anchorOffsetX="26.5" anchorOffsetY="27" rotation="0" source="play_dzpk_rule" left="30" verticalCenter="0"/>
+	</e:Group>
+	<ns1:SeatDzpk id="mySeat" skinName="components.SeatDzpkSkin" currentState="my" horizontalCenter="65" bottom="10"/>
+	<ns1:SeatDzpk id="leftSeat1" skinName="components.SeatDzpkSkin" currentState="left1" bottom="190" left="10"/>
+	<ns1:SeatDzpk id="leftSeat2" skinName="components.SeatDzpkSkin" currentState="left2" left="10" top="541" height="313"/>
+	<ns1:SeatDzpk id="leftSeat3" skinName="components.SeatDzpkSkin" currentState="left3" left="10" top="251"/>
+	<ns1:SeatDzpk id="topSeat1" skinName="components.SeatDzpkSkin" currentState="top1" top="50" left="190"/>
+	<ns1:SeatDzpk id="topSeat2" skinName="components.SeatDzpkSkin" currentState="top2" top="50" right="140" width="144"/>
+	<ns1:SeatDzpk id="rightSeat3" skinName="components.SeatDzpkSkin" currentState="right3" right="10" top="251"/>
+	<ns1:SeatDzpk id="rightSeat2" skinName="components.SeatDzpkSkin" currentState="right2" right="10" top="541" height="313"/>
+	<ns1:SeatDzpk id="rightSeat1" skinName="components.SeatDzpkSkin" currentState="right1" right="10" bottom="190" />
+	<e:Group id="deskCardGroup" width="65%" height="120" y="549" horizontalCenter="0">
+	</e:Group>
+	<e:Group id="deskXPotGrp" width="60%" height="84" anchorOffsetX="0" horizontalCenter="0" bottom="450">
+		<e:Group id="xPot1" scaleX="1" scaleY="1" y="42" anchorOffsetY="42" x="40" touchEnabled="true" touchChildren="false" height="84" anchorOffsetX="40">
+			<e:Image id="opRImg8" scaleX="1" scaleY="1" touchEnabled="false" source="play_bg3" x="0" verticalCenter="0"/>
+			<e:Label id="xPotClable1" text="x2" fontFamily="Microsoft YaHei" size="32" horizontalCenter="0.5" textColor="0xFFFFFF" verticalCenter="0" touchEnabled="false" textAlign="center"/>
+			<e:Label id="xPotTlable1" text="大盲" fontFamily="Microsoft YaHei" size="20" horizontalCenter="0" textColor="0xFFFFFF" touchEnabled="false" textAlign="center" y="0"/>
+		</e:Group>
+		<e:Group id="xPot2" scaleX="1" scaleY="1" y="42" anchorOffsetY="42" height="84" x="160" touchEnabled="true" touchChildren="false" anchorOffsetX="40">
+			<e:Image id="opRImg9" scaleX="1" scaleY="1" touchEnabled="false" source="play_bg3" x="0" verticalCenter="0"/>
+			<e:Label id="xPotClable2" text="x3" fontFamily="Microsoft YaHei" size="32" horizontalCenter="0.5" textColor="0xFFFFFF" verticalCenter="0" touchEnabled="false" textAlign="center"/>
+			<e:Label id="xPotTlable2" text="大盲" fontFamily="Microsoft YaHei" size="20" horizontalCenter="0" textColor="0xFFFFFF" touchEnabled="false" textAlign="center" y="0"/>
+		</e:Group>
+		<e:Group id="xPot3" scaleX="1" scaleY="1" y="42" x="280" anchorOffsetY="42" height="84" touchEnabled="true" touchChildren="false" anchorOffsetX="40">
+			<e:Image id="opRImg10" scaleX="1" scaleY="1" touchEnabled="false" source="play_bg3" x="0" verticalCenter="0"/>
+			<e:Label id="xPotClable3" text="x4" fontFamily="Microsoft YaHei" size="32" horizontalCenter="0.5" textColor="0xFFFFFF" verticalCenter="0" touchEnabled="false" textAlign="center"/>
+			<e:Label id="xPotTlable3" text="大盲" fontFamily="Microsoft YaHei" size="20" horizontalCenter="0" textColor="0xFFFFFF" touchEnabled="false" textAlign="center" y="0"/>
+		</e:Group>
+		<e:Group id="xPot4" scaleX="1" scaleY="1" y="42" x="400" anchorOffsetY="42" height="84" touchEnabled="true" touchChildren="false" anchorOffsetX="40">
+			<e:Image id="opRImg11" scaleX="1" scaleY="1" touchEnabled="false" source="play_bg3" x="0" verticalCenter="0"/>
+			<e:Label id="xPotClable4" text="x5" fontFamily="Microsoft YaHei" size="32" horizontalCenter="0.5" textColor="0xFFFFFF" verticalCenter="0" touchEnabled="false" textAlign="center"/>
+			<e:Label id="xPotTlable4" text="大盲" fontFamily="Microsoft YaHei" size="20" horizontalCenter="0" textColor="0xFFFFFF" touchEnabled="false" textAlign="center" y="0"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="textGroup" width="100%" height="100%" x="0" y="0" touchEnabled="false">
+		<e:Label id="tableLabel" text="盲注0/0" y="683" fontFamily="Microsoft YaHei" size="24" textColor="0x163437" horizontalCenter="0"/>
+		<e:Label id="diLabel" text="底池： 0" y="250" fontFamily="Microsoft YaHei" size="28" horizontalCenter="0.5" textColor="0x163437"/>
+		<e:Label id="ruleLabel" text="牌型大小规则：\n皇家同花顺&gt;同花顺&gt;四条&gt;葫芦&gt;同花&gt;顺子&gt;三条&gt;两对&gt;对子&gt;高牌" y="456.5" fontFamily="Microsoft YaHei" size="24" horizontalCenter="0" textAlign="center" alpha="0.5" textColor="0x000000" lineSpacing="5" visible="false"/>
+		<e:Group id="sidePotsGrp" y="290" touchEnabled="false" anchorOffsetY="0" anchorOffsetX="0" height="170" width="300" horizontalCenter="10">
+
+			<ns1:GoldDzpk id="chipInfo0" skinName="components.GoldDzpkSkin" touchEnabled="false" scaleX="1" scaleY="1" properties="[{        &quot;bgSoure&quot;: {&quot;obj&quot;:&quot;bgImg&quot;,&quot;attr&quot;:&quot;source&quot;,&quot;v&quot;:&quot;play_bg5&quot;},        &quot;goldCol&quot;: {&quot;obj&quot;:&quot;labGold&quot;,&quot;attr&quot;:&quot;textColor&quot;,&quot;v&quot;:&quot;0x46C4FF&quot;},         &quot;bgAlpha&quot;: {&quot;obj&quot;:&quot;bgImg&quot;,&quot;attr&quot;:&quot;alpha&quot;,&quot;v&quot;:0.35}     }]" y="0" x="150" height="30"/>
+			<ns1:GoldDzpk id="chipInfo1" skinName="components.GoldDzpkSkin" touchEnabled="false" scaleX="1" scaleY="1" properties="[{        &quot;bgSoure&quot;: {&quot;obj&quot;:&quot;bgImg&quot;,&quot;attr&quot;:&quot;source&quot;,&quot;v&quot;:&quot;play_bg5&quot;},        &quot;goldCol&quot;: {&quot;obj&quot;:&quot;labGold&quot;,&quot;attr&quot;:&quot;textColor&quot;,&quot;v&quot;:&quot;0x46C4FF&quot;},         &quot;bgAlpha&quot;: {&quot;obj&quot;:&quot;bgImg&quot;,&quot;attr&quot;:&quot;alpha&quot;,&quot;v&quot;:0.35}     }]" x="0" y="40" height="30"/>
+			<ns1:GoldDzpk id="chipInfo2" skinName="components.GoldDzpkSkin" touchEnabled="false" scaleX="1" scaleY="1" properties="[{        &quot;bgSoure&quot;: {&quot;obj&quot;:&quot;bgImg&quot;,&quot;attr&quot;:&quot;source&quot;,&quot;v&quot;:&quot;play_bg5&quot;},        &quot;goldCol&quot;: {&quot;obj&quot;:&quot;labGold&quot;,&quot;attr&quot;:&quot;textColor&quot;,&quot;v&quot;:&quot;0x46C4FF&quot;},         &quot;bgAlpha&quot;: {&quot;obj&quot;:&quot;bgImg&quot;,&quot;attr&quot;:&quot;alpha&quot;,&quot;v&quot;:0.35}     }]" x="150" y="40" height="30"/>
+			<ns1:GoldDzpk id="chipInfo3" skinName="components.GoldDzpkSkin" touchEnabled="false" scaleX="1" scaleY="1" properties="[{        &quot;bgSoure&quot;: {&quot;obj&quot;:&quot;bgImg&quot;,&quot;attr&quot;:&quot;source&quot;,&quot;v&quot;:&quot;play_bg5&quot;},        &quot;goldCol&quot;: {&quot;obj&quot;:&quot;labGold&quot;,&quot;attr&quot;:&quot;textColor&quot;,&quot;v&quot;:&quot;0x46C4FF&quot;},         &quot;bgAlpha&quot;: {&quot;obj&quot;:&quot;bgImg&quot;,&quot;attr&quot;:&quot;alpha&quot;,&quot;v&quot;:0.35}     }]" x="0" y="80" height="30"/>
+			<ns1:GoldDzpk id="chipInfo4" skinName="components.GoldDzpkSkin" touchEnabled="false" scaleX="1" scaleY="1" properties="[{        &quot;bgSoure&quot;: {&quot;obj&quot;:&quot;bgImg&quot;,&quot;attr&quot;:&quot;source&quot;,&quot;v&quot;:&quot;play_bg5&quot;},        &quot;goldCol&quot;: {&quot;obj&quot;:&quot;labGold&quot;,&quot;attr&quot;:&quot;textColor&quot;,&quot;v&quot;:&quot;0x46C4FF&quot;},         &quot;bgAlpha&quot;: {&quot;obj&quot;:&quot;bgImg&quot;,&quot;attr&quot;:&quot;alpha&quot;,&quot;v&quot;:0.35}     }]" x="150" y="80" height="30"/>
+			<ns1:GoldDzpk id="chipInfo5" skinName="components.GoldDzpkSkin" touchEnabled="false" scaleX="1" scaleY="1" properties="[{        &quot;bgSoure&quot;: {&quot;obj&quot;:&quot;bgImg&quot;,&quot;attr&quot;:&quot;source&quot;,&quot;v&quot;:&quot;play_bg5&quot;},        &quot;goldCol&quot;: {&quot;obj&quot;:&quot;labGold&quot;,&quot;attr&quot;:&quot;textColor&quot;,&quot;v&quot;:&quot;0x46C4FF&quot;},         &quot;bgAlpha&quot;: {&quot;obj&quot;:&quot;bgImg&quot;,&quot;attr&quot;:&quot;alpha&quot;,&quot;v&quot;:0.35}     }]" x="0" y="120" height="30"/>
+			<ns1:GoldDzpk id="chipInfo6" skinName="components.GoldDzpkSkin" touchEnabled="false" scaleX="1" scaleY="1" properties="[{        &quot;bgSoure&quot;: {&quot;obj&quot;:&quot;bgImg&quot;,&quot;attr&quot;:&quot;source&quot;,&quot;v&quot;:&quot;play_bg5&quot;},        &quot;goldCol&quot;: {&quot;obj&quot;:&quot;labGold&quot;,&quot;attr&quot;:&quot;textColor&quot;,&quot;v&quot;:&quot;0x46C4FF&quot;},         &quot;bgAlpha&quot;: {&quot;obj&quot;:&quot;bgImg&quot;,&quot;attr&quot;:&quot;alpha&quot;,&quot;v&quot;:0.35}     }]" x="150" y="120" height="30"/>
+
+			<ns1:GoldDzpk id="chipInfo7" skinName="components.GoldDzpkSkin" touchEnabled="false" scaleX="1" scaleY="1" properties="[{        &quot;bgSoure&quot;: {&quot;obj&quot;:&quot;bgImg&quot;,&quot;attr&quot;:&quot;source&quot;,&quot;v&quot;:&quot;play_bg5&quot;},        &quot;goldCol&quot;: {&quot;obj&quot;:&quot;labGold&quot;,&quot;attr&quot;:&quot;textColor&quot;,&quot;v&quot;:&quot;0x46C4FF&quot;},         &quot;bgAlpha&quot;: {&quot;obj&quot;:&quot;bgImg&quot;,&quot;attr&quot;:&quot;alpha&quot;,&quot;v&quot;:0.35}     }]" x="0" y="160" height="30"/>
+		</e:Group>
+
+	</e:Group>
+	<ns1:GoldDzpk id="publicChipInfo" skinName="components.GoldDzpkSkin" touchEnabled="false" scaleX="1" scaleY="1" properties="[{&quot;bgSoure&quot;: {&quot;obj&quot;:&quot;bgImg&quot;,&quot;attr&quot;:&quot;source&quot;,&quot;v&quot;:&quot;play_bg5&quot;},&quot;icon&quot;:{&quot;obj&quot;:&quot;imgIcon&quot;,&quot;attr&quot;:&quot;source&quot;,&quot;v&quot;:&quot;play_poolbet&quot;},&quot;scale&quot;:{&quot;obj&quot;:&quot;imgIcon&quot;,&quot;attr&quot;:&quot;scale&quot;,&quot;v&quot;:0.5},&quot;goldCol&quot;: {&quot;obj&quot;:&quot;labGold&quot;,&quot;attr&quot;:&quot;textColor&quot;,&quot;v&quot;:&quot;0x46C4FF&quot;},&quot;bgAlpha&quot;:{&quot;obj&quot;:&quot;bgImg&quot;,&quot;attr&quot;:&quot;alpha&quot;,&quot;v&quot;:0.35},&quot;scale9&quot;:  {&quot;obj&quot;:&quot;bgImg&quot;,&quot;attr&quot;:&quot;scale9Grid&quot;,&quot;v&quot;:{&quot;x&quot;:22,&quot;y&quot;:0,&quot;width&quot;:16,&quot;height&quot;:40}}}]" y="290" x="302" height="30"/>
+
+	<e:Image id="sendCardImg" source="poker_blue_back" scaleX="0.2" scaleY="0.2" y="579" x="361"/>
+	<e:Group id="dropGrp" width="200" height="200" right="0" bottom="80">
+		<e:Image id="dropImg" scaleX="1" scaleY="1" anchorOffsetX="76" anchorOffsetY="73.5" source="play_chest" y="100.5" x="100"/>
+		<e:Label id="dropLabel" text="10s" fontFamily="Microsoft YaHei" size="30" touchEnabled="false" textColor="0xFFFFFF" horizontalCenter="0" textAlign="center" bottom="10"/>
+	</e:Group>
+	<e:Group id="myOpGroup" width="420" height="292" anchorOffsetX="0" horizontalCenter="0" anchorOffsetY="0" touchEnabled="false" bottom="152">
+		<e:Image id="giveUpChipImg" source="play_drop" scaleX="1" scaleY="1" anchorOffsetX="56" anchorOffsetY="56" x="56" y="200"/>
+		<e:Image id="skipChipImg" scaleX="1" scaleY="1" x="364" y="200" anchorOffsetX="56" anchorOffsetY="56" source="play_pass"/>
+		<e:Group id="allInAddGrp" anchorOffsetX="56" anchorOffsetY="56" scaleX="1" scaleY="1" y="56" x="210">
+			<e:Image id="opRImg16" scaleX="1" scaleY="1" y="0" x="0" touchEnabled="false" source="play_bg6" width="112" height="112"/>
+			<e:Label id="followLabel3" text="all in" fontFamily="Microsoft YaHei" size="26" horizontalCenter="0" textColor="0xFFFFFF" verticalCenter="0" touchEnabled="false"/>
+		</e:Group>
+		<e:Image id="addChipImg" scaleX="1" scaleY="1" source="play_add" x="210" y="56" anchorOffsetX="56" anchorOffsetY="56"/>
+		<e:Group id="followGrp" anchorOffsetX="56" anchorOffsetY="56" scaleX="1" scaleY="1" y="200" x="363">
+		<e:Image id="opRImg0" scaleX="1" scaleY="1" source="play_follow_bet" y="0" x="0" touchEnabled="false"/>
+		<e:Label id="followLabel" text="100" y="28" fontFamily="Microsoft YaHei" size="26" horizontalCenter="0" textColor="0xffffff" touchEnabled="false"/>
+		</e:Group>
+		<e:Group id="allInGrp" anchorOffsetX="56" anchorOffsetY="56" scaleX="1" scaleY="1" y="200" x="363">
+		<e:Image id="opRImg1" scaleX="1" scaleY="1" y="0" x="0" touchEnabled="false" width="112" height="112" source="play_bg6"/>
+		<e:Label id="followLabel0" text="all in" fontFamily="Microsoft YaHei" size="26" horizontalCenter="0" textColor="0xFFFFFF" verticalCenter="0" touchEnabled="false"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="sOrgGrp" anchorOffsetX="66" anchorOffsetY="66" scaleX="0.8" scaleY="0.8" touchEnabled="true" touchChildren="false" horizontalCenter="-150" bottom="190">
+		<e:Image id="opRImg2" y="0" x="0" touchEnabled="false" source="play_bg2"/>
+		<e:Label id="followLabel1" text="让或弃" fontFamily="Microsoft YaHei" size="26" horizontalCenter="0" textColor="0xFFFFFF" verticalCenter="0" touchEnabled="false"/>
+	</e:Group>
+	<e:Group id="fallGrp" anchorOffsetX="66" anchorOffsetY="66" scaleX="0.8" scaleY="0.8" touchEnabled="true" touchChildren="false" horizontalCenter="150" bottom="190">
+		<e:Image id="opRImg7" scaleX="1" scaleY="1" touchEnabled="false" source="play_bg1" x="0" y="0"/>
+		<e:Label id="followLabel2" text="跟任何注" fontFamily="Microsoft YaHei" size="26" horizontalCenter="0" textColor="0xFFFFFF" verticalCenter="0" touchEnabled="false"/>
+	</e:Group>
+
+	<e:Group id="addGrp" anchorOffsetY="0" scaleX="1" scaleY="1" y="0" x="0" width="100%" height="100%" touchEnabled="false">
+		<e:Rect id="bgRect" width="100%" height="100%" x="1" y="0" fillAlpha="0.5" touchEnabled="true"/>
+		<e:Image id="okAddChip" scaleX="1" scaleY="1" y="942" source="play_ok" anchorOffsetX="60" anchorOffsetY="60" horizontalCenter="0"/>
+		<e:Image id="opRImg3" scaleX="1" scaleY="1" y="840" touchEnabled="false" horizontalCenter="0" source="play_arrup"/>
+		<e:Image id="opRImg4" scaleX="1" scaleY="1" y="840" touchEnabled="false" source="play_arrup" horizontalCenter="0"/>
+		<e:VSlider id="chipSlider" y="344" skinName="ui.VSliderSkin" height="500" value="0" anchorOffsetY="0" horizontalCenter="0" width="116"/>
+
+
+		<e:Group id="floatChipGrp" anchorOffsetY="31" scaleX="1" scaleY="1" y="744" x="202" height="62" anchorOffsetX="0">
+			<e:Image id="opRImg6" scaleX="1" scaleY="1" touchEnabled="false" source="play_slider2" rotation="270" scale9Grid="15,17,90,13" width="60" height="100" y="60"/>
+			<e:Label id="selLabel" text="" fontFamily="Microsoft YaHei" size="30" horizontalCenter="-9.5" textColor="0xFFFFFF" touchEnabled="false" y="14"/>
+		</e:Group>
+		<e:Group id="addChip1" scaleX="1" scaleY="1" y="942" height="100" anchorOffsetY="50" anchorOffsetX="50" touchEnabled="true" touchChildren="false" x="115">
+			<e:Image id="opRImg12" scaleX="1" scaleY="1" touchEnabled="false" rotation="270" source="play_bg4" x="0" verticalCenter="0"/>
+			<e:Label id="addLable1" text="1000" fontFamily="Microsoft YaHei" size="32" touchEnabled="false" textColor="0xffe17a" textAlign="center" y="33" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="addChip2" scaleX="1" scaleY="1" y="942" height="100" anchorOffsetX="50" anchorOffsetY="50" touchEnabled="true" touchChildren="false" x="240">
+			<e:Image id="opRImg13" scaleX="1" scaleY="1" touchEnabled="false" rotation="270" source="play_bg4" x="0" y="100"/>
+			<e:Label id="addLable2" text="1000" fontFamily="Microsoft YaHei" size="32" touchEnabled="false" textColor="0xFFE17A" textAlign="center" y="33" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="addChip3" scaleX="1" scaleY="1" y="942" height="100" anchorOffsetX="50" anchorOffsetY="50" touchChildren="false" touchEnabled="true" x="510">
+			<e:Image id="opRImg14" scaleX="1" scaleY="1" touchEnabled="false" rotation="270" source="play_bg4" x="0" y="100"/>
+			<e:Label id="addLable3" text="1000" fontFamily="Microsoft YaHei" size="32" touchEnabled="false" textColor="0xFFE17A" textAlign="center" y="33" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="addChip4" scaleX="1" scaleY="1" y="942" height="100" anchorOffsetX="50" anchorOffsetY="50" touchChildren="false" touchEnabled="true" x="635">
+			<e:Image id="opRImg15" scaleX="1" scaleY="1" touchEnabled="false" rotation="270" source="play_bg4" x="0" verticalCenter="0"/>
+			<e:Label id="addLable4" text="1000" fontFamily="Microsoft YaHei" size="32" touchEnabled="false" textColor="0xFFE17A" textAlign="center" y="33" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="maxChipGrp" anchorOffsetY="31" scaleX="1" scaleY="1" height="62" anchorOffsetX="1" horizontalCenter="0" y="344">
+			<e:Image id="opRImg5" scaleX="1" scaleY="1" y="0" touchEnabled="false" source="play_slider2" x="0"/>
+			<e:Label id="maxChipLabel" text="" fontFamily="Microsoft YaHei" size="30" textColor="0xFFFFFF" touchEnabled="false" scaleX="1" scaleY="1" textAlign="center" horizontalCenter="0" y="7"/>
+		</e:Group>
+
+
+	</e:Group>
+	
+</e:Skin>

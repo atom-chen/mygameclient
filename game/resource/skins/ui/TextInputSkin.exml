@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ui.TextInputSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="normal,disabled,normalWithPrompt,disabledWithPrompt" >
+	<e:Image source="common_text_input_bg" width="100%" height="100%" scale9Grid="43,22,262,10"/>
+	<e:Label id="promptDisplay" height="100%" verticalAlign="middle" textAlign="left" size="25" left="10" right="0" includeIn="normalWithPrompt,disabledWithPrompt" textColor="0xCEA468" fontFamily="Microsoft YaHei"/>
+	<e:EditableText id="textDisplay" verticalAlign="middle" left="10" height="100%" right="0" textColor="0xCEA468" text.disabledWithPrompt="" text=""/>
+</e:Skin>

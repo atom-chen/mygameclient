@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PanelMiningSkin" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"   states="rec,mining,rule,rank" >
+	<e:Group horizontalCenter="0" verticalCenter="0" touchEnabled="false" width="1280" height="640">
+		<e:Image id="bgImg" source="common_alert_bg" width="810" height="520" scale9Grid="107,94,642,42" horizontalCenter="0" verticalCenter="0"/>
+
+
+
+
+		<e:Group id="tit_group" horizontalCenter="0" y="65">
+			<e:Image id="titBgImg1" y="3" source="common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+			<e:Image id="titFontImg1" y="0" horizontalCenter="0.5" x="138" scaleX="1" scaleY="1" source="title_mining"/>
+		</e:Group>
+
+		<e:Image id="closeImg" x="1024.67" y="77.5" source="common_close_n" anchorOffsetX="30.67" anchorOffsetY="30.5" touchEnabled="true"/>
+
+		<e:Group id="contentGrp" height="390" x="430" y="147" width="580" anchorOffsetY="0">
+			<e:Image id="bg_img1" x="0" y="0" width="100%" height="100%" scale9Grid="9,7,12,15" source="common_bg" scaleX="1" scaleY="1" anchorOffsetX="0" touchEnabled="false"/>
+
+
+
+
+
+
+			<e:Group id="recGrp" width="580" height="390" x="0" y="0" includeIn="rec">
+				<e:Image id="contentTitBgImg" y="3" source="invite_12" width="570" height="46" anchorOffsetY="0" anchorOffsetX="0" scaleX="1" scaleY="1" scale9Grid="9,6,55,41" x="5" visible.mining="false" visible.rule="false" visible.rank="false"/>
+				<e:Label id="totGetLabel1" text="收益日期" y="13" fontFamily="Microsoft YaHei" size="24" x="39" scaleX="1" scaleY="1" textColor="0xe16223" visible.mining="false" visible.rule="false" visible.rank="false"/>
+				<e:Label id="totGetLabel2" text="挖矿收益(奖杯)" y="14" fontFamily="Microsoft YaHei" size="24" scaleX="1" scaleY="1" textColor="0xE16223" horizontalCenter="0.5" text.rec="挖矿收益(奖杯)" visible.mining="false" visible.rule="false" visible.rank="false" x="210"/>
+				<e:Label id="totGetLabel3" text="挖矿贡献" y="14" fontFamily="Microsoft YaHei" size="24" scaleX="1" scaleY="1" textColor="0xE16223" x="427" visible.mining="false" visible.rule="false" visible.rank="false"/>
+				<e:Image id="split1Img" y="3" source="invite_split" x="160" height="40" touchEnabled="false" visible.mining="false" visible.rule="false" visible.rank="false" scaleX="1" scaleY="1"/>
+				<e:Image id="split2Img" y="3" source="invite_split" height="40" x="400" touchEnabled="false" visible.mining="false" visible.rule="false" visible.rank="false" scaleX="1" scaleY="1"/>
+				<e:Scroller id="myScroller" height="345" y="45" anchorOffsetY="0" x="0" scrollPolicyV="auto" anchorOffsetX="0" width="580" visible.mining="false" visible.rule="false" visible.rank="false" scaleX="1" scaleY="1">
+					<e:Group anchorOffsetY="0">
+					<e:List id="recList" y="0" scaleX="1" scaleY="1" x="0" anchorOffsetY="0" anchorOffsetX="0" width="100%">
+						<e:itemRendererSkinName>
+						<e:Skin xmlns:alien="alien.*">
+							<e:Group horizontalCenter="0" y="6" width="580">
+							<e:Image id="bgImg" y="0" width="100%" source="invite_13"/>
+							<e:Label id="lbl_tot" text="0" size="20" textAlign="center" verticalCenter="0" textColor="0xba2e2e" fontFamily="Microsoft YaHei" horizontalCenter="0" width="100"/>
+							<e:Label id="lbl_devote" text="0.0" size="20" textAlign="center" x="435" textColor="0x874b00" verticalCenter="0" fontFamily="Microsoft YaHei" width="80"/>
+							<e:Label id="lbl_time" text="2017.07.18" size="20" textAlign="center" x="28" verticalCenter="0" textColor="0x874b00" fontFamily="Microsoft YaHei" width="120"/>
+							</e:Group>
+						</e:Skin>
+						</e:itemRendererSkinName>
+						<e:layout>
+						<e:VerticalLayout gap="0"/>
+						</e:layout>
+						<e:ArrayCollection>
+						<e:Array>
+							<e:Object fsdf="null"/>
+							<e:Object fsdf="null"/>
+							<e:Object fsdf="null"/>
+						</e:Array>
+						</e:ArrayCollection>
+					</e:List>
+					</e:Group>
+				</e:Scroller>
+			</e:Group>
+			<e:Group id="rankGrp" width="580" height="390" x="0" y="0" includeIn="rank">
+				<e:Image id="contentTitBgImg0" y="0" source="invite_12" width="570" height="46" anchorOffsetY="0" anchorOffsetX="0" scaleX="1" scaleY="1" scale9Grid="9,6,55,41" x="5" visible.mining="false" visible.rule="false" y.rec="3" y.rank="3"/>
+				<e:Label id="rankLabel" text="排名" y="13" fontFamily="Microsoft YaHei" size="24" x="39" scaleX="1" scaleY="1" textColor="0xE16223" includeIn="rank"/>
+				<e:Label id="nickLabel" text="收益日期" y="10" fontFamily="Microsoft YaHei" size="24" x="39" scaleX="1" scaleY="1" textColor="0xE16223" text.rank="昵称" x.rank="180" y.rank="13" visible.mining="false" visible.rule="false" y.rec="13"/>
+				<e:Label id="totGetLabel5" text="挖矿收益(奖杯)" y="11" fontFamily="Microsoft YaHei" size="24" scaleX="1" scaleY="1" textColor="0xE16223" horizontalCenter="0" text.rank="总收益" horizontalCenter.rank="201" visible.mining="false" visible.rule="false" horizontalCenter.rec="0.5" y.rec="14" y.rank="14" x="210"/>
+				<e:Label id="totGetLabel6" text="挖矿贡献" y="11" fontFamily="Microsoft YaHei" size="24" scaleX="1" scaleY="1" textColor="0xE16223" x="427" text.rank="贡献度" x.rank="300" y.rank="13" visible.mining="false" visible.rule="false" y.rec="14"/>
+				<e:Image id="split1Img0" y="0" source="invite_split" x="160" height="40" touchEnabled="false" x.rank="120" visible.mining="false" visible.rule="false" y.rec="3" y.rank="3" scaleX="1" scaleY="1"/>
+				<e:Image id="split1Img1" y="3" source="invite_split" x="278" height="40" touchEnabled="false" includeIn="rank" scaleX="1" scaleY="1"/>
+				<e:Image id="split2Img0" y="0" source="invite_split" height="40" x="400" touchEnabled="false" visible.mining="false" visible.rule="false" y.rec="3" y.rank="3" scaleX="1" scaleY="1"/>
+				<e:Scroller id="rankScroller" height="345" y="45" anchorOffsetY="0" x="0" scrollPolicyV="auto" anchorOffsetX="0" width="580" visible.rule="false" visible.rec="false" visible.mining="false" scaleX="1" scaleY="1">
+					<e:Group anchorOffsetY="0">
+					<e:List id="rankList" y="0" scaleX="1" scaleY="1" x="0" anchorOffsetY="0" anchorOffsetX="0" width="100%" x.rank="0">
+						<e:itemRendererSkinName>
+						<e:Skin xmlns:alien="alien.*" height="55" width="580">
+							<e:Group horizontalCenter="0" width="580" verticalCenter="0">
+							<e:Image id="bgImg0" width="100%" source="invite_13" verticalCenter="0"/>
+							<e:Image id="rankBgImg" x="26" source="red_rank_bg_n" verticalCenter="3"/>
+							<e:Label id="lbl_tot" text="0" size="20" textAlign="center" verticalCenter="0" textColor="0xba2e2e" fontFamily="Microsoft YaHei" horizontalCenter="200" width="76"/>
+							<e:Label id="lbl_devote" text="0" size="20" textAlign="center" x="300" textColor="0x874b00" verticalCenter="0" fontFamily="Microsoft YaHei" width="76"/>
+							<e:Label id="lbl_nick" text="昵称" size="20" textAlign="center" verticalCenter="0" textColor="0x874b00" fontFamily="Microsoft YaHei" width="120" height="20" x="142" maxChars="6"/>
+							<e:Label id="lbl_rank" text="1" size="20" textAlign="center" x="40" verticalCenter="0" textColor="0x874B00" fontFamily="Microsoft YaHei" width="40"/>
+							</e:Group>
+						</e:Skin>
+						</e:itemRendererSkinName>
+						<e:layout>
+						<e:VerticalLayout gap="0"/>
+						</e:layout>
+						<e:ArrayCollection>
+						<e:Array>
+							<e:Object fsdf="null"/>
+							<e:Object fsdf="null"/>
+							<e:Object fsdf="null"/>
+						</e:Array>
+						</e:ArrayCollection>
+					</e:List>
+					</e:Group>
+				</e:Scroller>
+			</e:Group>
+			<e:Label id="titLabel" text="昨日总收益(奖杯)" y="20" textColor="0x7f3000" fontFamily="Microsoft YaHei" size="20" horizontalCenter="0" x="233" scaleX="1" scaleY="1" visible.rec="false" visible.rule="false" visible.rank="false" horizontalCenter.mining="0" y.mining="10"/>
+			<e:Label id="yesterDayTotLabel" text="0" y="50" fontFamily="Microsoft YaHei" size="36" horizontalCenter="0" x="273" scaleX="1" scaleY="1" textColor="0xba2e2e" visible.rec="false" visible.rule="false" visible.rank="false" horizontalCenter.mining="0" y.mining="36" width="200" textAlign="center" width.mining="200"/>
+			<e:Label id="proLabel" text="今日挖矿进度" y="120.5" textColor="0x7F3000" fontFamily="Microsoft YaHei" size="20" horizontalCenter="0" x="243" scaleX="1" scaleY="1" visible.rec="false" visible.rule="false" visible.rank="false" horizontalCenter.mining="0" y.mining="90" rotation.mining="359.91"/>
+			<e:Label id="rulePreLabel" text="规则说明:" y="10" fontFamily="Microsoft YaHei" size="24" x="10" scaleX="1" scaleY="1" textColor="0xba2e2e" visible.rec="false" visible.mining="false" visible.rank="false"/>
+			<e:Label id="ruleCtxLabel" text="      规则说明:" y="40" fontFamily="Microsoft YaHei" size="20" x="10" scaleX="1" scaleY="1" textColor="0x7f3000" visible.rec="false" visible.mining="false" textAlign="left" width="560" lineSpacing="5" visible.rank="false"/>
+			<e:Label id="luckyLabel" text="昨日幸运儿" y="162" textColor="0x7F3000" fontFamily="Microsoft YaHei" size="20" horizontalCenter="0" x="253" scaleX="1" scaleY="1" includeIn="mining"/>
+			<e:Group id="proGrp" width="200" height="24" y="150" horizontalCenter="0" visible.rec="false" visible.rule="false" visible.rank="false" horizontalCenter.mining="0" y.mining="118">
+				<e:Image id="mProBg_img" x="0" y.rank="0" y.rule="0" y.rec="0" source="task_progress_bg" width="100%" scale9Grid="9,7,7,6" scaleX="1" scaleY="1" height="23" x.mining="0" y.mining="1"/>
+				<e:Image id="mPro_img" height="23" x="0" y="0" source="task_progress_pro" scale9Grid="12,7,5,6" scaleX="1" scaleY="1" width="28" y.mining="1"/>
+				<e:Label id="mPro_label" text="0/0" fontFamily="Microsoft YaHei" size="20" verticalAlign="middle" scaleX="1" scaleY="1" horizontalCenter="0" textAlign="center" verticalCenter="0" horizontalCenter.mining="0" verticalCenter.mining="0"/>
+			</e:Group>
+			<e:Group id="infoGrp" width="560" height="110" x="10" y="273" anchorOffsetX="0" anchorOffsetY="0" visible.rec="false" visible.rule="false" visible.rank="false" y.mining="305" height.mining="80">
+				<e:Image id="bg_img0" x="0" y="0" width="100%" height="100%" scaleX="1" scaleY="1" anchorOffsetX="0" touchEnabled="false" anchorOffsetY="0" source="common_bg" scale9Grid="15,14,55,41"/>
+				<e:Label id="totGetTLabel" text="累计收益" y="20" textColor="0x7F3000" fontFamily="Microsoft YaHei" size="20" x="40" scaleX="1" scaleY="1" y.mining="10"/>
+				<e:Label id="totGetLabel0" text="0" y="60" fontFamily="Microsoft YaHei" size="24" x="63" scaleX="1" scaleY="1" textColor="0xba2e2e" y.mining="45" x.mining="63" text.mining="0"/>
+
+				<e:Label id="todayLuckTLabel" text="今日幸运值" y="20" textColor="0x7F3000" fontFamily="Microsoft YaHei" size="20" horizontalCenter="0.5" x="201" scaleX="1" scaleY="1" y.mining="10" horizontalCenter.mining="0"/>
+				<e:Label id="todayLuckLabel0" text="0" y="60" textColor="0xBA2E2E" fontFamily="Microsoft YaHei" size="24" scaleX="1" scaleY="1" horizontalCenter="0" horizontalCenter.mining="0" y.mining="45" text.mining="0"/>
+				<e:Label id="yesterdayTLabel" text="昨日幸运奖(奖杯)" y="20" textColor="0x7F3000" fontFamily="Microsoft YaHei" size="20" x="394.5" scaleX="1" scaleY="1" y.mining="10"/>
+				<e:Label id="yesterdayLuckLabel0" text="0" y="60" textColor="0xBA2E2E" fontFamily="Microsoft YaHei" size="24" x="450" scaleX="1" scaleY="1" textAlign="center" y.mining="45" x.mining="450" text.mining="0"/>
+			</e:Group>
+			<e:Group id="yesterdayRankGrp" width="560" height="109" includeIn="mining" x="9" y="185" anchorOffsetX="0" anchorOffsetY="0">
+				<ns1:Avatar id="avatar1" scaleX="0.5" scaleY="0.5" skinName="components.AvatarSkin" name="avatar" touchChildren="false" includeIn="mining" verticalCenter="-10" y="-7" horizontalCenter="-180"/>
+				<ns1:Avatar id="avatar2" scaleX="0.5" scaleY="0.5" skinName="components.AvatarSkin" name="avatar" touchChildren="false" includeIn="mining" verticalCenter="-10" y="3" horizontalCenter="0"/>
+				<ns1:Avatar id="avatar3" scaleX="0.5" scaleY="0.5" skinName="components.AvatarSkin" name="avatar" touchChildren="false" includeIn="mining" verticalCenter="-10" y="13" horizontalCenter="180"/>
+				<e:Label id="nick1Label" text="昵称" fontFamily="Microsoft YaHei" size="20" scaleX="1" scaleY="1" textColor="0xba2e2e" textAlign="center" bottom="0" horizontalCenter="-180" maxChars="6" width="120"/>
+				<e:Label id="nick2Label" text="昵称" textColor="0xBA2E2E" fontFamily="Microsoft YaHei" size="20" scaleX="1" scaleY="1" textAlign="center" horizontalCenter="0" bottom="0" width="120" maxChars="6"/>
+				<e:Label id="nick3Label" text="昵称" textColor="0xBA2E2E" fontFamily="Microsoft YaHei" size="20" scaleX="1" scaleY="1" textAlign="center" bottom="0" horizontalCenter="180" maxChars="6" width="120"/>
+				<e:Image id="rankBgImg" x="117" includeIn="mining" y="5" scaleX="1" scaleY="1" source="red_rank_bg_15" visible="false"/>
+				<e:Image id="rankBgImg0" x="297" includeIn="mining" y="5" scaleX="1" scaleY="1" source="red_rank_bg_14" visible="false"/>
+				<e:Image id="rankBgImg1" x="476" includeIn="mining" y="5" scaleX="1" scaleY="1" source="red_rank_bg_13" visible="false"/>
+			</e:Group>
+		</e:Group>
+		<e:RadioButton id="miningRadio" label="挖矿收益" x="265" y="150" groupName="btns" value="mining">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_btn1_n" source.down="common_btn1_h"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" bold="true" textColor="0x874b00"/>
+				</e:Skin>
+			</e:skinName>
+
+		</e:RadioButton>
+		<e:RadioButton id="ruleRadio" label="规则说明" x="265" y="220" groupName="btns" value="rule">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_btn1_n" source.down="common_btn1_h"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" bold="true" textColor="0x874b00"/>
+				</e:Skin>
+			</e:skinName>
+
+		</e:RadioButton>
+		<e:RadioButton id="recRadio" label="收益记录" x="264" y="290" groupName="btns" value="rec">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_btn1_n" source.down="common_btn1_h"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" bold="true" textColor="0x874b00"/>
+				</e:Skin>
+			</e:skinName>
+
+		</e:RadioButton>
+		<e:RadioButton id="rankRadio" label="总收益榜" x="265" y="365" groupName="btns" value="rank">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_btn1_n" source.down="common_btn1_h"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" bold="true" textColor="0x874b00"/>
+			</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.MarqueeSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="574" height="35">
+	<e:Image id="bg_img" y="18" source="room_image_7" x="287" scale9Grid="17,3,104,25" width="574" height="35" touchEnabled="true" anchorOffsetX="287" anchorOffsetY="18"/>
+	<e:Image id="imgTrumpet" y="5" x="15" source="room_sendMsg" scaleX="1" scaleY="1" touchEnabled="false"/>
+	<e:Image id="imgRedCoin" source="room_image_8" y="-4" x="7" touchEnabled="false"/>
+	<e:Scroller id="maskR" width="480" height="22" verticalCenter="0" touchChildren="false" touchEnabled="false" x="54">
+		<e:Group height="100%">
+			<e:Label id="txt" size="20" verticalCenter="0" height="100%" textColor="0xffffff" textAlign="left" x="0"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Image id="openHorn_img" x="534" y="-1" source="room_msg" touchEnabled="false"/>
+
+
+
+
+</e:Skin>

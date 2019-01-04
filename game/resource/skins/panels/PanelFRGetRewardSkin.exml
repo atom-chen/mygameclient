@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="panels.PanelFRGetRewardSkin" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="mBg_img" anchorOffsetX="417" anchorOffsetY="266" width="770" height="460" source="common_alert1_bg" scale9Grid="22,57,43,18" x="672" y="356"/>
+	<e:Label id="addLabel0" text="+" x="720" y="306" fontFamily="Microsoft YaHei" size="40" bold="true" textColor="0xFF1800" visible="false"/>
+	<e:Image id="item1Img" x="568" y="326.5" anchorOffsetX="47.5" anchorOffsetY="47" scaleX="1" scaleY="1" source="room_2"/>
+	<e:Label id="item1Num_label" text="1天" x="549.5" y="339.5" size="20" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1"/>
+	<e:Image id="item2Img" x="715" y="326.5" anchorOffsetX="47.5" anchorOffsetY="47" source="room_0" scaleX="1" scaleY="1"/>
+	<e:Label id="item2Num_label" text="10000" x="685" y="338" size="20" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1"/>
+	<e:Image id="item3Img" x="810" y="326.5" anchorOffsetX="47.5" anchorOffsetY="47" scaleX="1" scaleY="1" source="room_101" visible="false"/>
+	<e:Label id="item3Num_label" text="20次" x="790" y="336" size="20" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" visible="false"/>
+	<e:Label id="addLabel" text="+" x="625" y="306" fontFamily="Microsoft YaHei" size="40" bold="true" textColor="0xFF1800"/>
+	<e:Group id="tit_group" horizontalCenter="0" y="91">
+		<e:Image id="titBgImg0" y="3" source="common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+		<e:Image id="frecharge_tip_title" y="-4" horizontalCenter="1.5" x="138" scaleX="1" scaleY="1" source="frecharge_tip_title"/>
+	</e:Group>
+
+	<e:Image id="mDesc_img" y="211.31" anchorOffsetX="148" anchorOffsetY="33" source="frecharge_tip_desc" horizontalCenter="0"/>
+
+
+	<e:Button id="mGet_btn" label="" y="438.34" horizontalCenter="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="frecharge_tip_get_n" source.down="frecharge_tip_get_p"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"noImplicitAny": false,
+		"sourceMap": false,
+		"declaration": false,
+		"allowJs": true,
+		"outFile": "bin/ymrtc.js"
+	},
+	"files": [
+        "src/ymrtc.min.js"
+	]
+}

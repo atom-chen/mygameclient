@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PanelMatchWaitingSkin" xmlns:ns1="*" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="648" height="433" >
+	<e:Image source="match_panel_bg" scale9Grid="81,98,486,5" height="433"/>
+	<e:Image source="match_panel_bg_2" y="80" scale9Grid="283,42,14,254" width="600" x="24" locked="true"/>
+	<e:Group y="178" horizontalCenter="0">
+		<e:Label size="25" y="0" text="冠军奖励:" x="0" textColor="0x875300" bold="true"/>
+		<e:Label id="labReward" y="0" text="x1" size="25" x="111" textColor="0xE73100"/>
+		<e:layout>
+			<e:HorizontalLayout/>
+		</e:layout>
+	</e:Group>
+	<e:Label id="labTitle" text="斗地主新手赛" y="25" textColor="0xF4B64B" horizontalCenter="0" bold="true"/>
+	<e:Button id="btnCancelMath" y="310" horizontalCenter="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="match_btn_exit_n" source.down="match_btn_exit_h"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<ns1:QProgressBar id="progressBar" y="225" skinName="ui.MatchAmountProgressBarSkin" horizontalCenter="0"/>
+</e:Skin>

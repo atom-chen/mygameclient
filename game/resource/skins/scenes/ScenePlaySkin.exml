@@ -1,0 +1,386 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="scenes.ScenePlaySkin" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" states="normal,match,personalGame,couple" >
+	<e:Group id="grpBg" width="100%" height="100%">
+
+		<e:Image width="100%" y="0" height="100%" source="room_bg" locked="true"/>
+		<e:Image horizontalCenter="0" bottom="0" x="10" y="10" source="play_bg" width="100%" locked="true"/>
+		<e:Label id="labRedInfo" size="36" text="赢3局抽奖券" horizontalCenter="0" verticalCenter="0" strokeColor="0x444444" touchEnabled="false" fontFamily="Microsoft YaHei" bold="true" alpha="0.5" textColor="0x000000" includeIn="normal,couple"/>
+	</e:Group>
+	<e:Group id="grpMain" width="100%" height="100%" touchEnabled="false">
+		<e:Label id="labWaiting" size="50" text="等待开局…" horizontalCenter="0" verticalCenter="-50" stroke="2" strokeColor="0x444444" touchEnabled="false" verticalCenter.match="0"/>
+		<ns1:SideSeat id="seat2" x="20" verticalCenter="-120" skinName="components.SeatSkin" currentState="left" touchChildren="true" touchEnabled="false" visible.couple="false"/>
+		<ns1:SideSeat id="seat1" skinName="components.SeatSkin" currentState="right" verticalCenter="-120" right.personalGame="20" right.match="20" right.normal="20" touchChildren="true" touchEnabled="false" currentState.couple="right_2" width.couple="100%" right.couple="0"/>
+		<ns1:MySeat id="seat0" bottom="0" skinName="components.SeatSkin" currentState="my" width="100%" left="0"/>
+		<ns1:ButtonBar id="buttonBar" x="442" y="524" skinName="components.ButtonBarSkin" horizontalCenter="0" bottom="240" currentState="askMaster" horizontalCenter.couple="0" bottom.couple="220"/>
+		<ns1:MasterCards id="masterCards" horizontalCenter="0" skinName="components.MasterCardsSkin" touchChildren="false" touchEnabled="false"/>
+		<e:Group id="matchTurn_group" includeIn="match,couple" horizontalCenter="160" bottom="7" touchThrough="true" visible.couple="false" locked="true">
+			<e:Image includeIn="match,couple" source="play_match_detail_bg" scale9Grid="49,14,188,13" width="350"/>
+			<e:Label id="labMatchInfo" text="..." includeIn="match,couple" y="10" size="20" width="100%" textAlign="center"/>
+		</e:Group>
+		<e:Group id="matchRank_group" includeIn="normal,match,couple" bottom="65" right="0" touchThrough="true" visible.match="false">
+			<e:Image x="0" y="0" includeIn="normal,match,couple" source="play_match_place_info_bg"/>
+			<e:Label id="labelMatchInfo" text="..." includeIn="normal,match,couple" size="25" verticalCenter="0" width="100%" textAlign="center" bold="true"/>
+		</e:Group>
+		<e:Group id="match9_bottom_group" width="960" x="0" y="588" height="48" anchorOffsetY="0" includeIn="match,couple" visible="false">
+			<e:Image x="160" y="10" source="match9_turn" scaleX="1" scaleY="1"/>
+			<e:Label id="match9Turn_label" text="" x="266" y="10" size="24" fontFamily="Microsoft YaHei" textColor="0xffffff"/>
+			<e:Image x="499.33" y="10" source="match9_curRank"/>
+			<e:Image id="match9Rule_img" x="357" y="24" source="match9_rule" anchorOffsetX="40" anchorOffsetY="16"/>
+			<e:Label id="curRank_label" text="正在统计.." x="690" y="12" size="20" fontFamily="Microsoft YaHei"/>
+			<e:Image id="matchInfo_img" x="829.33" y="24" source="match9_info" anchorOffsetX="41.33" anchorOffsetY="16"/>
+		</e:Group>
+
+		<e:Group id="grpButton" width="100%" height="100%" touchEnabled="false">
+			<e:Group id="grpTopButton" width="100%" y="-2">
+				<e:Group x="10" y="0">
+					<e:Button id="btnBack" x="20" y="10" name="back">
+						<e:skinName>
+							<e:Skin states="up,down,disabled">
+								<e:Image width="100%" height="100%" source="play_btn_back_n" source.down="play_btn_back_h" source.disabled="play_btn_back_n"/>
+								<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+							</e:Skin>
+						</e:skinName>
+					</e:Button>
+					<e:Button id="btnGuessCards" label="按钮" includeIn="normal" name="guessCards" width="148" x="164" y="8">
+						<e:skinName>
+							<e:Skin states="up,down,disabled">
+								<e:Image width="100%" height="100%" source="guesscards_915" source.down="guesscards_914"/>
+								<e:Label id="labelDisplay5" horizontalCenter="0" verticalCenter="0"/>
+							</e:Skin>
+						</e:skinName>
+					</e:Button>
+					<e:Image id="lotteryImg" name="lottery" touchEnabled="true" source="play_lottery" anchorOffsetX="43.5" anchorOffsetY="45" y="50" x="240" visible="false"/>
+				</e:Group>
+				<e:Group touchEnabled="false" y="0" right="0" scaleX="0.8" scaleY="0.8">
+					<e:Button id="btnRecord" name="recorder" y="12" right="210" visible.couple="false" right.personalGame="140" right.match="140">
+						<e:skinName>
+							<e:Skin states="up,down,disabled">
+								<e:Image width="100%" height="100%" source="play_btn_record_n" source.down="play_btn_record_h"/>
+								<e:Label id="labelDisplay6" horizontalCenter="0" verticalCenter="0"/>
+							</e:Skin>
+						</e:skinName>
+					</e:Button>
+					<e:CheckBox id="btnHang" label="托管" name="hang" skinName="ui.HangButtonSkin" y="12" right="70" right.personalGame="70"/>
+					<e:Button id="btnSetting" name="setting" y="12" right="0">
+						<e:skinName>
+							<e:Skin states="up,down,disabled">
+								<e:Image width="100%" height="100%" source="play_btn_set_n" source.down="play_btn_set_h"/>
+								<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+							</e:Skin>
+						</e:skinName>
+					</e:Button>
+					<e:Image id="redNormalHelp_img" y="49.99" right="140" source="play_rule" anchorOffsetX="37.5" anchorOffsetY="37"/>
+					<e:Image id="recorderBubble" x="-1" y="78" source="play_recorder_outofdate" visible.couple="false"/>
+					<e:Image id="btnAbandon" name="abandon" anchorOffsetX="37.5" anchorOffsetY="37" scaleX="1" scaleY="1" y="49" right="140" source="room_match_abandon_btn" includeIn="match"/>
+					<e:layout>
+						<e:BasicLayout/>
+					</e:layout>
+				</e:Group>
+				<e:Button id="btnTest" y="12" right="240" includeIn="match" visible="false">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="play_btn_set_n" source.down="play_btn_set_h"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Button id="btnTest2" y="12" right="320" includeIn="match" visible="false">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="play_rule" source.down="play_rule"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Button id="btnTest3" y="12" right="400" includeIn="match" visible="false">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="play_btn_trusteeship_n" source.down="play_btn_trusteeship_n"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+
+			</e:Group>
+
+
+			<ns1:StateButton id="btnContinue" labelIcon="play_btn_word_getready" name="continue" horizontalCenter="0" bottom="240" skinName="ui.PlayBlueButtonSkin" bottom.normal="240" bottom.couple="220"/>
+			<e:Group id="grpMatchDetail" includeIn="match" horizontalCenter="0" bottom="335">
+				<e:Image includeIn="match" source="play_btn_blue_n" horizontalCenter="0" verticalCenter="0" touchEnabled="false"/>
+				<e:Image includeIn="match" source="match_details_btn" verticalCenter="0" horizontalCenter="0" touchEnabled="false"/>
+			</e:Group>
+			<ns1:CDProgressBar id="cdProgressBar" y="316" skinName="ui.CircleProgressSkin" horizontalCenter="0" locked="true"/>
+
+
+			<e:Label id="redNormal_label" text="10s" y="498" fontFamily="Microsoft YaHei" size="30" right="159" includeIn="normal" touchEnabled="false" textColor="0xffffff" visible="false"/>
+
+
+			<e:Group id="dayBuyGroup" x="23" y="393" width="150" height="150" visible="false">
+				<e:Image id="dayFuDaiImg" x="22" y="5" source="room_fu" scaleX="1.2" scaleY="1.2" includeIn="normal" touchEnabled="false" blendMode="normal" />
+				<e:Label id="dayFuDaiTimeLabel" text="00:00" y="111.96" fontFamily="Microsoft YaHei" size="30" includeIn="normal" touchEnabled="false" textColor="0xFFFFFF" x="36" scaleX="1" scaleY="1"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="double_group" name="noDouble" horizontalCenter="-115" anchorOffsetX="95" anchorOffsetY="48.5" verticalCenter="33" verticalCenter.normal="13" locked="true">
+			<e:Image x="0" y="0" source="double1" source.couple="double1"/>
+			<e:Label id="doubleCost_label" text="x3" x="91.99" y="53.33" fontFamily="Microsoft YaHei" size="24"/>
+		</e:Group>
+		<e:Group id="noDouble_group" name="noDouble" horizontalCenter="115.5" anchorOffsetX="95.5" verticalCenter="33" anchorOffsetY="48" verticalCenter.normal="13">
+			<e:Image x="0" y="0" source="noDouble1" source.couple="noDouble1"/>
+		</e:Group>
+		<e:Group id="failDouble_group" height="40" y="420" x="640" width="274" anchorOffsetX="137" anchorOffsetY="20" touchChildren="false" touchEnabled="false" horizontalCenter.normal="0" verticalCenter.normal="70" locked="true">
+			<e:Image id="failDoubleDesc1_img" scaleX="1" scaleY="1" source="failDoublePre1" y="4" anchorOffsetX.normal="0" right.normal="124"/>
+			<e:Image id="failDoubleDesc2_img" scaleX="1" scaleY="1" x="146" y="4" source="failDoubleEnd"/>
+		</e:Group>
+		<e:Group id="grpRedWarn" horizontalCenter="421" verticalCenter="31" includeIn="normal" visible="false">
+			<e:Image source="play_36" x="0" y="0"/>
+			<e:Label id="redLeftCount" text="再赢" size="20" fontFamily="微软雅黑" horizontalCenter="0.5" verticalAlign="middle" top="4" bottom="45"/>
+		</e:Group>
+		<e:Group id="grpRedNotice" height="84" includeIn="normal" touchEnabled="false" width="408" anchorOffsetX="204" anchorOffsetY="42" verticalCenter="228" left="480">
+			<e:Image source="play_redn_bg" touchEnabled="false" y="0" horizontalCenter="0"/>
+			<e:Group id="grprn1" height="83" width="407" x="0" y="0" touchEnabled="false">
+				<e:Label y="30" text="再抽" textAlign="center" size="20" x="56" fontFamily="微软雅黑" touchEnabled="false"/>
+				<e:Label y="30" text="即可兑换" fontFamily="微软雅黑" textAlign="center" size="20" x="190" touchEnabled="false"/>
+				<e:Label y="30" text="奖杯" fontFamily="微软雅黑" textAlign="center" size="20" x="331" touchEnabled="false"/>
+				<e:Label id="lbremain1" x="91" y="30" size="20" text="10.44" textAlign="center" fontFamily="微软雅黑" textColor="0xF6FF00" width="100" touchEnabled="false" height="20"/>
+				<e:Label id="lbrmb1" x="278" y="30" textColor="0xF6FF00" text="5" fontFamily="微软雅黑" textAlign="center" size="20" width="50" touchEnabled="false"/>
+			</e:Group>
+			<e:Group id="grprn2" y="0" x="0" width="407" height="83" touchEnabled="false">
+				<e:Label y="30" text="恭喜您已可兑换" fontFamily="微软雅黑" textAlign="center" size="20" x="58" touchEnabled="false"/>
+				<e:Label id="lbrmb2" y="30" textColor="0xF6FF00" text="5" fontFamily="微软雅黑" textAlign="center" width="50" size="20" x="210" touchEnabled="false"/>
+				<e:Label y="30" text="奖杯" fontFamily="微软雅黑" textAlign="center" size="20" x="270" touchEnabled="false"/>
+			</e:Group>
+		</e:Group>
+		<ns1:MarqueeText id="rollMsg" skinName="components.MarqueeSkin" horizontalCenter="0" top="106" visible="false" locked="true"/>
+		<e:Group id="grpGuessCards" height="300" width="100%" includeIn="normal,couple" touchEnabled="false" horizontalCenter="0" verticalCenter="-170">
+			<e:Group id="grpGuessResult" height="80" width="200" y="50" includeIn="normal,couple" horizontalCenter="0">
+				<e:Image y="11" source="guesscards_tiao" x="28"/>
+				<e:Image id="guessCardsType" y="19" source="guesscards_929" horizontalCenter="-6.5"/>
+			</e:Group>
+			
+			<e:Group id="grpGuessOp" height="243" width="436" includeIn="normal,couple" touchEnabled="true" horizontalCenter="0" y="0" touchThrough="false">
+				<e:Image source="guesscards_916" includeIn="normal,couple" x="0" y="0" touchEnabled="false"/>
+				<e:Button id="guess_option0" label="按钮" x="9" includeIn="normal,couple" top="0" name="0">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+							<e:Image width="100%" height="100%" source="guesscards_918" source.down="guesscards_919"/>
+							<e:Label id="labelDisplay0" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Image x="42" y="12" source="guesscards_926" includeIn="normal,couple" touchEnabled="false"/>
+				<e:Label id="lbguess1" text="(赢1.2倍)" y="45" includeIn="normal,couple" fontFamily="Microsoft YaHei" bold="true" size="24" textAlign="center" textColor="0x6f130d" x="27" touchEnabled="false"/>
+
+				<ns1:GCardsGold id="GCGold0" x="15" y="28" skinName="components.GCardsGoldSkin" includeIn="normal,couple" touchEnabled="false"/>
+				<e:Button id="guess_option1" x="147" includeIn="normal,couple" top="0" name="1">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+							<e:Image width="100%" height="100%" source="guesscards_918" source.down="guesscards_919"/>
+							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Label id="lbguess2" text="(赢3倍)" x="177" y="45" includeIn="normal,couple" fontFamily="Microsoft YaHei" bold="true" size="24" textAlign="center" textColor="0x6f130d" touchEnabled="false"/>
+				<e:Image y="12" includeIn="normal,couple" x="180" source="guesscards_927" touchEnabled="false"/>
+				<ns1:GCardsGold id="GCGold1" x="152" y="28" skinName="components.GCardsGoldSkin" includeIn="normal,couple" touchEnabled="false"/>
+				<e:Button x="284" label="按钮" id="guess_option2" includeIn="normal,couple" top="0" name="2">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+							<e:Image width="100%" height="100%" source="guesscards_918" source.down="guesscards_919"/>
+							<e:Label id="labelDisplay1" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Image y="12" includeIn="normal,couple" x="325" source="guesscards_928" touchEnabled="false"/>
+				<e:Label id="lbguess3" text="(赢6倍)" x="313" y="45" includeIn="normal,couple" fontFamily="Microsoft YaHei" bold="true" size="24" textAlign="center" textColor="0x6f130d" touchEnabled="false"/>
+
+				<ns1:GCardsGold id="GCGold2" y="29" skinName="components.GCardsGoldSkin" x="289" includeIn="normal,couple" touchEnabled="false"/>
+				<e:Button id="guess_option3" label="按钮" x="9" includeIn="normal,couple" top="89" name="3">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+							<e:Image width="100%" height="100%" source="guesscards_918" source.down="guesscards_919"/>
+							<e:Label id="labelDisplay2" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Label id="lbguess4" text="(赢15倍)" x="31" y="138" includeIn="normal,couple" fontFamily="Microsoft YaHei" bold="true" size="24" textAlign="center" textColor="0x6f130d" touchEnabled="false"/>
+				<e:Image y="105" includeIn="normal,couple" x="42" source="guesscards_929" touchEnabled="false"/>
+				<ns1:GCardsGold id="GCGold3" y="124" skinName="components.GCardsGoldSkin" x="15" includeIn="normal,couple" touchEnabled="false"/>
+				<e:Button x="147" label="按钮" id="guess_option4" includeIn="normal,couple" top="89" name="4">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+							<e:Image width="100%" height="100%" source="guesscards_918" source.down="guesscards_919"/>
+							<e:Label id="labelDisplay3" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Image y="108" includeIn="normal,couple" x="190" source="guesscards_930" touchEnabled="false"/>
+				<e:Label id="lbguess5" text="(赢20倍)" x="168" y="138" includeIn="normal,couple" fontFamily="Microsoft YaHei" bold="true" size="24" textAlign="center" textColor="0x6f130d" touchEnabled="false"/>
+
+				<ns1:GCardsGold x="153" y="124" skinName="components.GCardsGoldSkin" id="GCGold4" includeIn="normal,couple" touchEnabled="false"/>
+				<e:Button id="guess_option5" label="按钮" x="284" includeIn="normal,couple" top="89" name="5">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+							<e:Image width="100%" height="100%" source="guesscards_918" source.down="guesscards_919"/>
+							<e:Label id="labelDisplay4" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Label id="lbguess6" text="(赢300倍)" x="299" y="138" includeIn="normal,couple" fontFamily="Microsoft YaHei" bold="true" size="24" textAlign="center" textColor="0x6f130d" touchEnabled="false"/>
+				<e:Image y="110" includeIn="normal,couple" x="317" source="guesscards_931" touchEnabled="false"/>
+				<ns1:GCardsGold id="GCGold5" y="124" skinName="components.GCardsGoldSkin" x="290" includeIn="normal,couple" touchEnabled="false"/>
+				<e:Label id="lbGuessConsume" y="186" size="20" text="每次点击消耗1000金豆，可重复点击" fontFamily="微软雅黑" horizontalCenter="-0.5" textColor="0x6f130d" touchEnabled="false"/>
+			</e:Group>
+			<e:Image id="guessWrong" source="guesscards_955" horizontalCenter="0" top="181" touchEnabled="false" locked="true"/>
+			<e:Group id="grpGuessRight" height="109" width="330" horizontalCenter="0" top="181" touchEnabled="false">
+				<e:Image source="guesscards_957" includeIn="normal,couple" y="0" x="0" locked="true"/>
+				<e:Image includeIn="normal,couple" x="29" y="27" source="guesscards_952" locked="true"/>
+				<e:Image id="gcardtype" y="27" includeIn="normal,couple" x="220" source="guesscards_927" locked="true"/>
+				<e:Image y="68" includeIn="normal,couple" x="80" source="guesscards_956" locked="true"/>
+				<e:BitmapLabel id="gwingold" x="162" y="72" text="x9000" font="font_num_16" letterSpacing="-3" locked="true"/>
+				<e:Image source="icon_gold2" y="72" x="139" locked="true"/>
+				<e:Image id="gcgoldLight0" source="play_animate_gold_light" y="0" horizontalCenter="0" locked="true"/>
+				<e:Image id="gcgoldLight1" source="play_animate_gold_light" y="40" horizontalCenter="-2"/>
+			</e:Group>
+			<e:Group id="grpGRLight" height="170" width="170" x="-10" y="82" includeIn="normal,couple" touchEnabled="false" locked="true">
+				<e:Image id="star0" y="20" includeIn="normal,couple" x="20" source="guesscards_950"/>
+				<e:Image source="guesscards_950" x="106" y="43" includeIn="normal,couple" id="star1"/>
+				<e:Image source="guesscards_950" id="star2" y="74" includeIn="normal,couple" x="131"/>
+				<e:Image id="light" source="guesscards_942" includeIn="normal,couple" verticalCenter="0" horizontalCenter="0"/>
+				<e:Image includeIn="normal,couple" source="guesscards_943" horizontalCenter="0" verticalCenter="25.5"/>
+			</e:Group>
+			<ns1:FlyGold id="flygold0" x="446" y="302" skinName="components.FlyGoldSkin" includeIn="normal,couple" visible="false"/>
+			<ns1:FlyGold x="443" y="150" skinName="components.FlyGoldSkin" id="flygold1" includeIn="normal,couple" visible="false"/>
+			<ns1:FlyGold id="flygold2" y="160" skinName="components.FlyGoldSkin" x="453" includeIn="normal,couple" visible="false"/>
+			<ns1:FlyGold x="443" y="150" skinName="components.FlyGoldSkin" includeIn="normal,couple" id="flygold3" visible="false"/>
+			<ns1:FlyGold id="flygold4" y="160" skinName="components.FlyGoldSkin" includeIn="normal,couple" x="453" visible="false"/>
+			<ns1:FlyGold x="463" y="170" skinName="components.FlyGoldSkin" includeIn="normal,couple" id="flygold5" visible="false"/>
+			<ns1:FlyGold id="flygold6" y="180" skinName="components.FlyGoldSkin" includeIn="normal,couple" x="473" visible="false"/>
+			<ns1:FlyGold x="483" y="190" skinName="components.FlyGoldSkin" includeIn="normal,couple" id="flygold7" visible="false"/>
+			<ns1:FlyGold id="flygold8" y="200" skinName="components.FlyGoldSkin" includeIn="normal,couple" x="493" visible="false"/>
+			<ns1:FlyGold x="503" y="210" skinName="components.FlyGoldSkin" includeIn="normal,couple" id="flygold9" visible="false"/>
+			<ns1:FlyGold id="flygold10" y="220" skinName="components.FlyGoldSkin" includeIn="normal,couple" x="513" visible="false"/>
+			<ns1:FlyGold x="523" y="230" skinName="components.FlyGoldSkin" includeIn="normal,couple" id="flygold11" visible="false"/>
+			<ns1:FlyGold id="flygold12" y="240" skinName="components.FlyGoldSkin" includeIn="normal,couple" x="533" visible="false"/>
+			<ns1:FlyGold x="543" y="250" skinName="components.FlyGoldSkin" includeIn="normal,couple" id="flygold13" visible="false"/>
+			<ns1:FlyGold id="flygold14" y="260" skinName="components.FlyGoldSkin" includeIn="normal,couple" x="553" visible="false"/>
+			<ns1:FlyGold x="563" y="270" skinName="components.FlyGoldSkin" includeIn="normal,couple" id="flygold15" visible="false"/>
+		</e:Group>
+
+
+		<e:BitmapLabel id="labChange2" text="+123" font="font_num_1" y="270" left="209" touchEnabled="false" locked="true"/>
+		<e:BitmapLabel id="labChange0" text="+123" font="font_num_1" horizontalCenter="0" y="365" touchEnabled="false" locked="true"/>
+		<e:BitmapLabel y="271" text="+123" font="font_num_1" id="labChange1" right="209" touchEnabled="false" locked="true"/>
+		<e:Group id="myGetInfoGroup" includeIn="normal" y="300" horizontalCenter="-40" touchEnabled="false" width="400" locked="true">
+			<e:Image id="myInfoBgImg" includeIn="normal" y="0" source="play_endBg" scaleX="1" scaleY="1" width="100" touchEnabled="false" scale9Grid="20,13,12,15" right="0"/>
+			<e:Label id="myInfoLabel" text="" y="9" textColor="0x8e4b1a" fontFamily="Microsoft YaHei" size="20" touchEnabled="false" verticalAlign="middle" textAlign="right" right="20"/>
+			<e:Image id="myBtnbgImg" includeIn="normal" y="46.35" scale9Grid="19,13,50,15" scaleX="1" scaleY="1" source="common_btn_blue_h" anchorOffsetX="0" width="80" anchorOffsetY="0" height="47" right="0"/>
+			<e:Label id="myBtnLabel" text="封顶" y="58" textColor="0x173d70" fontFamily="Microsoft YaHei" size="26" bold="true" touchEnabled="false" right="15"/>
+		</e:Group>
+		<e:Group id="leftGetInfoGroup" includeIn="normal" y="220" left="120" touchEnabled="false" width="300" locked="true">
+			<e:Image id="leftInfoBgImg" includeIn="normal" y="0" source="play_endBg" scaleX="1" scaleY="1" touchEnabled="false" scale9Grid="56,13,13,15" width="100" left="0"/>
+			<e:Label id="leftInfoLabel" text="" y="9" textColor="0x8E4B1A" fontFamily="Microsoft YaHei" size="20" touchEnabled="false" verticalAlign="middle" textAlign="left" left="20"/>
+			<e:Image id="leftBtnbgImg" includeIn="normal" y="46.35" scale9Grid="19,13,50,15" scaleX="1" scaleY="1" source="common_btn_blue_h" anchorOffsetX="0" width="80" anchorOffsetY="0" height="47" left="0"/>
+			<e:Label id="leftBtnLabel" text="封顶" y="58" textColor="0x173D70" fontFamily="Microsoft YaHei" size="26" bold="true" touchEnabled="false" left="15"/>
+		</e:Group>
+		<e:Group id="rightGetInfoGroup" includeIn="normal" y="220" right="120" touchEnabled="false" width="300" locked="true">
+			<e:Image id="rightInfoBgImg" includeIn="normal" y="0" source="play_endBg" scaleX="1" scaleY="1" width="100" touchEnabled="false" scale9Grid="20,13,12,15" right="0"/>
+			<e:Label id="rightInfoLabel" text="" y="9" textColor="0x8E4B1A" fontFamily="Microsoft YaHei" size="20" touchEnabled="false" verticalAlign="middle" textAlign="right" right="20"/>
+			<e:Image id="rightBtnbgImg" includeIn="normal" y="46" scale9Grid="19,13,50,15" scaleX="1" scaleY="1" source="common_btn_blue_h" anchorOffsetX="0" width="80" anchorOffsetY="0" height="47" right="0"/>
+			<e:Label id="rightBtnLabel" text="封顶" y="58" textColor="0x173D70" fontFamily="Microsoft YaHei" size="26" bold="true" touchEnabled="false" right="15"/>
+		</e:Group>
+		<e:Group id="fiveCardGroup" includeIn="normal" y="578" anchorOffsetY="0" height="61" anchorOffsetX="0" width="275" right="90" visible="false">
+			<e:Image id="bgImg" x="0" y="2" scaleX="1" scaleY="1" touchEnabled="false" source="play_five_bg" anchorOffsetY="0" height="58" anchorOffsetX="0" width="274" scale9Grid="10,9,17,16"/>
+			<e:Group id="fiveCardContainer" height="58" y="0" width="219" x="6" anchorOffsetY="0" anchorOffsetX="0"/>
+			<e:Image id="fiveRuleImg" x="251" scaleX="1" scaleY="1" touchEnabled="true" anchorOffsetY="19.5" anchorOffsetX="18" source="play_five_rule" y="29"/>
+			<e:Label id="fiveLabel" text="集牌赢奖励" x="62" y="17" fontFamily="微软雅黑" size="26" textAlign="center" touchEnabled="false" textColor="0x4f2801" bold="true" verticalAlign="middle"/>
+			<e:Label id="fiveRewLabel" text="" x="28" y="-24" fontFamily="微软雅黑" size="32" textAlign="center" touchEnabled="false" bold="true" verticalAlign="middle" anchorOffsetX="0" width="240" textColor="0xfff379" stroke="4" strokeColor="0x6f3302"/>
+			<e:Image id="openFiveImg" x="116" y="30" scaleX="1" scaleY="1" touchEnabled="true" anchorOffsetY="24.5" anchorOffsetX="101.5" scale9Grid="10,9,17,16" source="play_five_open"/>
+		</e:Group>
+		<e:Group id="grpTask" includeIn="normal,couple" anchorOffsetX="0" scaleX="1" scaleY="1" touchEnabled="true" bottom="3" right="5">
+			<e:Image id="mRed_img0" scaleX="1" scaleY="1" touchEnabled="true" anchorOffsetX="28" anchorOffsetY="26" source="play_task" y="21" horizontalCenter="0"/>
+			<e:Image id="overTaskBgImg" x="35" y="-11.5" source="task_tipbg" touchEnabled="false"/>
+			<e:Label id="overTaskLabel" text="" y="1" fontFamily="微软雅黑" size="20" textColor="0xFFFFFF" textAlign="center" anchorOffsetX="20" anchorOffsetY="10" width="40" touchEnabled="false" height="20" x="50"/>
+		</e:Group>
+		<e:Group id="grpGuessNotice" includeIn="normal" touchEnabled="false" right="129" width="200" y="530" visible="false">
+			<e:Image touchEnabled="false" rotation="360" scaleX="-1" source="play_endBg" scale9Grid="61,18,7,8" verticalCenter="0" horizontalCenter="0" width="100%" anchorOffsetY="0"/>
+			<e:Label y="10" text="下局地主牌竞猜" fontFamily="微软雅黑" textAlign="center" size="22" x="25" touchEnabled="false" textColor="0x173d70" bold="true"/>
+		</e:Group>
+		<e:Group id="grpGuess" includeIn="normal,couple" anchorOffsetX="0" scaleX="1" scaleY="1" touchEnabled="true" bottom="3" right="140" visible="false">
+			<e:Image id="guessImg" scaleX="1" scaleY="1" touchEnabled="true" anchorOffsetX="28" anchorOffsetY="26" y="21" horizontalCenter="0" source="play_btn_guess"/>
+		</e:Group>
+		<e:Group id="grpRed" includeIn="normal,couple" anchorOffsetX="0" scaleX="1" scaleY="1" right="10" touchEnabled="false" height="110" y="320">
+			<e:Image id="mRed_img" x="50" y="54" scaleX="1" scaleY="1" touchEnabled="true" anchorOffsetX="51.5" anchorOffsetY="44.5" source="play_btn_chou"/>
+			<e:Image id="redCountBg_img" x="72.11" y="9.5" source="task_tipbg" touchEnabled="false"/>
+			<e:Label id="redCount" text="" x="86.5" y="22" fontFamily="微软雅黑" size="20" textColor="0xffffff" textAlign="center" anchorOffsetX="20" anchorOffsetY="10" width="40" touchEnabled="false" height="20"/>
+			<e:List id="redList" y="84.5" itemRendererSkinName="components.RedPacketProcessSkin" scaleX="1" horizontalCenter="-2">
+			<e:ArrayCollection>
+				<e:Array>
+				<e:Object label="数据1"/>
+				<e:Object label="数据2"/>
+				<e:Object label="数据3"/>
+				<e:Object label="null"/>
+				<e:Object label="null"/>
+				</e:Array>
+			</e:ArrayCollection>
+			<e:layout>
+				<e:HorizontalLayout gap="2"/>
+			</e:layout>
+			</e:List>
+		</e:Group>
+		<e:Group id="grpAward" visible.match="false" visible.personalGame="false" top="15" left="120" width="187">
+			<e:Image id="iconAward" source="play_blessing_bag" horizontalCenter="-58" verticalCenter="-7.5"/>
+			<e:BitmapLabel id="lblAward" font="font_num_9" text="0.00" y="52.31" horizontalCenter="-60" verticalAlign="center" textAlign="center" width="105"/>
+			<e:Group id="grpAwardStatus" x="67.55" y="16.08">
+			<e:Image id="bgAwardStatus" x="0" y="0" source="play_blessing_bag_time" scaleX="1.2" scaleY="1.2"/>
+			<e:BitmapLabel id="lblAwardStatus" text="0:00" font="font_num_0" scaleX="0.8" scaleY="0.8" y="9" width="92" text.couple="1/3" horizontalCenter="0" textAlign="center"/>
+				<e:Label id="lblRound" text="局" verticalCenter="-2.5" right="8" size="24" fontFamily="Microsoft YaHei" />
+			</e:Group>
+			<e:Group id="redNumGrp" x="40" y="-10" touchChildren="false">
+				<e:Image id="redNBgimg" x="0" y="0" source="task_tipbg" touchEnabled="false" scaleX="1" scaleY="1"/>
+				<e:Label id="redNumLabel" text="0" fontFamily="微软雅黑" size="20" textColor="0xFFFFFF" textAlign="center" anchorOffsetX="20" anchorOffsetY="10" width="40" touchEnabled="false" height="20" scaleX="1" scaleY="1" y="12" x="15"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="grpGiveWay" left="120" top="120" left.personalGame="180" visible.personalGame="false" visible.match="false" visible.normal="false" top.couple="200" left.couple="50">
+			<e:Image id="titGiveWaty" x="0" y="0" source="play_give_way"/>
+			<e:BitmapLabel id="lblGiveWay" text="0" y="-12" x="62" font="font_num_6"/>
+			<e:Label id="lblGiveWayDes" text="" y="40.28" size="20" fontFamily="Microsoft YaHei" horizontalCenter="0"/>
+		</e:Group>
+		<e:Image id="redNormal_img" y="430" source="play_red_pop" width="143" height="153" anchorOffsetX="71.5" anchorOffsetY="76.5" touchEnabled="true" right="106" includeIn="normal,couple"/>
+
+	</e:Group>
+	<e:Button id="btnShare" horizontalCenter="0" verticalCenter="121" includeIn="personalGame" label="立即邀请好友" visible="false" locked="true">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="personal_btn_share_c"/>
+			<e:Label id="labelDisplay"  x="34" y ="10" size="20" text="立即邀请好友" fontFamily="微软雅黑" textColor="0x05612b"/>
+			</e:Skin>
+		</e:skinName>
+
+	</e:Button>
+	<e:Group id="personalInfo_group" height="38" width="470" includeIn="personalGame" bottom="11" horizontalCenter="85" visible="false">
+		<e:Image source="play_personal_info_bg" horizontalCenter="0" verticalCenter="0" locked="true"/>
+		<e:Label id="lbRoomID" text="" y="9" size="20" fontFamily="微软雅黑" height="20" horizontalCenter="-116" locked="true"/>
+		<e:Label id="lbLimit" y="9" text="" fontFamily="微软雅黑" size="20" horizontalCenter="60" locked="true"/>
+		<e:Label id="lbRound" y="9" size="20" text="" fontFamily="微软雅黑" horizontalCenter="198" locked="true"/>
+	</e:Group>
+	<e:Button id="btnStart" includeIn="personalGame" horizontalCenter="0" verticalCenter="127" locked="true" visible="false">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="play_btn_blue_n" source.down="play_btn_blue_h"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image id="imgStart" source="play_btn_word_start" includeIn="personalGame" verticalCenter="122.5" horizontalCenter="0" touchEnabled="false" visible="false" locked="true"/>
+	<e:Group id="match9Rule_group" width="960" height="640" x="0" y="0" locked="true" visible="false"/>
+	<e:Button id="match9RuleAniClose_btn" label="" includeIn="match,couple" right="40" top="8" locked="true" visible="false">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="common_close_n" source.down="common_close_h"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image id="match9WaitOther_img" x="480" y="320" source="match9_over" anchorOffsetY="72" anchorOffsetX="346" includeIn="match,couple" visible="false" locked="true"/>
+
+</e:Skin>

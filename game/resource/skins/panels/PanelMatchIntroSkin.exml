@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PanelMatchIntroSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="648" height="433">
+	<e:Image source="match_panel_bg" scale9Grid="81,98,486,5" height="433"/>
+	<e:Image source="match_panel_bg_2" y="80" scale9Grid="283,42,14,254" width="600" x="24"/>
+	<e:Label id="labTitle" text="赛事介绍" y="25" textColor="0xF4B64B" horizontalCenter="0" bold="true"/>
+	<e:Button id="btnClose" y="310" horizontalCenter="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_btn_back_small_n" source.down="common_btn_back_small_h"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Scroller id="info_scroller" y="110" x="99" scrollPolicyV="on" height="180">
+		<e:Group>
+			<e:Label id="labContent" textColor="0x0" text="line" y="0" width="450" lineSpacing="8" x="0" scaleX="1" scaleY="1" multiline="false" verticalAlign="justify" size="26"/>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

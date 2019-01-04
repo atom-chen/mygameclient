@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin  class="scenes.GameLLKSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<w:Config id="1631fca0e08"/>
+	<e:Image id="bg" scaleX="1" scaleY="1" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" source="lg_bg_png"/>
+	<e:Group id="pipei" width="750" height="1334" horizontalCenter="0" top="0">
+		<e:Image id="gameback" scaleX="1" left="20" top="20" source="lg_back_btn"/>
+		<e:Image id="gamehelp" left="120" top="20" source="lg_question_btn"/>
+		<e:Label id="title" text="正在匹配中" scaleX="1" scaleY="1" size="60" horizontalCenter="0" top="180" borderColor="0x160202" textAlign="right" wordWrap="false" textColor="0xFFFFFF"/>
+		<e:Label id="timeCount" text="0 s" size="30" textColor="0xFFFFFF" horizontalCenter="0" top="260"/>
+		<e:Image id="large" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" source="lg_rader_xl_png"/>
+		<e:Image id="big" horizontalCenter="0" verticalCenter="0" source="lg_rader_l_png"/>
+		<e:Image id="small" horizontalCenter="0" verticalCenter="0" source="lg_rader_s_png"/>
+		<e:Label id="tip" text="两个图案之间的连线不能超过2个弯" scaleX="1" scaleY="1" size="30" borderColor="0x160202" textAlign="center" wordWrap="false" textColor="0xFFFFFF" verticalAlign="middle" horizontalCenter="0" bottom="200"/>
+		<ns1:Head id="MyHead1" verticalCenter="0" x="290" skinName="components.HeadSkin"/>
+		<e:Label id="vs" text="VS" scaleX="1" scaleY="1" size="80" borderColor="0x160202" textAlign="center" wordWrap="false" textColor="0xFFFFFF" verticalAlign="middle" horizontalCenter="0" verticalCenter="0" visible="false"/>
+		<ns1:Head id="HisHead1" skinName="components.HeadSkin" verticalCenter="0" horizontalCenter="200" visible="false"/>
+	</e:Group>
+	<e:Group id="start" width="750" height="1334" horizontalCenter="0" top="0" visible="false">
+		<e:Rect width="600" height="60" scaleX="1" scaleY="1" horizontalCenter="0" top="114" fillColor="0x167b82" strokeColor="0xffffff" strokeWeight="6"/>
+		<e:Rect id="myScore" height="46" y="121" scaleX="1" scaleY="1" fillColor="0x4452da" left="110"/>
+		<e:Rect id="hisScore" height="46" y="121" scaleX="1" scaleY="1" right="107" fillColor="0xce1f69"/>
+		<e:Image id="zhu" y="80" horizontalCenter="0" source="lg_icon_finish"/>
+		<ns1:Head id="MyHead2" skinName="components.HeadSkin" top="103" horizontalCenter="-289.5" width="85" height="85"/>
+		<ns1:Head id="HisHead2" skinName="components.HeadSkin" top="103" horizontalCenter="290.5" width="85" height="85"/>
+		<e:Label id="timeCount1" text="倒计时60秒" y="176.37" size="80" textColor="0x000000" textAlign="center" horizontalCenter="0.5" visible="false"/>
+		<e:Image id="wangge" y="260" scaleX="1.1" scaleY="1.1" horizontalCenter="0" source="llk_linkboxbg_png"/>
+		<e:Group id="picGroup" width="750" height="1334" horizontalCenter="0" top="0">
+			<e:Image id="itemImg0" rotation="0" y="275" x="32" source="llk_icon1" width="90" height="90"/>
+			<e:Image id="itemImg1" rotation="0" y="275" x="131" source="llk_icon2" width="90" height="90"/>
+			<e:Image id="itemImg2" rotation="0" y="275" x="230" source="llk_icon3" width="90" height="90"/>
+			<e:Image id="itemImg3" rotation="0" y="275" x="329" source="llk_icon4" width="90" height="90"/>
+			<e:Image id="itemImg4" rotation="0" y="275" x="428" source="llk_icon5" width="90" height="90"/>
+			<e:Image id="itemImg5" rotation="0" y="275" x="527" source="llk_icon6" width="90" height="90"/>
+			<e:Image id="itemImg6" rotation="0" y="275" x="626" source="llk_icon7" width="90" height="90"/>
+			<e:Image id="itemImg7" rotation="0" y="374" x="32" source="llk_icon1" width="90" height="90"/>
+			<e:Image id="itemImg8" rotation="0" y="374" x="131" source="llk_icon2" width="90" height="90"/>
+			<e:Image id="itemImg9" rotation="0" y="374" x="230" source="llk_icon3" width="90" height="90"/>
+			<e:Image id="itemImg10" rotation="0" y="374" x="329" source="llk_icon4" width="90" height="90"/>
+			<e:Image id="itemImg11" rotation="0" y="374" x="428" source="llk_icon5" width="90" height="90"/>
+			<e:Image id="itemImg12" rotation="0" y="374" x="527" source="llk_icon6" width="90" height="90"/>
+			<e:Image id="itemImg13" rotation="0" y="374" x="626" source="llk_icon7" width="90" height="90"/>
+			<e:Image id="itemImg14" rotation="0" y="473" x="32" source="llk_icon1" width="90" height="90"/>
+			<e:Image id="itemImg15" rotation="0" y="473" x="131" source="llk_icon2" height="90" width="90"/>
+			<e:Image id="itemImg16" rotation="0" y="473" x="230" source="llk_icon3" height="90" width="90"/>
+			<e:Image id="itemImg17" rotation="0" y="473" x="329" source="llk_icon4" height="90" width="90"/>
+			<e:Image id="itemImg18" rotation="0" y="473" x="428" source="llk_icon5" height="90" width="90"/>
+			<e:Image id="itemImg19" rotation="0" y="473" x="527" source="llk_icon6" height="90" width="90"/>
+			<e:Image id="itemImg20" rotation="0" y="473" x="626" source="llk_icon7" height="90" width="90"/>
+			<e:Image id="itemImg21" rotation="0" y="572" x="32" source="llk_icon1" width="90" height="90"/>
+			<e:Image id="itemImg22" rotation="0" y="572" x="131" source="llk_icon2" height="90" width="90"/>
+			<e:Image id="itemImg23" rotation="0" y="572" x="230" source="llk_icon3" height="90" width="90"/>
+			<e:Image id="itemImg24" rotation="0" y="572" x="329" source="llk_icon4" height="90" width="90"/>
+			<e:Image id="itemImg25" rotation="0" y="572" x="428" source="llk_icon5" height="90" width="90"/>
+			<e:Image id="itemImg26" rotation="0" y="572" x="527" source="llk_icon6" height="90" width="90"/>
+			<e:Image id="itemImg27" rotation="0" y="572" x="626" source="llk_icon7" height="90" width="90"/>
+			<e:Image id="itemImg28" rotation="0" y="671" x="32" source="llk_icon1" width="90" height="90"/>
+			<e:Image id="itemImg29" rotation="0" y="671" x="131" source="llk_icon2" height="90" width="90"/>
+			<e:Image id="itemImg30" rotation="0" y="671" x="230" source="llk_icon3" height="90" width="90"/>
+			<e:Image id="itemImg31" rotation="0" y="671" x="329" source="llk_icon4" height="90" width="90"/>
+			<e:Image id="itemImg32" rotation="0" y="671" x="428" source="llk_icon5" height="90" width="90"/>
+			<e:Image id="itemImg33" rotation="0" y="671" x="527" source="llk_icon6" height="90" width="90"/>
+			<e:Image id="itemImg34" rotation="0" y="671" x="626" source="llk_icon7" height="90" width="90"/>
+			<e:Image id="itemImg35" rotation="0" y="770" x="32" source="llk_icon1" width="90" height="90"/>
+			<e:Image id="itemImg36" rotation="0" y="770" x="131" source="llk_icon2" width="90" height="90"/>
+			<e:Image id="itemImg37" rotation="0" y="770" x="230" source="llk_icon3" width="90" height="90"/>
+			<e:Image id="itemImg38" rotation="0" y="770" x="329" source="llk_icon4" width="90" height="90"/>
+			<e:Image id="itemImg39" rotation="0" y="770" x="428" source="llk_icon5" width="90" height="90"/>
+			<e:Image id="itemImg40" rotation="0" y="770" x="527" source="llk_icon6" width="90" height="90"/>
+			<e:Image id="itemImg41" rotation="0" y="770" x="626" source="llk_icon7" width="90" height="90"/>
+			<e:Image id="itemImg42" rotation="0" y="869" x="32" source="llk_icon1" width="90" height="90"/>
+			<e:Image id="itemImg43" rotation="0" y="869" x="131" source="llk_icon2" width="90" height="90"/>
+			<e:Image id="itemImg44" rotation="0" y="869" x="230" source="llk_icon3" width="90" height="90"/>
+			<e:Image id="itemImg45" rotation="0" y="869" x="329" source="llk_icon4" width="90" height="90"/>
+			<e:Image id="itemImg46" rotation="0" y="869" x="428" source="llk_icon5" width="90" height="90"/>
+			<e:Image id="itemImg47" rotation="0" y="869" x="527" source="llk_icon6" width="90" height="90"/>
+			<e:Image id="itemImg48" rotation="0" y="869" x="626" source="llk_icon7" width="90" height="90"/>
+			<e:Image id="itemImg49" rotation="0" y="968" x="32" source="llk_icon1" width="90" height="90"/>
+			<e:Image id="itemImg50" rotation="0" y="968" x="131" source="llk_icon2" width="90" height="90"/>
+			<e:Image id="itemImg51" rotation="0" y="968" x="230" source="llk_icon3" width="90" height="90"/>
+			<e:Image id="itemImg52" rotation="0" y="968" x="329" source="llk_icon4" width="90" height="90"/>
+			<e:Image id="itemImg53" rotation="0" y="968" x="428" source="llk_icon5" width="90" height="90"/>
+			<e:Image id="itemImg54" rotation="0" y="968" x="527" source="llk_icon6" width="90" height="90"/>
+			<e:Image id="itemImg55" rotation="0" y="968" x="626" source="llk_icon7" width="90" height="90"/>
+			<e:Image id="itemImg56" rotation="0" y="1067" x="32" source="llk_icon1" width="90" height="90"/>
+			<e:Image id="itemImg57" rotation="0" y="1067" x="131" source="llk_icon2" width="90" height="90"/>
+			<e:Image id="itemImg58" rotation="0" y="1067" x="230" source="llk_icon3" width="90" height="90"/>
+			<e:Image id="itemImg59" rotation="0" y="1067" x="329" source="llk_icon4" width="90" height="90"/>
+			<e:Image id="itemImg60" rotation="0" y="1067" x="428" source="llk_icon5" width="90" height="90"/>
+			<e:Image id="itemImg61" rotation="0" y="1067" x="527" source="llk_icon6" width="90" height="90"/>
+			<e:Image id="itemImg62" rotation="0" y="1067" x="626" source="llk_icon7" width="90" height="90"/>
+			<e:Image id="itemImg63" rotation="0" y="1166" x="32" source="llk_icon1" width="90" height="90"/>
+			<e:Image id="itemImg64" rotation="0" y="1166" x="131" source="llk_icon2" width="90" height="90"/>
+			<e:Image id="itemImg65" rotation="0" y="1166" x="230" source="llk_icon3" width="90" height="90"/>
+			<e:Image id="itemImg66" rotation="0" y="1166" x="329" source="llk_icon4" width="90" height="90"/>
+			<e:Image id="itemImg67" rotation="0" y="1166" x="428" source="llk_icon5" width="90" height="90"/>
+			<e:Image id="itemImg68" rotation="0" y="1166" x="527" source="llk_icon6" width="90" height="90"/>
+			<e:Image id="itemImg69" rotation="0" y="1166" x="626" source="llk_icon7" width="90" height="90"/>
+		</e:Group>
+		<e:Image id="gameExit" left="20" top="20" source="lg_back_btn"/>
+		<e:Button id="helpBtn" label="" enabled="true" left="120" top="20">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="lg_question_btn"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image id="meng" scaleX="1" scaleY="1" width="750" height="1334" verticalCenter="0" horizontalCenter="0" x="0" y="0" alpha="0.4" source="lg_bg_png" visible="false"/>
+		<e:Image id="ready" horizontalCenter="0" verticalCenter="0" source="lg_READY" visible="false"/>
+		<e:Image id="go" horizontalCenter="0" verticalCenter="0" source="lg_GO" visible="false"/>
+	</e:Group>
+	<e:Group id="result" width="750" height="1334" horizontalCenter="0" y="0" visible="false">
+		<e:Image id="Gresult" horizontalCenter="0" top="0" source="lg_result_draw"/>
+		<e:Label id="Gnum" text="今日已对决1场" scaleX="1" scaleY="1" textAlign="center" y="470" backgroundColor="0xa37416" bold="true" horizontalCenter="0" textColor="0x000000"/>
+		<ns1:Head id="MyHead3" skinName="components.HeadSkin" horizontalCenter="-190" x="50" verticalCenter="-50"/>
+		<ns1:Head id="HisHead3" skinName="components.HeadSkin" horizontalCenter="190" x="630" verticalCenter="-50"/>
+		<e:Label id="resultScore" text="1 : 1" scaleX="1" scaleY="1" textAlign="center" backgroundColor="0xA37416" bold="true" size="56" horizontalCenter="0" x="366" verticalCenter="-50" textColor="0xffffff"/>
+		<e:Label id="GetNum" text="你获得200金豆" scaleX="1" scaleY="1" textAlign="center" backgroundColor="0xA37416" size="56" horizontalCenter="0" x="366" verticalCenter="150" textColor="0xffffff"/>
+		<e:Image id="againBtn" width="480" horizontalCenter="0" y="980.0000000000001" x="135" scaleX="1" scaleY="1" scale9Grid="48,40,19,8" source="lg_result_btn_blue"/>
+		<e:Label id="lab1" text="继续游戏" scaleX="1" scaleY="1" y="1007" backgroundColor="0xA37416" bold="true" textColor="0xFFFFFF" horizontalCenter="0.5" size="35" x="197"/>
+		<e:Image id="changeGame" width="480" horizontalCenter="0" y="1110" scale9Grid="48,41,20,6" x="135" scaleX="1" scaleY="1" source="lg_result_btn_red"/>
+		<e:Label id="lab2" text="换个游戏" scaleX="1" scaleY="1" y="1137" backgroundColor="0xA37416" bold="true" textColor="0xFFFFFF" horizontalCenter="0.5" size="35" verticalAlign="middle" x="304"/>
+		<e:Image id="changePerson" horizontalCenter="0" width="480" y="1180" scale9Grid="48,41,20,6" x="135" scaleX="1" scaleY="1" source="lg_result_btn_white" visible="false"/>
+		<e:Label id="lab3" text="换个对手" scaleX="1" scaleY="1" y="1206" backgroundColor="0xA37416" bold="true" textColor="0xFFFFFF" horizontalCenter="0.5" size="35" verticalAlign="middle" x="304" visible="false"/>
+		<e:Image id="gameback0" scaleX="1" left="20" top="20" source="lg_back_btn"/>
+		<e:Image id="gamehelp0" left="120" top="20" source="lg_question_btn" x="10" y="10"/>
+	</e:Group>
+	<e:Group id="Exit" width="750" height="1334" horizontalCenter="0" verticalCenter="0" x="10" y="10" visible="false">
+		<e:Image width="640" height="100" scale9Grid="13,16,7,8" horizontalCenter="0" verticalCenter="-300" source="lg_mask_t"/>
+		<e:Image width="640" height="400" scale9Grid="12,11,7,5" horizontalCenter="0" verticalCenter="-50" source="lg_mask_c"/>
+		<e:Label text="温馨提示" scaleX="1" scaleY="1" y="350" size="40" verticalAlign="middle" textAlign="center" horizontalCenter="0" textColor="0xFFFFFF"/>
+		<e:Label text="退出本局记为认输\n是否确认退出?" scaleX="1" scaleY="1" y="496" textColor="0x000000" size="40" verticalAlign="middle" textAlign="center" horizontalCenter="0"/>
+		<e:Image id="goon" y="660" source="lg_result_btn_blue" scale9Grid="49,40,19,8" width="280" horizontalCenter="-150"/>
+		<e:Label id="lab4" text="继续玩" y="686" horizontalCenter="-150" size="40"/>
+		<e:Image id="sure" width="280" y="660" source="lg_result_btn_red" scale9Grid="50,39,14,6" horizontalCenter="150"/>
+		<e:Label id="lab5" text="认输退出" y="686" size="40" horizontalCenter="150" bold="true"/>
+	</e:Group>
+	<e:Group id="help" width="750" height="1334" horizontalCenter="0" verticalCenter="0" visible="false">
+		<e:Image width="640" height="100" scale9Grid="13,16,7,8" horizontalCenter="0" verticalCenter="-340" source="lg_mask_t"/>
+		<e:Image id="closeBtn" verticalCenter="-350" source="lg_close" right="60"/>
+		<e:Image width="640" height="800" scale9Grid="12,11,7,5" horizontalCenter="0" y="370" source="lg_mask_c"/>
+		<e:Label text="游戏说明" scaleX="1" scaleY="1" size="40" verticalAlign="middle" textAlign="center" horizontalCenter="0" top="310" textColor="0x000000" bold="true"/>
+		<e:Label text="规则" scaleX="1" scaleY="1" y="390" textColor="0x000000" size="40" verticalAlign="middle" textAlign="center" bold="true" x="105"/>
+		<e:Label id="ruleTips" text="1、点击两个相同的动物进行消除\n2、两个相同的动物之间的连线，最多只能拐两个弯\n3、消除一次获得1积分，游戏结束后比较积分差，1积分20金豆。获取别人金豆或输金豆。" scaleX="1" scaleY="1" y="450" backgroundColor="0xA37416" size="30" width="530" verticalAlign="middle" textAlign="left" horizontalCenter="0" textColor="0x000000" lineSpacing="10"/>
+		<e:Label text="玩法" scaleX="1" scaleY="1" y="696.73" backgroundColor="0xA37416" bold="true" size="35" verticalAlign="middle" textColor="0x000000" x="105"/>
+		<e:Image scaleX="1" scaleY="1" scale9Grid="48,41,20,6" horizontalCenter="0" verticalCenter="159" source="llk_tips"/>
+		<e:Label id="playTips" text="点击链接两个相同的动物" scaleX="1" scaleY="1" y="916.73" textColor="0x000000" size="30" verticalAlign="middle" textAlign="center" horizontalCenter="0"/>
+		<e:Label text="胜负判断" scaleX="1" scaleY="1" y="976.73" textColor="0x000000" size="40" verticalAlign="middle" textAlign="center" bold="true" x="105"/>
+		<e:Label text="1、60S内先将全部动物消除的人获胜\n2、若游戏未结束，先退出的一方算输\n3、若同时完成消除或退出游戏，则平局" scaleX="1" scaleY="1" y="1046.73" backgroundColor="0xA37416" size="30" width="530" verticalAlign="middle" textAlign="left" horizontalCenter="0" textColor="0x000000" lineSpacing="10"/>
+	</e:Group>
+</e:Skin>

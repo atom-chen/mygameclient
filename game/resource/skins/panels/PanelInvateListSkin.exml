@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PanelInvateListSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+
+	<e:Image id="bgImg" horizontalCenter="0" verticalCenter="0" source="common_alert1_bg" scale9Grid="23,56,40,14" width="770" height="460"/>
+	<e:Group id="tit_group" horizontalCenter="0" y="91">
+		<e:Image id="titBgImg1" y="3" source="common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+		<e:Image id="titFontImg1" y="0" horizontalCenter="0" x="138" scaleX="1" scaleY="1" source="invite_4"/>
+	</e:Group>
+
+	<e:Button id="btnClose" label="" x="825" y="72.5">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="common_close_n" source.down="common_close_h"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+
+	</e:Button>
+	<e:Image id="contentBgImg" y="160" source="common_bg" x="147" scale9Grid="10,8,66,49" height="295" anchorOffsetX="0" width="475" anchorOffsetY="0"/>
+	<e:Label id="actTimeLabel" text="20183131" x="157" y="253" size="18" fontFamily="Microsoft YaHei" textColor="0x414A61" width="400" touchEnabled="false"/>
+	<e:Label id="actDescLabel" text="" x="157" y="308" size="18" fontFamily="Microsoft YaHei" textColor="0x414A61" width="400" touchEnabled="false" lineSpacing="5"/>
+	<e:Label id="actTimeLabel0" text="活动时间" x="157" y="225.5" size="20" fontFamily="Microsoft YaHei" textColor="0xB83600" touchEnabled="false"/>
+	<e:Label id="actTimeLabel1" text="活动介绍" x="157" y="278" size="20" fontFamily="Microsoft YaHei" textColor="0xB83600" touchEnabled="false"/>
+
+
+
+
+	<e:Label id="lbCount" text="您已累计获得0次抽红包机会，被邀请好友赢得5局游戏即可获得1次机会" y="511" size="20" horizontalCenter="2" textColor="0x7f4e00" visible="false"/>
+
+
+
+
+
+	<e:Image id="redBgImg" y="160" scaleX="1" scaleY="1" source="invite_redBg" right="134" touchEnabled="false"/>
+	<e:Image id="chouImg" y="297.5" x="731" scaleX="1" scaleY="1" source="invite_chou" touchEnabled="true" anchorOffsetX="43.5" anchorOffsetY="43.5"/>
+	<e:Image id="ruleImg" y="499" x="734" scaleX="1" scaleY="1" anchorOffsetX="62.5" anchorOffsetY="13.5" source="invite_list"/>
+	<e:Image id="rankImg" y="421" x="734" scaleX="1" scaleY="1" anchorOffsetX="75" anchorOffsetY="18" source="invite_rank1"/>
+	<e:Group id="inviteGroup" width="232" height="62" y="496" anchorOffsetX="116" anchorOffsetY="31" x="480">
+		<e:Image id="inviteBgImg" scaleX="1" scaleY="1" source="invite_btnbg" anchorOffsetX="116" anchorOffsetY="32" touchEnabled="true" pixelHitTest="true" y="31" horizontalCenter="0"/>
+		<e:Image id="inviteDescImg" scaleX="1" scaleY="1" touchEnabled="true" source="invite_url" anchorOffsetX="78" anchorOffsetY="13.5" y="31.5" horizontalCenter="0"/>
+	</e:Group>
+
+
+	<e:Label id="countLabel" text="可抽0次" y="354" size="20" fontFamily="Microsoft YaHei" bold="true" touchEnabled="false" textColor="0xffffff" width="190" right="134" textAlign="center"/>
+	<e:Label id="descLabel" text="抽10~100随机钻石" x="643" y="174" size="20" fontFamily="Microsoft YaHei" textColor="0xF7D87C" bold="true" touchEnabled="false"/>
+	<e:Label id="redLabel" text="0" y="213" size="32" fontFamily="Microsoft YaHei" bold="true" textColor="0xffffff" textAlign="center" anchorOffsetX="0" width="190" right="134" touchEnabled="false"/>
+	<ns1:MarqueeText id="rollMsg" skinName="components.MarqueeSkin" scaleX="0.8" scaleY="0.8" left="152" top="176"/>
+</e:Skin>

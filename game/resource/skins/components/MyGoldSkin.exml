@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.MyGoldSkin" currentState="gold" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="normal,withButton,gold,diamond,diamondBuy"  height="42">
+	<e:Image id="bgImg" x="7" source="common_gold_bg" width="150" height="42" scale9Grid="21,14,132,10"/>
+	<e:Image id="imgIcon" source="icon_gold" x="0" y="2" source.diamond="icon_diamond" y.diamond="3" x.diamond="0" source.diamondBuy="icon_diamond" y.diamondBuy="3" x.diamondBuy="0" scaleX.diamond="1.3" scaleY.diamond="1.3" scaleX.diamondBuy="1.3" scaleY.diamondBuy="1.3"/>
+	<e:Label size="25" y="10" id="labGold" text="0" verticalAlign="middle" textAlign="center" width="100" x="30"/>
+	<e:Button id="btnRecharge" x="120" y="0" includeIn="withButton,diamondBuy">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_btn_plus_n" source.down="common_btn_plus_h"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

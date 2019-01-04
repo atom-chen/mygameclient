@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PlayerHead4Skin" width="210" height="93" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="head4Bg1" x="0" verticalCenter="0" source="rooml_image_3"/>
+	<e:Label id="nickName" text="玩家名六个字" x="105" y="20" width="108" textAlign="left" height="25" size="18" verticalAlign="middle" fontFamily="微软雅黑"/>
+	<e:Image id="head0" width="89" y="1" height="89" x="7"/>
+	<e:Image id="head" height="89" width="89" x="7" y="1"/>
+	<e:Image id="mask1" touchEnabled="false" x="6" y="17" source="room_image_3_2"/>
+	<e:Image id="mask2" touchEnabled="false" x="6" y="17" source="room_image_3_2"/>
+	<e:Image id="head4Bg2" x="0" touchEnabled="false" verticalCenter="0.5" source="room_image_3_1"/>
+</e:Skin>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ui.HangButtonSkin" states="up,down,disabled,upAndSelected,downAndSelected,disabledAndSelected" xmlns:e="http://ns.egret.com/eui">
+    <e:Image source.downAndSelected="play_btn_trusteeship_h" source="play_btn_trusteeship_n" source.disabled="play_btn_trusteeship_n" source.down="play_btn_trusteeship_h" source.upAndSelected="play_btn_trusteeship_n" source.disabledAndSelected="play_btn_trusteeship_n"/>
+</e:Skin>

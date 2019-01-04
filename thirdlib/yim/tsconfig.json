@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"outFile": "bin/yim.js",
+        "allowJs": true
+	},
+    "files": [
+        "src/yim.core.min.js"
+    ]
+}

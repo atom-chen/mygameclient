@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.MatchDetailRankItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="740" height="74">
+	<e:Image id="bgRect" width="800" height="70" source="match_rank_list_bg" scale9Grid="398,1,81,8" horizontalCenter="0"/>
+	<e:Label id="lblRank" text="999" size="32" textAlign="left" fontFamily="Microsoft YaHei" verticalCenter="0" left="16" textColor="0xb02525"/>
+	<e:Group x="100" scaleX="0.8" scaleY="0.8" verticalCenter="0">
+		<e:Image id="bg_img" source="common_avatar_bg" touchEnabled="false" width="80" height="80" x="0" y="0"/>
+		<e:Image id="imgMask" touchEnabled="false" source="common_avatar_mask" horizontalCenter="0" verticalCenter="0" width="80" height="80"/>
+		<e:Image id="imgAvatar" verticalCenter="0" horizontalCenter="0" width="64" height="64" source="common_avatar_mask"/>
+
+	</e:Group>
+
+
+	<e:Label id="lblName" text="玩家xxx" size="24" textAlign="left" fontFamily="Microsoft YaHei" verticalCenter="0" left="200" height="26" width="200" verticalAlign="middle" textColor="0x874a19"/>
+	<e:Image id="imgStatus" touchEnabled="false" verticalCenter="0" right="64" source="match_result_playing"/>
+	<e:BitmapLabel id="lblScore" text="" verticalCenter="0" x="420" scaleX="0.8" scaleY="0.8" font="font_match_2"/>
+
+</e:Skin>

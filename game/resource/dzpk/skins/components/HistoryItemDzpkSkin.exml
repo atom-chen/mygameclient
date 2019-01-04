@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="components.HistoryDzpkItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  >
+	<e:Group id="grp1" height="110" anchorOffsetX="0" anchorOffsetY="0" touchEnabled="false" y="0" scaleX="1" scaleY="1" x="0" width="645">
+		<e:Label id="opLabel0" text="全下10000" y="80" size="20" fontFamily="Microsoft YaHei" touchEnabled="false" textAlign="center" horizontalCenter="-134"/>
+		<e:Label id="opLabel1" text="全下10000" y="80" size="18" fontFamily="Microsoft YaHei" touchEnabled="false" textAlign="center" horizontalCenter="-12"/>
+		<e:Label id="opLabel2" text="全下10000" y="80" size="18" fontFamily="Microsoft YaHei" touchEnabled="false" textAlign="center" horizontalCenter="101"/>
+		<e:Label id="opLabel3" text="全下10000" y="80" size="18" fontFamily="Microsoft YaHei" touchEnabled="false" textAlign="center" horizontalCenter="202"/>
+		<e:Label id="cardTypeLabel" text="对子" y="80" size="20" fontFamily="Microsoft YaHei" touchEnabled="false" textAlign="center" textColor="0xffe17a" horizontalCenter="-250"/>
+
+		<e:Image id="msakImg" x="40" y="0" source="play_u_mask"/>
+		<e:Image id="headImg" x="40" y="0" source="play_u_mask"/>
+		<e:Image id="cardImg00" x="145" source="poker_blue_back" scaleX="0.4" scaleY="0.4" y="0"/>
+		<e:Image id="cardImg01" x="176.5" y="0" source="poker_blue_back" scaleX="0.4" scaleY="0.4"/>
+		<e:Image id="cardImg10" x="255.5" source="poker_blue_back" scaleX="0.4" scaleY="0.4" y="0"/>
+		<e:Image id="cardImg11" x="287" y="0" source="poker_blue_back" scaleX="0.4" scaleY="0.4"/>
+		<e:Image id="cardImg12" x="318.5" y="0" source="poker_blue_back" scaleX="0.4" scaleY="0.4"/>
+		<e:Image id="cardImg20" x="395" y="0" source="poker_blue_back" scaleX="0.4" scaleY="0.4"/>
+		<e:Image id="cardImg30" x="494" y="0" source="poker_blue_back" scaleX="0.4" scaleY="0.4"/>
+		<e:Image id="flagImg" x="49.5" y="50" source="play_master1"/>
+		<e:Label id="winGoldLabel" text="+88888" y="25" size="24" fontFamily="Microsoft YaHei" touchEnabled="false" textAlign="center" textColor="0xFFE17A" right="2"/>
+		<e:Group id="cardBodyGrp" width="645" height="110" y="0" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0"/>
+	</e:Group>
+
+</e:Skin>

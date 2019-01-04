@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PanelMatchRoundResultDetailSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:alien="alien.*" height="640" width="1280">
+	<e:Group horizontalCenter="0" verticalCenter="0" touchEnabled="false" width="1280" height="640">
+		<e:Image id="bgImg" source="common_alert_bg" width="810" height="520" horizontalCenter="0" verticalCenter="0" scale9Grid="300,94,326,42"/>
+		<e:Group id="tit_group" horizontalCenter="0" y="65">
+		<e:Image id="titBgImg" y="3" source="common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+		<e:Image id="titFontImg" horizontalCenter="0.5" x="138" scaleX="1" scaleY="1" source="match_title_balance_details" y="-11.97"/>
+		</e:Group>
+		<e:Image id="closeImg" x="1024.67" y="77.5" source="common_close_n" anchorOffsetX="30.67" anchorOffsetY="30.5" touchEnabled="true"/>
+		<e:Group id="grpContent" width="746" height="420" horizontalCenter="0" verticalCenter="12">
+			<e:Image id="bg_img1" width="100%" height="100%" source="common_bg" touchEnabled="false" scale9Grid="29,17,23,24"/>
+			<e:Group width="746">
+				<e:Image id="contentTitBgImg" source="invite_12" width="100%" height="46" anchorOffsetY="0" anchorOffsetX="0" scaleX="1" scaleY="1" scale9Grid="9,6,55,41"/>
+				<e:Label id="lblRound" text="轮次" y="12" fontFamily="Microsoft YaHei" size="24" x="0" scaleX="1" scaleY="1" width="122" textAlign="center" textColor="0xda3939" height="26" verticalAlign="middle"/>
+				<e:Label id="lblName1" text="玩家1昵称" y="12" fontFamily="Microsoft YaHei" size="24" scaleX="1" scaleY="1" width="208" textAlign="center" textColor="0xda3939" x="122" verticalAlign="middle" height="26"/>
+				<e:Label id="lblName2" text="玩家2昵称" y="12" fontFamily="Microsoft YaHei" size="24" scaleX="1" scaleY="1" x="330" width="208" textAlign="center" textColor="0xda3939" height="26" verticalAlign="middle"/>
+				<e:Label id="lblName3" text="玩家3昵称" y="12" fontFamily="Microsoft YaHei" size="24" scaleX="1" scaleY="1" x="538" width="208" textAlign="center" textColor="0xda3939" height="26" verticalAlign="middle"/>
+				<e:Image id="split1Img2" y="3" source="invite_split" x="122" height="40" touchEnabled="false" scaleX="1" scaleY="1"/>
+				<e:Image id="split1Img0" y="3" source="invite_split" x="330" height="40" touchEnabled="false" scaleX="1" scaleY="1"/>
+				<e:Image id="split2Img1" y="3" source="invite_split" height="40" x="538" touchEnabled="false" scaleX="1" scaleY="1"/>
+			</e:Group>
+			<e:Scroller id="listContainer" width="100%" horizontalCenter="0" scrollPolicyV="off" scrollPolicyH="off" top="50" bottom="0">
+				<e:Group>
+				<e:List id="_detailList" width="100%" x="0" y="0" itemRendererSkinName="components.MatchRoundResultDetailItemSkin">
+					<e:ArrayCollection>
+					<e:Array>
+						<e:Object label="数据1"/>
+						<e:Object label="数据2"/>
+						<e:Object label="数据3"/>
+						<e:Object label="数据1"/>
+						<e:Object label="数据2"/>
+						<e:Object label="数据3"/>
+					</e:Array>
+					</e:ArrayCollection>
+					<e:layout>
+					<e:VerticalLayout gap="0" paddingTop="0"/>
+					</e:layout>
+				</e:List>
+				</e:Group>
+			</e:Scroller>
+		</e:Group>
+	</e:Group>
+
+
+</e:Skin>

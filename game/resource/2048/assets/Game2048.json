@@ -1,0 +1,12 @@
+{"file":"Game2048.png","frames":{
+"2048_number_2048":{"x":849,"y":321,"w":158,"h":158,"offX":0,"offY":0,"sourceW":158,"sourceH":158},
+"2048_number_1024":{"x":689,"y":321,"w":158,"h":158,"offX":0,"offY":0,"sourceW":158,"sourceH":158},
+"2048_number_512":{"x":849,"y":161,"w":158,"h":158,"offX":0,"offY":0,"sourceW":158,"sourceH":158},
+"2048_number_256":{"x":689,"y":161,"w":158,"h":158,"offX":0,"offY":0,"sourceW":158,"sourceH":158},
+"2048_number_128":{"x":529,"y":321,"w":158,"h":158,"offX":0,"offY":0,"sourceW":158,"sourceH":158},
+"2048_number_64":{"x":529,"y":161,"w":158,"h":158,"offX":0,"offY":0,"sourceW":158,"sourceH":158},
+"2048_number_32":{"x":849,"y":1,"w":158,"h":158,"offX":0,"offY":0,"sourceW":158,"sourceH":158},
+"2048_number_16":{"x":689,"y":1,"w":158,"h":158,"offX":0,"offY":0,"sourceW":158,"sourceH":158},
+"2048_number_8":{"x":529,"y":1,"w":158,"h":158,"offX":0,"offY":0,"sourceW":158,"sourceH":158},
+"2048_hp_bg":{"x":1,"y":429,"w":142,"h":37,"offX":0,"offY":0,"sourceW":142,"sourceH":37},
+"2048_play_ruler":{"x":1,"y":1,"w":526,"h":426,"offX":0,"offY":0,"sourceW":526,"sourceH":426}}}

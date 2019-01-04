@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="scenes.SceneRoomSkin" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:alien="alien.*" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image horizontalCenter="0" bottom="-1" source="room_bg" width="100%"/>
+
+	<alien:Navigator id="navigator" width="100%" height="100%">
+
+	</alien:Navigator>
+	
+	<e:Group id="grpTop" width="100%" touchEnabled="false" top="0" right="0">
+		<e:Image horizontalCenter="0" source="room_bg_2" width="100%"/>
+		<e:Image horizontalCenter="0" source="room_bg_3"/>
+
+		<e:Image id="imgRoomTitle" y="0" horizontalCenter="0" source="room_word_25"/>
+
+		<e:Group id="publicWXGroup" width="100" height="64" y="30" anchorOffsetX="50" anchorOffsetY="32" left="180">
+			<e:Image id="watchWX_img" name="publicWX" source="room_watch" scaleX="1" scaleY="1" alpha="1" width="84" height="44" anchorOffsetX="42" anchorOffsetY="22" horizontalCenter="0" verticalCenter="5"/>
+
+		</e:Group>
+		<e:Group id="backGroup" width="140" height="64" anchorOffsetY="32" anchorOffsetX="70" y="30" left="40">
+			<e:Image id="backImg" source="common_btn_return_n" scaleX="1" scaleY="1" touchEnabled="false" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+		<e:Group id="topRight_group" y="0" height="70" anchorOffsetX="0" width="385" right="10">
+			<e:Button id="settingBtn" name="setting" y="32.34" anchorOffsetX="20" anchorOffsetY="27" scaleX="1" scaleY="1" right="159">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="room_btn_setup_n"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+
+			</e:Button>
+			<e:Button id="signBtn" name="sign" anchorOffsetX="25.5" anchorOffsetY="26.5" y="37" scaleX="1" scaleY="1" right="91">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="room_btn_3_n"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+
+			<e:Button id="keFuBtn" name="kefu" y="32" anchorOffsetX="23.5" anchorOffsetY="31.5" scaleX="1" scaleY="1" right="23">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="room_kefu"/>
+					<e:Label id="labelDisplay2" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="mondayBtn" name="setting" y="32" anchorOffsetX="70" anchorOffsetY="23.5" scaleX="1" scaleY="1" x="94" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="room_monday"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image id="tipWxImg" source="room_wxTip" x="-41" y="70" visible="false"/>
+		</e:Group>
+
+	</e:Group>
+	<e:Group id="grpShare" scaleX="1" scaleY="1" verticalCenter="200" right="0">
+		<e:Image source="room_share" y="0" x="0"/>
+	</e:Group>
+	<e:Group id="grpBottom" width="100%" bottom="0" left="0" height="100">
+		<e:Image touchEnabled="false" source="room_bg_2" scaleY="-1" width="100%" x="-1.33" height="77" bottom="0"/>
+		<e:Group id="userInfoGroup" left="0" bottom="0">
+			<ns1:Avatar id="avatar" scaleX="0.5" scaleY="0.5" skinName="components.AvatarSkin" name="avatar" touchChildren="false"/>
+			<ns1:Gold id="gold" x="95" y="48" skinName="components.MyGoldSkin" scaleX="0.8" scaleY="0.8" currentState="withButton"/>
+			<ns1:Gold id="diamond" x="230" y="48" skinName="components.MyGoldSkin" scaleX="0.8" scaleY="0.8" currentState="diamondBuy"/>
+			<e:Group width="157" height="42" id="grpRedcoin" y="48" scaleX="0.8" scaleY="0.8" x="370">
+				<e:Image id="redBgImg" y="0" touchEnabled="false" x="0" source="common_gold_bg" width="157" height="42"/>
+				<e:Image y="-4" touchEnabled="false" x="-6.5" source="icon_redcoin" scaleY="0.4" scaleX="0.4"/>
+				<e:Image id="redExchangeImg" y="24" touchEnabled="true" x="140" scaleY="1" scaleX="1" source="common_exchangeRed" anchorOffsetX="23" anchorOffsetY="23.5"/>
+				<e:Label id="lbRedCoin" x="38" y="10" size="25" text="136.04" textAlign="center" width="85" touchEnabled="false" height="25"/>
+			</e:Group>
+
+			<e:Image x="90" y="29" source="room_seprate"/>
+			<e:Label id="labNickName" text="" x="105" size="20" y="24" height="20" textColor="0xdcdbc7"/>
+
+
+		</e:Group>
+		<e:Group id="rechargeGroup" y="66.67" anchorOffsetY="35" height="70" anchorOffsetX="40" scaleX="1" scaleY="1" left="500" width="80">
+			<e:Button id="rechargeBtn" anchorOffsetX="50.5" anchorOffsetY="28.5" scaleX="1" scaleY="1" touchEnabled="false" verticalCenter="0" horizontalCenter="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="room_btn_mall_n"/>
+				<e:Label id="labelDisplay2" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Group id="inviteGroup" width="60" height="60" anchorOffsetX="30" anchorOffsetY="30" y="67" scaleX="1" scaleY="1" right="10">
+			<e:Button id="inviteBtn" anchorOffsetX="30" anchorOffsetY="30" scaleX="1" scaleY="1" touchEnabled="false" horizontalCenter="0" verticalCenter="0" width="60">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="room_dayRed"/>
+				<e:Label id="labelDisplay1" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Group id="taskGroup" width="50" height="56" anchorOffsetX="25" anchorOffsetY="28" scaleX="1" scaleY="1" y="68" touchThrough="true" right="370">
+			<e:Image id="bg1Img" touchEnabled="false" source="room_task" verticalCenter="0" horizontalCenter="0"/>
+			<e:Image id="mOverTaskBg_img" x="34" y="-6.04" source="task_tipbg" touchEnabled="false"/>
+			<e:Label id="mOverTask_label" text="0" x="37" y="-4" fontFamily="Microsoft YaHei" size="20" touchEnabled="false" textAlign="center" width="24"/>
+		</e:Group>
+		<e:Group id="actGroup" width="50" y="68" height="56" anchorOffsetX="25" anchorOffsetY="28" scaleX="1" scaleY="1" touchThrough="true" right="300">
+			<e:Image id="bg1Img0" touchEnabled="false" source="room_act" verticalCenter="0" horizontalCenter="0"/>
+			<e:Image id="newActBgImg" x="36" y="-4" source="task_tipbg" touchEnabled="false"/>
+			<e:Label id="newActNumLabel" text="1" x="61" y="-4" fontFamily="Microsoft YaHei" size="20" touchEnabled="false" visible="false"/>
+		</e:Group>
+		<e:Group id="emailGroup" width="50" y="68" anchorOffsetX="25" anchorOffsetY="28" scaleX="1" scaleY="1" height="56" touchThrough="true" right="230" x="-87">
+			<e:Image id="bg1Img1" touchEnabled="false" source="room_email" verticalCenter="0" horizontalCenter="0"/>
+			<e:Image id="newEmailBgImg" x="31.65" y="-4" source="task_tipbg" touchEnabled="false"/>
+			<e:Label id="newEmailNumLabel" text="0" x="35" y="-2" fontFamily="Microsoft YaHei" size="20" touchEnabled="false" textAlign="center" width="24"/>
+		</e:Group>
+		<e:Group id="friendGrp" width="50" height="56" anchorOffsetX="25" anchorOffsetY="28" y="68" scaleX="1" scaleY="1" right="160">
+			<e:Button id="friendBtn" anchorOffsetX="30" anchorOffsetY="30" scaleX="1" scaleY="1" touchEnabled="false" horizontalCenter="0" verticalCenter="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="room_friend"/>
+					<e:Label id="labelDisplay1" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image id="freindRedImg" x="31.67" y="-4" source="task_tipbg" touchEnabled="false"/>
+		</e:Group>
+		<e:Group id="miningGrp" height="56" anchorOffsetY="28" y="68" scaleX="1" scaleY="1" right="90" anchorOffsetX="20" width="40">
+			<e:Button id="inviteBtn1" anchorOffsetX="30" anchorOffsetY="30" scaleX="1" scaleY="1" touchEnabled="false" horizontalCenter="0" verticalCenter="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="room_mining"/>
+				<e:Label id="labelDisplay1" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Image id="miningRedmg" x="32" y="-4" source="task_tipbg" touchEnabled="false"/>
+		</e:Group>
+
+
+
+	</e:Group>
+	<e:Group id="grpRed" y="74" width="246" right="10" touchEnabled="false"  anchorOffsetY="0" height="398">
+
+		<ns1:ExchangeShowInfo x="0" y="140" width="216" height="48" touchEnabled="false" touchChildren="false"/>
+		<e:Button id="redBtn" anchorOffsetX="43.5" anchorOffsetY="44.5" x="202.5" y="147.5" visible="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="room_btn_chou"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+
+		</e:Button>
+
+
+
+		<e:Group id="downAppGroup" width="100" height="87" x="196" y="249" scaleX="1" scaleY="1" anchorOffsetX="50" anchorOffsetY="43.5" visible="false">
+			<e:Image id="getRew_img" anchorOffsetX="41.5" anchorOffsetY="42" width="83" x="57" y="44" touchEnabled="true" scaleX="1" scaleY="1" source="room_downApp"/>
+
+
+
+			<e:Image id="downLight_img" x="71" y="38" source="frecharge_light" scaleX="0" scaleY="0" anchorOffsetX="46" anchorOffsetY="46" blendMode="add" touchEnabled="false"/>
+		</e:Group>
+
+		<e:Image id="redCountBgImg" x="212" y="101" source="task_tipbg" touchEnabled="false" scaleX="1.2" scaleY="1.2" visible="false"/>
+		<e:Label id="redNumLabel" text="" x="206" y="106" fontFamily="Microsoft YaHei" size="20" touchEnabled="false" scaleX="1" scaleY="1" textColor="0xffffff" textAlign="center" verticalAlign="middle" width="50" height="20"/>
+		<e:Image id="mFRechageBg_img" y="50" anchorOffsetX="43.5" anchorOffsetY="44.5" touchEnabled="true" x="202" source="room_btn_frecharge_back1"/>
+
+		<e:Image id="monthcardImg" y="150.02" anchorOffsetX="46" anchorOffsetY="44.5" touchEnabled="true" x="202" source="mc_icon_month_card"/>
+		<e:Group id="vipGroup" width="110" height="80" anchorOffsetX="55" anchorOffsetY="40" y="245" scaleX="1" scaleY="1" x="202">
+			<e:Button id="inviteBtn0" scaleX="1" scaleY="1" touchEnabled="false" verticalCenter="0" x="10">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="room_vip"/>
+				<e:Label id="labelDisplay1" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Image id="vipCanGetImg" x="65" y="0" source="task_tipbg" touchEnabled="false"/>
+		</e:Group>
+		<e:Image id="luckyImg" y="250" anchorOffsetX="46" anchorOffsetY="44.5" touchEnabled="true" x="200" source="room_lucky" visible="false"/>
+		<e:Group id="vipLuckyGrp" x="151" y="301" anchorOffsetY="0">
+			<e:Image id="vipLucky" y="44.5" anchorOffsetX="43.5" anchorOffsetY="44.5" touchEnabled="true" x="43.5" source="room_lucky2" scaleX="1" scaleY="1"/>
+			<e:Image id="vipLuckyRedImg" x="55" y="0" source="task_tipbg" touchEnabled="false"/>
+		</e:Group>
+
+	</e:Group>
+	<ns1:MarqueeText id="rollMsg" skinName="components.MarqueeSkin" width="574" top="70" horizontalCenter="130"/>
+
+
+
+
+
+	
+</e:Skin>

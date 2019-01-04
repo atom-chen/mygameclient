@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.IRNormalRoomSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  states="all,justBg"  width.all="347" height.all="192" width="347" height="192">
+	<e:Image id="bgImg" source="room_item_bg" source.justBg="room_downApp1" horizontalCenter="0" verticalCenter="0" width="347" height="192"/>
+	<e:Image id="imgIcon" x="-18" y="-3" source="icon_room_2" visible.justBg="false"/>
+
+
+	<e:Image y="138" horizontalCenter="0.5" source="room_item_bottom" visible.justBg="false"/>
+	<e:Label id="labLimit" text="条件" y="153" bold="true" size="25" width="347" x="0" textAlign="center" stroke="1" strokeColor="0x81521c" visible.justBg="false"/>
+	<e:Label id="labOnlineCount" text="0人在玩" y="95" horizontalCenter="55" textColor="0x885400" bold="true" size="25" visible.justBg="false"/>
+	<e:Image id="imgLevel" y="30" horizontalCenter="50" source="room_word_0" visible.justBg="false"/>
+	<e:Image id="newDiaImg" x="5" y="-8" source="room_diamond_new" scaleX="1.2" scaleY="1.2" visible.justBg="false"/>
+	<e:Group id="grpName" x="-4" y="16" visible.justBg="false">
+		<e:Image x="0" y="0" source="room_person_label"/>
+		<e:Label id="lblName" text="刺激二人场" size="20" textAlign="center" stroke="1" strokeColor="0x81521C" fontFamily="Microsoft YaHei" verticalCenter="-4" horizontalCenter="-3"/>
+	</e:Group>
+	<e:Group id="grpTips" width="160" height="40" anchorOffsetX="80" anchorOffsetY="20" x="251" y="20" visible.justBg="false">
+		<e:Image id="bgTips" x="0" y="0" source="room_package_label"/>
+		<e:Label id="lblTips" text="最高100奖杯" size="24" textAlign="center" stroke="1" strokeColor="0x81521C" fontFamily="Microsoft YaHei" verticalCenter="-5" horizontalCenter="0"/>
+	</e:Group>
+	<e:Image id="diaFlagImg" x="100" y="28" source="room_diamond_word" scaleX="1.2" scaleY="1.2" visible.justBg="false"/>
+</e:Skin>

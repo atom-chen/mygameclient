@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PanelLotteryMyRecSkin" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  >
+	<e:Group y="56" anchorOffsetX="0" x="210">
+		<e:Image y="8" x="0" width="856" height="520" source="common_alert_bg" scale9Grid="28,112,768,6"/>
+		<e:Image id="scaleImg" width="700" height="400" source="common_bg" scale9Grid="10,8,66,49" anchorOffsetX="0" anchorOffsetY="0" left="87" top="74"/>
+		<e:Button id="btn_close" x="800.68" y="-3.34">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_close_n"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group id="tit_group" horizontalCenter="0" y="13">
+			<e:Image id="titBgImg1" y="3" source="common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+			<e:Image id="titFontImg1" y="0" horizontalCenter="0" x="138" scaleX="1" scaleY="1" source="lotteryRecTit"/>
+		</e:Group>
+		<e:Group id="emptyGroup" x="170" y="160">
+			<e:Image id="split1Img1" y="5.67" x="55.98" scaleX="1" scaleY="1" source="lotteryBg"/>
+			<e:Image id="split2Img1" y="23" x="346.33" scaleX="1" scaleY="1" source="invite_bg2"/>
+			<e:Label id="infoLabel" text="没有任何夺宝记录哦~\n快去赢取奖杯,参与夺宝吧" x="98" y="44" size="18" fontFamily="Microsoft YaHei" textAlign="center" touchEnabled="false" textColor="0xdd7834" bold="true" lineSpacing="5"/>
+		</e:Group>
+		<e:Scroller id="recScroller" width="698" height="400" x="89" y="76" anchorOffsetX="0" anchorOffsetY="0" scrollPolicyV="auto" scrollPolicyH="off" enabled="true">
+			<e:Group height="400">
+				<e:List id="recList" x="0" y="0" scaleX="1" scaleY="1">
+					<e:itemRendererSkinName>
+						<e:Skin xmlns:alien="alien.*">		
+							<e:Group id="recItemGroup" y="0" anchorOffsetY="0" height="110" x="0">
+								<e:Image id="bgImg" y="0" source="exchange_image_1" anchorOffsetY="0" height="80" touchEnabled="false"/>
+								<e:Image id="luckBgImg" y="80" anchorOffsetY="0" height="30" x="0" source="lottery_bg" scale9Grid="32,1,192,8" anchorOffsetX="0" width="691" touchEnabled="false"/>
+								<e:Image id="arrImg" x="102" y="73" source="lottery_arr" touchEnabled="false"/>
+								<e:Image id="haveBgImg" y="40" anchorOffsetY="0" height="30" source="lotteryBtn" anchorOffsetX="0" width="200" scale9Grid="10,10,11,9" right="40" touchEnabled="true"/>
+								<e:Label id="timeLabel" text="2018-01-01 00:00结束" y="49" size="18" textAlign="left" fontFamily="Microsoft YaHei" height="20" left="80" textColor="0x333333" touchEnabled="false"/>
+								<e:Label id="statusLabel" text="暂未开奖" y="10" size="18" textAlign="right" width="150" fontFamily="Microsoft YaHei" right="42" textColor="0x333333" touchEnabled="false"/>
+								<e:Label id="titLabel" text="000钻石【第000期】" y="10" size="18" textAlign="left" fontFamily="Microsoft YaHei" anchorOffsetX="0" height="20" left="80" textColor="0x333333" touchEnabled="false"/>
+								<e:Label id="luckUserLabel" text="幸运儿:000" y="86" size="18" textAlign="left" fontFamily="Microsoft YaHei" height="20" textColor="0xdc611c" left="80" touchEnabled="false"/>
+								<e:Label id="luckCodeLabel" text="幸运码:000000" y="86" size="18" textColor="0xDC611C" textAlign="left" fontFamily="Microsoft YaHei" height="20" right="42" touchEnabled="false"/>
+								<e:Label id="haveLabel" text="我有00000个夺宝码&gt;&gt;" y="46" size="18" textAlign="center" fontFamily="Microsoft YaHei" height="20" textColor="0xdfa03b" x="457" touchEnabled="false"/>
+							</e:Group>
+						</e:Skin>
+					</e:itemRendererSkinName>
+					<e:layout>
+						<e:VerticalLayout verticalAlign="middle" gap="0" paddingTop="10"/>
+					</e:layout>
+					<e:ArrayCollection>
+						<e:Array>
+							<e:Object label="数据1"/>
+						</e:Array>
+					</e:ArrayCollection>
+				</e:List>
+				<e:layout>
+					<e:VerticalLayout gap="0"/>
+				</e:layout>
+			</e:Group>
+		</e:Scroller>
+
+
+	</e:Group>
+</e:Skin>

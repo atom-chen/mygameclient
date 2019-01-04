@@ -1,0 +1,4 @@
+{
+	"name": "yim",
+	"typings": "src/yim.core.d.ts"
+}

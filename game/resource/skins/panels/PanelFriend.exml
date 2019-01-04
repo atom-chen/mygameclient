@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PanelFriendSkin" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"    states="add,list,req" >
+	<e:Group id="infoGroup" width="100%" height="100%" left="0" bottom="0">
+		<e:Image id="bgImg" top="0" height="100%" width="100%" source="common_bg1" scale9Grid="5,3,23,22" x="0"/>
+		<e:Image id="tooBgImg" source="room_bg_2" y="0" x="0" width="100%"/>
+		<e:Group id="close_group" height="64" anchorOffsetY="0" anchorOffsetX="0" width="150" left="0" top="0">
+			<e:Button id="btn_close0" y="10" x="82" touchEnabled="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_btn_return_n"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+		</e:Group>
+
+
+		<e:Group id="tit_group" horizontalCenter="0" height="70" y="0">
+		<e:Image id="titBgImg0" y="-5" source="common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1" height="70"/>
+		<e:Image id="titFontImg0" y="0" horizontalCenter="1" x="138" scaleX="1" scaleY="1" source="room_friend_title"/>
+		</e:Group>
+		<e:Image id="bottomBgImg" source="room_bg_2" width="100%" left="0" x="0" scaleX="1" scaleY="-1" bottom="0"/>
+		<e:Label id="infoLabel" text="好友数：0/0" size="20" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" bottom="20" textColor="0xFFFFFF" right="30" textAlign="right" text.req="好友数：0/0"/>
+		<e:Label id="descLabel" text="升级VIP可增加好友数量" size="22" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" bottom="4" right="30" textColor="0xf6dc8c" textAlign="right" visible="false"/>
+
+		<e:Group id="userInfoGroup" left="0" bottom="0">
+		<ns1:Avatar id="avatar" scaleX="0.5" scaleY="0.5" skinName="components.AvatarSkin" name="avatar" touchChildren="false"/>
+		<ns1:Gold id="gold" x="95" y="48" skinName="components.MyGoldSkin" scaleX="0.8" scaleY="0.8" currentState="withButton"/>
+		<ns1:Gold id="diamond" x="230" y="48" skinName="components.MyGoldSkin" scaleX="0.8" scaleY="0.8" currentState="diamondBuy"/>
+		<e:Group id="grpRedcoin" width="157" height="42" y="48" scaleX="0.8" scaleY="0.8" x="370">
+			<e:Image id="redBgImg" y="0" touchEnabled="false" x="0" source="common_gold_bg" width="157" height="42"/>
+			<e:Image y="-4" touchEnabled="false" x="-6.5" source="icon_redcoin" scaleY="0.4" scaleX="0.4"/>
+			<e:Image id="redExchangeImg" y="24" touchEnabled="true" x="140" scaleY="1" scaleX="1" source="common_exchangeRed" anchorOffsetX="23" anchorOffsetY="23.5"/>
+			<e:Label id="lbRedCoin" x="36" y="10" size="25" text="0" textAlign="center" width="85" touchEnabled="false" height="25"/>
+		</e:Group>
+		<e:Image x="90" y="29" source="room_seprate"/>
+		<e:Label id="labNickName" text="" x="105" size="20" y="24" height="20" textColor="0xDCDBC7"/>
+		</e:Group>
+		<e:Group id="ctxGrp" width="760" height="490" x="237" y="73" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Image id="scaleImg" width="760" height="490" source="common_bg" scale9Grid="10,8,66,49" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+			<e:Rect id="myIdBgRect" width="730" height="200" fillColor="0xd0be95" ellipseWidth="20" ellipseHeight="20" visible.list="false" visible.req="false" scaleX="1" scaleY="1" horizontalCenter="0" y="280"/>
+			<e:TextInput id="searchIdInput" y="114.5" width="350" height="50" restrict="0-9" skinName="ui.TextInputSkin" displayAsPassword="false" prompt="请输入用户ID" restrict.list="0-9" visible.list="false" visible.req="false" scaleX="1" scaleY="1" horizontalCenter="0" horizontalCenter.add="2" inputType="tel"/>
+			<e:Button id="searchBtn" label="搜索" verticalCenter="-30" width="170" height="58" visible.list="false" visible.req="false" anchorOffsetX="85" anchorOffsetY="29" y="188" scaleX="1" scaleY="1" horizontalCenter="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_btn_orange3"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-3" fontFamily="Microsoft YaHei"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="copyBtn" label="复制" verticalCenter="170" width="170" height="58" visible.list="false" visible.req="false" anchorOffsetX="85" anchorOffsetY="29" y="388" scaleX="1" scaleY="1" horizontalCenter="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_btn_orange2_n"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-3" fontFamily="Microsoft YaHei"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label id="descLabel2" text="你的用户id" y="287" fontFamily="Microsoft YaHei" size="22" lineSpacing="10" textAlign="center" width="580" textColor="0x404A63" visible.list="false" visible.req="false" x.add="332" horizontalCenter="0"/>
+			<e:Image id="myLabelBgImg" y="318" source="common_text_input_bg" width="350" visible.list="false" visible.req="false" horizontalCenter="0"/>
+			<e:Label id="myIdLabel" text="00" y="333" fontFamily="Microsoft YaHei" size="22" lineSpacing="10" textAlign="center" textColor="0xffffff" backgroundColor="0xffffff" visible.list="false" visible.req="false" x.add="595" horizontalCenter="0"/>
+			<e:Label id="descLabel0" text="添加好友" size="30" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" textAlign="right" textColor="0xda3939" bold="true" y="22" visible.req="false" visible.list="false" x.add="303" y.add="22" scaleX.add="1" scaleY.add="1" horizontalCenter="0"/>
+			<e:Label id="descLabel1" text="通过输入好友的ID可搜索想要申请好友的用户" y="69" fontFamily="Microsoft YaHei" size="22" lineSpacing="10" textAlign="center" textColor="0x404a63" visible.req="false" x.add="370" scaleX="1" scaleY="1" horizontalCenter="0" visible.list="false"/>
+		</e:Group>
+		<e:Scroller id="reqScroller" width="730" height="480" x="250" y="80" anchorOffsetX="0" anchorOffsetY="0" visible.list="false" visible.add="false">
+			<e:Group anchorOffsetY="0">
+					<e:List id="reqList" y="0" scaleX="1" scaleY="1" x="0" anchorOffsetY="0" anchorOffsetX="0" width="100%">
+						<e:itemRendererSkinName>
+							<e:Skin xmlns:alien="alien.*" xmlns:ns1="*" width="730" height="100">
+								<e:Group horizontalCenter="0" y="6" width="100%">
+									<e:Image id="bgImg" y="0" width="100%" source="common_bg_2" scale9Grid="8,11,51,69" height="100%"/>
+									<ns1:Avatar id="avatar" x="10" scaleX="0.5" scaleY="0.5" skinName="components.AvatarSkin" name="avatar" touchChildren="false"/>
+									<e:Image id="sexImg" y="4"  source="icon_female" x="77"/>
+									<e:Image id="giftImg"  source="icon_gift_car" x="240" width="74" height="73" verticalCenter="0"/>
+									<e:Button id="acceptBtn" label="同意" verticalCenter="0.5" width="170" height="58" anchorOffsetX="85" anchorOffsetY="29" x="432">
+										<e:skinName>
+											<e:Skin states="up,down,disabled">
+											<e:Image width="100%" height="100%" source="common_btn_orange3"/>
+											<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-3" fontFamily="Microsoft YaHei"/>
+											</e:Skin>
+										</e:skinName>
+									</e:Button>
+									<e:Button id="refuseBtn" label="拒绝" verticalCenter="0" anchorOffsetX="85" anchorOffsetY="28" x="625">
+										<e:skinName>
+											<e:Skin states="up,down,disabled">
+											<e:Image width="100%" height="100%" source="common_btn_orange2_n"/>
+											<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-3" fontFamily="Microsoft YaHei"/>
+											</e:Skin>
+										</e:skinName>
+									</e:Button>
+									<e:Label id="nickLabel" text="玩家昵称" x="91" y="48" size="28" textColor="0x874a19" fontFamily="Microsoft YaHei" maxChars="6" textAlign="left"/>
+								</e:Group>
+							</e:Skin>
+						</e:itemRendererSkinName>
+						<e:layout>
+							<e:VerticalLayout gap="6"/>
+						</e:layout>
+
+						<e:ArrayCollection>
+						<e:Array>
+							<e:Object fsdf="null"/>
+							<e:Object fsdf="null"/>
+							<e:Object fsdf="null"/>
+						</e:Array>
+						</e:ArrayCollection>
+					</e:List>
+				</e:Group>
+		</e:Scroller>
+
+
+		<e:Scroller id="listScroller" width="730" height="480" x="250" y="80" anchorOffsetX="0" anchorOffsetY="0" visible.add="false" visible.req="false">
+			<e:Group anchorOffsetY="0">
+					<e:List id="listList" y="0" scaleX="1" scaleY="1" x="0" anchorOffsetY="0" anchorOffsetX="0" width="100%">
+						<e:itemRendererSkinName>
+							<e:Skin xmlns:alien="alien.*" xmlns:ns1="*" width="730" height="100">
+								<e:Group horizontalCenter="0" y="6" width="100%">
+									<e:Image id="bgImg" y="0" width="100%" source="common_bg_2" scale9Grid="8,11,51,69" height="100%"/>
+									<ns1:Avatar id="avatar" scaleX="0.5" scaleY="0.5" skinName="components.AvatarSkin" name="avatar" touchChildren="false" x="10"/>
+									<e:Image id="sexImg" y="4"  source="icon_female" x="77"/>
+
+									<e:Button id="detailBtn" label="查看详情" verticalCenter="0" width="170" height="58" anchorOffsetX="85" anchorOffsetY="29" x="613">
+										<e:skinName>
+											<e:Skin states="up,down,disabled">
+											<e:Image width="100%" height="100%" source="common_btn_orange3"/>
+											<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-3" fontFamily="Microsoft YaHei"/>
+											</e:Skin>
+										</e:skinName>
+									</e:Button>
+
+									<e:Label id="nickLabel" text="玩家昵称" x="91" y="48" size="28" textColor="0x874a19" fontFamily="Microsoft YaHei" maxChars="6" textAlign="left"/>
+									<e:Label id="statusLabel" text="在线" size="28" fontFamily="Microsoft YaHei" maxChars="6" textAlign="left" textColor="0xe25300" verticalCenter="0" horizontalCenter="0"/>
+								</e:Group>
+							</e:Skin>
+						</e:itemRendererSkinName>
+						<e:layout>
+							<e:VerticalLayout gap="6"/>
+						</e:layout>
+
+						<e:ArrayCollection>
+						<e:Array>
+							<e:Object fsdf="null"/>
+							<e:Object fsdf="null"/>
+							<e:Object fsdf="null"/>
+						</e:Array>
+						</e:ArrayCollection>
+					</e:List>
+
+				</e:Group>
+		</e:Scroller>
+
+
+
+
+	</e:Group>
+		<e:RadioButton id="listRadio" label="好友列表" y="110" groupName="btns" value="list" scaleX="1" scaleY="1" left="60">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_btn1_n" source.down="common_btn1_h"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" bold="true" textColor="0x874b00"/>
+			</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+	<e:RadioButton id="reqRadio" label="好友申请" y="180" groupName="btns" value="req" scaleX="1" scaleY="1" left="60">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="common_btn1_n" source.down="common_btn1_h"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" bold="true" textColor="0x874b00"/>
+		</e:Skin>
+		</e:skinName>
+	</e:RadioButton>
+	<e:RadioButton id="addRadio" label="添加好友" y="250" groupName="btns" value="add" scaleX="1" scaleY="1" left="60">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="common_btn1_n" source.down="common_btn1_h"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" bold="true" textColor="0x874b00"/>
+		</e:Skin>
+		</e:skinName>
+	</e:RadioButton>
+	<e:Image id="reqRedImg" y="182.5" source="task_tipbg" touchEnabled="false" left="190"/>
+
+
+
+</e:Skin>

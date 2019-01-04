@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PlayerHead1Skin" width="210" height="93" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="bg_24" x="0" y="0"/>
+	<e:Label id="nickName" text="玩家名六个字" x="100" y="61" width="108" textAlign="left" height="25" size="18" verticalAlign="middle" fontFamily="微软雅黑"/>
+	<e:Image id="head0" width="89" y="1" height="89" x="1"/>
+	<e:Image id="head" height="89" width="89" x="1" y="1"/>
+	<e:Image source="bg_24_1" x="0" y="0" touchEnabled="false"/>
+</e:Skin>

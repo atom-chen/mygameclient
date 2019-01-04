@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PanelMatchRoundResultSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:alien="alien.*" height="640" width="1280">
+
+
+
+
+	<e:Group horizontalCenter="0" verticalCenter="0" touchEnabled="false" width="1280" height="640">
+		<e:Image id="bgImg" source="common_alert_bg" width="810" height="520" horizontalCenter="0" verticalCenter="0" scale9Grid="300,94,326,42"/>
+		<e:Group id="tit_group" horizontalCenter="0" y="65">
+		<e:Image id="titBgImg" y="3" source="common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+		<e:Image id="titFontImg" horizontalCenter="0.5" x="138" scaleX="1" scaleY="1" y="-11.97" source="match_title_balance"/>
+		</e:Group>
+		<e:Image id="closeImg" x="1024.67" y="77.5" source="common_close_n" anchorOffsetX="30.67" anchorOffsetY="30.5" touchEnabled="true"/>
+		<e:Group id="grpContent" width="746" height="420" horizontalCenter="0" verticalCenter="12">
+		<e:Image id="bg_img" width="100%" height="100%" source="common_bg" touchEnabled="false" scale9Grid="29,17,23,24"/>
+			<e:Scroller id="listContainer" horizontalCenter="0" scrollPolicyV="off" scrollPolicyH="off" verticalCenter="-38">
+				<e:Group>
+				<e:List id="_resultList" width="100%" x="0" y="0" itemRendererSkinName="components.MatchRoundResultItemSkin" useVirtualLayout="false">
+					<e:ArrayCollection>
+					<e:Array>
+						<e:Object label="数据1"/>
+						<e:Object label="数据2"/>
+						<e:Object label="数据3"/>
+					</e:Array>
+					</e:ArrayCollection>
+					<e:layout>
+					<e:HorizontalLayout gap="32"/>
+					</e:layout>
+				</e:List>
+				</e:Group>
+			</e:Scroller>
+		</e:Group>
+		<e:Label id="lbl" text="" size="32" fontFamily="Microsoft YaHei" horizontalCenter="0" verticalCenter="30" textColor="0x30c3ff"/>
+		<e:Button id="btnCheckDetail" label="详情" verticalCenter="160" horizontalCenter="-115" anchorOffsetX="85" anchorOffsetY="28" x="440" y="464">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_btn_orange2_n" source.down="common_btn_orange2_n"/>
+				<e:Label id="money_label" text="详情" size="24" width="100%" textAlign="center" verticalCenter="0" stroke="2" strokeColor="0x957600" fontFamily="Microsoft YaHei" xmlns:ns1="*"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btnConfirm" label="确定" width="170" height="64" verticalCenter="160" horizontalCenter="115" anchorOffsetX="85" anchorOffsetY="32" x="670" y="456">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_btn_orange3" source.down="common_btn_orange3"/>
+				<e:Label id="lbl" text="确定" size="24" width="100%" textAlign="center" verticalCenter="0" stroke="2" strokeColor="0xA14000" fontFamily="Microsoft YaHei" xmlns:ns1="*"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+
+
+	</e:Group>
+</e:Skin>

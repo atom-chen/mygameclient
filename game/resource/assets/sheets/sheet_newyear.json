@@ -1,0 +1,11 @@
+{"file":"sheet_newyear.png","frames":{
+"newyear_bg2":{"x":188,"y":54,"w":40,"h":40,"offX":0,"offY":0,"sourceW":40,"sourceH":40},
+"newyear_bg3":{"x":146,"y":54,"w":40,"h":40,"offX":0,"offY":0,"sourceW":40,"sourceH":40},
+"newyear_bg4":{"x":338,"y":73,"w":91,"h":16,"offX":0,"offY":0,"sourceW":91,"sourceH":16},
+"newyear_icon1":{"x":73,"y":54,"w":71,"h":71,"offX":0,"offY":0,"sourceW":71,"sourceH":71},
+"newyear_icon2":{"x":0,"y":54,"w":71,"h":71,"offX":0,"offY":0,"sourceW":71,"sourceH":71},
+"newyear_icon3":{"x":411,"y":0,"w":71,"h":71,"offX":0,"offY":0,"sourceW":71,"sourceH":71},
+"newyear_icon4":{"x":338,"y":0,"w":71,"h":71,"offX":0,"offY":0,"sourceW":71,"sourceH":71},
+"newyear_tit":{"x":0,"y":0,"w":303,"h":52,"offX":22,"offY":2,"sourceW":347,"sourceH":57},
+"newyear_bg":{"x":305,"y":0,"w":31,"h":216,"offX":0,"offY":0,"sourceW":31,"sourceH":216},
+"newyear_bg1":{"x":484,"y":0,"w":13,"h":7,"offX":0,"offY":0,"sourceW":13,"sourceH":7}}}

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ProgressSkin" width="700" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="bgImg" scale9Grid="17,4,14,24" width="100%" source="lg_countdown_bg" verticalCenter="0" left="0"/>
+	<e:Image id="maskImg" width="700" height="100%" source="lg_countdown_img" scale9Grid="4,13,10,14" verticalCenter="0" left="0"/>
+	<e:Image id="proImg" source="lg_countdown_radius" verticalCenter="0" width="700" height="32" scale9Grid="17,15,6,1" left="0"/>
+	<e:Label id="infoLabel" text="剩余时间：0 s" fontFamily="Microsoft YaHei" size="24" textAlign="center" horizontalCenter="0" verticalCenter="0"/>
+</e:Skin>

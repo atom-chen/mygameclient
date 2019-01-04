@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ui.RadioButtonSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="up,down,disabled,upAndSelected,downAndSelected,disabledAndSelected" >
+	<e:Image source="common_radio_1" source.upAndSelected="common_radio_1"/>
+	<e:Image includeIn="upAndSelected,downAndSelected,disabledAndSelected" x="1" y="-1" source="common_radio_2"/>
+	<e:Label id="labelDisplay" text="中国移动" size="30" x="60" y="9" fontFamily="Microsoft YaHei" bold="true" textColor="0x8f4c26"/>
+</e:Skin>

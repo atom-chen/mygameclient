@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PanelBeforeMatchSkin" width="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="normal,final" >
+	<e:Image source="match_float_bg" horizontalCenter="0.5"/>
+	<e:Image verticalCenter="0" id="img" horizontalCenter="0" x="10" y="10" source="match_word_5"/>
+	<e:Group id="grpCount" y="95" horizontalCenter="170">
+		<e:BitmapLabel id="labCount" x="0" y="4" text="0" font="font_num_7"/>
+		<e:Image source="match_word_26" x="26" y="0"/>
+		<e:layout>
+			<e:HorizontalLayout verticalAlign="bottom"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

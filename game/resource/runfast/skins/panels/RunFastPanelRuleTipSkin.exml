@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="panels.RunFastPanelRuleTipSkin" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="bg_img" height="520" y="54" width="810" horizontalCenter="0" source="common_alert_bg" scale9Grid="213,103,404,34"/>
+	<e:Group id="tit_group" horizontalCenter="0" y="58">
+		<e:Image id="titBgImg1" y="3" source="common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+		<e:Image id="titFontImg1" y="0" horizontalCenter="0" x="138" scaleX="1" scaleY="1" source="common_word_15"/>
+	</e:Group>
+	<e:Image id="close_img" x="1023.67" y="74.5" anchorOffsetX="30.67" anchorOffsetY="30.5" source="common_close_n"/>
+
+	<e:Image id="imgRule" horizontalCenter="0" verticalCenter="0" source="pdk_rule_new"/>
+</e:Skin>

@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="QZNNSkin" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image horizontalCenter="0" verticalCenter="0" source="bg_qznn"/>
+	<ns1:MyGold id="myGold" skinName="MyGoldSkin" bottom="5" x="235"/>
+	<e:Group width="194.5" id="grpRedcoin" y="588.7" scaleX="1" scaleY="1" x="444.4" anchorOffsetX="0">
+		<e:Image id="redBgImg0" y="0" touchEnabled="false" x="0" source="bg_6"/>
+		<e:Image y="-4" touchEnabled="false" x="-6.5" source="icon_redcoin" scaleY="0.4" scaleX="0.4"/>
+		<e:Image id="redExchangeImg0" y="22" touchEnabled="true" x="165" scaleY="1" scaleX="1" source="common_exchangeRed" anchorOffsetX="23" anchorOffsetY="23.5"/>
+		<e:Label id="lbRedCoin" x="28" y="10" size="25" text="0" textAlign="center" width="118" touchEnabled="false" height="25" anchorOffsetX="0"/>
+	</e:Group>
+	<e:Button id="backBtn" x="20" y="-16">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_fh_n" source.down="btn_fh_h"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Group id="baseScoreCon" y="0" horizontalCenter="0">
+		<e:Image source="bg_3" x="0" y="0"/>
+		<e:Label id="baseScore" text="房间底分：9999" x="5" y="2" width="197" height="35" size="18" textAlign="center" verticalAlign="middle" fontFamily="微软雅黑" textColor="0xFFFFFF"/>
+	</e:Group>
+	<ns1:LabelButton id="startBtn" y="309" horizontalCenter="0">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled" xmlns:e="http://ns.egret.com/eui">
+				<e:Image width="100%" height="100%" source="btn_2_n" source.down="btn_2_h"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:LabelButton>
+
+	<e:Group id="leaveLabel" y="280" horizontalCenter="0" x="10">
+		<e:Image y="0" horizontalCenter="0" source="qznn_bg_5"/>
+		<e:Image horizontalCenter="0" verticalCenter="0" source="qznn_word_19"/>
+	</e:Group>
+	<e:Group id="waitLabel" y="280" horizontalCenter="0" x="20">
+		<e:Image source="qznn_bg_5" y="0" horizontalCenter="0"/>
+		<e:Image horizontalCenter="0" verticalCenter="0" source="bg_59"/>
+	</e:Group>
+	<ns1:StatusLabel id="statusLabel" y="280" skinName="StatusLabelSkin" horizontalCenter="0"/>
+	<ns1:LabelButton id="readyBtn" y="309" horizontalCenter="0">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled" xmlns:e="http://ns.egret.com/eui">
+				<e:Image width="100%" height="100%" source="btn_2_n" source.down="btn_2_h"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:LabelButton>
+	<ns1:LabelButton id="goonBtn" y="309" horizontalCenter="140">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled" xmlns:e="http://ns.egret.com/eui">
+				<e:Image width="100%" height="100%" source="btn_1_n" source.down="btn_1_h"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:LabelButton>
+	<ns1:LabelButton id="changeBtn" y="309" horizontalCenter="-140">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled" xmlns:e="http://ns.egret.com/eui">
+				<e:Image width="100%" height="100%" source="btn_4_n" source.down="btn_4_h"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:LabelButton>
+	<ns1:Clock1 id="clock" y="169" horizontalCenter="0" skinName="Clock3Skin"/>
+	<e:Image id="redNormalHelp_img" y="26" right="66" anchorOffsetX="20" anchorOffsetY="20" source="niu_rule"/>
+	<e:Button id="optionBtn" y="-22" right="-23">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_sz_n" source.down="btn_sz_h"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<ns1:Counter id="counter" y="313" horizontalCenter="0" skinName="Couner3Skin" visible="false"/>
+	<ns1:PlayerUI id="player5" y="230" skinName="PlayerUISkin" touchEnabled="true" touchChildren="false" left="-65"/>
+	<ns1:PlayerUI id="player1" x="-56" skinName="PlayerUISkin" bottom="-39" touchChildren="false" touchEnabled="true"/>
+	<ns1:PlayerUI id="player2" y="230" skinName="PlayerUISkin" right="-65" touchChildren="false" touchEnabled="true"/>
+	<ns1:PlayerUI id="player3" skinName="PlayerUISkin" right="50" y="30" x="10" touchChildren="false" touchEnabled="true"/>
+	<ns1:PlayerUI id="player4" y="30" skinName="PlayerUISkin" touchChildren="false" touchEnabled="true" left="50"/>
+	<ns1:CardView id="cardView1" skinName="CardView1Skin" bottom="75" horizontalCenter="0"/>
+	<ns1:CardView id="cardView5" skinName="CardView2Skin" y="240" left="110"/>
+	<ns1:CardView id="cardView4" y="57" skinName="CardView2Skin" left="230"/>
+	<ns1:CardView id="cardView3" skinName="CardView2Skin" y="57" right="230"/>
+	<ns1:CardView id="cardView2" skinName="CardView2Skin" y="240" right="120"/>
+	<ns1:Rab id="rab2" y="200" skinName="RabSkin" right="88"/>
+	<ns1:Rab id="rab1" skinName="RabSkin" y="513" x="103"/>
+	<ns1:Rab id="rab3" skinName="RabSkin" right="223" top="10"/>
+	<ns1:Rab id="rab4" skinName="RabSkin" left="223" top="10"/>
+	<ns1:Rab id="rab5" skinName="RabSkin" y="200" left="88"/>
+	<ns1:ResultGold id="resultGold2" skinName="ResultGoldSkin" right="70" top="260"/>
+	<ns1:ResultGold id="resultGold3" skinName="ResultGoldSkin" y="75" right="190"/>
+	<ns1:ResultGold id="resultGold4" skinName="ResultGoldSkin" y="75" left="190"/>
+	<ns1:ResultGold id="resultGold1" skinName="ResultGoldSkin" horizontalCenter="0" top="400"/>
+	<ns1:ResultGold id="resultGold5" skinName="ResultGoldSkin" left="70" top="260"/>
+	<ns1:LabelButton id="rabBtn2" y="353" horizontalCenter="140">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_1_n" source.down="btn_1_h"/>
+			<e:Label id="labelDisplay2" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</ns1:skinName>
+
+	</ns1:LabelButton>
+	<ns1:LabelButton id="rabBtn1" y="353" horizontalCenter="-140">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled" xmlns:e="http://ns.egret.com/eui">
+				<e:Image width="100%" height="100%" source="btn_4_n" source.down="btn_4_h"/>
+				<e:Label id="labelDisplay4" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:LabelButton>
+	<ns1:BetBtn2 id="multipleBtn1" y="353" skinName="BetBtn2Skin" x="362"/>
+	<ns1:BetBtn2 id="multipleBtn2" y="353" skinName="BetBtn2Skin" x="562"/>
+	<ns1:BetBtn2 id="multipleBtn3" y="353" skinName="BetBtn2Skin" x="762"/>
+	<e:Label id="ticket" text="本房间对局门票为：{0}金豆/局" size="16" right="10" bottom="203" fontFamily="微软雅黑"/>
+	<ns1:QznnChooseCard id="chooseCard" skinName="QznnChooseCardSkin" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image id="redNormal_img" y="431.33" source="play_red_pop" width="143" height="153" anchorOffsetX="71.5" anchorOffsetY="76.5" touchEnabled="true" right="86"/>
+	<e:Label id="redNormal_label" text="10s" y="497.96" fontFamily="Microsoft YaHei" size="30" right="137" touchEnabled="false" textColor="0xFFFFFF"/>
+
+	<e:Rect id="gameMask" height="640" width="1280" horizontalCenter="0" verticalCenter="0" alpha="0.7"/>
+	<e:Image id="playerSelect" source="bg_114" x="9" y="443"/>
+</e:Skin>

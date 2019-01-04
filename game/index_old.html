@@ -1,0 +1,461 @@
+<!DOCTYPE HTML>
+<html lang="en"><head>
+	<meta charset="UTF-8">
+	<title>好手气斗地主</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-control" content="no-cache">
+	<meta http-equiv="Cache" content="no-cache">
+	<link rel="dns-prefetch" href="//h5-ddz.hztangyou.com"/>
+    <link rel="shortcut icon" href="https://h5-ddz.hztangyou.com/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="https://h5-ddz.hztangyou.com/icon.png"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<style>
+		html, body {
+			-ms-touch-action: none;
+			background-color:transparent;
+			padding: 0;
+			border: 0;
+			margin: 0;
+			height: 100%;
+		}
+	</style>
+
+	<!--
+	<script>
+		window.onerror = function (msg, url, lineNo, columnNo, error) {
+			var string = msg.toLowerCase();
+			var substring = "script error";
+			if (string.indexOf(substring) > -1){
+				alert('Script Error: See Browser Console for Detail' + JSON.stringify(error));
+			} else {
+				var message = [
+					'Message: ' + msg,
+					'URL: ' + url,
+					'Line: ' + lineNo,
+					'Column: ' + columnNo,
+					'Error object: ' + JSON.stringify(error)
+				].join(' - ');
+		
+				alert(message);
+			}
+		
+			return false;
+		};
+	</script>
+-->
+</head>
+<body >
+    <iframe id="game" padding= "0" margin = "0" border ="0" frameborder="0" scrolling="no" marginwidth="0" marginheight="0"  width="100%" height="100%" position = "absolute"></iframe>
+	<script>
+		"use strict";
+		var HOST = "https://h5-ddz.hztangyou.com/";
+		var wxQrAppId = "wxedfdc5f0a9d55fa0";
+		var wxAppId = "wx9f94e92389bee54b";
+		var aliAppId = "2017121900972386";
+		var apiHost = HOST + 'api.php?';
+		var redirect_uri = HOST + "wx/index_old.html";
+		var ua = navigator.userAgent;
+		var _wxReady = false;
+		var _wxOverFunc = null;
+		var _downVis = "none";
+		var _refreshVis = "none";
+		
+		function hideDownApp(){
+			var  _downAppBtn = document.getElementById("downDdzApp");
+			if(!_downAppBtn) return;
+			_downAppBtn.style.display="none";
+		}
+
+		function hideLoadingGif(){
+			//document.getElementById("loadingGif").style.display="none";;
+		}
+		
+		function hideRefresh(){
+			var  _refreshPageBtn = document.getElementById("refreshDdzPage");
+			if(!_refreshPageBtn) return;
+			_refreshPageBtn.style.display="none";
+		}
+
+		function onLoadDownAppImg(){
+			var  _downAppBtn = document.getElementById("downDdzApp");
+			_downAppBtn.style.display = _downVis;
+			/*var _screenW = document.documentElement.clientWidth;
+			var _screenH = document.documentElement.clientHeight
+			_downAppBtn.style.position = "absolute";
+			_downAppBtn.style.top =  _screenH * 0.6 + 10;
+			_downAppBtn.style.left = _screenW * 0.5 - 10 -_downAppBtn.width; 
+			*/
+		}
+		function onLoadRefreshImg(){
+			var  _refreshPageBtn = document.getElementById("refreshDdzPage");
+			_refreshPageBtn.style.display = _refreshVis;
+			/*var _screenW = document.documentElement.clientWidth;
+			var _screenH = document.documentElement.clientHeight
+			_refreshPageBtn.style.position = "absolute";
+			_refreshPageBtn.style.top =  _screenH * 0.6 + 10;
+			_refreshPageBtn.style.left = _screenW * 0.5 + 10;
+			*/
+		}
+
+		function changeBtnsPos(){
+			/*var _screenW = document.documentElement.clientWidth;
+			var _screenH = document.documentElement.clientHeight
+			//alert("screenW:"+_screenW +"heightH:"+_screenH);
+			initDownAppPos();
+			initRefreshPagePos();
+			*/
+		}
+		/*window.attachEvent("orientationchange",function(){
+			
+		});
+		*/
+		function getPlatform(){
+			var platform = 'other';
+			if(/(iPhone|iPad|iPod|iOS)/i.test(ua)){
+				platform = 'iOS';
+			}else if(/(Android)/i.test(ua)){
+				platform = 'Android';
+			}
+
+			return platform;
+		}
+
+		function getBrowser(){
+			var browser = 'other';
+			if(/(CriOS)/i.test(ua)){
+				browser = 'chrome';
+			}else if(/(MicroMessenger)/i.test(ua)){
+				browser = 'wx';
+			}else if(/(Safari)/i.test(ua)){
+				browser = 'safari';
+			}
+
+			return browser;
+		}
+
+		function xmlHttpPost(url,callback){
+			var xhr = new XMLHttpRequest();
+	 		xhr.open("post", url,true);
+	    	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	 		xhr.onreadystatechange = function(){
+	 			if(xhr.readyState == 4) {
+	 				if(xhr.status == 200){
+	                	callback(JSON.parse(xhr.responseText));
+	                }else {
+	            		alert("授权失败!");
+	            	}
+	            }
+	 		}
+			xhr.send(null);
+		}
+
+		function isWeiXin(){ 
+			var ua = window.navigator.userAgent.toLowerCase(); 
+			if(ua.match(/MicroMessenger/i) == 'micromessenger'){ 
+				return true; 
+			}
+			else{ 
+				return false; 
+			} 
+		}
+
+		function isAli(){
+			var ua = window.navigator.userAgent.toLowerCase();
+			if(ua.match(/Alipay/i) == 'alipay'){ 
+				return true; 
+			}
+			else{ 
+				return false; 
+			} 
+		}
+
+		function isWXReady(){
+			return _wxReady;
+		}
+
+		function onWXReadyFunc(func){
+			_wxOverFunc = func;
+		}
+		function onWXLoadOver(){
+			_wxReady = true;
+			if(_wxOverFunc){
+				_wxOverFunc();
+				
+			}
+		}
+
+		function getUrlParams() {
+			var params = {};
+			var href = window.location.href;
+			var index = href.indexOf("?");
+			if (index < 0) {
+				return params;
+			}
+			var hashes = href.substr(index + 1).split('&');
+			for (var i = 0; i < hashes.length; i++) {
+				var arr = hashes[i].split('=');
+				params[arr[0]] = arr[1];
+			}
+			return params;
+		}
+	
+		var _aList = [];
+		function getCurTime(callFunc){
+			/*var myDate = new Date();
+			_aList.push({func:callFunc,date:myDate}); 
+			*/
+		}
+	
+		function listTime(){
+			/*var _str = "";
+			var _first = null;
+			var _last = null;
+			for(var i=0;i<2;++i){
+				var _myDate = _aList[i].date;
+				var _hour = _myDate.getHours();
+				var _minute = _myDate.getMinutes();
+				var _sec = _myDate.getSeconds();
+				var _millSec = _myDate.getMilliseconds();
+				_str += _aList[i].func + "|"+ _hour + ":" + _minute +":" + _sec+ ":" + _millSec +"\n";
+				_last  = _aList[i].date;
+			}
+			if(_aList.length >0){
+				_first = _aList[0].date;
+				_str += "毫秒差:" + parseInt((_last.getTime() - _first.getTime()) / 1);
+			}
+			alert("=>" + _str );
+			document.title = _str;
+			*/
+		}
+
+		function buildUrlWithParam(params){
+			var _fullUrl = redirect_uri + "?_t=" + Math.random();			
+			if (params.share_room || params.share_sk){
+				if (params.share_room)
+					_fullUrl += "&share_room="+params.share_room;
+				if (params.share_sk)
+					_fullUrl += "&share_sk="+params.share_sk
+			}
+			return _fullUrl;
+		}
+
+		function redirectToGame(_params){
+			var url = apiHost + 'action=getGameByName&name=doudizhu';
+			xmlHttpPost(url,function(response){
+				if(response.code == 0){
+					var game = response.data;
+					//getCurTime("ToGame");
+					var _time = new Date().getTime();
+					//alert("eeee" + _time);
+					var _unionid = _params.unionid || 0;//game.url +
+					var _url = HOST + game.url + "/index.html?showLog=1&oldWx=1&alertErr=1&num=" + Math.random();
+
+					if(_unionid){
+						_url = _url+ "&unionid=" + _unionid;
+					}
+
+					if(_params.share_sk){
+						_url = _url+ "&share_sk=" + _params.share_sk;
+					}
+
+					if( _params.share_room){
+						_url = _url+ "&share_room=" + _params.share_room;
+					}
+					
+					if(isWeiXin()){
+						_url = _url+ "&wx_code=" + _params.code;
+					}else{
+						if(isAli()){
+							_url = _url+ "&ali_code=" + _params.auth_code;
+						}else{
+							if(_params.code && _params.isWxQr && _params.isWxQr == "1" ){
+								_url = _url+ "&wx_code=" + _params.code + "&isWxQr=1";
+							}else if(_params.auth_code && _params.isAliQr && _params.isAliQr == "1"){
+								_url = _url+ "&ali_code=" + _params.auth_code + "&isAliQr=1";
+
+							}
+						}
+					}
+
+					if(window.opener&&(_params.isWxQr||_params.isAliQr)){
+						window.close();
+						window.opener.location.replace(_url);
+					}else{
+						document.title = game.alias;
+						var _game = document.getElementById("game");
+						_game.src = _url
+					}
+				}
+				else{
+					alert("发送错误,code=",response.code);
+				}
+			})
+		}
+
+		function addWXBridge(){
+		    var head = document.getElementsByTagName('head')[0];
+		    var _bridge = document.getElementById("ddzWxBridge");
+		    if(_bridge) {
+		    	return
+		    };
+
+            var script = document.createElement('script');
+            script.id = "ddzWxBridge";
+            script.type = 'text/javascript';
+            script.src = "https://h5-ddz.hztangyou.com/wx/wx.min.1018.js";
+            script.async = true;
+            head.appendChild(script);
+            script.addEventListener('load', function () {
+                script.removeEventListener('load', null, false);
+            }, false);
+		}
+
+		function reqWXCode(){
+			if(!isWXReady()) {
+				onWXReadyFunc(reqWXCode);
+				return;
+			}
+
+			var params = window._myParams;
+			//alert("reqWXCode--->room|" + params.share_room +" sk|" +params.share_sk);
+			var _fullUrl = buildUrlWithParam(params);
+			var enURI = encodeURIComponent(_fullUrl);	
+			
+			var _url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid="+wxAppId+"&redirect_uri="+enURI+"&response_type=code&scope=snsapi_userinfo&state=3#wechat_redirect";
+			
+			window.location.href = _url;
+		}
+
+		function reqAliCode(){
+			var params = window._myParams;
+			var _url1 = buildUrlWithParam(params);
+			var enURI = encodeURIComponent(_url1);	
+			var _url = "https://openauth.alipay.com/oauth2/publicAppAuthorize.htm?app_id="+aliAppId+"&scope=auth_user&redirect_uri=" + enURI + "&state=3";
+			
+			window.location.href = _url;
+		}
+
+		
+		function payWXH5(_url){
+			window.top.location.href = _url;
+		}
+
+		function payAliH5(_base64Src){
+      		var div = document.getElementById("payDiv");
+            if(!div){
+                div = document.createElement("a");
+                div.id = "payDiv";
+                document.body.appendChild(div);
+            }
+            div.innerHTML = _base64Src;
+            document.forms['alipaysubmit'].submit();
+		}
+
+		function redirectWX(_unionid){
+			var _url = redirect_uri + "?unionid="+_unionid;
+			_url = encodeURIComponent(_url);	
+			var _fullUrl = "https://open.weixin.qq.com/connect/oauth2/authorize?appid="+wxAppId+"&redirect_uri="+_url+"&&response_type=code&scope=snsapi_userinfo&state=3#wechat_redirect";
+			window.top.location.href = _fullUrl;
+		}
+
+		function refreshCur(){
+			reqAliCode();
+		}
+
+		function downloadApp(){
+			window.location = "https://m.hztangyou.com/down/?src=h5ddz";
+		}
+		//getCurTime("wxRedirect");
+
+		function startByWXH5(_params){
+			addWXBridge();
+			var _code = localStorage.getItem("ddz_wx_param_code_old");
+			if(!_params || !_params.code || _params.code == _code){
+				reqWXCode();
+			}
+			else{
+				localStorage.setItem("ddz_wx_param_code_old",_params.code);
+				redirectToGame(_params);
+			}
+		}
+
+		function startByAliH5(_params){
+			var _code = localStorage.getItem("ddz_ali_param_code_old");
+			if(!_params || !_params.auth_code || _params.auth_code == _code){
+				reqAliCode();
+			}
+			else{
+				localStorage.setItem("ddz_ali_param_code_old",_params.auth_code);
+				redirectToGame(_params);
+			}
+		}
+
+	    function openNewWindow(url,name,iWidth,iHeight){
+	        var newWindow = null;
+	        //获得窗口的垂直位置 
+	        var iTop = (window.screen.availHeight - 30 - iHeight) / 2; 
+	        //获得窗口的水平位置 
+	        var iLeft = (window.screen.availWidth - 10 - iWidth) / 2; 
+	        window.open(url, name, 'height=' + iHeight + ',innerHeight=' + iHeight + ',width=' + iWidth + ',innerWidth=' + iWidth + ',top=' + iTop + ',left=' + iLeft + ',status=no,toolbar=no,menubar=no,location=no,resizable=no,scrollbars=0,titlebar=no'); 
+	    }
+
+		function openWXQRCode(){
+			var params = window._myParams;
+			//alert("reqWXCode--->room|" + params.share_room +" sk|" +params.share_sk);
+			var enURI = "";	
+			var _fullUrl = buildUrlWithParam(params);
+			_fullUrl += "&isWxQr=1";
+
+			enURI = encodeURIComponent(_fullUrl);
+			var _url = "https://open.weixin.qq.com/connect/qrconnect?appid="+wxQrAppId+"&redirect_uri="+enURI+"&response_type=code&scope=snsapi_login&state=2#wechat_redirect";
+			var _os = getPlatform();
+			if ((_os == "Android")||(_os == "iOS")){
+				window.location.href = _url;
+			}else{
+				openNewWindow(_url,"微信授权",800,700);
+			}
+		}
+		
+		function openAliQRCode(){
+			var params = window._myParams;
+			//alert("reqWXCode--->room|" + params.share_room +" sk|" +params.share_sk);
+			var enURI = "";	
+			var _fullUrl = buildUrlWithParam(params);
+			_fullUrl += "&isAliQr=1";
+
+			enURI = encodeURIComponent(_fullUrl);
+			var _url = "https://open.weixin.qq.com/connect/qrconnect?appid="+wxQrAppId+"&redirect_uri="+enURI+"&response_type=code&scope=snsapi_login&state=2#wechat_redirect";
+			var _os = getPlatform();
+			if ((_os == "Android")||(_os == "iOS")){
+				window.location.href = _url;
+			}else{
+				openNewWindow(_url,"微信授权",800,700);
+			}
+		}
+
+		function parseParamsAndRun(){
+			hideDownApp();
+			hideRefresh();
+			var _params = getUrlParams();
+			window._myParams = _params;
+			if(isWeiXin()){
+				startByWXH5(_params);
+			}else if(isAli(_params)){
+				startByAliH5(_params);
+			}else{
+				redirectToGame(_params);
+			}
+		}
+	
+		parseParamsAndRun();
+	</script>
+
+	<!--<script src="wx.min.1018.js" async="async"></script> -->
+	
+	<!--<img id ="downDdzApp" src="downApp.png"  onload="onLoadDownAppImg();"onclick="downloadApp();"/> -->
+    <!--<img id ="refreshDdzPage" src="refreshPage.png" onload="onLoadRefreshImg();" onclick="refreshCur();"/>-->
+</body>
+</html>

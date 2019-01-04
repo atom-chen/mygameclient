@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="scenes.GameFFleSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image x="0" y="0" width="100%" source="lg_bg_png"/>
+	<e:Group id="matching" y="0" width="750" height="1334" horizontalCenter="0">
+        <e:Image id="matchingEffect1" horizontalCenter="0" verticalCenter="64" source="lg_rader_s_png"/>
+        <e:Image id="matchingEffect2" horizontalCenter="0" verticalCenter="64" source="lg_rader_l_png"/>
+        <e:Image id="matchingEffect3" horizontalCenter="0" verticalCenter="64" source="lg_rader_xl_png"/>
+        <e:Label id="lblStatus" text="正在匹配" y="250" size="38" fontFamily="SimHei" bold="true" textColor="0xFFFFFF" horizontalCenter="0"/>
+        <e:Label id="lblWaittime" text="已等待3秒" y="310" size="24" fontFamily="SimHei" bold="true" horizontalCenter="0" textColor="0xffffff"/>
+        <e:Label id="lblVS" text="VS" size="80" fontFamily="SimHei" bold="true" textColor="0xFFFFFF" horizontalCenter="0" y="691" visible="false"/>
+		<ns1:Head id="myHead1" skinName="components.HeadSkin" y="646" x="290" visible="false"/>
+		<ns1:Head id="othersHead1" skinName="components.HeadSkin" y="646" right="140" visible="false"/>
+    </e:Group>
+	<e:Group id="playing" y="0" width="750" height="1334" horizontalCenter="0" visible="false">
+		<e:Group y="150" horizontalCenter="0" height="100" width="550">
+			<e:Rect id="playerTatol" width="562" height="52" fillColor="0x167b82" strokeColor="0xffffff" strokeWeight="6" verticalCenter="0" x="-6"/>
+			<e:Rect id="player1Score" width="0" height="40" strokeColor="0xFFFFFF" verticalCenter="0" left="0" fillColor="0x4452da"/>
+			<e:Rect id="player2Score" width="0" height="40" strokeColor="0xFFFFFF" verticalCenter="0" right="0" fillColor="0xce1f69"/>
+			<e:Image horizontalCenter="0" verticalCenter="-9.5" source="lg_icon_finish"/>
+			<ns1:Head id="myHead2" skinName="components.HeadSkin" x="0" y="50" width="90" height="90" anchorOffsetX="45" anchorOffsetY="45"/>
+			<ns1:Head id="othersHead2" skinName="components.HeadSkin" x="550" y="50" width="90" height="90" anchorOffsetX="45" anchorOffsetY="45"/>
+		</e:Group>
+		<e:Group width="660" height="980" horizontalCenter="0" y="290">
+			<e:Image width="660" height="980" horizontalCenter="0" verticalCenter="0" scale9Grid="11,11,7,8" source="lg_game_area_bg"/>
+			<e:Image id="itemImg0" rotation="0" width="150" height="150" source="ffl_card_reverse_png" anchorOffsetX="75" anchorOffsetY="75" x="90" y="90"/>
+			<e:Image id="itemImg1" rotation="0" width="150" height="150" source="ffl_card_reverse_png" anchorOffsetX="75" anchorOffsetY="75" x="250" y="90"/>
+			<e:Image id="itemImg2" rotation="0" width="150" height="150" source="ffl_card_reverse_png" anchorOffsetX="75" anchorOffsetY="75" x="410" y="90"/>
+			<e:Image id="itemImg3" rotation="0" width="150" height="150" source="ffl_card_reverse_png" anchorOffsetX="75" anchorOffsetY="75" x="570" y="90"/>
+			<e:Image id="itemImg4" rotation="0" width="150" height="150" source="ffl_card_reverse_png" anchorOffsetX="75" anchorOffsetY="75" x="90" y="250"/>
+			<e:Image id="itemImg5" rotation="0" width="150" height="150" x="250" y="250" source="ffl_card_reverse_png" anchorOffsetX="75" anchorOffsetY="75"/>
+			<e:Image id="itemImg6" rotation="0" width="150" height="150" x="410" y="250" source="ffl_card_reverse_png" anchorOffsetX="75" anchorOffsetY="75"/>
+			<e:Image id="itemImg7" rotation="0" width="150" height="150" y="250" source="ffl_card_reverse_png" anchorOffsetX="75" anchorOffsetY="75" x="570"/>
+			<e:Image id="itemImg8" rotation="0" width="150" height="150" source="ffl_card_reverse_png" anchorOffsetX="75" anchorOffsetY="75" x="90" y="410"/>
+			<e:Image id="itemImg9" rotation="0" width="150" height="150" x="250" y="410" source="ffl_card_reverse_png" anchorOffsetX="75" anchorOffsetY="75"/>
+			<e:Image id="itemImg10" rotation="0" width="150" height="150" x="410" y="410" source="ffl_card_reverse_png" anchorOffsetX="75" anchorOffsetY="75"/>
+			<e:Image id="itemImg11" rotation="0" width="150" height="150" y="410" source="ffl_card_reverse_png" anchorOffsetX="75" anchorOffsetY="75" x="570"/>
+			<e:Image id="itemImg12" rotation="0" width="150" height="150" source="ffl_card_reverse_png" anchorOffsetX="75" anchorOffsetY="75" x="90" y="570"/>
+			<e:Image id="itemImg13" rotation="0" width="150" height="150" x="250" y="570" source="ffl_card_reverse_png" anchorOffsetX="75" anchorOffsetY="75"/>
+			<e:Image id="itemImg14" rotation="0" width="150" height="150" x="410" y="570" source="ffl_card_reverse_png" anchorOffsetX="75" anchorOffsetY="75"/>
+			<e:Image id="itemImg15" rotation="0" width="150" height="150" y="570" source="ffl_card_reverse_png" anchorOffsetX="75" anchorOffsetY="75" x="570"/>
+			<e:Image id="itemImg16" rotation="0" width="150" height="150" source="ffl_card_reverse_png" anchorOffsetX="75" anchorOffsetY="75" x="90" y="730"/>
+			<e:Image id="itemImg17" rotation="0" width="150" height="150" x="250" y="730" source="ffl_card_reverse_png" anchorOffsetX="75" anchorOffsetY="75"/>
+			<e:Image id="itemImg18" rotation="0" width="150" height="150" x="410" y="730" source="ffl_card_reverse_png" anchorOffsetX="75" anchorOffsetY="75"/>
+			<e:Image id="itemImg19" rotation="0" width="150" height="150" y="730" source="ffl_card_reverse_png" anchorOffsetX="75" anchorOffsetY="75" x="570"/>
+			<e:Image id="itemImg20" rotation="0" width="150" height="150" source="ffl_card_reverse_png" anchorOffsetX="75" anchorOffsetY="75" x="90" y="890"/>
+			<e:Image id="itemImg21" rotation="0" width="150" height="150" x="250" y="890" source="ffl_card_reverse_png" anchorOffsetX="75" anchorOffsetY="75"/>
+			<e:Image id="itemImg22" rotation="0" width="150" height="150" x="410" y="890" source="ffl_card_reverse_png" anchorOffsetX="75" anchorOffsetY="75"/>
+			<e:Image id="itemImg23" rotation="0" width="150" height="150" y="890" source="ffl_card_reverse_png" anchorOffsetX="75" anchorOffsetY="75" x="570"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="result" y="0" width="750" height="1334" horizontalCenter="0" visible="false">
+		<e:Image id="resultTitleImg" source="lg_result_win"/>
+		<e:Label id="resultFightCost" text="23.33秒" size="48" fontFamily="SimHei" y="355" horizontalCenter="0" textColor="0xcb7215"/>
+		<e:Group x="215" y="473">
+		<e:Image scale9Grid="22,19,4,2" width="320" source="lg_result_today_bg"/>
+		<e:Label id="resultFightTimes" text="今日已对局1场" horizontalCenter="0" verticalCenter="0" size="24" fontFamily="SimHei"/>
+		</e:Group>
+		<ns1:Head id="myHead3" skinName="components.HeadSkin" x="140" y="620"/>		
+		<e:Label id="resultScore" text="1:1" size="56" fontFamily="SimHei" y="680" horizontalCenter="0"/>
+		<e:Label id="GetNum" text="你获得200金豆" scaleX="1" scaleY="1" textAlign="center" backgroundColor="0xA37416" size="56" horizontalCenter="0.5" x="186" textColor="0xFFFFFF" verticalCenter="220" y="789"/>
+		<ns1:Head id="othersHead3" skinName="components.HeadSkin" y="620" x="440"/>		
+		<e:Group x="135" y="980">
+		<e:Image id="btnFightStatus" width="480" scale9Grid="52,42,9,4" y="0" x="0" source="lg_result_btn_blue"/>
+		<e:Label id="resultTips" text="继续游戏" size="32" fontFamily="SimHei" horizontalCenter="0" verticalCenter="0" touchEnabled="false"/>
+		</e:Group>
+		<e:Group x="135" y="1110">
+		<e:Image id="btnChangeGame" width="480" scale9Grid="52,42,9,4" y="0" x="0" source="lg_result_btn_red"/>
+		<e:Label id="lblChangeGame" text="换个游戏" size="32" fontFamily="SimHei" touchEnabled="false" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+		<e:Group x="135" y="1176" visible="false">
+		<e:Image id="btnChangeEnemy" width="480" scale9Grid="52,42,9,4" y="0" x="0" source="lg_result_btn_white"/>
+		<e:Label text="换个对手" size="32" fontFamily="SimHei" touchEnabled="false" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+	</e:Group>
+	<e:Image id="btnBack" x="25" y="50" touchEnabled="true" source="lg_back_btn"/>
+	<e:Image id="btnHelp" x="125" y="50" touchEnabled="true" source="lg_question_btn"/>
+	<e:Image id="meng" scaleX="1" scaleY="1" width="100%" height="1334" x="0" y="0" alpha="0.4" source="lg_bg_png" visible="false"/>
+	<e:Group id="tips" y="607" horizontalCenter="0" visible="false">
+		<e:Image y="0" x="0" source="lg_msg_bg"/>
+		<e:Image id="tipsWord" horizontalCenter="0" verticalCenter="0" source="lg_READY"/>
+	</e:Group>
+	<e:Group id="exit" y="0" width="750" height="1334" horizontalCenter="0" visible="false">
+		<e:Rect width="750" height="1334" x="0" y="0" fillColor="0x000000" fillAlpha="0.85" visible="false"/>
+		<e:Image horizontalCenter="0" y="320" height="100" width="640" scale9Grid="17,17,1,1" source="lg_mask_t"/>
+		<e:Label text="温馨提示" y="351" size="38" fontFamily="SimHei" horizontalCenter="0"/>
+		<e:Image width="640" height="412" scale9Grid="4,4,24,14" y="420" horizontalCenter="0" source="lg_mask_c"/>
+		<e:Label text="退出本局记为认输\n\n是否确认退出？" y="500" size="38" fontFamily="SimHei" horizontalCenter="0" textColor="0x000000" textAlign="center"/>
+		<e:Group y="694" left="80">
+			<e:Image id="exitCancel" scale9Grid="51,43,14,2" y="0" width="280" x="0" source="lg_result_btn_blue"/>
+			<e:Label text="继续玩" size="38" fontFamily="SimHei" horizontalCenter="0" verticalCenter="0" textColor="0xffffff" touchEnabled="false"/>
+		</e:Group>
+		<e:Group y="694" right="80">
+			<e:Image id="exitConfirm" scale9Grid="51,43,14,2" y="0" width="280" x="0" source="lg_result_btn_red"/>
+			<e:Label text="认输退出" size="38" fontFamily="SimHei" horizontalCenter="0" verticalCenter="0" textColor="0xFFFFFF" touchEnabled="false"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="help" width="750" height="1334" horizontalCenter="0" visible="false">
+		<e:Rect width="750" height="1334" x="0" y="0" fillColor="0x000000" fillAlpha="0.85" visible="false"/>
+		<e:Image horizontalCenter="0" y="320" height="100" width="640" scale9Grid="17,17,1,1" source="lg_mask_t"/>
+		<e:Label text="游戏说明" y="351" size="38" fontFamily="SimHei" horizontalCenter="0"/>
+		<e:Image width="640" height="480" scale9Grid="4,4,24,14" y="420" horizontalCenter="0" source="lg_mask_c"/>
+		<e:Label text="规则" y="435" size="32" fontFamily="SimHei" textAlign="center" textColor="0x333333" left="90"/>
+		<e:Label text="1.    翻到        的图标即可消除。\n2.如果翻错，图标会还原。\n3.消除一次获得1积分，游戏结束后比较积分差，1积分\n60金豆。获取别人金豆或输金豆。" y="480" size="24" fontFamily="SimHei" textAlign="left" left="90" textColor="0x999999"/>
+		<e:Label text="  连续    两个相同" y="480" size="24" fontFamily="SimHei" textAlign="left" left="90" textColor="0x4452da"/>
+		<e:Label text="玩法" y="579.44" size="32" fontFamily="SimHei" textColor="0x333333" textAlign="center" left="90"/>
+		<e:Image horizontalCenter="0.5" source="ffl_games_tips_png" y="624.44"/>
+		<e:Label text="点击即可翻开图片" y="749.44" size="24" fontFamily="SimHei" textAlign="center" horizontalCenter="0" textColor="0x4452da"/>
+		<e:Label text="胜负判定" y="779.44" size="32" fontFamily="SimHei" textColor="0x333333" textAlign="center" left="90"/>
+		<e:Label text="1.先将自己全部图标消除的人获胜。\n2.若游戏未结束，先退出的一方算输。\n3.若同时完成消除或者退出游戏，则平局。" y="819.44" size="24" fontFamily="SimHei" textAlign="left" left="90" textColor="0x999999"/>
+		<e:Image id="bthExitHelp" x="609" y="340" touchEnabled="true" source="lg_close"/>
+	</e:Group>
+</e:Skin>

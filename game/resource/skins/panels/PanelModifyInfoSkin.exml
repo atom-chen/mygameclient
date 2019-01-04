@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PanelModifyInfoSkin" height="486" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="770">
+	<e:Image width="100%" source="common_alert_bg" height="100%" scale9Grid="107,112,642,5"/>
+	<e:Button id="close_btn" label="" x="715" y="-7" width="66">
+		<e:skinName>
+		<e:Skin states="up,down,disabled" xmlns:ns1="*">
+			<e:Image width="100%" height="100%" source="common_close_n" source.down="common_close_h"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Group id="tit_group" horizontalCenter="0" y="3">
+		<e:Image id="titBgImg1" y="3" source="common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+		<e:Image id="titFontImg1" y="-10" horizontalCenter="0.5" x="138" scaleX="1" scaleY="1" source="room_modify"/>
+	</e:Group>
+	<e:Group width="714" height="380" y="70" anchorOffsetX="0" anchorOffsetY="0" x="28">
+		<e:Image id="scaleImg" width="100%" height="100%" source="common_bg" scale9Grid="10,8,66,49" anchorOffsetX="0" anchorOffsetY="0" x="0" y="0" scaleX="1" scaleY="1"/>
+		<e:Image id="sexImg0" x="494" y="56" scaleX="1" scaleY="1" source="icon_female"/>
+		<e:Image id="sexImg" x="300" y="56" scaleX="1" scaleY="1" source="icon_male"/>
+		<e:RadioButton id="rbBoy" label="男" x="212" y="43" skinName="ui.RadioButtonSkin" groupName="sex" value="male"/>
+		<e:RadioButton id="rbGirl" y="43" skinName="ui.RadioButtonSkin" label="女" x="404" groupName="sex" value="female"/>
+		<e:Image id="splitImg" scaleX="1" scaleY="1" source="common_split" width="95%" height="3" y="124" horizontalCenter="0"/>
+		<e:Button id="sureBtn" label="确定" verticalCenter="146" width="170" height="58" anchorOffsetX="85" anchorOffsetY="29" x="339">
+			<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:ns1="*">
+				<e:Image width="100%" height="100%" source="common_btn_orange3"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-3" fontFamily="Microsoft YaHei"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:TextInput id="signInput" y="224.5" width="660" height="46" skinName="ui.TextInputSkin" displayAsPassword="false" scaleX="1" scaleY="1" horizontalCenter="0" maxChars="25"/>
+		<e:Label id="descLabel1" text="请输入不超过25个字符的签名" y="180" fontFamily="Microsoft YaHei" size="22" horizontalCenter="0" lineSpacing="10" textAlign="center" textColor="0x404A63" x="88" scaleX="1" scaleY="1"/>
+		<e:Label id="descLabel0" text="性别" size="24" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" textAlign="right" textColor="0xDA3939" y="13" horizontalCenter="0" bold="true"/>
+		<e:Label id="descLabel2" text="个性签名" size="24" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" textAlign="center" textColor="0xDA3939" y="143" bold="true" horizontalCenter="0"/>
+	</e:Group>
+
+
+
+</e:Skin>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin  class="scenes.Game2048Skin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" states="win,lose" >
+	<w:Config id="1631fca0e08"/>
+	<e:Image id="bg" scaleX="1" scaleY="1" width="100%" height="100%" verticalCenter="0" horizontalCenter="0" source="lg_bg_png"/>
+	<e:Group id="pipei" width="750" height="1334" horizontalCenter="0" verticalCenter="0">
+		<e:Image id="gameback" scaleX="1" left="20" top="20" source="lg_back_btn"/>
+		<e:Image id="gamehelp" scaleX="1" left="120" top="20" source="lg_question_btn"/>
+		<e:Label id="title" text="正在匹配中" scaleX="1" scaleY="1" size="60" top="180" borderColor="0x160202" textAlign="right" wordWrap="false" textColor="0xffffff" horizontalCenter="0"/>
+		<e:Label id="timeCount" text="10 s" size="30" textColor="0xffffff" top="260" horizontalCenter="0"/>
+		<e:Image id="large" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" source="lg_rader_xl_png"/>
+		<e:Image id="big" horizontalCenter="0" verticalCenter="0" source="lg_rader_l_png"/>
+		<e:Image id="small" horizontalCenter="0" verticalCenter="0" source="lg_rader_s_png"/>
+		<ns1:Head id="MyHead1" skinName="components.HeadSkin" verticalCenter="0" x="290"/>
+		<e:Label id="tip" text="率先拼出2048的获胜" scaleX="1" scaleY="1" size="30" borderColor="0x160202" textAlign="center" wordWrap="false" textColor="0xFFFFFF" verticalAlign="middle" horizontalCenter="0" top="260" visible="false"/>
+		<e:Label id="vs" text="VS" scaleX="1" scaleY="1" size="80" borderColor="0x160202" textAlign="center" wordWrap="false" textColor="0xFFFFFF" verticalAlign="middle" horizontalCenter="0" verticalCenter="0" visible="false"/>
+		<ns1:Head id="HisHead1" skinName="components.HeadSkin" horizontalCenter="200" verticalCenter="0" currentState="female" visible="false"/>
+	</e:Group>
+	<e:Group id="start" width="750" height="1334" horizontalCenter="0" top="0" visible="false">
+		<e:Rect width="600" height="60" scaleX="1" scaleY="1" top="147" fillColor="0x167B82" strokeColor="0xFFFFFF" strokeWeight="6" horizontalCenter="0"/>
+		<e:Rect id="myScore" height="46" y="154" scaleX="1" scaleY="1" fillColor="0x4452DA" width="250" left="125"/>
+		<e:Rect id="hisScore" height="46" y="154" scaleX="1" scaleY="1" right="125" fillColor="0xCE1F69" x="10" width="250"/>
+		<e:Label id="lab_10" text="领先100分" size="40" verticalAlign="middle" textAlign="center" top="158" horizontalCenter="-94" visible="false"/>
+		<e:Label id="lab_11" text="旗鼓相当" size="40" verticalAlign="middle" textAlign="center" top="158" horizontalCenter="0"/>
+		<e:Label id="lab_01" text="落后100分" size="40" verticalAlign="middle" textAlign="center" top="158" left="375" visible="false"/>
+		<e:Image id="gameback0" scaleX="1" left="20" top="20" x="20" y="20" scaleY="1" source="lg_back_btn"/>
+		<e:Image id="gamehelp0" scaleX="1" left="120" top="20" x="120" y="20" scaleY="1" source="lg_question_btn"/>
+		<ns1:Head id="MyHead2" skinName="components.HeadSkin" verticalCenter="-490" horizontalCenter="-280" currentState="gameing" width="85" height="85"/>
+		<ns1:Head id="HisHead2" skinName="components.HeadSkin" verticalCenter="-490" horizontalCenter="280" currentState="gameing" width="85" height="85"/>
+		<e:Label id="score" text="当前得分：0" size="40" verticalAlign="middle" textAlign="center" top="280" horizontalCenter="0.5"/>
+		<e:Group id="picGroup" width="700" height="700" horizontalCenter="0" verticalCenter="38">
+			<e:Image id="wangge" scale9Grid="11,11,7,8" width="700" height="700" horizontalCenter="0" verticalCenter="0" source="lg_game_area_bg"/>
+			<e:Image id="itemImg0" rotation="0" width="150" height="150" scale9Grid="11,12,6,6" source="lg_game_block" x="20" y="20"/>
+			<e:Image id="itemImg1" rotation="0" width="150" height="150" scale9Grid="11,12,6,6" source="lg_game_block" x="190" y="20"/>
+			<e:Image id="itemImg2" rotation="0" width="150" height="150" scale9Grid="11,12,6,6" source="lg_game_block" x="360" y="20"/>
+			<e:Image id="itemImg3" rotation="0" width="150" height="150" scale9Grid="11,12,6,6" source="lg_game_block" x="530" y="20"/>
+			<e:Image id="itemImg4" rotation="0" width="150" height="150" scale9Grid="11,12,6,6" source="lg_game_block" x="20" y="190"/>
+			<e:Image id="itemImg5" rotation="0" width="150" height="150" scale9Grid="11,12,6,6" x="190" y="190" source="lg_game_block"/>
+			<e:Image id="itemImg6" rotation="0" width="150" height="150" scale9Grid="11,12,6,6" x="360" source="lg_game_block" y="190"/>
+			<e:Image id="itemImg7" rotation="0" width="150" height="150" scale9Grid="11,12,6,6" x="530" y="190" source="lg_game_block"/>
+			<e:Image id="itemImg8" rotation="0" width="150" height="150" scale9Grid="11,12,6,6" source="lg_game_block" x="20" y="360"/>
+			<e:Image id="itemImg9" rotation="0" width="150" height="150" scale9Grid="11,12,6,6" x="190" y="360" source="lg_game_block"/>
+			<e:Image id="itemImg10" rotation="0" width="150" height="150" scale9Grid="11,12,6,6" x="360" y="360" source="lg_game_block"/>
+			<e:Image id="itemImg11" rotation="0" width="150" height="150" scale9Grid="11,12,6,6" x="530" y="360" source="lg_game_block"/>
+			<e:Image id="itemImg12" rotation="0" width="150" height="150" scale9Grid="11,12,6,6" source="lg_game_block" x="20" y="530"/>
+			<e:Image id="itemImg13" rotation="0" width="150" height="150" scale9Grid="11,12,6,6" x="190" y="530" source="lg_game_block"/>
+			<e:Image id="itemImg14" rotation="0" width="150" height="150" scale9Grid="11,12,6,6" x="360" y="530" source="lg_game_block"/>
+			<e:Image id="itemImg15" rotation="0" width="150" height="150" scale9Grid="11,12,6,6" x="530" y="530" source="lg_game_block"/>
+		</e:Group>
+		<e:Image id="meng" scaleX="1" scaleY="1" width="750" height="1334" verticalCenter="0" horizontalCenter="0" x="0" y="0" alpha="0.4" source="lg_bg_png" visible="false"/>
+		<e:Image id="ready" horizontalCenter="0" verticalCenter="0" source="lg_READY" x="277" y="645" scaleX="1" scaleY="1" visible="false"/>
+		<e:Image id="go" horizontalCenter="0" verticalCenter="0" source="lg_GO" x="332" y="644" scaleX="1" scaleY="1" visible="false"/>
+		<ns1:Progress id="Prog" skinName="ProgressSkin" horizontalCenter="0" bottom="150"/>
+		<e:Image id="tip4" horizontalCenter="0" verticalCenter="0" source="lg_msg_bg" visible="false"/>
+		<e:Label id="tip1" text="格子已填满，无法移动啦！\n棋盘即将重置" verticalAlign="middle" textAlign="center" textColor="0x4452DA" size="48" horizontalCenter="0" verticalCenter="0" bold="true" visible="false"/>
+		<e:Label id="tip2" text="对方率先合成2048,对方获胜" verticalAlign="middle" textAlign="center" size="48" verticalCenter="0" bold="true" textColor="0x4452da" horizontalCenter="0" visible="false"/>
+	</e:Group>
+	<e:Group id="result" width="750" height="1334" horizontalCenter="0" y="0" visible="false">
+		<e:Image id="Gresult" top="0" horizontalCenter="0" includeIn="win" source="lg_result_win"/>
+		<e:Label id="scorenNum" text="40567" scaleX="1" scaleY="1" horizontalCenter="1" y="352" backgroundColor="0xA37416" bold="true" textColor="0xc87215" size="48" verticalAlign="middle" textColor.lose="0xafa69d"/>
+		<e:Image width="300" horizontalCenter="0" verticalCenter="-180" scale9Grid="20,17,8,3" height="45" source="lg_result_today_bg"/>
+		<e:Label id="Gnum" text="今日已对决 1 场" scaleX="1" scaleY="1" textAlign="center" y="473" backgroundColor="0xa37416" bold="true" textColor="0xffffff" horizontalCenter="0.5"/>
+		<ns1:Head id="MyHead3" skinName="components.HeadSkin" horizontalCenter="-200" verticalCenter="0" x="104" y="596" scaleX="1" scaleY="1"/>
+		<e:Label id="resultScore" text="1 : 1" scaleX="1" scaleY="1" textAlign="center" backgroundColor="0xA37416" bold="true" textColor="0xFFFFFF" size="56" horizontalCenter="0" verticalCenter="0"/>
+		<e:Label id="GetNum" text="你获得200金豆" scaleX="1" scaleY="1" textAlign="center" backgroundColor="0xA37416" size="56" horizontalCenter="0" x="366" verticalCenter="200" textColor="0xffffff" visible="false"/>
+		<ns1:Head id="HisHead3" skinName="components.HeadSkin" horizontalCenter="200" verticalCenter="0" x="504" y="596" scaleX="1" scaleY="1" currentState="female"/>
+		<e:Image id="againBtn" width="480" horizontalCenter="0" y="980" scale9Grid="48,40,19,8" source.lose="lg_result_btn_blue" source="lg_result_btn_blue"/>
+		<e:Label id="lab1" text="继续游戏" scaleX="1" scaleY="1" y="1007" backgroundColor="0xA37416" bold="true" textColor="0xFFFFFF" horizontalCenter="0.5" size="35" text.lose="对方已退出游戏"/>
+		<e:Image id="changeGame" width="480" horizontalCenter="0" y="1110" scale9Grid="48,41,20,6" source="lg_result_btn_red"/>
+		<e:Label id="lab2" text="换个游戏" scaleX="1" scaleY="1" y="1137" backgroundColor="0xA37416" bold="true" textColor="0xFFFFFF" horizontalCenter="0.5" size="35" verticalAlign="middle"/>
+		<e:Image id="changePerson" horizontalCenter="0" width="480" y="1180" scale9Grid="48,41,20,6" source="lg_result_btn_white" visible="false"/>
+		<e:Label id="lab3" text="换个对手" scaleX="1" scaleY="1" y="1206" backgroundColor="0xA37416" bold="true" textColor="0xFFFFFF" horizontalCenter="0.5" size="35" verticalAlign="middle" visible="false"/>
+		<e:Image id="gameback1" scaleX="1" left="20" top="20" source="lg_back_btn"/>
+		<e:Image id="gamehelp1" left="120" top="20" source="lg_question_btn" x="10" y="10"/>
+	</e:Group>
+	<e:Group id="Exit" width="750" height="1334" horizontalCenter="0" verticalCenter="0" x="10" y="10" visible="false">
+		<e:Image width="640" height="100" scale9Grid="13,16,7,8" horizontalCenter="0" verticalCenter="-300" source="lg_mask_t"/>
+		<e:Image width="640" height="400" scale9Grid="12,11,7,5" horizontalCenter="0" verticalCenter="-50" source="lg_mask_c"/>
+		<e:Label text="温馨提示" scaleX="1" scaleY="1" y="350" size="40" verticalAlign="middle" textAlign="center" horizontalCenter="0" textColor="0xffffff"/>
+		<e:Label text="退出本局记为认输\n是否确认退出?" scaleX="1" scaleY="1" y="496" textColor="0x000000" size="40" verticalAlign="middle" textAlign="center" horizontalCenter="0"/>
+		<e:Image id="goon" width="280" y="666" scaleX="1" scaleY="1" scale9Grid="48,41,20,6" x="85" source="lg_result_btn_blue"/>
+		<e:Label id="lab4" text="继续玩" scaleX="1" scaleY="1" y="693" backgroundColor="0xA37416" bold="true" textColor="0xFFFFFF" size="35" horizontalCenter="-150"/>
+		<e:Image id="sure" width="280" y="666" scaleX="1" scaleY="1" scale9Grid="48,41,20,6" x="385" source="lg_result_btn_red"/>
+		<e:Label id="lab5" text="认输退出" scaleX="1" scaleY="1" y="693" backgroundColor="0xA37416" bold="true" textColor="0xFFFFFF" size="35" verticalAlign="middle" horizontalCenter="150"/>
+	</e:Group>
+	<e:Group id="help" width="750" height="1334" horizontalCenter="0" verticalCenter="0" x="20" y="20" visible="false">
+		<e:Image width="640" height="100" scale9Grid="13,16,7,8" horizontalCenter="0" verticalCenter="-520" source="lg_mask_t"/>
+		<e:Label text="游戏说明" scaleX="1" scaleY="1" y="130" textColor="0xFFFFFF" size="40" verticalAlign="middle" textAlign="center" horizontalCenter="0"/>
+		<e:Image id="closeBtn" verticalCenter="-526" source="lg_close" right="60" x="630" y="287" scaleX="1" scaleY="1"/>
+		<e:Image width="640" height="1100" scale9Grid="12,11,7,5" horizontalCenter="0" y="197" source="lg_mask_c"/>
+		<e:Label text="规则" scaleX="1" scaleY="1" y="215" textColor="0x000000" size="40" verticalAlign="middle" textAlign="center" bold="true" left="90"/>
+		<e:Label id="ruleTips" text="每次可以选择上下左右其中一个方向去滑动，每滑动一次，所有的数字方块都会往滑动的方向靠拢外，系统也会在空白的地方乱数出现一个数字方块，相同数字的方块在靠拢、相撞时会相加。不断的叠加最终拼凑出2048这个数字就算成功，分数大者奖励800金豆，失败不扣金豆" scaleX="1" scaleY="1" y="270" backgroundColor="0xA37416" size="30" textColor="0x999999" width="560" lineSpacing="10" verticalAlign="middle" horizontalCenter="0"/>
+		<e:Label text="玩法" scaleX="1" scaleY="1" y="555" backgroundColor="0xA37416" bold="true" size="35" verticalAlign="middle" textColor="0x000000" left="90"/>
+		<e:Image scaleX="0.9" scaleY="0.9" scale9Grid="48,41,20,6" horizontalCenter="-0.5" verticalCenter="128" source="2048_play_ruler"/>
+		<e:Label text="上下左右滑动屏幕" scaleX="1" scaleY="1" y="1020" size="30" verticalAlign="middle" textAlign="center" textColor="0x4452da" horizontalCenter="0"/>
+		<e:Label text="胜负判断" scaleX="1" scaleY="1" y="1070" textColor="0x000000" size="40" verticalAlign="middle" textAlign="center" bold="true" left="90"/>
+		<e:Label id="playTips" text="1、率先合出2048的一方立即获胜\n2、若游戏时间内双方都未合出2048则以最终总分高者获胜\n3、游戏未结束，率先退出游戏的人失败" scaleX="1" scaleY="1" y="1125" backgroundColor="0xA37416" textColor="0x999999" size="30" width="560" verticalAlign="middle" textAlign="left" lineSpacing="10" horizontalCenter="0"/>
+	</e:Group>
+</e:Skin>

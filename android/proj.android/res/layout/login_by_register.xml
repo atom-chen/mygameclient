@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_centerHorizontal="true"
+		android:layout_width="300dp"
+		tools:ignore="UselessParent">
+
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="textPersonName"
+			android:ems="10"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:id="@+id/inputMobile"
+			android:hint="@string/id_hint"
+			android:textColorHint="@android:color/darker_gray"
+			android:maxLength="18"/>
+
+		<EditText
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:inputType="textPassword"
+			android:ems="10"
+			android:id="@+id/inputCode"
+			android:layout_below="@+id/inputMobile"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:layout_marginTop="10dp"
+			android:hint="@string/password_hint"
+			android:textColorHint="@android:color/darker_gray"
+			tools:ignore="RtlHardcoded,UnknownIdInLayout"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentEnd="true"
+			android:maxLength="18"/>
+
+		<Button
+			android:text="@string/register"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/btnConfirm"
+			android:background="@drawable/btn_common"
+			android:textColor="@android:color/white"
+			android:layout_below="@+id/inputCode"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:textSize="20sp"
+			android:layout_marginTop="10dp"/>
+
+		<Button
+			android:text="@string/toLogin"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/btnToLogin"
+			android:textSize="20sp"
+			android:background="@android:color/transparent"
+			android:layout_alignBottom="@+id/btnConfirm"
+			android:layout_toRightOf="@+id/btnConfirm"
+			android:layout_toEndOf="@+id/btnConfirm"
+			android:layout_marginLeft="12dp"
+			android:layout_marginStart="12dp"/>
+
+	</RelativeLayout>
+</RelativeLayout>

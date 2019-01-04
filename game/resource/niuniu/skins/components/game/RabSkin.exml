@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RabSkin" width="125" height="66" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="notRab" source="bg_63" x="36" y="21"/>
+	<e:Image id="rab" source="bg_61" y="22" horizontalCenter="0"/>
+</e:Skin>

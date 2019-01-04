@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.GoldDzpkSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<e:Image id="bgImg" x="7" width="140" height="30" scale9Grid="17,12,21,11" source="common_bg2"/>
+	<e:Image id="imgIcon" y="4" source="play_chess"/>
+	<e:Label id="labGold" size="28" y="0" text="0000" left="23" fontFamily="Microsoft YaHei" textColor="0xfb5be0" anchorOffsetX="0" width="116" textAlign="center"/>
+</e:Skin>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.SeatSkin" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" states="my,left,right,right_2" width="400" width.my="960" height.my="357" height.left="200" height.right="200" height.right_2="200" width.right_2="1280">
+	<e:Image id="imgBar" horizontalCenter="0" bottom="0" includeIn="my" source="room_bg_2" scaleY="-1" width="100%"/>
+	<ns1:UserInfoView id="userInfoView" skinName="components.UserInfoSkin" currentState.my="my" currentState.left="left" currentState.right="right" right.right="-31" bottom.my="0" left.my="0" currentState.right_2="right" right.right_2="-31"/>
+	<e:Image id="offline_img" x.my="56.5" y="89" source="play_offline" anchorOffsetX="56.5" anchorOffsetY="47" includeIn="left,right,right_2" x.right="344" y.right="80" y.left="80" x.left="56.5" touchEnabled.left="false" touchEnabled.right="false" y.right_2="80" touchEnabled.right_2="false" right.right_2="-1"/>
+	<e:Image id="imgMaster" source="icon_master" x.left="60" y.left="20" y.right="20" x.my="28" y.my="215" x.right="315" y.right_2="20" right.right_2="29"/>
+
+	<ns1:DDZCardGroup id="handCardGroup" width.left="0" height.left="0" y.left="146" x.left="16" width.right="0" height.right="0" height.my="178" bottom.my="57" interact.my="true" scale.left="0.24" scale.right="0.24" horizontalCenter.my="0" width.my="1280" name="handCardGroup" width.right_2="1280" height.right_2="72" scale.right_2="0.4" warpCount.right_2="20" top.right_2="35" currentState.right_2="right_2" currentState.right="right" currentState.left="left" currentState.my="my" horizontalCenter.right_2="0" y.right="146" x.right="384"/>
+
+	<ns1:DDZCardGroup id="deskCardGroup" name="deskCardGroup" width.left="300" width.right="300" width.my="1280" bottom.my="250" scale="0.6" right.right="120" height="107" align.left="0" align.right="1" warpCount.left="9" warpCount.right="9" left.left="120" bottom.left="63" bottom.right="63" horizontalCenter.my="0" width="1280" touchEnabled="false" touchThrough="false" width.right_2="1280" align.right_2="1" warpCount.right_2="20" bottom.right_2="10" height.right_2="72" scale.right_2="0.4" currentState.my="my" currentState.left="left" currentState.right="right" currentState.right_2="right_2" horizontalCenter.right_2="0">
+	</ns1:DDZCardGroup>
+	<e:BitmapLabel id="labChange" text="+123" font="font_num_1" x.left="190" y.left="170" right.right="190" y.right="170" x.right="210" y.my="221" horizontalCenter.my="0" right.right_2="190" y.right_2="170" x.right_2="210" touchEnabled.my="false"/>
+	<ns1:CDClock id="cdClock" x.right="122" skinName="components.CDClockSkin" x.left="60" y.left="167" scaleX.left="0.5" scaleY.left="0.5" right.right="60" y.right="167" scaleX.right="0.5" scaleY.right="0.5" bottom.my="236.5" horizontalCenter.my="-402" scaleX.my="0.7" scaleY.my="0.7" x.right_2="122" right.right_2="60" y.right_2="167" scaleX.right_2="0.5" scaleY.right_2="0.5"/>
+	<e:Group x="20" y="145" right.right="10" includeIn="left,right,right_2" x.left="10" y.left="165" y.right="165" right.right_2="10" y.right_2="165">
+		<e:Image x="0" y="0" source="play_card_count_bg"/>
+		<e:Label id="labCardCount" text="0" y.my="12" width="100%" textAlign="center" size="25" textColor="0xFF9A27" bottom.left="4" bottom.right="4" bottom.right_2="4"/>
+	</e:Group>
+	<ns1:Robot id="robot" x.right="449" skinName="components.RobotSkin" x.left="125" y.left="170" right.right="125" y.right="170" bottom.my="241" x.my="719" x.right_2="449" right.right_2="125" y.right_2="170"/>
+	<e:Image id="imgStatus" y.left="45" right.right="125" y.right="45" horizontalCenter.my="0" source="play_word_3" bottom="245" bottom.left="105" bottom.right="105" anchorOffsetY.right="0" left.left="125" source.left="play_word_3" source.right="play_word_3" right.right_2="125" y.right_2="45" bottom.right_2="105" anchorOffsetY.right_2="0" source.right_2="play_word_3"/>
+	<e:Image id="cardShadow" includeIn="my" source="play_cardshadow" scale9Grid="13,13,39,27" horizontalCenter="0" height="174" bottom="60" touchEnabled="true"/>
+	<e:Group y="212" touchEnabled="false" id="grpRecorder" includeIn="my" horizontalCenter="0" scaleX="1.2" scaleY="1.2">
+		<e:Image source="play_record_bg" verticalCenter="0" touchEnabled="false" horizontalCenter="0" locked="true"/>
+		<e:Label y="42" textColor="0x518200" text="1" fontFamily="微软雅黑" id="lb15" size="20" x="65"/>
+		<e:Label y="42" textColor="0x518200" text="1" fontFamily="微软雅黑" x="100" size="20" id="lb14"/>
+		<e:Label y="42" textColor="0x518200" text="1" fontFamily="微软雅黑" id="lb13" size="20" locked="true" x="128"/>
+		<e:Label y="42" textColor="0x518200" text="1" fontFamily="微软雅黑" x="154" size="20" locked="true" id="lb12"/>
+		<e:Label y="42" textColor="0x518200" text="1" fontFamily="微软雅黑" id="lb11" size="20" locked="true" x="180"/>
+		<e:Label y="42" textColor="0x518200" text="1" fontFamily="微软雅黑" x="208" size="20" locked="true" id="lb10"/>
+		<e:Label y="42" textColor="0x518200" text="1" fontFamily="微软雅黑" id="lb9" size="20" locked="true" x="235"/>
+		<e:Label y="42" textColor="0x518200" text="1" fontFamily="微软雅黑" x="262" size="20" locked="true" id="lb8"/>
+		<e:Label y="42" textColor="0x518200" text="1" fontFamily="微软雅黑" id="lb7" size="20" locked="true" x="288"/>
+		<e:Label y="42" textColor="0x518200" text="1" fontFamily="微软雅黑" x="316" size="20" locked="true" id="lb6"/>
+		<e:Label y="42" textColor="0x518200" text="1" fontFamily="微软雅黑" x="342" size="20" locked="true" id="lb5"/>
+		<e:Label y="42" textColor="0x518200" text="1" fontFamily="微软雅黑" id="lb4" size="20" locked="true" x="370"/>
+		<e:Label y="42" textColor="0x518200" text="1" fontFamily="微软雅黑" x="397" size="20" locked="true" id="lb3"/>
+		<e:Label y="42" textColor="0x518200" text="1" fontFamily="微软雅黑" id="lb2" size="20" locked="true" x="425"/>
+		<e:Label y="42" textColor="0x518200" text="1" fontFamily="微软雅黑" x="453" size="20" locked="true" id="lb1"/>
+	</e:Group>
+	<e:Image id="imgNoMatchCards" source="play_word_7" includeIn="my" bottom="60" touchEnabled="false" horizontalCenter="0"/>
+	<e:Image id="imgReady" source="play_hand_ok" y.my="112" x.right="165" x.my="165" horizontalCenter.my="0" right.right="130" y.right="39" anchorOffsetX.right="71" anchorOffsetY.right="0" bottom.left="77" x.left="125" x.right_2="165" right.right_2="130" y.right_2="39" anchorOffsetX.right_2="71" anchorOffsetY.right_2="0"/>
+	<e:Group id="jingdengGroup" x.my="287" y="18" x.left="158" y.left="13" y.right="13" visible.my="false" right.right="158" includeIn="my" y.right_2="13" right.right_2="158"/>
+
+	<e:Button id="btnCancleTrust" horizontalCenter="0" bottom="90" includeIn="my">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="play_cancel_trust_n" source.down="play_cancel_trust_c"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Group width="153" height="61" id="grpRedcoin" includeIn="my" left="433" bottom="-7">
+		<e:Image id="redBgImg" source="play_redcoin_bg" y="0" x="17" includeIn="my"/>
+		<e:Image y="2" touchEnabled="false" x="14" source="icon_redcoin" includeIn="my" scaleX="0.4" scaleY="0.4"/>
+		<e:Label id="lbRedCoin" x="53" y="17" size="25" text="" textAlign="center" width="85" touchEnabled="false" height="25" includeIn="my"/>
+		<e:Image id="redExchangeImg" x="150" y="31" source="common_exchangeRed" touchEnabled="true" anchorOffsetX="23" anchorOffsetY="23.5"/>
+	</e:Group>
+	<e:Image id="doubleFlag_img" y="119" source="doubleFlag" y.my="325" x.my="25" x.right="315" x.left="26" y.left="110" y.right="110" y.right_2="110" right.right_2="30"/>
+</e:Skin>

@@ -1,0 +1,248 @@
+﻿<!DOCTYPE HTML>
+<html lang="en"><head>
+	<meta charset="UTF-8">
+	<title>支付宝支付</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-control" content="no-cache">
+	<meta http-equiv="Cache" content="no-cache">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<style>
+		html, body {
+			-ms-touch-action: none;
+			background-color:transparent;
+			padding: 0;
+			border: 0;
+			margin: 0;
+			height: 100%;
+		}
+	</style>
+
+	<!--
+	<script>
+		window.onerror = function (msg, url, lineNo, columnNo, error) {
+			var string = msg.toLowerCase();
+			var substring = "script error";
+			if (string.indexOf(substring) > -1){
+				alert('Script Error: See Browser Console for Detail' + JSON.stringify(error));
+			} else {
+				var message = [
+					'Message: ' + msg,
+					'URL: ' + url,
+					'Line: ' + lineNo,
+					'Column: ' + columnNo,
+					'Error object: ' + JSON.stringify(error)
+				].join(' - ');
+		
+				alert(message);
+			}
+		
+			return false;
+		};
+	</script>
+    -->
+</head>
+<body >
+   <script>
+		"use strict";
+		var base64key = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+
+		function utf8_encode(string) {
+			return window.unescape(encodeURIComponent(string));
+		}
+
+		function utf8_decode(utftext) {
+			return decodeURIComponent(window.escape(utftext));
+		}
+
+		function base64Encode(input) {
+			if(!input){
+				return '';
+			}
+
+			var output = "";
+			var chr1, chr2, chr3, enc1, enc2, enc3, enc4;
+			var i = 0;
+			input = utf8_encode(input);
+			while (i < input.length) {
+				chr1 = input.charCodeAt(i++);
+				chr2 = input.charCodeAt(i++);
+				chr3 = input.charCodeAt(i++);
+				enc1 = chr1 >> 2;
+				enc2 = ((chr1 & 3) << 4) | (chr2 >> 4);
+				enc3 = ((chr2 & 15) << 2) | (chr3 >> 6);
+				enc4 = chr3 & 63;
+				if (isNaN(chr2)) {
+					enc3 = enc4 = 64;
+				} else if (isNaN(chr3)) {
+					enc4 = 64;
+				}
+				output = output +
+						base64key.charAt(enc1) + base64key.charAt(enc2) +
+						base64key.charAt(enc3) + base64key.charAt(enc4);
+			}
+			return output;
+		}
+
+		function base64Decode(input) {
+			if(!input){
+				return '';
+			}
+			var output = "";
+			var chr1, chr2, chr3;
+			var enc1, enc2, enc3, enc4;
+			var i = 0;
+			input = input.replace(/[^A-Za-z0-9\+\/\=]/g, "");
+			while (i < input.length) {
+				enc1 = base64key.indexOf(input.charAt(i++));
+				enc2 = base64key.indexOf(input.charAt(i++));
+				enc3 = base64key.indexOf(input.charAt(i++));
+				enc4 = base64key.indexOf(input.charAt(i++));
+				chr1 = (enc1 << 2) | (enc2 >> 4);
+				chr2 = ((enc2 & 15) << 4) | (enc3 >> 2);
+				chr3 = ((enc3 & 3) << 6) | enc4;
+				output = output + String.fromCharCode(chr1);
+				if (enc3 != 64) {
+					output = output + String.fromCharCode(chr2);
+				}
+				if (enc4 != 64) {
+					output = output + String.fromCharCode(chr3);
+				}
+			}
+			output = utf8_decode(output);
+			return output;
+		}
+
+		function getPlatform(){
+			var platform = 'other';
+			if(/(iPhone|iPad|iPod|iOS)/i.test(ua)){
+				platform = 'iOS';
+			}else if(/(Android)/i.test(ua)){
+				platform = 'Android';
+			}
+
+			return platform;
+		}
+
+		function getBrowser(){
+			var browser = 'other';
+			if(/(CriOS)/i.test(ua)){
+				browser = 'chrome';
+			}else if(/(MicroMessenger)/i.test(ua)){
+				browser = 'wx';
+			}else if(/(Safari)/i.test(ua)){
+				browser = 'safari';
+			}
+
+			return browser;
+		}
+
+		function xmlHttpPost(url,callback){
+			var xhr = new XMLHttpRequest();
+	 		xhr.open("post", url,true);
+	    	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	 		xhr.onreadystatechange = function(){
+	 			if(xhr.readyState == 4) {
+	 				if(xhr.status == 200){
+	                	callback(JSON.parse(xhr.responseText));
+	                }else {
+	            		alert("授权失败!");
+	            	}
+	            }
+	 		}
+			xhr.send(null);
+		}
+
+		function isWeiXin(){ 
+			var ua = window.navigator.userAgent.toLowerCase(); 
+			if(ua.match(/MicroMessenger/i) == 'micromessenger'){ 
+				return true; 
+			}
+			else{ 
+				return false; 
+			} 
+		}
+
+		function isAli(){
+			var ua = window.navigator.userAgent.toLowerCase();
+			if(ua.match(/Alipay/i) == 'alipay'){ 
+				return true; 
+			}
+			else{ 
+				return false; 
+			} 
+		}
+
+		function isWXReady(){
+			// alert("isWXReady==>"+_wxReady);
+			return _wxReady;
+		}
+
+		function onWXReadyFunc(func){
+			// alert("onWXReadyFunc==>"+func);
+			_wxOverFunc = func;
+			if(window.wxApi){
+				window.wxApi.initBridge();
+			}
+		}
+
+		function onWXLoadOver(){
+			_wxReady = true;
+			if(_wxOverFunc){
+				_wxOverFunc();
+				
+			}
+		}
+
+		function getUrlParams() {
+			var params = {};
+			var href = window.location.href;
+			var index = href.indexOf("?");
+			if (index < 0) {
+				return params;
+			}
+			var hashes = href.substr(index + 1).split('&');
+			for (var i = 0; i < hashes.length; i++) {
+				var arr = hashes[i].split('=');
+				params[arr[0]] = arr[1];
+			}
+			return params;
+		}
+
+		function payWXH5(_url){
+			window.top.location.href = _url;
+		}
+
+		function payAliH5(_base64Src){
+      		var div = document.getElementById("payDiv");
+            if(!div){
+                div = document.createElement("a");
+                div.id = "payDiv";
+                document.body.appendChild(div);
+            }
+            div.innerHTML = _base64Src;
+            document.forms['alipaysubmit'].submit();
+		}
+
+	    function openNewWindow(url,name,iWidth,iHeight){
+	        var newWindow = null;
+	        //获得窗口的垂直位置 
+	        var iTop = (window.screen.availHeight - 30 - iHeight) / 2; 
+	        //获得窗口的水平位置 
+	        var iLeft = (window.screen.availWidth - 10 - iWidth) / 2; 
+	        window.open(url, name, 'height=' + iHeight + ',innerHeight=' + iHeight + ',width=' + iWidth + ',innerWidth=' + iWidth + ',top=' + iTop + ',left=' + iLeft + ',status=no,toolbar=no,menubar=no,location=no,resizable=no,scrollbars=0,titlebar=no'); 
+	    }
+
+	    var params = getUrlParams();
+	    if(params.ali==1 && params.info){
+	    	payAliH5(base64Decode(params.info));
+	    }
+	</script>
+
+	<!-- <script src="wx.min.1018.js" async="async"></script>  -->
+	
+	<!--<img id ="downDdzApp" src="downApp.png"  onload="onLoadDownAppImg();"onclick="downloadApp();"/> -->
+    <!--<img id ="refreshDdzPage" src="refreshPage.png" onload="onLoadRefreshImg();" onclick="refreshCur();"/>-->
+</body>
+</html>

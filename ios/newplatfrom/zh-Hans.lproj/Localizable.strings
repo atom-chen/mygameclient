@@ -1,0 +1,79 @@
+/*
+ Localizable.strings
+ doudizhuhero
+ 
+ Created by 劳琪峰 on 16/7/8.
+ Copyright © 2016年 htgames. All rights reserved.
+ */
+
+"program_is_not_allowed_to_pay" = "抱歉，您的设备不支持充值";
+"OK" = "确定";
+"unable_to_obtain_product_information" = "获取商品信息失败";
+"buy_failure" = "购买失败";
+"user_cancel_transaction" = "交易取消";
+"upgrading" = "更新中";
+"upgrade success" = "更新成功";
+"checking" = "检查中";
+"need update" = "发现新版本";
+"nothing" = "";
+"here is new version can be updated; continue to use the old version may not be able to log on to the game." = "发现新版本可以更新，继续使用老版本可能无法登录游戏。";
+"version_update" = "更新";
+"version_cancel" = "取消";
+"login_failed" = "登录失败";
+"register_failed" = "注册失败";
+
+"api_result_1000" = "参数错误";
+"api_result_1001" = "key error";
+"api_result_1002" = "des error";
+"api_result_1003" = "cagent not found";
+"api_result_1004" = "method not found";
+"api_result_2000" = "用户名格式有误";
+"api_result_2001" = "用户名长度有误";
+"api_result_2002" = "register failed";
+"api_result_2003" = "avatar upload error";
+"api_result_2004" = "该用户不存在";
+"api_result_2006" = "密码有误";
+"api_result_2007" = "密码长度有误";
+"api_result_2008" = "用户名已存在";
+"api_result_2009" = "账户或密码错误";
+"api_result_2010" = "logout failed";
+"api_result_2011" = "The user has no friends";
+"api_result_2012" = "注册失败";
+"api_result_2013" = "账户或密码错误";
+"api_result_2014" = "该账号已被冻结";
+"api_result_2015" = "手机号格式有误";
+"api_result_2016" = "该手机号已经绑定过了";
+"api_result_2017" = "重置密码失败";
+"api_result_2018" = "send message error";
+"api_result_2019" = "操作太频繁，请稍后再试";
+"api_result_2020" = "user not bind phone";
+"api_result_2021" = "user login fail";
+"api_result_2022" = "该手机号未被绑定";
+"api_result_2023" = "username the first of which must be a letter";
+"api_result_2024" = "验证码无效";
+"api_result_2025" = "user update status fail";
+"api_result_2026" = "request wx server error";
+"api_result_2027" = "没有找到对应的包名";
+"api_result_3000" = "add mail fail";
+"api_result_3001" = "del mail fail";
+"api_result_3002" = "mail update status fail";
+"api_result_3003" = "No new mail";
+"api_result_4000" = "Buy chips fail";
+"api_result_4001" = "User chip allocation is failed";
+"api_result_4002" = "User chip allocation is successful";
+"api_result_5000" = "you have favorite";
+"api_result_6000" = "comment add failed";
+"api_result_7001" = "token fail";
+"api_result_7002" = "order flow fail";
+"api_result_7003" = "insert order fail";
+"api_result_8000" = "web socket auth error";
+"api_result_8001" = "transfer credit error";
+"api_result_8002" = "该微信号已经被绑定过";
+"api_result_9000" = "new version found";
+"api_result_9001" = "signature params error";
+"api_result_9002" = "signature verification failed";
+"api_result_9996" = "websocket error";
+"api_result_9997" = "update false";
+"api_result_9998" = "other error";
+"api_result_9999" = "netease server error";
+"api_result_10000" = "Unauthorized access!";

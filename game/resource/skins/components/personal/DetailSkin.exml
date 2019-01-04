@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="personal.DetailSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image horizontalCenter="0.5" verticalCenter="24" source="common_alert1_bg" scale9Grid="27,63,31,8" width="615" height="324"/>
+	<e:Button id="btnClose" label="" x="742" y="165.5">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_close_n" source.down="common_close_h"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<ns1:DetailItem id="item1" x="259" y="238" skinName="components.DetailItemSkin"/>
+	<ns1:DetailItem id="item2" y="294" skinName="components.DetailItemSkin" x="260"/>
+	<ns1:DetailItem id="item3" y="349" skinName="components.DetailItemSkin" x="258"/>
+	<e:Button id="btnLeave" y="444" horizontalCenter="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="personal_btn_leave_n" source.down="personal_btn_leave_n"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image id="imgPoint" x="300" y="407" source="personal_detail_point"/>
+	<e:Label id="lbLeave" text="因XX中途退出，游戏终止" y="413" size="20" fontFamily="微软雅黑" bold="true" left="345"/>
+	<e:Group id="tit_group" horizontalCenter="0" y="182">
+		<e:Image id="titBgImg0" y="3" source="common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+		<e:Image id="titFontImg0" y="-2" horizontalCenter="0" x="138" scaleX="1" scaleY="1" source="personal_title"/>
+	</e:Group>
+</e:Skin>

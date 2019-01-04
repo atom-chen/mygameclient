@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ui.DropDownSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="grpPanel" y="45" touchEnabled="false" x="0">
+		<e:Image source="common_dropdown_bg" scale9Grid="16,12,187,21" x="0" y="0" width="100%" height="100%"/>
+		<e:List id="list" width="218" x="0" y="0">
+			<e:itemRendererSkinName>
+				<e:Skin states="up,down" height="40">
+					<e:Label id="lab" text="标签" textColor="0xFFEA90" size="25" width="100%" height="100%" y="0" verticalAlign="middle"/>
+				</e:Skin>
+			</e:itemRendererSkinName>
+			<e:layout>
+				<e:VerticalLayout horizontalAlign="justify" paddingLeft="10" paddingRight="10" paddingTop="5" paddingBottom="5" gap="0"/>
+			</e:layout>
+		</e:List>
+	</e:Group>
+	<e:Image id="imgBg" source="common_dropdown_bg"/>
+	<e:Button id="btn" right="1" y="1">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_dropdown_n" source.down="common_dropdown_n" source.disabled="common_dropdown_h"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label id="lab" x="8" y="8" textColor="0xFFEA90" size="25"/>
+</e:Skin>

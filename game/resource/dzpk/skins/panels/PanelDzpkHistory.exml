@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PanelDzpkHistory" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing"  width="750" height="1334">
+	<e:Group id="touchGrp" width="750" height="1334" y="0" x="0"/>
+
+	<e:Group id="typeRootGrp" touchEnabled="true" width="650" height="1100" top="0" right="0" anchorOffsetY="0">
+		<e:Rect id="bgRect" width="650" height="1160" y="0" fillColor="0x0c1b21" x="0"/>
+
+		<e:Label id="titLabel" text="上局回顾" y="3" size="32" fontFamily="Microsoft YaHei" touchEnabled="false" textAlign="center" x="261"/>
+		<e:Label id="descLabel" text="盲注：100/200" y="47" size="24" fontFamily="Microsoft YaHei" touchEnabled="false" textColor="0x46c4ff" x="242"/>
+		<e:Image id="splitImg" width="650" x="0" y="70" source="play_bg_line" scale9Grid="0,2,6,2" height="2"/>
+		<e:Scroller id="usersScroller" width="650" height="1080" y="80" scaleX="1" scaleY="1" anchorOffsetY="0" x="0">
+			<e:Group>
+				<e:List id="usersList" width="650" x="0" y="0" itemRendererSkinName="components.HistoryDzpkItemSkin">
+				
+				<e:ArrayCollection>
+				<e:Array>
+					<e:Object label="数据1"/>
+					<e:Object label="数据1"/>
+					<e:Object label="数据1"/>
+					<e:Object label="数据1"/>
+					<e:Object label="数据1"/>
+					<e:Object label="数据1"/>
+					<e:Object label="数据1"/>
+					<e:Object label="数据1"/>
+					<e:Object label="数据1"/>
+				</e:Array>
+				</e:ArrayCollection>
+					<e:layout>
+						<e:VerticalLayout horizontalAlign="center" gap="10"/>
+					</e:layout>
+				</e:List>
+			</e:Group>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

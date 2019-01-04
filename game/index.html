@@ -1,0 +1,412 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>好手气斗地主</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="full-screen" content="true"/>
+	<meta name="screen-orientation" content="landscape"/>
+	<meta name="x5-fullscreen" content="true"/>
+	<meta name="360-fullscreen" content="true"/>
+	<style>
+		html, body {
+			-ms-touch-action: none;
+			background: #000000;
+			padding: 0;
+			border: 0;
+			margin: 0;
+			height: 100%;
+		}
+	</style>
+
+	<!--这个标签为通过egret提供的第三方库的方式生成的 javascript 文件-->
+	<!--modules_files_start-->
+	<script egret="lib" src="libs/modules/egret/egret.js"></script>
+	<script egret="lib" src="libs/modules/egret/egret.web.js"></script>
+	<script egret="lib" src="libs/modules/eui/eui.js"></script>
+	<script egret="lib" src="libs/modules/res/res.js"></script>
+	<script egret="lib" src="libs/modules/tween/tween.js"></script>
+	<script egret="lib" src="libs/modules/socket/socket.js"></script>
+	<script egret="lib" src="libs/modules/dragonBones/dragonBones.js"></script>
+	<script egret="lib" src="libs/modules/protobuf/protobuf.js"></script>
+	<script egret="lib" src="libs/modules/async/async.js"></script>
+	<script egret="lib" src="libs/modules/md5/md5.js"></script>
+	<script egret="lib" src="libs/modules/clipbord/clipbord.js"></script>
+	<script egret="lib" src="libs/modules/game/game.js"></script>
+	<!--modules_files_end-->
+	<!--这个标签为不通过egret提供的第三方库的方式使用的 javascript 文件，请将这些文件放在libs下，但不要放在modules下面。-->
+	
+
+	<!--这个标签会被替换为项目中所有的 javascript 文件-->
+	<!--game_files_start-->
+	<script egret="lib" src="bin-debug/runfast/views/components/seat/RunFastBaseSeat.js"></script>
+	<script egret="lib" src="bin-debug/core/Seat.js"></script>
+	<script egret="lib" src="bin-debug/runfast/views/components/seat/RunFastSeat.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/page/Navigator.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/popup/PanelBase.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/scene/SceneManager.js"></script>
+	<script egret="lib" src="bin-debug/core/Server.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/animation/IAnimation.js"></script>
+	<script egret="lib" src="bin-debug/core/Service.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/Particle.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/ParticleSystem.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/view/components/PlayerHead1.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/view/components/particle/BaseParticle.js"></script>
+	<script egret="lib" src="bin-debug/runfast/core/RunFastBaseCardGroup.js"></script>
+	<script egret="lib" src="bin-debug/core/CardGroup.js"></script>
+	<script egret="lib" src="bin-debug/views/pages/PageChannelBase.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/scene/SceneBase.js"></script>
+	<script egret="lib" src="bin-debug/runfast/views/components/seat/RunFastSideSeat.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/BaseDragon.js"></script>
+	<script egret="lib" src="bin-debug/game/seat/DDZSeat.js"></script>
+	<script egret="lib" src="bin-debug/model/DataStorage.js"></script>
+	<script egret="lib" src="bin-debug/model/LanguagePack.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/support/EventManager.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/support/Native.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/support/SoundManager.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/Encrypt.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/animation/Fade.js"></script>
+	<script egret="lib" src="bin-debug/runfast/views/components/dragon/RunFastDragonGameSiDaiEr.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/MathUtils.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/ObjectPool.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/Schedule.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/StringUtils.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/TimeUtils.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/TweenWatcher.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/Utils.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/Voice.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/ui/DropDown.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/ui/FadeSwitch.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/ui/Image.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/ui/PageProgressBar.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/ui/ScrollImage.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/ui/ScrollNavigator.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/ui/ViewStack.js"></script>
+	<script egret="lib" src="bin-debug/core/Card.js"></script>
+	<script egret="lib" src="bin-debug/core/CardBody.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/popup/PopUpManager.js"></script>
+	<script egret="lib" src="bin-debug/core/Enviroment.js"></script>
+	<script egret="lib" src="bin-debug/core/LogUtil.js"></script>
+	<script egret="lib" src="bin-debug/core/MainLogic.js"></script>
+	<script egret="lib" src="bin-debug/core/ProtoIDs.js"></script>
+	<script egret="lib" src="bin-debug/core/Reportor.js"></script>
+	<script egret="lib" src="bin-debug/OtherGameCfg.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/scene/SceneEffect.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/animation/MovieClip.js"></script>
+	<script egret="lib" src="bin-debug/core/Utils.js"></script>
+	<script egret="lib" src="bin-debug/CWFD/view/GameCWFD.js"></script>
+	<script egret="lib" src="bin-debug/dzpk/GameDZPKSoundManager.js"></script>
+	<script egret="lib" src="bin-debug/dzpk/core/CardBodyDzpk.js"></script>
+	<script egret="lib" src="bin-debug/dzpk/core/CardDzpk.js"></script>
+	<script egret="lib" src="bin-debug/dzpk/core/DZPKCardType.js"></script>
+	<script egret="lib" src="bin-debug/dzpk/core/SeatDzpk.js"></script>
+	<script egret="lib" src="bin-debug/dzpk/views/components/AvatarDzpk.js"></script>
+	<script egret="lib" src="bin-debug/dzpk/views/components/GoldDzpk.js"></script>
+	<script egret="lib" src="bin-debug/dzpk/views/components/HistoryItemDzpk.js"></script>
+	<script egret="lib" src="bin-debug/dzpk/views/panels/PanelDzpkHistory.js"></script>
+	<script egret="lib" src="bin-debug/dzpk/views/panels/PanelDzpkRule.js"></script>
+	<script egret="lib" src="bin-debug/dzpk/views/scenes/SceneDzpkPlay.js"></script>
+	<script egret="lib" src="bin-debug/fff/GameFFFSoundManager.js"></script>
+	<script egret="lib" src="bin-debug/fff/views/scenes/SceneFFFPlay.js"></script>
+	<script egret="lib" src="bin-debug/FFLe/view/GameFFle.js"></script>
+	<script egret="lib" src="bin-debug/game/CardsHint.js"></script>
+	<script egret="lib" src="bin-debug/game/CardsType.js"></script>
+	<script egret="lib" src="bin-debug/game/DDZCardGroup.js"></script>
+	<script egret="lib" src="bin-debug/game/DDZServer.js"></script>
+	<script egret="lib" src="bin-debug/game/GameSoundManager.js"></script>
+	<script egret="lib" src="bin-debug/game/GiftManager.js"></script>
+	<script egret="lib" src="bin-debug/game/GoodsManager.js"></script>
+	<script egret="lib" src="bin-debug/game/ObjectPoolInit.js"></script>
+	<script egret="lib" src="bin-debug/game/OtherGameManager.js"></script>
+	<script egret="lib" src="bin-debug/game/ShareImageManager.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/support/AdvanceMethod.js"></script>
+	<script egret="lib" src="bin-debug/game/seat/MySeat.js"></script>
+	<script egret="lib" src="bin-debug/game/seat/SideSeat.js"></script>
+	<script egret="lib" src="bin-debug/game/service/BagService.js"></script>
+	<script egret="lib" src="bin-debug/game/service/CountDownService.js"></script>
+	<script egret="lib" src="bin-debug/game/service/ExchangeService.js"></script>
+	<script egret="lib" src="bin-debug/game/service/InviteService.js"></script>
+	<script egret="lib" src="bin-debug/game/service/LoginService.js"></script>
+	<script egret="lib" src="bin-debug/game/service/MailService.js"></script>
+	<script egret="lib" src="bin-debug/game/service/MatchService.js"></script>
+	<script egret="lib" src="bin-debug/game/service/PersonalGameHistory.js"></script>
+	<script egret="lib" src="bin-debug/game/service/RechargeService.js"></script>
+	<script egret="lib" src="bin-debug/game/service/WebService.js"></script>
+	<script egret="lib" src="bin-debug/LLKan/view/DrawLineUtils.js"></script>
+	<script egret="lib" src="bin-debug/LLKan/view/GameLLK.js"></script>
+	<script egret="lib" src="bin-debug/LLTan/view/GameLLT.js"></script>
+	<script egret="lib" src="bin-debug/match/components/MatchDetailRoundAvatar.js"></script>
+	<script egret="lib" src="bin-debug/match/panels/PanelMatchDetail.js"></script>
+	<script egret="lib" src="bin-debug/match/panels/PanelMatchRoundResult.js"></script>
+	<script egret="lib" src="bin-debug/match/panels/PanelMatchRoundResultDetail.js"></script>
+	<script egret="lib" src="bin-debug/model/BrowData.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/support/Dispatcher.js"></script>
+	<script egret="lib" src="bin-debug/model/DebugHelper.js"></script>
+	<script egret="lib" src="bin-debug/model/ErrorConfig.js"></script>
+	<script egret="lib" src="bin-debug/model/EventNames.js"></script>
+	<script egret="lib" src="bin-debug/model/GameConfig.js"></script>
+	<script egret="lib" src="bin-debug/model/GameData.js"></script>
+	<script egret="lib" src="bin-debug/model/Language.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/animation/Wave.js"></script>
+	<script egret="lib" src="bin-debug/model/ResNames.js"></script>
+	<script egret="lib" src="bin-debug/model/SceneNames.js"></script>
+	<script egret="lib" src="bin-debug/model/UserData.js"></script>
+	<script egret="lib" src="bin-debug/model/UserInfoData.js"></script>
+	<script egret="lib" src="bin-debug/model/WxHelper.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/EventNamesNiu.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/GameConfigNiu.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/Global.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/GravityParticle.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/GravityParticleSystem.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/support/localStorage.js"></script>
+	<script egret="lib" src="bin-debug/2048/view/Game2048.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/model/data/PlayerData.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/model/data/ResultData.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/sound/GameSoundManagerNiu.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/view/components/LabelButton.js"></script>
+	<script egret="lib" src="bin-debug/Defines.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/view/components/PlayerHead2.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/view/components/PlayerHead3.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/view/components/PlayerUI.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/view/components/game/BetBtn2.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/view/components/game/Bubble.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/view/components/game/CardUI.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/view/components/game/CardView.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/view/components/game/Clock1.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/view/components/game/Counter.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/view/components/game/MyGold.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/view/components/game/NiuUI.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/view/components/game/QznnChooseCard.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/view/components/game/QznnChooseCardInfo.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/view/components/game/Rab.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/view/components/game/ResultGold.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/view/components/game/StatusLabel.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/support/StageProxy.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/view/components/particle/GameInfoParticle.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/view/components/particle/ShopParticle1.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/view/games/QznnGamePage.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/view/games/effect/StartGameEffect.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/view/games/effect/ZhuangEffect.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/ZHCLib/tools/GoldStr.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/ZHCLib/tools/MathUtils.js"></script>
+	<script egret="lib" src="bin-debug/niuniu/ZHCLib/tools/ObjectPool.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/support/TickerManager.js"></script>
+	<script egret="lib" src="bin-debug/runfast/core/RunFastCardGroup.js"></script>
+	<script egret="lib" src="bin-debug/runfast/core/RunFastCardsHint.js"></script>
+	<script egret="lib" src="bin-debug/runfast/core/RunFastCardsType.js"></script>
+	<script egret="lib" src="bin-debug/runfast/core/RunFastGameSoundManager.js"></script>
+	<script egret="lib" src="bin-debug/runfast/utils/RunFastUtils.js"></script>
+	<script egret="lib" src="bin-debug/runfast/views/components/dragon/RunFastDragonGameSanDaiEr.js"></script>
+	<script egret="lib" src="bin-debug/runfast/views/components/dragon/RunFastDragonGameSanDaiYi.js"></script>
+	<script egret="lib" src="bin-debug/views/scenes/SceneRoom.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/support/Vector2D.js"></script>
+	<script egret="lib" src="bin-debug/runfast/views/components/seat/RunFastLeftSeat.js"></script>
+	<script egret="lib" src="bin-debug/runfast/views/components/seat/RunFastMySeat.js"></script>
+	<script egret="lib" src="bin-debug/runfast/views/components/seat/RunFastRightSeat.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/Ajax.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/Base64.js"></script>
+	<script egret="lib" src="bin-debug/runfast/views/panels/RunFastPanelRuleTip.js"></script>
+	<script egret="lib" src="bin-debug/runfast/views/scenes/SceneRunFastPlay.js"></script>
+	<script egret="lib" src="bin-debug/small_three/head.js"></script>
+	<script egret="lib" src="bin-debug/small_three/Progress.js"></script>
+	<script egret="lib" src="bin-debug/ui_extend/NormalButton.js"></script>
+	<script egret="lib" src="bin-debug/ui_extend/StateButton.js"></script>
+	<script egret="lib" src="bin-debug/views/AssetAdapter.js"></script>
+	<script egret="lib" src="bin-debug/views/ThemeAdapter.js"></script>
+	<script egret="lib" src="bin-debug/views/components/ActList.js"></script>
+	<script egret="lib" src="bin-debug/views/components/ActListItem.js"></script>
+	<script egret="lib" src="bin-debug/views/components/Avatar.js"></script>
+	<script egret="lib" src="bin-debug/views/components/ButtonBar.js"></script>
+	<script egret="lib" src="bin-debug/views/components/ButtonDoTaskSkin.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CDClock.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CDProgressBar.js"></script>
+	<script egret="lib" src="bin-debug/views/components/ChatBubble.js"></script>
+	<script egret="lib" src="bin-debug/views/components/ChatList.js"></script>
+	<script egret="lib" src="bin-debug/views/components/ExchangeShowInfo.js"></script>
+	<script egret="lib" src="bin-debug/views/components/FeiHistoryItem.js"></script>
+	<script egret="lib" src="bin-debug/views/components/FlyGold.js"></script>
+	<script egret="lib" src="bin-debug/views/components/GCardsGold.js"></script>
+	<script egret="lib" src="bin-debug/views/components/Gold.js"></script>
+	<script egret="lib" src="bin-debug/views/components/GoldRainEffectLayer.js"></script>
+	<script egret="lib" src="bin-debug/views/components/GoodsItem.js"></script>
+	<script egret="lib" src="bin-debug/views/components/HornTalkItem.js"></script>
+	<script egret="lib" src="bin-debug/views/components/InviteListItem.js"></script>
+	<script egret="lib" src="bin-debug/views/components/Loading.js"></script>
+	<script egret="lib" src="bin-debug/views/components/LoadingProcess.js"></script>
+	<script egret="lib" src="bin-debug/views/components/MarqueeText.js"></script>
+	<script egret="lib" src="bin-debug/views/components/MasterCards.js"></script>
+	<script egret="lib" src="bin-debug/views/components/Page.js"></script>
+	<script egret="lib" src="bin-debug/views/components/QProgressBar.js"></script>
+	<script egret="lib" src="bin-debug/views/components/RedPacketProcess.js"></script>
+	<script egret="lib" src="bin-debug/views/components/Robot.js"></script>
+	<script egret="lib" src="bin-debug/views/components/ShopItem.js"></script>
+	<script egret="lib" src="bin-debug/views/components/Toast.js"></script>
+	<script egret="lib" src="bin-debug/views/components/UserInfoView.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dayTask/DayTaskItemInfo.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/popup/PopupEffect.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/DragonGameChunTian.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/DragonGameFeiJi.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/DragonGameLianDui.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/DragonGameShunZi.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/DragonGameWangZha.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/DragonGameZhaDan.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/DragonHongBao.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/DragonHongBaoWarn.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/DragonJingDeng.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/DragonManager.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/DragonMatch9Rule.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/DragonSign.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/DragonSignBtn.js"></script>
+	<script egret="lib" src="bin-debug/views/components/item_renderers/IRButton.js"></script>
+	<script egret="lib" src="bin-debug/views/components/item_renderers/IRContainer.js"></script>
+	<script egret="lib" src="bin-debug/views/components/item_renderers/IRUpDownIcon.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/CreateTable.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/CreateTableInfo.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/DetailItem.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/HistoryItem.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/HistoryRecord.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/ImgToast.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/ImgWordBtn.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/JoinTable.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/PersonalDetail.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/PersonalGame.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/PInfItem.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/TableInfo.js"></script>
+	<script egret="lib" src="bin-debug/views/components/redRank/RedRank.js"></script>
+	<script egret="lib" src="bin-debug/views/components/redRank/RedRankInfo.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/HashMap.js"></script>
+	<script egret="lib" src="bin-debug/views/pages/PageChannels.js"></script>
+	<script egret="lib" src="bin-debug/views/pages/PageMatchChannel.js"></script>
+	<script egret="lib" src="bin-debug/views/pages/PageNormalChannel.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelAct.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelActAndNotice.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelActAppLucky.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelAddFriend.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelAlert.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelAlert2.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelAlert3.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelBeforeMatch.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelBindPhone.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelBuyRecorder.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelChoosePay.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelDayBuy.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelDayRed.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelDayTask.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelDelegate.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelDiaFirRecharge.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelDownApp.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelExchange2.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelExchange3.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelFeiEx.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelFFFAct.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelFollowCourse.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelFreshManReward.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelFRGetRew.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelFriend.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelFristRecharge.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelGetItems.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelGetRed.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelHornTalk.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelInviteAct.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelInviteJustList.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelInviteList.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelInviteRank.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelItems.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelLogin.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelLottery.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelLotteryCode.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelLotteryDetail.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelLotteryMyRec.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelLucky.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelMail.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelMailDetails.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelMatch9GetRew.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelMatch9Info.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelMatchCountDown.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelMatchIntro.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelMatchNotice.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelMatchResult.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelMatchRevive.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelMatchSignUp.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelMatchWaiting.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelMatchWaitingInner.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelMining.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelModifyInfo.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelMonday.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelMonthCard.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelNewYear.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelNotice.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelPhoneLogin.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelPlayerInfo.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelProfile.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelRealName.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelRechargeTips.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelReviveBag.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelSelectAvatar.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelSetting.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelShare.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelSign.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelSmallGame.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelThanksgiving.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelVip.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PanelWatchWX.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/panelMonthCard/PanelMonthCardReward.js"></script>
+	<script egret="lib" src="bin-debug/views/scenes/SceneCommon.js"></script>
+	<script egret="lib" src="bin-debug/views/scenes/SceneEffect.js"></script>
+	<script egret="lib" src="bin-debug/views/scenes/SceneLoading.js"></script>
+	<script egret="lib" src="bin-debug/views/scenes/SceneLogin.js"></script>
+	<script egret="lib" src="bin-debug/views/scenes/SceneMostTop.js"></script>
+	<script egret="lib" src="bin-debug/views/scenes/ScenePlay.js"></script>
+	<script egret="lib" src="bin-debug/Main.js"></script>
+	<!--game_files_end-->
+</head>
+<body>
+
+
+<div style="margin: auto;width: 100%;height: 100%;" id = "egretPlayer" class="egret-player"
+     data-entry-class="Main"
+     data-orientation="landscape"
+     data-scale-mode="fixedHeight"
+     data-resolution-mode="retina"
+     data-frame-rate="30"
+     data-content-width="1280"
+     data-content-height="640"
+     data-show-paint-rect="false"
+     data-multi-fingered="2"
+     data-show-fps="false" data-show-log="false"
+     data-log-filter="" data-show-fps-style="x:0,y:0,size:20,textColor:0x00d8ff,bgAlpha:0.6">
+    <input id="ddzCopyTex" type ="text" value="" style="visibility: hidden"/>
+    <button id="ddzCopyBtn" type="button" class="copyBtn" style="visibility: hidden" data-clipboard-action="copy" data-clipboard-target="#ddzCopyTex" />          
+</div>
+
+<script>
+	var ua = navigator.userAgent.toLowerCase();
+	var nativeIdx = ua.indexOf("egretnative");
+	var type = egret.Capabilities.$runtimeType;
+	var renderMode = "canvas";  
+	if(type == egret.RuntimeType.NATIVE || nativeIdx >=0 ){
+		renderMode = "webgl";
+	}else if(type == egret.RuntimeType.WEB){
+		renderMode = "canvas";		
+		if (ua.indexOf("iphone") >= 0 || ua.indexOf("ipad") >= 0 || ua.indexOf("ipod") >= 0) {//ios
+			renderMode = "webgl";
+		}
+	}  
+
+	egret.runEgret({renderMode:renderMode});
+	function onVisibilityChanged() {
+	/*if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+		egret.sys.$pauseAudio();
+	else
+		egret.sys.$resumeAudio();
+	*/
+	};
+
+	document.addEventListener("visibilitychange", onVisibilityChanged, false);
+	document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+	document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+	document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+</script>
+</body>
+</html>

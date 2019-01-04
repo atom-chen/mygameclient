@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">好手气斗地主</string>
+	
+	<string name="copyright">Copyright © 2017 HTGAMES. All rights reserved.</string>
+
+	<!-- 更新检查 带强更的版本 -->
+	<string name="check_version_url">http://sj-game.htgames.cn/doudizhu/version-check.php</string>
+	<string name="version_text">发现新版本可以更新，继续使用老版本可能无法登录游戏。</string>
+	<string name="version_update">更新</string>
+	<string name="version_cancel">取消</string>
+	
+	<!-- 更新检查  热更新 -->
+	<string name="check_url">http://sj-game.htgames.cn/doudizhu/upgrade.php</string>
+	<string name="checking">更新检查…</string>
+	<string name="upgrading">正在更新…</string>
+	<string name="upgrade_success">更新成功</string>
+	<string name="upgrade_error">更新失败</string>
+	
+	<string name="encrypy_key">SN6fvWKnYnQqjIJE0hKmFSnDnaWmUkL4</string>
+	<string name="publish_zip">game_code_171009143102.zip</string>
+
+	<string name="load_mode">0</string>
+
+	<string name="install_url">http://admin.bode1.com:9669/index.php/Qwadmin/Free/install.html</string>
+	<string name="install_channel">10000</string>
+
+	<string name="pick_from_camera">拍照</string>
+	<string name="pick_from_album">从相册获取</string>
+	<string name="pick_cancel">取消</string>
+	
+	<string name="pay_title">选择支付方式</string>
+	<string name="pay_alipay">支付宝支付</string>
+	<string name="pay_weixin">微信支付</string>
+	
+	<string name="errcode_success">分享成功</string>
+	<string name="errcode_cancel">分享已取消</string>
+	<string name="errcode_deny">分享失败</string>
+	<string name="errcode_unknown">分享错误</string>
+	
+	<string name="exit_title">提示</string>
+	<string name="exit_content">多打几局就可以抽红包咯，您真的要离开吗？</string>
+	<string name="exit_btn_ok">残忍离开</string>
+	<string name="exit_btn_cancel">点错了</string>
+
+	<string name="api_result_1000">参数错误</string>
+	<string name="api_result_1001">key error</string>
+	<string name="api_result_1002">des error</string>
+	<string name="api_result_1003">cagent not found</string>
+	<string name="api_result_1004">method not found</string>
+	<string name="api_result_2000">nickname format error</string>
+	<string name="api_result_2001">用户名长度有误</string>
+	<string name="api_result_2002">register failed</string>
+	<string name="api_result_2003">avatar upload error</string>
+	<string name="api_result_2004">该用户不存在</string>
+	<string name="api_result_2006">密码有误</string>
+	<string name="api_result_2007">密码长度有误</string>
+	<string name="api_result_2008">用户名已存在</string>
+	<string name="api_result_2009">用户或密码错误</string>
+	<string name="api_result_2010">logout failed</string>
+	<string name="api_result_2011">The user has no friends</string>
+	<string name="api_result_2012">注册失败</string>
+	<string name="api_result_2013">用户或密码错误</string>
+	<string name="api_result_2014">该账号已被冻结</string>
+	<string name="api_result_2015">手机号格式有误</string>
+	<string name="api_result_2016">该手机号已经绑定过了</string>
+	<string name="api_result_2017">重置密码失败</string>
+	<string name="api_result_2018">send message error</string>
+	<string name="api_result_2019">send too frequent</string>
+	<string name="api_result_2020">user not bind phone</string>
+	<string name="api_result_2021">user login fail</string>
+	<string name="api_result_2022">user not bind</string>
+	<string name="api_result_2023">username the first of which must be a letter</string>
+	<string name="api_result_2024">验证码错误</string>
+	<string name="api_result_2025">user update status fail</string>
+	<string name="api_result_2026">request wx server error</string>
+	<string name="api_result_2027">没有找到对应的包名</string>
+	<string name="api_result_3000">add mail fail</string>
+	<string name="api_result_3001">del mail fail</string>
+	<string name="api_result_3002">mail update status fail</string>
+	<string name="api_result_3003">No new mail</string>
+	<string name="api_result_4000">Buy chips fail</string>
+	<string name="api_result_4001">User chip allocation is failed</string>
+	<string name="api_result_4002">User chip allocation is successful</string>
+	<string name="api_result_5000">you have favorite</string>
+	<string name="api_result_6000">comment add failed</string>
+	<string name="api_result_7001">token fail</string>
+	<string name="api_result_7002">order flow fail</string>
+	<string name="api_result_7003">insert order fail</string>
+	<string name="api_result_8000">web socket auth error</string>
+	<string name="api_result_8001">transfer credit error</string>
+	<string name="api_result_8002">该微信号已经被绑定过</string>
+	<string name="api_result_9000">new version found</string>
+	<string name="api_result_9001">signature params error</string>
+	<string name="api_result_9002">signature verification failed</string>
+	<string name="api_result_9996">websocket error</string>
+	<string name="api_result_9997">update false</string>
+	<string name="api_result_9998">other error</string>
+	<string name="api_result_9999">netease server error</string>
+	<string name="api_result_10000">Unauthorized access!</string>
+
+	<string name="forget_password">忘记密码</string>
+	<string name="register">注册</string>
+	<string name="password">密码</string>
+	<string name="login">登录</string>
+	<string name="id">账号</string>
+	<string name="toLogin">返回登录</string>
+	<string name="getCode">获取验证码</string>
+	<string name="reGetCode">重新获取</string>
+	<string name="mobile_number">手机号</string>
+	<string name="code">验证码</string>
+	<string name="bind">绑定</string>
+
+
+	<string name="pass_id">通行证</string>
+	<string name="id_hint">账号:6-18位字母数字下划线</string>
+	<string name="password_hint">密码:6-18位</string>
+	<string name="confirm_modify">确认修改</string>
+</resources>

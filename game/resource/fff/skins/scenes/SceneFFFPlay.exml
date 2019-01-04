@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="scenes.SceneFffPlaySkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:alien="alien.*" xmlns:ns1="*" >
+	<e:Image id="bgImg" x="0" y="0" width="100%" height="100%" source="fff_bg"/>
+	<e:Image id="bgImg0" x="0" y="0" width="100%" height="100%" source="fff_bg2"/>
+	<e:Image id="backImg" scaleX="0.8" scaleY="0.8" anchorOffsetX="45" anchorOffsetY="46.5" rotation="0" left="30" top="30" source="fff_back"/>
+
+
+
+	<e:Group id="topGrp" width="100%" height="140" top="130" anchorOffsetY="0" x="0">
+		<e:Group id="topItemGrp0" y="10" anchorOffsetY="0" anchorOffsetX="0" height="80" width="380" horizontalCenter="0" scaleX="0.6" scaleY="0.6">
+			<e:Image id="bgImg0_0" x="0" y="0" source="fff_seven_88"/>
+			<e:Image id="bgImg0_1" x="88" y="0" source="fff_seven_88" scaleX="1" scaleY="1"/>
+			<e:Image id="bgImg0_2" x="176" y="0" source="fff_seven_88" scaleX="1" scaleY="1"/>
+			<e:BitmapLabel id="chipFnt0_0" x="250"  font="fff_bet1_fnt" text="=80" verticalCenter="0"/>
+		</e:Group>
+		<e:Group id="topItemGrp1" y="80" anchorOffsetY="0" anchorOffsetX="0" height="80" scaleX="0.6" scaleY="0.6" left="40">
+			<e:Image id="bgImg1_0" x="0" y="0" scaleX="1" scaleY="1" source="fff_bell82"/>
+			<e:Image id="bgImg1_1" x="85" y="0" source="fff_bell82" scaleX="1" scaleY="1"/>
+			<e:Image id="bgImg1_2" x="170" y="0" source="fff_bell82" scaleX="1" scaleY="1"/>
+			<e:BitmapLabel id="chipFnt1_0" x="250" font="fff_bet2_fnt" text="=30" verticalCenter="0"/>
+		</e:Group>
+		<e:Group id="topItemGrp2" y="80" anchorOffsetY="0" anchorOffsetX="0" height="80" scaleX="0.6" scaleY="0.6" right="40">
+			<e:Image id="bgImg2_0" x="0" y="0" scaleX="1" scaleY="1" source="fff_cherry72"/>
+			<e:Image id="bgImg2_1" x="75" y="0" source="fff_cherry72" scaleX="1" scaleY="1"/>
+			<e:Image id="bgImg2_2" x="150" y="0" source="fff_cherry72" scaleX="1" scaleY="1"/>
+			<e:BitmapLabel id="chipFnt2_0" x="226.67" font="fff_bet3_fnt" text="=1400" verticalCenter="0"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="midGrp" height="740" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0">
+		<e:Image id="itemImg0" rotation="0" source="fff_item3" width="224" height="224" anchorOffsetX="112" anchorOffsetY="112"/>
+		<e:Image id="itemImg1" rotation="0" source="fff_item3" width="224" height="224" anchorOffsetX="112" anchorOffsetY="112"/>
+		<e:Image id="itemImg2" rotation="0" source="fff_item3" width="224" height="224" anchorOffsetX="112" anchorOffsetY="112"/>
+		<e:Image id="itemImg3" rotation="0" source="fff_item3" width="224" height="224" anchorOffsetX="112" anchorOffsetY="112"/>
+		<e:Image id="itemImg4" rotation="0" source="fff_item3" width="224" height="224" anchorOffsetX="112" anchorOffsetY="112"/>
+		<e:Image id="itemImg5" rotation="0" source="fff_item3" width="224" height="224" anchorOffsetX="112" anchorOffsetY="112"/>
+		<e:Image id="itemImg6" rotation="0" source="fff_item3" width="224" height="224" anchorOffsetX="112" anchorOffsetY="112"/>
+		<e:Image id="itemImg7" rotation="0" source="fff_item3" width="224" height="224" anchorOffsetX="112" anchorOffsetY="112"/>
+		<e:Image id="itemImg8" rotation="0" source="fff_item3" width="224" height="224" anchorOffsetX="112" anchorOffsetY="112"/>
+		<e:layout>
+			<e:TileLayout horizontalGap="30" verticalGap="30" columnWidth="224" requestedRowCount="3" requestedColumnCount="3" paddingLeft="4" paddingRight="4" rowHeight="224" orientation="rows" rowAlign="justifyUsingGap" columnAlign="left" paddingTop="0" paddingBottom="0"/>
+		</e:layout>
+
+	</e:Group>
+	<e:Image id="startImg" scaleX="0.6" scaleY="0.6" rotation="0" source="fff_start_1" y="925.33" anchorOffsetX="213" anchorOffsetY="89" horizontalCenter="0"/>
+	<e:Group id="bottomGrp" width="100%" height="310" bottom="0" x="0" anchorOffsetY="0">
+		<e:Image id="soundImg" scaleX="0.8" scaleY="0.8" anchorOffsetX="45" anchorOffsetY="46.5" source="fff_sound_1" y="110" right="30"/>
+		<e:Image id="ruleImg" scaleX="0.8" scaleY="0.8" anchorOffsetX="45" anchorOffsetY="46.5" rotation="0" source="fff_help" y="110" left="30"/>
+		<e:Image id="chipImg" scaleX="0.8" scaleY="0.8" rotation="0" y="15" source="fff_chip" horizontalCenter="0" x="139" visible="false"/>
+		<e:Group id="chipGrp" anchorOffsetY="0" width="446" height="110" horizontalCenter="0" scaleX="0.8" scaleY="0.8" verticalCenter="-45">
+			<e:Image id="chipBgImg" rotation="0" y="0" source="fff_chipbg" x="0" scaleX="1" scaleY="1" height="110" scale9Grid="55,14,336,88"/>
+			<e:Image id="chipSubImg" rotation="0" y="54" source="fff_sub1" x="43" scaleX="1" scaleY="1" anchorOffsetX="38" anchorOffsetY="50"/>
+			<e:Image id="chipAddImg" rotation="0" y="54" source="fff_add1" x="399" scaleX="1" scaleY="1" anchorOffsetX="40" anchorOffsetY="50"/>
+			<e:BitmapLabel id="chipNumLabel" font="fff_chipfont_fnt" x="80" text="0" anchorOffsetX="0" width="282" anchorOffsetY="0" height="42" textAlign="center" verticalAlign="0" verticalCenter="0"/>
+
+		</e:Group>
+		<e:Group id="myInfoGrp" width="100%" height="120" x="0" anchorOffsetX="0" anchorOffsetY="0" y="180">
+			<e:Image id="infoBgImg" rotation="0" x="0" source="fff_bg4" width="100%" height="120" y="0"/>
+			<e:Image id="headImg" scaleX="0.5" scaleY="0.5" anchorOffsetX="100" anchorOffsetY="100" rotation="0" source="fff_bg3" x="50" y="60" width="200" height="200"/>
+			<e:Image id="maskImg" scaleX="0.5" scaleY="0.5" anchorOffsetX="100" anchorOffsetY="100" rotation="0" source="fff_bg3" x="50" y="60" width="200" height="200"/>
+			<e:Label id="nickLabel" text="abcdefg" x="120" y="20" fontFamily="Microsoft YaHei" width="300"/>
+			<e:Label id="hasChipLabel" text="已下注金豆:2000" y="20" fontFamily="Microsoft YaHei" width="300" right="20" textAlign="right"/>
+			<e:Label id="totGoldLabel" text="剩余金豆:2000" x="120" y="70" fontFamily="Microsoft YaHei" width="300"/>
+			<e:Label id="totWinLabel" text="总赢金豆:2000" y="70" fontFamily="Microsoft YaHei" right="20" textAlign="right" width="300"/>
+		</e:Group>
+	</e:Group>
+
+	<e:Group id="resultGrp" width="100%" height="450" horizontalCenter="0" verticalCenter="0" visible="false">
+		<e:Image id="resbgImg" rotation="0" anchorOffsetX="497" anchorOffsetY="305" horizontalCenter="0" scaleX="0.7" scaleY="0.7" verticalCenter="0" source="fff_getbg" width="100%"/>
+		<e:Image id="continueImg" scaleX="0.6" scaleY="0.6" rotation="0" y="380" anchorOffsetX="134" anchorOffsetY="42" source="fff_restart" horizontalCenter="0"/>
+		<e:Group id="okItemGrp" width="560" height="230" y="109" anchorOffsetX="0" horizontalCenter="0" anchorOffsetY="0">
+		<e:Image id="okImg0" rotation="0" y="25" x="80" source="fff_cherry216" scaleX="0.5" scaleY="0.5"/>
+		<e:Image id="okImg1" rotation="0" source="fff_cherry216" y="25" scaleX="0.5" scaleY="0.5" x="226"/>
+		<e:Image id="okImg2" rotation="0" source="fff_cherry216" y="25" x="372" scaleX="0.5" scaleY="0.5"/>
+		<e:BitmapLabel id="winNumLabel" font="fff_win_fnt" text="1400" anchorOffsetX="0" width="560" anchorOffsetY="0" height="40" verticalAlign="0" y="190" horizontalCenter="0" touchEnabled="false" textAlign="center"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="dropGrp" width="200" height="200" right="0" bottom="80" visible="false">
+		<e:Image id="dropImg" scaleX="1" scaleY="1" anchorOffsetX="76" anchorOffsetY="73.5" source="play_chest" y="100.5" x="100"/>
+		<e:Label id="dropLabel" text="10s" fontFamily="Microsoft YaHei" size="30" touchEnabled="false" textColor="0xFFFFFF" horizontalCenter="0" textAlign="center" bottom="10"/>
+	</e:Group>
+	<e:Group id="ruleGrp" width="100%" height="100%" x="0" y="0" visible="false">
+		<e:Image id="backImg1" scaleX="0.8" scaleY="0.8" rotation="0" y="30" source="fff_rule" width="100%" horizontalCenter="0"/>
+		<e:Image id="ruleCloseImg" scaleX="0.8" scaleY="0.8" anchorOffsetX="50" anchorOffsetY="50" rotation="0" y="74.8" source="fff_close3" right="10" width="100"/>
+	</e:Group>
+</e:Skin>

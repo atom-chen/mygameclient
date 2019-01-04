@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PanelRealName" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="1280" height="640"  states="single,act" >
+	<e:Group x="0" y="0" width="1280" height="640" touchEnabled="false">
+		<e:Image id="bgImg" y="93" source="common_alert_bg" width="770" height="460" x="255" scale9Grid="105,101,639,17" scaleX="1" scaleY="1" visible.act="false"/>
+
+		<e:Image id="closeImg" x="1006" y="113.5" source="common_close_n" anchorOffsetX="30" anchorOffsetY="30.5" scaleX="1" scaleY="1" visible.act="false"/>
+
+
+		<e:Group id="tit_group" horizontalCenter="0" y="99" x="478" scaleX="1" scaleY="1" visible.act="false">
+			<e:Image id="titBgImg1" y="3" source="common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+			<e:Image id="titFontImg1" y="-4" horizontalCenter="0.5" x="138" scaleX="1" scaleY="1" source="room_smrz"/>
+		</e:Group>
+		<e:TextInput id="nameInput" y="271" width="270" height="50" maxChars="6" skinName="ui.TextInputSkin" displayAsPassword="false" prompt="请输入姓名" anchorOffsetX="0" x="570" scaleX="1" scaleY="1"/>
+		<e:TextInput id="idInput" y="344" width="270" height="50" maxChars="18" restrict="0-9 X" skinName="ui.TextInputSkin" prompt="请输入18位身份证号码" anchorOffsetX="0" x="570" scaleX="1" scaleY="1"/>
+		<e:Label id="phonePreLabel" text="姓       名:" x="450" y="282" fontFamily="Microsoft YaHei" bold="true" size="26" textColor="0x8f4c26" scaleX="1" scaleY="1"/>
+		<e:Label id="codePreLabel" text="身份证号:" x="450" y="356" bold="true" fontFamily="Microsoft YaHei" size="26" textColor="0x8f4c26" scaleX="1" scaleY="1"/>
+
+		<e:Label id="descLabel" text="亲爱的玩家，根据《网络游戏管理暂行规定》的要求，充值前请仔细核对并填写您真实有效的个人信息！" y="186" bold="true" fontFamily="Microsoft YaHei" size="22" textColor="0x424a61" horizontalCenter="0" lineSpacing="10" x="442" scaleX="1" scaleY="1" textAlign="left" width="580" horizontalCenter.act="85"/>
+		<e:Button id="commitBtn" label="确认提交" y="480" anchorOffsetX="85" anchorOffsetY="28" x="640">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_btn_orange3"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" fontFamily="Microsoft YaHei"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+</e:Skin>

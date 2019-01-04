@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="panels.PanelReviveSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="1280" height="640" states="noRecorderDiamond,hasRecorderDiamond,hasRecorderGold,noRecorderGold,fullDiamondHasRecorder,fullDiamondNoRecorder" >
+	<w:Config id="15f37cb46e1"/>
+	<e:Image id="bg_img" y="74" width="770" height="460" horizontalCenter="0" source="common_alert1_bg" scale9Grid="23,58,42,16" horizontalCenter.hasRecorderGold="0"/>
+	<e:Group id="tit_group" horizontalCenter="0" y="78">
+		<e:Image id="titBgImg1" y="0" source="common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+		<e:Image id="titFontImg1" y="-5" horizontalCenter="1.5" x="138" scaleX="1" scaleY="1" source="revive_tit"/>
+	</e:Group>
+	<e:Image id="close_img" x="1010.67" y="95.5" source="common_close_n" anchorOffsetX="30.67" anchorOffsetY="30.5"/>
+
+
+	<e:Image id="revive_item1" x="518" y="324" anchorOffsetX="47.5" anchorOffsetY="47" x.noRecorderDiamond="580" source="room_3" source.hasRecorderGold="room_0" source.noRecorderGold="room_0" x.noRecorderGold="580" x.fullDiamondNoRecorder="580" visible.fullDiamondHasRecorder="false" visible.fullDiamondNoRecorder="false"/>
+	<e:Label id="item1Num_label" text="x60" x.noRecorderGold="541" x.hasRecorderDiamond="480" y="342" size="20" bold="true" fontFamily="Microsoft YaHei" x.noRecorderDiamond="541" text.hasRecorderGold="x30000" x.hasRecorderGold="480" y.hasRecorderGold="340" x="480" textAlign="center" text.noRecorderGold="x30000" x.fullDiamondNoRecorder="541" visible.fullDiamondHasRecorder="false" visible.fullDiamondNoRecorder="false" width="80"/>
+	<e:Image id="revive_add1" x="700" y="324" anchorOffsetX="15" anchorOffsetY="15" source="revive_add" visible.noRecorderDiamond="false" visible.noRecorderGold="false" visible.fullDiamondNoRecorder="false" visible.fullDiamondHasRecorder="false"/>
+	<e:Image id="revive_item2" x="641" y="324" anchorOffsetX="47.5" anchorOffsetY="47" x.noRecorderDiamond="704" source="room_3" source.hasRecorderGold="room_0" source.noRecorderGold="room_0" x.noRecorderGold="704" horizontalCenter.hasRecorderGold="2.5" x.fullDiamondNoRecorder="704" visible.fullDiamondHasRecorder="false" visible.fullDiamondNoRecorder="false"/>
+	<e:Image id="reviveAdd2_img" x="627" y="308" anchorOffsetX="35" anchorOffsetY="34" source="revive_addition" x.noRecorderDiamond="690" x.noRecorderGold="690" x.fullDiamondNoRecorder="690" visible.fullDiamondHasRecorder="false" visible.fullDiamondNoRecorder="false"/>
+	<e:Image id="revive_add2" x="576" y="324" anchorOffsetX="15" anchorOffsetY="15" source="revive_add" x.noRecorderDiamond="640" x.noRecorderGold="640" x.fullDiamondNoRecorder="640" visible.fullDiamondHasRecorder="false" visible.fullDiamondNoRecorder="false"/>
+	<e:Image id="revive_item3" x="761.5" y="324" anchorOffsetX="47.5" anchorOffsetY="47" visible.noRecorderDiamond="false" source="room_2" visible.noRecorderGold="false" visible.fullDiamondNoRecorder="false" x.fullDiamondHasRecorder="642.5"/>
+	<e:Image id="reviveAdd3_img" x="748.75" y="308" anchorOffsetX="35" anchorOffsetY="34" source="revive_addition" visible.noRecorderDiamond="false" visible.noRecorderGold="false" visible.fullDiamondNoRecorder="false" x.fullDiamondHasRecorder="629.75"/>
+	<e:Label id="item2Num_label" text="x12" x="602" y="342" size="20" bold="true" fontFamily="Microsoft YaHei" x.noRecorderDiamond="665" text.hasRecorderGold="x3000" x.hasRecorderGold="602" y.hasRecorderGold="342" width="80" textAlign="center" x.hasRecorderDiamond="602" x.noRecorderGold="665" text.noRecorderGold="x3000" text.noRecorderDiamond="x6" text.hasRecorderDiamond="x6" x.fullDiamondNoRecorder="665" visible.fullDiamondHasRecorder="false" visible.fullDiamondNoRecorder="false"/>
+	<e:Label id="item3Num_label" text="3小时" x="720" y="342" size="20" bold="true" fontFamily="Microsoft YaHei" visible.noRecorderDiamond="false" text.hasRecorderGold="6小时" width="80" textAlign="center" visible.noRecorderGold="false" y.hasRecorderGold="342" y.hasRecorderDiamond="342" visible.fullDiamondNoRecorder="false" x.fullDiamondHasRecorder="601"/>
+	<e:Label id="diamoneTip_label" text="   抱歉，您的钻石少于{0}颗，无法继续游戏，您可以通过以下方式复活。" y="187" textColor="0x7f3000" size="26" fontFamily="Microsoft YaHei" lineSpacing="5" text.hasRecorderGold="   抱歉，您的金豆少于{0}，无法继续游戏，您可以通过以下方式复活。" text.noRecorderGold="   抱歉，您的金豆少于{0}，无法继续游戏，您可以通过以下方式复活。" width="440" x="425" text.fullDiamondHasRecorder="钻石不足,购买{0}元礼包,补充到{1}钻" textAlign.fullDiamondHasRecorder="center" text.fullDiamondNoRecorder="钻石不足,购买{0}元礼包,补充到{1}钻" textAlign.fullDiamondNoRecorder="center" x.fullDiamondNoRecorder="420" x.fullDiamondHasRecorder="420" y.fullDiamondNoRecorder="250"/>
+	<e:Group id="buyGrp" y="430" width="170" height="56" x.hasRecorderGold="555" horizontalCenter="-130">
+		<e:Image id="revive_img" anchorOffsetX="85.5" anchorOffsetY="28" source="common_btn_orange2_n" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+		<e:Label id="moneyLabel" text="6元" bold="true" fontFamily="Microsoft YaHei" horizontalCenter="0" size="26" text.hasRecorderGold="3元" text.noRecorderGold="3元" touchEnabled="false" x="76" scaleX="1" scaleY="1" verticalCenter="0"/>
+	</e:Group>
+	<e:Group id="moreGrp" y="430" width="170" height="56" horizontalCenter="130">
+		<e:Image id="revive_img0" anchorOffsetX="85.5" anchorOffsetY="28" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" source="common_btn_orange3"/>
+		<e:Label id="moneyLabel0" text="更多优惠" bold="true" fontFamily="Microsoft YaHei" horizontalCenter="0" size="26" touchEnabled="false" x="76" scaleX="1" scaleY="1" verticalCenter="0"/>
+	</e:Group>
+</e:Skin>

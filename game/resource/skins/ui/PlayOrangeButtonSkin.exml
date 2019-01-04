@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="ui.PlayOrangeButtonSkin" states="up,down,disabled" minHeight="50" minWidth="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image  source.up="play_btn_orange_n" source.down="play_btn_orange_h" source.disabled="play_btn_d"/>
+	<e:Image id="iconDisplay" horizontalCenter="0" verticalCenter="0" source.up="{this.iconUp}" source.down="{this.iconDown}" source.disabled="{this.iconDisabled}"/>
+</e:Skin>

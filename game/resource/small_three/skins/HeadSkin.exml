@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.HeadSkin" currentState="male" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="170" height="170" states="male,female" >
+	<e:Image id="bg_img" width="100%" height="100%" touchEnabled="false" source="lg_user_male" source.female="lg_user_female"/>
+	<e:Image id="imgAvatar" left="10" right="10" top="10" bottom="10" touchEnabled="false"/>
+	<e:Image id="imgMask" width="100%" height="100%" touchEnabled="false" y="2" x="0" source="common_avatar_mask" visible="false"/>
+	<e:Image width="100%" height="100%" touchEnabled="false" source="common_avatar_light" visible="false"/>
+	<e:Image id="ownerFlag" right="0" bottom="0" source="lg_icon_male" source.female="lg_icon_female"/>
+	<e:Label id="headname" text="昵称" horizontalCenter="0" bottom="-41"  textColor="0xffffff"/>
+	</e:Skin>

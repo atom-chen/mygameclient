@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PanelBindPhoneSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="1280" height="640" states="exBind,actBind" >
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<e:Group x="0" y="0" width="1280" height="640" touchEnabled="false">
+		<e:Image id="bgImg" y="93" source="common_alert_bg" width="770" height="460" x="255" scale9Grid="105,101,639,17" scaleX="1" scaleY="1" visible.actBind="false"/>
+		<e:Image id="bindTit" includeIn="actBind" source="notice_bind" horizontalCenter="81.5" verticalCenter="-148"/>
+		<e:Image id="closeImg" x="1006" y="113.5" source="common_close_n" anchorOffsetX="30" anchorOffsetY="30.5" scaleX="1" scaleY="1" visible.actBind="false"/>
+		<e:Image id="bindNowImg" y="457.5" source="phonebind_now" anchorOffsetX="81" anchorOffsetY="30.5" horizontalCenter="0" x="559" scaleX="1" scaleY="1" horizontalCenter.actBind="79" verticalCenter.actBind="153.5" verticalCenter.exBind="153.5"/>
+		<e:Image id="getCodeImg" x="885" y="368" source="phonebind_getcode" anchorOffsetX="76" anchorOffsetY="25" scaleX="1" scaleY="1" x.actBind="935" y.actBind="385"/>
+		<e:Group id="tit_group" horizontalCenter="0" y="99" x="478" scaleX="1" scaleY="1" visible.actBind="false">
+			<e:Image id="titBgImg1" y="3" source="common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+			<e:Image id="titFontImg1" y="-4" horizontalCenter="0.5" x="138" scaleX="1" scaleY="1" source="phonebind_tit"/>
+		</e:Group>
+		<e:TextInput id="phone" y="271" width="253" height="50" maxChars="11" restrict="0-9" skinName="ui.TextInputSkin" horizontalCenter="21.5" displayAsPassword="false" prompt="请输入11位手机号码" anchorOffsetX="0" x="535" scaleX="1" scaleY="1" y.actBind="287" horizontalCenter.actBind="83.5"/>
+		<e:TextInput id="code" y="344" width="255" height="50" maxChars="4" restrict="0-9" skinName="ui.TextInputSkin" horizontalCenter="22.5" prompt="请输入4位数字验证码" anchorOffsetX="0" x="535" scaleX="1" scaleY="1" y.actBind="360" horizontalCenter.actBind="83.5" horizontalCenter.exBind="21.5"/>
+		<e:Label id="phonePreLabel" text="手机号:" x="445" y="282" fontFamily="Microsoft YaHei" bold="true" size="26" textColor="0x8f4c26" scaleX="1" scaleY="1" x.actBind="507" y.actBind="298"/>
+		<e:Label id="codePreLabel" text="验证码:" x="445" y="356" bold="true" fontFamily="Microsoft YaHei" size="26" textColor="0x8f4c26" scaleX="1" scaleY="1" x.actBind="507" y.actBind="372"/>
+		<e:Label id="countLabel" text="55" x="810.5" y="356" fontFamily="Microsoft YaHei" size="24" textColor="0x8f4c26" scaleX="1" scaleY="1" bold="true" text.actBind="55" x.actBind="860.5" y.actBind="373"/>
+		<e:Label id="descLabel" text="为了更方便您领取奖励，请绑定手机；\n老用户请填写之前公众号绑定的手机号码" y="186" bold="true" fontFamily="Microsoft YaHei" size="22" textColor="0x424a61" horizontalCenter="0" lineSpacing="10" x="442" scaleX="1" scaleY="1" text.actBind="为了更方便您领取奖励，请绑定手机" textAlign.actBind="center" horizontalCenter.actBind="83" verticalCenter.actBind="-85" textAlign.exBind="center" textAlign="center"/>
+
+		<e:Label id="bindGoldLabel" text="首次绑定奖励1000金豆" y="531" bold="true" fontFamily="Microsoft YaHei" size="26" horizontalCenter="83"  x="452" scaleX="1" scaleY="1" textAlign="center" textColor="0xda3939" includeIn="actBind"/>
+	
+
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ui.CircleProgressSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="track" source="common_progress_circle_track" x="0" y="0"/>
+	<e:Image id="thumb" source="common_progress_circle_thumb" x="0" y="0"/>
+	<e:Label id="labelDisplay" text="0" width="100%" height="100%" verticalAlign="middle" textAlign="center" bold="true" size="40" textColor="0x39D70E"/>
+</e:Skin>

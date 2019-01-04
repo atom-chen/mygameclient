@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PanelMatchDetailSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="1280" height="640" states="detail,ranking" >
+	<e:Group horizontalCenter="0" verticalCenter="0" touchEnabled="false" width="1280" height="640">
+		<e:Image id="bgImg" source="common_alert_bg" width="810" height="520" scale9Grid="107,94,642,42" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image id="closeImg" x="1025" y="78" source="common_close_n" anchorOffsetX="30" anchorOffsetY="30" touchEnabled="true" height="60"/>
+
+		<e:Group id="titGroup" horizontalCenter="1" anchorOffsetY="0" y="55">
+		<e:Image id="titBgImg" source="tit_bg1" anchorOffsetX="0" width="368" scale9Grid="31,18,22,34" scaleX="1" scaleY="1"/>
+		<e:Image id="btnBgImg" source="tit_btnbg" scaleX="1" scaleY="1" touchEnabled="true" verticalCenter="0" left.detail="6" right.ranking="6" width.ranking="192" x="6"/>
+		<e:Group id="detailGroup" name="detailGroup" width="192" height="56" anchorOffsetY="0" anchorOffsetX="0" verticalCenter="0" left="8">
+			<e:Image id="statusNormalImg" scaleX="1" scaleY="1" touchEnabled="false" source="match_status_off" y="8" x="32" visible.detail="false"/>
+			<e:Image id="statusSelImg" scaleX="1" scaleY="1" touchEnabled="false" source="match_status_on" verticalCenter="0" x="32" visible.ranking="false"/>
+		</e:Group>
+		<e:Group id="rankingGroup" name="rankingGroup" width="192" height="56" anchorOffsetY="0" anchorOffsetX="0" verticalCenter="0" right="8">
+			<e:Image id="rankingNormalImg" scaleX="1" scaleY="1" touchEnabled="false" source="match_rank_off" verticalCenter="0" horizontalCenter="0" visible.ranking="false"/>
+			<e:Image id="rankingSelImg" scaleX="1" scaleY="1" touchEnabled="false" source="match_rank_on" verticalCenter="0" horizontalCenter="0"/>
+		</e:Group>
+		</e:Group>
+		<e:Group y="132" horizontalCenter="0" width="750">
+			<e:Scroller id="roundListContainer" scrollPolicyV="off" scrollPolicyH="off" height="60" x="0" y="0">
+				<e:Group>
+				<e:List id="roundList" left="0">
+					<e:itemRendererSkinName>
+					<e:Skin xmlns:alien="alien.*" height="60" width="60">
+						<e:Label id="lblRound" text="1轮" size="24" textAlign="center" strokeColor="0x81521c" fontFamily="Microsoft YaHei" left="0" top="0" right="0" bottom="0" verticalAlign="middle" textColor="0xd5652e"/>
+						<e:Image id="imgSelect" bottom="0" horizontalCenter="0" source="match_round_tab"/>
+					</e:Skin>
+					</e:itemRendererSkinName>
+					<e:ArrayCollection>
+					<e:Array>
+						<e:Object label="数据1"/>
+						<e:Object label="数据2"/>
+						<e:Object label="数据3"/>
+						<e:Object label="null"/>
+						<e:Object label="null"/>
+						<e:Object label="null"/>
+						<e:Object label="null"/>
+					</e:Array>
+					</e:ArrayCollection>
+					<e:layout>
+					<e:HorizontalLayout gap="12"/>
+					</e:layout>
+				</e:List>
+				</e:Group>
+			</e:Scroller>
+
+			<e:Image id="btnRefresh" scaleX="1" scaleY="1" verticalCenter="0" source="match_refresh_btn" anchorOffsetX="30" anchorOffsetY="16" horizontalCenter.ranking="340" horizontalCenter.detail="340" horizontalCenter="340"/>
+		</e:Group>
+		<e:Image id="btnReward" touchEnabled="true" source="match_reward_btn" height="50" anchorOffsetX="83" anchorOffsetY="25" horizontalCenter="210" y="158"/>
+		<e:Group top="200" bottom="100" width="760" horizontalCenter="0" bottom.detail="100" bottom.ranking="100">
+			<e:Image touchEnabled="true" width="100%" height="100%" source="common_bg" scale9Grid="24,20,38,21"/>
+			<e:Group id="grpSelfInfo" width="100%" top="0" horizontalCenter="0" height="32">
+				<e:Label id="lblSelfRank" text="您已" size="24" fontFamily="Microsoft YaHei" verticalCenter="0" y="455" scaleX="1" scaleY="1" right="32" textColor="0x9e3434"/>
+			</e:Group>
+			<e:Scroller id="listDetailContainer" scrollPolicyV="auto" scrollPolicyH="off" bounces="false" left="5" top="5" right="5" bottom="5" visible.ranking="false" top.detail="40">
+				<e:Group>
+				<e:List id="roundDetailList" width="100%" x="0" itemRendererSkinName="components.MatchDetailRoundItemSkin" y="0">
+					<e:ArrayCollection>
+					<e:Array>
+						<e:Object label="数据1"/>
+						<e:Object label="数据2"/>
+						<e:Object label="数据3"/>
+					</e:Array>
+					</e:ArrayCollection>
+					<e:layout>
+					<e:VerticalLayout paddingTop="0" gap="0"/>
+					</e:layout>
+				</e:List>
+				</e:Group>
+			</e:Scroller>
+			<e:Scroller id="listRankContainer" scrollPolicyV="auto" scrollPolicyH="off" bounces="false" left="5" top="5" right="5" bottom="5" top.detail="40" top.ranking="40" left.detail="0" right.detail="0" visible.detail="false">
+				<e:Group>
+				<e:List id="rankDetailList" width="100%" itemRendererSkinName="components.MatchDetailRankItemSkin">
+					<e:ArrayCollection>
+					<e:Array>
+						<e:Object label="数据1"/>
+						<e:Object label="数据2"/>
+						<e:Object label="数据3"/>
+					</e:Array>
+					</e:ArrayCollection>
+					<e:layout>
+					<e:VerticalLayout gap="0" paddingTop="0"/>
+					</e:layout>
+				</e:List>
+				</e:Group>
+			</e:Scroller>
+		</e:Group>
+	</e:Group>
+</e:Skin>

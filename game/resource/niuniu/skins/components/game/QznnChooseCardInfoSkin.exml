@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="QznnChooseCardInfoSkin" width="117" height="147" xmlns:ns1="*" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="qznn_0227_image_1" horizontalCenter="0" verticalCenter="0"/>
+	<ns1:CardUI id="card" skinName="CardSkin1" scaleX="0.8" scaleY="0.8" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image id="light" source="qznn_0227_image_4" x="0" y="0"/>	
+</e:Skin>

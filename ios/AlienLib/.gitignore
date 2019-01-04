@@ -1,0 +1,10 @@
+.DS_Store
+*~
+
+Build
+project.xcworkspace
+xcuserdata
+egret-game
+egret_libs
+Pods
+/package*

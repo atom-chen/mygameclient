@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CardSkin1" width="140" height="178" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="poker_broad" y="0" width="140" height="178" horizontalCenter="0"/>
+	<e:Image id="num1" source="poker_black_10" x="56" y="71" anchorOffsetX="56" anchorOffsetY="71"/>
+	<e:Image id="num2" source="poker_black_10" y="107" anchorOffsetY="71" anchorOffsetX="56" x="85" rotation="180"/>
+	<e:Image id="flower1" source="poker_sign_2" x="56" y="71" anchorOffsetX="56" anchorOffsetY="71"/>
+	<e:Image id="flower2" source="poker_sign_2" y="107" anchorOffsetY="71" anchorOffsetX="56" x="84" rotation="180"/>
+	<e:Image id="back" source="poker_blue_back" y="0" width="140" height="178" horizontalCenter="0"/>
+</e:Skin>

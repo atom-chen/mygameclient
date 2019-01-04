@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="panels.PanelInviteActSkin" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  >
+	<e:Group id="infoGroup" width="1280" height="640" touchEnabled="false">
+		<e:Scroller id="taskScroller" height="390" x="460" y="130">
+			<e:Group>
+			<e:Label id="actInfoLabel0" text="活动介绍" x="7" y="4" size="20" fontFamily="Microsoft YaHei" textColor="0xB83600"/>
+			<e:Label id="actTimeLabel0" text="活动时间" x="7" y="59" size="20" fontFamily="Microsoft YaHei" textColor="0xB83600"/>
+			<e:Label id="actDescLabel" text="" x="7" y="31" size="18" fontFamily="Microsoft YaHei" textColor="0x414A61" width="529" lineSpacing="4" anchorOffsetX="0"/>
+			<e:Label id="actTimeLabel" text="" x="7" y="88" size="18" fontFamily="Microsoft YaHei" textColor="0x414A61" width="500"/>
+			<e:Label id="actRuleLabel0" text="活动规则" x="7" y="110" size="20" fontFamily="Microsoft YaHei" textColor="0xB83600"/>
+			<e:Label id="actRuleLabel" text="" x="12" y="139" size="18" fontFamily="Microsoft YaHei" textColor="0x414A61" width="515" anchorOffsetX="0" lineSpacing="5"/>
+			<e:List id="taskList" x="0" y="180">
+				<e:itemRendererSkinName>
+				<e:Skin>
+					<ns1:DayTaskItemInfo id="item" skinName="ui.DayTaskItemSkin"/>
+				</e:Skin>
+				</e:itemRendererSkinName>
+				<e:ArrayCollection>
+				<e:Array>
+					<e:Object label="数据1"/>
+				</e:Array>
+				</e:ArrayCollection>
+			</e:List>
+			</e:Group>
+		</e:Scroller>
+
+
+	</e:Group>
+
+
+</e:Skin>

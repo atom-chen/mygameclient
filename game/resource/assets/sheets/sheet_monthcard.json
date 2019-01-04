@@ -1,0 +1,8 @@
+{"file":"sheet_monthcard.png","frames":{
+"mc_icon_month_card":{"x":408,"y":0,"w":87,"h":89,"offX":0,"offY":0,"sourceW":87,"sourceH":89},
+"mc_title_month_card":{"x":0,"y":53,"w":208,"h":59,"offX":0,"offY":0,"sourceW":208,"sourceH":59},
+"month_price30":{"x":408,"y":111,"w":102,"h":18,"offX":0,"offY":0,"sourceW":102,"sourceH":18},
+"month_price60":{"x":408,"y":91,"w":102,"h":18,"offX":0,"offY":0,"sourceW":102,"sourceH":18},
+"month_tips":{"x":293,"y":0,"w":113,"h":113,"offX":0,"offY":0,"sourceW":113,"sourceH":113},
+"month_word1":{"x":0,"y":114,"w":204,"h":24,"offX":0,"offY":0,"sourceW":204,"sourceH":24},
+"month_word2":{"x":0,"y":0,"w":291,"h":51,"offX":0,"offY":0,"sourceW":291,"sourceH":51}}}

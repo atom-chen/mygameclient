@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PanelLotterySkin" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" >
+	<e:Group id="infoGroup" width="100%" height="100%" left="0" bottom="0">
+		<e:Image id="bgImg" top="-10" height="700" width="1380" source="common_alert_bg" left="-20" fillMode="scale" scale9Grid="306,108,380,13"/>
+
+		<e:Image id="tooBgImg" source="room_bg_2" y="0" x="0" width="100%"/>
+		<e:Button id="keFuBtn" name="kefu" anchorOffsetX="23.5" anchorOffsetY="31.5" scaleX="1" scaleY="1" y="32.5" right="23">
+			<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:alien="alien.*">
+				<e:Image width="100%" height="100%" source="room_kefu"/>
+				<e:Label id="labelDisplay2" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image id="ruleImg" y="8" x="240" source="common_btn_orange_n" width="94" height="50"/>
+		<e:Button id="btnMy" label="" y="10" right="100">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="lotteryMy"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+
+		</e:Button>
+		<e:Group id="close_group" height="64" anchorOffsetY="0" anchorOffsetX="0" width="150" left="0" top="0">
+			<e:Button id="btn_close" y="10" x="82" touchEnabled="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="common_btn_return_n"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+
+			</e:Button>
+		</e:Group>
+		<e:Group id="tit_group" horizontalCenter="0" height="70" y="0">
+			<e:Image id="titBgImg" y="-5" source="common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1" height="70"/>
+			<e:Image id="titFontImg" y="0" horizontalCenter="1" x="138" scaleX="1" scaleY="1" source="lotteryTit"/>
+		</e:Group>
+		<e:Image id="bottomBgImg" source="room_bg_2" width="100%" left="0" x="0" scaleX="1" scaleY="-1" bottom="0"/>
+		<e:Group id="userInfoGroup" left="0" bottom="0">
+			<ns1:Avatar id="avatar" scaleX="0.5" scaleY="0.5" skinName="components.AvatarSkin" name="avatar" touchChildren="false"/>
+			<ns1:Gold id="gold" x="95" y="48" skinName="components.MyGoldSkin" scaleX="0.8" scaleY="0.8" currentState="withButton"/>
+			<ns1:Gold id="diamond" x="230" y="48" skinName="components.MyGoldSkin" scaleX="0.8" scaleY="0.8" currentState="diamondBuy"/>
+			<e:Group id="grpRedcoin" width="157" height="42" y="48" scaleX="0.8" scaleY="0.8" x="370">
+			<e:Image id="redBgImg" y="0" touchEnabled="false" x="0" source="common_gold_bg" width="157" height="42"/>
+			<e:Image y="-4" touchEnabled="false" x="-6.5" source="icon_redcoin" scaleY="0.4" scaleX="0.4"/>
+			<e:Image id="redExchangeImg" y="24" touchEnabled="true" x="140" scaleY="1" scaleX="1" source="common_exchangeRed" anchorOffsetX="23" anchorOffsetY="23.5"/>
+			<e:Label id="lbRedCoin" x="28" y="10" size="25" text="0" textAlign="center" width="90" touchEnabled="false" height="25"/>
+			</e:Group>
+			<e:Image x="90" y="29" source="room_seprate"/>
+			<e:Label id="labNickName" text="" x="105" size="20" y="24" height="20" textColor="0xDCDBC7"/>
+		</e:Group>
+		<e:Label id="ruleLabel" text="规则" x="262" y="21" fontFamily="Microsoft YaHei" size="24" textColor="0x7f3000" bold="true" touchEnabled="false"/>
+		<e:Label id="desc" text="奖杯需通过游戏获得，不可购买。" bottom="19" fontFamily="Microsoft YaHei" size="22" textColor="0xffffff" bold="true" right="23"/>
+		<e:Scroller id="itemScroller" width="100%" height="415" y="104" anchorOffsetX="0" anchorOffsetY="0" scrollPolicyH="auto" scrollPolicyV="off" horizontalCenter="0">
+			<e:Group id="itemGroup">
+				<e:List id = "itemList" anchorOffsetX="0" y="19" horizontalCenter="1">
+					<e:itemRendererSkinName>
+						<e:Skin xmlns:alien="alien.*">
+							<e:Group width="218" height="378" y="0" x="0">
+								<e:Image id="itemBgImg" x="0" y="0" source="lotteryItemBg" scaleX="1" scaleY="1"/>
+								<e:Image id="flagImg" x="0" y="0" source="lotteryFlag" scaleX="1" scaleY="1" touchEnabled="false"/>
+								<e:Image id="itemImg" source="lotteryItemBg1" horizontalCenter="0" verticalCenter="0" x="146" y="35" scaleX="1" scaleY="1" touchEnabled="false"/>
+								<e:Image id="getImg" y="262" scaleX="1" scaleY="1" source="lotteryBtn1" x="23" touchEnabled="false"/>
+								<e:BitmapLabel id="moneyLabel" text="0.000" letterSpacing="-5" font="font_num_9" verticalCenter="98" horizontalCenter="-2" height="28" anchorOffsetX="40" width="80" anchorOffsetY="14" touchEnabled="false" textAlign="center" scaleX="0.8" scaleY="0.8"/>
+								<e:Label id="titLabel" text="10元话费" x="8" y="42" size="24" fontFamily="Microsoft YaHei" textColor="0xba2e2e" bold="true" width="200" height="24" textAlign="center" scaleX="1" scaleY="1" anchorOffsetX="0" touchEnabled="false"/>
+								<e:Label id="stateLabel" text="已抢0/0次" x="8" y="311" size="18" fontFamily="Microsoft YaHei" width="202" height="24" textAlign="center" textColor="0x7F3000" bold="true" verticalAlign="middle" scaleX="1" scaleY="1" anchorOffsetX="0" touchEnabled="false"/>
+								<e:Label id="hasLabel" text="我有0000个夺宝码" x="8" y="342" size="18" fontFamily="Microsoft YaHei" width="202" height="24" textAlign="center" bold="true" verticalAlign="middle" scaleX="1" scaleY="1" anchorOffsetX="0" touchEnabled="false" textColor="0x333333"/>
+								<e:Group id="timeGroup" width="200" height="28" x="8" y="72" anchorOffsetY="0" touchEnabled="false"  touchChildren="false" touchThrough="true">
+									<e:Image id="timeBg1Img" x="38" y="8" source="lotteryTimebg" scale9Grid="4,3,6,8" height="18" anchorOffsetX="0" width="30" scaleX="1" scaleY="1" touchEnabled="false"/>
+									<e:Image id="timeBg2Img" x="94" y="8" source="lotteryTimebg" scale9Grid="4,3,6,8" width="30" height="18" anchorOffsetX="0" scaleX="1" scaleY="1" touchEnabled="false"/>
+									<e:Image id="timeBg3Img" x="147" y="8" source="lotteryTimebg" scale9Grid="4,3,6,8" width="30" height="18" anchorOffsetX="0" scaleX="1" scaleY="1" touchEnabled="false"/>
+									<e:Label id="leftPreLabel" text="剩" x="16" y="7" size="18" fontFamily="Microsoft YaHei" textAlign="center" textColor="0x7f3000" scaleX="1" scaleY="1" touchEnabled="false"/>
+									<e:Label id="leftHLabel" text="时" x="72" y="7" size="18" fontFamily="Microsoft YaHei" textColor="0x7f3000" textAlign="center" scaleX="1" scaleY="1" touchEnabled="false"/>
+									<e:Label id="leftHLabel1" text="00" x="40" y="8" size="18" fontFamily="Microsoft YaHei" textAlign="center" textColor="0xffd400" width="24" height="18" scaleX="1" scaleY="1" touchEnabled="false"/>
+									<e:Label id="leftMLabel" text="分" x="126" y="7" size="18" fontFamily="Microsoft YaHei" textColor="0x7f3000" textAlign="center" scaleX="1" scaleY="1" touchEnabled="false"/>
+									<e:Label id="leftMLabel1" text="00" x="97" y="8" size="18" fontFamily="Microsoft YaHei" textColor="0xFFD400" textAlign="center" width="24" height="18" scaleX="1" scaleY="1" touchEnabled="false"/>
+									<e:Label id="leftSLabel" text="秒" x="180" y="7" size="18" fontFamily="Microsoft YaHei" textColor="0x7f3000" textAlign="center" scaleX="1" scaleY="1" touchEnabled="false"/>
+									<e:Label id="leftSLabel1" text="00" x="150" y="8" size="18" fontFamily="Microsoft YaHei" textColor="0xFFD400" textAlign="center" width="24" height="18" scaleX="1" scaleY="1" touchEnabled="false"/>
+								</e:Group>
+							</e:Group>
+						</e:Skin>
+					</e:itemRendererSkinName>
+					<e:layout>
+						<e:HorizontalLayout gap="30" verticalAlign="middle"/>
+					</e:layout>
+					<e:ArrayCollection>
+						<e:Array>
+							<e:Object label="数据1"/>
+						</e:Array>
+					</e:ArrayCollection>
+				</e:List>
+				<e:layout>
+					<e:HorizontalLayout verticalAlign="middle" horizontalAlign="center" gap="6"/>
+				</e:layout>
+			</e:Group>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.UserInfoSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" states="left,right,my" >
+	<e:Image includeIn="left,right" x="10" y="0" source="play_name_bg" locked="true"/>
+	<e:Label id="labNickName" size="20" x.my="118" y.my="76" size.my="20" y="3" width.right="112" width.left="112" textAlign="center" stroke="1" strokeColor="0x723c02" textColor="0xE4E4E4" textAlign.my="left" height.my="20" height="20" text="name" text.my="" width.my="330"/>
+	<ns1:Avatar id="avatar" y="30" skinName="components.AvatarSkin" scaleX="0.65" scaleY="0.65" locked="true"/>
+	<e:Group touchEnabled="false" width="170" height="170" id="grpGRLight" x="-27" y="-5" visible.right="false" height.my="141" visible="false">
+		<e:Image source="guesscards_950" y="27" scaleX="1.2" scaleY="1.2" x="11" locked="true"/>
+		<e:Image source="guesscards_950" y="41" x="105" locked="true"/>
+		<e:Image source="guesscards_950" y="81" x="128" locked="true"/>
+		<e:Image source="guesscards_942" verticalCenter="-13.5" horizontalCenter="0" locked="true"/>
+		<e:Image source="guesscards_943" verticalCenter="13.5" horizontalCenter="0" locked="true"/>
+
+		<e:Group id="grpAnimate" height="120" width="120" x="25" y="30">
+			<e:Image id="light" source="guesscards_light" horizontalCenter="0" verticalCenter="0" locked="true"/>
+			<e:Image id="star0" source="guesscards_ani_star" x="70" y="74"/>
+			<e:Image source="guesscards_ani_star" id="star1" x="40" y="40" locked="true"/>
+			<e:Image source="guesscards_ani_star" id="star2" x="40" y="40" locked="true"/>
+		</e:Group>
+	</e:Group>
+	<ns1:Gold id="gold" y="98" skinName.my="components.MyGoldSkin" x.my="111" y.my="95" skinName="components.MyGoldSkin" currentState="withButton" y.left="142" currentState.left="withBg" scaleX.left="0.5" scaleY.left="0.5" horizontalCenter.left="0" horizontalCenter.right="0" currentState.right="withBg" scaleX.right="0.5" scaleY.right="0.5" y.right="142"/>
+	<ns1:Gold id="diamond" y="95" skinName="components.MyGoldSkin" currentState="diamondBuy" includeIn="my" x="280"/>
+
+</e:Skin>

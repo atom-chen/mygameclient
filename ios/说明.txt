@@ -1,0 +1,4 @@
+1..Resources内的内容，由egret生成代码和资源文件，并丢入
+2.ios\egret_libs\libEgretLib.a 文件过大 需要从网页上下载
+3.部分framework之类的，由于是文件夹，win32下上传有问题
+4.个推、微信sdk的.a文件需要自己处理，暂时无法上传

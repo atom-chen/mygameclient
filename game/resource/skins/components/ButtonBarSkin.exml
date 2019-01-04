@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.ButtonBarSkin" currentState="useCard" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" states="hidden,askMaster,useCard,pass,grap,useCard2,pass2" >
+	<e:Group id="grpButton" includeIn="hidden,askMaster,useCard,pass,grap,useCard2,pass2">
+		<e:layout>
+			<e:HorizontalLayout gap="20"/>
+		</e:layout>
+		<ns1:StateButton name="score_0" id="score_0" x="126" y="20" includeIn="askMaster,grap" labelIcon="play_btn_word_nocall" labelIcon.grap="play_btn_not_grab" skinName="ui.PlayBlueButtonSkin"/>
+		<ns1:StateButton name="score_1" id="score_1" includeIn="askMaster,grap" x="136" y="30" labelIcon="play_btn_word_1" labelIcon.grap="play_btn_grab" skinName="ui.PlayOrangeButtonSkin"/>
+		<ns1:StateButton name="score_2" id="score_2" skinName="ui.PlayOrangeButtonSkin" includeIn="askMaster" x="146" y="40" labelIcon="play_btn_word_2"/>
+		<ns1:StateButton name="score_3" skinName="ui.PlayOrangeButtonSkin" id="score_3" includeIn="askMaster" x="156" y="50" labelIcon="play_btn_word_3"/>
+		
+		<ns1:StateButton skinName="ui.PlayBlueButtonSkin" labelIcon="play_btn_word_no" name="pass" x="116" y="10" includeIn="hidden,useCard,pass" visible.hidden="false"/>
+		<ns1:StateButton skinName="ui.PlayBlueButtonSkin" labelIcon="play_btn_word_again" name="cancelSelect" x="10" y="10" includeIn="hidden,useCard,useCard2" visible.hidden="false"/>
+		<ns1:StateButton skinName="ui.PlayBlueButtonSkin" labelIcon="play_btn_word_prompt" name="help" x="206" y="20" includeIn="hidden,useCard,useCard2" visible.hidden="false"/>
+		<ns1:StateButton skinName="ui.PlayOrangeButtonSkin" labelIcon="play_btn_word_come" name="use" x="216" y="30" includeIn="hidden,useCard,useCard2" visible.hidden="false"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="panels.PanelChoosePay" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  >
+	<e:Group id="infoGroup" width="1280" height="640" touchEnabled="false">
+	</e:Group>
+	<e:Image id="bgImg" width="770" height="460" horizontalCenter="0" verticalCenter="0" source="common_alert_bg" scale9Grid="142,106,609,13"/>
+	<e:Image id="closeImg" x="1007" y="108" source="common_close_n" anchorOffsetX="30" anchorOffsetY="30.5"/>
+	<e:Group id="aliGrp" width="172" height="188" anchorOffsetX="86" anchorOffsetY="94" y="345" horizontalCenter="-100">
+		<e:Image id="payAli" source="common_ali" x="3" y="-1" scaleX="1" scaleY="1" touchEnabled="false"/>
+		<e:Image id="payAli0" x="3" y="0" source="common_flag_98" scaleY="1" touchEnabled="false"/>
+	</e:Group>
+	<e:Group id="wxGrp" width="168" height="180" anchorOffsetX="84" anchorOffsetY="90" y="344" horizontalCenter="110">
+		<e:Image id="payWx" x="-1" y="-7" source="common_wx" scaleX="1" scaleY="1" touchEnabled="false"/>
+	</e:Group>
+
+
+
+	<e:Group id="tit_group" horizontalCenter="0" y="92">
+		<e:Image id="titBgImg1" y="3" source="common_tit_bg" x="0" scaleX="1" scaleY="1"/>
+		<e:Image id="common_paytit" y="-3" x="70" scaleX="1" scaleY="1" source="common_paytit"/>
+	</e:Group>
+
+</e:Skin>

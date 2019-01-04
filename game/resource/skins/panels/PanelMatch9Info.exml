@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="panels.PanelMatch9Info" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="405" height="218" x="629.5" y="310" source="match9_bg" scale9Grid="6,5,8,210" anchorOffsetY="109" anchorOffsetX="202.5"/>
+	<e:Image x="627" y="202" source="match9_titBg" anchorOffsetX="166" anchorOffsetY="31"/>
+	<e:Image id="tit_img" x="623" y="198" anchorOffsetX="48" anchorOffsetY="22" source="match9_titInfo"/>
+	<e:Image x="449" y="242" source="match9_idxNum"/>
+	<e:Image x="539" y="242" source="match9_glScore"/>
+	<e:Image x="610" y="243" source="match9_averageScore"/>
+	<e:Image x="734" y="242" source="match9_score"/>
+	<e:Label id="turn1_label" text="第1轮" x="462" y="279" fontFamily="Microsoft YaHei" size="20" textAlign="center"/>
+	<e:Label id="turn2_label" text="第2轮" x="462" y="319" fontFamily="Microsoft YaHei" size="20" textAlign="center"/>
+	<e:Label id="turn3_label" text="第3轮" x="462" y="358" fontFamily="Microsoft YaHei" size="20" textAlign="center"/>
+	<e:Label id="turn1_1label" text="" x="546" y="279" fontFamily="Microsoft YaHei" size="20" textAlign="center"/>
+	<e:Label id="turn1_2label" text="" x="643" y="279" fontFamily="Microsoft YaHei" size="20" textAlign="center"/>
+	<e:Label id="turn1_3label" text="" x="762" y="279" fontFamily="Microsoft YaHei" size="20"/>
+	<e:Label id="turn2_1label" text="" x="546" y="319" fontFamily="Microsoft YaHei" size="20" textAlign="center"/>
+	<e:Label id="turn2_2label" text="" x="643" y="319" fontFamily="Microsoft YaHei" size="20" textAlign="center"/>
+	<e:Label id="turn2_3label" text="" x="762" y="319" fontFamily="Microsoft YaHei" size="20" anchorOffsetY="0"/>
+	<e:Label id="turn3_1label" text="" x="546" y="358" fontFamily="Microsoft YaHei" size="20" textAlign="center"/>
+	<e:Label id="turn3_2label" text="" x="643" y="358" fontFamily="Microsoft YaHei" size="20" textAlign="center"/>
+	<e:Label id="turn3_3label" text="" x="762" y="358" fontFamily="Microsoft YaHei" size="20" textAlign="center"/>
+</e:Skin>

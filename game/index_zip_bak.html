@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>好手气游戏中心</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="true"/>
+    <meta name="screen-orientation" content="landscape"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+    <style>
+        html, body {
+            -ms-touch-action: none;
+            background: #000000;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+<div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
+     data-entry-class="Main"
+     data-orientation="landscape"
+     data-scale-mode="fixedHeight"
+     data-resolution-mode="retina"
+     data-frame-rate="60"
+     data-content-width="1280"
+     data-content-height="640"
+     data-show-paint-rect="false"
+     data-multi-fingered="2"
+     data-show-fps="false" data-show-log="false"
+     data-log-filter="" data-show-fps-style="x:0,y:0,size:20,textColor:0x00d8ff,bgAlpha:0.6">
+     <input id="ddzCopyTex" type ="text" value="" style="visibility: hidden"/>
+     <button id="ddzCopyBtn" type="button" class="copyBtn" style="visibility: hidden" data-clipboard-action="copy" data-clipboard-target="#ddzCopyTex" />
+</div>
+<script type="text/javascript">
+        var _mtac = {};
+        (function() {
+            var mta = document.createElement("script");
+            mta.src = "http://pingjs.qq.com/h5/stats.js?v2.0.2";
+            mta.setAttribute("name", "MTAH5");
+            mta.setAttribute("sid", "500485827");
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(mta, s);
+        })();
+
+        var files = ["lib.min.js", "main.min.js"];
+        var TYPE_SRC =1;
+        var TYPE_TEXT=2;
+
+        if(window.top.getCurTime){
+            window.top.getCurTime("index.html");            
+        }
+        function runGame(){
+            if(window.top.getCurTime){
+                window.top.getCurTime("runGame");            
+            }
+            egret.runEgret({renderMode:"canvas"});
+        }
+
+        function addScriptByType(_str,nType,callback){
+            var s = document.createElement('script');
+            s.setAttribute("type", "text/javascript");
+            document.body.appendChild(s);
+            if(nType == TYPE_SRC){
+                s.async = false;
+                s.src = _str; 
+                s.addEventListener('load', function () {
+                    s.parentNode.removeChild(s);
+                    s.removeEventListener('load', arguments.callee, false);
+                    callback();
+                }, false);
+            }else if(nType == TYPE_TEXT){
+                s.text = _str;
+                callback();
+            }
+        }
+
+        function addAllScriptBySrc(){
+            var _n = files.length;
+            var _cur = -1;
+            var _callback = null;
+            _callback = function(){
+                _cur += 1;
+                if(_cur >= _n){
+                    runGame();
+                }else{
+                    addScriptByType(files[_cur],TYPE_SRC,_callback)
+                }
+            }
+            _callback();
+        }
+
+        function getZip(url,callBack)
+        {
+            var xhrZip = new XMLHttpRequest();
+            xhrZip.open("GET", url, true);
+            xhrZip.responseType = "arraybuffer";
+            xhrZip.addEventListener("load", function (oEvent)
+            {
+                var arrayBuffer = xhrZip.response; 
+                if (!arrayBuffer)
+                {
+                    addAllScriptBySrc();
+                }
+                else{
+                    callBack(new JSZip(arrayBuffer));
+                }
+            });
+            xhrZip.send(null);
+        }
+
+        function addScriptFromZip(zip,file,callback)
+        {
+            var _file = zip.file(file);
+            if(_file){
+                addScriptByType(_file.asText(),TYPE_TEXT,callback);
+            }
+            else{
+                addScriptByType(file,TYPE_SRC,callback);    
+            }
+        }
+
+        function runGameByZip(){
+            try{
+                var zipName = "game.zip";
+                getZip(zipName,function(zip){
+                    var _n = files.length;
+                    var _cur = -1;
+                    var _callback = null;
+                    _callback = function(){
+                        _cur += 1;
+                        if(_cur >= _n){
+                            runGame();
+                        }else{
+                            addScriptFromZip(zip,files[_cur],_callback)
+                        }
+                    }
+
+                    _callback();
+                });
+            }
+            catch (e)
+            {
+                addAllScriptBySrc();
+                runGame();
+            }
+        }
+
+        function addJsZipAndRunGame(){
+            var _src = "jszip.min.201710130900.js";
+            addScriptByType(_src,TYPE_SRC,function(){
+                runGameByZip();
+            })
+        }
+
+        addJsZipAndRunGame()
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PanelDzpkRule" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing"  width="750" height="1334">
+	<e:Group id="touchGrp" width="100%" height="100%" x="0" y="0" touchEnabled="true"/>
+
+	<e:Group id="typeRootGrp" touchEnabled="true" width="580" top="20" left="10">
+		<e:Image id="bgImg" scaleX="1" scaleY="1" height="910" anchorOffsetX="0" width="580" y="0" anchorOffsetY="0" touchEnabled="true" source="play_backBg" scale9Grid="12,13,16,16" x="0" alpha="0.85"/>
+		<e:Group id="type1Grp" width="580" height="89" anchorOffsetX="0" anchorOffsetY="0" touchEnabled="false" x="0" y="0" scaleX="1" scaleY="1">
+			<e:Label text="1.皇家同花顺" y="12" size="28" fontFamily="Microsoft YaHei" x="360" touchEnabled="false"/>
+			<e:Label text="同一花色最大的顺子" x="380" y="50" size="22" fontFamily="Microsoft YaHei" textColor="0x70eeff" touchEnabled="false"/>
+		</e:Group>
+		<e:Group id="type2Grp" width="580" height="89" y="91" anchorOffsetX="0" anchorOffsetY="0" touchEnabled="false" x="0" scaleX="1" scaleY="1">
+			<e:Label text="2.同花顺" y="12" size="28" fontFamily="Microsoft YaHei" x="360" scaleX="1" scaleY="1" touchEnabled="false"/>
+			<e:Label text="同一花色的顺子" x="380" y="50" size="22" fontFamily="Microsoft YaHei" textColor="0x70EEFF" scaleX="1" scaleY="1" touchEnabled="false"/>
+		</e:Group>
+		<e:Group id="type3Grp" width="580" height="90" y="182" anchorOffsetX="0" anchorOffsetY="0" touchEnabled="false" x="0" scaleX="1" scaleY="1">
+			<e:Label text="3.四条" y="12" size="28" fontFamily="Microsoft YaHei" x="360" scaleX="1" scaleY="1" touchEnabled="false"/>
+			<e:Label text="4张相同+1单牌" x="380" y="50" size="22" fontFamily="Microsoft YaHei" textColor="0x70EEFF" scaleX="1" scaleY="1" touchEnabled="false"/>
+		</e:Group>
+		<e:Group id="type4Grp" width="580" height="90" y="273" anchorOffsetX="0" anchorOffsetY="0" touchEnabled="false" x="0" scaleX="1" scaleY="1">
+			<e:Label text="4.葫芦" y="12" size="28" fontFamily="Microsoft YaHei" x="360" scaleX="1" scaleY="1" touchEnabled="false"/>
+			<e:Label text="3张相同+1对" x="380" y="50" size="22" fontFamily="Microsoft YaHei" textColor="0x70EEFF" scaleX="1" scaleY="1" touchEnabled="false"/>
+		</e:Group>
+		<e:Group id="type5Grp" width="580" height="90" y="364" anchorOffsetX="0" anchorOffsetY="0" touchEnabled="false" x="0" scaleX="1" scaleY="1">
+			<e:Label text="5.同花" y="12" size="28" fontFamily="Microsoft YaHei" x="360" scaleX="1" scaleY="1" touchEnabled="false"/>
+			<e:Label text="5张牌同一花色" x="380" y="50" size="22" fontFamily="Microsoft YaHei" textColor="0x70EEFF" scaleX="1" scaleY="1" touchEnabled="false"/>
+		</e:Group>
+		<e:Group id="type6Grp" width="580" height="90" y="455" anchorOffsetX="0" anchorOffsetY="0" touchEnabled="false" x="0" scaleX="1" scaleY="1">
+			<e:Label text="6.顺子" y="12" size="28" fontFamily="Microsoft YaHei" x="360" scaleX="1" scaleY="1" touchEnabled="false"/>
+			<e:Label text="5张相邻的牌" x="380" y="50" size="22" fontFamily="Microsoft YaHei" textColor="0x70EEFF" scaleX="1" scaleY="1" touchEnabled="false"/>
+		</e:Group>
+		<e:Group id="type7Grp" width="580" height="90" y="545" anchorOffsetX="0" anchorOffsetY="0" touchEnabled="false" x="0" scaleX="1" scaleY="1">
+			<e:Label text="7.三条" y="12" size="28" fontFamily="Microsoft YaHei" x="360" scaleX="1" scaleY="1" touchEnabled="false"/>
+			<e:Label text="3张相同+2单牌" x="380" y="50" size="22" fontFamily="Microsoft YaHei" textColor="0x70EEFF" scaleX="1" scaleY="1" touchEnabled="false"/>
+		</e:Group>
+		<e:Group id="type8Grp" width="580" height="90" y="635" anchorOffsetX="0" anchorOffsetY="0" touchEnabled="false" x="0" scaleX="1" scaleY="1">
+			<e:Label text="8.两对" y="12" size="28" fontFamily="Microsoft YaHei" x="360" scaleX="1" scaleY="1" touchEnabled="false"/>
+			<e:Label text="2个对子+1单牌" x="380" y="50" size="22" fontFamily="Microsoft YaHei" textColor="0x70EEFF" scaleX="1" scaleY="1" touchEnabled="false"/>
+		</e:Group>
+		<e:Group id="type9Grp" width="580" height="90" y="726" anchorOffsetX="0" anchorOffsetY="0" touchEnabled="false" x="0" scaleX="1" scaleY="1">
+			<e:Label text="9.对子" y="12" size="28" fontFamily="Microsoft YaHei" x="360" scaleX="1" scaleY="1" touchEnabled="false"/>
+			<e:Label text="1个对子+3单牌" x="380" y="50" size="22" fontFamily="Microsoft YaHei" textColor="0x70EEFF" scaleX="1" scaleY="1" touchEnabled="false"/>
+		</e:Group>
+		<e:Group id="type10Grp" width="580" height="90" y="817" anchorOffsetX="0" anchorOffsetY="0" touchEnabled="false" scaleX="1" scaleY="1" x="0">
+			<e:Label text="10.高牌" y="12" size="28" fontFamily="Microsoft YaHei" x="342" scaleX="1" scaleY="1" touchEnabled="false"/>
+			<e:Label text="5张单牌" x="380" y="50" size="22" fontFamily="Microsoft YaHei" textColor="0x70EEFF" scaleX="1" scaleY="1" touchEnabled="false"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

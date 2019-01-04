@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="panels.PanelActSkin" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  >
+	<e:Group id="infoGroup" width="1280" height="640" touchEnabled="false">
+		<e:Image id="bg_img1" x="430" y="126" width="589" height="410" scale9Grid="9,7,12,15" source="common_bg" scaleX="1" scaleY="1" anchorOffsetX="0" touchEnabled="false"/>
+		<e:Image id="arrImg" x="414" y="159" source="common_arrow" scaleX="1" scaleY="1" anchorOffsetY="11"/>
+		<ns1:ActList id="actList" x="260" y="125" skinName="components.ActList" anchorOffsetY="0" height="447"/>
+	</e:Group>
+
+
+</e:Skin>

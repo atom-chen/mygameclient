@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PanelAlertSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image width="770" height="460" horizontalCenter="0" source="common_alert_bg" scale9Grid="33,108,736,15"/>
+	<e:Group id="tit_group" horizontalCenter="0" y="0">
+		<e:Image id="titBgImg0" y="3" source="common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+		<e:Image id="titFontImg0" y="0" horizontalCenter="0" x="138" scaleX="1" scaleY="1" source="common_word_15"/>
+	</e:Group>
+	<e:Group id="grpButton" horizontalCenter="1" bottom="32">
+		<ns1:StateButton id="btnConfirm" name="confirm" x="50" y="142" skinName="ui.DeepBlueButtonSkin" labelIcon="common_btn_lab_confirm"/>
+		<ns1:StateButton id="btnCancel" name="cancel" labelIcon="common_btn_lab_cancel" y="142" x="212" skinName="ui.GreenButtonSkin"/>
+		<e:layout>
+			<e:HorizontalLayout gap="150"/>
+		</e:layout>
+	</e:Group>
+	<e:Group id="grpButtonShare" horizontalCenter="1" bottom="32" visible="false">
+		<ns1:StateButton id="btnCancel0" name="cancel" labelIcon="common_btn_lab_cancel" y="-174" x="-158" skinName="ui.ShareButtonSkin" scaleX="1" scaleY="1"/>
+		<ns1:StateButton id="btnConfirm0" name="confirm" x="50" y="142" skinName="ui.DeepBlueButtonSkin" labelIcon="common_btn_lab_confirm"/>
+		<e:layout>
+		<e:HorizontalLayout gap="150"/>
+		</e:layout>
+	</e:Group>
+
+
+	<e:Button id="btnClose" x="737" y="-16" name="close">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="common_close_n"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+
+
+	</e:Button>
+	<e:Scroller id="ctxScroller" width="600" height="250" horizontalCenter="0" verticalCenter="-20" scrollPolicyV="auto" scrollPolicyH="off">
+		<e:Group>
+			<e:Label id="labContent" text="标签" textColor="0x000000" width="600" textAlign="center" lineSpacing="10" scaleX="1" scaleY="1" verticalAlign="middle" x="0"/>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

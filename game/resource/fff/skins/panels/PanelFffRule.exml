@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PanelFffRule" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing"  width="750" height="1334">
+	<e:Group id="touchGrp" width="100%" height="100%" x="0" y="0" touchEnabled="true"/>
+
+	<e:Group id="typeRootGrp" touchEnabled="true" width="580" top="20" left="10">
+	
+	</e:Group>
+</e:Skin>

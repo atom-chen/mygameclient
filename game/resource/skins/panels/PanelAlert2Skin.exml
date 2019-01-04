@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PanelAlert2Skin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image width="770" height="460" source="common_alert_bg" scale9Grid="38,113,735,9"/>
+	<e:Button right="-22" id="btnClose" skinName="ui.CloseButtonSkin" y="-12" x="10"/>
+	<e:Label id="labContent" text="..." width="400" horizontalCenter="0" verticalCenter="-20" textAlign="center" textColor="0xBE0000" lineSpacing="5"/>
+	<ns1:NormalButton id="btnConfirm" horizontalCenter="1" bottom="85" x="50" y="142" skinName="ui.NormalButtonSkin"/>
+</e:Skin>

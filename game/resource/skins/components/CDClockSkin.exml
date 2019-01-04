@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.CDClockSkin" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="icon_clock"/>
+	<e:BitmapLabel id="labNum" horizontalCenter="-2.1000000000000014" text="1" verticalCenter="2.6000000000000014" scaleX="0.9" scaleY="0.9" font="font_num_13"/>
+</e:Skin>

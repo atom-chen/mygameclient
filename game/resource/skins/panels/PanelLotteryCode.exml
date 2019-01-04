@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PanelLotteryCodeSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" states="code,rule" >
+	<e:Group verticalCenter="0" horizontalCenter="0" width="1280" height="640">
+		<e:Image width="856" height="520" source="common_alert_bg" scale9Grid="33,108,736,15" scaleX="1" scaleY="1" y="60" x="212"/>
+		<e:Group id="tit_group" horizontalCenter="0" x="192" scaleX="1" scaleY="1" y="66" visible.rule="false">
+			<e:Image id="titBgImg0" y="3" source="common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+			<e:Image id="titFontImg0" y="0" horizontalCenter="0" x="138" scaleX="1" scaleY="1" source="lotteryCodeTit"/>
+		</e:Group>
+		<e:Button id="btnClose" x="1022" y="45" name="close" scaleX="1" scaleY="1">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_close_n"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Scroller id="codeScroller" width="760" height="320" anchorOffsetX="0" anchorOffsetY="0" scrollPolicyV="auto" scrollPolicyH="off" scaleX="1" scaleY="1" x="260" y="160">
+			<e:Group x="1">
+				<e:List id="codeList" x="492" y="92" width="760" visible.rule="false">
+				<e:itemRendererSkinName>
+						<e:Skin xmlns:alien="alien.*">
+							<e:Group id="recItemGroup" y="0" anchorOffsetY="0" x="0" width="760" height="40">	
+								<e:Label id="code1" text="" textAlign="center" scaleX="1" scaleY="1" width="270" fontFamily="Microsoft YaHei" textColor="0x333333" left="0" verticalCenter="0"/>
+								<e:Label id="code2" text="" horizontalCenter="0" textAlign="center" x="29" scaleX="1" scaleY="1" width="270" fontFamily="Microsoft YaHei" textColor="0x333333" verticalCenter="0"/>
+								<e:Label id="code3" text="" textAlign="center" scaleX="1" scaleY="1" width="270" fontFamily="Microsoft YaHei" textColor="0x333333" right="0" verticalCenter="0"/>
+							</e:Group>	
+						</e:Skin>
+					</e:itemRendererSkinName>
+					<e:layout>
+						<e:VerticalLayout verticalAlign="middle" gap="30" paddingTop="10"/>
+					</e:layout>
+					<e:ArrayCollection>
+						<e:Array>
+							<e:Object label="数据1"/>
+							<e:Object label="数据2"/>
+							<e:Object label="数据3"/>
+							<e:Object label="null"/>
+						</e:Array>
+					</e:ArrayCollection>
+				</e:List>
+
+			<e:Label id="ruleLabel" text="" horizontalCenter="0" textAlign="left" lineSpacing="10" x="29" y="0" scaleX="1" scaleY="1" width="760" fontFamily="Microsoft YaHei" visible.code="false" textColor="0x000000" size="20"/>
+			<e:layout>
+				<e:VerticalLayout/>
+			</e:layout>
+			</e:Group>
+		</e:Scroller>
+		<e:Label id="labContent0" text="夺宝规则" horizontalCenter="0" textAlign="center" lineSpacing="30" x="39" y="127" scaleX="1" scaleY="1" width="500" fontFamily="Arial" visible.code="false"  textColor="0x000000"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin  class="scenes.GameCWFDSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" states="win,lose" >
+	<w:Config id="1631fca0e08"/>
+	<e:Image id="bg" scaleX="1" scaleY="1" width="100%" height="100%" verticalCenter="0" horizontalCenter="0" source="lg_bg_png"/>
+	<e:Group id="pipei" width="750" height="1334" horizontalCenter="0" verticalCenter="0">
+		<e:Image id="gameback" scaleX="1" left="20" top="20" source="lg_back_btn"/>
+		<e:Image id="gamehelp" scaleX="1" left="120" top="20" source="lg_question_btn"/>
+		<e:Label id="title" text="正在匹配中" scaleX="1" scaleY="1" size="60" top="180" borderColor="0x160202" textAlign="right" wordWrap="false" textColor="0xffffff" horizontalCenter="0"/>
+		<e:Label id="timeCount" text="10 s" size="30" textColor="0xffffff" top="260" horizontalCenter="0"/>
+		<e:Image id="large" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" source="lg_rader_xl_png"/>
+		<e:Image id="big" horizontalCenter="0" verticalCenter="0" source="lg_rader_l_png"/>
+		<e:Image id="small" horizontalCenter="0" verticalCenter="0" source="lg_rader_s_png"/>
+		<ns1:Head id="MyHead1" skinName="components.HeadSkin" verticalCenter="0" x="290"/>
+		<e:Label id="tip" text="率先拼出2048的获胜" scaleX="1" scaleY="1" size="30" borderColor="0x160202" textAlign="center" wordWrap="false" textColor="0xFFFFFF" verticalAlign="middle" horizontalCenter="0" top="260" visible="false"/>
+		<e:Label id="vs" text="VS" scaleX="1" scaleY="1" size="80" borderColor="0x160202" textAlign="center" wordWrap="false" textColor="0xFFFFFF" verticalAlign="middle" horizontalCenter="0" verticalCenter="0" visible="false"/>
+		<ns1:Head id="HisHead1" skinName="components.HeadSkin" horizontalCenter="200" verticalCenter="0" currentState="female" visible="false"/>
+	</e:Group>
+	<e:Group id="start" width="750" height="1334" horizontalCenter="0" top="0" visible="false">
+		<e:Rect width="600" height="60" scaleX="1" scaleY="1" top="147" fillColor="0x167B82" strokeColor="0xFFFFFF" strokeWeight="6" horizontalCenter="0"/>
+		<e:Rect height="46" y="154" scaleX="1" scaleY="1" fillColor="0x4452DA" width="250" left="125"/>
+		<e:Rect height="46" y="154" scaleX="1" scaleY="1" right="125" fillColor="0xCE1F69" x="10" width="250"/>
+		<e:Label id="myScore" text="第1关" size="40" verticalAlign="middle" textAlign="center" top="158" horizontalCenter="-140"/>
+		<e:Label id="hisScore" text="第1关" size="40" verticalAlign="middle" textAlign="center" top="158" left="460"/>
+		<e:Image id="gameback0" scaleX="1" left="20" top="20" x="20" y="20" scaleY="1" source="lg_back_btn"/>
+		<e:Image id="gamehelp0" scaleX="1" left="120" top="20" x="120" y="20" scaleY="1" source="lg_question_btn"/>
+		<ns1:Head id="MyHead2" skinName="components.HeadSkin" verticalCenter="-490" horizontalCenter="-280" currentState="gameing" width="85" height="85"/>
+		<ns1:Head id="HisHead2" skinName="components.HeadSkin" verticalCenter="-490" horizontalCenter="280" currentState="gameing" width="85" height="85"/>
+		<e:Label id="score" text="当前关数：1" size="40" verticalAlign="middle" textAlign="center" top="280" horizontalCenter="0.5"/>
+		<e:Image id="wangge" scale9Grid="11,11,7,8" width="672" height="864" source="lg_game_area_bg" x="39" y="345"/>
+		<e:Group id="picGroup" width="672" height="864" y="345" x="39">
+			<e:Group id="knifes" scaleX="1" scaleY="1" left="0" bottom="0">
+				<e:Image id="knife12" rotation="-60" source="cwfd_knife" left="0" top="-30" scaleX="0.5" scaleY="0.5"/>
+				<e:Image id="knife11" rotation="-60" source="cwfd_knife" left="0" top="0" scaleX="0.5" scaleY="0.5"/>
+				<e:Image id="knife10" rotation="-60" top="30" source="cwfd_knife" y="-361" left="0" scaleX="0.5" scaleY="0.5"/>
+				<e:Image id="knife9" rotation="-60" top="60" source="cwfd_knife" y="-361" left="0" scaleX="0.5" scaleY="0.5"/>
+				<e:Image id="knife8" rotation="-60" top="90" y="-361" source="cwfd_knife" left="0" scaleX="0.5" scaleY="0.5"/>
+				<e:Image id="knife7" rotation="-60" top="120" y="-361" source="cwfd_knife" left="0" scaleX="0.5" scaleY="0.5"/>
+				<e:Image id="knife6" rotation="-60" top="150" y="-361" source="cwfd_knife" left="0" scaleX="0.5" scaleY="0.5"/>
+				<e:Image id="knife5" rotation="-60" source="cwfd_knife" left="0" top="180" scaleX="0.5" scaleY="0.5"/>
+				<e:Image id="knife4" rotation="-60" source="cwfd_knife" left="0" top="210" scaleX="0.5" scaleY="0.5"/>
+				<e:Image id="knife3" rotation="-60" source="cwfd_knife" left="0" top="240" scaleX="0.5" scaleY="0.5"/>
+				<e:Image id="knife2" rotation="-60" source="cwfd_knife" left="0" top="270" scaleX="0.5" scaleY="0.5"/>
+				<e:Image id="knife1" rotation="-60" source="cwfd_knife" left="0" top="300" scaleX="0.5" scaleY="0.5"/>
+				<e:Image id="knife0" rotation="-60" source="cwfd_knife" left="0" top="330" scaleX="0.5" scaleY="0.5"/>
+			</e:Group>
+			<e:Image id="knife" rotation="0" source="cwfd_knife" y="639" anchorOffsetX="20" x="336"/>
+		</e:Group>
+		<e:Group id="plantGroup" anchorOffsetY="170" scaleX="1" scaleY="1" y="640" x="375" height="340" width="340" anchorOffsetX="170">
+			<e:Group id="knifeGroup" width="340" height="340" anchorOffsetX="170" anchorOffsetY="170" x="170" y="170">
+				<e:Image id="knife81" scale9Grid="11,12,6,6" source="cwfd_knife" y="57.5" x="170" scaleX="1" scaleY="1" rotation="-180" anchorOffsetX="20" anchorOffsetY="112.5" visible="false"/>
+				<e:Image id="knife82" scale9Grid="11,12,6,6" source="cwfd_knife" y="170" anchorOffsetX="20" x="282.5" scaleX="1" scaleY="1" rotation="-90" anchorOffsetY="112.5" visible="false"/>
+				<e:Image id="knife83" scale9Grid="11,12,6,6" source="cwfd_knife" y="282.5" anchorOffsetX="20" x="170" scaleX="1" scaleY="1" rotation="0" anchorOffsetY="112.5" visible="false"/>
+				<e:Image id="knife84" scale9Grid="11,12,6,6" source="cwfd_knife" y="170" anchorOffsetX="20" x="170" scaleX="1" scaleY="1" rotation="11.5" visible="false"/>
+			</e:Group>
+			<e:Image id="plant" source="cwfd_plant" anchorOffsetX="170" anchorOffsetY="170" scaleX="1" scaleY="1" x="170" y="170"/>
+		</e:Group>
+		<e:Image id="touch" scaleX="1" scaleY="1" width="672" height="864" x="37.48" y="346.52" alpha="0" source="lg_bg_png"/>
+		<e:Group id="levelGroup" width="340" height="340" scaleX="1" scaleY="1" y="640" x="375" anchorOffsetX="170" anchorOffsetY="170" visible="false">
+			<e:Image source="cwfd_plant" anchorOffsetX="170" anchorOffsetY="170" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			<e:Image rotation="225" scale9Grid="11,12,6,6" source="cwfd_knife" scaleX="1" scaleY="1" anchorOffsetX="20" anchorOffsetY="112.5" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			<e:Image scaleX="1" scaleY="1" verticalCenter="0" source="lg_msg_bg" horizontalCenter="0" width="672"/>
+			<e:Label id="level" text="第几关" horizontalCenter="0" verticalCenter="7" size="60" textColor="0x000000"/>
+		</e:Group>
+		<e:Image id="meng" scaleX="1" scaleY="1" width="750" height="1334" verticalCenter="0" horizontalCenter="0" x="0" y="0" alpha="0.4" source="lg_bg_png" visible="false"/>
+		<e:Image id="ready" horizontalCenter="0" verticalCenter="0" source="lg_READY" x="277" y="645" scaleX="1" scaleY="1" visible="false"/>
+		<e:Image id="go" horizontalCenter="0" verticalCenter="0" source="lg_GO" x="332" y="644" scaleX="1" scaleY="1" visible="false"/>
+		<ns1:Progress id="Prog" skinName="ProgressSkin" horizontalCenter="0" bottom="60"/>
+	</e:Group>
+	<e:Group id="result" width="750" height="1334" horizontalCenter="0" y="0" visible="false">
+		<e:Image id="Gresult" top="0" horizontalCenter="0" includeIn="win" source="lg_result_draw"/>
+
+		<e:Image width="300" horizontalCenter="0" verticalCenter="-180" scale9Grid="20,17,8,3" height="45" source="lg_result_today_bg"/>
+		<e:Label id="Gnum" text="今日已对决 1 场" scaleX="1" scaleY="1" textAlign="center" y="473" backgroundColor="0xa37416" bold="true" textColor="0xffffff" horizontalCenter="0.5"/>
+		<ns1:Head id="MyHead3" skinName="components.HeadSkin" horizontalCenter="-200" verticalCenter="0" x="104" y="596" scaleX="1" scaleY="1"/>
+		<e:Label id="resultScore" text="1 : 1" scaleX="1" scaleY="1" textAlign="center" backgroundColor="0xA37416" bold="true" textColor="0xFFFFFF" size="56" horizontalCenter="0" verticalCenter="0"/>
+		<e:Label id="GetNum" text="你获得200金豆" scaleX="1" scaleY="1" textAlign="center" backgroundColor="0xA37416" size="56" horizontalCenter="0" x="366" verticalCenter="200" textColor="0xFFFFFF" visible="false"/>
+		<ns1:Head id="HisHead3" skinName="components.HeadSkin" horizontalCenter="200" verticalCenter="0" x="504" y="596" scaleX="1" scaleY="1" currentState="female"/>
+		<e:Image id="againBtn" width="480" horizontalCenter="0" y="980" scale9Grid="48,40,19,8" source.lose="lg_result_btn_blue" source="lg_result_btn_blue"/>
+		<e:Label id="lab1" text="继续游戏" scaleX="1" scaleY="1" y="1007" backgroundColor="0xA37416" bold="true" textColor="0xFFFFFF" horizontalCenter="0.5" size="35" text.lose="对方已退出游戏"/>
+		<e:Image id="changeGame" width="480" horizontalCenter="0" y="1110" scale9Grid="48,41,20,6" source="lg_result_btn_red"/>
+		<e:Label id="lab2" text="换个游戏" scaleX="1" scaleY="1" y="1137" backgroundColor="0xA37416" bold="true" textColor="0xFFFFFF" horizontalCenter="0.5" size="35" verticalAlign="middle"/>
+
+
+		<e:Image id="gameback1" scaleX="1" left="20" top="20" source="lg_back_btn"/>
+		<e:Image id="gamehelp1" left="120" top="20" source="lg_question_btn" x="10" y="10"/>
+	</e:Group>
+	<e:Group id="Exit" width="750" height="1334" horizontalCenter="0" verticalCenter="0" x="10" y="10" visible="false">
+		<e:Image width="640" height="100" scale9Grid="13,16,7,8" horizontalCenter="0" verticalCenter="-300" source="lg_mask_t"/>
+		<e:Image width="640" height="400" scale9Grid="12,11,7,5" horizontalCenter="0" verticalCenter="-50" source="lg_mask_c"/>
+		<e:Label text="温馨提示" scaleX="1" scaleY="1" y="350" size="40" verticalAlign="middle" textAlign="center" horizontalCenter="0" textColor="0xffffff"/>
+		<e:Label text="退出本局记为认输\n是否确认退出?" scaleX="1" scaleY="1" y="496" textColor="0x000000" size="40" verticalAlign="middle" textAlign="center" horizontalCenter="0"/>
+		<e:Image id="goon" width="280" y="666" scaleX="1" scaleY="1" scale9Grid="48,41,20,6" x="85" source="lg_result_btn_blue"/>
+		<e:Label id="lab4" text="继续玩" scaleX="1" scaleY="1" y="693" backgroundColor="0xA37416" bold="true" textColor="0xFFFFFF" size="35" horizontalCenter="-150"/>
+		<e:Image id="sure" width="280" y="666" scaleX="1" scaleY="1" scale9Grid="48,41,20,6" x="385" source="lg_result_btn_red"/>
+		<e:Label id="lab5" text="认输退出" scaleX="1" scaleY="1" y="693" backgroundColor="0xA37416" bold="true" textColor="0xFFFFFF" size="35" verticalAlign="middle" horizontalCenter="150"/>
+	</e:Group>
+	<e:Group id="help" width="750" height="1334" horizontalCenter="0" verticalCenter="0" x="20" y="20" visible="false">
+		<e:Image width="640" height="100" scale9Grid="13,16,7,8" horizontalCenter="0" verticalCenter="-352" source="lg_mask_t"/>
+		<e:Label text="游戏说明" scaleX="1" scaleY="1" y="298" textColor="0xFFFFFF" size="40" verticalAlign="middle" textAlign="center" horizontalCenter="0"/>
+		<e:Image id="closeBtn" verticalCenter="-358" source="lg_close" right="60" x="630" y="287" scaleX="1" scaleY="1"/>
+		<e:Image width="640" height="700" scale9Grid="12,11,7,5" horizontalCenter="0" y="365" source="lg_mask_c"/>
+		<e:Label text="规则" scaleX="1" scaleY="1" y="388" textColor="0x000000" size="40" verticalAlign="middle" textAlign="center" bold="true" left="100"/>
+		<e:Label text="1.将飞刀全部打在转盘上即可晋级下一关\n2.如果飞刀相碰则重新开始当前关卡\n3.获胜者奖励800金豆，失败不扣金豆" scaleX="1" scaleY="1" backgroundColor="0xA37416" bold="true" size="30" textColor="0x999999" verticalAlign="middle" textAlign="left" y="448" left="100" width="580"/>
+		<e:Label text="玩法" scaleX="1" scaleY="1" y="550" backgroundColor="0xA37416" bold="true" size="35" verticalAlign="middle" textColor="0x000000" left="100"/>
+		<e:Image scaleX="1" scaleY="1" scale9Grid="48,41,20,6" horizontalCenter="0" verticalCenter="30" source="cwfd_tips_img"/>
+		<e:Label text="胜负判断" scaleX="1" scaleY="1" y="808" textColor="0x000000" size="40" verticalAlign="middle" textAlign="center" bold="true" left="100"/>
+		<e:Label text="1.限时60秒,最终闯关多者获胜\n2.若游戏未结束,先退出的一方算输,同时退出则平局\n3.若游戏时间结束,双方都在同一关则平局" scaleX="1" scaleY="1" y="858" backgroundColor="0xA37416" bold="true" textColor="0x999999" size="35" width="590" verticalAlign="middle" textAlign="left" left="100"/>
+	</e:Group>
+</e:Skin>

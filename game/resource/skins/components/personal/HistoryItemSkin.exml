@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.HistoryItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image scale9Grid="17,18,11,11" y="0" source="personal_history_bg_litem" x="0"/>
+
+
+	<e:Label id="lbTime" text="2017.5.8" width="130" textAlign="center" size="24" height="34" bold="true" verticalAlign="middle" x="27" textColor="0xFFFFFF" y="8"/>
+	<e:Label id="lbOwner" y="8" textColor="0xFFFFFF" height="34" text="房主昵称呵呵" textAlign="center" bold="true" width="160" verticalAlign="middle" size="24" x="234"/>
+	<e:Label id="lbCheck" height="34" text="点击查看" textAlign="center" bold="true" verticalAlign="middle" size="24" x="484" y="8" textColor="0xFFDA0F"/>	
+</e:Skin>

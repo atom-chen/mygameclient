@@ -1,0 +1,914 @@
+// 代码风格
+//消息名：使用骆驼风格的大小写命名，即单词首字母大写
+//字段名：全部小写
+//枚举名：使用骆驼风格的大小写命名
+//枚举值：全部大写，使用下划线分隔
+
+package user;
+
+//user包中的协议如果需要区别接收的客户端，需要在协议中带clientid（小写）字段。
+//如果协议中有clientid字段，则客户端接收的时候会自动路由,
+//如果没有clientid（optional也属于有，而不属于没有）字段，则会广播给所有客户端
+//chargebonus 0 未领取 1 已领取
+
+message UserInfoRequest {
+	required int32 uid = 1;
+}
+
+message UserInfoResonpse {
+	message winstatus{
+		required int32 gameid = 1;
+		required int32 win = 2;
+		required int32 lose = 3;
+	}
+
+	message roomwincnt{
+		optional int32 roomid = 1;
+		optional int32 cnt = 2;
+		optional int32 chance = 3;
+		optional int32 getchance = 4;
+		optional int32 time = 5;
+	}
+
+	message playrecord{
+		optional int32 roomid = 1;
+		optional int32 played = 2;
+		optional int32 win = 3;
+	}
+	
+	optional int32 uid = 1;
+	optional string nickname = 2;
+	optional int32 money = 3;
+	optional string gold = 4;
+	optional int32 exp = 5;
+	optional int32 vipexp = 6;
+	optional int32 sex = 7;
+	optional string imageid = 8;
+	optional int32 havesecondpwd = 9;
+	optional int32 isbinding = 10;
+	optional string fakeuid = 11;
+	optional string bindphone = 12;
+	optional int32 candy = 13;
+	optional int32 chargebonus = 14;
+	repeated winstatus wins = 15;
+	repeated roomwincnt wincnt = 16;
+	optional int32 redcoin = 17;
+	optional string beans = 18;
+	optional int32 freshmanredcoinsent = 19;
+	optional int32 rcminexcchanceused = 20; // 新用户是否兑换最低额度1 是
+	optional int32 freshrewardgot = 21;
+	optional int32 recorderfirstrewardgot = 22;
+	repeated int32 cardsRecorder = 23;
+	optional int32 redcoingot = 24;
+	optional int32 totalwincnt = 25;
+	optional int32 totallosecnt = 26;
+	optional int32 totaldrawcnt = 27;
+
+	repeated int32 daytaskprogress = 28; // idx 0 表示 今日赢的局数， idx 1表示完成赢5局任务的下线玩家数量 idx 2 今天成赢5局任务的下线玩家数量
+	repeated int32 daytaskstatus = 29; // 表示每日任务是否完成，0未完成 1已完成 2 已领取
+	optional int32 frechargerewardday = 30; //获得首充奖励之后的天数 1~7存在即可领奖 ，8今日奖励已领取 9 所有奖励领取完毕 -1未获得首充奖励
+	optional int32 signrewardaddremain = 31; //签到奖励加成剩余天数
+	optional int32 rcminexcexpiretime = 32; // 最低红包兑换机会过期时间
+	optional int32 diamondgiftgot = 33;		// 新手钻石奖励1 已领取
+	optional int32 diamondrelive = 34;		// 每日复活礼包购买次数 1
+	optional int32 daysharerewardgot = 35; // 每日分享奖励 1 已经获得奖励
+	repeated int32 showredpoint = 36; 	//  idx 0任务1显示
+	repeated int32 luckpacket = 37; // idx0 上一次福袋购买时间 1剩余次数
+	repeated int32 invitetaskstatus = 38; // 第一位表示总完成数量 ，邀请任务是否完成，0未完成 1已完成 2 已领取
+	optional int32 goldrelive = 39;		// 金币场复活礼包购买次数
+	repeated int32 otherrcchance = 40;  // 1 邀请玩家抽奖次数 2 首次打出王炸抽奖次数  3 完成每日邀请5人
+	repeated int32 poolreward = 41;  // 1 胜利次数 2 抽奖次数
+	repeated int32 ivtrwddayrcd = 42;  // 1 今日邀请已抽次数 2 邀请5人已抽奖次数
+	repeated int32 primarydmrcge = 43; //  初级场充值次数
+	repeated int32 vipdata = 44; // vip数据 1exp 2todaygot
+	repeated int32 params = 45;	// 1钻石首充 2 月卡1截止日期 3 月卡2截止日期 4 月卡1领取时间 5 月卡2领取时间 6 免费钻石抽奖时间
+	repeated playrecord playrecords = 46;
+	optional string whatsup = 47;
+}
+
+//修改自己用户信息
+message ModifyUserInfoReq {
+	optional string nickname = 1;
+	optional int32 sex = 2;
+	optional string imageid = 3;
+	optional string oldpwd = 4;
+	optional string newpwd = 5;
+	optional float longitude = 6;
+	optional float latitude = 7;
+	optional string whatsup = 8;
+}
+
+//0成功 1失败，数据有误  2 imageid太长 3 执行数据库语句失败 4 旧密码错误
+//// rname: 0成功 1 有相同昵称存在 2查询数据库失败  3 执行update语句失败 platform
+//            4 执行update语句失败 playerinfo  5 字符串超过8个中文 6 没有改名资格
+message ModifyUserInfoRep {
+	required int32 result = 1;
+	optional int32 rname = 2;
+}
+
+
+message CheckReconnectReq{
+	
+}
+
+message CheckReconnectRep{
+	required int32 roomid = 1;
+	required int32 session = 2;
+	optional int32 clientid = 3;
+	optional int32 gametype = 4; //0 普通游戏 // 1比赛 // 2组局  3 德州组局
+}
+
+message ReconnectTableReq{
+	required int32 session = 1;
+	required int32 result = 2;//0表示加入，其他值表示放弃加入
+	required int32 index = 3;//0表示恢复现场的方式断线重连，大于0表示闪断方式断线重连
+	optional int32 clientid = 4;  //断线重连也需要更新clientid
+}
+
+message ReconnectTableRep{
+	required int32 result = 1;//0表示加入成功，其他值表示失败
+	required int32 session = 2;
+	optional int32 clientid = 3;
+}
+
+//快速加入
+message QuickJoinRequest {
+	required int32 roomid = 1;
+	required int32 clientid = 2;
+	optional int32 gold = 3;
+	optional int32 flag = 4;
+}
+
+// result 0成功  2 金币不足 3 房间已满  4 用户已经存在 5 用户不存在 6 服务器不可用  7 拥有金币超过房间上限
+// 10 请求过于频繁 11 服务器已更新
+message QuickJoinResonpse {
+	required int32 result = 1; 
+	required int32 clientid = 2;
+}
+
+message PlayerInfo{
+	optional int32 uid = 1;
+	optional string nickname = 2;
+	optional string imgid = 3;
+	optional int32 owner = 4;
+	optional int32 seatid = 5;
+	optional int32 gold = 6;
+	optional int32 buychip = 7;
+}
+
+// 玩家人数请求
+message PlayersAmountReq{
+	optional int32 game_id = 1;
+}
+
+message PlayersAmountRep {
+	message Info{
+		required int32 room_id = 1;
+		required int32 amount = 2;
+	}
+	repeated Info info = 1;
+	optional int32 totalAmount = 2;
+}
+
+// optype 1:报名 2:取消报名 
+// itemid 0:金币 其他为道具id
+// 报名： 1 2服务忙   3已经报过名 4用户数据获取失败 8金币不足，9比赛次数超过上限 10比赛过期
+// 11 比赛服务已经停止 12 参赛券不足， 13 参赛券金币都不足 14参数错误 15 选项错误 16 金币过多 17 获取玩家信息失败
+// 18钻石不足 19 服务器已更新 21 人数已满
+// 取消报名： 5 没有报过 6比赛不存在 7比赛已经开始 , 
+message MatchSignupReq{
+	required int32 optype = 1;
+	required int32 matchid = 2;
+	optional int32 itemid = 3;
+	optional int32 extra = 4;
+}
+
+//0成功 1已经报名过 2比赛已经开始 3找不到比赛 4取消失败，没报名过 5取消失败，已经开始
+message MatchSignupRep {
+	required int32 result = 1;
+	required int32 matchid = 2;
+	required int32 optype = 3;
+	repeated PlayerInfo players = 4;
+}
+
+// 比赛开始通知
+message MatchStartNtf{
+	required int32 matchid = 1;
+	required int32 subid = 2;
+}
+
+// 进入比赛
+message EnterMatchReq{
+	required int32 clientid = 1;
+	required int32 matchid = 2;
+}
+
+// 进入比赛返回
+message EnterMatchRep{
+	required int32 result = 1;
+	required int32 matchid = 2;
+	required int32 clientid = 3;
+}
+
+// optype = 1 比赛复活
+message MatchOperateReq{
+	required int32 optype = 1;
+	required int32 matchid = 2;
+}
+
+// optype = 1 比赛复活 
+// result = 0 成功 1 玩家不存在 2 比赛不存在 3 次数达到上限 4 不支持复活 5 金币不足 6 配置不存在 7 超时未复活 8 比赛进入锁定状态，拒绝买入 9 操作过于频繁
+// params [0] 复活初始积分
+message MatchOperateRep{
+	required int32 optype = 1;
+	required int32 result = 2;
+	required int32 matchid = 3;
+	repeated int32 params = 4;
+}
+
+//100 通知比赛模式  1 打立出局 2 瑞士位移
+//101 自己当前的排名    当前轮玩家人数   自己的金币
+//102  排名 底分 复活价格
+//103 下一轮玩家人数    每轮局数
+//104 排名 人数  下一轮玩家数
+//105 当前底分 下一阶段底分 时间
+//106 当前轮数 当前局数  下一轮玩家数 每轮局数
+
+//比赛信息广播
+message MatchInfoNtf{
+	message RankInfo{
+		optional int32 uid = 1;
+		optional int32 rank = 2;
+		optional string nickname = 3;
+		optional int32 score = 4;
+		optional int32 inmatch = 5; // 1在比赛中 0 已淘汰
+	}
+	message RoundInfo{
+		optional int32 round = 1;
+		optional int32 change = 2;
+		optional int32 aver = 3;
+		optional int32 score = 4;
+	}
+	message ResultInfo{
+		optional string nickname = 1;
+		optional int32 uid = 2;
+		repeated int32 params = 3;
+	}
+	required int32 matchid = 1;
+	optional int32 clientid = 2;
+	optional int32 optype = 3;
+	optional int32 timeout = 4;
+	repeated int32 params = 5;
+	repeated RankInfo rankInfo = 6;
+	repeated RoundInfo roundInfo = 7;
+	repeated ResultInfo resultInfo = 8;
+	optional string strreward = 9;
+	repeated ResultInfo roundscore = 10;
+}
+
+//查询金币锁定信息 
+message QueryFreezeGoldReq{
+	optional int32 optype = 1;
+}
+
+//查询金币锁定信息返回
+message QueryFreezeGoldRep{
+	optional int32 optype = 1;
+	optional string canfreeze = 2;
+	optional string totalfrozen = 3;
+}
+
+message RankingNode
+{
+	optional int32 uid = 1;
+	optional int32 score = 2;
+	optional int32 ranking = 3;
+	optional string nickname = 4;
+	optional string imageid = 5;
+	optional int32 round = 6;
+}
+
+message GroupNode
+{
+	optional int32 round = 1;
+	repeated RankingNode players = 2;
+}
+
+message RedcoinRankingListReq
+{
+	optional int32 optype = 1;
+	optional int32 matchid = 2;
+	optional int32 round = 3;	
+	optional int32 unicode = 4;
+}
+
+message RedcoinRankingListRep
+{
+	optional int32 optype = 1;
+	repeated RankingNode list = 2;
+	repeated GroupNode glist = 3;
+	optional int32 round = 4;
+	optional int32 matchid = 5;	
+	optional int32 unicode = 6;
+}
+
+//每日签到 1请求信息 2签到
+message DaySigninOptReq {
+	required int32 optype = 1;
+}
+
+//result 0成功 其他失败 
+//total_day一共签了几天  today 1今天已签到 0今天未签到
+message DaySigninOptRep {
+	required int32 optype = 1;
+	required int32 result = 2;
+	optional string reward = 3;
+	optional int32 total_day = 4;
+	optional int32 today = 5;
+}
+
+//请求比赛报名信息
+message MatchSignupInfoReq{
+	required int32 matchid = 1;
+}
+
+message MatchSignupInfoRep {
+	required int32 matchid = 1;
+	optional int32 is_signup = 2;  //自己是否报名0未报名 1已报名 2已开始
+	optional int32 today_cnt = 3;  //今天玩了几场
+	optional int32 signup_cnt = 4; //报名人数
+	optional int32 remainTime = 5; //即开赛剩余必开时间
+
+	optional int32 matchstatus = 6; // 1未开始 2 进行中
+	optional int32 round = 7; // 当前轮次
+}
+
+//请求比赛报名信息
+message GiveupMatchReq{
+	required int32 matchid = 1;
+	optional int32 clientid = 2;
+}
+
+message GiveupMatchRep{
+	required int32 result = 1;
+	optional int32 matchid = 2;
+}
+
+//踢下线的通知 reason 1 被挤下线2 解码失败 3 超时 4 被锁定 5 服务器更新
+message NotifyKickout{
+	required int32 reason = 1;
+}
+
+message Item {
+	required int32 id = 1;
+	required int32 count = 2;
+}
+
+// 背包信息请求
+message BagInfoReq{
+}
+
+// 
+message BagInfoRep{
+	optional int32 result = 1;
+	repeated Item items = 2;
+}
+
+// 救济金请求
+message AlmsReq{
+}
+
+// result 0 成功 1 领取次数使用完 2未达到领取条件 3请求过于频繁
+// usagecnt 已经使用次数
+message AlmsRep{
+	required int32 result = 1;
+	optional int32 usagecnt = 2;
+}
+
+// 充值结果
+// result 0 成功 1 失败
+// optype 1 人民币充值
+// gold 充值金币变化
+message RechargeResultNotify{
+	required int32 result = 1;
+	required int32 optype = 2;
+	optional int32 gold = 3;
+	optional int32 productid = 4;
+}
+
+// 付费聊天请求
+// type 1 普通聊天 2 喇叭
+message Pay2chatReq{
+	required int32 type = 1;
+	required string msg = 2;
+}
+
+message ChatInfo{
+	required int32 type = 1;
+	optional string nickname = 3;
+	optional string msg = 4;
+	optional int32 time = 5;
+	optional int32 uid = 6;
+}
+
+// 聊天信息同步
+// result 0 成功 1 金币不足 2 内容不能为空 3 参数错误(type) 4 内容过长
+// 
+message Pay2chatRep{
+	optional int32 result = 1;
+	repeated ChatInfo chatinfo = 2;
+}
+
+// 邮件请求 optype 0 获取邮件信息 1 获取奖励信息 2 修改邮件状态 (阅读) 3 获取未读邮件数量
+// limits 从第limits + 1条开始 选amount条（按发送时间降序排序）,limits 0 amount 5(从1开始到第5条),  5 ~ 10(从6开始到第15条)
+message MailReq{
+	required int32 optype = 1;
+	optional int32 id = 2;
+	optional int32 status = 3;
+	optional int32 limits = 4;
+	optional int32 amount = 5;
+}
+
+// result 		0成功 1失败
+// id           邮件编号
+// type			 0 获取邮件信息 1 日奖励 2 周奖励 3 比赛奖励 
+// title 		邮件标题
+// content 		内容
+// attachment	奖励 itemid:itemcnt (itemid = 0 为金币)， 0:100|1003:1
+// from 		发送者
+// status 		0 未领取， 1 已读 2 已领取
+// sendtime 	发送时间
+message MailDetail{
+	required int32 id = 1;
+	required int32 type = 2;
+	optional string title = 3;
+	optional string content = 4;
+	optional string attachment = 5;
+	optional string from = 6;
+	optional int32 status = 7;
+	optional int32 sendtime = 8;
+}
+
+// result 0 成功 1 失败
+message MailListRep{
+	required int32 result = 1;
+	repeated MailDetail list = 2;
+}
+
+// result 0 成功 1 失败
+message MailModifyRep{
+	required int32 result = 1;
+	required int32 id = 2;
+}
+
+// result 0 成功 1 已经领取过 2 邮件超过有效期 3 无效的奖励 4 服务器忙 99未知错误
+// rewards itemid:itemcnt (itemid = 0 为金币)
+message MailGetRewardRep{
+	message MailReward{
+		required int32 id = 1;
+		required int32 cnt = 2;
+	}
+	required int32 result = 1;
+	repeated MailReward rewards = 2;
+	optional int32 id = 3;
+}
+
+// result 0 成功 1 失败
+message MailUnreadRep{
+	required int32 result = 1;
+	optional int32 amount = 2;
+}
+
+// 请求买入 
+message BuyChipReq{
+	optional int32 roomid = 1;
+	optional int32 amount = 2;
+	optional int32 uid = 3;
+	optional int32 fakeuid = 4;
+	optional string nickname = 5;
+}
+
+message AnswerBuyChip{
+	optional int32 roomid = 1;
+	optional int32 amount = 2;
+	optional int32 uid = 3;
+	optional int32 agree = 4;
+	optional int32 result = 5;
+}
+
+// 买入回复
+message BuyChipRep{
+	optional int32 result = 1;
+	optional int32 amount = 2;
+}
+
+// 创建私人游戏 
+message CreatePersonalGameReq{
+	optional int32 gameid = 1;  	// 0
+	optional int32 cost = 2;		// 报名费
+	optional int32 bscore = 3;		// 底分
+	optional int32 duration = 4;	// 持续时间
+	optional int32 minscore = 5;	// 最低入场金币
+	optional int32 maxodd = 6;		// 最大倍数
+	optional int32 maxround = 7;	// 游戏局数
+	optional int32 ownerjoin = 8;	// 房主是否参与游戏
+	repeated int32 params = 9; // 1 盲注 2 大盲注 3 最低买入积分 4 最高买入金额 5 是否发两次公共牌
+}
+
+// 0成功 1 缺少参数 2 gameid错误 3 创建牌局数量超过上限 4 冻结金币失败 cost 5 时长选项错误 6 局数选择错误 
+// 7 创建房间所需金额不足 8 已经加入其它房间 9 报名费用不合法 10 最低入场金币不合法 11 金币小于房间要求 
+// 12最大倍数不合法 13 创建桌子失败 15 钻石不足
+message CreatePersonalGameRep{
+	required int32 result = 1;
+	optional int32 roomid = 2;
+	optional int32 gameid = 3;
+	repeated int32 params = 4; // 1 盲注 2 大盲注 3 最低买入积分 4 最高买入金额 5 // 底分 6 // 持续时间
+}
+
+// 加入房间请求
+message JoinPGameReq{
+	required int32 roomid = 1;
+	optional int32 gameid = 2;
+}
+
+// 0 成功 1 房间不存在 2 金币不足 3 牌局已经开始 4 房间满 5重复加入 6 添加session失败
+message JoinPGameRep{
+	optional int32 roomid = 1;
+	required int32 result = 2;
+	optional PlayerInfo players = 3;
+	repeated int32 params = 4; // 1 盲注 2 大盲注 3 最低买入积分 4 最高买入金额
+	optional int32 gameid = 5; //
+}
+
+// 开始游戏
+message StartPGameReq{
+	optional int32 roomid = 1;
+	optional int32 gameid = 2;
+}
+
+// 0 成功 1 房间不存 2人数不足 3 不是房主 4 冻结金币失败 5 游戏已经开始
+message StartPGameRep{
+	required int32 result = 1;
+	optional int32 roomid = 2;
+}
+
+// 查询房间信息
+message QueryRoomInfoReq{
+	required int32 roomid = 1;
+	optional int32 gameid = 2;
+}
+
+message BuyChipNode{
+	optional int32 uid = 1;
+	optional string nickname = 2;
+	optional int32 amount = 3;
+}
+
+// 1 房间不存在
+message QueryRoomInfoRep{
+	optional int32 result = 1;
+	optional int32 gameid = 2;  
+	optional int32 roomid = 3;  
+	optional string ownername = 4;  //房主
+	optional int32 cost = 5;	// 报名费
+	optional int32 bscore = 6;	// 底分
+	optional int32 initscore = 7;	// 初始分
+	optional int32 maxround = 8;	// 最大游戏局数
+	optional int32 ownerjoin = 9;		// 房主是否参与游戏
+	optional int32 duration = 10;// 持续时间
+	optional int32 gamestatus = 11;// 游戏状态 1 未开始， 2 游戏中
+	optional int32 createtime = 12;	// 创建时间
+	optional int32 maxodd = 13;	// 最大倍率
+	optional int32 playround = 14;	// 当前局数
+	optional int32 owner = 15;	// 房主uid
+	repeated PlayerInfo players = 16;
+	repeated int32 params = 17; // 1 盲注 2 大盲注 3 最低买入积分 4 最高买入金额
+	repeated BuyChipNode buyqueue = 18;
+	optional int32 remaintime = 19;	// 游戏剩余时间
+}
+
+// 获取房间历史记录 1 我创建的 2 我参加的
+message QueryRoomPlayingReq{
+	optional int32 optype = 1;
+	optional int32 gameid = 2;
+}
+
+//结束的状态：status 1 未开始 2 已开始 3已结束 4 已确认 5 牌局解散 6 超时自动解散
+message QueryRoomPlayingRep{
+	optional int32 optype = 1;
+	repeated QueryRoomInfoRep rooms = 2;
+}
+
+// 退出牌局
+message QuitPGameReq{
+	required int32 roomid = 1;
+	optional int32 gameid = 2;
+}
+
+// 0 成功 1 房间不存在
+message QuitRoomRep{
+	required int32 result = 1;
+	optional int32 uid = 2;
+	optional int32 roomid = 3;
+}
+
+// 牌局解散 reason: 1 人数不足 2 房主退出 3 冻结金币失败 4 牌局时间到 5 最大局数
+message GameDissolve{
+	optional int32 reason = 1;
+	optional string quitPlayer = 2;
+	repeated PlayerInfo players = 3;
+	optional int32 gameid = 4;
+}
+
+// 请求牌局重连信息
+message ReconnectPGameReq{
+	optional int32 gameid = 1;
+}
+
+// 0 成功 1 不在牌局中
+message ReconnectPGameRep{
+	required int32 result = 1;
+	optional int32 remaintime = 2;
+	optional int32 playround = 3;
+	optional int32 maxround = 4;
+	optional int32 bscore = 5;
+	optional int32 owneruid = 6;
+	optional int32 maxodd = 7;	// 最大倍率
+	repeated int32 params = 8; // 1 盲注 2 大盲注 3 最低买入积分 4 最高买入金额
+}
+
+// “红包”兑换商品
+message RedcoinExchangeGoodsReq{
+	required int32 index = 1;
+}
+
+// 0 成功 1 配置不存在 2 “红包不足” 3 访问数据库失败 4 操作过于频繁
+message RedcoinExchangeGoodsRep{
+	required int32 result = 1;
+}
+
+// 抽奖“红包” optype = 1 表示新的抽奖方式
+message LotteryRedcoinReq{
+	required int32 roomid = 1;
+	optional int32 optype = 2;
+}
+
+// 0 成功 1 配置不存在 2 抽奖次数不足 3 操作过于频繁
+message LotteryRedcoinRep{
+	required int32 result = 1;
+	optional int32 coin = 2;
+	optional int32 roomid = 3;
+	optional int32 gold = 4;
+}
+
+// 获得新手红包抽奖机会
+message FreshManRedcoinLotteryChanceGot{
+	optional int32 roomid = 1;
+	optional int32 lotterychance = 2;
+}
+
+// 领取新手红包
+message GetFreshManRewardReq{
+	
+}
+
+// 领取新手红包
+// 0成功，1 已经领取过, 99服务器未知错误
+message GetFreshManRewardRep{
+	required int32 result = 1;
+	optional int32 gold = 2;
+}
+
+// 领取新手记牌器
+message GetCardsRecorderRewardReq{
+	
+}
+
+// 领取每日任务奖励
+// optype = 2 阶段性邀请任务
+message GetDayTaskRewardReq{
+	required int32 taskid = 1;
+	optional int32 optype = 2;
+}
+
+// result 0成功 1 任务不存在 2 任务未完成 3奖励已领取
+message GetDayTaskRewardRep{
+	required int32 result = 1;
+	required int32 taskid = 2;
+	optional int32 optype = 3;
+}
+
+// 领取首充礼包奖励
+message GetFirstRechargeRewardReq{
+	required int32 day = 1;
+}
+
+// result 0成功 1 没有资格 2 奖励已领取 3 奖励已过期
+message GetFirstRechargeRewardRep{
+	required int32 day = 1;
+	required int32 result = 2;
+}
+
+// 领取奖励
+//optype 1登录app奖励 2 国庆登录奖励 3 国庆邀请玩家奖励 4 抽邀请红包 5 抽打出王炸红包 6 完成每天要求5人 7 抽奖 8 查询今日抽奖次数 9 领取vip奖励 10 领取月卡1 奖励 11 领取月卡2 奖励
+message GetRewardReq{	
+	required int32 optype = 1;
+	repeated int32 params = 2;
+}
+
+// result 0成功 1 活动不存在 2 任务未完成 3奖励已领取 4 参数错误 
+// params[0] 国庆签到奖励已经签到的天数
+// optype 4 result 0 成功 1次数不足 2 超过每日抽奖次数
+// optype 8 result 1 超过每日次数限制  strreward奖励
+message GetRewardRep{
+	required int32 optype = 1;
+	required int32 result = 2;
+	repeated int32 params = 3;
+	optional string strreward = 4;
+}
+
+//optype 1登录app奖励 2 国庆活动
+message GetActivityInfoReq{	
+	required int32 optype = 1;
+	repeated int32 params = 2;
+}
+
+// 登录app  params[0] 1 可以领取奖励 2 已经领取奖励 params[1] 未登录过APP且需要提醒
+// 国庆活动 params[0] 已签到天数 params[1] 今天是否已经签到(1未签到2已签到) params[2] 完成5局的任务的下线数量 params[3] 邀请奖励是否已经领取(1未领取 2 已领取)
+message GetActivityInfoRep{
+	required int32 optype = 1;
+	repeated int32 params = 2;
+}
+
+// 好手气斗地主 猜底牌 optype 3 params[1] 牌型 [2] roomid
+// optype 1 diamond->gold params[1] id
+// optype 2 get share success reward
+// optype 4 查询活动信息 params[1] 活动id
+// optype 5 去除红点 params 要去除的编号1任务 2首充 3 下载APP奖励 4 (感恩节)活动
+// optype 6 活动签到
+// optype 7 福袋抽奖
+// optype 8 保存玩家数据
+// optype 9 领取充值后奖励 params 1 活动id
+// optype 10 领取打出指定牌型奖励 params 1 活动id params 2 牌型(4顺子 6 飞机) params 3 子任务id
+// optype 11 领取游戏5局奖励 params 1 活动id params 2 子任务id
+// optype 12 抽奖
+// optype 13 查询掉牌信息 params[1] roomid
+// optype 14 领取掉牌奖励
+
+// optype 15 设置翻牌游戏参数 params[1] 倍数
+// optype 16 查询翻牌游戏记录 
+// optype 17 翻牌 params[1] 行 params[2] 列
+
+// optype 18 设置游戏参数 params[1] 倍数
+// optype 19 查询翻牌游戏记录 
+// optype 20 探索 params[1] 横坐标 params[2] 纵坐标
+message OperateReq {
+	optional int32 optype = 1;
+	repeated int32 params = 2;
+}
+
+// 好手气斗地主 猜牌 optype 3 猜牌请求 optype 4 猜牌结算
+// result 0成功 1金币不足 2 超过购买次数上限 3参数错误 4
+
+// optype 1 diamond->gold params[2] amount   result 1参数错误 / 配置不存在 2 钻石不足
+// result 0 success 1 diamond not enough 2 config not exist 3 params is wrong
+// optype 2 share success
+// result 0 success 1 get reward already
+// optype 4 查询活动信息 result 1 活动不存在 0 成功
+// 			params 0 1 充值次数 2今天是否已签到（1已签到 2未签到 0待签到） 3 签到天数 ...每天的签到情况1已签到 0 未签到
+// 			params1 1今天是否已签到（1已签到 0待签到） 2 今天是第几天 3 总签到天数 ...每天的签到情况1已签到 0 未签到
+// 			params2 {牌型, 打出次数, status = {0未完成 1已领取}}
+// 			params3 玩的局数 每个任务的状态 0 未领取 1 可领取 2 已领取
+
+// optype 6 活动签到 result 0 成功 1 非活动时间 2 全部签到 3 今天已签到 4 奖励不存在
+// optype 7 result 0 成功 str 奖励 ，1 没有抽奖资格
+// optype 8
+// optype 9 领取充值后奖励 result 0 成功 1 活动不存在 2 未达到领奖要求 3 今日已领取
+// optype 10 领取打出指定牌型奖励 result 0成功 1 活动不存在 2 参数错误 3 未完成 4 已结领取 5 奖励不存在
+// optype 11 领取游戏5局奖励result 0成功 1 活动不存在 2 参数错误 3 未完成 4 已结领取 5 奖励不存在
+// optype 12 抽奖
+// optype 13 查询掉牌信息 params[1] roomid [2]今日是否充值(1已充值)..N张牌   str 获得的奖励 result 获得的新牌
+// optype 14 领取掉牌奖励 result 0 成功 1 房间号错误 2 今日未充值 3 未集齐
+
+// optype 15 设置翻牌游戏参数 params[1] 倍数 result 0 成功
+// optype 16 查询翻牌游戏记录 params[1] 倍数 params1 翻开的牌
+// optype 17 翻牌 [1] 奖励金币 params1 翻开的牌
+
+// optype 18 设置游戏参数 params[1] 倍数  result 0 成功
+// optype 19 查询翻牌游戏记录 params[1] 倍数 params1 点开的图像
+// optype 20 探索 params[1]翻开的图案 [2]奖励金币
+message OperateRep {
+	message specialct{
+		required int32 ct = 1;
+		required int32 progress = 2;
+		repeated int32 status = 3;
+	}
+	optional int32 optype = 1;
+	repeated int32 params = 2;
+	optional int32 result = 3;
+	optional string str = 4;
+	repeated int32 params1 = 5;
+	repeated specialct params2 = 6;
+	repeated int32 params3 = 7;
+}
+
+// optype 1 抽红包 2 抽红包剩余时间 3 新手第一次赠送
+message DiamondGameReq {
+	optional int32 optype = 1;
+}
+
+// result 0 成功 1 没有资格(时间到或者没有完成一局游戏) 2 操作过于频繁 params 获得的红包
+// 新手赠送 result 0 成功 1 已经赠送过 2 操作过于频繁 3 赠送失败 params赠送数量
+// 剩余时间 params
+message DiamondGameRep {
+	optional int32 optype = 1;
+	optional int32 result = 2;
+	optional int32 params = 3;
+}
+
+// 在匹配中离开游戏
+message QuitWaitingQueueReq {
+}
+
+// 奖券夺宝 
+// optype 1 查询 params 1 id活动(不传返回所有)
+// optype 2 购买 params 1 id活动 2 购买次数
+message RedCoindLotteryReq {
+	optional int32 optype = 1;
+	repeated int32 params = 2;
+}
+
+// 查询 result 0 成功
+// 购买 result 0 成功 1 活动不存在 2 奖券不足 3 正在等待开奖
+// params 1 id活动 2 购买次数 ...购买的兑奖码
+message RedCoindLotteryRep {
+	message Lottery{
+		optional int32 id = 1; 		// 活动编号
+		optional int32 poll = 2;	// 总购买次数
+		optional int32 phase = 3;	// 第几期
+		optional int32 enddate = 4; // 结束时间 second
+		repeated int32 code = 5;  	// 购买的码
+
+		optional int32 interval = 6; // 活动间隔时间
+		optional int32 minpoll = 7; // 最少开奖票数
+		optional string price = 8; // 票价
+		optional string reward = 9; // 普通奖励
+		optional string rewarddes = 10; // 奖励描述
+		optional string redreward = 11; // 特殊(奖券兑换)奖励
+	}
+	optional int32 result = 1;
+	optional int32 optype = 2;
+	repeated int32 params = 3;
+	repeated Lottery lotteryinfo = 4;
+}
+
+//0:获取信息 1:存钱  2:取钱
+message BankOperateReq{
+	required int32 optype = 1;
+	optional int32 gold = 2;
+	optional string pwd = 3;
+}
+
+//0成功 1未验证二级密码 2钱数有误 3二级密码错误 4未设置二级密码 99未知操作
+message BankOperateRep {
+	required int32 result = 1;
+	optional int32 gold = 2;
+	optional int32 bankgold = 3;
+	optional int32 freezegold = 4;
+	optional int32 optype = 5;
+}
+
+message FriendsOptypeReq{
+	required int32 optype = 1; // 1添加好友 2 删除好友 3 赠送好友礼物 4 同意 5 拒绝 6 请求好友信息 9 查询玩家信息
+	optional int32 fakeuid = 2;
+	optional string nickname = 3;
+	repeated Item gifts = 4;
+	repeated int32 params = 5;
+}
+
+//0成功 1金币不足 2参数错误 3 好友数量超过上限
+//optype = 1添加好友 2 删除好友 3 赠送好友礼物 4 同意 5 拒绝 6 请求好友信息 7 添加好友成功 8 新的好友请求 10 好友上线
+message FriendsOptypeRep {
+	message flist{
+		optional string nickname = 1;
+		optional string whatsup = 2;
+		optional string imageid = 3;
+		optional int32 sex = 4;
+		optional int32 fakeuid = 5;
+		repeated Item gifts = 6;
+		repeated int32 params = 7;
+
+		optional int32 gold = 8;
+		optional int32 redcoingot = 9;
+		optional int32 playround = 10;
+		optional int32 winrate = 11;
+		optional int32 status = 12;
+		optional int32 uid = 13;
+	}
+
+	required int32 optype = 1;
+	optional int32 result = 2;
+	repeated flist friendlist = 3;
+	repeated flist friendreqlist = 4;
+	repeated int32 params = 5;
+}

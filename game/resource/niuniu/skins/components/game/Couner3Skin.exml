@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Couner3Skin" width="438" height="59" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image x="0" y="0" source="qznn_bg_4"/>
+	<ns1:LabelButton id="warnBtn" x="282" verticalCenter="5">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled" xmlns:e="http://ns.egret.com/eui">
+				<e:Image width="100%" height="100%" source="btn_1_n" source.down="btn_1_h"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:LabelButton>
+	<e:Label id="numT1" text="Q" x="5" y="18" textAlign="center" width="46" textColor="0xCCCCCC"/>
+	<e:Label id="numT2" y="18" text="Q" textAlign="center" width="46" x="80" textColor="0xCCCCCC"/>
+	<e:Label id="numT3" y="18" text="Q" textAlign="center" width="46" x="155" textColor="0xCCCCCC"/>
+	<e:Label id="sumT" y="18" text="10" textAlign="center" width="46" x="231" textColor="0xCCCCCC"/>
+</e:Skin>

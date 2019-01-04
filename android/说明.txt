@@ -1,0 +1,7 @@
+1.eclipse工程
+2.需要引用appcompat_v7
+3.签名key及密码：
+htgames_androidkey.htgames_androidkey
+Htgames@147
+4.gen bin assets 3个文件夹如果没有自动生成，请手动创建，内容会自动生成
+5.assets内的内容，由egret生成代码和资源文件，并丢入

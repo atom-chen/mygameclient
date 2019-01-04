@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.MatchDetailRoundAvatarSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="185" height="80">
+
+	<e:Group x="0" scaleX="0.8" scaleY="0.8" verticalCenter="0">
+		<e:Image id="bg_img" source="common_avatar_bg" touchEnabled="false" width="80" height="80" x="0" y="0"/>
+		<e:Image id="imgMask" touchEnabled="false" source="common_avatar_mask" horizontalCenter="0" verticalCenter="0" width="80" height="80"/>
+		<e:Image id="imgAvatar" verticalCenter="0" horizontalCenter="0" width="64" height="64" source="common_avatar_mask"/>
+
+	</e:Group>
+	<e:Label id="lblName" text="玩家xxx" top="12" left="84" fontFamily="Microsoft YaHei" size="20" height="22" width="100" textColor="0x874a19"/>
+	<e:BitmapLabel id="lblScore" text="---" bottom="12" left="84" scaleX="0.6" scaleY="0.6" font="font_match_2"/>
+</e:Skin>

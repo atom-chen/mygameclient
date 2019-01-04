@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BubbleSkin" width="41" height="37" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="bubble" x="0" y="0" blendMode="normal" fillMode="scale" scale9Grid="16,12,3,3" source=""/>
+	<e:Label id="text" text="" x="7" y="4" size="20" fontFamily="微软雅黑" textColor="0x4C4742"/>
+</e:Skin>

@@ -1,0 +1,356 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>好手气斗地主</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="true"/>
+    <meta name="screen-orientation" content="landscape"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+    <link rel=”dns-prefetch” href=”//h5.ddz.htgames.cn”>
+
+    <style>
+        html, body {
+            -ms-touch-action: none;
+            background: #000000;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+    </style>
+
+    <script type="text/javascript">
+        var _mtac = {};
+        (function() {
+            var mta = document.createElement("script");
+            mta.src = "http://pingjs.qq.com/h5/stats.js?v2.0.2";
+            mta.setAttribute("name", "MTAH5");
+            mta.setAttribute("sid", "500485827");
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(mta, s);
+        })();
+
+        var gameDir = "";
+        var HOST = "http://h5.ddz.htgames.cn/"
+        var apiHost = HOST + 'api.php?';
+        var redirect_uri = HOST + "wx";
+        var ua = navigator.userAgent;
+        var files = ["lib.min.js", "main.min.js"];
+        var TYPE_SRC =1;
+        var TYPE_TEXT=2;
+
+        function hideLoadingGifAndDownAppBtn(){
+           document.getElementById("loadingGif").style.display="none";;
+           document.getElementById("downApp").style.display="none";;
+        }
+
+        function runGame(){
+            hideLoadingGifAndDownAppBtn();
+            egret.runEgret({renderMode:"canvas"});
+        }
+
+        function addScriptByType(_str,nType,callback){
+            var s = document.createElement('script');
+            s.setAttribute("type", "text/javascript");
+            document.body.appendChild(s);
+            if(nType == TYPE_SRC){
+                s.async = false;
+                s.src = _str; 
+                s.addEventListener('load', function () {
+                    s.parentNode.removeChild(s);
+                    s.removeEventListener('load', arguments.callee, false);
+                    callback();
+                }, false);
+            }else if(nType == TYPE_TEXT){
+                s.text = _str;
+                callback();
+            }
+        }
+
+        function addAllScriptBySrc(){
+            var _n = files.length;
+            var _cur = -1;
+            var _callback = null;
+            _callback = function(){
+                _cur += 1;
+                if(_cur >= _n){
+                    runGame();
+                }else{
+                    addScriptByType(files[_cur],TYPE_SRC,_callback)
+                }
+            }
+            _callback();
+        }
+
+        function getZip(url,callBack)
+        {
+            var xhrZip = new XMLHttpRequest();
+            xhrZip.open("GET", url, true);
+            xhrZip.responseType = "arraybuffer";
+            xhrZip.addEventListener("load", function (oEvent)
+            {
+                var arrayBuffer = xhrZip.response; 
+                if (!arrayBuffer)
+                {
+                    addAllScriptBySrc();
+                }
+                else{
+                    callBack(new JSZip(arrayBuffer));
+                }
+            });
+            xhrZip.send(null);
+        }
+
+        function addScriptFromZip(zip,file,callback)
+        {
+            var _file = zip.file(file);
+            if(_file){
+                addScriptByType(_file.asText(),TYPE_TEXT,callback);
+            }
+            else{
+                addScriptByType(file,TYPE_SRC,callback);    
+            }
+        }
+
+        function runGameByZip(){
+            try{
+                var zipName = window.gameDir + "game.zip";
+                getZip(zipName,function(zip){
+                    var _n = files.length;
+                    var _cur = -1;
+                    var _callback = null;
+                    _callback = function(){
+                        _cur += 1;
+                        if(_cur >= _n){
+                            runGame();
+                        }else{
+                            addScriptFromZip(zip,files[_cur],_callback)
+                        }
+                    }
+
+                    _callback();
+                });
+            }
+            catch (e)
+            {
+                addAllScriptBySrc();
+                runGame();
+            }
+        }
+
+        function addJsZipAndRunGame(){
+            var _src = window.gameDir + "jszip.min.201710130900.js";
+            addScriptByType(_src,TYPE_SRC,function(){
+                runGameByZip();
+            })
+        }
+
+        function downloadApp(){
+            window.location = "https://m.hztangyou.com/down/?src=h5ddz";
+        }
+    </script>
+</head>
+
+<body>
+<div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
+     data-entry-class="Main"
+     data-orientation="landscape"
+     data-scale-mode="fixedHeight"
+     data-resolution-mode="retina"
+     data-frame-rate="60"
+     data-content-width="1280"
+     data-content-height="640"
+     data-show-paint-rect="false"
+     data-multi-fingered="2"
+     data-show-fps="false" data-show-log="false"
+     data-log-filter="" data-show-fps-style="x:0,y:0,size:20,textColor:0x00d8ff,bgAlpha:0.6">
+     <input id="ddzCopyTex" type ="text" value="" style="visibility: hidden"/>
+     <button id="ddzCopyBtn" type="button" class="copyBtn" style="visibility: hidden" data-clipboard-action="copy" data-clipboard-target="#ddzCopyTex" />
+</div>
+
+
+<img src="loading.gif" id ="loadingGif" style="position: absolute;top:45%;left:49%;"></img>
+<button id ="downApp" style="border-radius: 15px 15px 15px 15px; font-size: 10px;color: #FFFFFF;position: absolute;top:60%;left:45%;
+background:-webkit-linear-gradient(top left,#d3a203,#dba907);
+background:-moz-linear-gradient(top left,#d3a203,#dba907);
+background:linear-gradient(top left,#d3a203,#dba907);" onclick="downloadApp();">下载APP领福利</button>
+<script>
+    function getPlatform(){
+        var platform = 'other';
+        if(/(iPhone|iPad|iPod|iOS)/i.test(ua)){
+            platform = 'iOS';
+        }else if(/(Android)/i.test(ua)){
+            platform = 'Android';
+        }
+
+        return platform;
+    }
+
+    function getBrowser(){
+        var browser = 'other';
+        if(/(CriOS)/i.test(ua)){
+            browser = 'chrome';
+        }else if(/(MicroMessenger)/i.test(ua)){
+            browser = 'wx';
+        }else if(/(Safari)/i.test(ua)){
+            browser = 'safari';
+        }
+
+        return browser;
+    }
+
+    function xmlHttpPost(url,callback){
+        var xhr = new XMLHttpRequest();
+        xhr.open("post", url,true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState == 4) {
+                if(xhr.status == 200){
+                    callback(JSON.parse(xhr.responseText));
+                }else {
+                    alert("授权失败!");
+                }
+            }
+        }
+        xhr.send(null);
+    }
+
+    function isWeiXin(){ 
+        var ua = window.navigator.userAgent.toLowerCase(); 
+        if(ua.match(/MicroMessenger/i) == 'micromessenger'){ 
+            return true; 
+        }
+        else{ 
+            return false; 
+        } 
+    } 
+
+    function onWXLoadOver(){
+        redirectToGame();
+    }
+
+    function getUrlParams() {
+        var params = {};
+        var href = window.location.href;
+        var index = href.indexOf("?");
+        if (index < 0) {
+            return params;
+        }
+        var hashes = href.substr(index + 1).split('&');
+        for (var i = 0; i < hashes.length; i++) {
+            var arr = hashes[i].split('=');
+            params[arr[0]] = arr[1];
+        }
+        return params;
+    }
+
+    function redirectToGame(){
+        var url = apiHost + 'action=getGameByName&name=doudizhu';
+        xmlHttpPost(url,function(response){
+            if(response.code == 0){
+                var game = response.data;
+                window.gameDir = HOST + game.url + "/";
+                if(window.opener){
+                    window.close();
+                    window.opener.location.href = window.gameDir +"index.html" + Math.random();
+
+                    addJsZipAndRunGame();
+                }
+                else{
+                    //window.tilocation.href = HOST + game.url;
+                    //document.title = game.alias;
+                    //var _game = document.getElementById("game");
+                    //_game.src = "http://h5.ddz.htgames.cn/games/doudizhu/web/0/index.html?"+ Math.random();
+                    //_game.src = HOST + game.url + "/index.html?" + Math.random();
+                    addJsZipAndRunGame();
+                }
+            }
+            else{
+                alert("出现错误,code=",response.code);
+            }
+        })
+    }
+
+    /**
+     * 需要重新获取一次code
+     */
+    function reqWXCode(){
+        var params = window._myParams;
+        //alert("reqWXCode--->room|" + params.share_room +" sk|" +params.share_sk);
+        var enURI = "";             
+        if (params.share_room || params.share_sk){
+            if (params.share_room)
+                enURI = encodeURIComponent(redirect_uri+"?share_room="+params.share_room);
+            if (params.share_sk)
+                enURI = encodeURIComponent(redirect_uri+"?share_sk="+params.share_sk);
+        }else
+            enURI = encodeURIComponent(redirect_uri);   
+        
+
+        window.location.href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx9f94e92389bee54b&redirect_uri="+enURI+"&response_type=code&scope=snsapi_userinfo&state=3#wechat_redirect";
+    }
+
+    function doSomethingByParams(params){
+        //alert("doSomethingByParams===>" + params.code + "|state " + params.state);
+        if (params.code) {
+            if (window.localStorage) {      
+                /*微信扫码登录*/
+                if (params.state=="1")
+                {
+                    //alert("1-------------------->" +params.code)
+                    localStorage.setItem("ddz_wx_login_code_web", params.code); 
+                    redirectToGame();
+                }
+                /*微信绑定*/
+                else if (params.state=="2")
+                {
+                    localStorage.setItem("ddz_wx_bind_code", params.code);
+                    if (isWeiXin()) 
+                        window.location.href=url;   
+                    else
+                        window.open("about:blank","_self").close();
+                }
+                /*公众号微信登录*/
+                else if (params.state=="3")
+                {   
+                    if (params.share_sk)
+                        localStorage.setItem("ddz_wx_login_code_wechat_sk", params.share_sk);
+                    if (params.share_room)
+                        localStorage.setItem("ddz_wx_share_room", params.share_room);   
+                    localStorage.setItem("ddz_wx_login_code_wechat", params.code);
+
+                    redirectToGame();
+                }
+            }
+            else
+            {
+                console.log("localStorage not exist");
+            }           
+        }//分享到朋友圈后的链接 || 分享给朋友的链接
+        else if (params.state=="3")
+        {               
+            reqWXCode();    
+        }
+    }
+
+    window._myParams = getUrlParams();
+    if(isWeiXin()){
+        var _code = localStorage.getItem("ddz_wx_param_code");
+        if(window._myParams.code == _code){
+            reqWXCode();
+        }
+        else{
+            localStorage.setItem("ddz_wx_param_code",window._myParams.code);
+            addScriptByType("wx.min.1018.js",TYPE_SRC,function(){
+                doSomethingByParams(window._myParams);
+            })
+        }
+    }else{
+        doSomethingByParams(window._myParams);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+	      content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<title>好手气斗地主加载中</title>
+	<!--zhu 不需要 <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">-->
+</head>
+<body>
+
+<script type = 'text/javascript' src='wx/jweixin-1.2.0.js'></script>
+
+<script>
+	//var HOST = 'http://192.168.0.81/laoqifeng/platform/';
+	//var WEB_SERVICE = 'http://192.168.0.86:8998/';
+	/**
+	 * 发布版要关闭log
+	 */ 
+	var KRELEASE = false;
+	if(KRELEASE){
+		console.log = function(){
+
+		}
+	}
+	var HOST = 'http://h5.ddz.htgames.cn/';
+	var WEB_SERVICE = 'http://pl.ddz.htgames.cn:18998/';
+</script>
+<div id="container"></div>
+<!-- built files will be auto injected -->
+</body>
+</html>

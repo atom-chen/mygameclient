@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PlayerUISkin" width="250" height="163" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<ns1:PlayerHead1 id="p1" x="75" y="20" skinName="PlayerHead1Skin"/>
+	<ns1:PlayerHead2 id="p2" x="75" y="20" skinName="PlayerHead2Skin"/>
+	<e:Image id="ready" source="bg_13" x="173" y="54"/>
+	<e:Image id="master" source="bg_57" x="65" y="70"/>
+	<e:BitmapLabel id="multiple" x="64" y="26" font="font_num_22" text="*123" textAlign="right" width="98"/>
+	<ns1:Bubble id="bubble" x="125" y="37" skinName="BubbleSkin" locked="true"/>
+	<e:Image id="notAskMaster" source="btn_word_fq_n" x="146" y="57"/>
+	<e:Image id="askMaster" x="146" y="57" source="btn_word_q4_n"/>
+</e:Skin>

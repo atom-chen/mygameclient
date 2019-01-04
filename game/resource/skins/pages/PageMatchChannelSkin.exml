@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="pages.PageMatchChannelSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*">
+	<e:Scroller id="listContainer" y="100" horizontalCenter="0" scrollPolicyV="on" height="465" width="823">
+		<e:Group>
+			<e:List id="list" y="5" width="823" horizontalCenter="0">
+				<e:itemRendererSkinName>
+					<e:Skin>
+						<ns1:MatchRoom id="item" skinName="components.MatchRoomSkin"/>
+					</e:Skin>
+				</e:itemRendererSkinName>
+				<e:ArrayCollection>
+					<e:Array>
+						<e:Object label="数据1"/>
+						<e:Object label="数据2"/>
+						<e:Object label="数据3"/>
+						<e:Object label="null"/>
+						<e:Object label="null"/>
+						<e:Object label="null"/>
+					</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:VerticalLayout gap="6"/>
+				</e:layout>
+
+
+			</e:List>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

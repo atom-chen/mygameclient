@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="StatusLabelSkin" width="302" height="43" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image x="0" y="0" source="qznn_bg_5"/>
+	<e:Image id="s1" source="qznn_word_21" x="37" y="10" visible="false"/>
+	<e:Image id="s2" source="qznn_word_17" x="70" y="10" visible="false"/>
+	<e:Image id="s4" source="qznn_word_20" x="9" y="9" visible="false"/>
+	<e:Image id="s3" source="qznn_word_18" x="21" y="9"/>
+	<e:Label id="timeTxt" text="33" x="223" fontFamily="微软雅黑" verticalCenter="0.5" textAlign="center" width="38" textColor="0xF3F309"/>
+</e:Skin>

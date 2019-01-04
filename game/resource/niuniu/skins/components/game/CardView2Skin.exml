@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CardView2Skin" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" width="212" height="143">
+	<ns1:CardUI id="card1" x="0" y="0" scaleX="0.8" scaleY="0.8" skinName="CardSkin1"/>
+	<ns1:CardUI id="card2" scaleX="0.8" scaleY="0.8" y="0" skinName="CardSkin1" x="25"/>
+	<ns1:CardUI id="card3" x="50" y="0" scaleY="0.8" skinName="CardSkin1" scaleX="0.8"/>
+	<ns1:CardUI id="card4" scaleX="0.8" scaleY="0.8" y="0" skinName="CardSkin1" x="75"/>
+	<ns1:CardUI id="card5" y="0" scaleY="0.8" skinName="CardSkin1" scaleX="0.8" x="100"/>
+	<ns1:NiuUI id="niu" skinName="NiuSkin" horizontalCenter="0" bottom="0"/>
+	<e:Image id="finish" source="bg_74" scaleX="0.6" scaleY="0.6" bottom="0" right="5"/>
+	<e:Image id="choosing" source="qznn_0227_image_8" x="2" y="-41"/>
+</e:Skin>

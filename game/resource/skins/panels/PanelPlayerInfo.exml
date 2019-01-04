@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="panels.PanelPlayerInfo" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+
+	<e:Panel id="bg_panel" width="1280" height="640" x="0" y="0" enabled="true" touchEnabled="false" touchChildren="true">
+		<e:Image id="bg_img" width="770" height="520" horizontalCenter="0" verticalCenter="0" source="common_alert_bg" scale9Grid="264,109,326,16"/>
+
+		<e:Group id="tit_group" horizontalCenter="0" y="65">
+			<e:Image id="titBgImg1" y="3" source="common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+			<e:Image id="titFontImg1" y="-10" horizontalCenter="0.5" x="138" scaleX="1" scaleY="1" source="pinfo_title"/>
+		</e:Group>
+		<e:Group id="praiseGroup" y="345" x="369.5" anchorOffsetX="0" width="214" height="85" visible="false">
+			<e:Image id="coolImg" y="27" x="54.5" scaleX="1" scaleY="1" anchorOffsetX="26" anchorOffsetY="26" source="pinfo_b"/>
+			<e:Image id="shitImg" y="27" x="144.5" scaleX="1" scaleY="1" source="pinfo_b" rotation="180" anchorOffsetX="26" anchorOffsetY="26"/>
+			<e:Label id="coolLabel" text="0" x="17" anchorOffsetY="15" fontFamily="Microsoft YaHei" size="22" height="30" verticalAlign="middle" textAlign="center" y="70" width="78"/>
+			<e:Label id="shitLabel" text="0" x="104" y="70" anchorOffsetY="15" fontFamily="Microsoft YaHei" size="22" height="30" verticalAlign="middle" textAlign="center" width="78"/>
+		</e:Group>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<e:Button id="close_btn" label="" x="968.5" y="52" width="66">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_close_n" source.down="common_close_h"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+
+
+
+		<e:Group id="browAndReport_group" width="524" height="110" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" y="372" visible="false">
+
+			<e:Button id="brow1_btn" label="" x="48" y="56" width="114" height="111" anchorOffsetX="57" anchorOffsetY="55.5" scaleX="0.9" scaleY="0.9" touchEnabled="true">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="pinfo_666_n" source.down="pinfo_666_p"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image id="brow1Price_img" width="33" height="19" x="44" y="76" source="pinfo_100" anchorOffsetY="0" anchorOffsetX="0" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Image id="brow1Gold_img" width="21" height="21" x="43" y="72" source="icon_gold2" anchorOffsetX="21" anchorOffsetY="-1.33" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Image id="brow1Free_img" x="48" y="82" source="pinfo_free" anchorOffsetX="20.5" anchorOffsetY="11.5" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Button id="brow2_btn" label="" x="150" y="56" width="114" height="111" anchorOffsetX="57" anchorOffsetY="55.5" scaleX="0.9" scaleY="0.9" touchEnabled="true">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="pinfo_tortise_n" source.down="pinfo_tortise_p"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image id="brow2Gold_img" width="21" height="21" x="143" y="72" source="icon_gold2" anchorOffsetX="21" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Image id="brow2Price_img" width="33" height="19" x="144" y="76" source="pinfo_100" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Image id="brow2Free_img" x="148" y="82" source="pinfo_free" anchorOffsetX="20.5" anchorOffsetY="11.5" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Button id="brow3_btn" label="" x="252" y="56" width="114" height="111" anchorOffsetY="55.5" anchorOffsetX="57" scaleX="0.9" scaleY="0.9" touchEnabled="true">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="pinfo_tomato_n" source.down="pinfo_tomato_p"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image id="brow3Gold_img" width="21" height="21" x="243" y="73.64999999999998" source="icon_gold2" anchorOffsetX="21" anchorOffsetY="-0.67" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Image id="brow3Price_img" width="33" height="19" x="244" y="76" source="pinfo_100" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Image id="brow3Free_img" x="248" y="82" source="pinfo_free" anchorOffsetX="20.5" anchorOffsetY="11.5" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Button id="brow4_btn" label="" x="354" y="56" width="114" height="111" anchorOffsetX="57" anchorOffsetY="55.5" scaleX="0.9" scaleY="0.9" touchEnabled="true">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="pinfo_love_n" source.down="pinfo_love_p"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image id="brow4Gold_img" width="21" height="21" x="343" y="72.98000000000002" source="icon_gold2" anchorOffsetX="21" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Image id="brow4Price_img" width="33" height="19" x="344" y="76" source="pinfo_100" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Image id="brow4Free_img" x="348" y="82" source="pinfo_free" anchorOffsetX="20.5" anchorOffsetY="11.5" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Button id="brow5_btn" label="" x="456" y="56" width="114" height="111" anchorOffsetX="57" anchorOffsetY="55.5" scaleX="0.9" scaleY="0.9" touchEnabled="true">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="pinfo_good_n" source.down="pinfo_good_p"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image id="brow5Gold_img" width="21" height="21" x="443" y="72.98000000000002" source="icon_gold2" anchorOffsetX="21" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Image id="brow5Price_img" width="33" height="19" x="444" y="76" source="pinfo_100" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Image id="brow5Free_img" x="448" y="82" source="pinfo_free" anchorOffsetX="20.5" anchorOffsetY="11.5" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Label id="mFLeft_label" text="剩余免费次数:0" size="20" fontFamily="Microsoft YaHei" textColor="0x8a3e18" anchorOffsetX="75" anchorOffsetY="9" height="20" y="115" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="userInfoGrp" width="700" height="200" x="290" y="140" anchorOffsetX="0">
+			<e:Image id="mInfo_bg" x="28.5" y="4" source="pinfo_infoBg" scaleX="1" scaleY="1"/>
+			<e:Label id="chain_label" text="0x00" y="167" anchorOffsetY="11" fontFamily="Microsoft YaHei" size="22" width="509" height="22" verticalAlign="middle" textAlign="left" x="158" anchorOffsetX="0" scaleX="1" scaleY="1"/>
+			<e:Label id="nick_label" text="昵称" x="163" y="22" anchorOffsetY="11" fontFamily="Microsoft YaHei" size="22" width="132" height="22" verticalAlign="middle" textAlign="center" anchorOffsetX="0" scaleX="1" scaleY="1"/>
+			<e:Label id="id_label" text="0" x="383" y="22" anchorOffsetY="11" fontFamily="Microsoft YaHei" size="22" width="132" height="22" verticalAlign="middle" textAlign="center" scaleX="1" scaleY="1"/>
+			<e:Label id="charm_label" text="0" x="414" y="71" anchorOffsetY="11" fontFamily="Microsoft YaHei" size="22" width="66" height="22" verticalAlign="middle" textAlign="center" scaleX="1" scaleY="1" visible="false"/>
+			<e:Label id="gold_label" text="00" x="573" y="22" anchorOffsetY="11" fontFamily="Microsoft YaHei" size="22" width="100" height="22" verticalAlign="middle" textAlign="center" anchorOffsetX="0" scaleX="1" scaleY="1"/>
+			<e:Label id="games_label" text="0" x="163" y="71" anchorOffsetY="11" fontFamily="Microsoft YaHei" size="22" width="132" height="22" verticalAlign="middle" textAlign="center" scaleX="1" scaleY="1"/>
+			<e:Label id="winRate_label" text="0" y="71" anchorOffsetY="11" fontFamily="Microsoft YaHei" size="22" width="66" height="22" verticalAlign="middle" textAlign="center" x="415" scaleX="1" scaleY="1"/>
+			<e:Label id="sign_label" text="我的签名" y="118" anchorOffsetY="11" fontFamily="Microsoft YaHei" size="22" width="509" height="22" verticalAlign="middle" textAlign="left" x="158" anchorOffsetX="0" scaleX="1" scaleY="1"/>
+			<e:Label id="redbeg_label" text="0" x="573" y="71" anchorOffsetY="11" fontFamily="Microsoft YaHei" size="22" width="100" height="22" verticalAlign="middle" textAlign="center" anchorOffsetX="0" scaleX="1" scaleY="1"/>
+			<ns1:Avatar id="avatar" scaleX="0.5" scaleY="0.5" skinName="components.AvatarSkin" name="avatar" touchChildren="false" x="0" y="12"/>
+			<e:Image id="sexImg" x="59" y="6" scaleX="1" scaleY="1" source="icon_female"/>
+		</e:Group>
+			<e:Scroller width="700" height="140" y="330" anchorOffsetX="0" horizontalCenter="0">
+			<e:Group anchorOffsetY="0">
+				<e:Image id="scaleImg" width="100%" height="100%" source="common_bg" scale9Grid="10,8,66,49" anchorOffsetX="0" anchorOffsetY="0" x="0" y="0" scaleX="1" scaleY="1"/>
+		<e:List id="itemList" x="129.5" height="109" verticalCenter="0.5">		
+		<e:itemRendererSkinName>
+			<e:Skin xmlns:alien="alien.*" xmlns:ns1="*" width="110" height="109">
+					<e:Group>
+
+						<e:Image id="itemImg" y="0" source="icon_gift_car" scaleX="1" scaleY="1" horizontalCenter="0"/>
+						<e:Label id="numLabel" text="0" y="78" size="18" fontFamily="Microsoft YaHei" textAlign="center" scaleX="1" scaleY="1" horizontalCenter="0.5"/>
+
+
+
+
+					</e:Group>
+				</e:Skin>
+			</e:itemRendererSkinName>
+			<e:layout>
+				<e:HorizontalLayout gap="0"/>
+			</e:layout>
+
+
+			<e:ArrayCollection>
+			<e:Array>
+				<e:Object fsdf="null"/>
+				<e:Object fsdf="null"/>
+				<e:Object fsdf="null"/>
+				<e:Object fsdf="null"/>
+				<e:Object fsdf="null"/>
+			</e:Array>
+			</e:ArrayCollection>
+		</e:List>
+				<e:Image x="5" source="pinfo_receive_gift" y="59"/>
+		</e:Group>
+	</e:Scroller>
+		<e:Button id="report_btn" label="" y="480" enabled="true" scaleX="1" scaleY="1" x="289">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="pinfo_report_n" source.down="pinfo_report_p"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="sendRedBtn" label="发红包" enabled="true" scaleX="1" scaleY="1" anchorOffsetY="28.5" anchorOffsetX="79.5" x="575" y="508.5">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_btn_orange3"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" fontFamily="Microsoft YaHei"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="sendGiftBtn" label="送礼物" y="508.5" enabled="true" scaleX="1" scaleY="1" x="745" anchorOffsetX="79.5" anchorOffsetY="28.5">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_btn_orange3"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" fontFamily="Microsoft YaHei"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="delBtn" label="删除好友" enabled="true" scaleX="1" scaleY="1" anchorOffsetY="28.5" anchorOffsetX="79.5" x="915" y="508.5">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_btn_orange3"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" fontFamily="Microsoft YaHei"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="addBtn" label="添加好友" enabled="true" scaleX="1" scaleY="1" anchorOffsetY="28.5" anchorOffsetX="79.5" x="915" y="508.5">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_btn_orange3"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" fontFamily="Microsoft YaHei"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="modifyBtn" label="修改资料" enabled="true" scaleX="1" scaleY="1" anchorOffsetY="28.5" anchorOffsetX="79.5" y="508.5" x="640.5">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_btn_orange3"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" fontFamily="Microsoft YaHei"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+
+	</e:Panel>
+</e:Skin>

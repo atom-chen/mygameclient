@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.GoodsItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  width="100" height="100">
+
+	<e:Image id="iconImg" source="room_0" width="100" height="100"/>
+	<e:Label id="numLabel" size="20" text="" width="100" verticalAlign="middle" verticalCenter="20" textAlign="center" horizontalCenter="0" fontFamily="Microsoft YaHei" bold="true"/>
+</e:Skin>

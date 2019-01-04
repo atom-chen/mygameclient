@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Clock3Skin" width="101" height="101" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image y="0" x="0" source="qznn_bg_1"/>
+	<e:BitmapLabel id="timeNum" text="5" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" x="10" y="10" font="font_num_102"/>
+	<e:Image id="circle" y="0" x="0" source="qznn_bg_2"/>
+	<e:Image id="light" source="qznn_bg_3" x="51" y="52" anchorOffsetX="13" anchorOffsetY="58"/>
+</e:Skin>

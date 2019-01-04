@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ui.VSliderSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="track" source="play_line" scale9Grid="2,2,2,2" height="100%" x="55" y="0"/>
+
+	<e:Image id="trackHighlight" scale9Grid="2,2,2,2" source="play_line1" y="0" x="55"/>
+	<e:Group id="thumb" y="26" x="0" anchorOffsetY="25.5">
+		<e:Image source="play_slider1" horizontalCenter="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Label id="infoLabel" text="" horizontalCenter="0" textAlign="center" fontFamily="Microsoft YaHei" textColor="0x682200" y="5" touchEnabled="false"/>
+	</e:Group>
+</e:Skin>

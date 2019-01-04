@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PanelProfileSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image source="common_alert_bg" width="856" height="444" scale9Grid="107,111,642,8"/>
+	<e:Button y="-10" id="btnClose" right="-10">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="common_close_n"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+
+	</e:Button>
+	<e:Group x="94" y="100">
+		<ns1:Avatar id="avatar" skinName="components.AvatarSkin" x="4"/>
+
+	</e:Group>
+	<e:Image x="304" y="59" width="486" height="317" scale9Grid="28,28,4,5" source="common_bg_inner"/>
+	<e:Group verticalCenter="0" x="355">
+		<e:Label id="labNickname" text="昵称" x="221" y="20" size="30" textColor="0xD9C05E"/>
+		<e:Group x="221" y="141">
+			<e:Label size="30" y="0" text="ID:" x="0" textColor="0xD9C05E"/>
+			<e:Label id="labID" size="30" y="0" text="0" x="57" textColor="0xD9C05E"/>
+		</e:Group>
+		<e:Group y="151" x="231">
+			<e:Label size="30" y="0" textColor="0xD9C05E" text="金豆:" x="0"/>
+			<e:Image x="84" scaleY="0.6" y="2" source="icon_gold" scaleX="0.6"/>
+			<e:Label y="0" textColor="0xD9C05E" text="0" size="30" id="labGold" x="117"/>
+		</e:Group>
+		<e:Group x="221" y="70">
+			<e:Label size="30" y="-19" text="性别:" x="0" textColor="0xD9C05E"/>
+			<e:RadioButton id="rbBoy" label="男" x="68" y="-20" skinName="ui.RadioButtonSkin" groupName="sex"/>
+			<e:RadioButton id="rbGirl" y="-20" skinName="ui.RadioButtonSkin" label="女" x="172" groupName="sex"/>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle" gap="20"/>
+			</e:layout>
+		</e:Group>
+		<e:layout>
+			<e:VerticalLayout gap="30"/>
+		</e:layout>
+	</e:Group>
+	<e:Group x="662" y="237" visible="false">
+		<e:Label size="25" y="0" textColor="0xA35119" text="等级:" x="0"/>
+		<e:Label id="labLevel" y="0" textColor="0xA35119" text="LV1" size="25" x="67"/>
+	</e:Group>
+	<e:Group x="662" y="336" visible="false">
+		<e:Label id="labHistory" size="25" y="0" text="0胜0负" x="68" textColor="0xA35119"/>
+		<e:Label size="25" y="0" text="战绩:" x="0" textColor="0xA35119"/>
+	</e:Group>
+</e:Skin>

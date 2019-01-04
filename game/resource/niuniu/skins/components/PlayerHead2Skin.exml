@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PlayerHead2Skin" width="91" height="123" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image y="0" source="bg_24" x="0"/>
+	<e:Image id="head0" width="89" y="1" height="89" x="1"/>
+	<e:Image id="head" height="89" width="89" y="1" x="1"/>
+	<e:Image source="bg_24_1" y="0" x="0"/>
+	<e:Label id="nickName" text="玩家名六个字" y="-18" size="14" width="91" textAlign="center" fontFamily="微软雅黑" horizontalCenter="0" height="14"/>
+	<e:Label id="gold" text="999.09万" y="97" size="16" width="74" textAlign="center" height="16" x="21"/>
+	<e:Image id="goldIcon" source="bg_4" x="0" y="96"/>
+	<e:Group id="scoreBack" y="94" horizontalCenter="0" width="99" height="22" visible="false">
+		<e:Image source="game_image_38_1" y="0" x="0"/>
+		<e:Label y="3" size="16" text="底分：" x="5"/>
+		<e:Label id="gold1" y="3" size="16" text="999999" x="47"/>
+	</e:Group>
+</e:Skin>

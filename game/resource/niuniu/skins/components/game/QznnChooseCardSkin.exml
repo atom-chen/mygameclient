@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="QznnChooseCardSkin" width="960" height="640" xmlns:ns1='*' xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect height="640" width="1280" horizontalCenter="-3" verticalCenter="0" alpha="0.7"/>
+	<e:Image source="qznn_0227_image_7" y="172" horizontalCenter="0"/>
+	<ns1:QznnChooseCardInfo id="card1" y="302" skinName="QznnChooseCardInfoSkin" x="337" anchorOffsetX="58" anchorOffsetY="73"/>
+	<ns1:QznnChooseCardInfo id="card2" skinName="QznnChooseCardInfoSkin" y="302" x="480" anchorOffsetX="58" anchorOffsetY="73"/>
+	<ns1:QznnChooseCardInfo id="card3" skinName="QznnChooseCardInfoSkin" y="302" x="623" anchorOffsetX="58" anchorOffsetY="73"/>
+	<e:Label id="lab" text="28" x="556" fontFamily="微软雅黑" verticalCenter="-134" textAlign="center" width="38" textColor="0xF3F309"/>
+</e:Skin>

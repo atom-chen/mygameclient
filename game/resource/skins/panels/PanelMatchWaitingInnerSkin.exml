@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PanelMatchWaitingInnerSkin" width="960" height="640"
+        xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Group x="0" width="100%" verticalCenter="40">
+		<e:Image id="bg2" source="match_float_bg" horizontalCenter="0.5" height="96"/>
+		<e:Image id="bg" source="match_tips_bg" horizontalCenter="0" verticalCenter="0" visible="false"/>
+		<e:Label id="lab" text="本轮200人参赛，120人晋级，还有62桌未完成比赛" textAlign="center" size="34" width="100%" textColor="0xFFFFFF" x="0" verticalCenter="-2" verticalAlign="middle" fontFamily="Microsoft YaHei"/>
+	</e:Group>
+</e:Skin>

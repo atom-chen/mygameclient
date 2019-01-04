@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin  class="scenes.GameLLTSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1631fca0e08"/>
+	<e:Image id="bg" source="bg_jpg" y="0" scaleX="1" scaleY="1" horizontalCenter="0"/>
+	<e:Image id="bgw" y="400" scaleX="0.7" scaleY="0.7" horizontalCenter="0" source="bg_png"/>
+	<e:Image id="meng" scale9Grid="25,25,150,150" width="1080" height="1200" y="392" alpha="0.8" scaleX="0.7" scaleY="0.7" source="meng_png" horizontalCenter="0"/>
+	<e:Group id="eye" width="750" height="360" y="40" horizontalCenter="0">
+		<e:Image source="title" y="69" scaleX="0.7" scaleY="0.7" horizontalCenter="-0.5" x="-145"/>
+		<e:BitmapLabel id="score1" width="200" height="40" font="demo_num_fnt" text="20" horizontalCenter="-121" y="297.67" scaleX="0.7" scaleY="0.7"/>
+		<e:BitmapLabel id="score2" width="200" height="40" font="demo_num_fnt" text="100" horizontalCenter="225" y="296.47" scaleX="0.7" scaleY="0.7"/>
+		<e:BitmapLabel id="score3" width="200" height="40" font="demo_num_fnt" text="200" horizontalCenter="-165" y="259.19" scaleX="0.7" scaleY="0.7"/>
+		<e:BitmapLabel id="score4" width="200" height="40" font="demo_num_fnt" text="600" horizontalCenter="261" y="261.14" scaleX="0.7" scaleY="0.7"/>
+		<e:BitmapLabel id="score5" width="200" height="40" font="demo_num_fnt" text="1000" horizontalCenter="-193" y="217.68" scaleX="0.7" scaleY="0.7"/>
+		<e:BitmapLabel id="score6" width="200" height="40" font="demo_num_fnt" text="3000" horizontalCenter="272" y="218.49" scaleX="0.7" scaleY="0.7"/>
+		<e:Image id="Beatles_1" y="2.01" scaleX="0.7" scaleY="0.7" source="Beatles_1" horizontalCenter="-45.5"/>
+		<e:Image id="Beatles_2" y="4.68" scaleX="0.7" scaleY="0.7" source="Beatles_2" horizontalCenter="45.5"/>
+		<e:Image id="Beatles_3" y="95.67" scaleX="0.7" scaleY="0.7" source="Beatles_3" horizontalCenter="-46.5"/>
+		<e:Image id="Beatles_4" y="95.67" scaleX="0.7" scaleY="0.7" source="Beatles_4" horizontalCenter="46.5"/>
+		<e:Image id="Beatles_5" y="188" scaleX="0.7" scaleY="0.7" source="Beatles_5" horizontalCenter="-42.5"/>
+		<e:Image id="Beatles_6" y="188.67" scaleX="0.7" scaleY="0.7" source="Beatles_6" horizontalCenter="43.5"/>
+		<e:Image id="gameback" source="gameback" scaleX="0.7" scaleY="0.7" y="0" x="25"/>
+	</e:Group>
+	<e:Group id="touzhu" width="750" height="500" y="549.4" horizontalCenter="0">
+		<e:Image id="di" source="bet_bg" y="170.63" scaleX="0.7" scaleY="0.7" horizontalCenter="0.5" x="-138"/>
+		<e:Button id="subBtn" label="" y="163.38" scaleX="0.7" scaleY="0.7" horizontalCenter="-169" enabled="true">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="-_n" source.down="-_l"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="addBtn" label="" y="163.38" scaleX="0.7" scaleY="0.7" enabled="true" horizontalCenter="169">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="+_n" source.down="+_l"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="startBtn" label="" y="297.36" scaleX="0.7" scaleY="0.7" horizontalCenter="0" x="267" enabled="true">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="star_n" source.down="star_l"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:BitmapLabel id="score" width="300" height="40" y="262.66" text="0" font="bet_num_fnt" scaleX="0.7" scaleY="0.7" textAlign="center" touchEnabled="true" verticalAlign="top" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="start" width="750" height="800" y="340" horizontalCenter="0" visible="false">
+		<e:Image id="wangge" source="bg_png" y="60" scaleX="0.7" scaleY="0.7" horizontalCenter="0"/>
+		<e:Image id="step_d" source="steps" bottom="-193" horizontalCenter="0"/>
+		<e:Group id="picGroup" width="650" height="650" y="129" scaleX="1" scaleY="1" horizontalCenter="4">
+			<e:Image id="itemImg0" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" height="130" y="3" x="3" width="130" source="gezi"/>
+			<e:Image id="itemImg1" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="3" x="96" source="gezi"/>
+			<e:Image id="itemImg2" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="3" x="188" source="gezi"/>
+			<e:Image id="itemImg3" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="3" x="279" source="gezi"/>
+			<e:Image id="itemImg4" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="3" x="370" source="gezi"/>
+			<e:Image id="itemImg5" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="3" x="461" source="gezi"/>
+			<e:Image id="itemImg6" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="3" x="556" source="gezi"/>
+			<e:Image id="itemImg7" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" height="130" y="97" x="3" width="130" source="gezi"/>
+			<e:Image id="itemImg8" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="97" x="96" source="gezi"/>
+			<e:Image id="itemImg9" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="97" x="188" source="gezi"/>
+			<e:Image id="itemImg10" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="97" x="279" source="gezi"/>
+			<e:Image id="itemImg11" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="97" x="370" source="gezi"/>
+			<e:Image id="itemImg12" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="97" x="461" source="gezi"/>
+			<e:Image id="itemImg13" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="97" x="556" source="gezi"/>
+			<e:Image id="itemImg14" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" height="130" y="188" x="5" width="130" source="gezi"/>
+			<e:Image id="itemImg15" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="188" x="98" source="gezi"/>
+			<e:Image id="itemImg16" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="188" x="188" source="gezi"/>
+			<e:Image id="itemImg17" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="188" x="279" source="gezi"/>
+			<e:Image id="itemImg18" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="188" x="372" source="gezi"/>
+			<e:Image id="itemImg19" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="188" x="463" source="gezi"/>
+			<e:Image id="itemImg20" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="188" x="558" source="gezi"/>
+			<e:Image id="itemImg21" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" height="130" y="278" x="3" width="130" source="gezi"/>
+			<e:Image id="itemImg22" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="278" x="96" source="gezi"/>
+			<e:Image id="itemImg23" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="278" x="188" source="gezi"/>
+			<e:Image id="itemImg24" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="278" x="279" source="gezi"/>
+			<e:Image id="itemImg25" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="278" x="370" source="gezi"/>
+			<e:Image id="itemImg26" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="278" x="461" source="gezi"/>
+			<e:Image id="itemImg27" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="278" x="556" source="gezi"/>
+			<e:Image id="itemImg28" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" height="130" y="370" x="3" width="130" source="gezi"/>
+			<e:Image id="itemImg29" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="370" x="96" source="gezi"/>
+			<e:Image id="itemImg30" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="370" x="188" source="gezi"/>
+			<e:Image id="itemImg31" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="370" x="279" source="gezi"/>
+			<e:Image id="itemImg32" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="370" x="370" source="gezi"/>
+			<e:Image id="itemImg33" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="370" x="461" source="gezi"/>
+			<e:Image id="itemImg34" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="370" x="556" source="gezi"/>
+			<e:Image id="itemImg35" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" height="130" y="461" x="4" width="130" source="gezi"/>
+			<e:Image id="itemImg36" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="461" x="97" source="gezi"/>
+			<e:Image id="itemImg37" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="461" x="188" source="gezi"/>
+			<e:Image id="itemImg38" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="461" x="279" source="gezi"/>
+			<e:Image id="itemImg39" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="461" x="371" source="gezi"/>
+			<e:Image id="itemImg40" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="461" x="462" source="gezi"/>
+			<e:Image id="itemImg41" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="461" x="557" source="gezi"/>
+			<e:Image id="itemImg42" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" height="130" y="555" x="3" width="130" source="gezi"/>
+			<e:Image id="itemImg43" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="555" x="96" source="gezi"/>
+			<e:Image id="itemImg44" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="555" x="188" source="gezi"/>
+			<e:Image id="itemImg45" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="555" x="279" source="gezi"/>
+			<e:Image id="itemImg46" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="555" x="370" source="gezi"/>
+			<e:Image id="itemImg47" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="555" x="461" source="gezi"/>
+			<e:Image id="itemImg48" scaleX="0.7" scaleY="0.7" rotation="0" anchorOffsetX="0" anchorOffsetY="0" width="130" height="130" y="555" x="556" source="gezi"/>
+		</e:Group>		
+		<e:Button id="upsetBtn" label="" y="34.05000000000001" scaleX="0.6999999999999998" scaleY="0.6999999999999998" horizontalCenter="300" x="627" enabled="true" visible="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="upset_n" source.down="upset_n"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:BitmapLabel id="step" width="100" height="40" font="steps_num_fnt" text="6" horizontalCenter="154" bottom="-138" x="479" y="897" scaleX="1" scaleY="1"/>
+		<e:Image id="meng1" scale9Grid="25,25,150,150" width="1080" height="1200" y="50" alpha="0.6" scaleX="0.7" scaleY="0.7" source="meng_png" horizontalCenter="0" x="-3" visible="false"/>
+	</e:Group>
+	<e:Group id="win" width="750" height="800" y="340" horizontalCenter="0" visible="false">
+		<e:Image id="wintitle" source="count" y="29.21" scaleX="0.7" scaleY="0.7" horizontalCenter="-13"/>
+		<e:Image id="scoredi" source="score" y="266.35" scaleX="0.7" scaleY="0.7" horizontalCenter="0"/>
+		<e:BitmapLabel id="getscore" width="800" height="100" y="490." text="300000" font="win_num_fnt" scaleX="0.7" scaleY="0.7" horizontalCenter="0" textAlign="center"/>
+		<e:Button id="againBtn" label="" y="718.62" scaleX="0.6999999999999998" scaleY="0.6999999999999998" horizontalCenter="0" enabled="true">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="again_n" source.down="again_l"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+	<e:Group id="loser" width="750" height="800" y="340" horizontalCenter="0" visible="false">
+		<e:Image id="loser_d" y="-33.34" scaleX="0.7" scaleY="0.7" source="loser_d" horizontalCenter="0"/>
+		<e:Image id="loser_pic" y="94.4" scaleX="0.7" scaleY="0.7" source="loser" horizontalCenter="0"/>
+		<e:Button id="againBtn1" label="" y="718.62" scaleX="0.6999999999999998" scaleY="0.6999999999999998" horizontalCenter="0" enabled="true">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="again_n" source.down="again_l"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+	</e:Group>
+	<e:Group id="btn" width="750" height="60" y="1151.66" horizontalCenter="0">
+		<e:Button id="helpBtn" label="" x="25" scaleX="0.6999999999999998" scaleY="0.6999999999999998" enabled="true" top="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="help"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Image id="music" scaleX="0.7" scaleY="0.7" visible="true" x="660" y="0" source="sound_1"/>
+	</e:Group>
+	<e:Group id="info" width="750" height="120" y="1214" horizontalCenter="0">
+		<e:Image id="infodi" source="personalinformation" y="22" scaleX="1" scaleY="1" horizontalCenter="0" height="100" width="750"/>
+		<e:Image id="headimg" source="headshow" scaleX="0.45" scaleY="0.45" width="200" height="200" left="8" y="27"/>
+		<e:Label id="nickname" text="hahahaha" x="120" y="40" width="300"/>
+		<e:Label id="tnum" text="剩余金豆:0" x="120" y="80" width="300"/>
+		<e:Label id="xnum" text="消耗金豆:0" x="440" y="40" width="300"/>
+		<e:Label id="wnumpic" text="总赢金豆:" x="440" y="80" width="130"/>
+		<e:Label id="wnum" text="0" x="570" y="80" width="180"/>
+	</e:Group>
+	<e:Group id="help" width="750" height="1334" horizontalCenter="0" verticalCenter="0" visible="false">
+		<e:Image source="mask" width="1080" height="1334" horizontalCenter="0" top="0"/>
+		<e:Button id="closeBtn" label="" y="59" scaleX="0.7" scaleY="0.7" horizontalCenter="311.5" enabled="true">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="help_2"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Image id="pic" source="text" y="160" scaleX="0.7" scaleY="0.7" horizontalCenter="-0.5" alpha="1"/>
+	</e:Group>
+</e:Skin>
