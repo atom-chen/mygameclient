@@ -82,13 +82,13 @@ class MailService extends Service {
 
 	checkMail() {
 		this._isReqMailList = false;
-		this.callMailApi('checkmail', (response: any)=> {
-			//console.log('checkMail: =' ,response);
-			if (response.code == 0) {
-				this._unreadCount = parseInt(response.data.unread_count);
-				this.getMailList();
-			}
-		})
+		// this.callMailApi('checkmail', (response: any)=> {
+		// 	//console.log('checkMail: =' ,response);
+		// 	if (response.code == 0) {
+		// 		this._unreadCount = parseInt(response.data.unread_count);
+		// 		this.getMailList();
+		// 	}
+		// })
 	}
 
 	/**

@@ -48,11 +48,13 @@ class LoginService extends Service {
         let uid = UserData.instance.getUid();
         this._setCanReconnect(true);
         GameConfig.getExAliRedInfo();
-        GameConfig.initGameUrlsCfg(()=>{
-            MainLogic.instance.refreshSelfInfo();
-            alien.Dispatcher.dispatch(EventNames.LOGIN_SUCCESS);
-            server.checkReconnect();
-        })
+        alien.Dispatcher.dispatch(EventNames.LOGIN_SUCCESS);
+        server.checkReconnect();
+        // GameConfig.initGameUrlsCfg(()=>{
+        //     MainLogic.instance.refreshSelfInfo();
+        //     alien.Dispatcher.dispatch(EventNames.LOGIN_SUCCESS);
+        //     server.checkReconnect();
+        // })
     }
 
 	/**

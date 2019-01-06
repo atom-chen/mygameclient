@@ -544,21 +544,21 @@ class WebService {
         _roomId += _room;
         _uid += _uidId;
         let _info = _uid + _redCoin + _gold + _diamond + _roomId + body;
-        alien.Ajax.POST(GameConfig.WEB_SERVICE_URL+"/load/error",{type: type,body: _info});
+        // alien.Ajax.POST(GameConfig.WEB_SERVICE_URL+"/load/error",{type: type,body: _info});
     }
     /**
      * 获取喇叭聊天记录
      */
     getHornRec(callback):void{
-        alien.Ajax.GET(GameConfig.WEB_SERVICE_URL+"/msg/chatmsg",{},(content: any) => {
+        // alien.Ajax.GET(GameConfig.WEB_SERVICE_URL+"/msg/chatmsg",{},(content: any) => {
    
-            if(callback) {
-                let response: any = JSON.parse(content);
-                if(response.code == 0) {
-                    callback(response.data);
-                }
-            }
-        });
+        //     if(callback) {
+        //         let response: any = JSON.parse(content);
+        //         if(response.code == 0) {
+        //             callback(response.data);
+        //         }
+        //     }
+        // });
     }
 
     /**
@@ -692,10 +692,10 @@ class WebService {
      * 夺宝记录
      */
     getDoLotteryRec(uid:number,page:number,callback:Function):void{
-        alien.Ajax.POST(GameConfig.WEB_SERVICE_URL+"/lottery/index",{uid:uid,page:page},(content:any)=>{
-           let response: any = JSON.parse(content);
-            callback(response);
-        });
+        // alien.Ajax.POST(GameConfig.WEB_SERVICE_URL+"/lottery/index",{uid:uid,page:page},(content:any)=>{
+        //    let response: any = JSON.parse(content);
+        //     callback(response);
+        // });
     }
 
     /**
@@ -704,20 +704,20 @@ class WebService {
      * phase:期数
      */
     getLotteryCurLuck(lotteryid:number,phase:number,callback:Function):void{
-        alien.Ajax.POST(GameConfig.WEB_SERVICE_URL+"/lottery/run",{lotteryid:lotteryid,phase:phase},(content:any)=>{
-            let response: any = JSON.parse(content);
-            callback(response);
-        });
+        // alien.Ajax.POST(GameConfig.WEB_SERVICE_URL+"/lottery/run",{lotteryid:lotteryid,phase:phase},(content:any)=>{
+        //     let response: any = JSON.parse(content);
+        //     callback(response);
+        // });
     }
 
     /**
      * 夺宝往期幸运儿
      */
     getLotteryLuckHistory(page:number,lotteryid:number,callback:Function):void{
-        alien.Ajax.GET(GameConfig.WEB_SERVICE_URL+"/lottery/history",{page:page,lotteryid:lotteryid},(content:any)=>{
-            let response: any = JSON.parse(content);
-            callback(response);
-        });
+        // alien.Ajax.GET(GameConfig.WEB_SERVICE_URL+"/lottery/history",{page:page,lotteryid:lotteryid},(content:any)=>{
+        //     let response: any = JSON.parse(content);
+        //     callback(response);
+        // });
     }
 
     /**
@@ -767,27 +767,27 @@ class WebService {
      * 获取奖券排行榜
      */
     getRanklist():void{
-        let _uid = UserData.instance.getUid();
-        alien.Ajax.GET(GameConfig.WEB_SERVICE_URL+"/notify/rankingList",{uid:_uid},(content:any)=>{
-            let response: any = JSON.parse(content);
-            if(response.code != 0) return;
+        // let _uid = UserData.instance.getUid();
+        // alien.Ajax.GET(GameConfig.WEB_SERVICE_URL+"/notify/rankingList",{uid:_uid},(content:any)=>{
+        //     let response: any = JSON.parse(content);
+        //     if(response.code != 0) return;
 
-            let _event = new egret.Event(EventNames.USER_REDCOIN_RANKING_LIST_REP);
-            _event.data ={list:response.data};
-            server.dispatchEvent(_event);
-        });
+        //     let _event = new egret.Event(EventNames.USER_REDCOIN_RANKING_LIST_REP);
+        //     _event.data ={list:response.data};
+        //     server.dispatchEvent(_event);
+        // });
     }
 
     /**
      * 获取邀请排行榜
      */
     getInviteRankList(callback:Function):void{
-        let _uid = UserData.instance.getUid();
-        alien.Ajax.GET(GameConfig.WEB_SERVICE_URL+"/notify/shareRedCoin",{uid:_uid},(content:any)=>{
-            let response: any = JSON.parse(content);
-            if(response.code != 0) return;
-            callback(response.data);
-        }); 
+        // let _uid = UserData.instance.getUid();
+        // alien.Ajax.GET(GameConfig.WEB_SERVICE_URL+"/notify/shareRedCoin",{uid:_uid},(content:any)=>{
+        //     let response: any = JSON.parse(content);
+        //     if(response.code != 0) return;
+        //     callback(response.data);
+        // }); 
     }
 
     /**

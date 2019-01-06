@@ -824,7 +824,7 @@ var egret;
                     WebAudioDecode.isDecoding = false;
                     WebAudioDecode.decodeAudios();
                 }, function () {
-                    //alert("sound decode error: " + decodeInfo["url"] + "！\nsee http://edn.egret.com/cn/docs/page/156");
+                    alert("sound decode error: " + decodeInfo["url"] + "！\nsee http://edn.egret.com/cn/docs/page/156");
                     if (decodeInfo["fail"]) {
                         decodeInfo["fail"]();
                     }
@@ -2031,12 +2031,12 @@ var egret;
                         request = this.request = new egret.web.WebHttpRequest();
                         request.addEventListener(egret.Event.COMPLETE, this.onBlobLoaded, this);
                         request.addEventListener(egret.IOErrorEvent.IO_ERROR, this.onBlobError, this);
+                        request.responseType = "blob";
                     }
                     if (true) {
                         this.currentURL = url;
                     }
                     request.open(url);
-                    request.responseType = "blob";
                     request.send();
                 }
                 else {
@@ -5732,12 +5732,6 @@ var egret;
         function createCanvas(width, height) {
             var canvas = document.createElement("canvas");
             if (!isNaN(width) && !isNaN(height)) {
-                if (width == 0) {
-                    width = 1;
-                }
-                if (height == 0) {
-                    height = 1;
-                }
                 canvas.width = width;
                 canvas.height = height;
             }
