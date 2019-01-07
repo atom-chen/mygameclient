@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ui.CCDDZHangButtonSkin" states="up,down,disabled,upAndSelected,downAndSelected,disabledAndSelected" xmlns:e="http://ns.egret.com/eui">
+    <e:Image source.downAndSelected="cc_play_btn_trusteeship_h" source="cc_play_btn_trusteeship_n" source.disabled="cc_play_btn_trusteeship_n" source.down="cc_play_btn_trusteeship_h" source.upAndSelected="cc_play_btn_trusteeship_n" source.disabledAndSelected="cc_play_btn_trusteeship_n"/>
+</e:Skin>

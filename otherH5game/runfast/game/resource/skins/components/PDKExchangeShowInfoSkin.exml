@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.PDKExchangeShowInfoSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="exchange_image_10" x="1" y="1"/>
+	<e:Label id="lbl_name" text="这里是名字" y="4" size="20" horizontalCenter="0"/>
+	<e:Label id="lbl_coin" size="20" y="26" text="抽得            红包" width="185" textAlign="center" horizontalCenter="0"/>
+	<e:Label size="20" y="26" text="￥5.00" x="89" textColor="0xF0FF00" visible="false"/>
+</e:Skin>

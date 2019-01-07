@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="pages.PDKPageNormalChannelSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Scroller id="listContainer" verticalCenter="0" horizontalCenter="0">
+		<e:Group>
+			<e:List id="list" itemRendererSkinName="components.PDKIRNormalRoomSkin">
+				<e:ArrayCollection>
+					<e:Array>
+						<e:Object label="数据1"/>
+						<e:Object label="数据2"/>
+						<e:Object label="数据3"/>
+						<e:Object label="数据4"/>
+						<e:Object label="数据5"/>
+						<e:Object label="数据6"/>
+					</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:TileLayout requestedRowCount="2" horizontalGap="35" paddingLeft="18" rowAlign="justifyUsingGap" verticalGap="28"/>
+				</e:layout>
+			</e:List>
+		</e:Group>
+	</e:Scroller>
+
+</e:Skin>

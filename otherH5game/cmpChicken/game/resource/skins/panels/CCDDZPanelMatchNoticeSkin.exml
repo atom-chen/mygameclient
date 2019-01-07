@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.CCDDZPanelMatchNoticeSkin" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="770" height="460" source="cc_common_alert1_bg" scale9Grid="23,58,41,15"/>
+	<e:Group id="grpButton" horizontalCenter="0" bottom="65">
+		<ns1:CCDDZStateButton id="btnConfirm" name="confirm" x="50" y="142" skinName="ui.CCDDZDeepBlueButtonSkin" labelIcon="cc_common_btn_lab_confirm_n"/>
+		<e:layout>
+			<e:HorizontalLayout gap="30"/>
+		</e:layout>
+	</e:Group>
+	<e:Label id="labContent" text="" textColor="0x000000" width="519" horizontalCenter="1.5" verticalCenter="-30" lineSpacing="20" textAlign="center"/>
+	<e:Button id="btnCancelMatch" y="54" right="60">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="cc_match_btn_exit_txt_n" source.down="cc_match_btn_exit_txt_h"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

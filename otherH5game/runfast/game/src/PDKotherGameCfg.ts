@@ -1,0 +1,26 @@
+let PDKotherGameCfg = {
+	[2]:{
+		name:"crazy32",
+		urlRoot:"http://192.168.0.81/laoqifeng/doudizhu/games/c32test/web/171207160146/",
+		mainJs:"main.min.js",
+		gameId:3,
+		listenAllProto:false,
+		entryClassName:"Crazy32GameEntry"
+	},
+	[3]:{
+		name:"niuniu",
+		urlRoot:"http://192.168.0.235:8085/",
+		mainJs:"main.min.js",
+		gameId:4,
+		listenAllProto:false,
+		entryClassName:"NiuNiuMain"
+	},
+	[4]:{
+		name:"fish",
+		urlRoot:"http://192.168.0.5:8086/",
+		mainJs:"main.min.js",
+		gameId:5,
+		listenAllProto:true,
+		entryClassName:"FishMain"
+	}
+}

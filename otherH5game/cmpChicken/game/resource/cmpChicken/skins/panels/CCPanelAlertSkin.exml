@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.CCPanelAlertSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image width="770" height="460" horizontalCenter="0" source="cc_play_mask_box" scale9Grid="107,85,646,20"/>
+	<e:Label id="lblTitle" text="温馨提示" width="600" textAlign="center" lineSpacing="10" scaleX="1" scaleY="1" verticalAlign="middle" horizontalCenter="0" fontFamily="Microsoft YaHei" textColor="0xffffff" size="36" y="16"/>
+	<e:Group id="grpButton" horizontalCenter="1" bottom="32">
+		<e:layout>
+			<e:HorizontalLayout gap="150"/>
+		</e:layout>
+
+		<ns1:CCLabelButton id="confirmBtn" name="confirm" label="确定" y="-68" horizontalCenter="-150" x="-217" scaleX="1" scaleY="1">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="cc_play_btn_yellow" source.down="cc_play_btn_yellow"/>
+				<e:Label id="labelDisplay" size="28" verticalAlign="middle" textAlign="center" verticalCenter="-2" fontFamily="Microsoft YaHei" horizontalCenter="0"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:CCLabelButton>
+		<ns1:CCLabelButton id="cancelBtn" name="cancel" label="取消" y="-68" horizontalCenter="-150" x="-217" scaleX="1" scaleY="1">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="cc_play_btn_blue" source.down="cc_play_btn_blue"/>
+				<e:Label id="labelDisplay" size="28" verticalAlign="middle" textAlign="center" verticalCenter="-2" fontFamily="Microsoft YaHei" horizontalCenter="0"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:CCLabelButton>
+	</e:Group>
+	<e:Button id="btnClose" name="close" anchorOffsetX="18" anchorOffsetY="18" x="738" y="34">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="cc_play_close_btn"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Scroller id="ctxScroller" width="600" height="250" horizontalCenter="0" verticalCenter="-20" scrollPolicyV="auto" scrollPolicyH="off">
+		<e:Group>
+			<e:Label id="labContent" text="标签" textColor="0x000000" width="600" textAlign="center" lineSpacing="10" scaleX="1" scaleY="1" verticalAlign="middle" x="0"/>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

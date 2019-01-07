@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="scenes.PDKSceneCommonSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Scroller id="scroller" left="10" right="10" top="10" bottom="10" touchEnabled="false" locked="true">
+		<e:Group touchEnabled="false">
+			<e:Label id="labLog" touchEnabled="false" multiline="true" size="15" width="100%" stroke="1" strokeColor="0x888888" lineSpacing="2"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Label id="labVersion" text="version" x="21.72" size="15" bottom="5" visible="false"/>
+	<e:Group id="grpTopNotify" y="0" horizontalCenter="0">
+		<e:Rect x="0" y="0" fillAlpha="0.8" width="100%" height="100%"/>
+		<e:Group left="5" right="5" top="5" bottom="5">
+			<e:Label id="labTopNotify" x="0" y="5" size="20" text="..."/>
+			<e:Button id="btnTopNotify" label="我知道了" x="100" y="0" skinName="ui.PDKTestButtonSkin" scaleX="0.5" scaleY="0.5"/>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+</e:Skin>

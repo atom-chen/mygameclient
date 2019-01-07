@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.PDKSIMathProgressSkin" width="390" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="pdk_common_progress_thumb_repeat"/>
+	<e:Image x="390" source="pdk_common_progress_thumb_repeat"/>
+</e:Skin>

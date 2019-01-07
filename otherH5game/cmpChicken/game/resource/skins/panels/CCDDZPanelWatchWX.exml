@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="panels.CCDDZPanelWatchWX" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="1280" height="640">
+	<e:Group id="infoGroup" width="1280" height="640" touchEnabled="false" x="1">
+		<e:Image id="watchImg" x="723" y="468" anchorOffsetX="70" anchorOffsetY="37" scaleX="1" scaleY="1" source="cc_room_watch"/>
+		<e:Image id="item1Img" x="606.5" y="318" anchorOffsetX="47.5" anchorOffsetY="47" source="cc_room_2" scaleX="1" scaleY="1"/>
+		<e:Image id="item2Img" x="706.5" y="318" anchorOffsetX="47.5" anchorOffsetY="47" source="cc_room_101" scaleX="1" scaleY="1"/>
+		<e:Image id="item3Img" x="806.5" y="318" anchorOffsetX="47.5" anchorOffsetY="47" source="cc_room_0" scaleX="1" scaleY="1"/>
+		<e:Label id="item1Num_label" text="3天" x="589" y="333" size="20" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1"/>
+		<e:Label id="item2Num_label" text="50次" x="686" y="331" size="20" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1"/>
+		<e:Label id="item3Num_label" text="10000" x="775" y="331" size="20" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1"/>
+		<e:Label id="item4Num_label" text="关注好手气斗地主公众号领取福利" y="210" size="30" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" textColor="0x414a61" x="509"/>
+	</e:Group>
+</e:Skin>

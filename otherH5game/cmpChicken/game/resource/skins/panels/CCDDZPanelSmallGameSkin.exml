@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.CCDDZPanelSmallGameSkin" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" >
+	<e:Group id="infoGroup" width="100%" height="100%" left="0" bottom="0">
+		<e:Image id="bgImg" top="0" height="100%" width="100%" scale9Grid="5,3,23,22" x="0" source="cc_room_bg"/>
+		<e:Image id="tooBgImg" y="0" x="0" width="100%" source="cc_smallgame_top_bg"/>
+		<e:Group id="topRight_group" y="0" height="70" anchorOffsetX="0" width="385" right="10">
+			<e:Button id="settingBtn" name="setting" y="32" anchorOffsetX="30" anchorOffsetY="30" scaleX="1" scaleY="1" right="159">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="cc_smallgame_setting_btn"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" xmlns:CCalien="CCalien.*"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="signBtn" name="sign" anchorOffsetX="30" anchorOffsetY="30" y="32" scaleX="1" scaleY="1" right="91">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="cc_smallgame_sign_btn"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" xmlns:CCalien="CCalien.*"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="keFuBtn" name="kefu" y="32" anchorOffsetX="30" anchorOffsetY="30" scaleX="1" scaleY="1" right="23">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="cc_smallgame_severs_btn"/>
+					<e:Label id="labelDisplay2" horizontalCenter="0" verticalCenter="0" xmlns:CCalien="CCalien.*"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+
+
+
+
+		<e:Group id="close_group" height="64" anchorOffsetY="0" anchorOffsetX="0" x="10" y="2" width="100">
+			<e:Button id="btn_close" touchEnabled="false" horizontalCenter="0" verticalCenter="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="cc_smallgame_back_btn"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+
+			</e:Button>
+		</e:Group>
+		<e:Group id="tit_group" horizontalCenter="0" height="70" y="0">
+			<e:Image id="titBgImg" y="-5" horizontalCenter="0" x="30" scaleX="1" scaleY="1" height="70" source="cc_smallgame_title_bg"/>
+			<e:Image id="titFontImg" y="10" horizontalCenter="0.5" x="138" scaleX="1" scaleY="1" source="cc_smallgame_title"/>
+		</e:Group>
+
+
+		<e:Scroller id="itemInfoScroller" height="462" anchorOffsetX="0" anchorOffsetY="0" scrollPolicyV="auto" scrollPolicyH="off" top="86" width="1100" horizontalCenter="0">
+			<e:Group>
+			<e:List id="lvGames" anchorOffsetY="0" anchorOffsetX="0" y="0" horizontalCenter="0">
+				<e:itemRendererSkinName>
+				<e:Skin xmlns:CCalien="CCalien.*">
+					<e:Group y="0" x="0">
+						<e:Image id="iconImg" y="0" source="cc_smallgame_game_excite"/>
+					</e:Group>
+				</e:Skin>
+				</e:itemRendererSkinName>
+				<e:layout>
+					<e:TileLayout horizontalGap="100" requestedColumnCount="3"/>
+				</e:layout>
+
+				<e:ArrayCollection>
+					<e:Array>
+						<e:Object label="数据1"/>
+						<e:Object label="数据1"/>
+						<e:Object label="数据1"/>
+					</e:Array>
+				</e:ArrayCollection>
+			</e:List>
+			</e:Group>
+		</e:Scroller>
+
+		<e:Image id="bottomBgImg" width="100%" left="0" x="0" scaleX="1" scaleY="-1" bottom="0" source="cc_smallgame_bottom_bg"/>
+		<e:Group id="rechargeGroup" width="100" x="584" y="590" anchorOffsetY="50" height="100" anchorOffsetX="50" scaleX="1" scaleY="1">
+			<e:Button id="rechargeBtn" anchorOffsetX="44" anchorOffsetY="23.5" y="69" x="50" scaleX="1" scaleY="1" touchEnabled="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="cc_smallgame_market_btn"/>
+					<e:Label id="labelDisplay2" horizontalCenter="0" verticalCenter="0" xmlns:CCalien="CCalien.*"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+
+		<e:Group id="userInfoGroup" left="0" bottom="0">
+			<ns1:CCDDZAvatar id="avatar" scaleX="0.5" scaleY="0.5" skinName="components.CCDDZAvatarSkin" name="avatar" touchChildren="false" x="10"/>
+			<ns1:CCDDZGold id="gold" x="95" y="39" skinName="components.CCDDZMyGoldSkin" scaleX="0.8" scaleY="0.8" currentState="withButton" rotation="0.36"/>
+			<ns1:CCDDZGold id="diamond" x="230" y="39" skinName="components.CCDDZMyGoldSkin" scaleX="0.8" scaleY="0.8" currentState="diamondBuy" rotation="0.36"/>
+			<e:Group id="grpRedcoin" width="157" height="42" y="39" scaleX="0.8" scaleY="0.8" x="370" rotation="0.36">
+			<e:Image id="redBgImg" y="0" touchEnabled="false" x="0" width="157" height="42" source="cc_smallgame_userData_bg"/>
+			<e:Image y="-4" touchEnabled="false" x="-6.5" source="cc_icon_redcoin" scaleY="0.4" scaleX="0.4"/>
+			<e:Image id="redExchangeImg" y="24" touchEnabled="true" x="140" scaleY="1" scaleX="1" source="cc_common_exchangeRed" anchorOffsetX="23" anchorOffsetY="23.5"/>
+			<e:Label id="lbRedCoin" x="36" y="10" size="25" text="0" textAlign="center" width="85" touchEnabled="false" height="25"/>
+			</e:Group>
+
+
+		</e:Group>
+
+
+		</e:Group>
+</e:Skin>

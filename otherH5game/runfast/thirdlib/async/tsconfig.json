@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "outFile": "bin/async/async.js",
+        "allowJs": true
+    },
+    "files": [
+        "src/async.js"
+    ]
+}

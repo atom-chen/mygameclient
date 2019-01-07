@@ -1,0 +1,12 @@
+{"file":"cc_sheet_recharge_tips_c.png","frames":{
+"cc_recharge_tips_bg2":{"x":0,"y":360,"w":217,"h":331,"offX":23,"offY":19,"sourceW":270,"sourceH":377},
+"cc_recharge_tips_bg3":{"x":246,"y":0,"w":252,"h":342,"offX":16,"offY":13,"sourceW":270,"sourceH":377},
+"cc_recharge_tips_bg4":{"x":0,"y":0,"w":244,"h":358,"offX":16,"offY":13,"sourceW":270,"sourceH":377},
+"cc_recharge_tips_duihuan1":{"x":300,"y":733,"w":150,"h":49,"offX":3,"offY":4,"sourceW":156,"sourceH":57},
+"cc_recharge_tips_duihuan2":{"x":152,"y":835,"w":150,"h":49,"offX":3,"offY":4,"sourceW":156,"sourceH":57},
+"cc_recharge_tips_goumai1":{"x":0,"y":788,"w":150,"h":49,"offX":3,"offY":4,"sourceW":156,"sourceH":57},
+"cc_recharge_tips_goumai2":{"x":300,"y":784,"w":150,"h":49,"offX":3,"offY":4,"sourceW":156,"sourceH":57},
+"cc_recharge_tips_join_match_h":{"x":0,"y":693,"w":148,"h":53,"offX":0,"offY":0,"sourceW":149,"sourceH":54},
+"cc_recharge_tips_join_match_n":{"x":150,"y":733,"w":148,"h":53,"offX":0,"offY":0,"sourceW":149,"sourceH":54},
+"cc_recharge_tit":{"x":219,"y":680,"w":180,"h":51,"offX":0,"offY":0,"sourceW":180,"sourceH":51},
+"cc_recharge_tips_bg1":{"x":246,"y":344,"w":221,"h":334,"offX":21,"offY":18,"sourceW":270,"sourceH":377}}}

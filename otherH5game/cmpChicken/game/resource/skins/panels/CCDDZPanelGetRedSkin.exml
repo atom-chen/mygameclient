@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="panels.CCDDZPanelGetRedSkin" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="red_img" x="486" y="155" source="cc_play_red_pop"/>
+	<e:Image id="light_img" x="440" y="104" source="play_red_bg" width="409" height="371"/>
+	<e:Group id="lightStar_group" width="340" height="62" x="458" y="404" anchorOffsetY="0">
+		<e:Image id="mBgStar_img" x="0" y="0" source="play_popred_star" scaleX="1" scaleY="1"/>
+		<e:Image id="lightStar1_img" x="32" y="30" source="play_star_big" anchorOffsetX="47.5" anchorOffsetY="46"/>
+		<e:Image id="lightStar2_img" x="100" y="30" source="play_star_big" anchorOffsetX="47.5" anchorOffsetY="46"/>
+		<e:Image id="lightStar3_img" x="167" y="30" source="play_star_big" anchorOffsetX="47.5" anchorOffsetY="46"/>
+		<e:Image id="lightStar4_img" x="236" y="30" source="play_star_big" anchorOffsetX="47.5" anchorOffsetY="46"/>
+		<e:Image id="lightStar5_img" x="305" y="30" source="play_star_big" anchorOffsetX="47.5" anchorOffsetY="46"/>
+	</e:Group>
+	<e:Image id="getRed_img" x="626" y="440" source="play_red_btn" anchorOffsetX="117" anchorOffsetY="46"/>
+	<e:Image id="title_img" x="457" y="92" source="play_red_title"/>
+	<e:Image id="close_img" source="cc_common_close_n" anchorOffsetX="30" anchorOffsetY="30" horizontalCenter="188" verticalCenter="-197.5"/>
+</e:Skin>

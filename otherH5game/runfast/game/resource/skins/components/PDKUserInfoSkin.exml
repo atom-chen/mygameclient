@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.PDKUserInfoSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" states="left,right,my,right2" >
+	<e:Image includeIn="left,right,right2" x="10" y="0" y.left="4" x.left="10" y.right="1" x.right="28" source="pdk_name_bg" y.right2="116" x.right2="28"/>
+	<e:Label id="labNickName" size="20" x.my="113" y.my="68" size.my="20" y="3" width.right="112" width.left="112" textAlign="center" stroke="1" strokeColor="0x723c02" textColor="0xE4E4E4" textAlign.my="left" height.my="20" height="20" text="name" text.my="" width.my="330" y.left="5" y.right="4" x.right="18" width.right2="112" y.right2="119" x.right2="18"/>
+	<ns1:PDKAvatar id="avatar" y.right="30" y.left="30" skinName="components.PDKAvatarSkin" scaleX="0.65" scaleY="0.65" x.right="16" scaleX.my="0.65" scaleY.my="0.65" x.right2="16" y.right2="2" left.my="4" bottom.my="4"/>
+	<e:Group touchEnabled="false" width="170" height="170" id="grpGRLight" x="-27" y="-5" height.my="141" visible.my="false" visible.left="false" locked="true" visible.right="false" visible.right2="false">
+		<e:Image source="pdk_guesscards_950" y="27" scaleX="1.2" scaleY="1.2" x="11"/>
+		<e:Image source="pdk_guesscards_950" y="41" x="105"/>
+		<e:Image source="pdk_guesscards_950" y="81" x="128"/>
+		<e:Image source="pdk_guesscards_942" verticalCenter="-13.5" horizontalCenter="0"/>
+		<e:Image source="pdk_guesscards_943" verticalCenter="13.5" horizontalCenter="0"/>
+
+		<e:Group id="grpAnimate" height="120" width="120" x="25" y="30">
+			<e:Image id="light" source="pdk_guesscards_light" horizontalCenter="0" verticalCenter="0" locked="true"/>
+			<e:Image id="star0" source="pdk_guesscards_ani_star" x="70" y="74"/>
+			<e:Image source="pdk_guesscards_ani_star" id="star1" x="40" y="40" locked="true"/>
+			<e:Image source="pdk_guesscards_ani_star" id="star2" x="40" y="40" locked="true"/>
+		</e:Group>
+	</e:Group>
+	<ns1:PDKGold id="gold" y="98" skinName.my="components.PDKMyGoldSkin" x.my="111" y.my="95" skinName="components.PDKMyGoldSkin" currentState="withButton" y.left="142" currentState.left="withBg" scaleX.left="0.5" scaleY.left="0.5" horizontalCenter.left="-14" horizontalCenter.right="0" currentState.right="withBg" scaleX.right="0.5" scaleY.right="0.5" y.right="142" horizontalCenter.right2="0" currentState.right2="withBg" scaleX.right2="0.5" scaleY.right2="0.5" y.right2="146"/>
+	<ns1:PDKGold id="diamond" y="95" skinName="components.PDKMyGoldSkin" currentState="diamondBuy" includeIn="my" x="280"/>
+
+</e:Skin>

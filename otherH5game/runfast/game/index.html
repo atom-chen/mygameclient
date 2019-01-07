@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>三桂跑得快</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="full-screen" content="true"/>
+	<meta name="screen-orientation" content="landscape"/>
+	<meta name="x5-fullscreen" content="true"/>
+	<meta name="360-fullscreen" content="true"/>
+	<style>
+		html, body {
+			-ms-touch-action: none;
+			background: #000000;
+			padding: 0;
+			border: 0;
+			margin: 0;
+			height: 100%;
+		}
+	</style>
+
+	<!--这个标签为通过egret提供的第三方库的方式生成的 javascript 文件-->
+	<!--modules_files_start-->
+	<script egret="lib" src="libs/modules/egret/egret.js"></script>
+	<script egret="lib" src="libs/modules/egret/egret.web.js"></script>
+	<script egret="lib" src="libs/modules/eui/eui.js"></script>
+	<script egret="lib" src="libs/modules/res/res.js"></script>
+	<script egret="lib" src="libs/modules/tween/tween.js"></script>
+	<script egret="lib" src="libs/modules/socket/socket.js"></script>
+	<script egret="lib" src="libs/modules/dragonBones/dragonBones.js"></script>
+	<script egret="lib" src="libs/modules/protobuf/protobuf.js"></script>
+	<script egret="lib" src="libs/modules/async/async.js"></script>
+	<script egret="lib" src="libs/modules/md5/md5.js"></script>
+	<script egret="lib" src="libs/modules/clipbord/clipbord.js"></script>
+	<script egret="lib" src="libs/modules/game/game.js"></script>
+	<!--modules_files_end-->
+
+	<!--这个标签为不通过egret提供的第三方库的方式使用的 javascript 文件，请将这些文件放在libs下，但不要放在modules下面。-->
+	
+
+	<!--这个标签会被替换为项目中所有的 javascript 文件-->
+	<!--game_files_start-->
+	<script egret="lib" src="bin-debug/core/PDKSeat.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/page/Navigator.js"></script>
+	<script egret="lib" src="bin-debug/game/seat/PDKDDZSeat.js"></script>
+	<script egret="lib" src="bin-debug/core/PDKServer.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/scene/SceneBase.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/support/EventManager.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/support/Native.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/support/PDKSoundManager.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/Encrypt.js"></script>
+	<script egret="lib" src="bin-debug/core/PDKCardGroup.js"></script>
+	<script egret="lib" src="bin-debug/views/pages/PDKPageChannelBase.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/scene/SceneManager.js"></script>
+	<script egret="lib" src="bin-debug/core/PDKService.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/popup/PDKPanelBase.js"></script>
+	<script egret="lib" src="bin-debug/game/seat/PDKSideSeat.js"></script>
+	<script egret="lib" src="bin-debug/model/PDKDataStorage.js"></script>
+	<script egret="lib" src="bin-debug/model/PDKLanguagePack.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/PDKBaseDragon.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/animation/IAnimation.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKGoodsItem.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/support/StageProxy.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/support/TickerManager.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/support/Vector2D.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/Ajax.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/popup/PopupEffect.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/HashMap.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/MathUtils.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/ObjectPool.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/PDKBase64.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/PDKUtils.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/StringUtils.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/TimeUtils.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/TweenWatcher.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/ui/DropDown.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/ui/FadeSwitch.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/ui/Image.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/ui/PageProgressBar.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/ui/ScrollImage.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/ui/ScrollNavigator.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/ui/ViewStack.js"></script>
+	<script egret="lib" src="bin-debug/core/PDKCard.js"></script>
+	<script egret="lib" src="bin-debug/core/PDKCardBody.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/popup/PopUpManager.js"></script>
+	<script egret="lib" src="bin-debug/core/PDKEnviroment.js"></script>
+	<script egret="lib" src="bin-debug/core/PDKLogUtil.js"></script>
+	<script egret="lib" src="bin-debug/core/PDKMainLogic.js"></script>
+	<script egret="lib" src="bin-debug/core/PDKProtoIDs.js"></script>
+	<script egret="lib" src="bin-debug/core/PDKReportor.js"></script>
+	<script egret="lib" src="bin-debug/PDKDefines.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/scene/SceneEffect.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/animation/MovieClip.js"></script>
+	<script egret="lib" src="bin-debug/core/PDKUtils.js"></script>
+	<script egret="lib" src="bin-debug/game/PDKCardsHint.js"></script>
+	<script egret="lib" src="bin-debug/game/PDKCardsType.js"></script>
+	<script egret="lib" src="bin-debug/game/PDKDDZCardGroup.js"></script>
+	<script egret="lib" src="bin-debug/game/PDKDDZServer.js"></script>
+	<script egret="lib" src="bin-debug/game/PDKGameSoundManager.js"></script>
+	<script egret="lib" src="bin-debug/game/PDKGoodsManager.js"></script>
+	<script egret="lib" src="bin-debug/game/PDKObjectPoolInit.js"></script>
+	<script egret="lib" src="bin-debug/game/PDKOtherGameManager.js"></script>
+	<script egret="lib" src="bin-debug/game/PDKShareImageManager.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/support/Dispatcher.js"></script>
+	<script egret="lib" src="bin-debug/game/seat/PDKLeftSeat.js"></script>
+	<script egret="lib" src="bin-debug/game/seat/PDKMySeat.js"></script>
+	<script egret="lib" src="bin-debug/game/seat/PDKRightSeat.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/animation/Wave.js"></script>
+	<script egret="lib" src="bin-debug/game/service/PDKBagService.js"></script>
+	<script egret="lib" src="bin-debug/game/service/PDKCountDownService.js"></script>
+	<script egret="lib" src="bin-debug/game/service/PDKExchangeService.js"></script>
+	<script egret="lib" src="bin-debug/game/service/PDKInviteService.js"></script>
+	<script egret="lib" src="bin-debug/game/service/PDKLoginService.js"></script>
+	<script egret="lib" src="bin-debug/game/service/PDKMailService.js"></script>
+	<script egret="lib" src="bin-debug/game/service/PDKMatchService.js"></script>
+	<script egret="lib" src="bin-debug/game/service/PDKMsgInfoService.js"></script>
+	<script egret="lib" src="bin-debug/game/service/PDKPersonalGameHistory.js"></script>
+	<script egret="lib" src="bin-debug/game/service/PDKRechargeService.js"></script>
+	<script egret="lib" src="bin-debug/game/service/PDKWebService.js"></script>
+	<script egret="lib" src="bin-debug/model/PDKBrowData.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/support/localStorage.js"></script>
+	<script egret="lib" src="bin-debug/model/PDKDebugHelper.js"></script>
+	<script egret="lib" src="bin-debug/model/PDKErrorConfig.js"></script>
+	<script egret="lib" src="bin-debug/model/PDKEventNames.js"></script>
+	<script egret="lib" src="bin-debug/model/PDKGameConfig.js"></script>
+	<script egret="lib" src="bin-debug/model/PDKGameData.js"></script>
+	<script egret="lib" src="bin-debug/model/PDKLanguage.js"></script>
+	<script egret="lib" src="bin-debug/RunFastMain.js"></script>
+	<script egret="lib" src="bin-debug/model/PDKResNames.js"></script>
+	<script egret="lib" src="bin-debug/model/PDKSceneNames.js"></script>
+	<script egret="lib" src="bin-debug/model/PDKUserData.js"></script>
+	<script egret="lib" src="bin-debug/model/PDKUserInfoData.js"></script>
+	<script egret="lib" src="bin-debug/model/PDKWxHelper.js"></script>
+	<script egret="lib" src="bin-debug/ui_extend/PDKNormalButton.js"></script>
+	<script egret="lib" src="bin-debug/ui_extend/PDKStateButton.js"></script>
+	<script egret="lib" src="bin-debug/views/PDKAssetAdapter.js"></script>
+	<script egret="lib" src="bin-debug/views/PDKThemeAdapter.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKActListItem.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKAvatar.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKButtonBar.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKButtonDoTaskSkin.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKCDClock.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKCDProgressBar.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKChatBubble.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKChatList.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKExchangeShowInfo.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKFeiHistoryItem.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKFlyGold.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKGCardsGold.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKGold.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKGoldRainEffectLayer.js"></script>
+	<script egret="lib" src="bin-debug/views/scenes/ScenePDKPlay.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKHornTalkItem.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKInviteListItem.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKLoading.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKLoadingProcess.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKMarqueeText.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKMasterCards.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKPage.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKQProgressBar.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKRedPacketProcess.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKRobot.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKShopItem.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKToast.js"></script>
+	<script egret="lib" src="bin-debug/views/components/PDKUserInfoView.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dayTask/PDKDayTaskItemInfo.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/support/PDKAdvanceMethod.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/PDKDragonGameFeiJi.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/PDKDragonGameLianDui.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/PDKDragonGameSanDaiEr.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/PDKDragonGameSanDaiYi.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/PDKDragonGameShunZi.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/PDKDragonGameSiDaiEr.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/PDKDragonGameZhaDan.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/PDKDragonHongBao.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/PDKDragonHongBaoWarn.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/PDKDragonJingDeng.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/PDKDragonManager.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/PDKDragonMatch9Rule.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/PDKDragonSign.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/PDKDragonSignBtn.js"></script>
+	<script egret="lib" src="bin-debug/views/components/item_renderers/PDKIRButton.js"></script>
+	<script egret="lib" src="bin-debug/views/components/item_renderers/PDKIRContainer.js"></script>
+	<script egret="lib" src="bin-debug/views/components/item_renderers/PDKIRUpDownIcon.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/PDKCreateTable.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/PDKCreateTableInfo.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/PDKHistoryItem.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/PDKHistoryRecord.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/PDKImgToast.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/PDKImgWordBtn.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/PDKJoinTable.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/PDKPersonalDetail.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/PDKPersonalGame.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/PDKPInfItem.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/PDKTableInfo.js"></script>
+	<script egret="lib" src="bin-debug/views/components/redRank/PDKRedRank.js"></script>
+	<script egret="lib" src="bin-debug/views/components/redRank/PDKRedRankInfo.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/animation/Fade.js"></script>
+	<script egret="lib" src="bin-debug/views/pages/PDKPageChannels.js"></script>
+	<script egret="lib" src="bin-debug/views/pages/PDKPageMatchChannel.js"></script>
+	<script egret="lib" src="bin-debug/views/pages/PDKPageNormalChannel.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelAct.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelActAndNotice.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelAlert.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelAlert2.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelAlert3.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelBeforeMatch.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelBindPhone.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelBuyRecorder.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelDayBuy.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelDayTask.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelDelegate.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelDownApp.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelExchange2.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelExchange3.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelFeiEx.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelFirstRechargeNew.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelFollowCourse.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelFreshManReward.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelFRGetRew.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelFristRecharge.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelGetItems.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelGetRed.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelHornTalk.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelInviteList.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelLogin.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelMail.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelMailDetails.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelMatch9GetRew.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelMatch9Info.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelMatchCountDown.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelMatchIntro.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelMatchNotice.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelMatchResult.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelMatchRevive.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelMatchSignUp.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelMatchWaiting.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelMatchWaitingInner.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelModifyNickname.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelNormalResult.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelNotice.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelPhoneLogin.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelPlayerInfo.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelProfile.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelRechargeTips.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelReviveBag.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelRuleTip.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelSelectAvatar.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelSetting.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelShare.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelSign.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelThanksgiving.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/PDKPanelWatchWX.js"></script>
+	<script egret="lib" src="bin-debug/views/scenes/PDKSceneCommon.js"></script>
+	<script egret="lib" src="bin-debug/views/scenes/PDKSceneEffect.js"></script>
+	<script egret="lib" src="bin-debug/views/scenes/PDKSceneGameSel.js"></script>
+	<script egret="lib" src="bin-debug/views/scenes/PDKSceneLoading.js"></script>
+	<script egret="lib" src="bin-debug/views/scenes/PDKSceneLogin.js"></script>
+	<script egret="lib" src="bin-debug/views/scenes/PDKSceneMostTop.js"></script>
+	<script egret="lib" src="bin-debug/views/scenes/PDKSceneRoom.js"></script>
+	<script egret="lib" src="bin-debug/PDKotherGameCfg.js"></script>
+	<!--game_files_end-->
+</head>
+<body>
+
+
+<div style="margin: auto;width: 100%;height: 100%;" id = "egretPlayer" class="egret-player"
+     data-entry-class="RunFastMain"
+     data-orientation="landscape"
+     data-scale-mode="fixedHeight"
+     data-resolution-mode="retina"
+     data-frame-rate="18"
+     data-content-width="1280"
+     data-content-height="640"
+     data-show-paint-rect="false"
+     data-multi-fingered="2"
+     data-show-fps="false" data-show-log="false"
+     data-log-filter="" data-show-fps-style="x:0,y:0,size:20,textColor:0x00d8ff,bgAlpha:0.6">
+    <input id="runfastCopyTex" type ="text" value="" style="visibility: hidden"/>
+    <button id="runfastCopyBtn" type="button" class="copyBtn" style="visibility: hidden" data-clipboard-action="copy" data-clipboard-target="#ddzCopyTex" />            
+</div>
+
+<script>
+	egret.runEgret({renderMode:"webgl"});
+</script>
+</body>
+</html>

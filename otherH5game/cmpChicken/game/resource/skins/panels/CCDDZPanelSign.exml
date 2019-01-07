@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="panels.CCDDZPanelSign" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="bg_img" source="cc_common_alert_bg" scale9Grid="104,94,626,46" height="520" y="54" width="810" horizontalCenter="0"/>
+	<e:Image y="63" source="cc_common_tit_bg" x="478"/>
+	<e:Image id="signTit_img" x="586" y="53" source="cc_sign_tit"/>
+
+	<e:Image id="contentBg_img" x="314" y="136" anchorOffsetX="0" width="656" anchorOffsetY="0" height="332" source="cc_common_bg" scale9Grid="8,8,39,29"/>
+	<e:Group id="item1_group" x="435" y="230" width="98" height="110" anchorOffsetX="49" anchorOffsetY="55">
+		<e:Image id="itemBg_img" y="0" scaleX="1" scaleY="1" x="2" source="cc_sign_bg"/>
+		<e:Image id="rew1_img" x="51" y="69" scaleX="1" scaleY="1" anchorOffsetX="37.5" anchorOffsetY="37" width="72" height="74" source="cc_room_0"/>
+		<e:Image id="tit_img" x="13" y="4.5" scaleX="1" scaleY="1" source="cc_sign_day1"/>
+		<e:Image id="state1_img" x="0" y="-1.5" scaleX="1" scaleY="1" source="cc_sign_hasGet"/>
+		<e:Label id="itemNum0_0label" text="800" bold="true" size="20" fontFamily="Microsoft YaHei" verticalCenter="28" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="item2_group" x="575" y="230" width="98" height="110" anchorOffsetX="49" anchorOffsetY="55">
+		<e:Image y="0" id="itemBg_img0" scaleX="1" scaleY="1" x="2" source="cc_sign_bg"/>
+		<e:Image id="rew2_img" x="51" y="69" scaleX="1" scaleY="1" anchorOffsetX="37" anchorOffsetY="36.5" source="cc_room_0" width="72" height="74"/>
+		<e:Image x="13" y="4.5" id="tit_img0" scaleX="1" scaleY="1" source="cc_sign_day2"/>
+		<e:Image id="state2_img" x="0" y="-1.5" scaleX="1" scaleY="1" source="cc_sign_hasGet"/>
+		<e:Label id="itemNum1_0label" text="800" bold="true" size="20" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="28"/>
+	</e:Group>
+	<e:Group id="item3_group" x="715" y="230" width="98" height="110" anchorOffsetX="49" anchorOffsetY="55">
+		<e:Image y="0" id="itemBg_img1" scaleX="1" scaleY="1" x="2" source="cc_sign_bg"/>
+		<e:Image id="rew3_img" x="51" y="69" scaleX="1" scaleY="1" anchorOffsetX="37" anchorOffsetY="36" source="cc_room_0" width="72" height="74"/>
+		<e:Image x="13" y="4.5" id="tit_img1" scaleX="1" scaleY="1" source="cc_sign_day3"/>
+		<e:Label id="itemNum2_0label" text="800" bold="true" size="20" fontFamily="Microsoft YaHei" verticalCenter="28" horizontalCenter="0"/>
+		<e:Image id="state3_img" x="0" y="-1.5" scaleX="1" scaleY="1" source="cc_sign_hasGet"/>
+	</e:Group>
+	<e:Group id="item4_group" x="855" y="230" width="98" height="110" anchorOffsetX="49" anchorOffsetY="55">
+		<e:Image y="0" id="itemBg_img2" scaleX="1" scaleY="1" x="2" source="cc_sign_bg"/>
+		<e:Image id="rew4_img" x="51" y="69" scaleX="1" scaleY="1" anchorOffsetX="37" anchorOffsetY="36.5" source="cc_sign_item"/>
+		<e:Image x="13" y="4.5" id="tit_img2" scaleX="1" scaleY="1" source="cc_sign_day4"/>
+		<e:Label id="itemNum3_0label" text="1400" bold="true" size="20" fontFamily="Microsoft YaHei" verticalCenter="14" horizontalCenter="-15"/>
+		<e:Label id="itemNum3_1label" text="1小时" x="42" y="84" bold="true" size="20" fontFamily="Microsoft YaHei" textColor="0xffffff"/>
+		<e:Image id="state4_img" x="0" y="-1.5" scaleX="1" scaleY="1" source="cc_sign_hasGet"/>
+	</e:Group>
+	<e:Group id="item5_group" x="509" y="358" width="98" height="110" anchorOffsetX="49" anchorOffsetY="55">
+		<e:Image y="0" id="itemBg_img3" scaleX="1" scaleY="1" x="2" source="cc_sign_bg"/>
+		<e:Image id="rew5_img" x="51" y="70" scaleX="1" scaleY="1" anchorOffsetX="40" anchorOffsetY="38" source="cc_room_0" width="72" height="74"/>
+		<e:Image x="13" y="4.5" id="tit_img3" scaleX="1" scaleY="1" source="cc_sign_day5"/>
+		<e:Image id="state5_img" x="0" y="-1.5" scaleX="1" scaleY="1" source="cc_sign_hasGet"/>
+		<e:Label id="itemNum4_0label" text="800" bold="true" size="20" fontFamily="Microsoft YaHei" verticalCenter="28" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="item6_group" x="649" y="358" width="98" height="110" anchorOffsetX="49" anchorOffsetY="55">
+		<e:Image y="0" id="itemBg_img4" scaleX="1" scaleY="1" x="2" source="cc_sign_bg"/>
+		<e:Image id="rew6_img" x="51" y="69" scaleX="1" scaleY="1" anchorOffsetX="37" anchorOffsetY="36.5" source="cc_room_0" width="72" height="74"/>
+		<e:Image x="13" y="4.5" id="tit_img4" scaleX="1" scaleY="1" source="cc_sign_day6"/>
+		<e:Image id="state6_img" x="0" y="-1.5" scaleX="1" scaleY="1" source="cc_sign_hasGet"/>
+		<e:Label id="itemNum5_0label" text="800" bold="true" size="20" fontFamily="Microsoft YaHei" verticalCenter="28" horizontalCenter="0"/>
+	</e:Group>
+
+	<e:Group id="item7_group" x="789" y="358" width="98" height="110" anchorOffsetX="49" anchorOffsetY="55">
+		<e:Image y="0" id="itemBg_img5" scaleX="1" scaleY="1" x="2" source="cc_sign_bg"/>
+		<e:Image id="rew7_img" x="51" y="69" scaleX="1" scaleY="1" anchorOffsetX="37" anchorOffsetY="36.5" source="cc_sign_item"/>
+		<e:Image x="13" y="4.5" id="tit_img5" scaleX="1" scaleY="1" source="cc_sign_day7"/>
+		<e:Image id="state7_img" x="0" y="-1.5" scaleX="1" scaleY="1" source="cc_sign_hasGet"/>
+		<e:Label id="itemNum6_0label" text="2400" bold="true" size="20" fontFamily="Microsoft YaHei" verticalCenter="10" horizontalCenter="-13"/>
+		<e:Label id="itemNum6_1label" text="1天" bold="true" size="20" fontFamily="Microsoft YaHei" x="49" y="80"/>
+	</e:Group>
+	<e:Image id="close_img" x="1023.67" y="74.5" source="cc_common_close_n" anchorOffsetX="30.67" anchorOffsetY="30.5"/>
+	<e:Image id="getRew_img" y="516" anchorOffsetX="72.5" anchorOffsetY="26" blendMode="normal" source="cc_room_get" horizontalCenter="-0.5"/>
+
+
+
+
+
+
+
+
+	
+</e:Skin>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PDKPanelProfileSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image width="856" height="444" source="pdk_common_alert_bg" scale9Grid="137,111,24,14"/>
+	<e:Button y="-10" id="btnClose" right="-10">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="pdk_common_close_n"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+
+	</e:Button>
+	<e:Rect width="590" height="309" y="74" fillColor="0xf3e0b1" ellipseWidth="10" ellipseHeight="10" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" visible="false"/>
+
+	<e:Image x="304" y="59" width="486" height="317" scale9Grid="28,28,4,5" source="pdk_common_bg_inner"/>
+	<e:Group x="94" y="100">
+		<ns1:PDKAvatar id="avatar" skinName="components.PDKAvatarSkin"/>
+	</e:Group>
+	<e:Group verticalCenter="0" x="355">
+
+		<e:Group x="195" y="220">
+
+			<e:Label id="labNickname" text="昵称" x="0" size="30" scaleX="1" scaleY="1" textColor="0xd9c05e" fontFamily="Microsoft YaHei"/>
+		</e:Group>
+
+		<e:Group x="221" y="141">
+			<e:Label size="30" y="0" text="ID：" fontFamily="Microsoft YaHei" textColor="0xd9c05e"/>
+			<e:Label id="labID" size="30" y="0" text="0" x="91" textColor="0xd9c05e"/>
+		</e:Group>
+		<e:Group y="151" x="231">
+			<e:Label size="30" y="0" text="金豆：" x="0" textColor="0xd9c05e" fontFamily="Microsoft YaHei"/>
+			<e:Image x="92" scaleY="0.8" y="2" scaleX="0.8" source="pdk_ico_gold"/>
+			<e:Label y="0" text="0" size="30" id="labGold" x="125" textColor="0xd9c05e" fontFamily="Microsoft YaHei"/>
+		</e:Group>
+		<e:Group x="221" y="70">
+			<e:Label size="30" y="-19" text="性别：" x="0" textColor="0xd9c05e" fontFamily="Microsoft YaHei"/>
+			<e:RadioButton id="rbBoy" label="男" x="96" y="-20" skinName="ui.PDKRadioButtonSkin" groupName="sex"/>
+			<e:RadioButton id="rbGirl" y="-20" skinName="ui.PDKRadioButtonSkin" label="女" x="218" groupName="sex"/>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle" gap="20"/>
+			</e:layout>
+		</e:Group>
+		<e:Group x="81" y="2" scaleX="0.4" scaleY="0.4">
+		</e:Group>
+		<e:layout>
+			<e:VerticalLayout gap="30"/>
+		</e:layout>
+	</e:Group>
+	<e:Label text="绿色竞技，禁止赌博。" scaleX="1" scaleY="1" textColor="0x3f3f3f" right="16" bottom="22" fontFamily="Microsoft YaHei" size="20"/>
+	<e:Group x="662" y="237" visible="false">
+		<e:Label size="25" y="0" textColor="0xA35119" text="等级:" x="0"/>
+		<e:Label id="labLevel" y="0" textColor="0xA35119" text="LV1" size="25" x="67"/>
+	</e:Group>
+	<e:Group x="662" y="336" visible="false">
+		<e:Label id="labHistory" size="25" y="0" text="0胜0负" x="68" textColor="0xA35119"/>
+		<e:Label size="25" y="0" text="战绩:" x="0" textColor="0xA35119"/>
+	</e:Group>
+	<e:Image source="pdk_wins_promptbg" horizontalCenter="0" top="-32" visible="false"/>
+	<e:Label text="个人信息" y="-12" horizontalCenter="0" textColor="0x493501"/>
+</e:Skin>

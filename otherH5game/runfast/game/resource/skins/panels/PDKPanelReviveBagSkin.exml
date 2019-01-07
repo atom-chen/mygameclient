@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="panels.PDKPanelReviveSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="1280" height="640" states="noRecorder,hasRecorder" >
+	<w:Config id="15f37cb46e1"/>
+	<e:Image id="bg_img" y="74" width="770" height="460" horizontalCenter="0" scale9Grid="23,58,42,16" source="pdk_wins_bg"/>
+	<e:Group id="tit_group" horizontalCenter="1" y="42.7">
+		<e:Image id="titBgImg1" horizontalCenter="0" x="30" scaleX="1" scaleY="1" source="pdk_wins_promptbg"/>
+		<e:Image id="titFontImg1" y="-5" horizontalCenter="1.5" x="138" scaleX="1" scaleY="1" source="revive_tit" visible="false"/>
+		<e:Label text="钻石礼包" textColor="0x493501" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Image id="close_img" x="1010.67" y="95.5" source="pdk_common_close_n" anchorOffsetX="30.67" anchorOffsetY="30.5"/>
+
+	<e:Group id="btnBuy" y="424.5" horizontalCenter="0">
+		<e:Image id="revive_img" source="pdk_btn_yellow" touchEnabled="false"/>
+		<e:Label id="revive_cost" text="6元" textColor="0xffffff" size="26" fontFamily="Microsoft YaHei" horizontalCenter="0" verticalCenter="-5" touchEnabled="false" stroke="2" strokeColor="0xca5609"/>
+	</e:Group>
+	<e:Image id="revive_item1" y="324" anchorOffsetX="47.5" anchorOffsetY="47" x.noRecorder="580" source="pdk_ico_drill01" width="95" height="95" x="580" x.hasRecorder="580"/>
+	<e:Label id="item1Num_label" text="" x="541" y="344" size="20" bold="true" fontFamily="Microsoft YaHei" x.noRecorder="541" x.hasRecorder="541" width.hasRecorder="80" textAlign.hasRecorder="center" width.noRecorder="80" textAlign.noRecorder="center" width="80" textAlign="center"/>
+	<e:Image id="revive_add2" y="324" anchorOffsetX="15" anchorOffsetY="15" source="revive_add" x.noRecorder="640" x="640"/>
+
+	<e:Image id="revive_item2" y="324" anchorOffsetX="47.5" anchorOffsetY="47" x.noRecorder="704" source="pdk_ico_drill01" width="95" height="95" x="704" x.hasRecorder="704"/>
+	<e:Image id="reviveAdd2_img" y="308" anchorOffsetX="35" anchorOffsetY="34" source="revive_addition" x.noRecorder="690" x="690" x.hasRecorder="690"/>
+	<e:Label id="item2Num_label" text="" x="665" y="344" size="20" bold="true" fontFamily="Microsoft YaHei" x.noRecorder="665" x.hasRecorder="665" width.hasRecorder="80" textAlign.hasRecorder="center" width.noRecorder="80" textAlign.noRecorder="center" width="80" textAlign="center"/>
+	<e:Image id="revive_add1" x="700" y="324" anchorOffsetX="15" anchorOffsetY="15" source="revive_add" visible.noRecorder="false" visible="false"/>
+	<e:Image id="revive_item3" x="761.5" y="324" anchorOffsetX="47.5" anchorOffsetY="47" visible.noRecorder="false" source="pdk_room_2" visible="false"/>
+	<e:Label id="item3Num_label" text="1天" x="761" y="344" size="20" bold="true" fontFamily="Microsoft YaHei" visible.noRecorder="false" visible="false"/>
+	<e:Image id="reviveAdd3_img" x="748.75" y="308" anchorOffsetX="35" anchorOffsetY="34" source="revive_addition" visible.noRecorder="false" visible="false"/>
+
+
+	<e:Label id="diamoneTip_label" text="   抱歉，您的钻石少于{0}颗，无法进入游戏，您可以通过以下方式购买。" x="439" y="187" textColor="0x7f3000" size="26" width="419" height="81.34" fontFamily="Microsoft YaHei" anchorOffsetY="0"/>
+</e:Skin>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="panels.PDKPanelMatchRevive" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="1280" height="640" >
+	<e:Group width="770" height="460" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="0" verticalCenter="0">
+		<e:Image id="bg_img" y="0" width="770" height="460" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" x="0" source="pdk_common_alert1_bg" scale9Grid="22,55,42,20"/>
+		<e:Group id="tit_group" horizontalCenter="0" y="0">
+			<e:Image id="titBgImg0" y="3" source="pdk_common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+			<e:Image id="titFontImg0" y="-3" horizontalCenter="0.5" x="138" scaleX="1" scaleY="1" source="matchRevive_tit"/>
+		</e:Group>
+		<e:Image id="closeImg" x="760" y="20" source="pdk_common_close_n" anchorOffsetX="30" anchorOffsetY="30.5" scaleX="1" scaleY="1"/>
+
+		<e:Image id="buyImg" y="241.5" scaleX="1" scaleY="1" x="280" source="pdk_icon_gold"/>
+		<e:Image id="reviveImg" y="382.5" anchorOffsetX="83.5" anchorOffsetY="29.5" scaleX="1" scaleY="1" source="matchRevive1" x="504.5"/>
+		<e:Image id="giveUpImg" y="382.5" anchorOffsetX="83" anchorOffsetY="29.5" scaleX="1" scaleY="1" source="matchRevive" x="264.5"/>
+
+		<e:Image id="desc3Img" x="248" y="163" scaleX="1" scaleY="1" source="matchRevive2"/>
+		<e:Image id="item1" x="324.5" y="252" scaleX="1" scaleY="1" source="matchRevive_add"/>
+
+
+		<e:Image id="reviveDesc_img" y="111" scaleX="1" scaleY="1" source="matchRevive3" x="237"/>
+		<e:Label id="rankLabel" text="0" y="115" size="20" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" textColor="0xff1e00" textAlign="left" horizontalCenter="-46.5"/>
+
+		<e:Label id="reviveLabel" text="(9s)" x="433" y="162.5" fontFamily="Microsoft YaHei" size="40" textColor="0xff0000"/>
+		<e:BitmapLabel id="costLabel" x="350" y="238" font="pdk_font_num_1" text="1000"/>
+	</e:Group>
+</e:Skin>

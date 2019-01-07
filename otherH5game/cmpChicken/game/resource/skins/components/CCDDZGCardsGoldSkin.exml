@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.CCDDZGCardsGoldSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="130" height="27">
+	<e:Image x="0" y="0" source="cc_guesscards_917" touchEnabled="false"/>
+	<e:BitmapLabel id="gold" x="38" text="x9000" font="cc_font_num_16" y="3" letterSpacing="-3" touchEnabled="false"/>
+	<e:Image x="15" y="3" source="cc_icon_gold2" touchEnabled="false"/>
+</e:Skin>

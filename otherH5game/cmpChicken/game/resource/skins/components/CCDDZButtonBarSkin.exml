@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.CCDDZButtonBarSkin" currentState="useCard" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" states="hidden,askMaster,useCard,pass,grap" >
+	<e:Group id="grpButton">
+		<e:layout>
+			<e:HorizontalLayout gap="20"/>
+		</e:layout>
+		<ns1:CCDDZStateButton name="score_0" id="score_0" x="126" y="20" includeIn="askMaster,grap" labelIcon="cc_play_btn_word_nocall_n" labelIcon.grap="cc_play_btn_not_grab" skinName="ui.CCDDZPlayBlueButtonSkin"/>
+		<ns1:CCDDZStateButton name="score_1" id="score_1" includeIn="askMaster,grap" x="136" y="30" labelIcon="cc_play_btn_word_1" labelIcon.grap="cc_play_btn_grab" skinName="ui.CCDDZPlayOrangeButtonSkin"/>
+		<ns1:CCDDZStateButton name="score_2" id="score_2" skinName="ui.CCDDZPlayOrangeButtonSkin" includeIn="askMaster" x="146" y="40" labelIcon="cc_play_btn_word_2"/>
+		<ns1:CCDDZStateButton name="score_3" skinName="ui.CCDDZPlayOrangeButtonSkin" id="score_3" includeIn="askMaster" x="156" y="50" labelIcon="cc_play_btn_word_3"/>		
+		<ns1:CCDDZStateButton skinName="ui.CCDDZPlayBlueButtonSkin" labelIcon="cc_play_btn_word_no_n" name="pass" x="116" y="10" includeIn="hidden,useCard,pass" visible.hidden="false"/>
+		<ns1:CCDDZStateButton skinName="ui.CCDDZPlayBlueButtonSkin" labelIcon="cc_play_btn_word_again_n" name="cancelSelect" x="10" y="10" includeIn="hidden,useCard" visible.hidden="false"/>
+		<ns1:CCDDZStateButton skinName="ui.CCDDZPlayBlueButtonSkin" labelIcon="cc_play_btn_word_prompt_n" name="help" x="206" y="20" includeIn="hidden,useCard" visible.hidden="false"/>
+		<ns1:CCDDZStateButton skinName="ui.CCDDZPlayOrangeButtonSkin" labelIcon="cc_play_btn_word_come_n" name="use" x="216" y="30" includeIn="hidden,useCard" visible.hidden="false"/>
+	</e:Group>
+</e:Skin>

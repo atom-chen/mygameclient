@@ -1,0 +1,58 @@
+{
+	"native": {
+		"path_ignore-": [
+			"resource/skins"
+		],
+		"ios_path": "../../ios/doudizhu",
+		"android_path": "../android"
+	},
+	"publish": {
+		"web": 0,
+		"native": 1,
+		"path": "bin-release"
+	},
+	"egret_version": "5.0.13",
+	"modules": [
+		{
+			"name": "egret"
+		},
+		{
+			"name": "eui"
+		},
+		{
+			"name": "res"
+		},
+		{
+			"name": "tween"
+		},
+		{
+			"name": "socket"
+		},
+		{
+			"name": "dragonBones"
+		},
+		{
+			"name": "protobuf",
+			"path": "./../thirdlib/protobuf"
+		},
+		{
+			"name": "async",
+			"path": "./../thirdlib/async"
+		},
+		{
+			"name": "md5",
+			"path": "./../thirdlib/md5"
+		},
+		{
+			"name": "clipbord",
+			"path": "./../thirdlib/clipbord"
+		},
+		{
+			"name": "game"
+		}
+	],
+	"version": {
+		"main": "1.0.0",
+		"build": 173
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.PDKFlyGoldSkin" width="21" height="21" xmlns:e="http://ns.egret.com/eui">
+	<e:Image x="11" y="11" width="21" height="21" anchorOffsetX="11" anchorOffsetY="11" source="pdk_icon_gold2"/>
+</e:Skin>

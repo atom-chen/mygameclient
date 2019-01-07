@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "outFile": "bin/clipbord/clipbord.js",
+        "allowJs": true
+    },
+    "files": [
+        "src/clipbord.min.js"
+    ]
+}

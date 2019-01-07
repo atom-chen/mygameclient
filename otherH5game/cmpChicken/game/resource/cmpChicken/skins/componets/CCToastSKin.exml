@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="components.CCToastSKin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="480" height="48">
+	<e:Rect fillAlpha="0.75" width="100%" height="100%" horizontalCenter="0" verticalCenter="0"/>
+	<e:Label id="lblTips" text="提示文字！" left="32" top="12" bottom="12" right="32" size="24" fontFamily="Microsoft YaHei" textAlign="center"/>
+</e:Skin>

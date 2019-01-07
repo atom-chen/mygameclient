@@ -1,0 +1,7 @@
+{"file":"pdk_sheet_mall_recorder.png","frames":{
+"mall_recorder_bg2":{"x":0,"y":0,"w":212,"h":307,"offX":0,"offY":0,"sourceW":212,"sourceH":307},
+"mall_recorder_bg3":{"x":214,"y":0,"w":211,"h":307,"offX":1,"offY":0,"sourceW":212,"sourceH":307},
+"mall_recorder_buy_h":{"x":212,"y":367,"w":155,"h":56,"offX":0,"offY":0,"sourceW":156,"sourceH":57},
+"mall_recorder_buy_n":{"x":212,"y":309,"w":155,"h":56,"offX":0,"offY":0,"sourceW":156,"sourceH":57},
+"mall_tit":{"x":212,"y":425,"w":143,"h":50,"offX":0,"offY":0,"sourceW":143,"sourceH":50},
+"mall_recorder_bg1":{"x":0,"y":309,"w":210,"h":307,"offX":2,"offY":0,"sourceW":212,"sourceH":307}}}

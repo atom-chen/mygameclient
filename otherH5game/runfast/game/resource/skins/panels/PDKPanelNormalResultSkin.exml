@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PanelNormalResultSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image source="pdk_play_result_bg"/>
+	<e:Image source="pdk_play_result_header" horizontalCenter="0.5" verticalCenter="-106.5"/>
+	<e:Image id="imgWinBg" source="pdk_play_result_shu_bg" horizontalCenter="0" top="-95"/>
+	<e:Image id="imgWinFlag" source="pdk_play_result_beiguan" horizontalCenter="0" top="15"/>
+	<e:Group id="grpRank0" width="600" height="73.33" y="157.03" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="0" visible="false">
+		<e:Image x="423" y="17" source="pdk_common_gold_bg"/>
+		<e:Image x="420" y="18" source="pdk_icon_gold"/>
+		<ns1:PDKAvatar id="avatar1" skinName="components.PDKAvatarSkin" scaleX="0.4" scaleY="0.4" left="21" verticalCenter="0.33500000000000085"/>
+		<e:Label id="nick1" text="昵称很长很长很长" x="110.03" width="150" verticalCenter="0.33500000000000085" textAlign="center" textColor="0xf4e704" stroke="2" strokeColor="0x5d3400" multiline="false" verticalAlign="middle" wordWrap="false" height="35"/>
+		<e:Label id="lastcard1" text="0" x="272.68" width="150" verticalCenter="0.33500000000000085" textAlign="center" textColor="0xF4E704" stroke="2" strokeColor="0x5d3400"/>
+		<e:Label id="score1" text="+3000" x="434.03" width="150" verticalCenter="0.33500000000000085" textAlign="center" textColor="0xF4E704" stroke="2" strokeColor="0x5d3400"/>
+		<e:Image id="pochan1" x="9" y="-3" source="pdk_play_result_pochan" scaleX="1.1" scaleY="1.1" visible="false"/>
+	</e:Group>
+	<e:Group id="grpRank1" width="600" height="73.33" y="230.41" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="0" visible="false">
+		<e:Image x="423" y="17" source="pdk_common_gold_bg"/>
+		<e:Image x="420" y="18" source="pdk_icon_gold"/>
+		<ns1:PDKAvatar id="avatar2" skinName="components.PDKAvatarSkin" scaleX="0.4" scaleY="0.4" verticalCenter="0.33500000000000085" left="21"/>
+		<e:Label id="nick2" text="昵称" x="110.03" width="150" verticalCenter="0.33500000000000085" textAlign="center" textColor="0xF4E704" stroke="2" strokeColor="0x5d3400" multiline="false" height="35" verticalAlign="middle"/>
+		<e:Label id="lastcard2" text="0" x="272.68" width="150" verticalCenter="0.33500000000000085" textAlign="center" textColor="0xF4E704" stroke="2" strokeColor="0x5d3400"/>
+		<e:Label id="score2" text="+3000" x="434.03" width="150" verticalCenter="0.33500000000000085" textAlign="center" textColor="0xF4E704" stroke="2" strokeColor="0x000000"/>
+		<e:Image id="pochan2" x="9" y="-3" source="pdk_play_result_pochan" scaleX="1.1" scaleY="1.1" visible="false"/>
+	</e:Group>
+	<e:Group id="grpRank2" width="600" height="73.33" y="303.78" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="0" visible="false">
+		<e:Image x="423" y="17" source="pdk_common_gold_bg"/>
+		<e:Image x="420" y="17" source="pdk_icon_gold"/>
+		<ns1:PDKAvatar id="avatar3" skinName="components.PDKAvatarSkin" scaleX="0.4" scaleY="0.4" verticalCenter="0.33500000000000085" left="21"/>
+		<e:Label id="nick3" text="昵称" x="110.03" width="150" verticalCenter="0.33500000000000085" textAlign="center" textColor="0xF4E704" stroke="2" strokeColor="0x5d3400" multiline="false" height="35" verticalAlign="middle"/>
+		<e:Label id="lastcard3" text="0" x="272.68" width="150" verticalCenter="0.33500000000000085" textAlign="center" textColor="0xF4E704" stroke="2" strokeColor="0x5d3400"/>
+		<e:Label id="score3" text="+3000" x="434.03" width="150" verticalCenter="0.33500000000000085" textAlign="center" textColor="0xF4E704" stroke="2" strokeColor="0x000000"/>
+		<e:Image id="pochan3" x="9" y="-3" source="pdk_play_result_pochan" scaleX="1.1" scaleY="1.1" visible="false"/>
+	</e:Group>
+	<e:Button id="btnContinue" label="Button" skinName="components.PDKButtonContinueSkin" horizontalCenter="0" bottom="31"/>
+	<e:Label id="labelFee" text="本局每人服务费600" size="18" right="109" bottom="39" textColor="0x894b04"/>
+	<e:Button id="btnClose" label="Button" x="667" y="-11" skinName="ui.PDKCloseButtonSkin" width="60" height="60"/>
+</e:Skin>

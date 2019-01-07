@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PDKPanelActAndNotice" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  states="act,notice" >
+	<e:Group horizontalCenter="0" verticalCenter="0" touchEnabled="false" width="1280" height="640">
+		<e:Image id="bgImg" source="pdk_common_alert_bg" width="810" height="520" scale9Grid="107,94,642,42" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image id="closeImg" x="1024.67" y="77.5" source="pdk_common_close_n" anchorOffsetX="30.67" anchorOffsetY="30.5" touchEnabled="true"/>
+		<e:Group id="titGroup" horizontalCenter="0.5" anchorOffsetY="0" height="57" y="60">
+			<e:Image id="titBgImg" y="-7" x="-3" source="tit_bg1" anchorOffsetX="0" width="368" scale9Grid="31,18,22,34" scaleX="1" scaleY="1"/>
+			<e:Image id="btnBgImg" x="2" y="1" source="tit_btnbg" scaleX="1" scaleY="1" x.notice="162"  touchEnabled="true"/>
+			<e:Group id="actNormalGroup" width="180" height="55" x="0" y="0" anchorOffsetY="0" anchorOffsetX="0">
+				<e:Image id="actTitNormalImg" x="55" y="8" source="tit_act1" scaleX="1" scaleY="1" visible.act="false" touchEnabled="false"/>
+			</e:Group>
+			<e:Group id="noticeNormalGroup" width="180" height="55" x="181" y="0" anchorOffsetY="0" anchorOffsetX="0">
+				<e:Image id="noticeTitNormalImg" x="48" y="8" source="tit_notice1" scaleX="1" scaleY="1" visible.notice="false" touchEnabled="false"/>
+			</e:Group>
+
+
+			<e:Image id="actTitSelImg" x="55" y="8" source="tit_act" scaleX="1" scaleY="1" visible.notice="false" touchEnabled="false"/>
+			<e:Image id="noticeTitSelImg" x="229" y="8" source="tit_notice" scaleX="1" scaleY="1" visible.act="false" touchEnabled="false"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

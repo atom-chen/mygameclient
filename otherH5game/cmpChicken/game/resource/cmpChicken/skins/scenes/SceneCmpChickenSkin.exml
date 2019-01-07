@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="scenes.SceneCmpChickenSkin" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image horizontalCenter="0" verticalCenter="0" source="cc_play_table_bg" width="100%" height="100%"/>
+	<ns1:CCGold id="myGold" x="120" skinName="components.CCGoldSkin" bottom="6" currentState="goldWithBuy"/>
+	<ns1:CCGold id="myDiamond" x="300" skinName="components.CCGoldSkin" bottom="6" currentState="diamondWithBuy"/>
+	<ns1:CCGold id="myRedCoin" x="480" skinName="components.CCGoldSkin" bottom="6" currentState="redcoinWithBuy"/>
+	<e:Button id="backBtn" left="16" top="20" anchorOffsetX="25" anchorOffsetY="25">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="cc_play_back_btn" source.down="cc_play_back_btn"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image id="bgmBtn" top="20" left="88" source="cc_play_voice_btn_on" anchorOffsetX="25" anchorOffsetY="25"/>
+	<e:Image id="ruleBtn" right="16" source="cc_play_rule_btn" top="20" anchorOffsetX="25" anchorOffsetY="25"/>
+	<e:Group id="baseScoreCon" horizontalCenter="0" verticalCenter="-80">
+		<e:Image source="cc_play_table_logo" horizontalCenter="0"/>
+		<e:Label id="baseScore" text="底分：1000" size="24" textAlign="center" verticalAlign="middle" fontFamily="Microsoft YaHei" textColor="0x000000" top="45"/>
+	</e:Group>
+	<e:Label id="labWaiting" size="48" text="等待开局…" horizontalCenter="0" verticalCenter="0" stroke="2" strokeColor="0x444444" touchEnabled="false" fontFamily="Microsoft YaHei" visible="false"/>
+	<ns1:CCStatusLabel id="lblStatus" y="280" horizontalCenter="0" skinName="components.CCStatusLabelSkin" visible="false"/>
+	<ns1:CCLabelButton id="startBtn" horizontalCenter="0" label="准备" verticalCenter="0">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="cc_play_btn_blue" source.down="cc_play_btn_blue"/>
+			<e:Label id="labelDisplay" size="28" verticalAlign="middle" textAlign="center" verticalCenter="-2" fontFamily="Microsoft YaHei" horizontalCenter="0"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:CCLabelButton>
+	<ns1:CCClock id="clock" horizontalCenter="0" skinName="components.CCClockSkin" top="10" visible="false"/>
+	<ns1:CCPlayerUI id="player1" skinName="components.CCPlayerUISkin" left="0" bottom="0"/>
+	<e:BitmapLabel id="labChange1" text="+123" touchEnabled="false" scaleX="0.8" scaleY="0.8" horizontalCenter="0" y="360" font="cc_font_num_17" visible="false"/>
+	<ns1:CCPlayerUI id="player2" skinName="components.CCPlayerUISkin" right="16" y="286" visible="false"/>
+	<e:BitmapLabel id="labChange2" text="+123" font="cc_font_num_17" touchEnabled="false" scaleX="0.8" scaleY="0.8" right="203" top="433" visible="false"/>
+	<ns1:CCPlayerUI id="player3" skinName="components.CCPlayerUISkin" right="150" y="16"/>
+	<e:BitmapLabel id="labChange3" text="+123" font="cc_font_num_17" touchEnabled="false" scaleX="0.8" scaleY="0.8" right="337" y="209" visible="false"/>
+	<ns1:CCPlayerUI id="player4" skinName="components.CCPlayerUISkin" left="150" y="16" visible="false"/>
+	<e:BitmapLabel id="labChange4" text="+123" font="cc_font_num_17" y="209" left="337" touchEnabled="false" scaleX="0.8" scaleY="0.8" visible="false"/>
+	<ns1:CCPlayerUI id="player5" skinName="components.CCPlayerUISkin" left="16" y="286" visible="false"/>
+	<e:BitmapLabel id="labChange5" text="+123" font="cc_font_num_17" y="433" left="203" touchEnabled="false" scaleX="0.8" scaleY="0.8" visible="false"/>
+	<e:Label id="ticket" text="本房间对局门票为：{0}金豆/局" size="16" right="10" bottom="203" fontFamily="微软雅黑" visible="false"/>
+	<ns1:CCChooseCard id="chooseCard" skinName="components.CCChooseCardSkin" horizontalCenter="0" verticalCenter="0" visible="false"/>
+	<e:Group id="grpRed" anchorOffsetX="0" scaleX="1" scaleY="1" right="10" touchEnabled="false" height="110" y="320">
+		<e:Image id="mRed_img" x="50" y="54" scaleX="1" scaleY="1" touchEnabled="true" anchorOffsetX="51.5" anchorOffsetY="44.5" source="cc_play_btn_chou"/>
+		<e:Image id="redCountBg_img" x="72.11" y="9.5" source="cc_task_tipbg" touchEnabled="false"/>
+		<e:Label id="redCount" text="" x="86.5" y="22" fontFamily="微软雅黑" size="20" textColor="0xFFFFFF" textAlign="center" anchorOffsetX="20" anchorOffsetY="10" width="40" touchEnabled="false" height="20"/>
+		<e:List id="redList" y="84.5" itemRendererSkinName="components.CCDDZRedPacketProcessSkin" scaleX="1" horizontalCenter="-2">
+		<e:ArrayCollection>
+			<e:Array>
+			<e:Object label="数据1"/>
+			<e:Object label="数据2"/>
+			<e:Object label="数据3"/>
+			<e:Object label="null"/>
+			<e:Object label="null"/>
+			</e:Array>
+		</e:ArrayCollection>
+		<e:layout>
+			<e:HorizontalLayout gap="2"/>
+		</e:layout>
+		</e:List>
+	</e:Group>
+	<e:Image id="redNormal_img" y="430" source="cc_play_red_pop" width="143" height="153" anchorOffsetX="71.5" anchorOffsetY="76.5" touchEnabled="true" right="106"/>
+	<ns1:CCLabelButton id="continueBtn" horizontalCenter="0" label="准备" verticalCenter="0">
+		<ns1:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="cc_play_btn_blue" source.down="cc_play_btn_blue"/>
+			<e:Label id="labelDisplay" size="28" verticalAlign="middle" textAlign="center" verticalCenter="-2" fontFamily="Microsoft YaHei" horizontalCenter="0"/>
+		</e:Skin>
+		</ns1:skinName>
+	</ns1:CCLabelButton>
+	<ns1:CCLabelButton id="changeBtn" horizontalCenter="100" label="换桌" verticalCenter="0" visible="false">
+		<ns1:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="cc_play_btn_yellow" source.down="cc_play_btn_yellow"/>
+			<e:Label id="labelDisplay" size="28" verticalAlign="middle" textAlign="center" verticalCenter="-2" fontFamily="Microsoft YaHei" horizontalCenter="0"/>
+		</e:Skin>
+		</ns1:skinName>
+	</ns1:CCLabelButton>
+	<e:Image id="start_bg" source="cc_play_compare_start_bg" verticalCenter="0" visible="false"/>
+	<e:Image id="start_word" source="cc_play_compare_word" anchorOffsetX="259" anchorOffsetY="58.5" horizontalCenter="0" y="320" visible="false"/>
+</e:Skin>

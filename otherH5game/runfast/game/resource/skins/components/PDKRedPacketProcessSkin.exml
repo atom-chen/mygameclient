@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.PDKRedPacketProcessSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image x="0" y="0" source="pdk_play_bottom_star"/>
+	<e:Image id="light" x="0" verticalCenter="0" source="pdk_play_star_small"/>
+</e:Skin>

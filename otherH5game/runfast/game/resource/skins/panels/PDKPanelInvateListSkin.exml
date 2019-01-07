@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PDKPanelInvateListSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+
+	<e:Image id="bgImg" horizontalCenter="0" verticalCenter="0" scale9Grid="23,56,40,14" width="770" height="460" source="pdk_wins_bg"/>
+	<e:Group id="tit_group" horizontalCenter="0" y="57.67" anchorOffsetY="0">
+		<e:Image id="titBgImg1" scaleX="1" scaleY="1" source="pdk_wins_promptbg"/>
+		<e:Image id="titFontImg1" y="-20" horizontalCenter="0.5" x="138" scaleX="1" scaleY="1" source="invite_4" visible="false"/>
+		<e:Label text="邀请列表" horizontalCenter="0" verticalCenter="1" textColor="0x493501"/>
+	</e:Group>
+
+	<e:Button id="btnClose" label="" x="825" y="72.5">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="pdk_common_close_n" source.down="pdk_common_close_h"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+
+	</e:Button>
+	<e:Image id="contentBgImg" y="160" source="pdk_common_bg" x="147" scale9Grid="10,8,66,49" height="340" anchorOffsetX="0" width="670" visible="false"/>
+	<e:Image id="contentTitBgImg" y="160" x="117.66" scale9Grid="130,0,20,47" width="726.01" height="40" anchorOffsetY="0" source="pdk_tops_bg" anchorOffsetX="0"/>
+	<e:Group id="noInviteGroup" x="182" y="230">
+		<e:Image id="split1Img0" y="5.67" x="72.98" scaleX="1" scaleY="1" source="invite_bg1"/>
+		<e:Image id="split2Img0" y="23" x="346.33" scaleX="1" scaleY="1" source="pdk_girl"/>
+	</e:Group>
+	<e:Scroller id="scroller" width="660" height="290" y="200" anchorOffsetY="0" x="152" scrollPolicyV="auto">
+		<e:Group anchorOffsetY="0" height="290">
+			<e:List id="list" y="0" scaleX="1" scaleY="1" x="0" itemRendererSkinName="components.PDKInviteListItemSkin" width="660" anchorOffsetY="0">
+				<e:ArrayCollection>
+					<e:Array>
+						<e:Object fsdf="null"/>
+						<e:Object fsdf="null"/>
+						<e:Object fsdf="null"/>
+						<e:Object fsdf="null"/>
+					</e:Array>
+				</e:ArrayCollection>
+			</e:List>
+		</e:Group>
+	</e:Scroller>
+
+	<e:Label id="lbCount" text="您已累计获得0次抽红包机会，被邀请好友赢得5局游戏即可获得1次机会" y="511" size="20" horizontalCenter="2" textColor="0x7f4e00"/>
+	<e:Image id="nickImg" x="230" y="160.99" source="invite_7"/>
+	<e:Image id="timeImg" y="160.99" horizontalCenter="0" source="invite_8"/>
+	<e:Image id="ok5Img" y="160.99" horizontalCenter="224" source="invite_9"/>
+	<e:Image id="split1Img" y="160" source="invite_split" x="350" height="40"/>
+	<e:Image id="split2Img" y="160" source="invite_split" height="40" x="590"/>
+</e:Skin>

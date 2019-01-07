@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PDKPanelAlert2Skin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image width="770" height="460" scale9Grid="26,59,37,15" source="pdk_wins_bg"/>
+	<e:Image source="pdk_wins_promptbg" horizontalCenter="0" top="-33"/>
+	<e:Label text="提示" horizontalCenter="0" top="-13" textColor="0x493501"/>
+	<e:Button right="-22" id="btnClose" skinName="ui.PDKCloseButtonSkin" y="-12" x="10"/>
+	<e:Label id="labContent" text="..." width="400" horizontalCenter="0" verticalCenter="-20" textAlign="center" textColor="0xBE0000" lineSpacing="5"/>
+	<ns1:PDKNormalButton id="btnConfirm" horizontalCenter="1" bottom="85" x="50" y="142" skinName="ui.PDKNormalButtonSkin"/>
+</e:Skin>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.CCDDZPanelMailSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="640" width="1280">
+
+	<e:Image id="bg_img" x="652" y="313" anchorOffsetX="410" anchorOffsetY="257" width="810" height="520" source="cc_common_alert_bg" scale9Grid="129,110,510,6"/>
+	<e:Image id="closeImg" x="1032" y="79" source="cc_common_close_n" anchorOffsetX="30" anchorOffsetY="30.5"/>
+	<e:Group id="tit_group" horizontalCenter="0" y="61">
+		<e:Image id="titBgImg0" y="3" source="cc_common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+		<e:Image id="titFontImg0" y="-3" horizontalCenter="0.5" x="138" scaleX="1" scaleY="1" source="cc_email_tit"/>
+	</e:Group>
+
+	<e:Group id="noMailGroup" x="460" y="190">
+		<e:Image x="0" y="0" source="cc_email_noNew2" scaleX="1" scaleY="1"/>
+		<e:Image x="270" y="60" source="cc_email_noNew1" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Scroller id="mailScroller" width="630" height="370" y="130" anchorOffsetX="0" x="337">
+		<e:Group width="630">
+			<e:List id="list" width="630">
+				<e:itemRendererSkinName>
+					<e:Skin xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" >
+						<ns1:CCDDZMailItem id="item" skinName="components.CCDDZMailItemSkin"/>
+					</e:Skin>
+				</e:itemRendererSkinName>
+				<e:layout>
+					<e:VerticalLayout gap="4" horizontalAlign="center" verticalAlign="top"/>
+					
+				</e:layout>
+				
+				<e:ArrayCollection>
+					<e:Array>
+					</e:Array>
+				</e:ArrayCollection>
+			</e:List>
+
+			<e:layout>
+				<e:VerticalLayout horizontalAlign="center"/>
+			</e:layout>
+		</e:Group>
+	</e:Scroller>
+	
+</e:Skin>

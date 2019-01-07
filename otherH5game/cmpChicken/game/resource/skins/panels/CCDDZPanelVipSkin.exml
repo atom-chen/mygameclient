@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="panels.CCDDZPanelVipSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="1280" height="640" >
+	<e:Group x="0" y="0">
+	</e:Group>
+	<e:Image id="bg_img" y="74" width="770" height="460" horizontalCenter="0" source="cc_common_alert1_bg" scale9Grid="23,58,42,16"/>
+	<e:Button id="btnClose" x="978" y="62" name="close">
+		<e:skinName>
+		<e:Skin states="up,down,disabled" xmlns:ns1="*">
+			<e:Image width="100%" height="100%" source="cc_common_close_n"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Group id="tit_group" horizontalCenter="0" y="78">
+		<e:Image id="titBgImg0" y="0" source="cc_common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+		<e:Image id="titFontImg0" y="-5" horizontalCenter="0" x="138" scaleX="1" scaleY="1" source="cc_vip_tit"/>
+	</e:Group>
+	<e:Image id="scaleImg" width="730" height="230" source="cc_common_bg" scale9Grid="10,8,66,49" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" bottom="124"/>
+	<e:Group id="infoGrp" scaleX="1" scaleY="1" bottom="250" width="600" right="280">
+		<e:Image id="mBg_img0" x="0" y="0" source="cc_task_item_bg" scaleX="1" scaleY="1" width="100%" height="100%"/>
+		<e:Group id="proGrp" y="28" width="300" horizontalCenter="22">
+			<e:Image id="proBgImg" x="0" y="0" source="cc_task_progress_bg" width="300" scale9Grid="9,7,7,6" scaleX="1" scaleY="1" height="23"/>
+			<e:Image id="proImg" height="23" x="0" y="0" source="cc_task_progress_pro" scale9Grid="12,7,5,6" scaleX="1" scaleY="1" width="28"/>
+			<e:Label id="proLabel" text="0/0" fontFamily="Microsoft YaHei" size="20" verticalAlign="middle" anchorOffsetX="22" anchorOffsetY="8" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="-3" textAlign="center"/>
+		</e:Group>
+		<e:Label id="descLlabel" text="充值1元增加1点财富值，财富值每天会自然减少10。" y="69" fontFamily="Microsoft YaHei" size="20" anchorOffsetX="0" anchorOffsetY="9" textAlign="center" scaleX="1" scaleY="1" textColor="0x7F3000" left="125"/>
+		<e:Label id="leveNorlTit" text="普通" x="21" y="19" fontFamily="Microsoft YaHei" size="46" textColor="0xfdfab7"/>
+		<e:Group id="curLevelGrp" verticalCenter="-5" height="32" left="40" width="100">
+			<e:Image id="mPro_img0" x="0" scaleX="1" scaleY="1" source="cc_vip_t1" verticalCenter="0"/>
+			<e:BitmapLabel id="curLevelLabel" text="1" anchorOffsetX="0" textAlign="center" scaleX="1" scaleY="1" verticalCenter="0" left="65" font="cc_font_num_11"/>
+		</e:Group>
+		<e:Group id="nextLevelGrp" verticalCenter="-5" height="32" right="10" width="100">
+			<e:Image id="mPro_img1" x="0" scaleX="1" scaleY="1" source="cc_vip_t1" verticalCenter="0"/>
+			<e:BitmapLabel id="nextLevelLabel" text="1" anchorOffsetX="0" textAlign="center" scaleX="1" scaleY="1"  verticalCenter="0" left="65" font="cc_font_num_11"/>
+		</e:Group>
+	</e:Group>
+	<e:Scroller id="vipScroll" width="740" height="140" y="130" anchorOffsetY="0" anchorOffsetX="0" scrollPolicyV="off" scrollPolicyH="auto" horizontalCenter="0" touchEnabled="false" touchChildren="false">
+		<e:Group height="120">
+		<e:List id="levelList" height="100%" x="5" y="0" anchorOffsetX="0">
+			<e:itemRendererSkinName>
+			<e:Skin xmlns:CCalien="CCalien.*" xmlns:ns1="*" width="740" height="160">
+				<e:Group id="rootGroup" horizontalCenter="0" y="0" width="100%" height="160">
+				<ns1:CCDDZAvatar id="avatar" skinName="components.CCDDZAvatarSkin" scaleX="0.65" scaleY="0.65" horizontalCenter="-159.5" top="19"/>
+				<e:Image id="levelBgImg" y="106.5" x="181" source="cc_vip_bg1" scale9Grid="14,0,20,27" width="60"/>
+				<e:Label id="titLabel" text="VIP1等级特权(财富值达到1)" y="22" size="24" textAlign="left" width="350" fontFamily="Microsoft YaHei" bold="true" textColor="0xba2e2e" horizontalCenter="100"/>
+				<e:Label id="descLabel" text="1.每天领取500金豆\n2.每天领取2钻石\n3.每天一次抽奖机会" y="56" size="20" textAlign="left" width="330" fontFamily="Microsoft YaHei" anchorOffsetX="0" textColor="0x7f3000" lineSpacing="8" horizontalCenter="99"/>
+				<e:Label id="levelLabel" text="VIP9" y="110" size="20" textAlign="left" fontFamily="Microsoft YaHei" anchorOffsetX="0" lineSpacing="5" x="191" textColor="0xffffff"/>
+				</e:Group>
+			</e:Skin>
+			</e:itemRendererSkinName>
+			<e:layout>
+			<e:HorizontalLayout gap="0"/>
+			</e:layout>
+			<e:ArrayCollection>
+			</e:ArrayCollection>
+		</e:List>
+		</e:Group>
+	</e:Scroller>
+	<e:Group id="infoGrp1" scaleX="1" scaleY="1" bottom="135" width="600" right="280">
+		<e:Image id="mBg_img1" x="0" y="0" source="cc_task_item_bg" scaleX="1" scaleY="1" width="100%" height="100%"/>
+		<e:Label id="noRewDesc" text="普通用户当前无奖励" fontFamily="Microsoft YaHei" size="24" anchorOffsetX="0" textAlign="center" scaleX="1" scaleY="1" left="140" textColor="0x7f3000" bold="true" verticalCenter="0"/>
+		<e:Scroller id="goodScroller" y="0" height="100" scaleX="1" scaleY="1" width="550" horizontalCenter="0">
+			<e:Group height="100">
+			<e:List id="goodsList" height="80" x="0" verticalCenter="0">
+				<e:itemRendererSkinName>
+				<e:Skin xmlns:ns1="*">
+					<ns1:CCDDZGoodsItem id="goodsItem" x="9" y="9" skinName="components.CCDDZGoodsItemSkin"/>
+				</e:Skin>
+				</e:itemRendererSkinName>
+				<e:layout>
+				<e:HorizontalLayout gap="10" paddingTop="-15"/>
+				</e:layout>
+				<e:ArrayCollection>
+				<e:Array>
+				</e:Array>
+				</e:ArrayCollection>
+			</e:List>
+			</e:Group>
+		</e:Scroller>
+		<e:Group id="buyGrp" height="48" width="130" anchorOffsetX="65" anchorOffsetY="24" x="525" y="46" touchEnabled="true">
+		<e:Image id="buyImg" x="0" scaleX="1" scaleY="1" verticalCenter="0" source="cc_vip_buy" width="130" height="48"/>
+		</e:Group>
+
+	</e:Group>
+	<e:Image id="levelPreImg" y="328" x="279" scaleX="1" scaleY="1" source="cc_vip_level"/>
+	<e:Image id="rewPreImg" y="443" x="301.5" scaleX="1" scaleY="1" source="cc_vip_t2"/>
+
+	<e:Group id="arrLeftGrp" height="100" width="100" anchorOffsetX="50" anchorOffsetY="50" x="320" y="200">
+		<e:Image id="leftImg" scaleX="1" scaleY="1" verticalCenter="0" source="cc_vip_arrLeft" horizontalCenter="0" rotation="-180" anchorOffsetX="14" anchorOffsetY="20.5"/>
+	</e:Group>
+	<e:Group id="arrRightGrp" height="100" width="100" scaleX="1" scaleY="1" anchorOffsetX="50" anchorOffsetY="50" x="960" y="200">
+		<e:Image id="rightImg" scaleX="1" scaleY="1" verticalCenter="0" source="cc_vip_arrLeft" horizontalCenter="0" anchorOffsetX="14" anchorOffsetY="20.5"/>
+	</e:Group>
+
+</e:Skin>

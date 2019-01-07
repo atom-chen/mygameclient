@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="scenes.CCDDZSceneMostTopSkin" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="grpWaiting" horizontalCenter="0" verticalCenter="0" width="100%" height="100%" visible="false">
+		<e:Rect height="100%" width="100%" fillAlpha="0.5"/>
+		<ns1:CCDDZLoading id="loading" horizontalCenter="0" verticalCenter="0"/>
+		<e:Label id="labLoadingTip" horizontalCenter="0" verticalCenter="100" stroke="1" strokeColor="0x888888"/>
+	</e:Group>
+	<e:Group id="grpDisconnect" width="100%" touchEnabled="false" height="100%" visible="false">
+		<e:Rect height="100%" width="100%" fillAlpha="0.5"/>
+		<e:Button id="btnReconnect" horizontalCenter="0" verticalCenter="50.5" name="confirm" skinName="ui.CCDDZTestButtonSkin" width="194"/>
+		<e:Label id="labDisconnect" text="该账号已在其他地方登录" horizontalCenter="0" size="40" verticalCenter="-90" bold="true"/>
+	</e:Group>
+	<e:Group id="grpToast" horizontalCenter="0" verticalCenter="0" touchEnabled="false" touchChildren="false" minWidth="300" visible="false">
+		<e:Image source="cc_common_toast" scale9Grid="5,4,2,3" width="100%" height="100%"/>
+		<e:Label id="labToast" text="notify" left="10" right="10" top="10" bottom="10" textAlign="center" verticalAlign="middle" size="26" textColor="0xECECEC"/>
+	</e:Group>
+</e:Skin>

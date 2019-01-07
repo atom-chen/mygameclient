@@ -1,0 +1,13 @@
+{"file":"pdk_sheet_setting.png","frames":{
+"pdk_setting_word_1":{"x":401,"y":35,"w":64,"h":32,"offX":0,"offY":0,"sourceW":64,"sourceH":32},
+"pdk_setting_word_2":{"x":401,"y":69,"w":62,"h":33,"offX":0,"offY":0,"sourceW":62,"sourceH":33},
+"pdk_setting_word_3":{"x":401,"y":1,"w":72,"h":32,"offX":0,"offY":0,"sourceW":72,"sourceH":32},
+"pdk_setting_btn_about_h":{"x":1,"y":259,"w":157,"h":71,"offX":0,"offY":0,"sourceW":157,"sourceH":71},
+"pdk_setting_btn_about_n":{"x":319,"y":249,"w":157,"h":71,"offX":0,"offY":0,"sourceW":157,"sourceH":71},
+"pdk_setting_btn_feedback_h":{"x":201,"y":171,"w":157,"h":76,"offX":0,"offY":0,"sourceW":157,"sourceH":76},
+"pdk_setting_btn_feedback_n":{"x":201,"y":93,"w":157,"h":76,"offX":0,"offY":0,"sourceW":157,"sourceH":76},
+"pdk_setting_btn_help_h":{"x":160,"y":249,"w":157,"h":72,"offX":0,"offY":0,"sourceW":157,"sourceH":72},
+"pdk_setting_btn_help_n":{"x":1,"y":185,"w":157,"h":72,"offX":0,"offY":0,"sourceW":157,"sourceH":72},
+"pdk_setting_btn_logout_d":{"x":1,"y":1,"w":198,"h":90,"offX":0,"offY":0,"sourceW":198,"sourceH":90},
+"pdk_setting_btn_logout_h":{"x":201,"y":1,"w":198,"h":90,"offX":0,"offY":0,"sourceW":198,"sourceH":90},
+"pdk_setting_btn_logout_n":{"x":1,"y":93,"w":198,"h":90,"offX":0,"offY":0,"sourceW":198,"sourceH":90}}}

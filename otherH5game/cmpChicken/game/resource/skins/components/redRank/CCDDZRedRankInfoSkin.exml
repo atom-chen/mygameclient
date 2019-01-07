@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.CCDDZRedRankInfoSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="back" source="cc_red_rank_bg_25" x="0" y="11" visible="false"/>
+	<e:Image id="back1" source="cc_red_rank_bg_10" x="0" y="11" visible="false"/>
+	<e:Image id="back2" source="cc_red_rank_bg_11" x="0" y="11" visible="false"/>
+	<e:Image id="back3" source="cc_red_rank_bg_12" x="0" y="11" visible="false"/>
+	<e:Image id="rank3" source="cc_red_rank_bg_13" x="3" y="0" visible="false"/>
+	<e:Image id="rank2" source="cc_red_rank_bg_14" x="3" y="0" visible="false"/>
+	<e:Image id="rank1" source="cc_red_rank_bg_15" x="3" y="0" visible="false"/>
+	<e:Label id="score" x="220" textColor="0xF1FF00" size="20" fontFamily="微软雅黑" verticalCenter="2" width="101" textAlign="center" text=""/>
+	<e:Label id="rank" textColor="0xF1FF00" text="10000" fontFamily="微软雅黑" size="20" x="3" verticalCenter="3" bold="true" width="74" textAlign="center" visible="false"/>
+	<e:Label id="nickname" textColor="0xF1FF00" fontFamily="微软雅黑" size="20" x="83" verticalCenter="2" width="120" height="20"/>
+</e:Skin>

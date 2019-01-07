@@ -1,0 +1,1200 @@
+{
+	"groups": [
+		{
+			"keys": "runfast_game_proto,runfast_badwords_txt,pdklang,runfast_user_proto,pdk_login_bg,pdk_sheet_addres_json,pdk_bgm",
+			"name": "pdkpreload"
+		},
+		{
+			"keys": "pdk_Woman_zhadan,pdk_Woman_wangzha,pdk_Woman_tuple9,pdk_Woman_tuple8,pdk_Woman_tuple7,pdk_Woman_tuple6,pdk_Woman_tuple5,pdk_Woman_tuple4,pdk_Woman_tuple3,pdk_Woman_tuple2,pdk_Woman_tuple13,pdk_Woman_tuple12,pdk_Woman_tuple11,pdk_Woman_tuple10,pdk_Woman_tuple1,pdk_Woman_sidailiangdui,pdk_Woman_sidaier,pdk_Woman_shunzi,pdk_Woman_sandaiyidui,pdk_Woman_sandaiyi,pdk_Woman_sandaier,pdk_Woman_Order,pdk_Woman_NoOrder,pdk_Woman_liandui,pdk_Woman_jiabei,pdk_Woman_feiji,pdk_Woman_dui9,pdk_Woman_dui8,pdk_Woman_dui7,pdk_Woman_dui6,pdk_Woman_dui5,pdk_Woman_dui4,pdk_Woman_dui3,pdk_Woman_dui2,pdk_Woman_dui13,pdk_Woman_dui12,pdk_Woman_dui11,pdk_Woman_dui10,pdk_Woman_dui1,pdk_Woman_buyao4,pdk_Woman_buyao3,pdk_Woman_buyao2,pdk_Woman_buyao1,pdk_Woman_bujiabei,pdk_Woman_9,pdk_Woman_8,pdk_Woman_7,pdk_Woman_6,pdk_Woman_5,pdk_Woman_4,pdk_Woman_3,pdk_Woman_2,pdk_Woman_15,pdk_Woman_14,pdk_Woman_13,pdk_Woman_12,pdk_Woman_11,pdk_Woman_10,pdk_Woman_1,pdk_Man_zhadan,pdk_Man_wangzha,pdk_Man_tuple9,pdk_Man_tuple8,pdk_Man_tuple7,pdk_Man_tuple6,pdk_Man_tuple5,pdk_Man_tuple4,pdk_Man_tuple3,pdk_Man_tuple2,pdk_Man_tuple13,pdk_Man_tuple12,pdk_Man_tuple11,pdk_Man_tuple10,pdk_Man_tuple1,pdk_Man_sidailiangdui,pdk_Man_sidaier,pdk_Man_shunzi,pdk_Man_sandaiyidui,pdk_Man_sandaiyi,pdk_Man_sandaier,pdk_Man_Order,pdk_Man_NoOrder,pdk_Man_liandui,pdk_Man_jiabei,pdk_Man_feiji,pdk_Man_dui9,pdk_Man_dui8,pdk_Man_dui7,pdk_Man_dui6,pdk_Man_dui5,pdk_Man_dui4,pdk_Man_dui3,pdk_Man_dui2,pdk_Man_dui13,pdk_Man_dui12,pdk_Man_dui11,pdk_Man_dui10,pdk_Man_dui1,pdk_Man_buyao4,pdk_Man_buyao3,pdk_Man_buyao2,pdk_Man_buyao1,pdk_Man_bujiabei,pdk_Man_9,pdk_Man_8,pdk_Man_7,pdk_Man_6,pdk_Man_5,pdk_Man_4,pdk_Man_3,pdk_Man_2,pdk_Man_15,pdk_Man_14,pdk_Man_13,pdk_Man_12,pdk_Man_11,pdk_Man_10,pdk_Man_1,pdk_effect_gold_rain",
+			"name": "pdksounds"
+		},
+		{
+			"keys": "pdk_sheet_login_c_json",
+			"name": "pdklogin"
+		},
+		{
+			"keys": "pdk_sheet_match_c_json,pdk_sheet_matchRevive_json,pdk_sheet_match9_diamond_json",
+			"name": "pdkmatch"
+		},
+		{
+			"keys": "pdk_hongbao_texture_json,pdk_hongbao_texture_png,pdk_hongbao,pdk_gm_zhadan_texture_png,pdk_gm_zhadan_texture_json,pdk_gm_zhadan,pdk_gm_feiji,pdk_gm_feiji_texture_json,pdk_gm_feiji_texture_png,pdk_gm_shunziliandui_texture_json,pdk_gm_shunziliandui_texture_png,pdk_gm_shunziliandui,pdk_browTortiseAni_png,pdk_browTortiseAni_json,pdk_browTomatoAni_png,pdk_browTomatoAni_json,pdk_browLoveAni_png,pdk_browLoveAni_json,pdk_browGoodAni_png,pdk_browGoodAni_json,pdk_brow666Ani_png,pdk_brow666Ani_json,pdk_sheet_poker_json,pdk_sheet_play_new_json,pdk_sheet_play_c_json,pdk_sheet_icon_c_json,pdk_sheet_pinfo_json,pdk_jingdeng,pdk_jingdeng_texture_png,pdk_jingdeng_texture_json",
+			"name": "pdkplay"
+		},
+		{
+			"keys": "pdk_sheet_profile_c_json",
+			"name": "pdkprofile"
+		},
+		{
+			"keys": "pdk_frLightAni_png,pdk_frLightAni_json,pdk_sheet_frecharge_json",
+			"name": "pdkfirstRechargelight"
+		},
+		{
+			"keys": "pdk_sheet_setting_json",
+			"name": "pdksetting"
+		},
+		{
+			"keys": "pdk_sheet_mall_recorder_json,pdk_sheet_recharge_tips_c_json,pdk_sheet_revive_json",
+			"name": "pdkrecharge"
+		},
+		{
+			"keys": "pdk_font_num_0,pdk_font_num_10,pdk_font_num_13,pdk_font_num_16,pdk_font_num_3,pdk_font_num_7,pdk_font_num_9,pdk_font_num_8,pdk_font_num_6,pdk_font_num_2,pdk_font_num_15,pdk_font_num_12,pdk_font_num_1",
+			"name": "pdkfont"
+		},
+		{
+			"keys": "pdk_coin_json,pdk_coin_png,pdk_sheet_signAndEmail_json,pdk_sign_texture_json,pdk_sign_texture_png,pdk_sign",
+			"name": "pdksignAndEmail"
+		},
+		{
+			"keys": "pdk_sheet_common_c_json,pdk_sheet_common1_json",
+			"name": "pdkcommon"
+		},
+		{
+			"keys": "pdk_sheet_dayTask_json",
+			"name": "pdktaskActNotice"
+		},
+		{
+			"keys": "pdk_sheet_bindPhone_json",
+			"name": "pdkbindPhone"
+		},
+		{
+			"keys": "pdk_sheet_room_new_json",
+			"name": "pdkroom"
+		}
+	],
+	"resources": [
+		{
+			"url": "pdklang.json",
+			"type": "json",
+			"name": "pdklang"
+		},
+		{
+			"url": "proto/runfast_game.proto",
+			"type": "text",
+			"name": "runfast_game_proto"
+		},
+		{
+			"url": "proto/runfast_user.proto",
+			"type": "text",
+			"name": "runfast_user_proto"
+		},
+		{
+			"url": "assets/dragon/pdk_hongbao_texture_json.json",
+			"type": "json",
+			"name": "pdk_hongbao_texture_json"
+		},
+		{
+			"url": "assets/dragon/pdk_hongbao_texture_png.png",
+			"type": "image",
+			"name": "pdk_hongbao_texture_png"
+		},
+		{
+			"url": "assets/dragon/pdk_hongbao.json",
+			"type": "json",
+			"name": "pdk_hongbao"
+		},
+		{
+			"url": "assets/dragon/pdk_gm_zhadan_texture_png.png",
+			"type": "image",
+			"name": "pdk_gm_zhadan_texture_png"
+		},
+		{
+			"url": "assets/dragon/pdk_gm_zhadan_texture_json.json",
+			"type": "json",
+			"name": "pdk_gm_zhadan_texture_json"
+		},
+		{
+			"url": "assets/dragon/pdk_gm_zhadan.json",
+			"type": "json",
+			"name": "pdk_gm_zhadan"
+		},
+		{
+			"url": "assets/dragon/pdk_gm_feiji.json",
+			"type": "json",
+			"name": "pdk_gm_feiji"
+		},
+		{
+			"url": "assets/dragon/pdk_gm_feiji_texture_json.json",
+			"type": "json",
+			"name": "pdk_gm_feiji_texture_json"
+		},
+		{
+			"url": "assets/dragon/pdk_gm_feiji_texture_png.png",
+			"type": "image",
+			"name": "pdk_gm_feiji_texture_png"
+		},
+		{
+			"url": "assets/dragon/hongbaodonghua.json",
+			"type": "json",
+			"name": "hongbaodonghua"
+		},
+		{
+			"url": "assets/dragon/hongbaodonghua_texture_png.png",
+			"type": "image",
+			"name": "hongbaodonghua_texture_png"
+		},
+		{
+			"url": "assets/dragon/hongbaodonghua_texture_json.json",
+			"type": "json",
+			"name": "hongbaodonghua_texture_json"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_invite_c.json",
+			"type": "sheet",
+			"name": "pdk_sheet_invite_c_json",
+			"subkeys": "invite_12,invite_13,invite_4,invite_5,invite_6,invite_7,invite_8,invite_9,invite_bg1,invite_bg2,invite_split"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_personal_c.json",
+			"type": "sheet",
+			"name": "pdk_sheet_personal_c",
+			"subkeys": "personal_arrow_c,personal_arrow_n,personal_avatar_info_bg,personal_back_c,personal_back_n,personal_bg,personal_bg_9,personal_btn_cancel_c,personal_btn_cancel_n,personal_btn_create_c,personal_btn_create_n,personal_btn_join_c,personal_btn_join_n,personal_btn_leave_c,personal_btn_leave_n,personal_btn_search_c,personal_btn_search_n,personal_btn_share_c,personal_btn_start_c,personal_btn_start_n,personal_create,personal_create_frame,personal_del_c,personal_del_n,personal_detail,personal_detail_itembg,personal_detail_point,personal_history,personal_history_bg_litem,personal_join_frame,personal_join_title,personal_leave_flag,personal_n0_c,personal_n0_n,personal_n1_c,personal_n1_n,personal_n2_c,personal_n2_n,personal_n3_c,personal_n3_n,personal_n4_c,personal_n4_n,personal_n5_c,personal_n5_n,personal_n6_c,personal_n6_n,personal_n7_c,personal_n7_n,personal_n8_c,personal_n8_n,personal_n9_c,personal_n9_n,personal_owner,personal_query_dot,personal_radio_c,personal_radio_n,personal_ri_title,personal_ri_topinfo,personal_ri_word1,personal_ri_word2,personal_ri_word3,personal_ri_word4,personal_split,personal_time,personal_tips_bg,personal_title,personal_word1,personal_word2,personal_word3,personal_word4"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_match9_diamond.json",
+			"type": "sheet",
+			"name": "pdk_sheet_match9_diamond_json",
+			"subkeys": "match9_averageScore,match9_bg,match9_curRank,match9_get,match9_getRew,match9_glScore,match9_idxNum,match9_info,match9_nick,match9_over,match9_rule,match9_score,match9_sure,match9_t1,match9_t2,match9_titBg,match9_titGet,match9_titInfo,match9_totScore,match9_turn,match9_turn1,match9_turn2,match9_turn3"
+		},
+		{
+			"url": "proto/runfast_badwords.txt",
+			"type": "text",
+			"name": "runfast_badwords_txt"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_thanks.json",
+			"type": "sheet",
+			"name": "pdk_sheet_thanks_json",
+			"subkeys": "thanks_act1,thanks_act2,thanks_buy,thanks_r,thanks_w"
+		},
+		{
+			"url": "assets/dragon/pdk_gm_shunziliandui_texture_json.json",
+			"type": "json",
+			"name": "pdk_gm_shunziliandui_texture_json"
+		},
+		{
+			"url": "assets/dragon/pdk_gm_shunziliandui_texture_png.png",
+			"type": "image",
+			"name": "pdk_gm_shunziliandui_texture_png"
+		},
+		{
+			"url": "assets/dragon/pdk_gm_shunziliandui.json",
+			"type": "json",
+			"name": "pdk_gm_shunziliandui"
+		},
+		{
+			"url": "assets/fonts/pdk_font_num_0.fnt",
+			"type": "font",
+			"name": "pdk_font_num_0"
+		},
+		{
+			"url": "assets/fonts/pdk_font_num_0.png",
+			"type": "image",
+			"name": "pdk_font_num_0_png"
+		},
+		{
+			"url": "assets/fonts/pdk_font_num_1.fnt",
+			"type": "font",
+			"name": "pdk_font_num_1"
+		},
+		{
+			"url": "assets/fonts/pdk_font_num_1.png",
+			"type": "image",
+			"name": "pdk_font_num_1_png"
+		},
+		{
+			"url": "assets/fonts/pdk_font_num_10.fnt",
+			"type": "font",
+			"name": "pdk_font_num_10"
+		},
+		{
+			"url": "assets/fonts/pdk_font_num_10.png",
+			"type": "image",
+			"name": "pdk_font_num_10_png"
+		},
+		{
+			"url": "assets/fonts/pdk_font_num_12.fnt",
+			"type": "font",
+			"name": "pdk_font_num_12"
+		},
+		{
+			"url": "assets/fonts/pdk_font_num_12.png",
+			"type": "image",
+			"name": "pdk_font_num_12_png"
+		},
+		{
+			"url": "assets/fonts/pdk_font_num_13.fnt",
+			"type": "font",
+			"name": "pdk_font_num_13"
+		},
+		{
+			"url": "assets/fonts/pdk_font_num_13.png",
+			"type": "image",
+			"name": "pdk_font_num_13_png"
+		},
+		{
+			"url": "assets/fonts/pdk_font_num_15.fnt",
+			"type": "font",
+			"name": "pdk_font_num_15"
+		},
+		{
+			"url": "assets/fonts/pdk_font_num_15.png",
+			"type": "image",
+			"name": "pdk_font_num_15_png"
+		},
+		{
+			"url": "assets/fonts/pdk_font_num_16.fnt",
+			"type": "font",
+			"name": "pdk_font_num_16"
+		},
+		{
+			"url": "assets/fonts/pdk_font_num_16.png",
+			"type": "image",
+			"name": "pdk_font_num_16_png"
+		},
+		{
+			"url": "assets/fonts/pdk_font_num_2.fnt",
+			"type": "font",
+			"name": "pdk_font_num_2"
+		},
+		{
+			"url": "assets/fonts/pdk_font_num_2.png",
+			"type": "image",
+			"name": "pdk_font_num_2_png"
+		},
+		{
+			"url": "assets/fonts/pdk_font_num_3.fnt",
+			"type": "font",
+			"name": "pdk_font_num_3"
+		},
+		{
+			"url": "assets/fonts/pdk_font_num_3.png",
+			"type": "image",
+			"name": "pdk_font_num_3_png"
+		},
+		{
+			"url": "assets/fonts/pdk_font_num_6.fnt",
+			"type": "font",
+			"name": "pdk_font_num_6"
+		},
+		{
+			"url": "assets/fonts/pdk_font_num_6.png",
+			"type": "image",
+			"name": "pdk_font_num_6_png"
+		},
+		{
+			"url": "assets/fonts/pdk_font_num_7.fnt",
+			"type": "font",
+			"name": "pdk_font_num_7"
+		},
+		{
+			"url": "assets/fonts/pdk_font_num_7.png",
+			"type": "image",
+			"name": "pdk_font_num_7_png"
+		},
+		{
+			"url": "assets/fonts/pdk_font_num_8.fnt",
+			"type": "font",
+			"name": "pdk_font_num_8"
+		},
+		{
+			"url": "assets/fonts/pdk_font_num_8.png",
+			"type": "image",
+			"name": "pdk_font_num_8_png"
+		},
+		{
+			"url": "assets/fonts/pdk_font_num_9.fnt",
+			"type": "font",
+			"name": "pdk_font_num_9"
+		},
+		{
+			"url": "assets/fonts/pdk_font_num_9.png",
+			"type": "image",
+			"name": "pdk_font_num_9_png"
+		},
+		{
+			"url": "assets/singles/pdk_game_copyright.png",
+			"type": "image",
+			"name": "pdk_game_copyright"
+		},
+		{
+			"url": "assets/singles/pdk_game_notice.png",
+			"type": "image",
+			"name": "pdk_game_notice"
+		},
+		{
+			"url": "assets/singles/pdk_login_bg.png",
+			"type": "image",
+			"name": "pdk_login_bg"
+		},
+		{
+			"url": "assets/singles/pdk_play_bg.jpg",
+			"type": "image",
+			"name": "pdk_play_bg"
+		},
+		{
+			"url": "assets/singles/pdk_play_bg2.jpg",
+			"type": "image",
+			"name": "pdk_play_bg2"
+		},
+		{
+			"url": "assets/singles/pdk_room_bg.jpg",
+			"type": "image",
+			"name": "pdk_room_bg"
+		},
+		{
+			"url": "assets/singles/pdk_wx.png",
+			"type": "image",
+			"name": "pdk_wx_png"
+		},
+		{
+			"url": "sounds/pdk_Man_1.mp3",
+			"type": "sound",
+			"name": "pdk_Man_1"
+		},
+		{
+			"url": "sounds/pdk_Man_10.mp3",
+			"type": "sound",
+			"name": "pdk_Man_10"
+		},
+		{
+			"url": "sounds/pdk_Man_11.mp3",
+			"type": "sound",
+			"name": "pdk_Man_11"
+		},
+		{
+			"url": "sounds/pdk_Man_12.mp3",
+			"type": "sound",
+			"name": "pdk_Man_12"
+		},
+		{
+			"url": "sounds/pdk_Man_13.mp3",
+			"type": "sound",
+			"name": "pdk_Man_13"
+		},
+		{
+			"url": "sounds/pdk_Man_14.mp3",
+			"type": "sound",
+			"name": "pdk_Man_14"
+		},
+		{
+			"url": "sounds/pdk_Man_15.mp3",
+			"type": "sound",
+			"name": "pdk_Man_15"
+		},
+		{
+			"url": "sounds/pdk_Man_2.mp3",
+			"type": "sound",
+			"name": "pdk_Man_2"
+		},
+		{
+			"url": "sounds/pdk_Man_3.mp3",
+			"type": "sound",
+			"name": "pdk_Man_3"
+		},
+		{
+			"url": "sounds/pdk_Man_4.mp3",
+			"type": "sound",
+			"name": "pdk_Man_4"
+		},
+		{
+			"url": "sounds/pdk_Man_5.mp3",
+			"type": "sound",
+			"name": "pdk_Man_5"
+		},
+		{
+			"url": "sounds/pdk_Man_6.mp3",
+			"type": "sound",
+			"name": "pdk_Man_6"
+		},
+		{
+			"url": "sounds/pdk_Man_7.mp3",
+			"type": "sound",
+			"name": "pdk_Man_7"
+		},
+		{
+			"url": "sounds/pdk_Man_8.mp3",
+			"type": "sound",
+			"name": "pdk_Man_8"
+		},
+		{
+			"url": "sounds/pdk_Man_9.mp3",
+			"type": "sound",
+			"name": "pdk_Man_9"
+		},
+		{
+			"url": "sounds/pdk_Man_NoOrder.mp3",
+			"type": "sound",
+			"name": "pdk_Man_NoOrder"
+		},
+		{
+			"url": "sounds/pdk_Man_Order.mp3",
+			"type": "sound",
+			"name": "pdk_Man_Order"
+		},
+		{
+			"url": "sounds/pdk_Man_bujiabei.mp3",
+			"type": "sound",
+			"name": "pdk_Man_bujiabei"
+		},
+		{
+			"url": "sounds/pdk_Man_buyao1.mp3",
+			"type": "sound",
+			"name": "pdk_Man_buyao1"
+		},
+		{
+			"url": "sounds/pdk_Man_buyao2.mp3",
+			"type": "sound",
+			"name": "pdk_Man_buyao2"
+		},
+		{
+			"url": "sounds/pdk_Man_buyao3.mp3",
+			"type": "sound",
+			"name": "pdk_Man_buyao3"
+		},
+		{
+			"url": "sounds/pdk_Man_buyao4.mp3",
+			"type": "sound",
+			"name": "pdk_Man_buyao4"
+		},
+		{
+			"url": "sounds/pdk_Man_dui1.mp3",
+			"type": "sound",
+			"name": "pdk_Man_dui1"
+		},
+		{
+			"url": "sounds/pdk_Man_dui10.mp3",
+			"type": "sound",
+			"name": "pdk_Man_dui10"
+		},
+		{
+			"url": "sounds/pdk_Man_dui11.mp3",
+			"type": "sound",
+			"name": "pdk_Man_dui11"
+		},
+		{
+			"url": "sounds/pdk_Man_dui12.mp3",
+			"type": "sound",
+			"name": "pdk_Man_dui12"
+		},
+		{
+			"url": "sounds/pdk_Man_dui13.mp3",
+			"type": "sound",
+			"name": "pdk_Man_dui13"
+		},
+		{
+			"url": "sounds/pdk_Man_dui2.mp3",
+			"type": "sound",
+			"name": "pdk_Man_dui2"
+		},
+		{
+			"url": "sounds/pdk_Man_dui3.mp3",
+			"type": "sound",
+			"name": "pdk_Man_dui3"
+		},
+		{
+			"url": "sounds/pdk_Man_dui4.mp3",
+			"type": "sound",
+			"name": "pdk_Man_dui4"
+		},
+		{
+			"url": "sounds/pdk_Man_dui5.mp3",
+			"type": "sound",
+			"name": "pdk_Man_dui5"
+		},
+		{
+			"url": "sounds/pdk_Man_dui6.mp3",
+			"type": "sound",
+			"name": "pdk_Man_dui6"
+		},
+		{
+			"url": "sounds/pdk_Man_dui7.mp3",
+			"type": "sound",
+			"name": "pdk_Man_dui7"
+		},
+		{
+			"url": "sounds/pdk_Man_dui8.mp3",
+			"type": "sound",
+			"name": "pdk_Man_dui8"
+		},
+		{
+			"url": "sounds/pdk_Man_dui9.mp3",
+			"type": "sound",
+			"name": "pdk_Man_dui9"
+		},
+		{
+			"url": "sounds/pdk_Man_feiji.mp3",
+			"type": "sound",
+			"name": "pdk_Man_feiji"
+		},
+		{
+			"url": "sounds/pdk_Man_jiabei.mp3",
+			"type": "sound",
+			"name": "pdk_Man_jiabei"
+		},
+		{
+			"url": "sounds/pdk_Man_liandui.mp3",
+			"type": "sound",
+			"name": "pdk_Man_liandui"
+		},
+		{
+			"url": "sounds/pdk_Man_sandaier.mp3",
+			"type": "sound",
+			"name": "pdk_Man_sandaier"
+		},
+		{
+			"url": "sounds/pdk_Man_sandaiyi.mp3",
+			"type": "sound",
+			"name": "pdk_Man_sandaiyi"
+		},
+		{
+			"url": "sounds/pdk_Man_sandaiyidui.mp3",
+			"type": "sound",
+			"name": "pdk_Man_sandaiyidui"
+		},
+		{
+			"url": "sounds/pdk_Man_shunzi.mp3",
+			"type": "sound",
+			"name": "pdk_Man_shunzi"
+		},
+		{
+			"url": "sounds/pdk_Man_sidaier.mp3",
+			"type": "sound",
+			"name": "pdk_Man_sidaier"
+		},
+		{
+			"url": "sounds/pdk_Man_sidailiangdui.mp3",
+			"type": "sound",
+			"name": "pdk_Man_sidailiangdui"
+		},
+		{
+			"url": "sounds/pdk_Man_tuple1.mp3",
+			"type": "sound",
+			"name": "pdk_Man_tuple1"
+		},
+		{
+			"url": "sounds/pdk_Man_tuple10.mp3",
+			"type": "sound",
+			"name": "pdk_Man_tuple10"
+		},
+		{
+			"url": "sounds/pdk_Man_tuple11.mp3",
+			"type": "sound",
+			"name": "pdk_Man_tuple11"
+		},
+		{
+			"url": "sounds/pdk_Man_tuple12.mp3",
+			"type": "sound",
+			"name": "pdk_Man_tuple12"
+		},
+		{
+			"url": "sounds/pdk_Man_tuple13.mp3",
+			"type": "sound",
+			"name": "pdk_Man_tuple13"
+		},
+		{
+			"url": "sounds/pdk_Man_tuple2.mp3",
+			"type": "sound",
+			"name": "pdk_Man_tuple2"
+		},
+		{
+			"url": "sounds/pdk_Man_tuple3.mp3",
+			"type": "sound",
+			"name": "pdk_Man_tuple3"
+		},
+		{
+			"url": "sounds/pdk_Man_tuple4.mp3",
+			"type": "sound",
+			"name": "pdk_Man_tuple4"
+		},
+		{
+			"url": "sounds/pdk_Man_tuple5.mp3",
+			"type": "sound",
+			"name": "pdk_Man_tuple5"
+		},
+		{
+			"url": "sounds/pdk_Man_tuple6.mp3",
+			"type": "sound",
+			"name": "pdk_Man_tuple6"
+		},
+		{
+			"url": "sounds/pdk_Man_tuple7.mp3",
+			"type": "sound",
+			"name": "pdk_Man_tuple7"
+		},
+		{
+			"url": "sounds/pdk_Man_tuple8.mp3",
+			"type": "sound",
+			"name": "pdk_Man_tuple8"
+		},
+		{
+			"url": "sounds/pdk_Man_tuple9.mp3",
+			"type": "sound",
+			"name": "pdk_Man_tuple9"
+		},
+		{
+			"url": "sounds/pdk_Man_wangzha.mp3",
+			"type": "sound",
+			"name": "pdk_Man_wangzha"
+		},
+		{
+			"url": "sounds/pdk_Man_zhadan.mp3",
+			"type": "sound",
+			"name": "pdk_Man_zhadan"
+		},
+		{
+			"url": "sounds/pdk_Woman_1.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_1"
+		},
+		{
+			"url": "sounds/pdk_Woman_10.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_10"
+		},
+		{
+			"url": "sounds/pdk_Woman_11.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_11"
+		},
+		{
+			"url": "sounds/pdk_Woman_12.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_12"
+		},
+		{
+			"url": "sounds/pdk_Woman_13.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_13"
+		},
+		{
+			"url": "sounds/pdk_Woman_14.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_14"
+		},
+		{
+			"url": "sounds/pdk_Woman_15.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_15"
+		},
+		{
+			"url": "sounds/pdk_Woman_2.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_2"
+		},
+		{
+			"url": "sounds/pdk_Woman_3.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_3"
+		},
+		{
+			"url": "sounds/pdk_Woman_4.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_4"
+		},
+		{
+			"url": "sounds/pdk_Woman_5.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_5"
+		},
+		{
+			"url": "sounds/pdk_Woman_6.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_6"
+		},
+		{
+			"url": "sounds/pdk_Woman_7.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_7"
+		},
+		{
+			"url": "sounds/pdk_Woman_8.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_8"
+		},
+		{
+			"url": "sounds/pdk_Woman_9.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_9"
+		},
+		{
+			"url": "sounds/pdk_Woman_NoOrder.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_NoOrder"
+		},
+		{
+			"url": "sounds/pdk_Woman_Order.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_Order"
+		},
+		{
+			"url": "sounds/pdk_Woman_bujiabei.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_bujiabei"
+		},
+		{
+			"url": "sounds/pdk_Woman_buyao1.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_buyao1"
+		},
+		{
+			"url": "sounds/pdk_Woman_buyao2.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_buyao2"
+		},
+		{
+			"url": "sounds/pdk_Woman_buyao3.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_buyao3"
+		},
+		{
+			"url": "sounds/pdk_Woman_buyao4.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_buyao4"
+		},
+		{
+			"url": "sounds/pdk_Woman_dui1.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_dui1"
+		},
+		{
+			"url": "sounds/pdk_Woman_dui10.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_dui10"
+		},
+		{
+			"url": "sounds/pdk_Woman_dui11.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_dui11"
+		},
+		{
+			"url": "sounds/pdk_Woman_dui12.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_dui12"
+		},
+		{
+			"url": "sounds/pdk_Woman_dui13.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_dui13"
+		},
+		{
+			"url": "sounds/pdk_Woman_dui2.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_dui2"
+		},
+		{
+			"url": "sounds/pdk_Woman_dui3.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_dui3"
+		},
+		{
+			"url": "sounds/pdk_Woman_dui4.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_dui4"
+		},
+		{
+			"url": "sounds/pdk_Woman_dui5.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_dui5"
+		},
+		{
+			"url": "sounds/pdk_Woman_dui6.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_dui6"
+		},
+		{
+			"url": "sounds/pdk_Woman_dui7.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_dui7"
+		},
+		{
+			"url": "sounds/pdk_Woman_dui8.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_dui8"
+		},
+		{
+			"url": "sounds/pdk_Woman_dui9.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_dui9"
+		},
+		{
+			"url": "sounds/pdk_Woman_feiji.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_feiji"
+		},
+		{
+			"url": "sounds/pdk_Woman_jiabei.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_jiabei"
+		},
+		{
+			"url": "sounds/pdk_Woman_liandui.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_liandui"
+		},
+		{
+			"url": "sounds/pdk_Woman_sandaier.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_sandaier"
+		},
+		{
+			"url": "sounds/pdk_Woman_sandaiyi.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_sandaiyi"
+		},
+		{
+			"url": "sounds/pdk_Woman_sandaiyidui.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_sandaiyidui"
+		},
+		{
+			"url": "sounds/pdk_Woman_shunzi.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_shunzi"
+		},
+		{
+			"url": "sounds/pdk_Woman_sidaier.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_sidaier"
+		},
+		{
+			"url": "sounds/pdk_Woman_sidailiangdui.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_sidailiangdui"
+		},
+		{
+			"url": "sounds/pdk_Woman_tuple1.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_tuple1"
+		},
+		{
+			"url": "sounds/pdk_Woman_tuple10.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_tuple10"
+		},
+		{
+			"url": "sounds/pdk_Woman_tuple11.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_tuple11"
+		},
+		{
+			"url": "sounds/pdk_Woman_tuple12.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_tuple12"
+		},
+		{
+			"url": "sounds/pdk_Woman_tuple13.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_tuple13"
+		},
+		{
+			"url": "sounds/pdk_Woman_tuple2.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_tuple2"
+		},
+		{
+			"url": "sounds/pdk_Woman_tuple3.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_tuple3"
+		},
+		{
+			"url": "sounds/pdk_Woman_tuple4.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_tuple4"
+		},
+		{
+			"url": "sounds/pdk_Woman_tuple5.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_tuple5"
+		},
+		{
+			"url": "sounds/pdk_Woman_tuple6.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_tuple6"
+		},
+		{
+			"url": "sounds/pdk_Woman_tuple7.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_tuple7"
+		},
+		{
+			"url": "sounds/pdk_Woman_tuple8.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_tuple8"
+		},
+		{
+			"url": "sounds/pdk_Woman_tuple9.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_tuple9"
+		},
+		{
+			"url": "sounds/pdk_Woman_wangzha.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_wangzha"
+		},
+		{
+			"url": "sounds/pdk_Woman_zhadan.mp3",
+			"type": "sound",
+			"name": "pdk_Woman_zhadan"
+		},
+		{
+			"url": "sounds/pdk_bgm.mp3",
+			"type": "sound",
+			"name": "pdk_bgm"
+		},
+		{
+			"url": "sounds/pdk_effect_gold_rain.mp3",
+			"type": "sound",
+			"name": "pdk_effect_gold_rain"
+		},
+		{
+			"url": "assets/animations/pdk_brow666Ani.png",
+			"type": "image",
+			"name": "pdk_brow666Ani_png"
+		},
+		{
+			"url": "assets/animations/pdk_browGoodAni.png",
+			"type": "image",
+			"name": "pdk_browGoodAni_png"
+		},
+		{
+			"url": "assets/animations/pdk_browLoveAni.png",
+			"type": "image",
+			"name": "pdk_browLoveAni_png"
+		},
+		{
+			"url": "assets/animations/pdk_browTomatoAni.png",
+			"type": "image",
+			"name": "pdk_browTomatoAni_png"
+		},
+		{
+			"url": "assets/animations/pdk_browTortiseAni.png",
+			"type": "image",
+			"name": "pdk_browTortiseAni_png"
+		},
+		{
+			"url": "assets/animations/pdk_coin.png",
+			"type": "image",
+			"name": "pdk_coin_png"
+		},
+		{
+			"url": "assets/animations/pdk_frLightAni.png",
+			"type": "image",
+			"name": "pdk_frLightAni_png"
+		},
+		{
+			"url": "assets/animations/pdk_browGoodAni.json",
+			"type": "json",
+			"name": "pdk_browGoodAni_json"
+		},
+		{
+			"url": "assets/animations/pdk_brow666Ani.json",
+			"type": "json",
+			"name": "pdk_brow666Ani_json"
+		},
+		{
+			"url": "assets/animations/pdk_browTortiseAni.json",
+			"type": "json",
+			"name": "pdk_browTortiseAni_json"
+		},
+		{
+			"url": "assets/animations/pdk_browTomatoAni.json",
+			"type": "json",
+			"name": "pdk_browTomatoAni_json"
+		},
+		{
+			"url": "assets/animations/pdk_coin.json",
+			"type": "json",
+			"name": "pdk_coin_json"
+		},
+		{
+			"url": "assets/animations/pdk_browLoveAni.json",
+			"type": "json",
+			"name": "pdk_browLoveAni_json"
+		},
+		{
+			"url": "assets/animations/pdk_frLightAni.json",
+			"type": "json",
+			"name": "pdk_frLightAni_json"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_bindPhone.json",
+			"type": "sheet",
+			"name": "pdk_sheet_bindPhone_json",
+			"subkeys": "pdk_phonebind_getcode,pdk_phonebind_now,pdk_phonebind_tit"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_common_c.json",
+			"type": "sheet",
+			"name": "pdk_sheet_common_c_json",
+			"subkeys": "pdk_common_alert_bg,pdk_common_arrow,pdk_common_avatar_bg,pdk_common_avatar_light,pdk_common_avatar_mask,pdk_common_bg1,pdk_common_bg_inner,pdk_common_btn1_h,pdk_common_btn1_n,pdk_common_btn_back_small_h,pdk_common_btn_back_small_n,pdk_common_btn_blue_d,pdk_common_btn_blue_h,pdk_common_btn_blue_n,pdk_common_btn_enter_h,pdk_common_btn_enter_n,pdk_common_btn_lab_cancel_h,pdk_common_btn_lab_cancel_n,pdk_common_btn_lab_confirm_h,pdk_common_btn_lab_confirm_n,pdk_common_btn_lab_share_h,pdk_common_btn_lab_share_n,pdk_common_btn_lsx_h,pdk_common_btn_lsx_n,pdk_common_btn_lx_h,pdk_common_btn_lx_n,pdk_common_btn_orange1_1,pdk_common_btn_orange1_2,pdk_common_btn_orange1_3,pdk_common_btn_orange2_gray,pdk_common_btn_orange2_h,pdk_common_btn_orange2_n,pdk_common_btn_orange3,pdk_common_btn_orange_d,pdk_common_btn_orange_h,pdk_common_btn_orange_n,pdk_common_btn_plus_h,pdk_common_btn_plus_n,pdk_common_btn_return_n,pdk_common_buy,pdk_common_close_h,pdk_common_close_n,pdk_common_copyPublic,pdk_common_copyWX,pdk_common_dropdown,pdk_common_dropdown_bg,pdk_common_dropdown_checkbox,pdk_common_dropdown_d,pdk_common_dropdown_h,pdk_common_dropdown_n,pdk_common_exchangeRed,pdk_common_flagRed,pdk_common_get,pdk_common_gold_bg,pdk_common_h_slider_thumb_button,pdk_common_h_slider_track,pdk_common_h_slider_track_highlight,pdk_common_match_info_bg,pdk_common_progress_circle_thumb,pdk_common_progress_circle_track,pdk_common_progress_thumb,pdk_common_progress_thumb_layer_0,pdk_common_progress_thumb_layer_1,pdk_common_progress_thumb_layer_2,pdk_common_progress_thumb_repeat,pdk_common_progress_track,pdk_common_radio_1,pdk_common_radio_2,pdk_common_switch_lab_off,pdk_common_switch_lab_on,pdk_common_tab_button_h,pdk_common_tab_button_n,pdk_common_tab_tutton_h,pdk_common_tab_tutton_n,pdk_common_text_input_bg,pdk_common_text_input_bg2,pdk_common_tit_bg,pdk_common_toast,pdk_common_word_15"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_common1.json",
+			"type": "sheet",
+			"name": "pdk_sheet_common1_json",
+			"subkeys": "pdk_common_alert1_bg,pdk_common_bg"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_dayTask.json",
+			"type": "sheet",
+			"name": "pdk_sheet_dayTask_json",
+			"subkeys": "down_tit,go_cancel,go_down,notice_delegate_tit,notice_game_tit,notice_red_tit,room_downGold1,room_downInfo,task_doTask_n,task_doTask_p,task_get,task_getReward_n,task_getReward_p,task_gold,task_item_bg,task_light,task_progress_bg,task_progress_pro,task_re2,task_record,task_red1,task_red3,task_tipbg,task_title,tit_act,tit_act1,tit_bg1,tit_btnbg,tit_notice,tit_notice1"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_exchange.json",
+			"type": "sheet",
+			"name": "pdk_sheet_exchange_json",
+			"subkeys": "exchage_buy,exchange_1,exchange_4,exchange_5,exchange_6,exchange_7,exchange_bg,exchange_btn_1,exchange_btn_2,exchange_btn_4_n,exchange_btn_word_1_h,exchange_btn_word_1_n,exchange_btn_word_2_h,exchange_btn_word_2_n,exchange_cm,exchange_copy,exchange_get,exchange_getSucc,exchange_image_1,exchange_image_10,exchange_image_3,exchange_image_6,exchange_pre,exchange_pre1,exchange_pre2,exchange_recorder_n,exchange_tit_acc"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_frechage_getRew.json",
+			"type": "sheet",
+			"name": "pdk_sheet_frechage_getRew_json",
+			"subkeys": "frecharge_tip_desc,frecharge_tip_get_n,frecharge_tip_get_p,frecharge_tip_title,newBag_desc,newBag_tit"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_frecharge.json",
+			"type": "sheet",
+			"name": "pdk_sheet_frecharge_json",
+			"subkeys": "frechare_getGold,frecharge_desc,frecharge_get_n,frecharge_get_p,frecharge_gopay_n,frecharge_gopay_p,frecharge_light,frecharge_mask,frecharge_money_back,frecharge_money_light,frecharge_player,frecharge_send"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_login_c.json",
+			"type": "sheet",
+			"name": "pdk_sheet_login_c_json",
+			"subkeys": "pdk_login_bt_word_wjmm_n,pdk_login_bt_word_zczh_n,pdk_login_btn_1_n,pdk_login_btn_2_n,pdk_login_btn_3_n,pdk_login_btn_dl_h,pdk_login_btn_dl_n"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_mall_recorder.json",
+			"type": "sheet",
+			"name": "pdk_sheet_mall_recorder_json",
+			"subkeys": "mall_recorder_bg1,mall_recorder_bg2,mall_recorder_bg3,mall_recorder_buy_h,mall_recorder_buy_n,mall_tit"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_match_c.json",
+			"type": "sheet",
+			"name": "pdk_sheet_match_c_json",
+			"subkeys": "match_btn_exit_h,match_btn_exit_n,match_btn_exit_txt_h,match_btn_exit_txt_n,match_btn_help_h,match_btn_help_n,match_btn_reward_h,match_btn_reward_n,match_btn_sign_up_h,match_btn_sign_up_n,match_finish_bg,match_finish_top,match_float_bg,match_getreward_h,match_getreward_n,match_panel_bg,match_panel_bg_2,match_rank_detail,match_word_17,match_word_18,match_word_19,match_word_20,match_word_21,match_word_22,match_word_24,match_word_26,match_word_29,match_word_4,match_word_5,match_word_6"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_matchRevive.json",
+			"type": "sheet",
+			"name": "pdk_sheet_matchRevive_json",
+			"subkeys": "matchRevive,matchRevive1,matchRevive2,matchRevive3,matchRevive_add,matchRevive_tit"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_poker.json",
+			"type": "sheet",
+			"name": "pdk_sheet_poker_json",
+			"subkeys": "pdk_poker_black_10,pdk_poker_black_2,pdk_poker_black_3,pdk_poker_black_4,pdk_poker_black_5,pdk_poker_black_6,pdk_poker_black_7,pdk_poker_black_8,pdk_poker_black_9,pdk_poker_black_a,pdk_poker_black_j,pdk_poker_black_joker,pdk_poker_black_joker_ddz_icon,pdk_poker_black_k,pdk_poker_black_q,pdk_poker_blue_back,pdk_poker_broad,pdk_poker_broad_h,pdk_poker_gray_back,pdk_poker_red_10,pdk_poker_red_2,pdk_poker_red_3,pdk_poker_red_4,pdk_poker_red_5,pdk_poker_red_6,pdk_poker_red_7,pdk_poker_red_8,pdk_poker_red_9,pdk_poker_red_a,pdk_poker_red_back,pdk_poker_red_j,pdk_poker_red_joker,pdk_poker_red_joker_ddz_icon,pdk_poker_red_k,pdk_poker_red_q,pdk_poker_sign_0,pdk_poker_sign_1,pdk_poker_sign_2,pdk_poker_sign_3"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_profile_c.json",
+			"type": "sheet",
+			"name": "pdk_sheet_profile_c_json",
+			"subkeys": "profile_txt_1_c"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_recharge.json",
+			"type": "sheet",
+			"name": "pdk_sheet_recharge_json",
+			"subkeys": "pdk_buybtn_h,pdk_buybtn_n,pdk_shop_bg,pdk_shop_host,pdk_shop_title,pdk_shopbtn_h,pdk_shopbtn_n,recharge_active,recharge_bg_34,recharge_bg_36,recharge_limit"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_recharge_tips_c.json",
+			"type": "sheet",
+			"name": "pdk_sheet_recharge_tips_c_json",
+			"subkeys": "recharge_tips_bg1,recharge_tips_bg2,recharge_tips_bg3,recharge_tips_duihuan1,recharge_tips_duihuan2,recharge_tips_goumai1,recharge_tips_goumai2,recharge_tit"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_revive.json",
+			"type": "sheet",
+			"name": "pdk_sheet_revive_json",
+			"subkeys": "revive_add,revive_addition,revive_bagBtn,revive_money6,revive_tit"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_setting.json",
+			"type": "sheet",
+			"name": "pdk_sheet_setting_json",
+			"subkeys": "pdk_setting_btn_about_h,pdk_setting_btn_about_n,pdk_setting_btn_feedback_h,pdk_setting_btn_feedback_n,pdk_setting_btn_help_h,pdk_setting_btn_help_n,pdk_setting_btn_logout_d,pdk_setting_btn_logout_h,pdk_setting_btn_logout_n,pdk_setting_word_1,pdk_setting_word_2,pdk_setting_word_3"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_signAndEmail.json",
+			"type": "sheet",
+			"name": "pdk_sheet_signAndEmail_json",
+			"subkeys": "email_itemNew,email_itemRead,email_newFlag,email_noNew1,email_noNew2,email_readFlag,email_tit,sign_bg,sign_day1,sign_day2,sign_day3,sign_day4,sign_day5,sign_day6,sign_day7,sign_hasGet,sign_item,sign_rewardBg,sign_tit"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_play_c.json",
+			"type": "sheet",
+			"name": "pdk_sheet_play_c_json",
+			"subkeys": "pdk_double1,pdk_double2,pdk_doubleFlag,pdk_failDoubleEnd,pdk_failDoublePre1,pdk_failDoublePre2,pdk_failDoublePre3,pdk_failDoublePre4,pdk_noDouble1,pdk_noDouble2,pdk_play_36,pdk_play_animate_gold_light,pdk_play_animate_star,pdk_play_bg_1,pdk_play_bg_2,pdk_play_bg_3,pdk_play_bg_4,pdk_play_bg_5,pdk_play_blessing_bag,pdk_play_blessing_bag_dis,pdk_play_blessing_bag_time,pdk_play_bottom_star,pdk_play_btn_13_h,pdk_play_btn_13_n,pdk_play_btn_back_h,pdk_play_btn_back_n,pdk_play_btn_blue_h,pdk_play_btn_blue_n,pdk_play_btn_chou,pdk_play_btn_chou2,pdk_play_btn_chou3,pdk_play_btn_d,pdk_play_btn_grab,pdk_play_btn_not_grab,pdk_play_btn_orange_h,pdk_play_btn_orange_n,pdk_play_btn_record_h,pdk_play_btn_record_n,pdk_play_btn_set_h,pdk_play_btn_set_n,pdk_play_btn_trusteeship_d,pdk_play_btn_trusteeship_h,pdk_play_btn_trusteeship_n,pdk_play_btn_word_1_d,pdk_play_btn_word_1_h,pdk_play_btn_word_1_n,pdk_play_btn_word_2_d,pdk_play_btn_word_2_h,pdk_play_btn_word_2_n,pdk_play_btn_word_3_h,pdk_play_btn_word_3_n,pdk_play_btn_word_again_d,pdk_play_btn_word_again_h,pdk_play_btn_word_again_n,pdk_play_btn_word_come_d,pdk_play_btn_word_come_h,pdk_play_btn_word_come_n,pdk_play_btn_word_continue_h,pdk_play_btn_word_continue_n,pdk_play_btn_word_exchange_h,pdk_play_btn_word_exchange_n,pdk_play_btn_word_getready_h,pdk_play_btn_word_getready_n,pdk_play_btn_word_no_d,pdk_play_btn_word_no_h,pdk_play_btn_word_no_n,pdk_play_btn_word_nocall_h,pdk_play_btn_word_nocall_n,pdk_play_btn_word_prompt_d,pdk_play_btn_word_prompt_h,pdk_play_btn_word_prompt_n,pdk_play_btn_word_start,pdk_play_cancel_trust_c,pdk_play_cancel_trust_n,pdk_play_card_count_bg,pdk_play_cardshadow,pdk_play_endBg,pdk_play_five_bg,pdk_play_five_open,pdk_play_five_rule,pdk_play_font_diagonal,pdk_play_give_way,pdk_play_hand_ok,pdk_play_image_7,pdk_play_lottery,pdk_play_master_card_bg,pdk_play_match_detail_bg,pdk_play_match_place_info_bg,pdk_play_name_bg,pdk_play_offline,pdk_play_personal_info_bg,pdk_play_record_bg,pdk_play_recorder_gift,pdk_play_recorder_outofdate,pdk_play_red_bot,pdk_play_red_pop,pdk_play_redcoin_bg,pdk_play_redn_bg,pdk_play_robot,pdk_play_robot_eye,pdk_play_rule,pdk_play_star_small,pdk_play_task,pdk_play_word_1,pdk_play_word_2,pdk_play_word_3,pdk_play_word_4_2,pdk_play_word_5,pdk_play_word_6,pdk_play_word_7,pdk_play_word_grab,pdk_play_word_not_grab"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_otherRes.json",
+			"type": "sheet",
+			"name": "pdk_sheet_otherRes_json",
+			"subkeys": "pdk_follow_course_s1_detail,pdk_follow_course_s2_detail,pdk_follow_course_s3_detail,pdk_follow_course_s4_detail,pdk_follow_course_s5_detail,pdk_follow_course_s6_detail,pdk_follow_course_step1,pdk_follow_course_step2,pdk_follow_course_step3,pdk_follow_course_step4,pdk_follow_course_step5,pdk_follow_course_step6,pdk_guesscards_915,pdk_guesscards_916,pdk_guesscards_917,pdk_guesscards_918,pdk_guesscards_926,pdk_guesscards_927,pdk_guesscards_928,pdk_guesscards_929,pdk_guesscards_930,pdk_guesscards_931,pdk_guesscards_942,pdk_guesscards_943,pdk_guesscards_950,pdk_guesscards_952,pdk_guesscards_955,pdk_guesscards_956,pdk_guesscards_957,pdk_guesscards_ani_star,pdk_guesscards_light,pdk_guesscards_tiao,pdk_pdk_room_red_normal,pdk_play_result_beiguan,pdk_play_result_bg,pdk_play_result_btn_bg,pdk_play_result_btn_continue,pdk_play_result_fanguan,pdk_play_result_guanpai,pdk_play_result_header,pdk_play_result_pochan,pdk_play_result_shengli,pdk_play_result_shibai,pdk_play_result_shu_bg,pdk_play_result_shuangguan,pdk_play_result_ying_bg,pdk_red_rank_bg_10,pdk_red_rank_bg_11,pdk_red_rank_bg_12,pdk_room_act1,pdk_room_act2,pdk_room_diy_n,pdk_room_downApp,pdk_room_email2,pdk_room_fu,pdk_room_lottery_redcoin,pdk_room_msg,pdk_room_red,pdk_room_sendMsg,pdk_room_seprate,pdk_room_task2,pdk_room_win_redcoin"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_play_new.json",
+			"type": "sheet",
+			"name": "pdk_sheet_play_new_json",
+			"subkeys": "pdk_btn_gray,pdk_btn_play_green,pdk_btn_play_green01,pdk_btn_play_yellow,pdk_btn_play_yellow01,pdk_buchu_d,pdk_buchu_h,pdk_buchu_n,pdk_chongxuan_d,pdk_chongxuan_h,pdk_chongxuan_n,pdk_chupai_d,pdk_chupai_h,pdk_chupai_n,pdk_game_bg_explain,pdk_game_btn_explain,pdk_ico_ai,pdk_ico_card,pdk_ico_clock,pdk_ico_help,pdk_ico_off-line,pdk_jpq,pdk_name_bg,pdk_play_baodan01,pdk_play_baodan02,pdk_play_word_4,pdk_quxiaoAi,pdk_sheet_play_new,pdk_tishi_d,pdk_tishi_h,pdk_tishi_n,pdk_two_rule2,pdk_user_bg,pdk_zhunbei_green"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_room_new.json",
+			"type": "sheet",
+			"name": "pdk_sheet_room_new_json",
+			"subkeys": "pdk__score_bg,pdk_btn_6yuan,pdk_btn_buy,pdk_btn_buy01,pdk_btn_cancel,pdk_btn_copy,pdk_btn_gray2,pdk_btn_led,pdk_btn_led01,pdk_btn_ledgold,pdk_btn_pay,pdk_btn_purple,pdk_btn_purple01,pdk_btn_sure,pdk_btn_yellow,pdk_btn_yellow01,pdk_cjc,pdk_cjc_bg,pdk_cjc_fenshubg,pdk_dianji,pdk_dt_big,pdk_dt_ywj,pdk_etc,pdk_fast,pdk_first_666,pdk_first_card,pdk_first_content,pdk_first_girl,pdk_first_gold,pdk_first_gold01,pdk_first_pay,pdk_first_slogan,pdk_first_title,pdk_friends_loser,pdk_friends_win,pdk_fuzhi,pdk_girl,pdk_gjc,pdk_gjc_bg,pdk_gjc_fenshubg,pdk_gjc_fenshubg2,pdk_guanzhu,pdk_head,pdk_home_arena_icn,pdk_home_diamond_bg,pdk_home_diamond_ico,pdk_home_gold_bg,pdk_home_gold_icn,pdk_home_master_icn,pdk_home_three,pdk_home_two,pdk_ico,pdk_ico_add,pdk_ico_draw,pdk_ico_drill,pdk_ico_drill01,pdk_ico_email,pdk_ico_first,pdk_ico_friends,pdk_ico_gold,pdk_ico_jipaiqi,pdk_ico_list,pdk_ico_master,pdk_ico_out,pdk_ico_prize,pdk_ico_prize01,pdk_ico_service,pdk_ico_set,pdk_ico_shop,pdk_ico_sign,pdk_ico_sign01,pdk_ico_task,pdk_iphone_kuang,pdk_jinbichang,pdk_logo,pdk_logo_bg,pdk_master,pdk_me_duihao,pdk_me_kuang,pdk_play5,pdk_point_bg,pdk_red_rank_bg_25,pdk_red_title,pdk_reds,pdk_room_0,pdk_room_1,pdk_room_101,pdk_room_11,pdk_room_2,pdk_room_3,pdk_room_btn_chou,pdk_room_get,pdk_room_getGray,pdk_room_get_c,pdk_room_get_n,pdk_room_image_7,pdk_room_image_8,pdk_room_promotion_1,pdk_room_promotion_2,pdk_room_promotion_3,pdk_room_promotion_bg,pdk_rule,pdk_shop,pdk_title,pdk_top_01,pdk_top_02,pdk_top_03,pdk_top_bg,pdk_tops,pdk_tops_bg,pdk_tops_textbg,pdk_tunvlang,pdk_ui_bg,pdk_ui_box,pdk_ui_head,pdk_wins_bg,pdk_wins_close,pdk_wins_promptbg,pdk_zjc,pdk_zjc_bg"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_icon_c.json",
+			"type": "sheet",
+			"name": "pdk_sheet_icon_c_json",
+			"subkeys": "pdk_icon_amount,pdk_icon_clock,pdk_icon_diamond,pdk_icon_gold,pdk_icon_gold2,pdk_icon_head10,pdk_icon_head9,pdk_icon_head_default,pdk_icon_master,pdk_icon_master_card,pdk_icon_redcoin,pdk_icon_rmb,pdk_icon_room_0,pdk_icon_room_1,pdk_icon_score,pdk_icon_sign_up"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_pinfo.json",
+			"type": "sheet",
+			"name": "pdk_sheet_pinfo_json",
+			"subkeys": "pdk_pinfo_100,pdk_pinfo_666_n,pdk_pinfo_666_p,pdk_pinfo_free,pdk_pinfo_good_n,pdk_pinfo_good_p,pdk_pinfo_headMask,pdk_pinfo_headMaskbg,pdk_pinfo_horn_n,pdk_pinfo_horn_p,pdk_pinfo_infoBg,pdk_pinfo_love_n,pdk_pinfo_love_p,pdk_pinfo_report_n,pdk_pinfo_report_p,pdk_pinfo_title,pdk_pinfo_tomato_n,pdk_pinfo_tomato_p,pdk_pinfo_tortise_n,pdk_pinfo_tortise_p"
+		},
+		{
+			"url": "assets/dragon/pdk_jingdeng.json",
+			"type": "json",
+			"name": "pdk_jingdeng"
+		},
+		{
+			"url": "assets/dragon/pdk_jingdeng_texture_json.json",
+			"type": "json",
+			"name": "pdk_jingdeng_texture_json"
+		},
+		{
+			"url": "assets/dragon/pdk_jingdeng_texture_png.png",
+			"type": "image",
+			"name": "pdk_jingdeng_texture_png"
+		},
+		{
+			"url": "assets/dragon/pdk_sign.json",
+			"type": "json",
+			"name": "pdk_sign"
+		},
+		{
+			"url": "assets/dragon/pdk_sign_texture_json.json",
+			"type": "json",
+			"name": "pdk_sign_texture_json"
+		},
+		{
+			"url": "assets/dragon/pdk_sign_texture_png.png",
+			"type": "image",
+			"name": "pdk_sign_texture_png"
+		},
+		{
+			"url": "assets/sheets/pdk_sheet_addres.json",
+			"type": "sheet",
+			"name": "pdk_sheet_addres_json",
+			"subkeys": "pdk_common_avatar_vip,pdk_ddz_title,pdk_ico_nongmin,pdk_icon_help_new,pdk_play_btn_chou4,pdk_room_package_label,pdk_room_talk_history,pdk_room_talk_input,pdk_room_talk_sendMsg,pdk_room_talk_title,pdk_rule_new,pdk_rule_new2,pdk_tab_diamond,pdk_title_new"
+		}
+	]
+}

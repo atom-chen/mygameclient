@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.PDKMatchRoomSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="415" height="151" states="normal,ads" >
+	<e:Image source="room_match_item_bg" includeIn="normal"/>
+	<e:Label id="labName" text="标签" x="63" y="17" width="296" textAlign="center" textColor="0xFFF8BB" bold="true" includeIn="normal"/>
+	<e:Label id="labReward" y="92" text="标签" x="30" textColor="0x875300" size="20" includeIn="normal"/>
+	<e:Label id="labLimit" y="114" textColor="0x875300" text="12月12日 21:00" size="20" right="25" includeIn="normal"/>
+	<e:Label id="lbOpenTime" y="46" textColor="0xEFEF07" text="每日12:00-24:00开放" fontFamily="微软雅黑" bold="true" size="20" horizontalCenter="0.5" x="10" includeIn="normal"/>
+	<e:Image id="imgSignUp" source="pdk_icon_sign_up" x="276" y="41" includeIn="normal" visible="false"/>
+</e:Skin>

@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.CCDDZChatBubbleSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="left,right" >
+	<e:Image scale9Grid="17,14,3,1" right="-20" left="0" scaleX.right="-1" source="play_bubble"/>
+	<e:Label id="labContent" text="text" x="14" y="4" size="20" text.right="text" textColor="0x4C4742"/>
+</e:Skin>

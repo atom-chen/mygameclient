@@ -1,0 +1,339 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>好手气斗地主</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="full-screen" content="true"/>
+	<meta name="screen-orientation" content="landscape"/>
+	<meta name="x5-fullscreen" content="true"/>
+	<meta name="360-fullscreen" content="true"/>
+	<style>
+		html, body {
+			-ms-touch-action: none;
+			background: #000000;
+			padding: 0;
+			border: 0;
+			margin: 0;
+			height: 100%;
+		}
+	</style>
+
+	<!--这个标签为通过egret提供的第三方库的方式生成的 javascript 文件-->
+	<!--modules_files_start-->
+	<script egret="lib" src="libs/modules/egret/egret.js"></script>
+	<script egret="lib" src="libs/modules/egret/egret.web.js"></script>
+	<script egret="lib" src="libs/modules/eui/eui.js"></script>
+	<script egret="lib" src="libs/modules/res/res.js"></script>
+	<script egret="lib" src="libs/modules/tween/tween.js"></script>
+	<script egret="lib" src="libs/modules/socket/socket.js"></script>
+	<script egret="lib" src="libs/modules/dragonBones/dragonBones.js"></script>
+	<script egret="lib" src="libs/modules/protobuf/protobuf.js"></script>
+	<script egret="lib" src="libs/modules/async/async.js"></script>
+	<script egret="lib" src="libs/modules/md5/md5.js"></script>
+	<script egret="lib" src="libs/modules/clipbord/clipbord.js"></script>
+	<script egret="lib" src="libs/modules/game/game.js"></script>
+	<!--modules_files_end-->
+
+	<!--这个标签为不通过egret提供的第三方库的方式使用的 javascript 文件，请将这些文件放在libs下，但不要放在modules下面。-->
+	
+
+	<!--这个标签会被替换为项目中所有的 javascript 文件-->
+	<!--game_files_start-->
+	<script egret="lib" src="bin-debug/alienlib/animation/CCDDZIAnimation.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/page/CCDDZNavigator.js"></script>
+	<script egret="lib" src="bin-debug/core/CCDDZSeat.js"></script>
+	<script egret="lib" src="bin-debug/cmpChicken/view/componets/CCCardGroupBase.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/popup/CCDDZPanelBase.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/scene/CCDDZSceneBase.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/scene/CCDDZSceneManager.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/support/CCDDZEventManager.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/support/CCDDZSoundManager.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/support/Native.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/Encrypt.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/animation/CCDDFade.js"></script>
+	<script egret="lib" src="bin-debug/cmpChicken/view/componets/CCChooseCard.js"></script>
+	<script egret="lib" src="bin-debug/core/CCDDZCardGroup.js"></script>
+	<script egret="lib" src="bin-debug/views/pages/CCDDZPageChannelBase.js"></script>
+	<script egret="lib" src="bin-debug/core/CCServer.js"></script>
+	<script egret="lib" src="bin-debug/core/CCService.js"></script>
+	<script egret="lib" src="bin-debug/game/seat/CCDDZDDZSeat.js"></script>
+	<script egret="lib" src="bin-debug/model/CCGlobalDataStorage.js"></script>
+	<script egret="lib" src="bin-debug/model/CCGlobalLanguagePack.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/CCDDZDragonBase.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZFlyGold.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/support/Vector2D.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/Ajax.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/CCDDZBase64.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/popup/CCDDZPopUpManager.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/HashMap.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/MathUtils.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/ObjectPool.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/StringUtils.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/TimeUtils.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/TweenWatcher.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/tools/Utils.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/ui/DropDown.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/ui/FadeSwitch.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/ui/Image.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/ui/PageProgressBar.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/ui/ScrollImage.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/ui/ScrollNavigator.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/ui/ViewStack.js"></script>
+	<script egret="lib" src="bin-debug/cmpChicken/ccdata/CCPlayerData.js"></script>
+	<script egret="lib" src="bin-debug/cmpChicken/cclib/CCGoldStr.js"></script>
+	<script egret="lib" src="bin-debug/cmpChicken/cclib/CCObjectPool.js"></script>
+	<script egret="lib" src="bin-debug/cmpChicken/config/CCGameConfig.js"></script>
+	<script egret="lib" src="bin-debug/cmpChicken/model/CCResNames.js"></script>
+	<script egret="lib" src="bin-debug/cmpChicken/view/CCEventNames.js"></script>
+	<script egret="lib" src="bin-debug/cmpChicken/view/componets/CCCard.js"></script>
+	<script egret="lib" src="bin-debug/cmpChicken/view/componets/CCCardBody.js"></script>
+	<script egret="lib" src="bin-debug/cmpChicken/view/componets/CCCardGroup.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/animation/CCDDZMovieClip.js"></script>
+	<script egret="lib" src="bin-debug/cmpChicken/view/componets/CCCardUI.js"></script>
+	<script egret="lib" src="bin-debug/cmpChicken/view/componets/CCCardView.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/scene/CCDDZsceneEffect.js"></script>
+	<script egret="lib" src="bin-debug/cmpChicken/view/componets/CCClock.js"></script>
+	<script egret="lib" src="bin-debug/cmpChicken/view/componets/CCGold.js"></script>
+	<script egret="lib" src="bin-debug/cmpChicken/view/componets/CCLabelButton.js"></script>
+	<script egret="lib" src="bin-debug/cmpChicken/view/componets/CCPlayerHead.js"></script>
+	<script egret="lib" src="bin-debug/cmpChicken/view/componets/CCPlayerUI.js"></script>
+	<script egret="lib" src="bin-debug/cmpChicken/view/componets/CCStatusLabel.js"></script>
+	<script egret="lib" src="bin-debug/cmpChicken/view/componets/CCToast.js"></script>
+	<script egret="lib" src="bin-debug/cmpChicken/view/panels/CCPanelAlert.js"></script>
+	<script egret="lib" src="bin-debug/cmpChicken/view/panels/CCPanelRule.js"></script>
+	<script egret="lib" src="bin-debug/cmpChicken/view/scenes/SceneCmpChicken.js"></script>
+	<script egret="lib" src="bin-debug/cmpChicken/view/utils/CCCardsType.js"></script>
+	<script egret="lib" src="bin-debug/cmpChicken/view/utils/CCGlobal.js"></script>
+	<script egret="lib" src="bin-debug/core/CCDDZCard.js"></script>
+	<script egret="lib" src="bin-debug/core/CCDDZCardBody.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/animation/CCDDZWave.js"></script>
+	<script egret="lib" src="bin-debug/core/CCDDZEnvironment.js"></script>
+	<script egret="lib" src="bin-debug/core/CCDDZLogUtil.js"></script>
+	<script egret="lib" src="bin-debug/core/CCDDZMainLogic.js"></script>
+	<script egret="lib" src="bin-debug/core/CCDDZProtoIDs.js"></script>
+	<script egret="lib" src="bin-debug/core/CCDDZReportor.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/support/CCDDZAdvanceMethod.js"></script>
+	<script egret="lib" src="bin-debug/core/CCDDZUtils.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/support/CCDDZDispatcher.js"></script>
+	<script egret="lib" src="bin-debug/CCDDZDefines.js"></script>
+	<script egret="lib" src="bin-debug/game/CCDDZCardsHint.js"></script>
+	<script egret="lib" src="bin-debug/game/CCDDZCardsType.js"></script>
+	<script egret="lib" src="bin-debug/game/CCDDZDDZCardGroup.js"></script>
+	<script egret="lib" src="bin-debug/game/CCDDZDDZServer.js"></script>
+	<script egret="lib" src="bin-debug/game/CCDDZGameSoundManager.js"></script>
+	<script egret="lib" src="bin-debug/game/CCDDZGoodsManager.js"></script>
+	<script egret="lib" src="bin-debug/game/CCDDZObjectPoolInit.js"></script>
+	<script egret="lib" src="bin-debug/game/CCDDZOtherGameManager.js"></script>
+	<script egret="lib" src="bin-debug/game/CCDDZShareImageManager.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/support/CCDDZlocalStorage.js"></script>
+	<script egret="lib" src="bin-debug/game/seat/CCDDZMySeat.js"></script>
+	<script egret="lib" src="bin-debug/game/seat/CCDDZSideSeat.js"></script>
+	<script egret="lib" src="bin-debug/game/service/CCDDZBagService.js"></script>
+	<script egret="lib" src="bin-debug/game/service/CCDDZCountDownService.js"></script>
+	<script egret="lib" src="bin-debug/game/service/CCDDZExchangeService.js"></script>
+	<script egret="lib" src="bin-debug/game/service/CCDDZInviteService.js"></script>
+	<script egret="lib" src="bin-debug/game/service/CCDDZMailService.js"></script>
+	<script egret="lib" src="bin-debug/game/service/CCDDZMatchService.js"></script>
+	<script egret="lib" src="bin-debug/game/service/CCDDZPersonalGameHistory.js"></script>
+	<script egret="lib" src="bin-debug/game/service/CCDDZRechargeService.js"></script>
+	<script egret="lib" src="bin-debug/game/service/CCLoginService.js"></script>
+	<script egret="lib" src="bin-debug/game/service/CCWebService.js"></script>
+	<script egret="lib" src="bin-debug/model/CCGlobalBrowData.js"></script>
+	<script egret="lib" src="bin-debug/CCMain.js"></script>
+	<script egret="lib" src="bin-debug/model/CCGlobalDebugHelper.js"></script>
+	<script egret="lib" src="bin-debug/model/CCGlobalErrorConfig.js"></script>
+	<script egret="lib" src="bin-debug/model/CCGlobalEventNames.js"></script>
+	<script egret="lib" src="bin-debug/model/CCGlobalGameConfig.js"></script>
+	<script egret="lib" src="bin-debug/model/CCGlobalGameData.js"></script>
+	<script egret="lib" src="bin-debug/model/CCGlobalLanguage.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/support/CCDDZStageProxy.js"></script>
+	<script egret="lib" src="bin-debug/model/CCGlobalResNames.js"></script>
+	<script egret="lib" src="bin-debug/model/CCGlobalSceneNames.js"></script>
+	<script egret="lib" src="bin-debug/model/CCGlobalUserData.js"></script>
+	<script egret="lib" src="bin-debug/model/CCGlobalUserInfoData.js"></script>
+	<script egret="lib" src="bin-debug/model/CCGlobalWxHelper.js"></script>
+	<script egret="lib" src="bin-debug/ui_extend/CCDDZNormalButton.js"></script>
+	<script egret="lib" src="bin-debug/ui_extend/CCDDZStateButton.js"></script>
+	<script egret="lib" src="bin-debug/views/CCDDZAssetAdapter.js"></script>
+	<script egret="lib" src="bin-debug/views/CCDDZThemeAdapter.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZActList.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZActListItem.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZAvatar.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZButtonBar.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZButtonDoTaskSkin.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZCDClock.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZCDProgressBar.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZChatBubble.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZChatList.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZExchangeShowInfo.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZFeiHistoryItem.js"></script>
+	<script egret="lib" src="bin-debug/CCDDZOtherGameCfg.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZGCardsGold.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZGold.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZGoldRainEffectLayer.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZGoodsItem.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZHornTalkItem.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZInviteListItem.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZLoading.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZLoadingProcess.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZMarqueeText.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZMasterCards.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZPage.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZQProgressBar.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZRedPacketProcess.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZRobot.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZShopItem.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZToast.js"></script>
+	<script egret="lib" src="bin-debug/views/components/CCDDZUserInfoView.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dayTask/CCDDZDayTaskItemInfo.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/support/CCDDZTickerManager.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/CCDDZDragonGameChunTian.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/CCDDZDragonGameFeiJi.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/CCDDZDragonGameLianDui.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/CCDDZDragonGameShunZi.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/CCDDZDragonGameWangZha.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/CCDDZDragonGameZhaDan.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/CCDDZDragonHongBao.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/CCDDZDragonHongBaoWarn.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/CCDDZDragonJingDeng.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/CCDDZDragonManager.js"></script>
+	<script egret="lib" src="bin-debug/views/components/dragon/CCDDZDragonSign.js"></script>
+	<script egret="lib" src="bin-debug/views/components/item_renderers/CCDDZIRButton.js"></script>
+	<script egret="lib" src="bin-debug/views/components/item_renderers/CCDDZIRContainer.js"></script>
+	<script egret="lib" src="bin-debug/views/components/item_renderers/CCDDZIRUpDownIcon.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/CCDDZCreateTable.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/CCDDZCreateTableInfo.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/CCDDZDetailItem.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/CCDDZHistoryItem.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/CCDDZHistoryRecord.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/CCDDZImgToast.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/CCDDZImgWordBtn.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/CCDDZJoinTable.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/CCDDZPersonalDetail.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/CCDDZPersonalGame.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/CCDDZPInfItem.js"></script>
+	<script egret="lib" src="bin-debug/views/components/personal/CCDDZTableInfo.js"></script>
+	<script egret="lib" src="bin-debug/views/components/redRank/CCDDZRedRank.js"></script>
+	<script egret="lib" src="bin-debug/views/components/redRank/CCDDZRedRankInfo.js"></script>
+	<script egret="lib" src="bin-debug/alienlib/popup/CCDDZpopupEffect.js"></script>
+	<script egret="lib" src="bin-debug/views/pages/CCDDZPageChannels.js"></script>
+	<script egret="lib" src="bin-debug/views/pages/CCDDZPageMatchChannel.js"></script>
+	<script egret="lib" src="bin-debug/views/pages/CCDDZPageNormalChannel.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelAct.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelActAndNotice.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelActAppLucky.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelAlert.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelAlert2.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelAlert3.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelBeforeMatch.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelBindPhone.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelBuyRecorder.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelChoosePay.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelDayBuy.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelDayRed.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelDayTask.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelDelegate.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelDiaFirRecharge.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelDownApp.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelExchange2.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelExchange3.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelFeiEx.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelFFFAct.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelFirstRecharge.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelFollowCourse.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelFreshManReward.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelFRGetRew.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelGetItems.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelGetRed.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelHornTalk.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelInviteAct.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelInviteJustList.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelInviteList.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelInviteRank.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelItems.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelLogin.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelLottery.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelLotteryCode.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelLotteryDetail.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelLotteryMyRec.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelLucky.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelMail.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelMailDetails.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelMatch9GetRew.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelMatch9Info.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelMatchCountDown.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelMatchIntro.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelMatchNotice.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelMatchResult.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelMatchRevive.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelMatchSignUp.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelMatchWaiting.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelMatchWaitingInner.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelModifyNickname.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelMonday.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelMonthCard.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelNewYear.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelNotice.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelPhoneLogin.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelPlayerInfo.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelProfile.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelRealName.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelRechargeTips.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelReviveBag.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelSelectAvatar.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelSetting.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelShare.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelSign.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelSmallGame.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelThanksgiving.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelVip.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/CCDDZPanelWatchWX.js"></script>
+	<script egret="lib" src="bin-debug/views/panels/panelMonthCard/CCDDZPanelMonthCardReward.js"></script>
+	<script egret="lib" src="bin-debug/views/scenes/CCDDZSceneCommon.js"></script>
+	<script egret="lib" src="bin-debug/views/scenes/CCDDZSceneEffect.js"></script>
+	<script egret="lib" src="bin-debug/views/scenes/CCDDZSceneLoading.js"></script>
+	<script egret="lib" src="bin-debug/views/scenes/CCDDZSceneLogin.js"></script>
+	<script egret="lib" src="bin-debug/views/scenes/CCDDZSceneMostTop.js"></script>
+	<script egret="lib" src="bin-debug/views/scenes/CCDDZScenePlay.js"></script>
+	<script egret="lib" src="bin-debug/views/scenes/CCDDZSceneRoom.js"></script>
+	<!--game_files_end-->
+</head>
+<body>
+
+
+<div style="margin: auto;width: 100%;height: 100%;" id = "egretPlayer" class="egret-player"
+     data-entry-class="CCMain"
+     data-orientation="landscape"
+     data-scale-mode="fixedHeight"
+     data-resolution-mode="retina"
+     data-frame-rate="60"
+     data-content-width="1280"
+     data-content-height="640"
+     data-show-paint-rect="false"
+     data-multi-fingered="2"
+     data-show-fps="false" data-show-log="false"
+     data-log-filter="" data-show-fps-style="x:0,y:0,size:20,textColor:0x00d8ff,bgAlpha:0.6">
+    <input id="ddzCopyTex" type ="text" value="" style="visibility: hidden"/>
+    <button id="ddzCopyBtn" type="button" class="copyBtn" style="visibility: hidden" data-clipboard-action="copy" data-clipboard-target="#ddzCopyTex" />            
+</div>
+
+<script>
+
+	egret.runEgret({renderMode:"webgl"});
+	function onVisibilityChanged() {
+		/*if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+			egret.sys.$pauseAudio();
+		else
+			egret.sys.$resumeAudio();
+		*/
+	};
+	
+	document.addEventListener("visibilitychange", onVisibilityChanged, false);
+	document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+	document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+	document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+</script>
+</body>
+</html>

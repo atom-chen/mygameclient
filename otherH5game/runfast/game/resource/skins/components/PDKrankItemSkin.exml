@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.PDKrankItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group height="32" width="310" x="0" y="0">
+		<e:Label id="rank" textAlign="left" text="101" verticalCenter="0" size="22" x="14" y="10" locked="true"/>
+		<e:Label id="nickName" text="昵称fsadf" x="79" size="22" textAlign="left" verticalCenter="0" width="140" height="22"/>
+		<e:Label id="score" text="25000" verticalCenter="0" textAlign="left" size="22" x="234" y="10"/>
+		<e:Label id="inmatch" x="234" text="比赛中" textAlign="left" size="22" verticalCenter="0" textColor="0x0BE147" bold="true" fontFamily="宋体"/>
+	</e:Group>
+</e:Skin>

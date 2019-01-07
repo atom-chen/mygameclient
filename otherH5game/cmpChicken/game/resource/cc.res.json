@@ -1,0 +1,1339 @@
+{
+	"groups": [
+		{
+			"keys": "ccgame_proto,ccuser_proto,ccbadwords_txt,ccddzlang,cc_bg_mp3",
+			"name": "ccpreload"
+		},
+		{
+			"keys": "cc_sheet_login_c_json",
+			"name": "cclogin"
+		},
+		{
+			"keys": "cc_gm_chuntian,cc_gm_chuntian_texture_png,cc_gm_chuntian_texture_json,cc_gm_feiji,cc_gm_feiji_texture_png,cc_gm_feiji_texture_json,cc_gm_shunziliandui,cc_gm_shunziliandui_texture_png,cc_gm_shunziliandui_texture_json,cc_gm_wangzha_texture_json,cc_gm_wangzha_texture_png,cc_gm_wangzha,cc_gm_zhadan,cc_gm_zhadan_texture_png,cc_gm_zhadan_texture_json,cc_hongbao,cc_hongbao_texture_png,cc_hongbao_texture_json,cc_hongbaodonghua,cc_hongbaodonghua_texture_png,cc_hongbaodonghua_texture_json,cc_jingdeng,cc_jingdeng_texture_png,cc_jingdeng_texture_json,cc_sheet_guesscards_json,cc_sheet_icon_c_json,cc_sheet_poker",
+			"name": "ccplay"
+		},
+		{
+			"keys": "cc_sheet_setting_json",
+			"name": "ccsetting"
+		},
+		{
+			"keys": "cc_font_num_9,cc_font_num_8,cc_font_num_7,cc_font_num_6,cc_font_num_3,cc_font_num_2,cc_font_num_16,cc_font_num_15,cc_font_num_13,cc_font_num_12,cc_font_num_11,cc_font_num_10,cc_font_num_1,cc_font_num_0",
+			"name": "ccfont"
+		},
+		{
+			"keys": "cc_sheet_red_rank_json,cc_sheet_room_c_json,cc_room_bg",
+			"name": "ccroom"
+		},
+		{
+			"keys": "cc_sheet_common_c_json,cc_sheet_common1_json",
+			"name": "cccommon"
+		},
+		{
+			"keys": "cc_font_num_18_png,cc_font_num_18,cc_font_num_17_png,cc_font_num_17,cc_play_table_bg,cc_sheet_exchange_json",
+			"name": "cc"
+		},
+		{
+			"keys": "cc_win_mp3,cc_start_mp3,cc_special_selectcard_mp3,cc_special_dispatch_mp3,cc_snd_throw_mp3,cc_showcard_mp3,cc_send_hintcard_mp3,cc_lose_mp3,cc_giveup_mp3,cc_enter_mp3",
+			"name": "ccsounds"
+		},
+		{
+			"keys": "",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "proto/ccgame.proto",
+			"type": "text",
+			"name": "ccgame_proto"
+		},
+		{
+			"url": "proto/ccuser.proto",
+			"type": "text",
+			"name": "ccuser_proto"
+		},
+		{
+			"url": "proto/ccbadwords.txt",
+			"type": "text",
+			"name": "ccbadwords_txt"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_bindPhone.json",
+			"type": "sheet",
+			"name": "sheet_bindPhone_json",
+			"subkeys": "cc_phonebind_getcode,cc_phonebind_now,cc_phonebind_tit"
+		},
+		{
+			"url": "cmpChicken/langCmpChicken.json",
+			"type": "json",
+			"name": "langCmpChicken"
+		},
+		{
+			"url": "assets/animations/cc_brow666Ani.png",
+			"type": "image",
+			"name": "cc_brow666Ani_png"
+		},
+		{
+			"url": "assets/animations/cc_browGoodAni.png",
+			"type": "image",
+			"name": "cc_browGoodAni_png"
+		},
+		{
+			"url": "assets/animations/cc_browLoveAni.png",
+			"type": "image",
+			"name": "cc_browLoveAni_png"
+		},
+		{
+			"url": "assets/animations/cc_browTomatoAni.png",
+			"type": "image",
+			"name": "cc_browTomatoAni_png"
+		},
+		{
+			"url": "assets/animations/cc_browTortiseAni.png",
+			"type": "image",
+			"name": "cc_browTortiseAni_png"
+		},
+		{
+			"url": "assets/animations/cc_coin.png",
+			"type": "image",
+			"name": "ani_coin_png"
+		},
+		{
+			"url": "assets/animations/cc_frLightAni.png",
+			"type": "image",
+			"name": "cc_frLightAni_png"
+		},
+		{
+			"url": "assets/animations/cc_browGoodAni.json",
+			"type": "json",
+			"name": "cc_browGoodAni_json"
+		},
+		{
+			"url": "assets/animations/cc_brow666Ani.json",
+			"type": "json",
+			"name": "cc_brow666Ani_json"
+		},
+		{
+			"url": "assets/animations/cc_coin.json",
+			"type": "json",
+			"name": "ani_coin_json"
+		},
+		{
+			"url": "assets/animations/cc_browTomatoAni.json",
+			"type": "json",
+			"name": "cc_browTomatoAni_json"
+		},
+		{
+			"url": "assets/animations/cc_browTortiseAni.json",
+			"type": "json",
+			"name": "cc_browTortiseAni_json"
+		},
+		{
+			"url": "assets/animations/cc_browLoveAni.json",
+			"type": "json",
+			"name": "cc_browLoveAni_json"
+		},
+		{
+			"url": "assets/animations/cc_frLightAni.json",
+			"type": "json",
+			"name": "cc_frLightAni_json"
+		},
+		{
+			"url": "assets/dragon/cc_gm_chuntian.json",
+			"type": "json",
+			"name": "cc_gm_chuntian"
+		},
+		{
+			"url": "assets/dragon/cc_gm_chuntian_texture_json.json",
+			"type": "json",
+			"name": "cc_gm_chuntian_texture_json"
+		},
+		{
+			"url": "assets/dragon/cc_gm_chuntian_texture_png.png",
+			"type": "image",
+			"name": "cc_gm_chuntian_texture_png"
+		},
+		{
+			"url": "assets/dragon/cc_gm_feiji.json",
+			"type": "json",
+			"name": "cc_gm_feiji"
+		},
+		{
+			"url": "assets/dragon/cc_gm_feiji_texture_json.json",
+			"type": "json",
+			"name": "cc_gm_feiji_texture_json"
+		},
+		{
+			"url": "assets/dragon/cc_gm_feiji_texture_png.png",
+			"type": "image",
+			"name": "cc_gm_feiji_texture_png"
+		},
+		{
+			"url": "assets/dragon/cc_gm_shunziliandui.json",
+			"type": "json",
+			"name": "cc_gm_shunziliandui"
+		},
+		{
+			"url": "assets/dragon/cc_gm_shunziliandui_texture_json.json",
+			"type": "json",
+			"name": "cc_gm_shunziliandui_texture_json"
+		},
+		{
+			"url": "assets/dragon/cc_gm_shunziliandui_texture_png.png",
+			"type": "image",
+			"name": "cc_gm_shunziliandui_texture_png"
+		},
+		{
+			"url": "assets/dragon/cc_gm_wangzha.json",
+			"type": "json",
+			"name": "cc_gm_wangzha"
+		},
+		{
+			"url": "assets/dragon/cc_gm_wangzha_texture_json.json",
+			"type": "json",
+			"name": "cc_gm_wangzha_texture_json"
+		},
+		{
+			"url": "assets/dragon/cc_gm_wangzha_texture_png.png",
+			"type": "image",
+			"name": "cc_gm_wangzha_texture_png"
+		},
+		{
+			"url": "assets/dragon/cc_gm_zhadan.json",
+			"type": "json",
+			"name": "cc_gm_zhadan"
+		},
+		{
+			"url": "assets/dragon/cc_gm_zhadan_texture_json.json",
+			"type": "json",
+			"name": "cc_gm_zhadan_texture_json"
+		},
+		{
+			"url": "assets/dragon/cc_gm_zhadan_texture_png.png",
+			"type": "image",
+			"name": "cc_gm_zhadan_texture_png"
+		},
+		{
+			"url": "assets/dragon/cc_hongbao.json",
+			"type": "json",
+			"name": "cc_hongbao"
+		},
+		{
+			"url": "assets/dragon/cc_hongbao_texture_json.json",
+			"type": "json",
+			"name": "cc_hongbao_texture_json"
+		},
+		{
+			"url": "assets/dragon/cc_hongbao_texture_png.png",
+			"type": "image",
+			"name": "cc_hongbao_texture_png"
+		},
+		{
+			"url": "assets/dragon/cc_hongbaodonghua.json",
+			"type": "json",
+			"name": "cc_hongbaodonghua"
+		},
+		{
+			"url": "assets/dragon/cc_hongbaodonghua_texture_json.json",
+			"type": "json",
+			"name": "cc_hongbaodonghua_texture_json"
+		},
+		{
+			"url": "assets/dragon/cc_hongbaodonghua_texture_png.png",
+			"type": "image",
+			"name": "cc_hongbaodonghua_texture_png"
+		},
+		{
+			"url": "assets/dragon/cc_jingdeng.json",
+			"type": "json",
+			"name": "cc_jingdeng"
+		},
+		{
+			"url": "assets/dragon/cc_jingdeng_texture_json.json",
+			"type": "json",
+			"name": "cc_jingdeng_texture_json"
+		},
+		{
+			"url": "assets/dragon/cc_jingdeng_texture_png.png",
+			"type": "image",
+			"name": "cc_jingdeng_texture_png"
+		},
+		{
+			"url": "assets/dragon/cc_sign.json",
+			"type": "json",
+			"name": "cc_sign"
+		},
+		{
+			"url": "assets/dragon/cc_sign_texture_json.json",
+			"type": "json",
+			"name": "cc_sign_texture_json"
+		},
+		{
+			"url": "assets/dragon/cc_sign_texture_png.png",
+			"type": "image",
+			"name": "cc_sign_texture_png"
+		},
+		{
+			"url": "cmpChicken/assets/fonts/cc_font_num_17.fnt",
+			"type": "font",
+			"name": "cc_font_num_17"
+		},
+		{
+			"url": "cmpChicken/assets/fonts/cc_font_num_17.png",
+			"type": "image",
+			"name": "cc_font_num_17_png"
+		},
+		{
+			"url": "cmpChicken/assets/fonts/cc_font_num_18.fnt",
+			"type": "font",
+			"name": "cc_font_num_18"
+		},
+		{
+			"url": "cmpChicken/assets/fonts/cc_font_num_18.png",
+			"type": "image",
+			"name": "cc_font_num_18_png"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_0.fnt",
+			"type": "font",
+			"name": "cc_font_num_0"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_0.png",
+			"type": "image",
+			"name": "cc_font_num_0_png"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_1.fnt",
+			"type": "font",
+			"name": "cc_font_num_1"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_1.png",
+			"type": "image",
+			"name": "cc_font_num_1_png"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_10.fnt",
+			"type": "font",
+			"name": "cc_font_num_10"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_10.png",
+			"type": "image",
+			"name": "cc_font_num_10_png"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_11.fnt",
+			"type": "font",
+			"name": "cc_font_num_11"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_11.png",
+			"type": "image",
+			"name": "cc_font_num_11_png"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_12.fnt",
+			"type": "font",
+			"name": "cc_font_num_12"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_12.png",
+			"type": "image",
+			"name": "cc_font_num_12_png"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_13.fnt",
+			"type": "font",
+			"name": "cc_font_num_13"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_13.png",
+			"type": "image",
+			"name": "cc_font_num_13_png"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_15.fnt",
+			"type": "font",
+			"name": "cc_font_num_15"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_15.png",
+			"type": "image",
+			"name": "cc_font_num_15_png"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_16.fnt",
+			"type": "font",
+			"name": "cc_font_num_16"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_16.png",
+			"type": "image",
+			"name": "cc_font_num_16_png"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_2.fnt",
+			"type": "font",
+			"name": "cc_font_num_2"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_2.png",
+			"type": "image",
+			"name": "cc_font_num_2_png"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_3.fnt",
+			"type": "font",
+			"name": "cc_font_num_3"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_3.png",
+			"type": "image",
+			"name": "cc_font_num_3_png"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_6.fnt",
+			"type": "font",
+			"name": "cc_font_num_6"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_6.png",
+			"type": "image",
+			"name": "cc_font_num_6_png"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_7.fnt",
+			"type": "font",
+			"name": "cc_font_num_7"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_7.png",
+			"type": "image",
+			"name": "cc_font_num_7_png"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_8.fnt",
+			"type": "font",
+			"name": "cc_font_num_8"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_8.png",
+			"type": "image",
+			"name": "cc_font_num_8_png"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_9.fnt",
+			"type": "font",
+			"name": "cc_font_num_9"
+		},
+		{
+			"url": "assets/fonts/cc_font_num_9.png",
+			"type": "image",
+			"name": "cc_font_num_9_png"
+		},
+		{
+			"url": "cmpChicken/assets/singles/cc_play_table_bg.png",
+			"type": "image",
+			"name": "cc_play_table_bg"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_common_c.json",
+			"type": "sheet",
+			"name": "cc_sheet_common_c_json",
+			"subkeys": "cc_common_alert_bg,cc_common_ali,cc_common_arrow,cc_common_avatar_bg,cc_common_avatar_light,cc_common_avatar_mask,cc_common_avatar_vip,cc_common_bg1,cc_common_bg_inner,cc_common_btn1_h,cc_common_btn1_n,cc_common_btn_back_small_h,cc_common_btn_back_small_n,cc_common_btn_blue_d,cc_common_btn_blue_h,cc_common_btn_blue_n,cc_common_btn_enter_h,cc_common_btn_enter_n,cc_common_btn_lab_cancel_h,cc_common_btn_lab_cancel_n,cc_common_btn_lab_confirm_h,cc_common_btn_lab_confirm_n,cc_common_btn_lab_share_h,cc_common_btn_lab_share_n,cc_common_btn_lsx_h,cc_common_btn_lsx_n,cc_common_btn_lx_h,cc_common_btn_lx_n,cc_common_btn_orange1_1,cc_common_btn_orange1_2,cc_common_btn_orange1_3,cc_common_btn_orange2_gray,cc_common_btn_orange2_h,cc_common_btn_orange2_n,cc_common_btn_orange3,cc_common_btn_orange_d,cc_common_btn_orange_h,cc_common_btn_orange_n,cc_common_btn_plus_h,cc_common_btn_plus_n,cc_common_btn_return_n,cc_common_btn_sub_n,cc_common_buy,cc_common_close_h,cc_common_close_n,cc_common_copyPublic,cc_common_copyWX,cc_common_dropdown,cc_common_dropdown_bg,cc_common_dropdown_checkbox,cc_common_dropdown_d,cc_common_dropdown_h,cc_common_dropdown_n,cc_common_exchangeRed,cc_common_flagRed,cc_common_flag_98,cc_common_flag_act,cc_common_get,cc_common_gold_bg,cc_common_h_slider_thumb_button,cc_common_h_slider_track,cc_common_h_slider_track_highlight,cc_common_match_info_bg,cc_common_paytit,cc_common_progress_circle_thumb,cc_common_progress_circle_track,cc_common_progress_thumb,cc_common_progress_thumb_layer_0,cc_common_progress_thumb_layer_1,cc_common_progress_thumb_layer_2,cc_common_progress_thumb_repeat,cc_common_progress_track,cc_common_radio_1,cc_common_radio_2,cc_common_switch_lab_off,cc_common_switch_lab_on,cc_common_tab_button_h,cc_common_tab_button_n,cc_common_tab_tutton_h,cc_common_tab_tutton_n,cc_common_text_input_bg,cc_common_text_input_bg2,cc_common_tit_bg,cc_common_toast,cc_common_word_15,cc_common_wx"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_common1.json",
+			"type": "sheet",
+			"name": "cc_sheet_common1_json",
+			"subkeys": "cc_common_alert1_bg,cc_common_bg"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_dayTask.json",
+			"type": "sheet",
+			"name": "cc_sheet_dayTask_json",
+			"subkeys": "cc_down_tit,cc_go_cancel,cc_go_down,cc_notice_bind,cc_notice_delegate_tit,cc_notice_game_tit,cc_notice_red_tit,cc_room_downGold1,cc_room_downInfo,cc_task_doTask_n,cc_task_doTask_p,cc_task_fff,cc_task_get,cc_task_getReward_n,cc_task_getReward_p,cc_task_gold,cc_task_item_bg,cc_task_light,cc_task_progress_bg,cc_task_progress_pro,cc_task_re2,cc_task_record,cc_task_red1,cc_task_red3,cc_task_tipbg,cc_task_title,cc_tit_act,cc_tit_act1,cc_tit_bg1,cc_tit_btnbg,cc_tit_notice,cc_tit_notice1"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_exchange.json",
+			"type": "sheet",
+			"name": "cc_sheet_exchange_json",
+			"subkeys": "cc_exchage_buy,cc_exchange_4,cc_exchange_5,cc_exchange_6,cc_exchange_7,cc_exchange_bg,cc_exchange_btn_1,cc_exchange_btn_2,cc_exchange_btn_4_n,cc_exchange_btn_word_1_h,cc_exchange_btn_word_1_n,cc_exchange_btn_word_2_h,cc_exchange_btn_word_2_n,cc_exchange_cm,cc_exchange_copy,cc_exchange_get,cc_exchange_getSucc,cc_exchange_image_1,cc_exchange_image_10,cc_exchange_image_3,cc_exchange_image_6,cc_exchange_image_7,cc_exchange_pre,cc_exchange_pre1,cc_exchange_pre2,cc_exchange_pre3,cc_exchange_recorder_n,cc_exchange_tit_acc"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_follow_course.json",
+			"type": "sheet",
+			"name": "cc_sheet_follow_course_json",
+			"subkeys": "cc_follow_course_bg,cc_follow_course_s1_detail,cc_follow_course_s2_detail,cc_follow_course_s3_detail,cc_follow_course_s4_detail,cc_follow_course_s5_detail,cc_follow_course_s6_detail,cc_follow_course_step1,cc_follow_course_step2,cc_follow_course_step3,cc_follow_course_step4,cc_follow_course_step5,cc_follow_course_step6"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_frecharge.json",
+			"type": "sheet",
+			"name": "cc_sheet_frecharge_json",
+			"subkeys": "cc_frechare_getGold,cc_frecharge_desc,cc_frecharge_diamond_img,cc_frecharge_diamond_word,cc_frecharge_get_n,cc_frecharge_get_p,cc_frecharge_gopay_n,cc_frecharge_gopay_p,cc_frecharge_light,cc_frecharge_mask,cc_frecharge_money_back,cc_frecharge_money_light,cc_frecharge_player,cc_frecharge_send"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_frecharge_getRew.json",
+			"type": "sheet",
+			"name": "cc_sheet_frecharge_getRew_json",
+			"subkeys": "cc_frecharge_tip_desc,cc_frecharge_tip_get_n,cc_frecharge_tip_get_p,cc_frecharge_tip_title,cc_newBag_desc,cc_newBag_tit"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_guesscards.json",
+			"type": "sheet",
+			"name": "cc_sheet_guesscards_json",
+			"subkeys": "cc_guesscards_914,cc_guesscards_915,cc_guesscards_916,cc_guesscards_917,cc_guesscards_918,cc_guesscards_919,cc_guesscards_920,cc_guesscards_921,cc_guesscards_922,cc_guesscards_923,cc_guesscards_924,cc_guesscards_925,cc_guesscards_926,cc_guesscards_927,cc_guesscards_928,cc_guesscards_929,cc_guesscards_930,cc_guesscards_931,cc_guesscards_942,cc_guesscards_943,cc_guesscards_950,cc_guesscards_952,cc_guesscards_955,cc_guesscards_956,cc_guesscards_957,cc_guesscards_ani_star,cc_guesscards_light,cc_guesscards_tiao"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_icon_c.json",
+			"type": "sheet",
+			"name": "cc_sheet_icon_c_json",
+			"subkeys": "cc_icon_amount,cc_icon_clock,cc_icon_diamond,cc_icon_gold,cc_icon_gold2,cc_icon_head10,cc_icon_head9,cc_icon_head_default,cc_icon_master,cc_icon_master_card,cc_icon_redcoin,cc_icon_rmb,cc_icon_room_0,cc_icon_room_1,cc_icon_room_2,cc_icon_score,cc_icon_sign_up"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_invite_c.json",
+			"type": "sheet",
+			"name": "cc_sheet_invite_c_json",
+			"subkeys": "cc_invite_1,cc_invite_12,cc_invite_13,cc_invite_2,cc_invite_3,cc_invite_4,cc_invite_5,cc_invite_6,cc_invite_7,cc_invite_8,cc_invite_9,cc_invite_bg1,cc_invite_bg2,cc_invite_bg3,cc_invite_btnbg,cc_invite_chou,cc_invite_day_ban,cc_invite_day_bg,cc_invite_day_extra,cc_invite_day_get,cc_invite_day_get1,cc_invite_day_hasget,cc_invite_day_mask,cc_invite_day_red,cc_invite_day_red1,cc_invite_day_tit,cc_invite_diamond,cc_invite_do,cc_invite_do1,cc_invite_rank,cc_invite_rank1,cc_invite_rankTit,cc_invite_red,cc_invite_rule,cc_invite_split,cc_invite_url"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_login_c.json",
+			"type": "sheet",
+			"name": "cc_sheet_login_c_json",
+			"subkeys": "cc_login_bt_word_wjmm_n,cc_login_bt_word_zczh_n,cc_login_btn_1_n,cc_login_btn_2_n,cc_login_btn_3_n,cc_login_btn_dl_h,cc_login_btn_dl_n"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_lottery.json",
+			"type": "sheet",
+			"name": "cc_sheet_lottery_json",
+			"subkeys": "cc_lotteryBg,cc_lotteryBtn,cc_lotteryBtn1,cc_lotteryCodeTit,cc_lotteryDetail,cc_lotteryFlag,cc_lotteryItemBg,cc_lotteryItemBg1,cc_lotteryMy,cc_lotteryPro1_1,cc_lotteryPro1_2,cc_lotteryPro2_1,cc_lotteryPro2_2,cc_lotteryRecTit,cc_lotterySplit,cc_lotteryTimebg,cc_lotteryTit,cc_lotteryTypeBg,cc_lottery_arr,cc_lottery_bg"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_lucky.json",
+			"type": "sheet",
+			"name": "cc_sheet_lucky_json",
+			"subkeys": "cc_lucky_0,cc_lucky_1,cc_lucky_2,cc_lucky_3,cc_lucky_bg,cc_lucky_btn,cc_lucky_btn1,cc_lucky_light1,cc_lucky_light2,cc_lucky_nor,cc_lucky_sel,cc_lucky_tit,cc_lucky_tit1,cc_lucky_tit2"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_mall_recorder.json",
+			"type": "sheet",
+			"name": "cc_sheet_mall_recorder_json",
+			"subkeys": "cc_mall_recorder_bg1,cc_mall_recorder_bg2,cc_mall_recorder_bg3,cc_mall_recorder_buy_h,cc_mall_recorder_buy_n,cc_mall_tit"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_match_c.json",
+			"type": "sheet",
+			"name": "cc_sheet_match_c_json",
+			"subkeys": "cc_match_btn_exit_h,cc_match_btn_exit_n,cc_match_btn_exit_txt_h,cc_match_btn_exit_txt_n,cc_match_btn_help_h,cc_match_btn_help_n,cc_match_btn_reward_h,cc_match_btn_reward_n,cc_match_btn_sign_up_h,cc_match_btn_sign_up_n,cc_match_finish_bg,cc_match_finish_top,cc_match_float_bg,cc_match_getreward_h,cc_match_getreward_n,cc_match_panel_bg,cc_match_panel_bg_2,cc_match_rank_detail,cc_match_word_17,cc_match_word_18,cc_match_word_19,cc_match_word_20,cc_match_word_21,cc_match_word_22,cc_match_word_24,cc_match_word_26,cc_match_word_29,cc_match_word_4,cc_match_word_5,cc_match_word_6"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_match9_diamond.json",
+			"type": "sheet",
+			"name": "cc_sheet_match9_diamond_json",
+			"subkeys": "cc_match9_averageScore,cc_match9_bg,cc_match9_curRank,cc_match9_get,cc_match9_getRew,cc_match9_glScore,cc_match9_idxNum,cc_match9_info,cc_match9_nick,cc_match9_over,cc_match9_rule,cc_match9_score,cc_match9_sure,cc_match9_t1,cc_match9_t2,cc_match9_titBg,cc_match9_titGet,cc_match9_titInfo,cc_match9_totScore,cc_match9_turn,cc_match9_turn1,cc_match9_turn2,cc_match9_turn3"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_matchRevive.json",
+			"type": "sheet",
+			"name": "cc_sheet_matchRevive_json",
+			"subkeys": "cc_matchRevive,cc_matchRevive1,cc_matchRevive2,cc_matchRevive3,cc_matchRevive_add,cc_matchRevive_tit"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_monday.json",
+			"type": "sheet",
+			"name": "cc_sheet_monday_json",
+			"subkeys": "cc_monday_price12,cc_monday_word,cc_title_monday"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_monthcard.json",
+			"type": "sheet",
+			"name": "cc_sheet_monthcard_json",
+			"subkeys": "cc_mc_icon_month_card,cc_mc_title_month_card,cc_month_price30,cc_month_price60,cc_month_tips,cc_month_word1,cc_month_word2"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_newyear.json",
+			"type": "sheet",
+			"name": "cc_sheet_newyear_json",
+			"subkeys": "cc_newyear_bg,cc_newyear_bg1,cc_newyear_bg2,cc_newyear_bg3,cc_newyear_bg4,cc_newyear_icon1,cc_newyear_icon2,cc_newyear_icon3,cc_newyear_icon4,cc_newyear_tit"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_personal_c.json",
+			"type": "sheet",
+			"name": "cc_sheet_personal_c_json",
+			"subkeys": "cc_personal_arrow_c,cc_personal_arrow_n,cc_personal_avatar_info_bg,cc_personal_back_c,cc_personal_back_n,cc_personal_bg,cc_personal_bg_9,cc_personal_btn_cancel_c,cc_personal_btn_cancel_n,cc_personal_btn_create_c,cc_personal_btn_create_n,cc_personal_btn_join_c,cc_personal_btn_join_n,cc_personal_btn_leave_c,cc_personal_btn_leave_n,cc_personal_btn_search_c,cc_personal_btn_search_n,cc_personal_btn_share_c,cc_personal_btn_start_c,cc_personal_btn_start_n,cc_personal_create,cc_personal_create_frame,cc_personal_del_c,cc_personal_del_n,cc_personal_detail,cc_personal_detail_itembg,cc_personal_detail_point,cc_personal_history,cc_personal_history_bg_litem,cc_personal_join_frame,cc_personal_join_title,cc_personal_leave_flag,cc_personal_n0_c,cc_personal_n0_n,cc_personal_n1_c,cc_personal_n1_n,cc_personal_n2_c,cc_personal_n2_n,cc_personal_n3_c,cc_personal_n3_n,cc_personal_n4_c,cc_personal_n4_n,cc_personal_n5_c,cc_personal_n5_n,cc_personal_n6_c,cc_personal_n6_n,cc_personal_n7_c,cc_personal_n7_n,cc_personal_n8_c,cc_personal_n8_n,cc_personal_n9_c,cc_personal_n9_n,cc_personal_owner,cc_personal_query_dot,cc_personal_radio_c,cc_personal_radio_n,cc_personal_ri_title,cc_personal_ri_topinfo,cc_personal_ri_word1,cc_personal_ri_word2,cc_personal_ri_word3,cc_personal_ri_word4,cc_personal_split,cc_personal_time,cc_personal_tips_bg,cc_personal_title,cc_personal_word1,cc_personal_word2,cc_personal_word3,cc_personal_word4"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_pinfo.json",
+			"type": "sheet",
+			"name": "cc_sheet_pinfo_json",
+			"subkeys": "cc_pinfo_100,cc_pinfo_666_n,cc_pinfo_666_p,cc_pinfo_a,cc_pinfo_b,cc_pinfo_free,cc_pinfo_good_n,cc_pinfo_good_p,cc_pinfo_headMask,cc_pinfo_headMaskbg,cc_pinfo_horn_n,cc_pinfo_horn_p,cc_pinfo_infoBg,cc_pinfo_love_n,cc_pinfo_love_p,cc_pinfo_report_n,cc_pinfo_report_p,cc_pinfo_title,cc_pinfo_tomato_n,cc_pinfo_tomato_p,cc_pinfo_tortise_n,cc_pinfo_tortise_p"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_play_c.json",
+			"type": "sheet",
+			"name": "cc_sheet_play_c_json",
+			"subkeys": "cc_double1,cc_double2,cc_doubleFlag,cc_failDoubleEnd,cc_failDoublePre1,cc_failDoublePre2,cc_failDoublePre4,cc_ffailDoublePre3,cc_noDouble1,cc_noDouble2,cc_play_36,cc_play_animate_gold_light,cc_play_animate_star,cc_play_bg_1,cc_play_bg_2,cc_play_bg_3,cc_play_bg_4,cc_play_bg_5,cc_play_blessing_bag,cc_play_blessing_bag_dis,cc_play_blessing_bag_time,cc_play_bottom_star,cc_play_btn_13_h,cc_play_btn_13_n,cc_play_btn_back_h,cc_play_btn_back_n,cc_play_btn_blue_h,cc_play_btn_blue_n,cc_play_btn_chou,cc_play_btn_chou2,cc_play_btn_chou3,cc_play_btn_d,cc_play_btn_grab,cc_play_btn_guess,cc_play_btn_not_grab,cc_play_btn_orange_h,cc_play_btn_orange_n,cc_play_btn_record_h,cc_play_btn_record_n,cc_play_btn_set_h,cc_play_btn_set_n,cc_play_btn_trusteeship_d,cc_play_btn_trusteeship_h,cc_play_btn_trusteeship_n,cc_play_btn_word_1_d,cc_play_btn_word_1_h,cc_play_btn_word_1_n,cc_play_btn_word_2_d,cc_play_btn_word_2_h,cc_play_btn_word_2_n,cc_play_btn_word_3_h,cc_play_btn_word_3_n,cc_play_btn_word_again_d,cc_play_btn_word_again_h,cc_play_btn_word_again_n,cc_play_btn_word_come_d,cc_play_btn_word_come_h,cc_play_btn_word_come_n,cc_play_btn_word_continue_h,cc_play_btn_word_continue_n,cc_play_btn_word_exchange_h,cc_play_btn_word_exchange_n,cc_play_btn_word_getready_h,cc_play_btn_word_getready_n,cc_play_btn_word_no_d,cc_play_btn_word_no_h,cc_play_btn_word_no_n,cc_play_btn_word_nocall_h,cc_play_btn_word_nocall_n,cc_play_btn_word_prompt_d,cc_play_btn_word_prompt_h,cc_play_btn_word_prompt_n,cc_play_btn_word_start,cc_play_cancel_trust_c,cc_play_cancel_trust_n,cc_play_card_count_bg,cc_play_cardshadow,cc_play_endBg,cc_play_five_bg,cc_play_five_open,cc_play_five_rule,cc_play_font_diagonal,cc_play_give_way,cc_play_hand_ok,cc_play_image_7,cc_play_lottery,cc_play_master_card_bg,cc_play_match_detail_bg,cc_play_match_place_info_bg,cc_play_name_bg,cc_play_offline,cc_play_personal_info_bg,cc_play_record_bg,cc_play_recorder_gift,cc_play_recorder_outofdate,cc_play_red_bot,cc_play_red_pop,cc_play_redcoin_bg,cc_play_redn_bg,cc_play_robot,cc_play_robot_eye,cc_play_rule,cc_play_star_small,cc_play_task,cc_play_word_1,cc_play_word_2,cc_play_word_3,cc_play_word_4,cc_play_word_5,cc_play_word_6,cc_play_word_7,cc_play_word_grab,cc_play_word_not_grab"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_poker.json",
+			"type": "sheet",
+			"name": "cc_sheet_poker",
+			"subkeys": "cc_poker_black_10,cc_poker_black_2,cc_poker_black_3,cc_poker_black_4,cc_poker_black_5,cc_poker_black_6,cc_poker_black_7,cc_poker_black_8,cc_poker_black_9,cc_poker_black_a,cc_poker_black_j,cc_poker_black_joker,cc_poker_black_joker_ddz_icon,cc_poker_black_k,cc_poker_black_q,cc_poker_blue_back,cc_poker_broad,cc_poker_broad_h,cc_poker_gray_back,cc_poker_red_10,cc_poker_red_2,cc_poker_red_3,cc_poker_red_4,cc_poker_red_5,cc_poker_red_6,cc_poker_red_7,cc_poker_red_8,cc_poker_red_9,cc_poker_red_a,cc_poker_red_back,cc_poker_red_j,cc_poker_red_joker,cc_poker_red_joker_ddz_icon,cc_poker_red_k,cc_poker_red_q,cc_poker_sign_0,cc_poker_sign_1,cc_poker_sign_2,cc_poker_sign_3"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_profile_c.json",
+			"type": "sheet",
+			"name": "cc_sheet_profile_c_json",
+			"subkeys": "cc_profile_txt_1_c"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_recharge.json",
+			"type": "sheet",
+			"name": "cc_sheet_recharge_json",
+			"subkeys": "cc_recharge_active,cc_recharge_bg_34,cc_recharge_bg_36,cc_recharge_bg_38,cc_recharge_limit,cc_recharge_limit1000"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_recharge_tips_c.json",
+			"type": "sheet",
+			"name": "cc_sheet_recharge_tips_c_json",
+			"subkeys": "cc_recharge_tips_bg1,cc_recharge_tips_bg2,cc_recharge_tips_bg3,cc_recharge_tips_bg4,cc_recharge_tips_duihuan1,cc_recharge_tips_duihuan2,cc_recharge_tips_goumai1,cc_recharge_tips_goumai2,cc_recharge_tips_join_match_h,cc_recharge_tips_join_match_n,cc_recharge_tit"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_red_rank.json",
+			"type": "sheet",
+			"name": "cc_sheet_red_rank_json",
+			"subkeys": "cc_red_rank_bg_10,cc_red_rank_bg_11,cc_red_rank_bg_12,cc_red_rank_bg_13,cc_red_rank_bg_14,cc_red_rank_bg_15,cc_red_rank_bg_25,cc_red_rank_bg_7,cc_red_rank_bg_8,cc_red_rank_bg_9"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_revive.json",
+			"type": "sheet",
+			"name": "cc_sheet_revive_json",
+			"subkeys": "cc_revive_add,cc_revive_addition,cc_revive_bagBtn,cc_revive_money6,cc_revive_tit"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_room_c.json",
+			"type": "sheet",
+			"name": "cc_sheet_room_c_json",
+			"subkeys": "cc_icon_month_card,cc_room_0,cc_room_1,cc_room_101,cc_room_11,cc_room_2,cc_room_3,cc_room_act1,cc_room_act2,cc_room_bg1,cc_room_bg_1,cc_room_bg_19,cc_room_bg_2,cc_room_bg_3,cc_room_btn_3_n,cc_room_btn_chou,cc_room_btn_frecharge_back,cc_room_btn_mall_n,cc_room_btn_setup_n,cc_room_center,cc_room_center1,cc_room_dayRed,cc_room_diamon,cc_room_diamond_new,cc_room_diamond_person,cc_room_diamond_word,cc_room_diy,cc_room_diy_btn_h,cc_room_diy_btn_n,cc_room_diy_create,cc_room_diy_history,cc_room_diy_join,cc_room_downApp,cc_room_downApp1,cc_room_email1,cc_room_email2,cc_room_fish,cc_room_flag_win5,cc_room_fu,cc_room_get,cc_room_getGray,cc_room_getRedCourse,cc_room_get_c,cc_room_get_n,cc_room_gold,cc_room_image_7,cc_room_image_8,cc_room_invite_n,cc_room_item_bg,cc_room_item_bottom,cc_room_kefu,cc_room_lottery_redcoin,cc_room_lottery_redcoin1,cc_room_lucky,cc_room_lucky1,cc_room_lucky2,cc_room_match_item_bg,cc_room_match_n,cc_room_mini,cc_room_monday,cc_room_msg,cc_room_niuniu,cc_room_normal_n,cc_room_package_label,cc_room_pdk,cc_room_person_label,cc_room_red,cc_room_redErr,cc_room_red_3,cc_room_red_normal,cc_room_report,cc_room_sendMsg,cc_room_seprate,cc_room_share,cc_room_share1,cc_room_share2,cc_room_smrz,cc_room_spec_bg,cc_room_talk_history,cc_room_talk_input,cc_room_talk_sendMsg,cc_room_talk_title,cc_room_task1,cc_room_task2,cc_room_tip_gold_can_get,cc_room_trumpet,cc_room_vip,cc_room_watch,cc_room_watchLight,cc_room_win_redcoin,cc_room_word_0,cc_room_word_1,cc_room_word_13,cc_room_word_14,cc_room_word_2,cc_room_word_23,cc_room_word_25,cc_room_word_28,cc_room_word_3,cc_room_word_free,cc_room_wxTip"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_setting.json",
+			"type": "sheet",
+			"name": "cc_sheet_setting_json",
+			"subkeys": "cc_setting_btn_about_h,cc_setting_btn_about_n,cc_setting_btn_feedback_h,cc_setting_btn_feedback_n,cc_setting_btn_help_h,cc_setting_btn_help_n,cc_setting_btn_logout_d,cc_setting_btn_logout_h,cc_setting_btn_logout_n,cc_setting_word_1,cc_setting_word_2,cc_setting_word_3"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_signAndEmail.json",
+			"type": "sheet",
+			"name": "cc_sheet_signAndEmail_json",
+			"subkeys": "cc_email_itemNew,cc_email_itemRead,cc_email_newFlag,cc_email_noNew1,cc_email_noNew2,cc_email_readFlag,cc_email_tit,cc_sign_bg,cc_sign_day1,cc_sign_day2,cc_sign_day3,cc_sign_day4,cc_sign_day5,cc_sign_day6,cc_sign_day7,cc_sign_hasGet,cc_sign_item,cc_sign_rewardBg,cc_sign_tit"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_smallgame.json",
+			"type": "sheet",
+			"name": "cc_sheet_smallgame_json",
+			"subkeys": "cc_smallgame_back_btn,cc_smallgame_bottom_bg,cc_smallgame_game_2048,cc_smallgame_game_excite,cc_smallgame_game_explore,cc_smallgame_game_hturn,cc_smallgame_game_link,cc_smallgame_game_turn,cc_smallgame_market_btn,cc_smallgame_setting_btn,cc_smallgame_severs_btn,cc_smallgame_sign_btn,cc_smallgame_title,cc_smallgame_title_bg,cc_smallgame_top_bg,cc_smallgame_userData_bg,cc_smallgame_user_img,cc_smallgame_user_img_bg"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_thanks.json",
+			"type": "sheet",
+			"name": "cc_sheet_thanks_json",
+			"subkeys": "cc_thanks_act1,cc_thanks_act2,cc_thanks_buy,cc_thanks_r,cc_thanks_w"
+		},
+		{
+			"url": "assets/sheets/cc_sheet_vip.json",
+			"type": "sheet",
+			"name": "cc_sheet_vip_json",
+			"subkeys": "cc_vip_arrLeft,cc_vip_bg1,cc_vip_buy,cc_vip_getRew,cc_vip_level,cc_vip_t1,cc_vip_t2,cc_vip_tit"
+		},
+		{
+			"url": "assets/singles/cc_game_copyright.png",
+			"type": "image",
+			"name": "cc_game_copyright"
+		},
+		{
+			"url": "assets/singles/cc_game_notice.png",
+			"type": "image",
+			"name": "cc_game_notice"
+		},
+		{
+			"url": "assets/singles/cc_login_bg.png",
+			"type": "image",
+			"name": "cc_login_bg"
+		},
+		{
+			"url": "assets/singles/cc_play_bg.jpg",
+			"type": "image",
+			"name": "cc_play_bg"
+		},
+		{
+			"url": "assets/singles/cc_room_bg.jpg",
+			"type": "image",
+			"name": "cc_room_bg"
+		},
+		{
+			"url": "sounds/cc_Man_1.mp3",
+			"type": "sound",
+			"name": "cc_Man_1_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_10.mp3",
+			"type": "sound",
+			"name": "cc_Man_10_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_11.mp3",
+			"type": "sound",
+			"name": "cc_Man_11_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_12.mp3",
+			"type": "sound",
+			"name": "cc_Man_12_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_13.mp3",
+			"type": "sound",
+			"name": "cc_Man_13_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_14.mp3",
+			"type": "sound",
+			"name": "cc_Man_14_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_15.mp3",
+			"type": "sound",
+			"name": "cc_Man_15_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_2.mp3",
+			"type": "sound",
+			"name": "cc_Man_2_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_3.mp3",
+			"type": "sound",
+			"name": "cc_Man_3_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_4.mp3",
+			"type": "sound",
+			"name": "cc_Man_4_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_5.mp3",
+			"type": "sound",
+			"name": "cc_Man_5_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_6.mp3",
+			"type": "sound",
+			"name": "cc_Man_6_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_7.mp3",
+			"type": "sound",
+			"name": "cc_Man_7_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_8.mp3",
+			"type": "sound",
+			"name": "cc_Man_8_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_9.mp3",
+			"type": "sound",
+			"name": "cc_Man_9_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_NoOrder.mp3",
+			"type": "sound",
+			"name": "cc_Man_NoOrder_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_Order.mp3",
+			"type": "sound",
+			"name": "cc_Man_Order_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_bujiabei.mp3",
+			"type": "sound",
+			"name": "cc_Man_bujiabei_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_buyao1.mp3",
+			"type": "sound",
+			"name": "cc_Man_buyao1_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_buyao2.mp3",
+			"type": "sound",
+			"name": "cc_Man_buyao2_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_buyao3.mp3",
+			"type": "sound",
+			"name": "cc_Man_buyao3_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_buyao4.mp3",
+			"type": "sound",
+			"name": "cc_Man_buyao4_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_dui1.mp3",
+			"type": "sound",
+			"name": "cc_Man_dui1_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_dui10.mp3",
+			"type": "sound",
+			"name": "cc_Man_dui10_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_dui11.mp3",
+			"type": "sound",
+			"name": "cc_Man_dui11_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_dui12.mp3",
+			"type": "sound",
+			"name": "cc_Man_dui12_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_dui13.mp3",
+			"type": "sound",
+			"name": "cc_Man_dui13_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_dui2.mp3",
+			"type": "sound",
+			"name": "cc_Man_dui2_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_dui3.mp3",
+			"type": "sound",
+			"name": "cc_Man_dui3_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_dui4.mp3",
+			"type": "sound",
+			"name": "cc_Man_dui4_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_dui5.mp3",
+			"type": "sound",
+			"name": "cc_Man_dui5_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_dui6.mp3",
+			"type": "sound",
+			"name": "cc_Man_dui6_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_dui7.mp3",
+			"type": "sound",
+			"name": "cc_Man_dui7_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_dui8.mp3",
+			"type": "sound",
+			"name": "cc_Man_dui8_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_dui9.mp3",
+			"type": "sound",
+			"name": "cc_Man_dui9_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_feiji.mp3",
+			"type": "sound",
+			"name": "cc_Man_feiji_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_jiabei.mp3",
+			"type": "sound",
+			"name": "cc_Man_jiabei_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_liandui.mp3",
+			"type": "sound",
+			"name": "cc_Man_liandui_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_sandaiyi.mp3",
+			"type": "sound",
+			"name": "cc_Man_sandaiyi_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_sandaiyidui.mp3",
+			"type": "sound",
+			"name": "cc_Man_sandaiyidui_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_shunzi.mp3",
+			"type": "sound",
+			"name": "cc_Man_shunzi_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_sidaier.mp3",
+			"type": "sound",
+			"name": "cc_Man_sidaier_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_sidailiangdui.mp3",
+			"type": "sound",
+			"name": "cc_Man_sidailiangdui_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_tuple1.mp3",
+			"type": "sound",
+			"name": "cc_Man_tuple1_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_tuple10.mp3",
+			"type": "sound",
+			"name": "cc_Man_tuple10_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_tuple11.mp3",
+			"type": "sound",
+			"name": "cc_Man_tuple11_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_tuple12.mp3",
+			"type": "sound",
+			"name": "cc_Man_tuple12_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_tuple13.mp3",
+			"type": "sound",
+			"name": "cc_Man_tuple13_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_tuple2.mp3",
+			"type": "sound",
+			"name": "cc_Man_tuple2_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_tuple3.mp3",
+			"type": "sound",
+			"name": "cc_Man_tuple3_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_tuple4.mp3",
+			"type": "sound",
+			"name": "cc_Man_tuple4_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_tuple5.mp3",
+			"type": "sound",
+			"name": "cc_Man_tuple5_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_tuple6.mp3",
+			"type": "sound",
+			"name": "cc_Man_tuple6_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_tuple7.mp3",
+			"type": "sound",
+			"name": "cc_Man_tuple7_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_tuple8.mp3",
+			"type": "sound",
+			"name": "cc_Man_tuple8_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_tuple9.mp3",
+			"type": "sound",
+			"name": "cc_Man_tuple9_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_wangzha.mp3",
+			"type": "sound",
+			"name": "cc_Man_wangzha_mp3"
+		},
+		{
+			"url": "sounds/cc_Man_zhadan.mp3",
+			"type": "sound",
+			"name": "cc_Man_zhadan_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_1.mp3",
+			"type": "sound",
+			"name": "cc_Woman_1_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_10.mp3",
+			"type": "sound",
+			"name": "cc_Woman_10_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_11.mp3",
+			"type": "sound",
+			"name": "cc_Woman_11_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_12.mp3",
+			"type": "sound",
+			"name": "cc_Woman_12_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_13.mp3",
+			"type": "sound",
+			"name": "cc_Woman_13_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_14.mp3",
+			"type": "sound",
+			"name": "cc_Woman_14_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_15.mp3",
+			"type": "sound",
+			"name": "cc_Woman_15_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_2.mp3",
+			"type": "sound",
+			"name": "cc_Woman_2_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_3.mp3",
+			"type": "sound",
+			"name": "cc_Woman_3_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_4.mp3",
+			"type": "sound",
+			"name": "cc_Woman_4_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_5.mp3",
+			"type": "sound",
+			"name": "cc_Woman_5_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_6.mp3",
+			"type": "sound",
+			"name": "cc_Woman_6_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_7.mp3",
+			"type": "sound",
+			"name": "cc_Woman_7_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_8.mp3",
+			"type": "sound",
+			"name": "cc_Woman_8_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_9.mp3",
+			"type": "sound",
+			"name": "cc_Woman_9_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_NoOrder.mp3",
+			"type": "sound",
+			"name": "cc_Woman_NoOrder_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_Order.mp3",
+			"type": "sound",
+			"name": "cc_Woman_Order_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_bujiabei.mp3",
+			"type": "sound",
+			"name": "cc_Woman_bujiabei_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_buyao1.mp3",
+			"type": "sound",
+			"name": "cc_Woman_buyao1_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_buyao2.mp3",
+			"type": "sound",
+			"name": "cc_Woman_buyao2_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_buyao3.mp3",
+			"type": "sound",
+			"name": "cc_Woman_buyao3_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_buyao4.mp3",
+			"type": "sound",
+			"name": "cc_Woman_buyao4_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_dui1.mp3",
+			"type": "sound",
+			"name": "cc_Woman_dui1_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_dui10.mp3",
+			"type": "sound",
+			"name": "cc_Woman_dui10_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_dui11.mp3",
+			"type": "sound",
+			"name": "cc_Woman_dui11_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_dui12.mp3",
+			"type": "sound",
+			"name": "cc_Woman_dui12_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_dui13.mp3",
+			"type": "sound",
+			"name": "cc_Woman_dui13_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_dui2.mp3",
+			"type": "sound",
+			"name": "cc_Woman_dui2_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_dui3.mp3",
+			"type": "sound",
+			"name": "cc_Woman_dui3_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_dui4.mp3",
+			"type": "sound",
+			"name": "cc_Woman_dui4_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_dui5.mp3",
+			"type": "sound",
+			"name": "cc_Woman_dui5_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_dui6.mp3",
+			"type": "sound",
+			"name": "cc_Woman_dui6_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_dui7.mp3",
+			"type": "sound",
+			"name": "cc_Woman_dui7_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_dui8.mp3",
+			"type": "sound",
+			"name": "cc_Woman_dui8_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_dui9.mp3",
+			"type": "sound",
+			"name": "cc_Woman_dui9_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_feiji.mp3",
+			"type": "sound",
+			"name": "cc_Woman_feiji_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_jiabei.mp3",
+			"type": "sound",
+			"name": "cc_Woman_jiabei_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_liandui.mp3",
+			"type": "sound",
+			"name": "cc_Woman_liandui_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_sandaiyi.mp3",
+			"type": "sound",
+			"name": "cc_Woman_sandaiyi_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_sandaiyidui.mp3",
+			"type": "sound",
+			"name": "cc_Woman_sandaiyidui_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_shunzi.mp3",
+			"type": "sound",
+			"name": "cc_Woman_shunzi_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_sidaier.mp3",
+			"type": "sound",
+			"name": "cc_Woman_sidaier_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_sidailiangdui.mp3",
+			"type": "sound",
+			"name": "cc_Woman_sidailiangdui_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_tuple1.mp3",
+			"type": "sound",
+			"name": "cc_Woman_tuple1_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_tuple10.mp3",
+			"type": "sound",
+			"name": "cc_Woman_tuple10_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_tuple11.mp3",
+			"type": "sound",
+			"name": "cc_Woman_tuple11_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_tuple12.mp3",
+			"type": "sound",
+			"name": "cc_Woman_tuple12_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_tuple13.mp3",
+			"type": "sound",
+			"name": "cc_Woman_tuple13_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_tuple2.mp3",
+			"type": "sound",
+			"name": "cc_Woman_tuple2_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_tuple3.mp3",
+			"type": "sound",
+			"name": "cc_Woman_tuple3_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_tuple4.mp3",
+			"type": "sound",
+			"name": "cc_Woman_tuple4_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_tuple5.mp3",
+			"type": "sound",
+			"name": "cc_Woman_tuple5_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_tuple6.mp3",
+			"type": "sound",
+			"name": "cc_Woman_tuple6_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_tuple7.mp3",
+			"type": "sound",
+			"name": "cc_Woman_tuple7_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_tuple8.mp3",
+			"type": "sound",
+			"name": "cc_Woman_tuple8_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_tuple9.mp3",
+			"type": "sound",
+			"name": "cc_Woman_tuple9_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_wangzha.mp3",
+			"type": "sound",
+			"name": "cc_Woman_wangzha_mp3"
+		},
+		{
+			"url": "sounds/cc_Woman_zhadan.mp3",
+			"type": "sound",
+			"name": "cc_Woman_zhadan_mp3"
+		},
+		{
+			"url": "sounds/cc_bgm.mp3",
+			"type": "sound",
+			"name": "cc_bgm"
+		},
+		{
+			"url": "sounds/cc_effect_gold_rain.mp3",
+			"type": "sound",
+			"name": "cc_effect_gold_rain"
+		},
+		{
+			"url": "ccddzlang.json",
+			"type": "json",
+			"name": "ccddzlang"
+		},
+		{
+			"url": "cmpChicken/sounds/cc_bg.mp3",
+			"type": "sound",
+			"name": "cc_bg_mp3"
+		},
+		{
+			"url": "cmpChicken/sounds/cc_enter.mp3",
+			"type": "sound",
+			"name": "cc_enter_mp3"
+		},
+		{
+			"url": "cmpChicken/sounds/cc_giveup.mp3",
+			"type": "sound",
+			"name": "cc_giveup_mp3"
+		},
+		{
+			"url": "cmpChicken/sounds/cc_lose.mp3",
+			"type": "sound",
+			"name": "cc_lose_mp3"
+		},
+		{
+			"url": "cmpChicken/sounds/cc_send_hintcard.mp3",
+			"type": "sound",
+			"name": "cc_send_hintcard_mp3"
+		},
+		{
+			"url": "cmpChicken/sounds/cc_showcard.mp3",
+			"type": "sound",
+			"name": "cc_showcard_mp3"
+		},
+		{
+			"url": "cmpChicken/sounds/cc_snd_throw.mp3",
+			"type": "sound",
+			"name": "cc_snd_throw_mp3"
+		},
+		{
+			"url": "cmpChicken/sounds/cc_special_dispatch.mp3",
+			"type": "sound",
+			"name": "cc_special_dispatch_mp3"
+		},
+		{
+			"url": "cmpChicken/sounds/cc_special_selectcard.mp3",
+			"type": "sound",
+			"name": "cc_special_selectcard_mp3"
+		},
+		{
+			"url": "cmpChicken/sounds/cc_start.mp3",
+			"type": "sound",
+			"name": "cc_start_mp3"
+		},
+		{
+			"url": "cmpChicken/sounds/cc_win.mp3",
+			"type": "sound",
+			"name": "cc_win_mp3"
+		},
+		{
+			"url": "cmpChicken/assets/sheet/sheet_cc_play.json",
+			"type": "sheet",
+			"name": "sheet_cc_play_json",
+			"subkeys": "cc_play_back_btn,cc_play_btn_blue,cc_play_btn_gray,cc_play_btn_red,cc_play_btn_violet,cc_play_btn_yellow,cc_play_close_btn,cc_play_common_avatar_bg,cc_play_common_avatar_mask,cc_play_common_btn_plus_n,cc_play_common_exchangeRed,cc_play_common_gold_bg,cc_play_compare_start_bg,cc_play_compare_word,cc_play_icon_diamond,cc_play_icon_giveUp,cc_play_icon_gold,cc_play_icon_redcoin2,cc_play_icon_timer,cc_play_mask_box,cc_play_name_bg_1,cc_play_put_in_bg,cc_play_put_in_box,cc_play_put_in_item,cc_play_ready,cc_play_redcoin_bg_1,cc_play_rule_btn,cc_play_table_logo,cc_play_voice_btn_off,cc_play_voice_btn_on"
+		},
+		{
+			"url": "cmpChicken/assets/sheet/sheet_cc_room.json",
+			"type": "sheet",
+			"name": "sheet_cc_room_json",
+			"subkeys": "cc_room_bean,cc_room_btn_chou4,cc_room_btn_chou5,cc_room_btn_chou6,cc_room_diamond,cc_room_three_title"
+		}
+	]
+}

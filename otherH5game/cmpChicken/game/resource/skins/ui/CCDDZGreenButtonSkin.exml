@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="ui.CCDDZGreenButtonSkin" states="up,down,disabled" minHeight="50" minWidth="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Image id="bgImg"  source.up="cc_common_btn_lsx_n" source.down="cc_common_btn_lsx_h" source.disabled="cc_common_btn_lsx_n"/>
+    <e:Image id="iconDisplay" horizontalCenter="0" verticalCenter="0" source.up="{this.iconUp}" source.down="{this.iconDown}" source.disabled="{this.iconDisabled}"/>
+</e:Skin>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.PDKAvatarSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="170" height="170">
+	<e:Image id="bg_img" width="100%" height="100%" touchEnabled="false" source="pdk_common_avatar_bg"/>
+	<e:Image id="imgMask" width="100%" height="100%" source="pdk_common_avatar_mask" touchEnabled="false"/>
+	<e:Image id="imgAvatar" left="10" right="10" top="10" bottom="10" touchEnabled="false"/>
+	<e:Image width="100%" height="100%" source="pdk_common_avatar_light" touchEnabled="false"/>
+	<e:Group id="vipGrp" x="-15" y="-17" touchEnabled="false" touchChildren="false">
+		<e:Image id="vipBgImg" touchEnabled="false" x="0" y="0" scaleX="1" scaleY="1" source="pdk_common_avatar_vip"/>
+		<e:Label id="vipLabel" text="VIP9" y="158" textColor="0xffe744" size="22" fontFamily="Lucida Family" textAlign="center" horizontalCenter="0" anchorOffsetX="0" width="57"/>
+	</e:Group>
+	<e:Image id="ownerFlag" x="-10" y="32" source="personal_owner" visible="false"/>
+	<e:Image id="quitFlag" source="personal_leave_flag" horizontalCenter="0" verticalCenter="0" visible="false"/>
+</e:Skin>

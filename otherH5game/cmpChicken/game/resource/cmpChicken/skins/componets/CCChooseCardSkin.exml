@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.CCChooseCardSkin" width="1280" height="640" xmlns:ns1='*' xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect height="640" width="1280" horizontalCenter="-3" verticalCenter="0" alpha="0.7" fillAlpha="0" visible="false"/>
+	<e:Group id="grpDesk" y="80" horizontalCenter="0">
+		<e:Image width="874" height="254" y="0" source="cc_play_put_in_box" scale9Grid="55,123,6,21" x="0"/>
+		<e:Group id="firGrp" name="firGrp" y="30" horizontalCenter="-270">
+			<e:Image width="242" height="162" y="0" source="cc_play_put_in_item" scale9Grid="19,20,2,1" x="0" touchEnabled="false"/>
+			<e:Image source="cc_play_put_in_bg" x="28" y="21" touchEnabled="false"/>
+			<ns1:CCCardGroup id="firGrpDeskCards" scale="0.9" interact="true" name="firDeskGroup" currentState="my" width="236" height="158" touchEnabled="false" x="3" y="2" touchChildren="false"/>
+		</e:Group>
+		<e:Group id="secGrp" name="secGrp" y="30" horizontalCenter="0">
+			<e:Image width="242" height="162" y="0" source="cc_play_put_in_item" scale9Grid="19,20,2,1" x="0" touchEnabled="false"/>
+			<e:Image source="cc_play_put_in_bg" x="28" y="21" touchEnabled="false"/>
+			<ns1:CCCardGroup id="secGrpDeskCards" scale="0.9" interact="true" name="secDeskGroup" currentState="my" width="236" height="158" touchEnabled="false" x="3" y="2" touchChildren="false"/>
+		</e:Group>
+		<e:Group id="thrGrp" name="thrGrp" y="30" horizontalCenter="270">
+			<e:Image width="242" height="162" y="0" source="cc_play_put_in_item" scale9Grid="19,20,2,1" x="0" touchEnabled="false"/>
+			<e:Image source="cc_play_put_in_bg" x="28" y="21" touchEnabled="false"/>
+			<ns1:CCCardGroup id="thrGrpDeskCards" scale="0.9" interact="true" name="thrDeskGroup" currentState="my" width="236" height="158" touchEnabled="false" x="3" y="2" touchChildren="false"/>
+		</e:Group>
+		<e:Label text="头道" size="24" fontFamily="Microsoft YaHei" textAlign="center" y="205" textColor="0x887b9f" horizontalCenter="-270"/>
+		<e:Label text="中道" size="24" fontFamily="Microsoft YaHei" textAlign="center" horizontalCenter="0" y="205" textColor="0x887B9F"/>
+		<e:Label text="尾道" size="24" fontFamily="Microsoft YaHei" textAlign="center" horizontalCenter="270" y="205" textColor="0x887B9F"/>
+	</e:Group>
+	<ns1:CCCardGroup id="handCardGroup" height="158" interact="true" horizontalCenter="0" width="1280" name="handCardGroup" currentState="my" y="340"/>
+	<e:Group id="resetBtn" name="resetBtn" y="528" x="374">
+		<e:Image id="imgReset" touchEnabled="false" source="cc_play_btn_blue"/>
+		<e:Label id="lblReset" text="重置" size="28" fontFamily="Microsoft YaHei" textAlign="center" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="-2" touchEnabled="false"/>
+	</e:Group>
+	<e:Group id="comparisonBtn" name="comparisonBtn" y="528" x="574">
+		<e:Image id="imgComparison" touchEnabled="false" source="cc_play_btn_blue"/>
+		<e:Label id="lblComparison" text="拼牌" size="28" fontFamily="Microsoft YaHei" textAlign="center" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="-2" touchEnabled="false"/>
+	</e:Group>
+	<e:Group id="helpBtn" name="helpBtn" y="528" horizontalCenter="200">
+		<e:Image id="imgHelp" touchEnabled="false" source="cc_play_btn_violet"/>
+		<e:Label id="lblHelp" text="提示" size="28" fontFamily="Microsoft YaHei" textAlign="center" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="-2" touchEnabled="false"/>
+	</e:Group>
+	<e:Group id="giveupBtn" name="giveupBtn" bottom="48" horizontalCenter="448" visible="false">
+		<e:Image touchEnabled="false" source="cc_play_btn_red" width="64" height="64"/>
+		<e:Label text="投降" size="20" fontFamily="Microsoft YaHei" textAlign="center" horizontalCenter="0" verticalCenter="-2" textColor="0xffffff" touchEnabled="false"/>
+	</e:Group>
+
+
+</e:Skin>

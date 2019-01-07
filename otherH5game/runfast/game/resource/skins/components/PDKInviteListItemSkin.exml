@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="components.PDKInviteListItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="bg" width="670" x="0" y="0" scale9Grid="84,5,68,33" source="invite_13"/>
+	<e:Label id="lbName" text="昵称" size="22" textAlign="center" y="10" horizontalCenter="-224" fontFamily="Microsoft YaHei" textColor="0x7f4e00"/>
+	<e:Label id="lbTime" text="2017.12.13" size="22" textAlign="center" y="10" horizontalCenter="0" fontFamily="Microsoft YaHei" textColor="0x7f4e00"/>
+	<e:Image id="status" x="522" y="10" source="pdk_sheet_invite_c_json.invite_5"/>
+</e:Skin>

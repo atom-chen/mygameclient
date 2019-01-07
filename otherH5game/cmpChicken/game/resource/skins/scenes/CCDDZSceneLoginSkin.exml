@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="scenes.CCDDZSceneLoginSkin" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:CCalien="CCalien.*" xmlns:ns1="*" states="justWx,justPhone,all,wxPhone" >
+	<e:Image bottom="250" horizontalCenter="0" source="cc_login_bg"/>
+
+	<e:Group id="grpSelectButton" horizontalCenter="0" bottom="70" touchEnabled="false">
+		<e:Button id="guest_btn" x="0" y="0" name="quick" visible.justWx="false" visible.justPhone="false" visible.wxPhone="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="cc_login_btn_2_n"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+
+		</e:Button>
+		<e:Button id="phone_btn" x="371" y="0" name="phone" visible.justWx="false" x.justPhone="371" x.wxPhone="-4">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="cc_login_btn_3_n"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+
+		</e:Button>
+		<e:Button id="wx_btn" x="742" y="0" name="weixin" x.justWx="186" visible.justPhone="false" x.wxPhone="367">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="cc_login_btn_1_n"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+
+		</e:Button>
+	</e:Group>
+	<e:Group id="grpSelectButtonNative" horizontalCenter="0" bottom="70" touchEnabled="false" visible="false">
+		<e:Button y="0" name="weixin" horizontalCenter="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="cc_login_btn_1_n"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+
+		</e:Button>
+	</e:Group>
+	<e:Label text="《经营许可证编号》：浙B2-20150289 《网络文化经营许可证》：浙网文[2015]0292-062号" y="605" size="20" horizontalCenter="0" visible="false"/>
+</e:Skin>

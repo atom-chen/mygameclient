@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.CCPanelRuleSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image width="770" height="460" horizontalCenter="0" source="cc_play_mask_box" scale9Grid="107,85,646,20"/>
+	<e:Label id="lblTitle" text="游戏规则" width="600" textAlign="center" lineSpacing="10" scaleX="1" scaleY="1" verticalAlign="middle" horizontalCenter="0" fontFamily="Microsoft YaHei" textColor="0xffffff" size="36" y="16"/>
+
+	<e:Button id="btnClose" name="close" anchorOffsetX="18" anchorOffsetY="18" x="738" y="34">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="cc_play_close_btn"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Scroller id="ctxScroller" width="720" height="350" horizontalCenter="0" scrollPolicyV="auto" scrollPolicyH="off" y="90">
+		<e:Group>
+			<e:Label id="labContent" text="标签\n234241" textColor="0x000000" lineSpacing="16" scaleX="1" scaleY="1" verticalAlign="middle" x="0" width="720" textAlign="left" fontFamily="Microsoft YaHei"/>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

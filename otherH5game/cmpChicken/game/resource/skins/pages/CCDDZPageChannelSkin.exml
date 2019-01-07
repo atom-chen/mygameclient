@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="pages.CCDDZPageChannelSkin" width="1280" height="640" xmlns:ns1="*"
+        xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="infoGroup" width="1280" height="640" y="0" horizontalCenter="0" visible="false">
+		<ns1:CCDDZRedRank id="redRank" skinName="components.CCDDZRedRankSkin" x="150" scaleX="1" scaleY="1" top="68" visible="false"/>
+		<e:Group id="grpEntrance" touchEnabled="false" scaleX="0.9" scaleY="0.9" bottom="50" height="530" right="160" width="700" anchorOffsetY="0" visible="false">
+			<e:Button id="enter_normal" name="normal" anchorOffsetX="151" anchorOffsetY="88" y="104" x="170" scaleX="1" scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="cc_room_normal_n"/>
+				<e:Label id="labelDisplay0" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="enter_match" name="match" anchorOffsetX="151" anchorOffsetY="88" y="104" x="520" scaleX="1" scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="cc_room_match_n"/>
+				<e:Label id="labelDisplay0" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="enter_red" name="red" anchorOffsetX="151" anchorOffsetY="88.5" y="255" x="167" scaleX="0.9" scaleY="0.9" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="cc_room_red"/>
+					<e:Label id="labelDisplay2" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="enter_diy" name="diy" anchorOffsetX="145.5" anchorOffsetY="38" x="520" y="444" scaleX="1" scaleY="1">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="cc_room_diy"/>
+					<e:Label id="labelDisplay2" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image id="enter_lottery" name="lottery" x="520" y="300" source="cc_room_center1" anchorOffsetX="151" anchorOffsetY="89" scaleX="1" scaleY="1"/>
+			<e:Button id="enter_niu" name="niu" anchorOffsetX="148" anchorOffsetY="39" x="170" y="444" scaleX="1" scaleY="1">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="cc_room_mini"/>
+					<e:Label id="labelDisplay2" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image id="flag3Img0" x="32.22" y="178.01" source="cc_room_lottery_redcoin" touchEnabled="false" visible="false"/>
+			<e:Image id="flag2Img" x="373" y="18.66" source="cc_room_win_redcoin" touchEnabled="false"/>
+			<e:Image id="flag1Img" x="19.99" y="17.56" touchEnabled="false" source="cc_room_red_normal"/>
+			<e:Button id="enter_pdk" name="enter_pdk" anchorOffsetX="151" anchorOffsetY="88" y="300" x="170" scaleX="1" scaleY="1">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="cc_room_pdk"/>
+					<e:Label id="labelDisplay0" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image id="flagPdkImg" x="21.29" y="212.12" touchEnabled="false" source="cc_room_red_3"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

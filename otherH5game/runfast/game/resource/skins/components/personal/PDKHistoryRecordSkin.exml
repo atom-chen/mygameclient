@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.PDKHistoryRecordSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image horizontalCenter="0" verticalCenter="0" source="pdk_common_alert1_bg" scale9Grid="27,59,32,11" width="770" height="460"/>
+	<e:Image id="bg_img" x="161" y="199" width="639" height="295" scale9Grid="9,7,12,15" source="pdk_common_bg" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Button id="btnClose" label="" x="827" y="73">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="pdk_common_close_n" source.down="pdk_common_close_h"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label id="lbTips" text="温馨提示: 只保留最近20条历史记录" y="505" size="20" textColor="0xB0663E" fontFamily="微软雅黑" bold="true" x="322"/>
+	<e:Scroller id="scroller" height="284" y="204" horizontalCenter="0.5" anchorOffsetY="0">
+		<e:Group>
+			<e:List id="list" itemRendererSkinName="components.PDKHistoryItemSkin" y="3" x="0">
+				<e:ArrayCollection>
+					<e:Array>
+						<e:Object label="null"/>
+						<e:Object label="null"/>
+						<e:Object label="null"/>
+						<e:Object label="null"/>
+						<e:Object label="null"/>
+					</e:Array>
+				</e:ArrayCollection>
+			</e:List>
+		</e:Group>
+	</e:Scroller>
+	<e:Group id="tit_group" horizontalCenter="9" y="90">
+		<e:Image id="titBgImg1" y="3" source="pdk_common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+		<e:Image id="titFontImg1" y="0" horizontalCenter="0" x="138" scaleX="1" scaleY="1" source="personal_history"/>
+	</e:Group>
+	<e:Image id="topBgImg" x="167" y="157.5" source="personal_bg" scale9Grid="12,6,24,13" anchorOffsetX="0" width="626.5" anchorOffsetY="0" height="40"/>
+	<e:Image id="timeBgImg" x="228" y="160" source="personal_time"/>
+	<e:Image id="split0Img" x="364.5" y="157" source="personal_split"/>
+	<e:Image id="createBgImg" x="436" y="160" source="personal_create"/>
+	<e:Image id="split1Img" x="598" y="157.5" source="personal_split"/>
+	<e:Image id="detailBgImg" x="672.5" y="160" source="personal_detail"/>
+</e:Skin>

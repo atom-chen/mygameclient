@@ -1,0 +1,17 @@
+{"file":"pdk_sheet_icon_c.png","frames":{
+"pdk_icon_head_default":{"x":293,"y":240,"w":104,"h":104,"offX":0,"offY":0,"sourceW":104,"sourceH":104},
+"pdk_icon_head9":{"x":0,"y":171,"w":104,"h":104,"offX":0,"offY":0,"sourceW":104,"sourceH":104},
+"pdk_icon_head10":{"x":187,"y":169,"w":104,"h":104,"offX":0,"offY":0,"sourceW":104,"sourceH":104},
+"pdk_icon_master":{"x":454,"y":122,"w":56,"h":59,"offX":0,"offY":0,"sourceW":56,"sourceH":59},
+"pdk_icon_master_card":{"x":106,"y":171,"w":52,"h":49,"offX":0,"offY":0,"sourceW":52,"sourceH":49},
+"pdk_icon_redcoin":{"x":339,"y":122,"w":113,"h":116,"offX":7,"offY":9,"sourceW":132,"sourceH":132},
+"pdk_icon_rmb":{"x":293,"y":169,"w":41,"h":42,"offX":0,"offY":0,"sourceW":41,"sourceH":42},
+"pdk_icon_room_0":{"x":187,"y":0,"w":150,"h":167,"offX":0,"offY":0,"sourceW":150,"sourceH":180},
+"pdk_icon_room_1":{"x":0,"y":0,"w":185,"h":169,"offX":0,"offY":0,"sourceW":185,"sourceH":169},
+"pdk_icon_score":{"x":454,"y":183,"w":38,"h":38,"offX":0,"offY":0,"sourceW":38,"sourceH":38},
+"pdk_icon_sign_up":{"x":339,"y":0,"w":149,"h":120,"offX":0,"offY":0,"sourceW":149,"sourceH":120},
+"pdk_icon_amount":{"x":490,"y":23,"w":17,"h":21,"offX":0,"offY":0,"sourceW":17,"sourceH":21},
+"pdk_icon_clock":{"x":399,"y":240,"w":96,"h":97,"offX":0,"offY":0,"sourceW":96,"sourceH":97},
+"pdk_icon_diamond":{"x":144,"y":222,"w":36,"h":30,"offX":0,"offY":0,"sourceW":36,"sourceH":30},
+"pdk_icon_gold":{"x":106,"y":222,"w":36,"h":37,"offX":0,"offY":1,"sourceW":36,"sourceH":39},
+"pdk_icon_gold2":{"x":490,"y":0,"w":20,"h":21,"offX":0,"offY":0,"sourceW":21,"sourceH":21}}}

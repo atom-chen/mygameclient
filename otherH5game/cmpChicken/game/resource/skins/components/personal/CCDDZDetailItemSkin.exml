@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.CCDDZDetailItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="438" height="51">
+	<e:Image source="cc_personal_detail_itembg" horizontalCenter="0" verticalCenter="0"/>
+	<e:Label id="lbGold" height="34" text="+12355" textAlign="center" bold="true" verticalAlign="middle" size="24" x="301" y="7" textColor="0x68EB0C"/>
+	<e:Label id="lbName" y="8" textColor="0xFFFFFF" height="34" text="房主昵称呵呵" textAlign="center" bold="true" width="160" verticalAlign="middle" size="24" horizontalCenter="-105"/>	
+</e:Skin>

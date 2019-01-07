@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PDKPanelFeiExSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="1280" height="640" states="fei,card,ali,sp" >
+
+	<e:Image y="93" width="770" height="460" x="255" scale9Grid="25,94,19,46" source="pdk_wins_bg"/>
+	<e:Button id="closeBtn" label="" x="969" y="83">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="pdk_common_close_n"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image id="okImg" y="487" source="pdk_phonebind_now" anchorOffsetX="81" anchorOffsetY="30.5" horizontalCenter="0" source.ali="exchange_cm" source.sp="exchange_get" source.card="exchange_copy" source.fei="pdk_btn_purple" horizontalCenter.fei="0"/>
+	<e:Image includeIn="fei" y="473.33" source="pdk_btn_pay" horizontalCenter="0"/>
+
+	<e:Group id="tit_group" horizontalCenter="0" top="60">
+		<e:Image id="titBgImg1" scaleX="1" scaleY="1" source="pdk_wins_promptbg"/>
+		<e:Image id="titFontImg1" scaleX="1" scaleY="1" source="exchange_tit_acc" source.card="exchange_getSucc" visible="false"/>
+		<e:Label text="填写账号" horizontalCenter="0" verticalCenter="0" textColor="0x493501"/>
+	</e:Group>
+	<e:TextInput id="input1" y="256" width="230"  height="50" skinName="ui.PDKTextInputSkin" horizontalCenter.sp="11.5" horizontalCenter.fei="11.5" visible.fei="false" visible.sp="false" y.ali="277" y.card="243" left.ali="515" width.ali="370" left="540" width.card="370" left.card="496"/>
+	<e:TextInput id="input2" y="316" width="230" height="50"  skinName="ui.PDKTextInputSkin" horizontalCenter.sp="11.5" visible.sp="false" y.ali="337" y.card="303" width.ali="370" left.ali="515" width.fei="230" left="540" maxChars.fei="11" width.card="370" left.card="496"/>
+	<e:TextInput id="input3" y="378" width="230" height="50" skinName="ui.PDKTextInputSkin" visible.fei="false" visible.ali="false" visible.sp="false" y.card="363" left="540" width.card="370" left.card="496"/>
+
+
+	<e:Label id="Pre1Label" text="手机号:" y="269" fontFamily="Microsoft YaHei" bold="true" size="26" textColor="0x8f4c26" right="749" textAlign="right" visible.fei="false" text.card="卡号:" text.ali="姓名:" visible.sp="false" right.ali="778" y.ali="288" right.card="793" y.card="254" textColor.card="0x463507" textColor.ali="0x463507"/>
+	<e:Label id="Pre2Label" text="验证码:" y="329" bold="true" fontFamily="Microsoft YaHei" size="26" textColor="0x8f4c26" right="749" textAlign="right" text.fei="手机号:" text.card="密码:" text.ali="支付宝账号:" visible.sp="false" right.ali="778" y.ali="348" right.card="793" y.card="314" textColor.fei="0x463507" textColor.card="0x463507" textColor.ali="0x463507"/>
+	<e:Label id="Pre3Label" text="有效期至:" y="389" bold="true" fontFamily="Microsoft YaHei" size="26" textColor="0x8F4C26" right="749" textAlign="right" visible.fei="false" visible.ali="false" visible.sp="false" right.card="793" y.card="374" textColor.card="0x463507"/>
+
+	<e:Label id="descLabel" text="" y="186" bold="true" fontFamily="Microsoft YaHei" size="22" textColor="0x424a61" horizontalCenter="0" lineSpacing="10" text.fei="请输入您要充值的手机号码,支持移动，联通，电信号码充值\n 充值一般在2小时内到账，如有问题请联系客服！" textAlign.fei="center" width.fei="580" width.sp="580" text.sp="请输入您要充值的手机号码,支持移动，联通，电信号码充值\n运营商一经确认，领取后不可更改，请谨慎操作！" textAlign.sp="center" text.ali="请填写一下信息用于红包发放账号验证，我们将会及时发放红包到您的账户！" width.ali="580" textAlign.ali="center" text.card="您已成功领取5元话费充值卡" textColor.fei="0x9b7000" textColor.card="0x9b7000" textColor.ali="0x9b7000" textColor.sp="0x9b7000"/>
+	<e:Component id="yidong" x="350" y="315" skinName="ui.PDKRadioButtonSkin" includeIn="sp"/>
+	<e:Component id="liantong" x="550" y="315" skinName="ui.PDKRadioButtonSkin" includeIn="sp"/>
+	<e:Component id="dianxin" x="750" y="315" skinName="ui.PDKRadioButtonSkin" includeIn="sp"/>
+</e:Skin>

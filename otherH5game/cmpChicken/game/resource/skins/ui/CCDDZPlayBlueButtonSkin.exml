@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="ui.CCDDZPlayBlueButtonSkin" states="up,down,disabled" minHeight="50" minWidth="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image  source.up="cc_play_btn_blue_n" source.down="cc_play_btn_blue_h" source.disabled="cc_play_btn_d"/>
+	<e:Image id="iconDisplay" horizontalCenter="0" verticalCenter="0" source.up="{this.iconUp}" source.down="{this.iconDown}" source.disabled="{this.iconDisabled}"/>
+</e:Skin>

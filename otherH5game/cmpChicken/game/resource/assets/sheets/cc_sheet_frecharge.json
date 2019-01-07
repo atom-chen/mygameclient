@@ -1,0 +1,15 @@
+{"file":"cc_sheet_frecharge.png","frames":{
+"cc_frecharge_money_light":{"x":312,"y":142,"w":174,"h":46,"offX":0,"offY":0,"sourceW":174,"sourceH":46},
+"cc_frecharge_player":{"x":0,"y":0,"w":310,"h":395,"offX":0,"offY":0,"sourceW":310,"sourceH":395},
+"cc_frecharge_send":{"x":454,"y":0,"w":42,"h":43,"offX":0,"offY":0,"sourceW":42,"sourceH":43},
+"cc_frechare_getGold":{"x":312,"y":386,"w":151,"h":33,"offX":3,"offY":1,"sourceW":157,"sourceH":34},
+"cc_frecharge_desc":{"x":0,"y":698,"w":323,"h":133,"offX":1,"offY":0,"sourceW":324,"sourceH":133},
+"cc_frecharge_diamond_img":{"x":0,"y":397,"w":279,"h":299,"offX":0,"offY":0,"sourceW":279,"sourceH":299},
+"cc_frecharge_diamond_word":{"x":0,"y":833,"w":338,"h":44,"offX":0,"offY":0,"sourceW":338,"sourceH":44},
+"cc_frecharge_get_n":{"x":312,"y":190,"w":134,"h":47,"offX":0,"offY":0,"sourceW":135,"sourceH":48},
+"cc_frecharge_get_p":{"x":312,"y":239,"w":134,"h":47,"offX":0,"offY":0,"sourceW":135,"sourceH":48},
+"cc_frecharge_gopay_n":{"x":312,"y":288,"w":129,"h":47,"offX":0,"offY":0,"sourceW":130,"sourceH":48},
+"cc_frecharge_gopay_p":{"x":312,"y":337,"w":129,"h":47,"offX":0,"offY":0,"sourceW":130,"sourceH":48},
+"cc_frecharge_light":{"x":312,"y":0,"w":92,"h":92,"offX":0,"offY":0,"sourceW":92,"sourceH":92},
+"cc_frecharge_mask":{"x":406,"y":0,"w":46,"h":60,"offX":1,"offY":0,"sourceW":47,"sourceH":61},
+"cc_frecharge_money_back":{"x":312,"y":94,"w":174,"h":46,"offX":0,"offY":0,"sourceW":174,"sourceH":46}}}

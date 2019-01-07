@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="panels.CCDDZPanelFFF" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<e:Group id="infoGroup" width="1280" height="640" x="0" y="0" touchEnabled="false">
+		<e:Scroller id="scroller" width="565" height="400" x="440" y="130" anchorOffsetX="0" anchorOffsetY="0" scrollPolicyV="off" scrollPolicyH="off">
+			<e:Group width="565" anchorOffsetY="0" height="360">
+				<e:Group id="buyGroup" x="188.5" y="340" anchorOffsetX="0" anchorOffsetY="0">
+					<e:Image id="playImg" source="cc_common_btn_orange3" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+					<e:Label id="titLabel" text="开始游戏" size="24" fontFamily="Microsoft YaHei" bold="true" touchEnabled="false" textColor="0xffffff" horizontalCenter="0" verticalCenter="0"/>
+				</e:Group>
+				<e:Label id="actInfoLabel" text="活动介绍" x="17" y="4" size="20" fontFamily="Microsoft YaHei" textColor="0xb83600" touchEnabled="false"/>
+				<e:Label id="actTimeLabel" text="活动时间" x="17" y="112" size="20" fontFamily="Microsoft YaHei" textColor="0xB83600" touchEnabled="false"/>
+				<e:Label id="actTimeLabel0" text="游戏玩法" x="17" y="175" size="20" fontFamily="Microsoft YaHei" textColor="0xB83600" touchEnabled="false"/>
+				<e:Label id="actDescLabel" text="五月新游戏，畅玩连连翻，最高奖励8万金豆。每次开始游戏即可获得5次机会，每次机会都可翻开一张卡片，只要在机会用完前翻出三张一样的卡片即可中奖。" x="18" y="31" size="18" fontFamily="Microsoft YaHei" textColor="0x414a61" width="500" lineSpacing="4" touchEnabled="false"/>
+				<e:Label id="actTimeLabel1" text="2月12日0:00至2月15日24:00" x="18" y="139" size="18" fontFamily="Microsoft YaHei" textColor="0x414A61" width="300" touchEnabled="false"/>
+				<e:Image id="playImg0" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="62.5" x="10" y="10" source="cc_task_fff"/>
+			</e:Group>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

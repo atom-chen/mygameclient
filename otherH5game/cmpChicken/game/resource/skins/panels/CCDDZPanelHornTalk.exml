@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="panels.CCDDZPanelHornTalk" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="1280" height="640">
+	<e:Image id="bg_img" y="66" height="460" width="770" source="cc_common_alert1_bg" scale9Grid="25,58,40,14" x="255"/>
+	<e:Group id="tit_group" horizontalCenter="0" y="67">
+		<e:Image id="titBgImg1" y="3" source="cc_common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+		<e:Image id="titFontImg1" y="-7" horizontalCenter="0.5" x="138" scaleX="1" scaleY="1" source="cc_room_talk_title"/>
+	</e:Group>
+	<e:Image id="close_img" x="1016.67" y="82.67" source="cc_common_close_n" anchorOffsetX="30.67" anchorOffsetY="30.5"/>
+
+	<e:Scroller id="horn_scroller" width="580" height="320" x="342" y="140" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Group y="-1">
+			<e:List id="talkRec_list" x="0" y="0" itemRendererSkinName="components.CCDDZHornTalkItemSkin"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Image id="inputBg_img" x="341.02" y="470.35" source="cc_room_talk_input" scale9Grid="15,6,26,22" width="480"/>
+	<e:EditableText id="talk_editText" width="440" height="60" text="" x="352" y="458" fontFamily="Microsoft YaHei" size="20" prompt="点击输入文字" maxChars="30" verticalAlign="middle"/>
+	<e:Image id="sendMsg_img" x="859" y="487" source="cc_room_talk_sendMsg" anchorOffsetX="64" anchorOffsetY="24"/>
+
+	<e:Image id="costType_img" width="15" height="15" x="864" y="489" source="cc_icon_diamond" touchEnabled="false"/>
+	<e:Label id="costGold_label" text="10" x="840" y="485" fontFamily="Microsoft YaHei" size="20" touchEnabled="false"/>
+</e:Skin>

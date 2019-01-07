@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PDKPanelBuyRecorderSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image y="0" x="0" height="460" scale9Grid="24,59,40,14" width="770" source="pdk_wins_bg"/>
+	<e:Group id="tit_group" horizontalCenter="0.5" y="-4">
+		<e:Image id="titBgImg1" y="-29" horizontalCenter="0" x="30" scaleX="1" scaleY="1" source="pdk_wins_promptbg"/>
+		<e:Image id="titFontImg1" y="0" horizontalCenter="0" x="138" scaleX="1" scaleY="1" source="mall_tit" visible="false"/>
+		<e:Label text="记牌器" textColor="0x493501" horizontalCenter="0" y="-5"/>
+	</e:Group>
+
+	<e:Button x="733" y="-11" label="" id="btnClose">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+				<e:Image width="100%" height="100%" source="pdk_common_close_n" source.down="pdk_common_close_h"/>
+				<e:Label id="labelDisplay2" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image x="30" y="90" source="mall_recorder_bg1"/>
+	<e:Image y="90" x="271" source="mall_recorder_bg2"/>
+	<e:Image y="90" x="521" source="mall_recorder_bg3"/>
+	<e:Button id="btn1" x="60" y="316" name="1" scaleX="0.8" scaleY="0.8">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="pdk_btn_yellow" source.down="pdk_btn_yellow01"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+
+	</e:Button>
+	<e:Button id="btn2" x="302" y="316" name="2" scaleX="0.8" scaleY="0.8">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="pdk_btn_yellow" source.down="pdk_btn_yellow01"/>
+			<e:Label id="labelDisplay0" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+
+	</e:Button>
+	<e:Button id="btn3" x="552" y="317" name="3" scaleX="0.8" scaleY="0.8">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="pdk_btn_yellow" source.down="pdk_btn_yellow01"/>
+			<e:Label id="labelDisplay1" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+
+	</e:Button>
+	<e:Group id="descGroup" height="28" y="410" horizontalCenter="-4.5">
+		<e:Label text="记牌器时间可累计，有效期剩余" x="0" y="0" size="20" fontFamily="微软雅黑" textColor="0x8a3e18"/>
+		<e:Label id="lbRemain" y="10" size="20" text="30" fontFamily="微软雅黑" x="10" textColor="0x208720"/>
+		<e:Label y="20" size="20" text="天" fontFamily="微软雅黑" x="20" textColor="0x8a3e18"/>
+		<e:Label id="lbExpire" y="0" size="20" text="(至2017年8月16日23:55)" fontFamily="微软雅黑" x="0" textColor="0x8a3e18"/>
+		<e:layout>
+			<e:HorizontalLayout/>
+		</e:layout>
+	</e:Group>
+	<e:Image x="117" y="328" source="pdk_btn_buy01" scaleX="0.8" scaleY="0.8" touchEnabled="false"/>
+	<e:Image x="356.8" y="328" source="pdk_btn_buy01" scaleX="0.8" scaleY="0.8" touchEnabled="false"/>
+	<e:Image x="606.6" y="328" source="pdk_btn_buy01" scaleX="0.8" scaleY="0.8" touchEnabled="false"/>
+</e:Skin>

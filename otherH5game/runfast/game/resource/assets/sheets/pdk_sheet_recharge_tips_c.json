@@ -1,0 +1,9 @@
+{"file":"pdk_sheet_recharge_tips_c.png","frames":{
+"recharge_tips_bg3":{"x":0,"y":0,"w":252,"h":342,"offX":16,"offY":13,"sourceW":270,"sourceH":377},
+"recharge_tips_duihuan1":{"x":239,"y":512,"w":155,"h":56,"offX":0,"offY":0,"sourceW":156,"sourceH":57},
+"recharge_tips_duihuan2":{"x":239,"y":454,"w":155,"h":56,"offX":0,"offY":0,"sourceW":156,"sourceH":57},
+"recharge_tips_goumai1":{"x":239,"y":396,"w":155,"h":56,"offX":0,"offY":0,"sourceW":156,"sourceH":57},
+"recharge_tips_goumai2":{"x":239,"y":570,"w":155,"h":56,"offX":0,"offY":0,"sourceW":156,"sourceH":57},
+"recharge_tit":{"x":239,"y":344,"w":189,"h":50,"offX":0,"offY":0,"sourceW":189,"sourceH":50},
+"recharge_tips_bg1":{"x":0,"y":344,"w":237,"h":342,"offX":16,"offY":13,"sourceW":270,"sourceH":377},
+"recharge_tips_bg2":{"x":254,"y":0,"w":238,"h":342,"offX":16,"offY":13,"sourceW":270,"sourceH":377}}}

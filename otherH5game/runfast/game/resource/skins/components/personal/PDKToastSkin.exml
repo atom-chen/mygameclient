@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<e:Skin class="personal.PDKToastSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="bgImg" source="personal_tips_bg" horizontalCenter="0" verticalCenter="0"/>
+	<e:Label id="lb" text="加入房间失败~！" size="20" textColor="0xA65515" horizontalCenter="0" verticalCenter="0" bold="true"/>
+</e:Skin>

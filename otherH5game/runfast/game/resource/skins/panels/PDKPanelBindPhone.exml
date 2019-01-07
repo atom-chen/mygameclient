@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PDKPanelBindPhoneSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="1280" height="640">
+	<e:Image y="93" width="770" height="460" x="255" scale9Grid="26,110,15,6" source="pdk_wins_bg"/>
+	<e:Image id="bindNowImg" y="463" anchorOffsetX="81" anchorOffsetY="30.5" horizontalCenter="0" source="pdk_btn_yellow"/>
+	<e:Image id="getCodeImg" x="859" y="298.7" source="pdk_phonebind_getcode" anchorOffsetX="76" anchorOffsetY="25"/>
+	<e:Group id="tit_group" horizontalCenter="0" y="59.01">
+		<e:Image id="titBgImg1" y="3" horizontalCenter="0" x="30" scaleX="1" scaleY="1" source="pdk_wins_promptbg"/>
+		<e:Image id="titFontImg1" y="-4" horizontalCenter="0.5" x="138" scaleX="1" scaleY="1" source="pdk_phonebind_tit" visible="false"/>
+		<e:Label text="绑定手机" horizontalCenter="0" verticalCenter="0" textColor="0x493501"/>
+	</e:Group>
+	<e:TextInput id="phone" y="201.7" width="215"  height="50" maxChars="11" restrict="0-9" skinName="ui.PDKTextInputSkin" horizontalCenter="11.5"/>
+	<e:TextInput id="code" y="274.7" width="215" height="50" maxChars="6"  restrict="0-9" skinName="ui.PDKTextInputSkin" horizontalCenter="11.5"/>
+	<e:Label id="phonePreLabel" text="手机号:" x="445" y="212.7" fontFamily="Microsoft YaHei" bold="true" size="26" textColor="0x463507"/>
+	<e:Label id="codePreLabel" text="验证码:" x="445" y="286.7" bold="true" fontFamily="Microsoft YaHei" size="26" textColor="0x463507"/>
+	<e:Label id="countLabel" text="55" x="793" y="286.7" bold="true" fontFamily="Microsoft YaHei" size="26" textColor="0x8f4c26"/>
+	<e:Label id="descLabel" text="为了保障您的账号安全，领取奖品前请绑定您的手机号码，谢谢！" y="362.07" bold="true" fontFamily="Microsoft YaHei" size="22" horizontalCenter="0" lineSpacing="10" textColor="0x9b7000"/>
+	<e:Image y="448.34" source="pdk_btn_sure" horizontalCenter="0" touchEnabled="false"/>
+	<e:Image id="close_img" source="pdk_common_close_n" anchorOffsetX="30.67" anchorOffsetY="30.5" right="245" top="79"/>
+</e:Skin>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="panels.CCDDZPanelDiaFirRecharge" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+    <e:Group id="infoGroup" width="1280" height="640"  x="0" y="0" touchEnabled="false">
+		<e:Image id="mPersion_img1" x="445" source="cc_frecharge_diamond_img" y="230" scaleX="0.8" scaleY="0.8"/>
+			<e:Image id="mPersion_img0" x="640" y="220" source="cc_frecharge_diamond_word"/>
+			<e:Group id="grpItem1" x="660" y="290">
+				<e:Image id="imgItem1" anchorOffsetX="47.5" anchorOffsetY="47" scaleX="1" scaleY="1" source="cc_room_3" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="lblItem1" text="60" size="20" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" horizontalCenter="0" bottom="12"/>
+			</e:Group>
+			<e:Label id="lblAdd" text="+" size="36" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY= "1" textColor="0x905312" y="319" x="774"/>
+			<e:Group id="grpItem2" x="820" y="290">
+				<e:Image id="imgItem2" anchorOffsetX="47.5" anchorOffsetY="47" scaleX="1" scaleY="1" source="cc_room_3" horizontalCenter="0" verticalCenter="0"/>
+				<e:Image id="imgAddition" anchorOffsetX="47.5" anchorOffsetY="47" scaleX="1" scaleY="1" source="cc_revive_addition" top="0" left="0"/>
+				<e:Label id="lblItem2" text="60" size="20" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" horizontalCenter="0" bottom="12"/>
+			</e:Group>
+		<ns1:CCDDZButtonDoTaskSkin id="btnGoRecharge" x="745" y="494" scaleX="1.2" scaleY="1.2" anchorOffsetX="65" anchorOffsetY="24" skinName="components.CCDDZButtonDoTaskSkin"/>
+	</e:Group>
+</e:Skin>

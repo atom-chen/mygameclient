@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ui.PDKTextInputSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="normal,disabled,normalWithPrompt,disabledWithPrompt" >
+	<e:Image width="100%" height="100%" scale9Grid="5,0,2,20" source="pdk_iphone_kuang"/>
+	<e:Label id="promptDisplay" height="100%" verticalAlign="middle" textAlign="left" size="25" left="10" right="0" includeIn="normalWithPrompt,disabledWithPrompt" textColor="0xCEA468"/>
+	<e:EditableText id="textDisplay" verticalAlign="middle" left="10" height="100%" right="0" textColor="0xCEA468" text.disabledWithPrompt="" text=""/>
+</e:Skin>

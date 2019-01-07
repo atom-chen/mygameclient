@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.PDKCreateTableInfoSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="img0" scale9Grid="17,18,11,11" x="0" source="personal_radio_n" verticalCenter="0" name="0"/>
+	<e:Label id="lb0" text="标签" width="92" textAlign="center" size="24" height="34" textColor="0xFFF600" bold="true" verticalAlign="middle" x="5" verticalCenter="0" touchEnabled="false"/>
+	<e:Image id="img1" scale9Grid="17,18,11,11" source="personal_radio_n" x="104" verticalCenter="0" name="1"/>
+	<e:Label id="lb1" textColor="0xFFF600" height="34" text="标签" textAlign="center" bold="true" width="92" verticalAlign="middle" size="24" x="109" verticalCenter="0" touchEnabled="false"/>
+	<e:Image scale9Grid="17,18,11,11" source="personal_radio_n" id="img2" x="208" verticalCenter="0" name="2"/>
+	<e:Label verticalCenter="0" textColor="0xFFF600" height="34" text="标签" textAlign="center" bold="true" width="92" id="lb2" verticalAlign="middle" size="24" x="213" y="10" touchEnabled="false"/>
+	<e:Image scale9Grid="17,18,11,11" x="312" id="img3" verticalCenter="0" name="3" source="personal_radio_n"/>
+	<e:Label textColor="0xFFF600" text="标签" bold="true" verticalAlign="middle" size="24" x="317" y="20" textAlign="center" verticalCenter="0" width="92" height="34" id="lb3" touchEnabled="false"/>	
+</e:Skin>

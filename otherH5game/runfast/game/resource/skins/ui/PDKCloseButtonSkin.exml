@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ui.PDKCloseButtonSkin" xmlns:e="http://ns.egret.com/eui" states="up,down,disabled">
+	<e:Image width="100%" height="100%" source="pdk_common_close_n" source.down="pdk_common_close_h"/>
+</e:Skin>

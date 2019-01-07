@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.CCDDZPanelRechargeTipsSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="wxmp,phone,withMatch" >
+	<e:Image horizontalCenter="0" verticalCenter="0" height="460" source="cc_common_alert1_bg" scale9Grid="25,57,42,16" width="810"/>
+	<e:Group id="tit_group" horizontalCenter="0" y="0">
+		<e:Image id="titBgImg0" y="3" source="cc_common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1" x.phone="0"/>
+		<e:Image id="titFontImg0" y="0" horizontalCenter="0" x="138" scaleX="1" scaleY="1" source="cc_recharge_tit"/>
+	</e:Group>
+	<e:Button x="780" y="-10" label="" id="btnClose">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+				<e:Image width="100%" height="100%" source="cc_common_close_n" source.down="cc_common_close_h"/>
+				<e:Label id="labelDisplay0" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image x="44" y="66" source="cc_recharge_tips_bg1" x.wxmp="160"/>
+	<e:Image y="66" x="288" source="cc_recharge_tips_bg2" x.wxmp="420"/>
+	<e:Image y="66" x="532" source="cc_recharge_tips_bg3" visible.wxmp="false" source.withMatch="cc_recharge_tips_bg4"/>
+	<e:Button id="btnExchange" x="100" y="316" label="" x.wxmp="213">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="cc_recharge_tips_duihuan1" source.down="cc_recharge_tips_duihuan2"/>
+				<e:Label id="labelDisplay1" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btnShare" x="586" label="立即邀请好友" y="322" visible.wxmp="false" visible.withMatch="false">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="cc_personal_btn_share_c"/>
+				<e:Label id="labelDisplay"  x="34" y ="10" size="20" text="立即邀请好友" fontFamily="微软雅黑" textColor="0x05612b"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btnMatch" x="592" y="313" visible.wxmp="false" visible.phone="false">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="cc_recharge_tips_join_match_n"/>
+			<e:Label id="labelDisplay" x="34" y="10" size="20" text="立即邀请好友" fontFamily="微软雅黑" textColor="0x05612b"/>
+			</e:Skin>
+		</e:skinName>
+
+	</e:Button>
+	<e:Button id="btnBuy" y="316" label="" x="344" x.wxmp="475">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="cc_recharge_tips_goumai1" source.down="cc_recharge_tips_goumai2"/>
+				<e:Label id="labelDisplay2" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PDKPanelExchange3Skin" width="1280" height="640" currentState="history" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="history,detail" >
+	<e:Group y="88" horizontalCenter="0">
+		<e:Image y="8" x="0" width="856" height="445" scale9Grid="28,61,31,13" source="pdk_wins_bg"/>
+		<e:Image id="scaleImg" width="80%" height="351" source="pdk_common_bg" scale9Grid="10,8,66,49" anchorOffsetX="0" anchorOffsetY="0" left="87" top="74" left.history="87" top.history="74" height.history="351" height.detail="351"/>
+		<e:Button id="btn_close" x="817" y="-6">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="pdk_common_close_n"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+
+		</e:Button>
+		<e:Image source="exchange_btn_2" y="14" x="249"/>
+		<e:Image source="exchange_btn_1" x="425" y="10" x.detail="424" x.history="246" y.history="9"/>
+		<e:Image source="exchange_btn_word_1_n" x="253" y="12" visible.history="false"/>
+		<e:Image source="exchange_btn_word_1_h" x="253" y="12" visible.detail="false"/>
+		<e:Image source="exchange_btn_word_2_n" x="429" y="12" visible.detail="false"/>
+		<e:Image source="exchange_btn_word_2_h" x="429" y="12" visible.history="false"/>
+		<e:Button id="btn_changetype" x="427" y="12" x.detail="251" x.history="429" y.history="10" width="176" height="53" y.detail="10">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="exchange_btn_1" alpha="0"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Scroller y="84" height="336" width="691" x.history="120" y.history="84" horizontalCenter="0" visible.history="false" anchorOffsetY="0">
+			<e:Group>
+				<e:List id="lv_list1" y="0" x="0">
+					<e:itemRendererSkinName>
+						<e:Skin xmlns:PDKalien="PDKalien.*" xmlns:ns1="*">
+							<e:Group horizontalCenter="0" y="6">
+								<e:Image y="0" source="exchange_image_1"/>
+								<e:Label id="lbl_dis" text="领取13元红包" y="8" size="20" textAlign="left" x="351" width="190" textColor="0x000000"/>
+								<e:Label id="lbl_change" text="+50" y="8" size="20" textAlign="left" x="540" textColor="0x000000" width="150"/>
+								<e:Label id="lbl_time" text="2017年8月16日 17:52" y="8" size="20" textAlign="left" x="93" textColor="0x000000" width="250"/>
+							</e:Group>
+						</e:Skin>
+					</e:itemRendererSkinName>
+					<e:layout>
+						<e:VerticalLayout/>
+					</e:layout>
+					<e:ArrayCollection>
+						<e:Array>
+							<e:Object label="数据1"/>
+							<e:Object label="数据2"/>
+							<e:Object label="数据3"/>
+							<e:Object label="null"/>
+							<e:Object label="null"/>
+							<e:Object label="null"/>
+							<e:Object label="null"/>
+							<e:Object label="null"/>
+							<e:Object label="null"/>
+							<e:Object label="null"/>
+						</e:Array>
+					</e:ArrayCollection>
+				</e:List>
+				<e:layout>
+					<e:VerticalLayout/>
+				</e:layout>
+			</e:Group>
+		</e:Scroller>
+		<e:Scroller height="336" y="84" width="691" width.history="691" horizontalCenter="0" visible.detail="false">
+			<e:Group>
+				<e:List id="lv_list2" y="0" x="0">
+					<e:itemRendererSkinName>
+						<e:Skin xmlns:PDKalien="PDKalien.*" xmlns:ns1="*">
+							<e:Group horizontalCenter="0" y="6">
+								<e:Image y="0" source="exchange_image_1"/>
+								<e:Label id="lbl_dis" text="领取13话费" y="8" size="20" width="200" textColor="0x000000" x="351" textAlign="left"/>
+								<e:Label id="lbl_status" text="审核中..." y="8" size="20" textAlign="left" x="538" textColor="0x000000" width="150"/>
+								<e:Label id="lbl_time" text="2017年8月16日 17:52" y="8" size="20" textAlign="left" x="93" textColor="0x000000" width="250"/>
+							</e:Group>
+						</e:Skin>
+					</e:itemRendererSkinName>
+					<e:layout>
+						<e:VerticalLayout/>
+					</e:layout>
+					<e:ArrayCollection>
+						<e:Array>
+							<e:Object label="数据1"/>
+							<e:Object label="数据2"/>
+							<e:Object label="数据3"/>
+							<e:Object label="null"/>
+							<e:Object label="null"/>
+							<e:Object label="null"/>
+							<e:Object label="null"/>
+							<e:Object label="null"/>
+							<e:Object label="null"/>
+							<e:Object label="null"/>
+						</e:Array>
+					</e:ArrayCollection>
+				</e:List>
+				<e:layout>
+					<e:VerticalLayout/>
+				</e:layout>
+			</e:Group>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

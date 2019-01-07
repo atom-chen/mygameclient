@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ui.PDKHangButtonSkin" states="up,down,disabled,upAndSelected,downAndSelected,disabledAndSelected" xmlns:e="http://ns.egret.com/eui">
+    <e:Image source.downAndSelected="pdk_ico_ai" source="pdk_ico_ai" source.disabled="pdk_ico_ai" source.down="pdk_ico_ai" source.upAndSelected="pdk_ico_ai" source.disabledAndSelected="pdk_ico_ai"/>
+</e:Skin>

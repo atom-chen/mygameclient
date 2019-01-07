@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.CCDDZPanelFreshManRewardSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="1280" height="640">
+	<e:Image id="mBg_img" width="615" height="324" source="cc_common_alert1_bg" scale9Grid="25,55,30,17" horizontalCenter="0" verticalCenter="0"/>
+	<e:Label id="addLabel" text="+" x="626" y="322" fontFamily="Microsoft YaHei" size="40" bold="true" textColor="0xFF1800"/>
+	<e:Image id="item2Img0" y="348" anchorOffsetX="47.5" anchorOffsetY="47" scaleX="1" scaleY="1" horizontalCenter="76.5" source="cc_room_2"/>
+	<e:Label id="item2Num_label0" text="3天" x="701" y="366" size="20" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1"/>
+	<e:Image id="item2Img" y="348" anchorOffsetX="47.5" anchorOffsetY="47" source="cc_room_0" scaleX="1" scaleY="1" horizontalCenter="-70.5"/>
+	<e:Label id="item2Num_label" text="10000" x="532" y="362" size="20" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1"/>
+	<e:Group id="tit_group" horizontalCenter="0" y="158">
+		<e:Image id="titBgImg1" y="3" source="cc_common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+		<e:Image id="titFontImg1" y="-1" horizontalCenter="0.5" x="138" scaleX="1" scaleY="1" source="cc_newBag_tit"/>
+	</e:Group>
+	<e:Button id="btnGet" y="403.65" horizontalCenter="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="cc_room_get_n" source.down="cc_room_get_c"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image y="223" source="cc_newBag_desc" horizontalCenter="0"/>
+
+
+</e:Skin>

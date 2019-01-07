@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.CCDDZRobotSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="cc_play_robot"/>
+	<e:Image id="eye" source="cc_play_robot_eye"/>
+</e:Skin>

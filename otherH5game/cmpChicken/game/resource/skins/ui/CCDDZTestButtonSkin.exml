@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="ui.CCDDZTestButtonSkin" states="up,down,disabled" minHeight="50" minWidth="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Image  source="cc_common_btn_lx_n" source.down="cc_common_btn_lx_h" source.disabled="cc_common_btn_lx_n" scale9Grid="31,7,69,49" width="100%"/>
+	<e:Label id="labelDisplay" text="Button" verticalCenter="0" left="20" right="20" textAlign="center"/>
+    
+</e:Skin>

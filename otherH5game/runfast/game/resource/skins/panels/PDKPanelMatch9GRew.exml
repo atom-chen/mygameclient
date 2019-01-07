@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="panels.PDKPanelMatch9GRew" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="536" height="330" x="643" y="320" source="match9_bg" scale9Grid="6,5,8,210" anchorOffsetY="165" anchorOffsetX="268"/>
+	<e:Image x="645" y="156" source="match9_titBg" anchorOffsetX="166" anchorOffsetY="31"/>
+	<e:Image id="tit_img" x="641" y="155" source="match9_titGet" anchorOffsetX="48" anchorOffsetY="22"/>
+	<e:Image x="435" y="198" source="match9_t1"/>
+	<e:BitmapLabel id="rank_bitmap" x="624" text="1" scaleX="1.5" scaleY="1.5" font="pdk_font_num_16" y="196"/>
+	<e:Image x="667" y="198" source="match9_t2"/>
+	<e:Image id="getTit_img" x="717" y="198" source="match9_get"/>
+	<e:Label id="get_label" text="5元红包" x="791" y="205" fontFamily="Microsoft YaHei" size="20"/>
+	<e:Label id="name1_label" text="" x="450" y="294" fontFamily="Microsoft YaHei" size="20" textAlign="center" anchorOffsetX="36" anchorOffsetY="9" width="72"/>
+	<e:Label id="name2_label" text="" x="450" y="325" fontFamily="Microsoft YaHei" size="20" textAlign="center" anchorOffsetX="36" width="72"/>
+	<e:Label id="name3_label" text="" x="450" y="364" fontFamily="Microsoft YaHei" size="20" textAlign="center" anchorOffsetX="36" width="72"/>
+	<e:Label id="turn1_1label" text="" x="528" y="285" fontFamily="Microsoft YaHei" size="20" textAlign="center"/>
+	<e:Label id="turn1_2label" text="" x="528" y="325" fontFamily="Microsoft YaHei" size="20" textAlign="center"/>
+	<e:Label id="turn1_3label" text="" x="528" y="364" fontFamily="Microsoft YaHei" size="20" textAlign="center"/>
+	<e:Label id="turn2_1label" text="" x="623" y="285" fontFamily="Microsoft YaHei" size="20" textAlign="center"/>
+	<e:Label id="turn2_2label" text="" x="623" y="325" fontFamily="Microsoft YaHei" size="20" textAlign="center"/>
+	<e:Label id="turn2_3label" text="" x="623" y="364" fontFamily="Microsoft YaHei" size="20" anchorOffsetY="0" textAlign="center"/>
+	<e:Label id="turn3_1label" text="" x="721" y="285" fontFamily="Microsoft YaHei" size="20" textAlign="center"/>
+	<e:Label id="turn3_2label" text="" x="721" y="325" fontFamily="Microsoft YaHei" size="20" textAlign="center"/>
+	<e:Label id="turn3_3label" text="" x="721" y="364" fontFamily="Microsoft YaHei" size="20" textAlign="center"/>
+	<e:Label id="turn4_1label" text="" x="811" y="285" fontFamily="Microsoft YaHei" size="20" textAlign="center"/>
+	<e:Label id="turn4_2label" text="" x="811" y="325" fontFamily="Microsoft YaHei" size="20" textAlign="center"/>
+	<e:Label id="turn4_3label" text="" x="811" y="364" fontFamily="Microsoft YaHei" size="20" textAlign="center"/>
+	<e:Image id="getRew_img" x="586" y="410" source="match9_getRew"/>
+	<e:Image x="412" y="239" source="match9_nick"/>
+	<e:Image x="524" y="239" source="match9_turn1"/>
+	<e:Image x="613" y="239" source="match9_turn2"/>
+	<e:Image x="712" y="239" source="match9_turn3"/>
+	<e:Image x="795" y="239" source="match9_totScore"/>
+</e:Skin>

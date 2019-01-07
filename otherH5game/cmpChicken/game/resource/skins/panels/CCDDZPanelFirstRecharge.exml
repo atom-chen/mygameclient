@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="panels.CCDDZPanelFirstRecharge" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Group id="infoGroup" width="1280" height="640"  x="0" y="0" touchEnabled="false">
+		<e:Image id="mDesc_img1" width="372" height="163" x="670.03" y="148" source="cc_frecharge_desc" scaleX="0.9" scaleY="0.9"/>
+		<e:Image id="mPersion_img1" width="310" height="395" x="427" y="268" source="cc_frecharge_player" scaleX="0.6" scaleY="0.6"/>
+		<e:Image id="mMoneyBack_img" width="174" height="46" x="441" y="148" source="cc_frecharge_money_back" scaleX="1" scaleY="1"/>
+		<e:Image id="mMoneyLight_img" width="174" height="46" x="441" y="148" source="cc_frecharge_money_light" scaleX="1" scaleY="1"/>
+		<e:Image id="mMoneyLight_mask" width="47" height="61" x="394" y="136" source="cc_frecharge_mask" anchorOffsetY="0" scaleX="1" scaleY="1"/>
+		<e:Image id="mSend_img1" x="635.34" y="155" source="cc_frecharge_send" scaleX="0.9" scaleY="0.9"/>
+		<e:Image id="mSend_img2" x="635.34" y="186" source="cc_frecharge_send" scaleX="0.9" scaleY="0.9" visible="false"/>
+		<e:Image id="mSend_img3" x="635.34" y="202" source="cc_frecharge_send" scaleX="0.9" scaleY="0.9"/>
+		<e:Image id="mSend_img4" x="635.34" y="251" source="cc_frecharge_send" scaleX="0.9" scaleY="0.9"/>
+		<e:Image id="mSend_img5" x="470" y="202" source="cc_frechare_getGold" scaleX="1" scaleY="1"/>
+		<e:Image id="item1Img" x="660" y="368" anchorOffsetX="47.5" anchorOffsetY="47" source="cc_room_2" scaleX="1" scaleY="1"/>
+		<e:Label id="item1Num_label" text="7天" x="643" y="380" size="20" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1"/>
+		<e:Image id="item2Img" x="756.5" y="368" anchorOffsetX="47.5" anchorOffsetY="47" source="cc_room_101" scaleX="1" scaleY="1" visible="false"/>
+		<e:Label id="item2Num_label" text="140次" x="729" y="380" size="20" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" visible="false"/>
+		<e:Image id="item3Img" x="751.5" y="367" anchorOffsetX="47.5" anchorOffsetY="47" source="cc_room_0" scaleX="1" scaleY="1"/>
+		<e:Label id="item3Num_label" text="70000" x="722" y="380" size="20" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1"/>
+		<e:Image id="item4Img" x="848.5" y="367" anchorOffsetX="47.5" anchorOffsetY="47" source="cc_room_downGold1" scaleX="1" scaleY="1"/>
+		<e:Label id="item4Num_label" text="签到+20%" x="803" y="381" size="20" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1"/>
+		<ns1:CCDDZButtonDoTaskSkin id="mGoRecharge_btn" x="745" y="494" scaleX="1.2" scaleY="1.2" anchorOffsetX="65" anchorOffsetY="24" skinName="components.CCDDZButtonDoTaskSkin"/>
+		<e:Image id="mLight1_img" x="458" y="152.79" source="cc_frecharge_light" anchorOffsetX="46" anchorOffsetY="46" blendMode="add" scaleX="0.8" scaleY="0.8" rotation="20"/>
+		<e:Image id="mLight2_img" x="607" y="150.62" source="cc_frecharge_light" anchorOffsetX="46" anchorOffsetY="46" scaleX="0.5" scaleY="0.5" blendMode="add"/>
+		<e:Image id="mLight3_img" x="547.35" y="366.87" source="cc_frecharge_light" anchorOffsetX="46" anchorOffsetY="46" scaleX="2" scaleY="2" blendMode="add" rotation="45"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.CCDDZPanelModifyNicknameSkin" height="486" xmlns:e="http://ns.egret.com/eui">
+	<e:Image width="100%" source="cc_common_alert_bg" height="100%" scale9Grid="107,112,642,5"/>
+	<e:Group x="246" y="80">
+		<e:Label id="labErr" y="170" text="..." x="2" size="20" width="344" textAlign="center" textColor="0xAE0000"/>
+		<e:Label text="请设置您的昵称" x="69" y="0" textColor="0x000000" size="30"/>
+		<e:TextInput id="tiNickname" skinName="ui.CCDDZTextInputSkin" y="73" maxChars="16" x="0" prompt="输入昵称（4-16位）"/>
+	</e:Group>
+	<e:Group id="grpButtons" touchEnabled="false" width="100%" height="100%">
+		<e:Button right="-3" y="-3" name="close" x="20" visible="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:CCalien="CCalien.*">
+					<e:Image width="100%" height="100%" source="cc_common_close_n" source.down="cc_common_close_h"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button skinName="ui.CCDDZTestButtonSkin" label="确定" y="315" name="confirm" horizontalCenter="0"/>
+		<e:Button right="-6" id="btnClose" skinName="ui.CCDDZCloseButtonSkin" y="14" x="20" name="close"/>
+	</e:Group>
+	<e:Label text="温馨提示：昵称设置后无法修改" size="20" y="422" x="43" textColor="0xAE0000"/>
+</e:Skin>

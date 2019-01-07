@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="panels.CCDDZPanelDownAppSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="1280" height="640">
+	<w:Config id="15f37cb46e1"/>
+	<e:Group id="infoGroup" width="1280" height="640" touchEnabled="false">
+		<e:Image id="down_img" x="723" y="494" anchorOffsetX="74.5" anchorOffsetY="27.5" source="cc_go_down" scaleX="1" scaleY="1"/>
+		<e:Image id="item1Img" x="667.5" y="318" anchorOffsetX="47.5" anchorOffsetY="47" source="cc_room_2" scaleX="1" scaleY="1"/>
+		<e:Image id="item1Img1" x="561.5" y="318" anchorOffsetX="47.5" anchorOffsetY="47" scaleX="1" scaleY="1" source="cc_room_3"/>
+		<e:Image id="item2Img" x="701.5" y="318" anchorOffsetX="47.5" anchorOffsetY="47" source="cc_room_101" scaleX="1" scaleY="1" visible="false"/>
+		<e:Image id="item3Img" x="766.5" y="318" anchorOffsetX="47.5" anchorOffsetY="47" source="cc_room_0" scaleX="1" scaleY="1"/>
+		<e:Image id="item4Img" x="866.5" y="318" anchorOffsetX="47.5" anchorOffsetY="47" source="cc_room_downGold1" scaleX="1" scaleY="1"/>
+		<e:Label id="item1Num_label" text="3天" x="650" y="333" size="20" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1"/>
+		<e:Label id="item1Num_label1" text="免费钻石" x="520" y="332" size="20" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1"/>
+		<e:Image id="item1Img0" x="555.5" y="318" anchorOffsetX="47.5" anchorOffsetY="47" scaleX="1" scaleY="1" source="cc_room_3" visible="false"/>
+		<e:Label id="item1Num_label0" text="32" x="541" y="333" size="20" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" visible="false"/>
+		<e:Label id="item2Num_label" text="10次" x="681" y="331" size="20" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" visible="false"/>
+		<e:Label id="item3Num_label" text="5000" x="741" y="331" size="20" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1"/>
+		<e:Label id="item4Num_label" text="签到+10%" x="823" y="330" size="20" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1"/>
+		<e:Label id="item4Num_label0" text="下载新版APP送记牌器礼包，每日抽免费钻石，所有用户都可以领取！" x="478" y="201" size="20" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" textColor="0x414a61" width="500" lineSpacing="5"/>
+	</e:Group>
+</e:Skin>

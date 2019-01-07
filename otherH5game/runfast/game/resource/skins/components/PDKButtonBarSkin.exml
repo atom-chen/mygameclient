@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.PDKButtonBarSkin" currentState="useCard" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" states="hidden,askMaster,useCard,pass,useCard2,pass2" >
+	<e:Group id="grpButton">
+		<e:layout>
+			<e:HorizontalLayout gap="20"/>
+		</e:layout>
+		<ns1:PDKStateButton name="score_0" id="score_0" x="126" y="20" includeIn="askMaster" labelIcon="play_btn_word_nocall" skinName="ui.PDKPlayBlueButtonSkin"/>
+		<ns1:PDKStateButton name="score_1" id="score_1" includeIn="askMaster" x="136" y="30" labelIcon="play_btn_word_1" skinName="ui.PDKPlayOrangeButtonSkin"/>
+		<ns1:PDKStateButton name="score_2" id="score_2" skinName="ui.PDKPlayOrangeButtonSkin" includeIn="askMaster" x="146" y="40" labelIcon="play_btn_word_2"/>
+		<ns1:PDKStateButton name="score_3" skinName="ui.PDKPlayOrangeButtonSkin" id="score_3" includeIn="askMaster" x="156" y="50" labelIcon="play_btn_word_3"/>
+		
+		<ns1:PDKStateButton labelIcon="pdk_buchu" name="pass" x="116" y="10" includeIn="hidden,useCard,pass" visible.hidden="false" skinName="ui.PDKPlayOrangeButtonSkin"/>
+		<ns1:PDKStateButton labelIcon="pdk_chongxuan" name="cancelSelect" x="10" y="10" includeIn="hidden,useCard,useCard2" visible.hidden="false" skinName="ui.PDKPlayOrangeButtonSkin"/>
+		<ns1:PDKStateButton labelIcon="pdk_tishi" name="help" x="206" y="20" includeIn="hidden,useCard,useCard2" visible.hidden="false" skinName="ui.PDKPlayOrangeButtonSkin"/>
+		<ns1:PDKStateButton labelIcon="pdk_chupai" name="use" x="216" y="30" includeIn="hidden,useCard,useCard2" visible.hidden="false" skinName="ui.PDKPlayBlueButtonSkin"/>
+	</e:Group>
+</e:Skin>

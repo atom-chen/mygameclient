@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="panels.CCDDZPanelThanksgivingSkin" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  >
+	<e:Group id="infoGroup" width="1280" height="640" x="0" touchEnabled="false">
+		<e:Image id="desc1Img" x="460" y="160" source="cc_thanks_act1"/>
+		<e:Label id="descTimeLabel" text="(11月23日0:00-11月25日24:00)" x="709" y="167" fontFamily="Microsoft YaHei" textColor="0x414a61" bold="true" size="20"/>
+		<e:Label id="desc2Label" text="规则:活动期间,首次购买只需10元,第二，三次需15元,三次之后需18元。最多可以购买6次。" x="455" y="206" size="20" fontFamily="Microsoft YaHei" textColor="0x414a61" bold="true" width="560"/>
+		<e:Image id="item1Img" x="516" y="310.5" anchorOffsetX="47.5" anchorOffsetY="47" scaleX="1" scaleY="1" source="cc_room_3"/>
+		<e:Label id="item1Num_label" text="100" x="497.5" y="324.5" size="20" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1"/>
+		<e:Image id="item2Img" x="663" y="311.5" anchorOffsetX="47.5" anchorOffsetY="47" source="cc_room_0" scaleX="1" scaleY="1"/>
+		<e:Label id="item2Num_label" text="100000" x="626.5" y="323.5" size="20" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1"/>
+		<e:Label id="buyProLabel" text="0/6" x="904.1" y="323.5" fontFamily="Microsoft YaHei" size="24" bold="true" textColor="0xff1800"/>
+		<e:Image id="desc2Img" x="460" y="378" source="cc_thanks_act2"/>
+		<e:Label id="act2T1Label" text="11月23日" x="472" y="428" size="20" textColor="0x414a61" bold="true" fontFamily="Microsoft YaHei"/>
+		<e:Label id="act2T2Label" text="11月24日" x="472" y="458" size="20" textColor="0x414A61" bold="true" fontFamily="Microsoft YaHei"/>
+		<e:Label id="act2T3Label" text="11月25日" x="472" y="488" size="20" textColor="0x414A61" bold="true" fontFamily="Microsoft YaHei"/>
+		<e:Label id="act2T1DescLabel" text="记牌器1小时+金豆600" x="585" y="428" size="20" textColor="0x414A61" bold="true" fontFamily="Microsoft YaHei"/>
+		<e:Label id="act2T2DescLabel" text="记牌器6小时+金豆1000" x="585" y="458" size="20" textColor="0x414A61" bold="true" fontFamily="Microsoft YaHei"/>
+		<e:Label id="act2T3DescLabel" text="记牌器12小时+金豆1400" x="585" y="488" size="20" textColor="0x414A61" bold="true" fontFamily="Microsoft YaHei"/>
+		<e:Label id="descLabel" text="(最终解释权归好手气所有)" x="777" y="538" size="20" textColor="0x414A61" fontFamily="Microsoft YaHei"/>
+		<ns1:CCDDZImgWordBtn id="buyImg" x="930" y="303" skinName="ui.CCDDZImgWordBtnSkin" scaleX="0.8" scaleY="0.8" anchorOffsetX="85" anchorOffsetY="28"/>
+		<ns1:CCDDZImgWordBtn id="getImg" x="930" y="468" skinName="ui.CCDDZImgWordBtnSkin" scaleX="0.8" scaleY="0.8" anchorOffsetX="85" anchorOffsetY="28"/>
+		<e:Image id="get0Img" x="815.5" y="428" scaleX="1" scaleY="1" source="cc_thanks_r" visible="false"/>
+		<e:Image id="get1Img" x="815.5" y="459.5" scaleX="1" scaleY="1" source="cc_thanks_r" visible="false"/>
+		<e:Image id="get2Img" x="815.5" y="488.5" source="cc_thanks_r" scaleX="1" scaleY="1" visible="false"/>
+		<e:Label id="addLabel" text="+" x="573" y="294" fontFamily="Microsoft YaHei" size="40" bold="true" textColor="0xff1800"/>
+	</e:Group>
+
+</e:Skin>

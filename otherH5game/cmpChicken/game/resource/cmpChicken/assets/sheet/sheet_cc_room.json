@@ -1,0 +1,7 @@
+{"file":"sheet_cc_room.png","frames":{
+"cc_room_btn_chou6":{"x":158,"y":162,"w":104,"h":93,"offX":0,"offY":0,"sourceW":104,"sourceH":93},
+"cc_room_diamond":{"x":0,"y":0,"w":156,"h":162,"offX":0,"offY":0,"sourceW":158,"sourceH":162},
+"cc_room_three_title":{"x":0,"y":164,"w":107,"h":44,"offX":0,"offY":0,"sourceW":107,"sourceH":44},
+"cc_room_bean":{"x":158,"y":0,"w":150,"h":160,"offX":1,"offY":0,"sourceW":158,"sourceH":162},
+"cc_room_btn_chou4":{"x":310,"y":95,"w":104,"h":93,"offX":0,"offY":0,"sourceW":104,"sourceH":93},
+"cc_room_btn_chou5":{"x":310,"y":0,"w":104,"h":93,"offX":0,"offY":0,"sourceW":104,"sourceH":93}}}

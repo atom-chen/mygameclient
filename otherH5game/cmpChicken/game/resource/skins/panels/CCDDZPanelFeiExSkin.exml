@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.CCDDZPanelFeiExSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="1280" height="640" states="fei,card,ali,sp,diamond" >
+
+	<e:Image y="93" source="cc_common_alert_bg" width="770" height="460" x="255" scale9Grid="105,101,639,17"/>
+	<e:Button id="closeBtn" label="" x="969" y="83">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="cc_common_close_n"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image id="exCodeImg" y="487" anchorOffsetX="81" anchorOffsetY="30.5" horizontalCenter="-120" source="cc_common_btn_orange3" visible.fei="false" visible.card="false" visible.ali="false" visible.sp="false"/>
+	<e:Label text="兑换" y="485" bold="true" fontFamily="Microsoft YaHei" size="26" textAlign="right" includeIn="diamond" textColor="0xffffff" anchorOffsetX="26" anchorOffsetY="13" touchEnabled="false" horizontalCenter="-118"/>
+	<e:Image id="okImg" y="487" source="cc_phonebind_now" anchorOffsetX="81" anchorOffsetY="30.5" horizontalCenter="0" source.fei="cc_exchage_buy" source.ali="cc_exchange_cm" source.sp="cc_exchange_get" source.card="cc_exchange_copy" horizontalCenter.diamond="120" source.diamond="cc_common_btn_orange3"/>
+	<e:Label text="复制" y="485" bold="true" fontFamily="Microsoft YaHei" size="26" textAlign="right" includeIn="diamond" textColor="0xFFFFFF" anchorOffsetX="26" anchorOffsetY="13" touchEnabled="false" horizontalCenter="122"/>
+
+	<e:Group id="tit_group" horizontalCenter="0" y="99">
+		<e:Image id="titBgImg1" y="3" source="cc_common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+		<e:Image id="titFontImg1" y="-4" horizontalCenter="0.5" x="138" scaleX="1" scaleY="1" source="cc_exchange_tit_acc" source.card="cc_exchange_getSucc" source.diamond="cc_exchange_getSucc"/>
+	</e:Group>
+	<e:TextInput id="input1" y="256" width="230"  height="50" skinName="ui.CCDDZTextInputSkin" horizontalCenter.sp="11.5" horizontalCenter.fei="11.5" visible.fei="false" visible.sp="false" y.ali="277" y.card="243" left.ali="515" width.ali="370" left="540" width.card="370" left.card="496" visible.diamond="false"/>
+	<e:TextInput id="input2" y="316" width="230" height="50"  skinName="ui.CCDDZTextInputSkin" horizontalCenter.sp="11.5" visible.sp="false" y.ali="337" y.card="303" width.ali="370" left.ali="515" width.fei="230" left="540" maxChars.fei="11" width.card="370" left.card="496"/>
+	<e:TextInput id="input3" y="378" width="230" height="50" skinName="ui.CCDDZTextInputSkin" visible.fei="false" visible.ali="false" visible.sp="false" y.card="363" left="540" width.card="370" left.card="496" visible.diamond="false"/>
+
+
+	<e:Label id="Pre1Label" text="手机号:" y="269" fontFamily="Microsoft YaHei" bold="true" size="26" textColor="0x8f4c26" right="749" textAlign="right" visible.fei="false" text.card="卡号:" text.ali="姓名:" visible.sp="false" right.ali="778" y.ali="288" right.card="793" y.card="254" visible.diamond="false"/>
+	<e:Label id="Pre2Label" text="验证码:" y="329" bold="true" fontFamily="Microsoft YaHei" size="26" textColor="0x8f4c26" right="749" textAlign="right" text.fei="手机号:" text.card="密码:" text.ali="支付宝账号:" visible.sp="false" right.ali="778" y.ali="348" right.card="793" y.card="314" text.diamond="兑换码:"/>
+	<e:Label id="Pre3Label" text="有效期至:" y="389" bold="true" fontFamily="Microsoft YaHei" size="26" textColor="0x8F4C26" right="749" textAlign="right" visible.fei="false" visible.ali="false" visible.sp="false" right.card="793" y.card="374" visible.diamond="false"/>
+
+	<e:Label id="descLabel" text="" y="186" bold="true" fontFamily="Microsoft YaHei" size="22" textColor="0x424a61" horizontalCenter="0" lineSpacing="10" text.fei="请输入您要充值的手机号码,支持移动，联通，电信号码充值\n 充值一般在2小时内到账，如有问题请联系客服！" textAlign.fei="center" width.fei="580" width.sp="580" text.sp="请输入您要充值的手机号码,支持移动，联通，电信号码充值\n运营商一经确认，领取后不可更改，请谨慎操作！" textAlign.sp="center" text.ali="请填写一下信息用于红包发放账号验证，我们将会及时发放红包到您的账户！" width.ali="580" textAlign.ali="center" text.card="您已成功领取5元话费充值卡" text.diamond="您已成功领取20钻石兑换码"/>
+	<e:Label id="descLabel0" text="10元充值卡仅支持电信,30元充值卡仅支持联通和电信" y="256" bold="true" fontFamily="Microsoft YaHei" size="22" horizontalCenter="0" lineSpacing="10" width="580" textAlign="center" textColor="0xff0000" includeIn="sp"/>
+	<e:Component id="yidong" x="350" y="315" skinName="ui.CCDDZRadioButtonSkin" includeIn="sp"/>
+	<e:Component id="liantong" x="550" y="315" skinName="ui.CCDDZRadioButtonSkin" includeIn="sp"/>
+	<e:Component id="dianxin" x="750" y="315" skinName="ui.CCDDZRadioButtonSkin" includeIn="sp"/>
+</e:Skin>

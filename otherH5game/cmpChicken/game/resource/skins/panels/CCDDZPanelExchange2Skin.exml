@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.CCDDZPanelExchange2Skin" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing"        states="gold,diamond,jd,card,history,red,exCode" >
+	<e:Group id="infoGroup" width="100%" height="100%" left="0" bottom="0">
+		<e:Image id="bgImg" top="0" height="100%" width="100%" source="cc_common_bg1" scale9Grid="5,3,23,22" x="0"/>
+		<e:Image id="tooBgImg" source="cc_room_bg_2" y="0" x="0" width="100%"/>
+		<e:Image id="scaleImg" width="790" height="484" source="cc_common_bg" scale9Grid="10,8,66,49" anchorOffsetX="0" anchorOffsetY="0" left="218" top="74"/>
+		<e:Button id="btn_history" y="-1" left="200">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="cc_exchange_btn_4_n"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btn_recorder" label="" y="10" right="100">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="cc_exchange_recorder_n"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group id="close_group" height="64" anchorOffsetY="0" anchorOffsetX="0" width="150" left="0" top="0">
+			<e:Button id="btn_close" y="10" x="82" touchEnabled="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="cc_common_btn_return_n"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Group id="tit_group" horizontalCenter="0" height="70" y="0">
+			<e:Image id="titBgImg" y="-5" source="cc_common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1" height="70"/>
+			<e:Image id="titFontImg" y="0" horizontalCenter="1" source="cc_recharge_bg_38" x="138" scaleX="1" scaleY="1"/>
+		</e:Group>
+
+		<e:Scroller id="flagScroller" width="200" height="450" left="20" top="90">
+			<e:Group>
+			<e:List id="flagList" width="200" x="0" y="0" itemRendererSkinName="components.CCDDZActListItem">
+				<e:layout>
+				<e:VerticalLayout horizontalAlign="center" gap="0"/>
+				</e:layout>
+				<e:ArrayCollection>
+				<e:Array>
+					<e:Object label="数据1"/>
+					<e:Object label="数据1"/>
+					<e:Object label="数据1"/>
+					<e:Object label="数据1"/>
+					<e:Object label="数据1"/>
+					<e:Object label="数据1"/>
+					<e:Object label="数据1"/>
+				</e:Array>
+				</e:ArrayCollection>
+			</e:List>
+			<e:layout>
+				<e:VerticalLayout gap.gold="6"/>
+			</e:layout>
+			</e:Group>
+		</e:Scroller>
+		<e:Scroller id="itemInfoScroller" height="462" anchorOffsetX="0" anchorOffsetY="0" visible.history="false" includeIn="gold,diamond,jd,card,red" scrollPolicyV="auto" scrollPolicyH="off" left="250" top="86">
+			<e:Group>
+				<e:Label id="wxTitLabel" text="" x="17" y="8" size="32" fontFamily="Microsoft YaHei" width="686" includeIn="red" anchorOffsetY="0" height="37" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x7b4d09"/>
+				<e:Label id="actInfoLabel0" text="活动介绍" x="7" y="51" size="22" fontFamily="Microsoft YaHei" textColor="0xB83600" includeIn="red"/>
+				<e:Label id="actTimeLabel0" text="活动时间" x="7" y="138" size="22" fontFamily="Microsoft YaHei" textColor="0xB83600" includeIn="red"/>
+				<e:Label id="wxDescLabel" text="1、红包每日最多只可领取3个。\n2、兑换完成后到『好手气斗地主』公众号领取。" x="7" y="78" size="20" fontFamily="Microsoft YaHei" textColor="0x414A61" width="529" lineSpacing="4" anchorOffsetX="0" includeIn="red"/>
+				<e:Label id="yearTimeLabel" text="2月16日0:00至3月2日24:00" x="7" y="167" size="20" fontFamily="Microsoft YaHei" textColor="0x414A61" width="500" includeIn="red"/>
+			<e:List id="lv_goods" anchorOffsetY="0" anchorOffsetX="0" width="712" y="0" x="10" y.red="193">
+				<e:itemRendererSkinName>
+				<e:Skin xmlns:CCalien="CCalien.*">
+					<e:Group y="6" width="214" height="195" x="0">
+					<e:Image source="cc_recharge_bg_34" y="0"/>
+					<e:Label id="labGold" text="0" y="100.98" size="24" textAlign="center" width="200" bold="true" fontFamily="Microsoft YaHei" textColor="0xd62d0e" horizontalCenter="0"/>
+					<e:Image id="imgIcon" source="cc_icon_gold" horizontalCenter="0.5" verticalCenter="-42.5" width="80" height="80"/>
+					<e:Group id="grpAddition" x="98" y="2">
+						<e:Image source="cc_recharge_bg_36" x="-1"/>
+						<e:Label id="labAddition" text="0" size="20" fontFamily="Microsoft YaHei" bold="true" textColor="0xffffff" horizontalCenter="0.5" textAlign="center" y="6"/>
+					</e:Group>
+					<e:Image id="mPre_img" x="-2.32" y="-4.66" source="cc_exchange_pre"/>
+					</e:Group>
+					<e:Button id="btnConfirm" y="147" label="300元" horizontalCenter="0.5" scaleY="0.8" scaleX="0.8">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="cc_common_btn_orange2_n" source.down="cc_common_btn_orange2_h"/>
+						<e:BitmapLabel id="money_label" text="0" letterSpacing="-5" font="cc_font_num_9" verticalCenter="2" horizontalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+					</e:Button>
+					<e:Image id="exchange_img" touchEnabled="false" source="cc_icon_redcoin" x="58" y="148" width="40" height="40"/>
+				</e:Skin>
+				</e:itemRendererSkinName>
+				<e:layout>
+				<e:TileLayout rowHeight="210" requestedColumnCount="3" verticalGap="0" horizontalGap="30" />
+				</e:layout>
+				<e:ArrayCollection>
+					<e:Array>
+						<e:Object label="数据1"/>
+					</e:Array>
+				</e:ArrayCollection>
+			</e:List>
+			</e:Group>
+		</e:Scroller>
+		<e:Scroller id="hisoryInfoScroller" height="462" anchorOffsetX="0" anchorOffsetY="0" left="250" top="86" includeIn="history" width="722">
+			<e:Group width="722">
+				<e:List id="lv_history" y="0" x="-1" width="722">
+					<e:itemRendererSkinName>
+						<e:Skin xmlns:CCalien="CCalien.*" xmlns:ns1="*">
+							<e:Group id="rootGroup" horizontalCenter="0" y="6">
+								<e:Image y="0" source="cc_exchange_bg" width="710" x="6" scale9Grid="8,11,51,69"/>
+								<e:Image id="courseBgImg" y="16" x="542" source="cc_common_btn_orange3"/>
+								<e:Image id="courseImg" y="60" x="430" source="cc_exchange_image_7"/>
+
+								<e:Label id="courseLabel" text="查询教程" y="31.65" size="24" textAlign="center" x="563.33" width="120" textColor="0xFFFFFF" fontFamily="Microsoft YaHei" anchorOffsetX="0" touchEnabled="false"/>
+								<e:Image id="typeImg" y="7" x="11" source="cc_exchange_4" width="76" height="76"/>
+								<e:Image id="statusBgImg" y="16" x="372" source="cc_common_btn_orange3"/>
+								<e:Label id="exDescLabel" text="20元充值卡" y="11" size="28" textAlign="left" x="106" width="280" textColor="0xae1e2b" fontFamily="Microsoft YaHei" bold="true"/>
+								<e:Label id="exTimeLabel" text="兑换日期:   2017-12-11" y="52" size="24" textAlign="left" x="107" width="330" fontFamily="Microsoft YaHei" anchorOffsetX="0" textColor="0x976821" bold="true"/>
+								<e:Label id="exStatusLabel" text="查看卡密" y="32.65" size="24" textAlign="center" x="392.33" width="120" textColor="0xffffff" fontFamily="Microsoft YaHei" anchorOffsetX="0" touchEnabled="false"/>
+							</e:Group>
+						</e:Skin>
+					</e:itemRendererSkinName>
+					<e:layout>
+						<e:VerticalLayout/>
+					</e:layout>
+					<e:ArrayCollection>
+						<e:Array>
+							<e:Object label="数据1"/>
+							<e:Object label="数据1"/>
+							<e:Object label="数据1"/>
+							<e:Object label="数据1"/>
+							<e:Object label="数据1"/>
+						</e:Array>
+					</e:ArrayCollection>
+				</e:List>
+				<e:layout>
+					<e:VerticalLayout/>
+				</e:layout>
+			</e:Group>
+		</e:Scroller>
+		<e:Image id="bottomBgImg" source="cc_room_bg_2" width="100%" left="0" x="0" scaleX="1" scaleY="-1" bottom="0"/>
+		<e:Label id="infoLabel" text="绿色竞技，拒绝赌博。" size="18" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" bottom="42" textColor.exCode="0xffffff" textColor="0xffffff" right="40"/>
+		<e:Group id="userInfoGroup" left="0" bottom="0">
+			<ns1:CCDDZAvatar id="avatar" scaleX="0.5" scaleY="0.5" skinName="components.CCDDZAvatarSkin" name="avatar" touchChildren="false"/>
+			<ns1:CCDDZGold id="gold" x="95" y="48" skinName="components.CCDDZMyGoldSkin" scaleX="0.8" scaleY="0.8" currentState="withButton"/>
+			<ns1:CCDDZGold id="diamond" x="230" y="48" skinName="components.CCDDZMyGoldSkin" scaleX="0.8" scaleY="0.8" currentState="diamondBuy"/>
+			<e:Group id="grpRedcoin" width="157" height="42" y="48" scaleX="0.8" scaleY="0.8" x="370">
+			<e:Image id="redBgImg" y="0" touchEnabled="false" x="0" source="cc_common_gold_bg" width="157" height="42"/>
+			<e:Image y="-4" touchEnabled="false" x="-6.5" source="cc_icon_redcoin" scaleY="0.4" scaleX="0.4"/>
+			<e:Image id="redExchangeImg" y="24" touchEnabled="true" x="140" scaleY="1" scaleX="1" source="cc_common_exchangeRed" anchorOffsetX="23" anchorOffsetY="23.5"/>
+			<e:Label id="lbRedCoin" x="36" y="10" size="25" text="0" textAlign="center" width="85" touchEnabled="false" height="25"/>
+			</e:Group>
+			<e:Image x="90" y="29" source="cc_room_seprate"/>
+			<e:Label id="labNickName" text="" x="105" size="20" y="24" height="20" textColor="0xDCDBC7"/>
+		</e:Group>
+		<e:Label id="exCodePreLabel" text="兑换码:" x="350" y="301" size="24" fontFamily="Microsoft YaHei" textColor="0x874A19" bold="true" touchEnabled="false" scaleX="1" scaleY="1" width="96" textAlign="center" includeIn="exCode"/>
+		<e:TextInput id="exCodeInput" y="288" width="350" height="50" restrict="0-9 a-z A-Z" skinName="ui.CCDDZTextInputSkin" displayAsPassword="false" prompt="请输入兑换码" includeIn="exCode" x="445"/>
+		<e:Image id="exCodeImg" y="381" x="520.5" source="cc_common_btn_orange3" includeIn="exCode" touchEnabled="true"/>
+		<e:Label id="exCodeLabel" text="立即兑换" y="397" size="24" textAlign="center" x="540.5" width="120" textColor="0xFFFFFF" fontFamily="Microsoft YaHei" anchorOffsetX="0" touchEnabled="false" includeIn="exCode"/>
+		<e:Label id="exCodeDescLabel" text="兑换说明： \n     1、敬请关注好手气斗地主相关活动来获取兑换码； \n     2、兑换码兑换前，请确认您所登录的账号； \n     3、每个兑换码仅可兑换一次。" x="350" y="146" size="20" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" textColor="0x414A61" lineSpacing="8" includeIn="exCode"/>
+		<e:Image id="limitImg" right="10" bottom="4" source="cc_recharge_limit1000"/>
+		<e:Image id="arr_img" source="cc_common_arrow" anchorOffsetX="0" anchorOffsetY="11" x="200" y="122.5" touchEnabled="false"/>
+		</e:Group>
+</e:Skin>

@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.CCDDZPanelMatchResultSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image source="cc_match_finish_bg" locked="true"/>
+	<e:Image source="cc_match_finish_top" y="-120" horizontalCenter="0.5" locked="true"/>
+	<e:Group id="grpResult" height="439" width="353" x="0" y="0">
+		<e:Label id="labPlayerName" text="标签标签标签标签" x="37" y="41" size="23"/>
+		<e:Label id="labMatchName" size="23" y="74" text="标签标签标签标签" width="100%" textAlign="center"/>
+		<e:Label id="labPraise" size="23" y="200" text="标签标签标签标签" horizontalCenter="0.5"/>
+		<e:Group y="121" horizontalCenter="0">
+			<e:Image source="cc_match_word_24" x="0" y="15"/>
+			<e:BitmapLabel id="labNumber" y="0" text="0" font="cc_font_num_6" x="141"/>
+			<e:Image source="cc_match_word_17" x="201" y="14"/>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="bottom"/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="grpReward" y="238" horizontalCenter="0">
+			<e:Image source="cc_match_word_18" x="0" y="1"/>
+			<e:Label id="labReward" y="239" size="30" text="x0" x="281" textColor="0xFFD000" bold="true" lineSpacing="3"/>
+			<e:layout>
+				<e:HorizontalLayout/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Group id="grpRank" y="0" x="0" width="353" height="439" visible="false" locked="true">
+		<e:List id="list" height="224" width="310" y="91" itemRendererSkinName="components.CCDDZrankItemSkin" horizontalCenter="0">
+			<e:ArrayCollection>
+				<e:Array>
+					<e:Object label="null"/>
+					<e:Object label="null"/>
+					<e:Object label="null"/>
+					<e:Object label="null"/>
+					<e:Object label="null"/>
+					<e:Object label="null"/>
+					<e:Object label="null"/>
+				</e:Array>
+			</e:ArrayCollection>
+		</e:List>
+		<e:Image y="40" source="cc_match_rank_detail" horizontalCenter="0"/>
+	</e:Group>
+
+
+
+
+
+	<e:Button id="btnConfirm" label="确定" y="318" skinName="ui.CCDDZTestButtonSkin" x="111"/>
+	<e:Button id="btnGetReward" y="318" x="111">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="cc_match_getreward_n" source.down="cc_match_getreward_h"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

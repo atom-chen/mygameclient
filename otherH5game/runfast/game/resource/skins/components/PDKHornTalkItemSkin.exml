@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="components.PDKHornTalkItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="itemBg_img" x="0" y="0" scale9Grid="11,11,21,20" width="580" height="64" source="pdk_room_talk_history"/>
+	<e:Label id="text_label" text="" x="10" y="12" fontFamily="Microsoft YaHei" size="17" height="40" width="560" textAlign="left" lineSpacing="4" maxChars="60" verticalAlign="middle"/>
+</e:Skin>

@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.CCDDZPanelInviteDayRed" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image id="bgImg" horizontalCenter="0" verticalCenter="0" source="cc_common_alert1_bg" scale9Grid="23,56,40,14" width="770" height="460"/>
+	<e:Group id="tit_group" horizontalCenter="0" y="91">
+		<e:Image id="titBgImg1" y="3" source="cc_common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+		<e:Image id="titImg" y="0" horizontalCenter="0" x="138" scaleX="1" scaleY="1" source="cc_invite_day_tit"/>
+	</e:Group>
+	<e:Button id="btnClose" label="" x="1015" y="108.65" anchorOffsetX="30" anchorOffsetY="30">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="cc_common_close_n"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image id="contentBgImg" y="162" source="cc_common_bg" x="281" scale9Grid="10,8,66,49" height="337" anchorOffsetX="0" width="720" anchorOffsetY="0"/>
+	<e:Image id="contentBgImg0" y="147" anchorOffsetX="0" anchorOffsetY="0" source="cc_invite_day_ban" horizontalCenter="0"/>
+	<e:Label id="timeLabel" text="活动时间:2018.04.25至2018.05.10" y="183" fontFamily="Microsoft YaHei" size="18" textColor="0xED5144" textAlign="center" x="564"/>
+	<e:Group id="grp0" x="300" y="318" touchEnabled="false" width="100" height="166">
+		<e:Image id="inviteImg0" y="148" anchorOffsetX="50" anchorOffsetY="18" scaleX="1" scaleY="1" source="cc_invite_day_get1" horizontalCenter="0"/>
+		<e:Image id="redBgImg0" y="61" anchorOffsetX="44.5" anchorOffsetY="60.5" scaleX="1" scaleY="1" source="cc_invite_day_red1" x="49"/>
+		<e:Label id="statusLabel0" text="未完成" y="139" fontFamily="Microsoft YaHei" size="18" horizontalCenter="-1" textColor="0x7f3000" bold="true"/>
+		<e:Group id="friendGrp0" y="0" anchorOffsetX="0" anchorOffsetY="0" touchEnabled="false" touchChildren="false" touchThrough="false" x="9">
+		<e:Image id="headIcon0" y="75" anchorOffsetX="40" anchorOffsetY="40" scaleX="1" scaleY="1" source="cc_invite_day_mask" width="80" height="80" x="40"/>
+		<e:Image id="headMask0" y="75" anchorOffsetX="40" anchorOffsetY="40" scaleX="1" scaleY="1" source="cc_invite_day_mask" width="80" height="80" x="40"/>
+		<e:Label id="nameLabel0" text="好友昵称" y="8" fontFamily="Microsoft YaHei" size="18" horizontalCenter="0"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="grp1" x="415" y="318" touchEnabled="false" width="100" height="166">
+		<e:Image id="inviteImg1" y="148" anchorOffsetX="50" anchorOffsetY="18" scaleX="1" scaleY="1" source="cc_invite_day_get1" horizontalCenter="0"/>
+		<e:Image id="redBgImg1" y="61" anchorOffsetX="44.5" anchorOffsetY="60.5" scaleX="1" scaleY="1" source="cc_invite_day_red1" x="49"/>
+		<e:Label id="statusLabel1" text="未完成" y="139" fontFamily="Microsoft YaHei" size="18" horizontalCenter="-1" textColor="0x7f3000" bold="true"/>
+		<e:Group id="friendGrp1" y="0" anchorOffsetX="0" anchorOffsetY="0" touchEnabled="false" touchChildren="false" touchThrough="false" x="9">
+		<e:Image id="headIcon1" y="75" anchorOffsetX="40" anchorOffsetY="40" scaleX="1" scaleY="1" source="cc_invite_day_mask" width="80" height="80" x="40"/>
+		<e:Image id="headMask1" y="75" anchorOffsetX="40" anchorOffsetY="40" scaleX="1" scaleY="1" source="cc_invite_day_mask" width="80" height="80" x="40"/>
+		<e:Label id="nameLabel1" text="好友昵称" y="8" fontFamily="Microsoft YaHei" size="18" horizontalCenter="0"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="grp2" x="530" y="318" touchEnabled="false" width="100" height="166">
+		<e:Image id="inviteImg2" y="148" anchorOffsetX="50" anchorOffsetY="18" scaleX="1" scaleY="1" source="cc_invite_day_get1" horizontalCenter="0"/>
+		<e:Image id="redBgImg2" y="61" anchorOffsetX="44.5" anchorOffsetY="60.5" scaleX="1" scaleY="1" source="cc_invite_day_red1" x="49"/>
+		<e:Label id="statusLabel2" text="未完成" y="139" fontFamily="Microsoft YaHei" size="18" horizontalCenter="-1" textColor="0x7f3000" bold="true"/>
+		<e:Group id="friendGrp2" y="0" anchorOffsetX="0" anchorOffsetY="0" touchEnabled="false" touchChildren="false" touchThrough="false" x="9">
+		<e:Image id="headIcon2" y="75" anchorOffsetX="40" anchorOffsetY="40" scaleX="1" scaleY="1" source="cc_invite_day_mask" width="80" height="80" x="40"/>
+		<e:Image id="headMask2" y="75" anchorOffsetX="40" anchorOffsetY="40" scaleX="1" scaleY="1" source="cc_invite_day_mask"  width="80" height="80" x="40"/>
+		<e:Label id="nameLabel2" text="好友昵称" y="8" fontFamily="Microsoft YaHei" size="18" horizontalCenter="0"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="grp3" x="645" y="318" touchEnabled="false" width="100" height="166">
+		<e:Image id="inviteImg3" y="148" anchorOffsetX="50" anchorOffsetY="18" scaleX="1" scaleY="1" source="cc_invite_day_get1" horizontalCenter="0"/>
+		<e:Image id="redBgImg3" y="61" anchorOffsetX="44.5" anchorOffsetY="60.5" scaleX="1" scaleY="1" source="cc_invite_day_red1" x="49"/>
+		<e:Label id="statusLabel3" text="未完成" y="139" fontFamily="Microsoft YaHei" size="18" horizontalCenter="-1" textColor="0x7f3000" bold="true"/>
+		<e:Group id="friendGrp3" y="0" anchorOffsetX="0" anchorOffsetY="0" touchEnabled="false" touchChildren="false" touchThrough="false" x="9">
+		<e:Image id="headIcon3" y="75" anchorOffsetX="40" anchorOffsetY="40" scaleX="1" scaleY="1" source="cc_invite_day_mask" width="80" height="80" x="40"/>
+		<e:Image id="headMask3" y="75" anchorOffsetX="40" anchorOffsetY="40" scaleX="1" scaleY="1" source="cc_invite_day_mask"  width="80" height="80" x="40"/>
+		<e:Label id="nameLabel3" text="好友昵称" y="8" fontFamily="Microsoft YaHei" size="18" horizontalCenter="0"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="grp4" x="760" y="318" touchEnabled="false" width="100" height="166">
+		<e:Image id="inviteImg4" y="148" anchorOffsetX="50" anchorOffsetY="18" scaleX="1" scaleY="1" source="cc_invite_day_get1" horizontalCenter="0"/>
+		<e:Image id="redBgImg4" y="61" anchorOffsetX="44.5" anchorOffsetY="60.5" scaleX="1" scaleY="1" source="cc_invite_day_red1" x="49"/>
+		<e:Label id="statusLabel4" text="未完成" y="139" fontFamily="Microsoft YaHei" size="18" horizontalCenter="-1" textColor="0x7f3000" bold="true"/>
+		<e:Group id="friendGrp4" y="0" anchorOffsetX="0" anchorOffsetY="0" touchEnabled="false" touchChildren="false" touchThrough="false" x="9">
+		<e:Image id="headIcon4" y="75" anchorOffsetX="40" anchorOffsetY="40" scaleX="1" scaleY="1" source="cc_invite_day_mask" width="80" height="80" x="40"/>
+		<e:Image id="headMask4" y="75" anchorOffsetX="40" anchorOffsetY="40" scaleX="1" scaleY="1" source="cc_invite_day_mask"  width="80" height="80" x="40"/>
+		<e:Label id="nameLabel4" text="好友昵称" y="8" fontFamily="Microsoft YaHei" size="18" horizontalCenter="0"/>
+		</e:Group>
+	</e:Group>
+	<e:Label id="descLabel" text="成功邀请好友并赢5局游戏后，即可领取随机奖杯，每日最多领取5次！" y="510" fontFamily="Microsoft YaHei" size="18" horizontalCenter="0" textColor="0x7f3000"/>
+	<e:Group x="869" y="306">
+		<e:Image id="extraImg" x="60" y="89.33" source="cc_invite_day_extra" scaleX="1" scaleY="1" anchorOffsetX="63" anchorOffsetY="87"/>
+		<e:Image id="hasGetImg" x="0" y="-4" scaleX="1" scaleY="1" source="cc_sign_hasGet"/>
+	</e:Group>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</e:Skin>

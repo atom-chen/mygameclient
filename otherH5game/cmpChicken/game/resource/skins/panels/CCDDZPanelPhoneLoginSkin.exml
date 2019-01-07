@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.CCDDZPanelPhoneLoginSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="1280" height="640">
+	<e:Image source="cc_common_alert_bg" width="770" height="460" scale9Grid="105,101,639,17" horizontalCenter="0" verticalCenter="0" locked="true"/>
+	<e:Button id="loginImg" name="confirm" verticalCenter="150" horizontalCenter="0">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="cc_login_btn_dl_n"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:TextInput id="phoneLabel" y="202" width="250" maxChars="11" displayAsPassword="false" restrict="0-9" height="60" skinName="ui.CCDDZTextInputSkin" horizontalCenter="20" prompt="请输入11位手机号码"/>
+	<e:TextInput id="codeLabel" y="300" width="250" displayAsPassword="false" height="60" skinName="ui.CCDDZTextInputSkin" horizontalCenter="20" prompt="请输入4位数字验证码"/>
+	<e:Label id="accountPreLabel" text="手机号:" x="447" y="218" fontFamily="Microsoft YaHei" bold="true" size="26" textColor="0x8f4c26"/>
+	<e:Label id="pwdPreLabel" text="验证码:" x="447" y="318" bold="true" fontFamily="Microsoft YaHei" size="26" textColor="0x8f4c26"/>
+	<e:Image id="getCodeImg" x="874" y="327" source="cc_phonebind_getcode" anchorOffsetX="76" anchorOffsetY="25"/>
+	<e:Label id="countLabel" text="55" x="808" y="315" bold="true" fontFamily="Microsoft YaHei" size="26" textColor="0x8F4C26"/>
+	<e:Image id="closeImg" x="1006" y="109" source="cc_common_close_n" anchorOffsetX="30" anchorOffsetY="30.5"/>
+</e:Skin>

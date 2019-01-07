@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.CCDDZIRButtonSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="up,down">
+	<e:Image id="imgBg" source.up="{this.bgUp}" source.down="{this.bgDown}"/>
+	<e:Image id="imgIcon" source.up="{this.iconUp}" source.down="{this.iconDown}" horizontalCenter="0" verticalCenter="0"/>
+</e:Skin>

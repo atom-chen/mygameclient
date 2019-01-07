@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ui.CCDDZDayTaskItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  states="two,one" >
+	<e:Group x="0" y="0">
+		<e:Group id="info_group" x="0" y="0" scaleX="1" scaleY="1">
+			<e:Image id="mBg_img" x="0" y="0" source="cc_task_item_bg" scaleX="1" scaleY="1" width="530"/>
+			<e:Label id="mTaskDesc_label" text="任意场打出2个飞机" y="17" fontFamily="Microsoft YaHei" size="20" anchorOffsetX="0" anchorOffsetY="9" textAlign="center" scaleX="1" scaleY="1" textColor="0x7f3000" text.two="任意场打出2个飞机" x.two="179" left="180" left.one="145"/>
+			<e:Label id="mTaskDesc1_label" text="(自由组局除外)" y="16" fontFamily="Microsoft YaHei" size="20" anchorOffsetX="0" anchorOffsetY="8" textAlign="left" scaleX="1" scaleY="1" textColor="0x7f3000" x="330" x.one="314"/>
+			<e:Image id="mReward0_img" x="10" y="11" scaleX="1" scaleY="1" source="cc_task_red1" width="70" height="70" visible.one="false"/>
+			<e:Image id="mReward0High_img" x="11" y="10" scaleX="1" scaleY="1" source="cc_task_red3" visible.one="false"/>
+			<e:Label id="mReward0Num_label" text="X10" fontFamily="Microsoft YaHei" size="20" textAlign="center" verticalCenter="20" horizontalCenter="-216.5" bold="true" visible.one="false"/>
+			<e:Image id="mReward1_img" x="103" y="11" scaleX="1" scaleY="1" source="cc_task_re2" width="70" height="70" source.one="cc_task_gold" x.one="51"/>
+			<e:Label id="mReward1Num_label" text="2" fontFamily="Microsoft YaHei" size="20" bold="true" textAlign="center" horizontalCenter="-129.5" verticalCenter="20" horizontalCenter.one="-177" verticalCenter.one="20" text.one=""/>
+			<e:Image id="mProBg_img" x="179" y="49" source="cc_task_progress_bg" width="190" scale9Grid="9,7,7,6" scaleX="1" scaleY="1" height="23"/>
+			<e:Image id="mPro_img" height="23" x="179" y="48" source="cc_task_progress_pro" scale9Grid="12,7,5,6" scaleX="1" scaleY="1" width="28"/>
+			<e:Label id="mPro_label" text="0/0" x="277" y="56" fontFamily="Microsoft YaHei" size="20" verticalAlign="middle" anchorOffsetX="22" anchorOffsetY="8" scaleX="1" scaleY="1" y.two="56" y.one="56"/>
+			<ns1:CCDDZButtonDoTaskSkin id="mDoTask_btn" x="459" skinName="components.CCDDZButtonDoTaskSkin" anchorOffsetX="65" anchorOffsetY="24" verticalCenter="9" y="22" scaleX="1" scaleY="1"/>
+			<e:Label text="+" x="74" y="19" fontFamily="Microsoft YaHei" size="46" visible.one="false"/>
+		</e:Group>
+		<e:Image id="mTaskTit_img" scaleX="1" scaleY="1" y="46" x="300"/>
+	</e:Group>
+
+</e:Skin>

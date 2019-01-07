@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="panels.CCDDZPanelActAppLuckySkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="1280" height="640">
+	<w:Config id="15f37cb46e1"/>
+	<e:Group id="infoGroup" width="1280" height="640" touchEnabled="false">
+		<e:Button id="luckyBtn" label="前往抽奖" y="494" anchorOffsetX="80" anchorOffsetY="28.5" x="700">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="cc_common_btn_orange3"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" fontFamily="Microsoft YaHei"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label id="titLabel" text="每日登录游戏APP端，即可获得一次免费钻石抽取机会。" x="470" y="201" size="20" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" textColor="0x414a61"/>
+		<e:Label id="timeLabel" text="活动时间：2018.7.24-2018.7.31" x="554.5" y="320" size="20" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" textColor="0x414a61"/>
+	</e:Group>
+</e:Skin>

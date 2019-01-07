@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PDKPanelExchange2Skin" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing"        states="gold,diamond,jd,card,history,red" >
+	<e:Group id="infoGroup" width="100%" height="100%" left="0" bottom="0">
+		<e:Image id="bgImg" top="0" height="100%" width="100%" x="0" source="pdk_shop_bg" scale9Grid="2,10,1,15"/>
+		<e:Image id="tooBgImg" width="100%" scale9Grid="60,0,20,80" horizontalCenter="0" source="pdk_ui_bg" top="0" left="10" right="10"/>
+		<e:Image id="scaleImg" width="790" height="475" source="pdk_common_bg" scale9Grid="10,8,66,49" anchorOffsetX="0" anchorOffsetY="0" left="218" top="85" x.red="218" y.red="85"/>
+		<e:Image id="arr_img" source="pdk_common_arrow" anchorOffsetX="0" anchorOffsetY="0" bottom.gold="506" x="201" bottom.diamond="440" bottom.red="371" y.jd="320" y.history="390" y.card="250" y="21.23" visible="false"/>
+		<e:Button id="btn_history" y="8.12" left="182">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="pdk_shop_host"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btn_recorder" label="" y="2.4" right="100">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="pdk_ico_jipaiqi"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group id="close_group" height="64" anchorOffsetY="0" anchorOffsetX="0" width="150" left="0" top="0">
+			<e:Button id="btn_close" x="82" touchEnabled="false" top="6">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="pdk_ico_out"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Group id="tit_group" horizontalCenter="0" height="70" y="0">
+			<e:Image id="titBgImg" y="0.32" horizontalCenter="0" x="30" scaleX="1" scaleY="1" height="70" source="pdk_logo_bg" scale9Grid="60,0,20,75" width="300"/>
+			<e:Image id="titFontImg" y="15.96" horizontalCenter="1" x="138" scaleX="1" scaleY="1" source="pdk_shop"/>
+		</e:Group>
+		<e:Group id="leftBtnsGroup" top="89" left="0" anchorOffsetY="0" height="427.67">
+			<e:Image id="flagGoldImg" x="38" y="0" scaleX="1" scaleY="1" source.gold="pdk_shopbtn_h" source="pdk_shopbtn_n"/>
+			<e:Image id="flagDiamondImg" x="38" y="70" scaleX="1" scaleY="1" source.diamond="pdk_shopbtn_h" source="pdk_shopbtn_n"/>
+			<e:Image id="flagRedImg" x="38" y="140" scaleX="1" scaleY="1" source.red="pdk_shopbtn_h" source="pdk_shopbtn_n"/>
+			<e:Image id="flagExchangeImg" x="38" y="209.32" scaleX="1" scaleY="1" source.card="pdk_shopbtn_h" source="pdk_shopbtn_n"/>
+			<e:Image id="flagJdImg" x="38" y="280.67" scaleX="1" scaleY="1" source.jd="pdk_shopbtn_h" source="pdk_shopbtn_n"/>
+			<e:Image id="flagExImg" x="38" y="349.34" scaleX="1" scaleY="1" source.history="pdk_shopbtn_h" source="pdk_shopbtn_n"/>
+			<e:Label id="goldLabel" text="金豆" x="70" y="22" size="24" fontFamily="Microsoft YaHei" bold="true" touchEnabled="false" scaleX="1" scaleY="1" width="96" textAlign="center" textColor="0xa25502" textColor.gold="0xfbe5bf" stroke.gold="2" strokeColor.gold="0x9a2800"/>
+			<e:Label id="diamondLabel" text="钻石" x="70" y="92" size="24" fontFamily="Microsoft YaHei" bold="true" touchEnabled="false" scaleX="1" scaleY="1" width="96" textAlign="center" textColor="0xa25502" textColor.diamond="0xfbe5bf" stroke.diamond="2" strokeColor.diamond="0x9a2800"/>
+			<e:Label id="redLabel" text="红包" x="70" y="162" size="24" fontFamily="Microsoft YaHei" bold="true" touchEnabled="false" scaleX="1" scaleY="1" x.card="70" width="96" textAlign="center" textColor="0xa25502" textColor.red="0xfbe5bf" stroke.red="2" strokeColor.red="0x9a2800"/>
+			<e:Label id="exchangeLabel" text="话费" x="70" y="232.66" size="24" fontFamily="Microsoft YaHei" bold="true" touchEnabled="false" scaleX="1" scaleY="1" text.card="话费" width="96" textAlign="center" textColor="0xa25502" textColor.card="0xfbe5bf" stroke.card="2" strokeColor.card="0x9a2800"/>
+			<e:Label id="jdLabel" text="京东" x="70" y="302.66" size="24" fontFamily="Microsoft YaHei" bold="true" touchEnabled="false" scaleX="1" scaleY="1" width="96" textAlign="center" textColor="0xa25502" textColor.jd="0xfbe5bf" stroke.jd="2" strokeColor.jd="0x9a2800"/>
+			<e:Label id="flagExLabel" text="领取记录" x="70" y="370" size="24" fontFamily="Microsoft YaHei" bold="true" touchEnabled="false" scaleX="1" scaleY="1" horizontalCenter.card="20" width="96" textAlign="center" textColor="0xa25502" textColor.history="0xfbe5bf" stroke.history="2" strokeColor.history="0x9a2800"/>
+		</e:Group>
+		<e:Scroller id="itemInfoScroller" height="462" anchorOffsetX="0" anchorOffsetY="0" left="250" top="86" visible.history="false">
+			<e:Group>
+			<e:List id="lv_goods" anchorOffsetY="0" height="461" anchorOffsetX="0" width="712" y="0" x="10">
+				<e:itemRendererSkinName>
+				<e:Skin xmlns:PDKalien="PDKalien.*">
+					<e:Group y="6" width="214" height="195" x="0">
+					<e:Image source="recharge_bg_34" y="0"/>
+					<e:Label id="labGold" text="0" y="100.98" size="24" textAlign="center" width="200" bold="true" fontFamily="Microsoft YaHei" textColor="0xd62d0e" horizontalCenter="0"/>
+					<e:Image id="imgIcon" source="pdk_icon_gold" horizontalCenter="0.5" verticalCenter="-42.5" width="80" height="80"/>
+					<e:Group id="grpAddition" x="98" y="2">
+						<e:Image source="pdk_shop_title" x="-6"/>
+						<e:Label id="labAddition" text="0" size="20" fontFamily="Microsoft YaHei" bold="true" textColor="0xffffff" horizontalCenter="0.5" textAlign="right" y="4"/>
+					</e:Group>
+					<e:Image id="mPre_img" x="-2.32" y="-4.66" source="exchange_pre"/>
+					</e:Group>
+					<e:Button id="btnConfirm" y="147" label="300元" horizontalCenter="0.5">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="pdk_buybtn_n" source.down="pdk_buybtn_h"/>
+						<e:BitmapLabel id="money_label" text="0" letterSpacing="-5" font="pdk_font_num_9" verticalCenter="2" horizontalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+					</e:Button>
+					<e:Image id="exchange_img" y="149" touchEnabled="false" source="pdk_ico_prize" x="30" width="40" height="40"/>
+				</e:Skin>
+				</e:itemRendererSkinName>
+				<e:layout>
+				<e:TileLayout rowHeight="220" requestedColumnCount="3" verticalGap="0" horizontalGap="30" paddingTop="20"/>
+				</e:layout>
+				<e:ArrayCollection>
+				<e:Array>
+					<e:Object label="数据1"/>
+					<e:Object label="数据2"/>
+					<e:Object label="数据3"/>
+					<e:Object label="null"/>
+					<e:Object label="null"/>
+					<e:Object label="null"/>
+				</e:Array>
+				</e:ArrayCollection>
+			</e:List>
+			</e:Group>
+		</e:Scroller>
+		<e:Scroller id="hisoryInfoScroller" height="462" anchorOffsetX="0" anchorOffsetY="0" left="250" top="86" includeIn="history" width="722">
+			<e:Group width="722">
+				<e:List id="lv_history" y="0" x="-1" width="722">
+					<e:itemRendererSkinName>
+						<e:Skin xmlns:PDKalien="PDKalien.*" xmlns:ns1="*">
+							<e:Group horizontalCenter="0" y="6">
+								<e:Image y="0" source="exchange_bg" width="710" x="6" scale9Grid="8,11,51,69"/>
+								<e:Image id="typeImg" y="7" scale9Grid="8,11,51,69" x="11" source="exchange_4"/>
+								<e:Image id="statusBgImg" y="16.65" x="521.33" source="pdk_common_btn_orange3"/>
+								<e:Label id="exDescLabel" text="20元充值卡" y="11" size="28" textAlign="left" x="106" width="280" textColor="0xae1e2b" fontFamily="Microsoft YaHei" bold="true"/>
+
+								<e:Label id="exTimeLabel" text="领取日期:   2017-12-11" y="52" size="24" textAlign="left" x="107" width="330" fontFamily="Microsoft YaHei" anchorOffsetX="0" textColor="0x976821" bold="true"/>
+								<e:Label id="exStatusLabel" text="查看卡密" y="32.65" size="24" textAlign="center" x="541.33" width="120" textColor="0xffffff" fontFamily="Microsoft YaHei" anchorOffsetX="0" touchEnabled="false"/>
+							</e:Group>
+						</e:Skin>
+					</e:itemRendererSkinName>
+					<e:layout>
+						<e:VerticalLayout/>
+					</e:layout>
+					<e:ArrayCollection>
+						<e:Array>
+							<e:Object label="数据1"/>
+							<e:Object label="数据2"/>
+							<e:Object label="数据3"/>
+							<e:Object label="null"/>
+							<e:Object label="数据1"/>
+						</e:Array>
+					</e:ArrayCollection>
+				</e:List>
+				<e:layout>
+					<e:VerticalLayout/>
+				</e:layout>
+			</e:Group>
+		</e:Scroller>
+		<e:Image id="bottomBgImg" width="100%" scaleX="1" bottom="0" scale9Grid="60,0,20,80" horizontalCenter="0" source="pdk_ui_bg" scaleY="-1" left="10" right="10"/>
+		<e:Group id="userInfoGroup" left="0" bottom="0">
+			<ns1:PDKAvatar id="avatar" scaleX="0.4" scaleY="0.4" skinName="components.PDKAvatarSkin" name="avatar" touchChildren="false" y="-0.64" x="33.94"/>
+			<ns1:PDKGold id="gold" x="109.63" y="34.08" skinName="components.PDKMyGoldSkin" scaleX="0.8" scaleY="0.8" currentState="withButton"/>
+			<ns1:PDKGold id="diamond" x="244.63" y="34.08" skinName="components.PDKMyGoldSkin" scaleX="0.8" scaleY="0.8" currentState="diamondBuy"/>
+			<e:Group id="grpRedcoin" width="157" height="30" scaleX="0.8" scaleY="0.8" x="384.63" bottom="10">
+			<e:Image id="redBgImg" y="0" touchEnabled="false" x="0" width="157" height="30" source="pdk__score_bg" scale9Grid="15,0,15,30"/>
+			<e:Image y="-8.15" touchEnabled="false" x="-6.5" source="pdk_ico_prize" width="40" height="40"/>
+			<e:Image id="redExchangeImg" y="19.02" touchEnabled="true" x="141.67" anchorOffsetX="23" anchorOffsetY="23.5" source="pdk_ico_prize01"/>
+			<e:Label id="lbRedCoin" x="28" y="2.5" size="25" text="0" textAlign="center" width="90" touchEnabled="false" height="25"/>
+			</e:Group>
+			<e:Label id="labNickName" text="" x="118.32" size="20" y="4.67" height="20" textColor="0xDCDBC7"/>
+		</e:Group>
+		<e:Image y="600.28" source="recharge_limit" right="50"/>
+		<e:Label text="绿色竞技，拒绝赌博。" y="575.81" size="18" textColor="0xffffff" stroke="0" right="77" strokeColor="0x502902"/>
+		<e:Label text="红包每日可兑换3次" includeIn="red" y="534.4" size="18" x="536" textColor="0xe28709"/>
+	</e:Group>
+</e:Skin>

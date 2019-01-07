@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.CCDDZPanelInviteJustListSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image id="bgImg" horizontalCenter="0" verticalCenter="0" source="cc_common_alert1_bg" scale9Grid="23,56,40,14" width="770" height="460"/>
+	<e:Group id="tit_group" horizontalCenter="0" y="91">
+		<e:Image id="titBgImg1" y="3" source="cc_common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+		<e:Image id="titFontImg1" y="0" horizontalCenter="0" x="138" scaleX="1" scaleY="1" source="cc_invite_rankTit"/>
+	</e:Group>
+	<e:Button id="btnClose" label="" x="825" y="72.5">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="cc_common_close_n" source.down="cc_common_close_h"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image id="contentBgImg" y="160" source="cc_common_bg" x="147" scale9Grid="10,8,66,49" height="295" anchorOffsetX="0" width="679" anchorOffsetY="0"/>
+	<e:Image id="contentTitBgImg" y="171" x="147" source="cc_invite_12" scale9Grid="9,6,55,41" width="676" height="46" anchorOffsetY="0" anchorOffsetX="0"/>
+	<e:Group id="noInviteGroup" x="160" y="256" anchorOffsetX="0" width="948.57" anchorOffsetY="0" height="260" scaleX="0.7" scaleY="0.7">
+		<e:Image id="split1Img0" y="40.29" x="240" anchorOffsetX="0" anchorOffsetY="0" source="cc_invite_bg3"/>
+		<e:Image id="split2Img0" y="43.5" x="537.86" source="cc_invite_bg2" anchorOffsetY="0"/>
+	</e:Group>
+	<e:Scroller id="scroller" height="230" y="220" anchorOffsetY="0" x="152" scrollPolicyV="auto" anchorOffsetX="0" width="670">
+		<e:Group anchorOffsetY="0">
+			<e:List id="list" y="0" scaleX="1" scaleY="1" x="0" itemRendererSkinName="components.CCDDZInviteListItemSkin" anchorOffsetY="0" anchorOffsetX="0" width="666">
+				<e:ArrayCollection>
+					<e:Array>
+						<e:Object fsdf="null"/>
+						<e:Object fsdf="null"/>
+						<e:Object fsdf="null"/>
+					</e:Array>
+				</e:ArrayCollection>
+			</e:List>
+		</e:Group>
+	</e:Scroller>
+	<e:Label id="lbCount" text="您已累计获得0次抽红包机会，被邀请好友赢得5局游戏即可获得1次机会" y="511" size="20" horizontalCenter="2" textColor="0x7f4e00" visible="false"/>
+	<e:Image id="nickImg" source="cc_invite_7" x="234" touchEnabled="false" y="176"/>
+	<e:Image id="timeImg" y="176" source="cc_invite_8" touchEnabled="false" x="448"/>
+	<e:Image id="ok5Img" y="176" source="cc_invite_9" touchEnabled="false" x="642"/>
+	<e:Image id="split1Img" y="175" source="cc_invite_split" x="358" height="40" touchEnabled="false"/>
+	<e:Image id="split2Img" y="175" source="cc_invite_split" height="40" x="592" touchEnabled="false"/>
+</e:Skin>

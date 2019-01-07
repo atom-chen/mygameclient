@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="panels.PDKPanelActSkin" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  >
+	<e:Group id="infoGroup" width="1280" height="640" touchEnabled="false">
+		<e:Image id="bg_img1" x="430" y="126" width="589" height="410" scale9Grid="9,7,12,15" source="pdk_common_bg" scaleX="1" scaleY="1" anchorOffsetX="0" touchEnabled="false"/>
+		<e:Image id="arrImg" x="414" y="180" source="pdk_common_arrow" scaleX="1" scaleY="1" anchorOffsetY="11"/>
+		<e:Scroller width="164" height="360" x="260" y="150" anchorOffsetX="0" scrollPolicyV="auto" scrollPolicyH="off">
+			<e:Group>
+				<e:List id="leftLabelList" x="0" y="0" anchorOffsetY="0" height="360" itemRendererSkinName="components.PDKActListItem">
+					<e:layout>
+						<e:VerticalLayout horizontalAlign="center" verticalAlign="top"/>
+					</e:layout>
+					<e:ArrayCollection>
+					<e:Array>
+						<e:Object fsdf="null"/>
+						<e:Object fsdf="null"/>
+						<e:Object fsdf="null"/>
+					</e:Array>
+				</e:ArrayCollection>
+				</e:List>
+			</e:Group>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

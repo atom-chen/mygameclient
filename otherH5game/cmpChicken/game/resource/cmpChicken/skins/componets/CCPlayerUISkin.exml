@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.CCPlayerUISkin" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" states="my,leftChoose,rightChoose,leftComparison,rightComparison,myComparison" >
+	<e:Group y="0" x="0" includeIn="leftChoose,rightChoose,leftComparison,rightComparison">
+		<e:Image y="0" horizontalCenter="0" scale9Grid="45,10,1,2" width="140" source="cc_play_name_bg_1"/>
+		<e:Label id="labNickName" text="玩家名字" size="20" fontFamily="Microsoft YaHei" horizontalCenter="0" width="140" textAlign="center" verticalCenter="-1"/>
+	</e:Group>
+
+	<ns1:CCGold id="playerGold" skinName="components.CCGoldSkin" currentState="gold" x.my="7" y.my="144" x.leftChoose="7" y.leftChoose="144" x.rightChoose="7" y.rightChoose="144" y="144" scaleX="0.8" scaleY="0.8" x="7" x.leftComparison="7" y.leftComparison="144" x.rightComparison="7" y.rightComparison="144" x.myComparison="7" y.myComparison="144" includeIn="leftChoose,rightChoose,leftComparison,rightComparison"/>
+	<ns1:CCCardView id="playerCardView" y="19" x.my="201" skinName="components.CCCardViewSkin" x.leftChoose="150" x.rightChoose="-84" x.leftComparison="185" x.rightComparison="-180" currentState.myComparison="comparisonRight" y.myComparison="-120" horizontalCenter.myComparison="0" includeIn="leftChoose,rightChoose,leftComparison,rightComparison,myComparison"/>
+	<ns1:CCPlayerHead id="playerHead" skinName="components.CCPlayerHeadSkin" y.rightComparison="24" y.leftComparison="24" y.rightChoose="24" y.leftChoose="24" scaleX="0.7" scaleY="0.7" x.rightComparison="11" x.leftComparison="11" x.rightChoose="11" x.leftChoose="11" touchEnabled.my="true" left.my="0" bottom.my="0" left.myComparison="0" bottom.myComparison="0"/>
+</e:Skin>

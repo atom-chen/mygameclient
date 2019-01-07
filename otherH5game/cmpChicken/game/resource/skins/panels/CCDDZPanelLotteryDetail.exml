@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.CCDDZPanelLotteryDetail" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  states="detail,luck" >
+	<e:Group verticalCenter="0" x="207">
+		<e:Image y="8" x="0" width="856" height="520" source="cc_common_alert_bg" scale9Grid="28,112,768,6"/>
+		<e:Image id="scaleImg" width="700" height="400" source="cc_common_bg" scale9Grid="10,8,66,49" anchorOffsetX="0" anchorOffsetY="0" left="87" top="74" left.detail="87" top.detail="74" height.detail="251"/>
+
+		<e:Button id="btn_close" x="807" y="-5">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="cc_common_close_n"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image source="cc_exchange_btn_2" y="14" x="249"/>
+		<e:Label id="detailTitLabel" text="奖品详情" x="253" y="0" textColor="0xdfa03b" size="24" fontFamily="Microsoft YaHei" bold="true" width="164" textAlign="center" visible.detail="false" anchorOffsetY="0" height="74" verticalAlign="middle" anchorOffsetX="0"/>
+		<e:Label id="luckTitLabel" text="往期幸运儿" x="431" y="0" textColor="0xDFA03B" size="24" fontFamily="Microsoft YaHei" bold="true" width="164" textAlign="center" visible.luck="false" height="74" verticalAlign="middle"/>
+		<e:Image id="selImg" source="cc_exchange_btn_1" x="425" y="10" x.detail="246"/>
+		<e:Label text="奖品详情" x="275" y="25" size="24" fontFamily="Microsoft YaHei" bold="true" width="120" textAlign="center" id="tit1Label0" textColor="0x672004" visible.luck="false" touchEnabled="false"/>
+		<e:Label text="往期幸运儿" x="453" y="25" size="24" fontFamily="Microsoft YaHei" bold="true" width="120" textAlign="center" id="tit2Label0" textColor="0x672004" visible.detail="false" touchEnabled="false"/>
+
+
+		<e:Scroller id="getScroller" width="698" height="400" x="89" y="76" visible.detail="false">
+			<e:Group>
+				<e:List id="luckList" width="698" x="0" y="0" y.luck="1">
+					<e:itemRendererSkinName>
+						<e:Skin xmlns:CCalien="CCalien.*">
+							<e:Group id="recItemGroup" y="0" anchorOffsetY="0" height="60" x="0">
+								<e:Image id="bgImg" y="0" source="cc_exchange_image_1" anchorOffsetY="0" height="60"/>
+								<e:Label id="timeLabel" text="2018-01-01 00:00结束" y="8" size="18" textAlign="left" fontFamily="Microsoft YaHei" height="20" left="450" textColor="0x333333"/>
+								<e:Label id="orderLabel" text="第000期" size="24" textAlign="left" fontFamily="Microsoft YaHei" anchorOffsetX="0" height="20" left="80" textColor="0x333333" verticalCenter="0"/>
+								<e:Label id="luckCodeLabel" text="幸运码:000000" y="37" size="18" textAlign="left" fontFamily="Microsoft YaHei" height="20" textColor="0xba2e2e" left="450"/>
+								<e:Label id="numLabel" text="参加000次" y="37" size="18" textAlign="left" fontFamily="Microsoft YaHei" height="20" left="260" textColor="0x333333"/>
+								<e:Label id="userLabel" text="用户213122" y="8" size="18" textAlign="left" fontFamily="Microsoft YaHei" height="20" textColor="0xba2e2e" left="260" width="150"/>
+							</e:Group>	
+						</e:Skin>
+					</e:itemRendererSkinName>
+					<e:layout>
+						<e:VerticalLayout verticalAlign="middle" gap="10" paddingTop="10"/>
+					</e:layout>
+					<e:ArrayCollection>
+						<e:Array>
+							<e:Object label="数据1"/>
+						</e:Array>
+					</e:ArrayCollection>
+				</e:List>
+			</e:Group>
+		</e:Scroller>
+		<e:Group id="detailGroup" width="698" height="400" y="76" x="90" visible.luck="false">
+			<e:Group id="doGroup" width="695" height="120" x="0" y="270" anchorOffsetY="0" anchorOffsetX="0">
+
+				<e:Label id="descPreLabel" text="我要参加 " y="12" size="20" fontFamily="Microsoft YaHei" bold="true" textAlign="left" scaleX="1" scaleY="1" textColor="0xBA2E2E" x="192" touchEnabled="false"/>
+				<e:Label id="descPreLabel0" text="次" y="12" size="20" fontFamily="Microsoft YaHei" bold="true" textAlign="left" scaleX="1" scaleY="1" textColor="0xBA2E2E" x="432.5" touchEnabled="false"/>
+				<e:TextInput id="numInput" width="116" maxChars="18" restrict="0-9 " height="32" skinName="ui.CCDDZTextInputSkin" scaleX="1" scaleY="1" anchorOffsetY="0" anchorOffsetX="0" textColor="0xffd400" text="1" displayAsPassword="false" enabled="true" x="294" y="7" inputType="tel"/>
+				<e:Group id="addGroup" height="72" includeIn="detail" anchorOffsetY="36" anchorOffsetX="52" y="20" x="412" width="104">
+					<e:Image id="addImg" scaleX="1" scaleY="1" source="cc_common_btn_plus_n" height="41" width="41" anchorOffsetX="20.5" anchorOffsetY="20.5" x.detail="24.5" y.detail="19.5" scaleX.detail="1" scaleY.detail="1" horizontalCenter="0" verticalCenter="4" touchEnabled="false"/>
+				</e:Group>
+				<e:Image id="subImg" scaleX="1" scaleY="1" source="cc_common_btn_sub_n" x="293.5" y="24" anchorOffsetX="20" anchorOffsetY="20.5"/>
+
+				<e:Image id="haveBgImg" y="5" anchorOffsetY="0" height="30" source="cc_lotteryBtn" anchorOffsetX="0" width="200" scale9Grid="10,10,11,9" right="15" x="356" scaleX="1" scaleY="1"/>
+
+				<e:Label id="haveLabel" text="我有00000个夺宝码>>" y="10.5" size="18" textAlign="center" fontFamily="Microsoft YaHei" height="20" textColor="0xDFA03B" scaleX="1" scaleY="1" right="23" touchEnabled="false"/>
+				<e:Group id="buyGroup" width="200" height="70" anchorOffsetY="0" horizontalCenter="0" verticalCenter="20">
+					<e:Image id="doImg" y="36" anchorOffsetY="32" anchorOffsetX="98" scale9Grid="10,10,11,9" scaleX="1" scaleY="1" source="cc_lotteryDetail" x="100"/>
+					<e:BitmapLabel id="moneyLabel" text="0.000" letterSpacing="-5" font="cc_font_num_9" height="28" anchorOffsetX="40" width="80" anchorOffsetY="14" touchEnabled="false" textAlign="center" scaleX="0.8" scaleY="0.8" x="100" y="35"/>
+				</e:Group>
+			</e:Group>
+			<e:Group id="thisLuckGroup" width="698" height="80" includeIn="detail" y="300" anchorOffsetX="0">
+				<e:Label id="orderLabel0" text="本期得主" size="20" fontFamily="Microsoft YaHei" anchorOffsetX="0" height="20" scaleX="1" scaleY="1" textColor="0xBA2E2E" includeIn="detail" top="0" horizontalCenter="0"/>
+				<e:Image id="bgImg" width="700" height="60" source="cc_common_bg" scale9Grid="10,8,66,49" anchorOffsetX="0" anchorOffsetY="0" includeIn="detail" x="0" scaleX="1" scaleY="1" bottom="0"/>
+				<e:Label id="luckUserLabel" text="用户xxx" y="40" size="20" fontFamily="Microsoft YaHei" anchorOffsetX="0" height="20" scaleX="1" scaleY="1" left="22" textColor="0xba2e2e"/>
+				<e:Label id="luckInfoLabel" text="参加00次" y="40" size="20" fontFamily="Microsoft YaHei" anchorOffsetX="0" height="20" scaleX="1" scaleY="1" horizontalCenter="0" textColor="0x333333"/>
+				<e:Label id="luckCodeLabel" text="幸运码:0000" y="40" size="20" fontFamily="Microsoft YaHei" anchorOffsetX="0" height="20" scaleX="1" scaleY="1" right="30" textColor="0xba2e2e"/>
+			</e:Group>
+
+			<e:Image id="itemBgImg" y="64" x="93" source="cc_lotteryItemBg1" scaleX="1" scaleY="1"/>
+			<e:Image id="itemImg" source="cc_lotteryItemBg1" scaleX="1" scaleY="1" horizontalCenter="-190" verticalCenter="-70"/>
+
+			<e:Image id="splitImg" scaleX="1" scaleY="1" verticalCenter="-53.5" source="cc_lotterySplit" width="400" height="3" left="260"/>
+			<e:Image id="typeBgImg" scaleX="1" scaleY="1" verticalCenter="27.5" left="270" source="cc_lotteryTypeBg"/>
+			<e:Label id="titLabel" text="00钻石" y="30" size="24" fontFamily="Microsoft YaHei" bold="true" width="300" textAlign="left" scaleX="1" scaleY="1" textColor="0xba2e2e" left="270"/>
+			<e:Label id="doLabel" text="已抢0次,至少0次开奖" y="215" size="20" fontFamily="Microsoft YaHei" anchorOffsetX="0" height="20" textColor="0xBA2E2E" scaleX="1" scaleY="1" right="30"/>
+			<e:Label id="typeLabel" text="定时" y="217" size="20" fontFamily="Microsoft YaHei" anchorOffsetX="0" height="20" left="282" x="100" scaleX="1" scaleY="1" textColor="0xffd400"/>
+			<e:Label id="orderLabel" text="【第000期】" y="67" size="20" fontFamily="Microsoft YaHei" anchorOffsetX="0" height="20" left="260" x="80" scaleX="1" scaleY="1" textColor="0xba2e2e"/>
+			<e:Label id="descLabel" text="中奖奖品请在邮件中领取,以免奖品过期" y="99" size="20" fontFamily="Microsoft YaHei" anchorOffsetX="0" height="20" left="270" textColor="0xBA2E2E" x="90" scaleX="1" scaleY="1"/>
+			<e:Label id="failLabel" text="很遗憾,由于参与人数不足,已流拍\n如果您参与了本期夺宝,投入的奖杯将会以邮件返回至邮箱" y="330" size="24" fontFamily="Microsoft YaHei" anchorOffsetX="0" textColor="0xBA2E2E" scaleX="1" scaleY="1" includeIn="detail" bold="true" textAlign="center" horizontalCenter="0"/>
+			<e:Label id="timeLabel" y="170" size="20" fontFamily="Microsoft YaHei" anchorOffsetX="0" height="20" left="271" textColor="0xBA2E2E" x="100" scaleX="1" scaleY="1" text="2018-01-01 00:00开奖"/>
+			<e:Image id="statusImg" anchorOffsetY="0" anchorOffsetX="0" scale9Grid="10,10,11,9" scaleX="1" scaleY="1" source="cc_common_btn_orange_d" x="278" y="318"/>
+			<e:Label id="statusLabel" text="等待开奖" size="24" fontFamily="Microsoft YaHei" bold="true" textAlign="left" scaleX="1" scaleY="1" textColor="0xffffff" touchEnabled="false" x="300" y="344.5" />
+
+		</e:Group>
+	</e:Group>
+</e:Skin>

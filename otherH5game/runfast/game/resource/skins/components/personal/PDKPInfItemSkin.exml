@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.PDKPInfItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="personal_avatar_info_bg" horizontalCenter="0" verticalCenter="0"/>
+	<e:Label id="lbName" textColor="0xFFFFFF" text="一二三四五六" fontFamily="微软雅黑" bold="true" size="20" horizontalCenter="0.5" verticalCenter="-0.5" width="120" height="22"/>
+</e:Skin>

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.PDKPanelSettingSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image width="770" height="460" scale9Grid="27,59,29,13" x="0" source="pdk_wins_bg"/>
+	<e:Image source="pdk_wins_promptbg" horizontalCenter="0" top="-30"/>
+	<e:Label text="设置" horizontalCenter="0" top="-10" textColor="0x493501"/>
+	<e:Button right="-24" y="-10" id="btnClose" x="10">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+				<e:Image width="100%" height="100%" source="pdk_common_close_n" source.down="pdk_common_close_h"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Group id="grpButton" y="48" horizontalCenter="0">
+		<e:CheckBox id="switchVibrate" y="135" skinName="ui.PDKSwitchSkin" x="78" name="vibrate"/>
+		<e:CheckBox id="switchEffect" y="32" skinName="ui.PDKSwitchSkin" x="308" name="effect"/>
+		<e:CheckBox id="switchMusic" x="78" y="32" skinName="ui.PDKSwitchSkin" name="music"/>
+		<e:Image y="43" x="6" source="pdk_setting_word_3"/>
+		<e:Image x="235" y="43" source="pdk_setting_word_1"/>
+		<e:Image y="145" source="pdk_setting_word_2" x="5"/>
+		<e:Image x="506" source="pdk_common_bg_inner" scale9Grid="28,28,4,5"  height="327" width="214" y="9" visible="false"/>
+		<e:Group x="535" y="36">
+			<e:Button x="225" y="134" icon="btn_word_bangzhu" name="help">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="pdk_setting_btn_help_n" source.down="pdk_setting_btn_help_h"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button y="144" icon="btn_word_fankui" x="235" name="report">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="pdk_setting_btn_feedback_n" source.down="pdk_setting_btn_feedback_h"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button y="154" icon="btn_word_guanyu" x="245" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="pdk_setting_btn_about_n" source.down="pdk_setting_btn_about_h"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:layout>
+				<e:VerticalLayout gap="25"/>
+			</e:layout>
+		</e:Group>
+		<e:Button id="btnLogout" y="236" x="40" name="logout" visible="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="pdk_setting_btn_logout_n" source.down="pdk_setting_btn_logout_h" source.disabled="pdk_setting_btn_logout_d"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button y="236" x="270" name="bind_weixin" visible="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="pdk_setting_btn_logout_n" source.down="pdk_setting_btn_logout_h" source.disabled="pdk_setting_btn_logout_d"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+	<e:Label id="labWxService" y="207" size="30" horizontalCenter="0" textColor="0x000000"/>
+	<e:Group id="grpGz" y="50" x="85">
+		<e:Label text="游戏规则" y="0" textColor="0x000000" x="240"/>
+		<e:Scroller width="600" height="330" y="44" x="0">
+			<e:Group>
+				<e:Label id="labGz" x="0" y="0" width="600" size="20" textColor="0x000000" lineSpacing="10"/>
+			</e:Group>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

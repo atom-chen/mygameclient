@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.CCStatusLabelSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image x="0" y="0" width="100%" height="100%" scale9Grid="42,10,3,3" source="cc_play_name_bg_1"/>
+	<e:Label id="timeTxt" text="33" fontFamily="微软雅黑" textAlign="center" size="32" textColor="0xa5fac8" stroke="1.5" strokeColor="0x23a564" left="48" bottom="6" top="4" right="48" verticalAlign="middle"/>
+</e:Skin>

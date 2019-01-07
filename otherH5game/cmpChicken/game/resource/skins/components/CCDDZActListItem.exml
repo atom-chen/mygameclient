@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.CCDDZActListItem" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="btnAndLabelGroup" x="0" y="0" touchThrough="true">
+		<e:Image id="bgImg" x="80" y="32.5" anchorOffsetX="80" source="cc_common_btn1_n" scaleX="1" scaleY="1" touchEnabled="false" anchorOffsetY="32.5"/>
+		<e:Image id="flagImg" x="133" y="-2" scaleX="1" scaleY="1" touchEnabled="false" source="cc_common_flagRed"/>
+		<e:Image id="actImg" x="1" y="1" scaleX="1" scaleY="1" touchEnabled="false" source="cc_common_flag_act"/>
+		<e:Label id="titLabel" text="" size="24" fontFamily="Microsoft YaHei" textColor="0x874A19" bold="true" touchEnabled="false" scaleX="1" scaleY="1" textAlign="center" verticalAlign="middle" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+</e:Skin>

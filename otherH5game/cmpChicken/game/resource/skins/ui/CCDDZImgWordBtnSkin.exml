@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ui.CCDDZImgWordBtnSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+
+	<e:Group id="infoGroup" anchorOffsetX="85" anchorOffsetY="28" x="85" y="28">
+		<e:Image id="bgImg" touchEnabled="false" x="85" y="28" scaleX="1" scaleY="1" anchorOffsetX="85" anchorOffsetY="28" source="cc_common_btn_orange2_n"/>
+		<e:Image id="titImg" x="50" y="14" source="cc_common_get" touchEnabled="false" scaleX="1" scaleY="1"/>
+	</e:Group>
+</e:Skin>

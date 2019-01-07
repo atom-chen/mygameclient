@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.PDKIRNormalRoomSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgBg" source="pdk_gjc_bg" scaleX="0.8" scaleY="0.8"/>
+	<e:Image id="imgIcon" x="-45" y="-40" source="pdk_tunvlang" scaleX="0.8" scaleY="0.8"/>
+	<e:Image id="imgBottom" horizontalCenter="0.5" source="pdk_gjc_fenshubg" scaleX="0.8" scaleY="0.8" y="117"/>
+	<e:Image id="imgtabdia" y="30" horizontalCenter="-33.5" source="pdk_tab_diamond" scaleX="0.8" scaleY="0.8"/>
+	<e:Group id="grpReward" horizontalCenter="60" y="-10" scaleX="0.8" scaleY="0.8">
+		<e:Image id="imglbl" y="0" source="pdk_room_package_label" x="0"/>
+		<e:Label id="labtips" text="最高5奖杯" y="4" bold="true" size="25" textAlign="center" stroke="1" strokeColor="0x81521C" horizontalCenter="0"/>
+	</e:Group>
+	<e:Label id="labLimit" text="条件" y="130" bold="true" size="25" width="347" x="0" textAlign="center" stroke="1" strokeColor="0x81521c" scaleX="0.8" scaleY="0.8"/>
+	<e:Label id="labOnlineCount" text="0人在玩" y="80" horizontalCenter="55" textColor="0x885400" bold="true" size="24" scaleX="0.8" scaleY="0.8" fontFamily="Microsoft YaHei"/>
+	<e:Image id="imgName" y="35" horizontalCenter="51.5" source="pdk_cjc" scaleX="0.7" scaleY="0.7"/>
+</e:Skin>

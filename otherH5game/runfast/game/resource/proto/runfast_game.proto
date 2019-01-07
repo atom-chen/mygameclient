@@ -1,0 +1,637 @@
+package game;
+
+//所有的game包协议必须带有session字段
+
+message GameStartNtf {
+	message PlayerInfo {
+    	required int32 uid = 1;
+    	required int32 seatid = 2;
+    	optional string gold = 4;
+    	optional string nickname = 5;
+    	optional int32 ingame = 6;
+  	}
+  	required int32 session = 1;
+	required int32 playercnt = 2;
+  	repeated PlayerInfo playerinfo = 3;
+  	optional int32 cardsrecorderremain = 4;
+  	optional int32 rewardpool = 5; // 奖池累计金额
+}
+message SetSession {
+	required int32 session = 1;
+  	required int32 clientid = 2;
+}
+
+message Item {
+	required int32 id = 1;
+	required int32 count = 2;
+}
+//牛牛：只发给进入房间的玩家，告知桌子上所有人信息  ready表示是否准备 1/0
+message TableInfo {
+	message Info {
+		required int32 uid = 1;
+    	required int32 seatid = 2;
+    	required int32 ready = 3;
+    	optional string gold = 4;
+    	optional string nickname = 5;
+
+    	optional int32 redcoingot = 6;
+		optional int32 totalwincnt = 7;
+		optional int32 totallosecnt = 8;
+		optional int32 totaldrawcnt = 9;
+		optional int32 diamond = 10;
+
+		optional string imageid = 11;
+		optional bool offline = 12;
+		optional string sex = 13;
+		optional int32 ingame = 14;
+		optional int32 viplv = 15;
+		optional string fakeuid = 16;
+		repeated Item gifts = 17;
+		optional string whatsup = 18;
+	}
+	required int32 session = 1;
+	repeated Info players = 2;
+}
+
+message PlayerStandup {
+	required int32 session = 1;
+	optional int32 uid = 2;
+	optional int32 seatid = 3;
+}
+
+//牛牛：广播，某某进入房间，
+message EnterTable {
+	required int32 session = 1;
+	required int32 uid = 2;
+	required int32 seatid = 3;
+	optional string gold = 4;
+	optional string nickname = 5;
+
+	optional int32 redcoingot = 6;
+	optional int32 totalwincnt = 7;
+	optional int32 totallosecnt = 8;
+	optional int32 totaldrawcnt = 9;
+	optional int32 diamond = 10;
+
+	optional string imageid = 11;
+	optional bool offline = 12;
+	optional string sex = 13;
+	optional int32 viplv = 14;
+	optional string fakeuid = 15;
+	repeated Item gifts = 16;
+	optional string whatsup = 17;
+}
+//牛牛：通知客户端 只发需要准备的玩家 让他在time时间内准备，不然被踢出房间
+// 通比牛牛:flag = 1 全体倒计时，2个人准备倒计时
+message AskReady {
+	required int32 session = 1;
+	required int32 time = 2;
+	required int32 uid = 3;
+	optional int32 flag = 4;
+}
+message LeaveTable {
+	required int32 session = 1;
+	required int32 uid = 2;
+	required int32 reason = 3;
+}
+//牛牛：客户端通知服务器已准备
+message GetReadyReq {
+	required int32 session = 1;
+}
+//牛牛：广播 通知对应位置上的人已准备
+message GetReadyRep {
+	required int32 session = 1;
+	required int32 result = 2;
+	required int32 seatid = 3;
+}
+//牛牛：询问闲家在规定时间内押注多少 money长度4，表示4个可押注金额
+message AskCashOn {
+	required int32 session = 1;
+	optional int32 index = 2;
+
+	optional int32 time = 3;
+	optional int32 seatid = 4;
+	repeated int32 money = 5;
+	optional uint32 maxmoney = 6;
+
+}
+//牛牛：客户端告诉服务器押注多少金额 money表示type，money=1-4
+message AnswerCashOn {
+	required int32 session = 1;
+	optional int32 index = 2;
+	optional int32 seatid = 3;
+	optional int32 money = 4;
+	optional int32 betcount = 5;
+	optional int32 zone = 6;
+	//optional int32 uid = 7;
+}
+
+//牛牛：客户端告诉服务器怎么组牌，cardid长度为3，表示组牛的3张牌的ID
+// 通比牛牛 出牌
+//required必填，repeated数组，optional可选
+//出牌
+message UseCardNtf {
+	required int32 session = 1;
+	optional int32 index = 2;
+	required int32 seatid = 3;
+	repeated int32 cardids = 4;
+	optional int32 cursid = 5;
+	optional int32 time = 6;	//出牌倒计时
+
+	optional int32 lastseatid = 7; //
+	repeated int32 lastcards = 8;  // 
+}
+
+//牛牛：询问是否在规定时间内叫庄
+//询问叫地主，或者叫庄
+message AskMaster {
+	required int32 session = 1;
+	optional int32 index = 2;
+	required int32 seatid = 3;
+	required int32 score = 4;
+	required int32 time = 5;
+}
+
+//牛牛：客户端通知服务器是否叫庄 score=1表示叫庄
+//应答叫地主
+message AnswerMaster{
+	required int32 session = 1;
+	required int32 score = 2;
+}
+
+//牛牛：广播 告诉谁是装，score在这条协议里面并没有什么卵用
+//通知客户端叫分情况
+// 通比牛牛 status 1表示叫庄 2 seatid 谁下注叫庄
+message SetScore{
+	required int32 session = 1;
+	optional int32 index = 2;
+	required int32 score = 3;
+	required int32 seatid = 4;
+	required bool ismaster = 5;
+	optional int32 status = 6;
+	//optional int32 time = 7;
+}
+
+//牛牛：通知客户端在规定时间内亮牌
+//通知出牌
+message AskPlayCard{
+	required int32 session = 1;
+	optional int32 index = 2;
+	required int32 seatid = 3; 	//出牌玩家
+	required int32 time = 4;	//出牌倒计时
+	required int32 pseatid = 5;	//上一个出牌玩家
+	repeated int32 cardids = 6;	//打出的牌
+}
+//牛牛：发牌 cardids长度5，里面表示5张牌id
+//通比牛牛：发四张牌 cardids1234， 补发第五张牌cardids1, time倒计时，odds可选筹码
+//梭哈：seatid座位号 askseatid询问操作座位号 time 操作时间 cardids N张扑克(每个玩家一张，按座位号索引)，
+// cardid (自己的暗牌，第一次发票有) odds(可下注选项，第一次发牌有)
+// texasholdem 首次发牌cardids 两张自己的牌 大盲注位置bigblind 小盲注位置smallblind  庄家座位号mastersid 
+// cardids2公共牌   params N个奖池的金额 minchip 最少需要跟的筹码
+message AddCard{
+	required int32 session = 1;
+	optional int32 index = 2;
+	optional int32 seatid = 3;
+	optional int32 askseatid = 4;
+	optional int32 cardid = 5;
+	optional int32 time = 6;
+	repeated int32 odds = 7;
+	repeated int32 cardids = 8;
+	optional int32 reshufflecnt = 9;
+	repeated int32 cardids2 = 10;
+
+	optional int32 bigblind = 11;
+	optional int32 smallblind = 12;
+	repeated int32 params = 13;
+	optional int32 mastersid = 14;
+	optional int32 minchip = 15;
+	repeated int32 cardids3 = 16;
+}
+
+//牛牛：广播 告诉客户端亮牌的结果  cardids长度6，第一个表示是否有牛，第2-4个表示3张组牛的牌，5-6表示另外两张牌
+// 通比牛牛：cardids 1 -5 座位号最小的玩家的扑克，seatid(自己的结算信息)
+message ShowCard{
+	required int32 session = 1;
+	optional int32 index = 2;
+	required int32 seatid = 3;
+	repeated int32 cardids = 4;
+	repeated int32 params = 5;
+	repeated int32 params1 = 6;
+	optional int32 status = 7;
+}
+
+//牛牛：游戏结束
+//游戏结束
+message GameEnd{
+	required int32 session = 1;
+	repeated int32 chanage = 2;
+	repeated int32 realkickback = 3;
+	repeated int32 gold = 4;
+	optional int32 rewardflag = 5; // 是否有奖励
+}
+
+message TalkNtf{
+	required int32 session = 1;
+	required int32 seatid = 2;
+	required string msg = 3;
+}
+message RobotSetInfos{ 
+	message CardIds{
+		repeated int32 cardids1 = 1;
+		repeated int32 cardids2 = 2;
+		repeated int32 cardids3 = 3;
+	}
+	required int32 session = 1;
+	required int32 seatid = 2;
+	required CardIds cardids = 3;
+	optional int32 sflag = 4;
+}
+
+message SetCards{
+	required int32 session = 1;
+	required int32 seatid = 2;
+	repeated int32 cardids = 3;
+}
+message ReconnectReq{
+	required int32 session = 1;
+	required int32 seatid = 2;
+	optional int32 index = 3;
+}
+// texasholdem params uid  seatid座位号 [1]是否在游戏中 1在 [2]该玩家此轮筹码 [4]玩家剩余筹码 [5] 操作
+// status 1为游戏中 params1 手上的暗牌 params2 N个奖池信息 mastersid 庄家座位号
+// params3 公共牌 time 剩余操作时间 cursid 当前操作玩家
+// params4 [1]大盲注座位号 [2]小盲注座位号 [3]必须要跟的筹码 
+message ReconnectRep{
+	message PlayerInfo {
+    	required int32 uid = 1;
+    	required int32 seatid = 2;
+    	repeated int32 params = 3; 	// 1剩余牌数 2 是否托管 3 是否断线 4 加倍 (0未开始 1不加倍 2加倍)
+  	}
+	required int32 session = 1;
+	required int32 status = 2; 		// 100开始游戏 0 开始发牌 1叫庄 2 出牌 3 检查是否结束 4 加倍 255 空闲状态
+	optional int32 time = 3;		// 操作倒计时
+	repeated PlayerInfo players = 4;
+	repeated int32 params1 = 5; 	// 手上的扑克
+	repeated int32 params2 = 6; 	// 上一手扑克 和 底牌
+	repeated int32 params3 = 7; 	// 猜牌记录
+	repeated int32 params4 = 8; 	// 记牌器数据
+	repeated int32 params5 = 9; 	//1 庄家座位号 2 底分倍数
+	optional int32 cursid = 10;		// 当前操作玩家座位号
+	optional int32 presid = 11;		// last操作玩家座位号
+	optional int32 mastersid = 12;	// 地主座位号
+}
+
+message HistoryPlayerReq{
+	required int32 session = 1;
+}
+
+message HistoryPlayerRep{
+	message PlayerInfo {
+    	optional int32 uid = 1;
+    	optional string imageid = 2;
+    	optional string nickname = 3;
+    	optional int32 buy = 4;
+    	optional int32 change = 5;
+    	optional int32 status = 6;
+  	}
+  	required int32 session = 1;
+	repeated PlayerInfo players = 2;
+}
+
+message GiveUpGameReq {
+	required int32 session = 1;
+	required int32 status = 2;//0表示逃跑，1表示离线, 3 换桌 4 站起
+}
+
+message GiveUpGameRep {
+	required int32 session = 1;
+	required int32 result = 2;//0表示成功，1表示失败
+}
+
+message UserOffline {
+	required int32 session = 1;
+	required int32 result = 2;//0表示逃跑，1表示离线
+	required int32 uid = 3;
+}
+
+message UserOnline {
+	required int32 session = 1;
+	required int32 seatid = 2;
+	required int32 uid = 3;
+}
+
+message GameActionReq {
+	message Addition {
+		optional int32 msgi = 1;
+    	optional bool msgb = 2;
+    	optional string msgs = 3;
+	}
+	required int32 session = 1;
+	required int32 seatid = 2;
+	required string action = 3;
+	repeated Addition addition = 4;
+}
+
+message GameActionRep {
+	message Addition {
+		optional int32 msgi = 1;
+    	optional bool msgb = 2;
+    	optional string msgs = 3;
+	}
+	required int32 session = 1;
+	optional int32 index = 2;
+	required int32 seatid = 3;
+	required string action = 4;
+	repeated Addition addition = 5;
+}
+
+//百人牛牛 更新庄信息
+message UpdateMasterInfo {
+	message MasterInfo {
+		optional uint32 uid = 1;
+    	optional string nickname = 2;
+    	optional string gold = 3;
+	}
+
+	required int32 session = 1;
+	optional int32 optype = 2;	 //百人牛牛  1加入上庄队列 2离开上庄队列 3全部上庄列表数据 4上庄 5刷新上庄列表数据 6下庄
+	optional int32 bankerscore = 3;
+	optional int32 bankergamecnt = 4;
+	optional string maxmoney = 5;
+	repeated MasterInfo info = 6;
+}
+
+//百人牛牛 更新押注信息
+message UpdateBetInfo {
+	required int32 session = 1;
+	optional int32 optype = 2;
+	optional int32 timeout = 3;
+	repeated int32 betcount = 4;
+}
+
+//百人牛牛
+message GameStatusNtf {
+	required int32 session = 1;
+	optional int32 optype = 2;
+	optional int32 timeout = 3;
+	optional int32 status = 4;
+}
+
+//用于更新游戏内的一些信息，通用协议
+//_room_cfg.chip, _room_cfg.baseScore, _oprate_sec - DELAY
+// 港式五张：params1[1] 本局最多可带入金币，params1[2] 底注，params1[3] 操作倒计时
+// landlord optype = 1 底分根据玩家金币变更，params1 [1]倍数 [2]底分 [3]台费 
+message UpdateGameInfo {
+	required int32 session = 1;
+	optional int32 index = 2;
+	repeated int32 params1 = 3;
+	repeated int32 params2 = 4;
+	optional int32 tableid = 5;
+	optional int32 optype = 6;
+}
+
+// 梭哈 optype (1 加注 2 跟注 3 弃牌 4 过牌 5 showhand, 6开牌, 7托管) params[1] 加注金额
+// 欢乐斗地主  明牌 optype 3  params[1]明牌倍数
+//			   加倍 optype 4 明牌 params[1]倍数
+// 千人牛牛 通知买牌 optype   2 params[1] 特殊奖池金额
+//          玩家买牌 optype   1 params[1] 组数
+// 好手气斗地主 猜底牌 optype 3 params[1] 1 牌型
+// 好手气斗地主 发表情 optype 5 params[1] 发送的玩家 params[2]接收的玩家座位号 params[3] 表情id
+// 好手气斗地主 加倍   optype 7 params[1] 1 加倍 0 不加倍
+// 好手气斗地主 点赞   optype 8 params[1] 玩家座位号 [2] 1 赞 0 踩
+// texasholdem optype (1 加注 2 跟注 3 弃牌 4 过牌 5 allin 6 自动看牌 7 自动跟注) params[1] 加注金额
+message OperateReq {
+	required int32 session = 1;
+	optional int32 optype = 2;
+	repeated int32 params = 3;
+}
+
+// 梭哈：seatid(操作玩家)，optype同上，timeout操作时间，askseatid下一个操作玩家， params (1 可操作选项个税 N个参数同optype，加注金额)
+// 欢乐斗地主， optype 1 明牌 seatid 明牌玩家 params[1]明牌倍数 params[2..]玩家扑克
+// 千人牛牛 玩家买牌同步 optype 1 params[1]特殊奖池金额 params[2]组数 (自己:组数* 5 牌组)                     
+// 车轮牛牛 params 连胜局数
+// 斗地主押注 result 1 金币不足 2 押注次数上限 3 参数错误
+// 好手气斗地主 猜牌 optype 3 猜牌请求 optype 4 猜牌结算
+// 好手气斗地主 发表情 optype 5 result 0 成功 1 参数错误 2 道具不存在 3 金币不足 params[1] 发送的玩家座位号 params[2] 接收的座位号 params[3]表情id ，
+// 好手气斗地主 请求记牌器数据 6
+// 好手气斗地主 加倍 opytpe 7 result 1 钻石不足 result 2 玩家金币不足 nil成功 params[1] 1 加倍 0 不加倍
+// 好手气斗地主 点赞 optype 8 params[1] 玩家座位号  [2] 1 赞 0 踩 result 0 成功 1已经点过
+// 梭哈：seatid(操作玩家)，optype同上，timeout操作时间，askseatid下一个操作玩家， params (1 可操作选项个税 N个参数同optype，加注金额)
+// texasholdem optype (1 加注 2 跟注 3 弃牌 4 过牌 5 allin 6 自动看牌 7 自动跟注) 
+// texasholdem seatid操作的玩家 askseatid 轮到操作的玩家 timeout 操作时间 params[1]该玩家此轮筹码 params[2]该玩家剩余筹码 params[3] 必须要跟的筹码 params[4] 加注金额
+message OperateRep {
+	required int32 session = 1;
+	optional int32 index = 2;
+	optional int32 optype = 3;
+	optional int32 seatid = 4;
+	optional int32 askseatid = 5;
+	optional int32 timeout = 6;
+	repeated int32 params = 7;
+	optional int32 result = 8;
+	repeated int32 params1 = 9;
+	optional int32 winsid = 10;
+	repeated int32 params2 = 11;
+}
+
+// 千人牛牛 普通结算信息 optype 1
+// 千人牛牛 特殊牌结算信息 optype 2 params 特殊扑克
+// texasholdem 边池结算
+message OperateRepEX {
+	message playerInfo {
+		optional uint32 uid = 1;
+    	optional string nickname = 2;
+    	optional int32 gold = 3;
+    	repeated int32 params = 4;
+    	optional int32 seatid = 5; // 座位号
+    	optional int32 poolid = 6; // 奖池编号
+	}
+
+	required int32 session = 1;
+	optional int32 optype = 2;
+	repeated int32 params = 3;
+	repeated playerInfo info = 4;
+	repeated int32 goldchange = 5; // 所有玩家输赢金币
+
+	repeated int32 firstcards = 6; // 第一次发牌
+	repeated int32 firstchange = 7; // 第一次发牌结算
+	repeated int32 secondcards = 8; // 第二次发牌
+	repeated int32 secondchange = 9; // 第二次发牌结算
+}
+
+//请求当前游戏内的用户信息
+message UserInfoInGameReq {
+	required int32 session = 1;
+	required int32 uid = 2;
+}
+
+//发回当前游戏内的用户信息
+message UserInfoInGameRep {
+	required int32 session = 1;
+	required int32 uid = 2;
+	optional string nickname = 3;
+	optional int32 gold = 4;
+	optional string imageid = 5;
+	optional string sex = 6;
+	optional int32 redcoingot = 7;
+	optional int32 totalwincnt = 8;
+	optional int32 totallosecnt = 9;
+	optional int32 totaldrawcnt = 10;
+	optional int32 diamond = 11;
+	optional int32 gameprop = 12;
+	optional bool offline = 13;
+	repeated int32 praise = 14; // 0 赞数 1 踩数 我对N个其他玩家的操作 -1未操作
+	optional int32 seatid = 15;
+	optional int32 buychip = 16;
+}
+
+// 补充(冻结)游戏金币
+message ReplenishFreezeGoldReq {
+	required int32 session = 1;
+	required int32 gold = 2;
+}
+// 0 成功 1 金币不足 2 参数错误 3 金币总额超过房间上限
+message ReplenishFreezeGoldRep {
+	required int32 session = 1;
+	required int32 result = 2;
+	optional int32 gold = 3; // 新冻结的部分
+	optional int32 uid = 4;
+}
+
+//测试协议用来发送ai调试信息数据 status == 1表示gold  status == 2 表示性格，status == 3表示牌值，status == 10 不区分直接显示
+message AiInfo {
+	required int32 status = 1;
+	required int32 session = 2;
+	required int32 seatid = 3;
+	required int32 uid = 4;
+	required string message = 5;
+}
+
+
+//服务器通知客户端信息
+message ServerInfoNtf {
+	required int32 session = 1;
+	optional int32 seatid = 2;
+	optional string nickname = 3;
+	optional string info = 4;
+	optional int32 type = 5;
+	repeated int32 params = 7;
+	//type 0~100为系统保留
+	//在捕鱼游戏时:
+	//type == 101，通知谁打中了什么鱼
+	//nickname为昵称，params[1]为roomid，param[2]为炮ID，params[3]为fishtype，params[4]为获得的收益
+}
+//德州边池协议 optype标识同步类型，1 边池生成，2，结算同步
+message SidePotInfo {
+	message PotInfo {
+		required int32 potid = 1;
+    	required int32 bet = 2;
+    	repeated int32 seatid = 3;
+	}
+	required int32 session = 1;
+	optional int32 index = 2;
+	optional int32 seatid = 3;
+	required int32 optype = 4; 
+	repeated PotInfo potinfos = 5;
+}
+
+
+//////////////////////////////////////////////////////////////
+//跑得快
+
+//准备
+message CTSGPdkReady
+{
+	required int32 session = 1;
+}
+
+message STCGPdkReady
+{
+	required int32 session = 1;
+	required int32 seat_id = 2;//座位号
+}
+
+//发牌
+message STCGPdkGiveCards
+{
+	required int32 session = 1;
+	repeated int32 cards = 2;//自己的牌
+	required int32 curr_seatid = 3;//当前玩家
+	required int32 time = 4;//打牌倒计时,秒为单位
+	required string gold = 5;//金豆数
+}
+
+//出牌
+message CTSGPdkOutCard
+{
+	required int32 session = 1;
+	repeated int32 card = 2;//打出的牌
+}
+
+message STCGPdkOutCard
+{
+	required int32 session = 1;
+	repeated int32 card = 2;//打出的牌
+	required int32 seatid = 3;//出牌玩家
+	required int32 curr_seatid = 4;//当前玩家
+	required int32 code = 5;//0-出牌成功
+	required int32 left_card = 6;//剩余的牌数
+	required int32 last_out_seatid = 7;//上次出牌的玩家
+	repeated int32 last_out_cards = 8;//上一次出的牌
+	optional int32 bomb_get_gold = 9;//炸弹加分
+	repeated int32 bomb_change_gold = 10;//炸弹加分
+}
+
+//游戏结束
+message STCGPdkEnd
+{
+	message UserScore
+	{
+		required int32 seatid = 1;
+		required int32 score = 2;//输赢分数
+		required int32 table_fee = 3;//台费
+		required int32 is_outcard =4;//是否出过牌
+		required int32 left_card =5;//剩下的牌数
+		optional string gold = 6;//结算后的金豆
+		repeated int32 ncards = 7;//剩下的未出的牌
+	}
+	required int32 session = 1;
+	repeated UserScore users = 2;
+	required int32 first_out = 3;//第一个出牌的玩家
+}
+
+//请求记牌器数据
+message CTSPdkCardHolder
+{
+	required int32 session = 1;
+}
+
+//回复记牌器数据
+message STCPdkCardHolder
+{
+	message CardInfo
+	{
+		required int32 card_value = 1;//牌值
+		required int32 card_num = 2;//牌数
+	}
+	required int32 session = 1;
+	repeated CardInfo card_infos = 2;//数据
+}
+
+//断线重连协议
+message STCPdkReconnect
+{
+	message PlayerInfo {
+    	required int32 uid = 1;
+    	required int32 seatid = 2;
+    	required int32 left_card = 3;//剩余牌数
+    	required int32 is_deposit = 4;//是否托管
+    	required int32 is_offline = 5;//是否断线
+    	repeated int32 params = 6;//可选参数
+  	} 
+	required int32 session = 1;
+	repeated int32 cards = 2;//自己的牌
+	required int32 curr_seatid = 3;//当前玩家
+	required int32 last_out_seatid = 4;//上次出牌的玩家
+	repeated int32 last_out_cards = 5;//上一次出的牌
+	repeated PlayerInfo players = 6;//玩家信息
+}

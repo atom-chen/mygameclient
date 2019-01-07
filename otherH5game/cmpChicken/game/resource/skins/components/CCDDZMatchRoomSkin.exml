@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.CCDDZMatchRoomSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="880" height="166" states="normal,spec">
+	<e:Group id="item0Group" x="0" verticalCenter="-1" touchEnabled="true" touchChildren="false" >
+		<e:Image id="bgImg0" source="cc_room_match_item_bg" horizontalCenter="0" source.spec="cc_room_spec_bg" width.spec="880" scale9Grid.spec="220,41,34,57" x="0" y="0" scaleX="1" scaleY="1" touchEnabled.normal="false" touchEnabled="false"/>
+		<e:Label id="labName0" text="标签" y="17" width="296" textAlign="center" textColor="0xFFF8BB" bold="true" horizontalCenter="0" textColor.spec="0xc82632" horizontalCenter.spec="0" y.spec="31" fontFamily="Microsoft YaHei" x="60" scaleX="1" scaleY="1" touchEnabled.normal="false" touchEnabled="false"/>
+		<e:Label id="labReward0" text="标签" textColor="0x875300" size="20" left="30" fontFamily="Microsoft YaHei" textColor.spec="0xd52401" left.spec="209" bold="true" y ="110" x="30" scaleX="1" scaleY="1" touchEnabled.normal="false" touchEnabled="false"/>
+		<e:Label id="labLimit0" textColor="0x875300" text="12月12日 21:00" size="20" right="25" fontFamily="Microsoft YaHei" textColor.spec="0xd52401" right.spec="211" y="110" bold="true" x="239" scaleX="1" scaleY="1" y.spec="110" y.normal="110" touchEnabled.normal="false" touchEnabled="false"/>
+		<e:Label id="lbOpenTime0" y="46" textColor="0xEFEF07" text="每日12:00-24:00开放" fontFamily="微软雅黑" bold="true" size="20" horizontalCenter="0" x="108" textColor.spec="0x551010" horizontalCenter.spec="0" y.spec="70" scaleX="1" scaleY="1" touchEnabled.normal="false" touchEnabled="false"/>
+		<e:Image id="imgSignUp0" source="cc_icon_sign_up" right="-10" bottom="-10" x="276" y="41" scaleX="1" scaleY="1" right.spec="0" bottom.spec="5" visible="false"/>
+	</e:Group>
+	<e:Group id="item1Group" x="465" verticalCenter="-1" touchEnabled="true" visible.spec="false" touchChildren="false">
+		<e:Image id="bgImg1" source="cc_room_match_item_bg" horizontalCenter="0" x="0" y="0" scaleX="1" scaleY="1"/>
+		<e:Label id="labName1" text="标签" y="17" width="296" textAlign="center" textColor="0xFFF8BB" bold="true" horizontalCenter="0" fontFamily="Microsoft YaHei" x="60" scaleX="1" scaleY="1"/>
+		<e:Label id="labReward1" text="标签" textColor="0x875300" size="20" left="30" fontFamily="Microsoft YaHei" bold="true" y="110" x="30" scaleX="1" scaleY="1"/>
+		<e:Label id="labLimit1" y="110" textColor="0x875300" text="12月12日 21:00" size="20" right="25" fontFamily="Microsoft YaHei" bold="true" x="239" scaleX="1" scaleY="1"/>
+		<e:Label id="lbOpenTime1" y="46" textColor="0xEFEF07" text="每日12:00-24:00开放" fontFamily="微软雅黑" bold="true" size="20" horizontalCenter="0" x="108" scaleX="1" scaleY="1"/>
+		<e:Image id="imgSignUp1" source="cc_icon_sign_up" right="-10" bottom="-10" x="276" y="41" scaleX="1" scaleY="1" visible="false"/>
+	</e:Group>
+</e:Skin>

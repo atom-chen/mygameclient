@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="personal.PDKPersnalGameSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group horizontalCenter="0" verticalCenter="0">
+		<e:Button id="btnCreate" horizontalCenter="0" x="10" y="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="room_diy_btn_n" source.down="room_diy_btn_h"/>
+					<e:Label id="labelDisplay0" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image horizontalCenter="0.5" x="10" y="30" touchEnabled="false" source="room_diy_create"/>
+		<e:Button id="btnJoin" y="147" horizontalCenter="0" x="20">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="room_diy_btn_n" source.down="room_diy_btn_h"/>
+					<e:Label id="labelDisplay2" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image y="177" horizontalCenter="0.5" x="20" touchEnabled="false" source="room_diy_join"/>
+		<e:Button id="btnHistory" y="298" horizontalCenter="0" x="30">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="room_diy_btn_n" source.down="room_diy_btn_h"/>
+					<e:Label id="labelDisplay4" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image y="328" horizontalCenter="0.5" x="30" touchEnabled="false" source="room_diy_history"/>
+	</e:Group>
+</e:Skin>

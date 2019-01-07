@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.CCDDZPageSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="bg" width="100%" height="100%"/>
+	<e:Label id="label" text="标签" width="100%" height="100%" textAlign="center" verticalAlign="middle"/>
+</e:Skin>

@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ui.CCDDZCheckButtonSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="up,down,disabled,upAndSelected,downAndSelected,disabledAndSelected" >
+	<e:Image source="cc_common_radio_1" source.upAndSelected="cc_common_radio_2" source.downAndSelected="cc_common_radio_2" source.disabledAndSelected="cc_common_radio_2" width="36" height="32"/>
+	<e:Label id="labelDisplay" text="标签" size="20" x="34" textColor="0x000000" bottom="0"/>
+</e:Skin>

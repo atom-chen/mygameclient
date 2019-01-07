@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="panels.CCDDZPanelNewYear" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" states="gift,work" >
+	<e:Group id="infoGroup" width="1280" height="640" x="0" y="0" touchEnabled="false">
+		<e:Image id="titImg" x="566" y="118" source="cc_newyear_tit" visible.work="false"/>
+		<e:Scroller id="scroller" width="565" height="360" x="450" y="175" anchorOffsetX="0" anchorOffsetY="0" scrollPolicyV="auto" scrollPolicyH="off" scrollPolicyV.work="off">
+			<e:Group width="565">
+				<e:Group id="buyGroup" width="548" height="187" x="15" y="142" anchorOffsetX="0" anchorOffsetY="0" visible.work="false">
+					<e:Image id="bgImg" y="0" source="cc_newyear_bg" anchorOffsetX="0" width="538" x="0" scaleX="1" scaleY="1" anchorOffsetY="0" height="186" scale9Grid="12,69,9,129" touchEnabled="false"/>
+					<e:Image id="descImg" x="350" y="136" source="cc_newyear_bg4" touchEnabled="false"/>
+					<e:Label id="titLabel" text="新年礼盒" x="218.02" y="10.34" size="24" fontFamily="Microsoft YaHei" textColor="0x7B4D09" bold="true" touchEnabled="false"/>
+					<e:Label text="(购买即得+7日登录奖励)" x="316" y="15" size="18" fontFamily="Microsoft YaHei" id="item1Label2" textAlign="center" lineSpacing="2" textColor="0x7b4d09" touchEnabled="false"/>
+					<e:Image x="50" y="64" id="item1Img0" scaleX="1" scaleY="1" source="cc_newyear_icon2" touchEnabled="false"/>
+					<e:Label text="金豆x100000\n钻石x100" x="44" y="137" size="16" fontFamily="Microsoft YaHei" textColor="0x7B4D09" id="item1Label0" textAlign="center" lineSpacing="2" scaleX="1" scaleY="1" touchEnabled="false"/>
+					<e:Label text="金豆x20996\n记牌器1天x7" x="172" y="136.98" size="16" fontFamily="Microsoft YaHei" textColor="0x7B4D09" id="item1Label1" textAlign="center" lineSpacing="2" scaleX="1" scaleY="1" touchEnabled="false"/>
+					<e:Image id="buyImg" source="cc_common_btn_orange3" y="74" x="317" scaleX="1" scaleY="1"/>
+					<e:Label id="buyLabel" text="18元抢购" size="24" fontFamily="Microsoft YaHei" textColor="0xFFFFFF" y="89.63999999999999" x="345.65" scaleX="1" scaleY="1" touchEnabled="false"/>
+					<e:Image x="180" y="64" id="item1Img1" scaleX="1" scaleY="1" source="cc_newyear_icon1" touchEnabled="false"/>
+				</e:Group>
+
+				<e:Group id="loginGroup" width="548" height="222" x="15" y="340" anchorOffsetY="0" anchorOffsetX="0" visible.work="false">
+					<e:Image y="0" source="cc_newyear_bg" anchorOffsetX="0" width="538" scale9Grid="12,72,9,71"/>
+					<e:Label text="购买成功后，可领7日连续登陆奖励" x="76" y="10" size="24" fontFamily="Microsoft YaHei" textColor="0x7b4d09" bold="true"/>
+					<e:Image x="20" y="76" source="cc_newyear_bg1" scale9Grid="4,3,5,1" anchorOffsetX="0" width="496"/>
+					<e:Image id="bgImg1" x="37" y="58" source="cc_newyear_bg2"/>
+					<e:Label id="label1" text="1" x="49" y="67" size="24" bold="true" fontFamily="Microsoft YaHei" textColor="0x0fffff" touchEnabled="false"/>
+					<e:Image id="bgImg2" x="107" y="58" source="cc_newyear_bg2"/>
+					<e:Label id="label2" text="2" x="119" y="67" size="24" bold="true" fontFamily="Microsoft YaHei" textColor="0xB83600" touchEnabled="false"/>
+					<e:Image id="bgImg3" x="177" y="59.5" source="cc_newyear_bg2"/>
+					<e:Label id="label3" text="3" x="189" y="67" size="24" bold="true" fontFamily="Microsoft YaHei" textColor="0xB83600" touchEnabled="false"/>
+					<e:Image id="bgImg4" x="247" y="58.31" source="cc_newyear_bg2"/>
+					<e:Label id="label4" text="4" x="259" y="67" size="24" bold="true" fontFamily="Microsoft YaHei" textColor="0xB83600" touchEnabled="false"/>
+					<e:Image id="bgImg5" x="317" y="58.31" source="cc_newyear_bg2"/>
+					<e:Label id="label5" text="5" x="329" y="67" size="24" bold="true" fontFamily="Microsoft YaHei" textColor="0xB83600" touchEnabled="false"/>
+					<e:Image id="bgImg6" x="387" y="58" source="cc_newyear_bg2"/>
+					<e:Label id="label6" text="6" x="399" y="67" size="24" bold="true" fontFamily="Microsoft YaHei" textColor="0xB83600" touchEnabled="false"/>
+					<e:Image id="bgImg7" x="457" y="58.31" source="cc_newyear_bg2"/>
+					<e:Label id="label7" text="7" x="469" y="67" size="24" bold="true" fontFamily="Microsoft YaHei" textColor="0xB83600" touchEnabled="false"/>
+					<e:Image id="item1Img" x="49" y="114" source="cc_newyear_icon4" touchEnabled="false"/>
+					<e:Label id="item1Label" text="金豆x2018" x="45" y="188" size="16" fontFamily="Microsoft YaHei" textColor="0x7b4d09" touchEnabled="false"/>
+					<e:Image id="item2Img" x="180" y="114" source="cc_newyear_icon3" touchEnabled="false"/>
+					<e:Label id="item2Label" text="记牌器x1天" x="175" y="188" size="16" fontFamily="Microsoft YaHei" textColor="0x7B4D09" touchEnabled="false"/>
+					<e:Image id="getImg" source="cc_common_btn_orange3" y="129" x="316"/>
+					<e:Label id="getLabel" text="立即领取" size="24" fontFamily="Microsoft YaHei" textColor="0xffffff" y="145" x="348" touchEnabled="false" textAlign="center" width="96"/>
+				</e:Group>
+				<ns1:CCDDZDayTaskItemInfo id="workComponent" x="15" y="180" skinName="ui.CCDDZDayTaskItemSkin" visible.gift="false"/>
+
+				<e:Label id="actInfoLabel" text="活动介绍" x="17" y="4" size="20" fontFamily="Microsoft YaHei" textColor="0xb83600" touchEnabled="false"/>
+				<e:Label id="actTimeLabel" text="活动时间" x="17" y="89" size="20" fontFamily="Microsoft YaHei" textColor="0xB83600" touchEnabled="false"/>
+				<e:Label id="actDescLabel" text="活动期间，新年礼盒限购1个，新年礼盒原价36元，五折出售，售价18元" x="18" y="35" size="18" fontFamily="Microsoft YaHei" textColor="0x414a61" width="500" lineSpacing="4" touchEnabled="false" text.work="新年新气象，迎接新开始"/>
+				<e:Label id="actTimeLabel1" text="2月12日0:00至2月15日24:00" x="18" y="118" size="18" fontFamily="Microsoft YaHei" textColor="0x414A61" width="300" touchEnabled="false" text.work="2月23日0:00至24:00(仅此一天）"/>
+				<e:Image id="ruleImg" x="522" y="120" source="cc_common_btn_orange_h" width="60" height="32" anchorOffsetX="30" anchorOffsetY="16" touchEnabled="true" visible.work="false"/>
+				<e:Label id="ruleLabel" text="规则" x="503.02" y="109.01" size="20" fontFamily="Microsoft YaHei" textColor="0x7b4d09" bold="true" touchEnabled="false" visible.work="false"/>
+			</e:Group>
+		</e:Scroller>
+
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ui.PDKSwitchSkin" xmlns:e="http://ns.egret.com/eui" xmlns:PDKalien="PDKalien.*" states="up,down,disabled,upAndSelected,downAndSelected,disabledAndSelected" >
+	<e:Image source="pdk_common_btn_orange1_3" source.upAndSelected="pdk_common_btn_orange1_2" source.downAndSelected="pdk_common_btn_orange1_2" source.disabledAndSelected="pdk_common_btn_orange1_2"/>
+	<e:Image source="pdk_common_switch_lab_off" x="70" y="15" source.upAndSelected="pdk_common_switch_lab_on" source.downAndSelected="pdk_common_switch_lab_on" x.upAndSelected="20" x.downAndSelected="20"/>
+	<PDKalien:Image x="3" y="1" animation.up="[x:3];100;backOut" animation.down="[x:3];100;backOut" animation.downAndSelected="[x:84];100;backOut" animation.upAndSelected="[x:84];100;backOut" source="pdk_common_btn_orange1_1"/>
+</e:Skin>

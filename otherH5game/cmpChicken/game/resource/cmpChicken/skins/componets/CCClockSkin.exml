@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.CCClockSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image y="0" x="0" source="cc_play_icon_timer"/>
+	<e:Label id="timeNum" text="5" verticalCenter="2" horizontalCenter="0" size="32" fontFamily="Microsoft YaHei"/>
+
+
+
+</e:Skin>

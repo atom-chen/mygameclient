@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.CCDDZPanelShareSkin" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect height="100%" width="100%" x="0" y="0" alpha="0.7"/>
+	<e:Image id="desc_img" source="cc_room_share2" horizontalCenter="0" verticalCenter="0"/>
+</e:Skin>

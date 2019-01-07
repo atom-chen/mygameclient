@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="panels.CCDDZPanelDayBuy" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="1280" height="640">
+	<e:Group id="infoGroup" width="1280" height="640" touchEnabled="false">
+		<ns1:CCDDZImgWordBtn id="buyImg" x="723" y="494" skinName="ui.CCDDZImgWordBtnSkin" scaleX="0.8" scaleY="0.8" anchorOffsetX="85" anchorOffsetY="28"/>
+		<e:Image id="item1Img" x="528.5" y="364" anchorOffsetX="47.5" anchorOffsetY="47" source="cc_room_2" scaleX="1" scaleY="1"/>
+		<e:Image id="item2Img" x="628.5" y="364" anchorOffsetX="47.5" anchorOffsetY="47" source="cc_room_101" scaleX="1" scaleY="1"/>
+		<e:Image id="item3Img" x="728.5" y="364" anchorOffsetX="47.5" anchorOffsetY="47" source="cc_room_0" scaleX="1" scaleY="1"/>
+		<e:Image id="item4Img" x="828.5" y="364" anchorOffsetX="47.5" anchorOffsetY="47" scaleX="1" scaleY="1" source="cc_room_1"/>
+		<e:Image id="item5Img" x="921.5" y="366" anchorOffsetX="47.5" anchorOffsetY="47" scaleX="1" scaleY="1" source="cc_room_3"/>
+		<e:Label id="item4Num_label1" text="?" x="912" y="361" size="40" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" textColor="0xFF0000"/>
+		<e:Label id="item1Num_label" text="?" x="514" y="361" size="40" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" textColor="0xff0000"/>
+		<e:Label id="item2Num_label" text="?" x="619" y="361" size="40" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" textColor="0xff0000"/>
+		<e:Label id="item3Num_label" text="?" x="720" y="361" size="40" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" textColor="0xff0000"/>
+		<e:Label id="item4Num_label" text="?" x="818" y="361" size="40" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" textColor="0xff0000"/>
+		<e:Label id="item4Num_label0" text="1、购买后每个整点可以领福利，一共3次机会。 \r\n2、必须在游戏中才能领取，自由组局除外。 \r\n3、每日可购买一次，24小时内有效。\r\n4、以下奖励，拼手气领取" x="490" y="170" size="20" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" bold="true" lineSpacing="10" textColor="0x414a61"/>
+	</e:Group>
+</e:Skin>

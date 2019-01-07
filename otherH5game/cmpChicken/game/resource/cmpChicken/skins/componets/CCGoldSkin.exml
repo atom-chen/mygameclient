@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.CCGoldSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="goldWithBuy,diamondWithBuy,redcoinWithBuy,gold"  height="42">
+	<e:Image id="bgImg" x="7" width="150" height="42" source.gold="cc_play_common_gold_bg" source="cc_play_common_gold_bg" scale9Grid="69,19,16,3"/>
+	<e:Image id="imgIcon" x.goldWithBuy="0" x.diamondWithBuy="0" scaleX.diamondWithBuy="1.3" scaleY.diamondWithBuy="1.3" source.goldWithBuy="cc_play_icon_gold" source="cc_play_icon_gold" source.diamondWithBuy="cc_play_icon_diamond" source.redcoinWithBuy="cc_play_icon_redcoin2" y.diamondWithBuy="2" y.goldWithBuy="2" verticalCenter.redcoinWithBuy="0" scaleX.redcoinWithBuy="1.2" scaleY.redcoinWithBuy="1.2" verticalCenter="0"/>
+	<e:Label size="24" id="labGold" text="0" verticalAlign="middle" textAlign="center" width="100" verticalCenter="0" fontFamily="Microsoft YaHei" horizontalCenter="-3" horizontalCenter.gold="5" width.gold="120"/>
+	<e:Button id="btnRecharge" x="120" y="-2" includeIn="goldWithBuy,diamondWithBuy,redcoinWithBuy">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="cc_play_common_btn_plus_n" source.down="cc_play_common_btn_plus_n"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+
+	</e:Button>
+</e:Skin>

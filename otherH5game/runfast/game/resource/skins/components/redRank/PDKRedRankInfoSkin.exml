@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.PDKRedRankInfoSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="back" source="pdk_red_rank_bg_25" x="0" scaleX="0.7" scaleY="0.8" verticalCenter="0" visible="false"/>
+	<e:Image id="back1" source="pdk_red_rank_bg_10" x="0" scaleX="0.7" scaleY="0.8" verticalCenter="0" visible="false"/>
+	<e:Image id="back2" source="pdk_red_rank_bg_11" x="0" scaleX="0.7" scaleY="0.8" verticalCenter="0" visible="false"/>
+	<e:Image id="back3" source="pdk_red_rank_bg_12" x="0" scaleX="0.7" scaleY="0.8" verticalCenter="0" visible="false"/>
+	<e:Image id="rank3" source="pdk_top_03" scaleX="0.9" scaleY="0.9" verticalCenter="0" left="0" visible="false"/>
+	<e:Image id="rank2" source="pdk_top_02" scaleX="0.9" scaleY="0.9" verticalCenter="0" left="0" visible="false"/>
+	<e:Image id="rank1" source="pdk_top_01" scaleX="0.9" scaleY="0.9" verticalCenter="0" left="0" visible="false"/>
+	<e:Label id="score" x="175" textColor="0xF1FF00" size="20" fontFamily="微软雅黑" width="70" textAlign="center" text="" multiline="false" verticalCenter="-2.5"/>
+	<e:Label id="rank" textColor="0xF1FF00" text="10000" fontFamily="微软雅黑" size="20" x="-19" bold="true" width="74" textAlign="center" verticalCenter="0" visible="false"/>
+	<e:Label id="nickname" textColor="0xF1FF00" fontFamily="微软雅黑" size="20" x="49" width="131" multiline="false" height="25" text="" wordWrap="false" verticalCenter="0"/>
+</e:Skin>

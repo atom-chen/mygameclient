@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="pages.CCDDZPageNormalChannelSkin" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Scroller id="listContainer" verticalCenter="20" horizontalCenter="0" width="1180" height="450">
+		<e:Group>
+			<e:List id="list" itemRendererSkinName="components.CCDDZIRNormalRoomSkin" horizontalCenter="0">
+				<e:ArrayCollection>
+					<e:Array>
+						<e:Object label="数据1"/>
+						<e:Object label="数据2"/>
+						<e:Object label="数据3"/>
+					</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:TileLayout requestedRowCount="2" horizontalGap="65" horizontalAlign="center" verticalGap="40" paddingRight="1" paddingTop="10"/>
+				</e:layout>
+			</e:List>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

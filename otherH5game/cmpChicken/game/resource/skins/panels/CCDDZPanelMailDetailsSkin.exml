@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.CCDDZPanelMailDetailsSkin" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  width="1280">
+
+	<e:Image id="bg_img" width="810" x="240" y="67" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="102,105,572,15" height="520" source="cc_common_alert_bg"/>
+	<e:Group id="tit_group" horizontalCenter="0" y="72">
+		<e:Image id="titBgImg1" y="3" source="cc_common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+		<e:Image id="titFontImg1" y="-3" horizontalCenter="0.5" x="138" scaleX="1" scaleY="1" source="cc_email_tit"/>
+	</e:Group>
+	<e:Image id="closeImg" x="1029.67" y="87.66" source="cc_common_close_n" anchorOffsetX="30" anchorOffsetY="30.5"/>
+
+	<e:Image id="contentBg_img" x="332" y="140" source="cc_common_bg" scale9Grid="6,5,43,35" anchorOffsetX="0" width="646" anchorOffsetY="0" height="192"/>
+	<e:Scroller width="646" height="192" x="332" y="140">
+		<e:Group width="646" height="192">
+			<e:Label id="content_label" text="" width="626" size="20" fontFamily="Microsoft YaHei" textColor="0x414a61" textAlign="left" verticalAlign="top" y="20" x="10" lineSpacing="10"/>
+		</e:Group>
+	</e:Scroller>
+
+	<e:Scroller y="350" width="615" x="350" height="100">
+		<e:Group width="615" height="100">
+			<e:List id="goodsList" width="615" height="100">
+				<e:itemRendererSkinName>
+					<e:Skin xmlns:ns1="*" >
+						<ns1:CCDDZGoodsItem id="goodsItem" x="9" y="9" skinName="components.CCDDZGoodsItemSkin"/>
+					</e:Skin>
+				</e:itemRendererSkinName>
+				<e:ArrayCollection>
+					<e:Array>
+					</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" gap="6"/>
+				</e:layout>
+
+			</e:List>
+		</e:Group>
+	</e:Scroller>
+	<e:Image id="getImg" x="664" y="512" source="cc_room_get" anchorOffsetX="72.5" anchorOffsetY="26"/>
+</e:Skin>

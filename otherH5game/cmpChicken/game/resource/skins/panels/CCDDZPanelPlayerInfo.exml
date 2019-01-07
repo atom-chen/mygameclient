@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="panels.CCDDZPanelPlayerInfo" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+
+	<e:Panel id="bg_panel" width="1280" height="640" x="0" y="0" enabled="true" touchEnabled="false" touchChildren="true">
+		<e:Image id="bg_img" width="615" height="383" anchorOffsetX="312.5" anchorOffsetY="191.5" source="cc_common_alert1_bg" scale9Grid="23,59,40,13" horizontalCenter="0" verticalCenter="0"/>
+		<e:Group id="tit_group" horizontalCenter="0" y="130">
+			<e:Image id="titBgImg1" y="3" source="cc_common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+			<e:Image id="titFontImg1" y="-10" horizontalCenter="0.5" x="138" scaleX="1" scaleY="1" source="cc_pinfo_title"/>
+		</e:Group>
+		<e:Group id="praiseGroup" y="345" x="369.5" anchorOffsetX="0" width="214" height="85" visible="false">
+			<e:Image id="coolImg" y="27" x="54.5" scaleX="1" scaleY="1" anchorOffsetX="26" anchorOffsetY="26" source="cc_pinfo_b"/>
+			<e:Image id="shitImg" y="27" x="144.5" scaleX="1" scaleY="1" source="cc_pinfo_b" rotation="180" anchorOffsetX="26" anchorOffsetY="26"/>
+			<e:Label id="coolLabel" text="0" x="17" anchorOffsetY="15" fontFamily="Microsoft YaHei" size="22" height="30" verticalAlign="middle" textAlign="center" y="70" width="78"/>
+			<e:Label id="shitLabel" text="0" x="104" y="70" anchorOffsetY="15" fontFamily="Microsoft YaHei" size="22" height="30" verticalAlign="middle" textAlign="center" width="78"/>
+		</e:Group>
+		<e:Image id="mInfo_bg" x="560.5" y="217.5" source="cc_pinfo_infoBg"/>
+
+
+		<e:Image id="headBg_img" width="134" height="131" x="405" y="213" anchorOffsetX="0" anchorOffsetY="0" source="cc_pinfo_headMaskbg"/>
+		<e:Image id="head_img" width="115" height="110" x="413" y="222" anchorOffsetX="0" anchorOffsetY="0" source="cc_pinfo_headMask"/>
+		<e:Image id="head_img0" width="115" height="110" x="743.5" y="253" anchorOffsetX="0" anchorOffsetY="0" source="cc_icon_redcoin" scaleX="0.4" scaleY="0.4"/>
+		<e:Image id="headMask_img" width="115" height="110" x="413" y="222" anchorOffsetX="0" anchorOffsetY="0" alpha="1" source="cc_pinfo_headMask"/>
+		<e:Label id="nick_label" text="" x="624.5" y="239" anchorOffsetY="15" fontFamily="Microsoft YaHei" size="22" width="110" height="30" verticalAlign="middle" textAlign="center"/>
+		<e:Label id="gold_label" text="" x="789" y="239" anchorOffsetY="15" fontFamily="Microsoft YaHei" size="22" width="74" height="30" verticalAlign="middle" textAlign="center" anchorOffsetX="0"/>
+		<e:Label id="games_label" text="" x="624.5" y="277" anchorOffsetY="15" fontFamily="Microsoft YaHei" size="22" width="66" height="30" verticalAlign="middle" textAlign="center"/>
+		<e:Label id="winRate_label" text="" y="317" anchorOffsetY="15" fontFamily="Microsoft YaHei" size="22" width="66" height="30" verticalAlign="middle" textAlign="center" x="626"/>
+		<e:Label id="redbeg_label" text="55.26" x="785" y="277" anchorOffsetY="15" fontFamily="Microsoft YaHei" size="22" width="80" height="30" verticalAlign="middle" textAlign="center" anchorOffsetX="0"/>
+
+		<e:Button id="close_btn" label="" x="903.52" y="109.92" width="66">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="cc_common_close_n" source.down="cc_common_close_h"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="report_btn" label="" y="292" enabled="true" scaleX="1" scaleY="1" x="753">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="cc_pinfo_report_n" source.down="cc_pinfo_report_p"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+
+
+		<e:Group id="browAndReport_group" width="524" height="110" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" y="372" visible="false">
+
+			<e:Button id="brow1_btn" label="" x="48" y="56" width="114" height="111" anchorOffsetX="57" anchorOffsetY="55.5" scaleX="0.9" scaleY="0.9" touchEnabled="true">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="cc_pinfo_666_n" source.down="cc_pinfo_666_p"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image id="brow1Price_img" width="33" height="19" x="44" y="76" source="cc_pinfo_100" anchorOffsetY="0" anchorOffsetX="0" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Image id="brow1Gold_img" width="21" height="21" x="43" y="72" source="cc_icon_gold2" anchorOffsetX="21" anchorOffsetY="-1.33" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Image id="brow1Free_img" x="48" y="82" source="cc_pinfo_free" anchorOffsetX="20.5" anchorOffsetY="11.5" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Button id="brow2_btn" label="" x="150" y="56" width="114" height="111" anchorOffsetX="57" anchorOffsetY="55.5" scaleX="0.9" scaleY="0.9" touchEnabled="true">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="cc_pinfo_tortise_n" source.down="cc_pinfo_tortise_p"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image id="brow2Gold_img" width="21" height="21" x="143" y="72" source="cc_icon_gold2" anchorOffsetX="21" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Image id="brow2Price_img" width="33" height="19" x="144" y="76" source="cc_pinfo_100" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Image id="brow2Free_img" x="148" y="82" source="cc_pinfo_free" anchorOffsetX="20.5" anchorOffsetY="11.5" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Button id="brow3_btn" label="" x="252" y="56" width="114" height="111" anchorOffsetY="55.5" anchorOffsetX="57" scaleX="0.9" scaleY="0.9" touchEnabled="true">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="cc_pinfo_tomato_n" source.down="cc_pinfo_tomato_p"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image id="brow3Gold_img" width="21" height="21" x="243" y="73.64999999999998" source="cc_icon_gold2" anchorOffsetX="21" anchorOffsetY="-0.67" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Image id="brow3Price_img" width="33" height="19" x="244" y="76" source="cc_pinfo_100" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Image id="brow3Free_img" x="248" y="82" source="cc_pinfo_free" anchorOffsetX="20.5" anchorOffsetY="11.5" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Button id="brow4_btn" label="" x="354" y="56" width="114" height="111" anchorOffsetX="57" anchorOffsetY="55.5" scaleX="0.9" scaleY="0.9" touchEnabled="true">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="cc_pinfo_love_n" source.down="cc_pinfo_love_p"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image id="brow4Gold_img" width="21" height="21" x="343" y="72.98000000000002" source="cc_icon_gold2" anchorOffsetX="21" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Image id="brow4Price_img" width="33" height="19" x="344" y="76" source="cc_pinfo_100" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Image id="brow4Free_img" x="348" y="82" source="cc_pinfo_free" anchorOffsetX="20.5" anchorOffsetY="11.5" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Button id="brow5_btn" label="" x="456" y="56" width="114" height="111" anchorOffsetX="57" anchorOffsetY="55.5" scaleX="0.9" scaleY="0.9" touchEnabled="true">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="cc_pinfo_good_n" source.down="cc_pinfo_good_p"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image id="brow5Gold_img" width="21" height="21" x="443" y="72.98000000000002" source="cc_icon_gold2" anchorOffsetX="21" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Image id="brow5Price_img" width="33" height="19" x="444" y="76" source="cc_pinfo_100" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Image id="brow5Free_img" x="448" y="82" source="cc_pinfo_free" anchorOffsetX="20.5" anchorOffsetY="11.5" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Label id="mFLeft_label" text="剩余免费次数:0" size="20" fontFamily="Microsoft YaHei" textColor="0x8a3e18" anchorOffsetX="75" anchorOffsetY="9" height="20" y="115" horizontalCenter="0"/>
+		</e:Group>
+	</e:Panel>
+</e:Skin>

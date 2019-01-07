@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="ui.PDKGreenButtonSkin" states="up,down,disabled" minHeight="50" minWidth="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Image id="bgImg"  source.up="pdk_btn_yellow" source.down="pdk_btn_yellow" source.disabled="pdk_btn_yellow"/>
+    <e:Image id="iconDisplay" horizontalCenter="0" verticalCenter="-4" source.up="{this.iconUp}" source.down="{this.iconDown}" source.disabled="{this.iconDisabled}"/>
+</e:Skin>

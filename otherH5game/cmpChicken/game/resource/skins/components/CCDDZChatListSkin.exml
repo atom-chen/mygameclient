@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.CCDDZChatListSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="96" height="231">
+	<e:Group id="grp" scrollEnabled="true" touchEnabled="false">
+		<e:Image scale9Grid="14,14,1,1" x="0" y="0" source="play_chat_bg"/>
+		<e:List id="list" y="5" horizontalCenter="0" itemRendererSkinName="components.CCDDZIRUpDownIconSkin">
+			<e:layout>
+				<e:VerticalLayout gap="6" horizontalAlign="justify"/>
+			</e:layout>
+		</e:List>
+	</e:Group>
+</e:Skin>

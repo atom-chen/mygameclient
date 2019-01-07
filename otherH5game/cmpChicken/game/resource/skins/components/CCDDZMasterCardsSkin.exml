@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.CCDDZMasterCardsSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="cc_play_master_card_bg"/>
+	<e:Group id="container" height="70" y="10" width="180" x="122"/>
+	<e:Label id="labBase" text="" x="38" y="45" textColor="0x6f130d" fontFamily="Microsoft YaHei" bold="true" anchorOffsetX="0" width="76" textAlign="center" anchorOffsetY="0" height="30"/>
+	<e:Label id="labMultiple" text="" x="319" y="44" fontFamily="Microsoft YaHei" textColor="0x6f130d" bold="true" textAlign="center" height="30" width="75"/>
+</e:Skin>

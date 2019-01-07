@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.CCDDZCreateTableSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image horizontalCenter="0" verticalCenter="0" source="cc_common_alert1_bg" scale9Grid="29,56,27,15" width="770" height="460"/>
+	<e:Label id="infoLabel" text="绿色竞技，禁止赌博" size="22" bold="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" textColor="0x414A61" y="426" x="381"/>
+	<e:Group id="tit_group" horizontalCenter="9" y="90">
+		<e:Image id="titBgImg1" y="3" source="cc_common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+		<e:Image id="titFontImg1" y="0" horizontalCenter="1" x="138" scaleX="1" scaleY="1" source="cc_personal_title"/>
+	</e:Group>
+
+	<e:Button id="btnClose" label="" x="820" y="78">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="cc_common_close_n" source.down="cc_common_close_h"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label id="lbcreatecost" text="创建费用: 免费" y="385" size="20" textColor="0xB0663E" fontFamily="微软雅黑" bold="true" x="414"/>
+	<e:Image y="167" source="cc_personal_word1" left="206"/>
+	<e:Image y="220" source="cc_personal_word2" left="206"/>
+	<e:Image y="275" source="cc_personal_word3" left="206"/>
+	<e:Image y="330" source="cc_personal_word4" left="206"/>
+	<e:Button id="btnCreate" y="464" x="403">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="cc_personal_btn_create_n" source.down="cc_personal_btn_create_c"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<ns1:CCDDZCreateTableInfo id="info1" x="338" y="161" skinName="components.CCDDZCreateTableInfoSkin"/>
+	<ns1:CCDDZCreateTableInfo id="info2" x="338" y="215" skinName="components.CCDDZCreateTableInfoSkin"/>
+	<ns1:CCDDZCreateTableInfo id="info3" y="269" skinName="components.CCDDZCreateTableInfoSkin" x="338"/>
+	<ns1:CCDDZCreateTableInfo id="info4" x="338" y="323" skinName="components.CCDDZCreateTableInfoSkin"/>
+</e:Skin>

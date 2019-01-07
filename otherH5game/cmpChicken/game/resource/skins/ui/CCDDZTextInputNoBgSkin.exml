@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ui.CCDDZTextInputNoBgSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="normal,disabled,normalWithPrompt,disabledWithPrompt" >
+	<e:Label id="promptDisplay" height="100%" verticalAlign="middle" textAlign="center" size="25" includeIn="normalWithPrompt,disabledWithPrompt" width="100%" textColor="0x818080"/>
+	<e:EditableText id="textDisplay" verticalAlign="middle" height="100%" width="100%" textAlign="center" textColor="0x000000"/>
+</e:Skin>

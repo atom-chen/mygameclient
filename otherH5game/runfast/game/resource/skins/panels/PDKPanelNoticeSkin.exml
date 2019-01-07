@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="panels.PDKPanelNoticeSkin" width="1280" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  >
+	<e:Group id="infoGroup" width="100%" height="100%" touchEnabled="false">
+		<e:Image id="bg_img" x="430" y="126" width="589" height="410" scale9Grid="9,7,12,15" source="pdk_common_bg" scaleX="1" scaleY="1" anchorOffsetX="0"/>
+		<e:Image id="arrImg" x="413" y="180" source="pdk_common_arrow" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="11"/>
+		<e:Image id="noticeFlag_img" x="665.02" y="159" source="notice_game_tit" scaleX="1" scaleY="1"/>
+		<e:Scroller id="content_scroller" width="580" height="334" x="435" y="196" anchorOffsetY="0" scrollPolicyV="on" scrollPolicyH="off" scaleX="1" scaleY="1">
+		<e:Group anchorOffsetY="0">
+			<e:Label id="info_label" text="" x="5" y="5" width="570" size="20" textColor="0x414A61" fontFamily="Microsoft YaHei" bold="true" lineSpacing="10"/>
+		</e:Group>
+		</e:Scroller>
+		<e:Image id="publicCp_img" x="841" y="475" scaleX="1" scaleY="1" anchorOffsetX="70" anchorOffsetY="37" source="pdk_common_copyPublic"/>
+		<e:Image id="wxCp_img" x="621" y="475" source="pdk_common_copyWX" scaleX="1" scaleY="1" anchorOffsetX="70" anchorOffsetY="37"/>
+		<e:Scroller width="164" height="360" x="260" y="150" anchorOffsetX="0" scrollPolicyV="auto" scrollPolicyH="off" scaleX="1" scaleY="1">
+			<e:Group>
+			<e:List id="leftLabelList" x="0" y="0" anchorOffsetY="0" height="360" itemRendererSkinName="components.PDKActListItem" selectedIndex="0">
+				<e:layout>
+				<e:VerticalLayout horizontalAlign="center" verticalAlign="top"/>
+				</e:layout>				
+					<e:ArrayCollection>
+					<e:Array>
+						<e:Object fsdf="null"/>
+						<e:Object fsdf="null"/>
+						<e:Object fsdf="null"/>
+					</e:Array>
+				</e:ArrayCollection>
+			</e:List>
+			</e:Group>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

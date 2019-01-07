@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="components.PDKButtonContinueSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image id="pdk_play_result_btn_bg" horizontalCenter="0" verticalCenter="0" source="pdk_play_result_btn_bg" blendMode="normal"/>
+	<e:Image id="mPress_img" source="pdk_play_result_btn_continue" horizontalCenter="0" verticalCenter="0"/>
+</e:Skin>

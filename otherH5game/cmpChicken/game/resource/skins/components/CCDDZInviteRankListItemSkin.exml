@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="components.CCDDZInviteRankListItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="670">
+	<e:Image id="bg" width="670" x="1" y="0" scale9Grid="84,5,68,33" source="cc_invite_13" height="60"/>
+	<e:Image id="rankIdxImg" scale9Grid="84,5,68,33" verticalCenter="0" horizontalCenter="-250" source="cc_invite_2"/>
+	<e:Label id="rankIdxLabel" text="1" size="24" textAlign="center" horizontalCenter="-250" fontFamily="Microsoft YaHei" textColor="0x7f4e00" verticalCenter="0"/>
+	<e:Label id="lbName" text="1" size="22" textAlign="center" fontFamily="Microsoft YaHei" textColor="0x7f4e00" horizontalCenter="-35" verticalCenter="0"/>
+	<e:Label id="lbRed" text="1" size="22" textAlign="center" fontFamily="Microsoft YaHei" textColor="0x7F4E00" right="100" verticalCenter="0"/>
+</e:Skin>

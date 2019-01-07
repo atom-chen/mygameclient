@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.CCDDZMailItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="610" height="91" states="new,read"  width.read="610">
+	<e:Image id="bg_img" source="cc_email_itemNew" x="0" y="0" width="610" source.read="cc_email_itemRead" scale9Grid.read="8,11,47,69" width.new="610" scale9Grid="18,11,35,69"/>
+	<e:Image id="flag_img" source="cc_email_newFlag" x="17" verticalCenter="0.5" source.read="cc_email_readFlag" touchEnabled.read="false" touchEnabled="false"/>
+	<e:Label id="title_label" text="系统公告" bold="true" size="28" fontFamily="Microsoft YaHei" x="117" verticalCenter="0.5" touchEnabled.read="false" touchEnabled="false" verticalCenter.read="0.5" x.read="117" textColor="0xae1e2b" textColor.read="0x707070"/>
+	<e:Label id="sender_label" text="标签" verticalCenter="0.5" fontFamily="SimSun" size="24" textColor="0x515151" x="327" touchEnabled.read="false" touchEnabled="false" verticalCenter.read="0.5" x.read="293" visible.read="false" visible.new="false" visible="false"/>
+	<e:Label id="time_label" text="标签" x="439" verticalCenter="0.5" fontFamily="SimSun" size="24" touchEnabled.read="false" touchEnabled="false" verticalCenter.read="0.5" x.read="439" textColor="0x976821" textColor.new="0x976821"/>
+</e:Skin>

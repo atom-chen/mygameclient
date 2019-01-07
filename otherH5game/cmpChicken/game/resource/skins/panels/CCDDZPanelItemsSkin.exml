@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.CCDDZPanelItemsSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image width="770" height="460" source="cc_common_alert_bg" scale9Grid="38,113,735,9"/>
+	<e:Group id="grpButton" horizontalCenter="1" bottom="32">
+		<ns1:CCDDZStateButton id="btnConfirm" name="confirm" x="50" y="142" skinName="ui.CCDDZDeepBlueButtonSkin" labelIcon="cc_common_btn_lab_confirm_n"/>
+		<ns1:CCDDZStateButton id="btnCancel" name="cancel" labelIcon="cc_common_btn_lab_cancel_n" y="142" x="212" skinName="ui.CCDDZGreenButtonSkin"/>
+		<e:layout>
+		<e:HorizontalLayout gap="150"/>
+		</e:layout>
+	</e:Group>
+	<e:Group id="tit_group" horizontalCenter="0" y="0">
+		<e:Image id="titBgImg1" y="3" source="cc_common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+		<e:Image id="titFontImg1" y="0" horizontalCenter="0" x="138" scaleX="1" scaleY="1" source="cc_common_word_15"/>
+	</e:Group>
+	<e:Scroller id="ctxScroller" scaleX="1" scaleY="1" width="550" horizontalCenter="0" verticalCenter="-10">
+		<e:Group y="22" anchorOffsetY="0">
+		<e:List id="goodsList" horizontalCenter="0">
+			<e:itemRendererSkinName>
+			<e:Skin>
+				<ns1:CCDDZGoodsItem id="goodsItem" x="9" y="9" skinName="components.CCDDZGoodsItemSkin"/>
+			</e:Skin>
+			</e:itemRendererSkinName>
+			<e:layout>
+				<e:HorizontalLayout/>
+			</e:layout>
+
+			<e:ArrayCollection>
+					<e:Array>
+						<e:Object fsdf="null"/>
+						<e:Object fsdf="null"/>
+						<e:Object fsdf="null"/>
+					</e:Array>
+				</e:ArrayCollection>
+		</e:List>
+		</e:Group>
+	</e:Scroller>
+	<e:Button right="-11" id="btnClose" skinName="ui.CCDDZCloseButtonSkin" y="-12" x="10"/>
+	<e:Label id="labTit" text="标题" width="400" horizontalCenter="1" verticalCenter="-113" textAlign="center" lineSpacing="5" fontFamily="Microsoft YaHei" textColor="0x1a1a1a"/>
+	<e:Label id="labContent" text="..." width="400" horizontalCenter="0" verticalCenter="80" textAlign="center" lineSpacing="5" fontFamily="Microsoft YaHei" textColor="0xffffff"/>
+
+</e:Skin>

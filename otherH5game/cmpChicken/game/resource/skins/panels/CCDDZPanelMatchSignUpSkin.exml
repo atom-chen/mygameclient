@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="panels.CCDDZPanelMatchSignUpSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:CCalien="CCalien.*">
+	<e:Image source="cc_match_panel_bg" scale9Grid="81,98,486,5" height="433"/>
+	<e:Image source="cc_match_panel_bg_2" y="80" scale9Grid="283,42,14,254" x="184" locked="true"/>
+	<e:Label id="labTitle" text="斗地主新手赛" y="25" textColor="0xF4B64B" horizontalCenter="0" bold="true" locked="true"/>
+	<e:Label text="开始时间:" x="243" y="125" textColor="0x000000" size="25"/>
+	<e:Label id="labLimit" size="25" y="125" textColor="0x000000" text="满0人开赛" x="365"/>
+	<e:Label size="25" y="170" textColor="0x000000" text="报名费用:" x="243"/>
+	<e:Label size="25" y="215" textColor="0x000000" text="报名人数:" x="243"/>
+	<e:Label id="labSignUpCount" size="25" y="261" textColor="0x000000" text="0/0" x="415"/>
+	<e:Label size="25" y="261" textColor="0x000000" text="当日报名次数:" x="243"/>
+	<e:Group x="365" y="216">
+		<e:Label id="labAmount" size="25" y="0" textColor="0x000000" text="0人" x="0"/>
+		<e:Image source="cc_icon_amount" x="56" y="1"/>
+		<e:layout>
+			<e:HorizontalLayout verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>
+	<e:Group id="grpButtons" width="100%" height="100%">
+		<e:Button x="26.5" y="242" name="match_intro">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="cc_match_btn_help_n" source.down="cc_match_btn_help_h"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button y="146" x="26.5" name="reward_intro">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="cc_match_btn_reward_n" source.down="cc_match_btn_reward_h"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button y="306" horizontalCenter="87" name="sign_up">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="cc_match_btn_sign_up_n" source.down="cc_match_btn_sign_up_h"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button right="0" y="0" name="close">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="cc_common_close_n" source.down="cc_common_close_h"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<CCalien:DropDown id="ddPay" x="360" y="160" skinName="ui.CCDDZDropDownSkin"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="components.PDKMyGoldSkin" currentState="gold" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="normal,withButton,gold,diamond,diamondBuy"  height="30" height.normal="30">
+	<e:Image x="7" scale9Grid="15,0,15,30" width="150" height="30" source="pdk__score_bg"/>
+	<e:Image id="imgIcon" x="0" y="-1.94" y.diamond="-3.31" x.diamond="0" y.diamondBuy="-3.32" x.diamondBuy="0" source="pdk_ico_gold" source.diamond="pdk_ico_drill" source.diamondBuy="pdk_ico_drill"/>
+	<e:Label size="25" y="2.65" id="labGold" text="0" verticalAlign="middle" textAlign="center" width="100" x="30"/>
+	<e:Button id="btnRecharge" x="120" y="-3.33" includeIn="withButton,diamondBuy">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="pdk_ico_add" source.down="pdk_ico_add"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+
+	</e:Button>
+</e:Skin>

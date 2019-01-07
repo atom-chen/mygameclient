@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="personal.CCDDZTableInfoSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image horizontalCenter="0" verticalCenter="0" source="cc_common_alert1_bg" scale9Grid="27,59,32,11" width="770" height="460"/>
+	<e:Group id="tit_group0" horizontalCenter="9" y="90">
+		<e:Image id="titBgImg0" y="3" source="cc_common_tit_bg" horizontalCenter="0" x="30" scaleX="1" scaleY="1"/>
+		<e:Image id="titFontImg0" y="0" horizontalCenter="0" x="138" scaleX="1" scaleY="1" source="cc_personal_ri_title"/>
+	</e:Group>
+	<e:Image horizontalCenter="0" verticalCenter="0" source="cc_personal_bg"/>
+
+	<e:Image y="164" source="cc_personal_ri_topinfo" horizontalCenter="0"/>
+	<e:Button id="btnClose" label="" x="825" y="79">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="cc_common_close_n" source.down="cc_common_close_h"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label id="lbRoomid" y="220" text="123456" fontFamily="微软雅黑" bold="true" size="20" textColor="0xFFFFFF" horizontalCenter="-223"/>
+	<e:Label id="lbLimit" y="220" textColor="0xFFFFFF" text="123456" fontFamily="微软雅黑" bold="true" size="20" x="366"/>
+	<e:Label id="lbRound" y="220" textColor="0xFFFFFF" text="123456" fontFamily="微软雅黑" bold="true" size="20" x="508"/>
+	<e:Label id="lbBScore" y="220" textColor="0xFFFFFF" text="123456" fontFamily="微软雅黑" x="647" bold="true" size="20"/>
+	<e:Image y="251" source="cc_personal_bg_9" scale9Grid="11,9,66,57" width="589" height="201" horizontalCenter="0"/>
+	<e:Label id="waiting" text="等待创建者开始..." y="478" size="20" fontFamily="微软雅黑" bold="true" horizontalCenter="0" textColor="0xCA8637"/>
+	<e:Button id="btnStart" y="464" x="403">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="cc_personal_btn_start_n" source.down="cc_personal_btn_start_c"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btnShare" x="622" y="475"  label="立即邀请好友">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="cc_personal_btn_share_c" />
+			<e:Label id="labelDisplay"  x="34" y ="10" size="20" text="立即邀请好友" fontFamily="微软雅黑" textColor="0x05612b"/>
+			</e:Skin>
+		</e:skinName>
+
+	</e:Button>
+	<ns1:CCDDZAvatar id="player1" x="233" y="270" skinName="components.CCDDZAvatarSkin" scaleX="0.7" scaleY="0.7"/>
+	<ns1:CCDDZAvatar id="player2" scaleY="0.7" y="270" skinName="components.CCDDZAvatarSkin" scaleX="0.7" horizontalCenter="0"/>
+	<ns1:CCDDZAvatar id="player3" scaleX="0.7" y="270" scaleY="0.7" skinName="components.CCDDZAvatarSkin" x="606"/>
+	<ns1:CCDDZPInfItem id="PInfo1" x="222" y="399" skinName="components.CCDDZPInfItemSkin"/>
+	<ns1:CCDDZPInfItem id="PInfo2" y="398" skinName="components.CCDDZPInfItemSkin" x="407"/>
+	<ns1:CCDDZPInfItem id="PInfo3" x="597" y="397" skinName="components.CCDDZPInfItemSkin"/>
+</e:Skin>
