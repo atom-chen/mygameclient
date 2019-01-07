@@ -258,11 +258,11 @@ class SceneRoom extends alien.SceneBase {
      * 点击商城
      */
     private _onClickRecharge():void{
-        // PanelExchange2.instance.show();
+        PanelExchange2.instance.show();
         // var roomInfo = GameConfig.getRoomConfigById(5001);
         // alien.SceneManager.show("SceneDzpkPlay",{data:{'isReconnect': false},roomInfo:roomInfo});
 
-        MainLogic.instance.checkDzpkGoldNum({'isReconnect': false});
+        // MainLogic.instance.checkDzpkGoldNum({'isReconnect': false});
         // checkDzpkGoldNum
     }
 
@@ -806,10 +806,10 @@ class SceneRoom extends alien.SceneBase {
      * 显示首充界面
      */
     private _showFRecharge():void{
-        // if(!this._bInLobby) return;
-        // PanelActAndNotice.getInstance().showFRecharge();
+        if(!this._bInLobby) return;
+        PanelActAndNotice.getInstance().showFRecharge();
 
-        alien.SceneManager.show('SceneDzpkPlay',{ action: 'quick_join',roomID: 5001 },alien.sceneEffect.Fade);
+        // alien.SceneManager.show('SceneDzpkPlay',{ action: 'quick_join',roomID: 5001 },alien.sceneEffect.Fade);
     }
 
     /**
@@ -1136,13 +1136,15 @@ class SceneRoom extends alien.SceneBase {
      * 点击任务按钮
      */
     private _onClickTask():void{
-        let _selfData = this._self;
-        if(_selfData.shouldShowTaskRed()){
-            server.reqNewPlayerClickTask();
-            _selfData.setNotShowTaskRed();
-            this._showTaskRedImg(false);
-        }
-        PanelDayTask.getInstance().show();
+        // let _selfData = this._self;
+        // if(_selfData.shouldShowTaskRed()){
+        //     server.reqNewPlayerClickTask();
+        //     _selfData.setNotShowTaskRed();
+        //     this._showTaskRedImg(false);
+        // }
+        // PanelDayTask.getInstance().show();
+
+        MainLogic.instance.checkDzpkGoldNum({'isReconnect': false});
     }
 
     /**

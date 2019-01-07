@@ -182,6 +182,7 @@ var RES;
             var request = this.getRequest();
             this.resItemDic[request.hashCode] = { item: resItem, func: compFunc, thisObject: thisObject };
             request.open(RES.$getVirtualUrl(resItem.url));
+            request.responseType = this._dataFormat;
             request.send();
         };
         /**
@@ -194,7 +195,7 @@ var RES;
                 request.addEventListener(egret.Event.COMPLETE, this.onLoadFinish, this);
                 request.addEventListener(egret.IOErrorEvent.IO_ERROR, this.onLoadFinish, this);
             }
-            request.responseType = this._dataFormat;
+            //request.responseType = this._dataFormat;
             return request;
         };
         /**

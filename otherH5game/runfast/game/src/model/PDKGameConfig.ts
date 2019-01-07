@@ -28,8 +28,8 @@ class PDKGameConfig {
 	//    static SERVER_URL: string = 'ws://10.101.1.150:9001/ws';
 
 	//static SERVER_URL:string = 'ws://10.101.1.63:9001/ws';
-
-	static SERVER_URL: string = 'ws://192.168.0.91:9001/ws';
+// http://129.211.1.47/
+	static SERVER_URL: string = 'ws://129.211.1.47:9001/ws';
 	static SERVER_URL_TAIL: string;
 	static WX_LOGIN_URL: string = 'http://www.htgames.cn/zhanghaichuan';
 	static WEB_SERVICE_URL: string = "http://192.168.0.120:8090/";//'http://kungu.ngrok.club/';

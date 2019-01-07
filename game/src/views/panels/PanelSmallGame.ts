@@ -229,76 +229,100 @@ class PanelSmallGame extends alien.PanelBase {
         server.checkReconnect();          
     }
 
+    private _totexasholdem(): void {
+        // MainLogic.instance.setWillToGame(T_G_BJ);
+        // server.checkReconnect();
+        alien.PopUpManager.removeAllPupUp();
+        MainLogic.instance.checkDzpkGoldNum({'isReconnect': false});          
+    }
+
+    private _toqznn(): void {
+        // MainLogic.instance.setWillToGame(T_G_BJ);
+        // server.checkReconnect();
+        alien.PopUpManager.removeAllPupUp();
+        alien.SceneManager.show('niuniu',{ action: 'quick_join',roomID: 5001 },alien.sceneEffect.Fade);          
+    }
+
     private _initGameList():void{
         let list = []
+            
+            // let qznncfg = GameConfig.getRoomCfgFromAll(5001);
+            // texsholdcfg.roomIcon = "smallgame_game_excite";
+            // texsholdcfg.func = this._totexasholdem.bind(this,texsholdcfg);
+            // list.push(texsholdcfg)
 
-        let zcjCfg = GameConfig.getCfgByField("webCfg.zcj");
-        if (zcjCfg && zcjCfg.status == 1) {
+            let texsholdcfg = GameConfig.getRoomCfgFromAll(5001);
+            texsholdcfg.roomIcon = "smallgame_game_excite";
+            texsholdcfg.func = this._totexasholdem.bind(this,texsholdcfg);
+            list.push(texsholdcfg)
+
+        // let zcjCfg = GameConfig.getCfgByField("webCfg.zcj");
+        // if (zcjCfg && zcjCfg.status == 1) {
             let zcjcfg = GameConfig.getRoomCfgFromAll(4001);
             zcjcfg.roomIcon = "smallgame_game_excite";
             zcjcfg.func = this._toZCJ.bind(this,zcjcfg);
             list.push(zcjcfg)
-        }
+        // }
 
-        let fffCfg = GameConfig.getCfgByField("webCfg.fff");
-        if (fffCfg && fffCfg.status == 1) {
-            let fff:any = {};
-            fff.roomIcon = "smallgame_game_turn";
-            fff.func = this._toFFF.bind(this,fff);
-            list.push(fff)
-        }
-
-        let lltCfg = GameConfig.getCfgByField("webCfg.llt");
-        if (lltCfg && lltCfg.status == 1) {
-            let llt:any = {};
-            llt.roomIcon = "smallgame_game_explore";
-            llt.func = this._toLLT.bind(this,llt);
-            list.push(llt);
-        }
+        // let stCfg = GameConfig.getCfgByField("webCfg.st");
+        //st
+        // if(stCfg && stCfg.status == 1) {
+            let _stcfg = {roomIcon: "smallgame_game_three", func: null }
+            _stcfg.func = this._toBJ.bind(this,_stcfg);
+            list.push(_stcfg);
+        // }
 
         //llk
-        let _llkCfg = GameConfig.getCfgByField("webCfg.llk");        
-        if (_llkCfg && _llkCfg.status == 1) {
+        // let _llkCfg = GameConfig.getCfgByField("webCfg.llk");        
+        // if (_llkCfg && _llkCfg.status == 1) {
             let _llkcfg = GameConfig.getRoomCfgFromAll(20001);
             _llkcfg.roomIcon = "smallgame_game_link";
             _llkcfg.func = this._toLLK.bind(this,_llkcfg);
             list.push(_llkcfg);
-        }
+        // }
 
-        let _2048Cfg = GameConfig.getCfgByField("webCfg.2048");
+        // let _2048Cfg = GameConfig.getCfgByField("webCfg.2048");
         //2048
-        if (_2048Cfg && _2048Cfg.status == 1) {
+        // if (_2048Cfg && _2048Cfg.status == 1) {
             let _2048cfg = GameConfig.getRoomCfgFromAll(21001);
             _2048cfg.roomIcon = "smallgame_game_2048";
             _2048cfg.func = this._to2048.bind(this,_2048cfg);
             list.push(_2048cfg);
-        }
+        // }
 
-        let _fflCfg = GameConfig.getCfgByField("webCfg.ffl");
+        // let _fflCfg = GameConfig.getCfgByField("webCfg.ffl");
         //ffl
-        if (_fflCfg && _fflCfg.status == 1) {
+        // if (_fflCfg && _fflCfg.status == 1) {
             let _fflcfg = GameConfig.getRoomCfgFromAll(22001);
             _fflcfg.roomIcon = "smallgame_game_hturn";
             _fflcfg.func = this._toFFL.bind(this,_fflcfg);
             list.push(_fflcfg)
-        }
+        // }
         
-        let fdCfg = GameConfig.getCfgByField("webCfg.knife");
+        // let fdCfg = GameConfig.getCfgByField("webCfg.knife");
         //fd
-        if (fdCfg && fdCfg.status == 1) {
+        // if (fdCfg && fdCfg.status == 1) {
             let _fdcfg = GameConfig.getRoomCfgFromAll(24000);
             _fdcfg.roomIcon = "smallgame_game_knife";
             _fdcfg.func = this._toFD.bind(this,_fdcfg);
             list.push(_fdcfg)
-        }
+        // }
 
-        let stCfg = GameConfig.getCfgByField("webCfg.st");
-        //st
-        if(stCfg && stCfg.status == 1) {
-            let _stcfg = {roomIcon: "smallgame_game_three", func: null }
-            _stcfg.func = this._toBJ.bind(this,_stcfg);
-            list.push(_stcfg);
-        }
+         // let fffCfg = GameConfig.getCfgByField("webCfg.fff");
+        // if (fffCfg && fffCfg.status == 1) {
+            let fff:any = {};
+            fff.roomIcon = "smallgame_game_turn";
+            fff.func = this._toFFF.bind(this,fff);
+            list.push(fff)
+        // }
+
+        // let lltCfg = GameConfig.getCfgByField("webCfg.llt");
+        // if (lltCfg && lltCfg.status == 1) {
+            let llt:any = {};
+            llt.roomIcon = "smallgame_game_explore";
+            llt.func = this._toLLT.bind(this,llt);
+            list.push(llt);
+        // }
 
         this._dataProvide.source = list;
     }
