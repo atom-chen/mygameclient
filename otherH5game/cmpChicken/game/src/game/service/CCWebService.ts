@@ -14,9 +14,9 @@ class CCWebService {
 	 * @param callback
 	 */
     login(username: string, password: string, callback: Function): void {
-        this.callApi('index', 'login', (response) => {
-            callback(response.data);
-        }, { username, password });
+        // this.callApi('index', 'login', (response) => {
+        //     callback(response.data);
+        // }, { username, password });
     }
 
 	/**

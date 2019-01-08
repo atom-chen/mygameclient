@@ -227,25 +227,26 @@ class PDKLoginService extends PDKService {
             }
         }
         console.log('uid:', uid, '|token:', token);
-        if (token && token != "null" && uid) {
-            this._loginData.uid = uid;
-            this._loginData.token = token;
+        pdkServer.connect();
+        // if (token && token != "null" && uid) {
+        //     this._loginData.uid = uid;
+        //     this._loginData.token = token;
 
-            PDKwebService.getServer(uid, (response) => {
-                if (response.code == 0) {
-                    if (!userData.getItem('token')) {
-                        PDKReportor.instance.reportCodeError("sk error checkLocalToken");
-                    }
+        //     PDKwebService.getServer(uid, (response) => {
+        //         if (response.code == 0) {
+        //             if (!userData.getItem('token')) {
+        //                 PDKReportor.instance.reportCodeError("sk error checkLocalToken");
+        //             }
 
-                    PDKGameConfig.initServer(response.data);
-                    pdkServer.connect();
-                } else {
-                    PDKSceneLoading.setLoadingText("获取服务器地址错误");
-                }
-            })
-            //pdkServer.tryConnect(uid,null,this._onTryConnectError.bind(this));
-            return true;
-        }
+        //             PDKGameConfig.initServer(response.data);
+        //             pdkServer.connect();
+        //         } else {
+        //             PDKSceneLoading.setLoadingText("获取服务器地址错误");
+        //         }
+        //     })
+        //     //pdkServer.tryConnect(uid,null,this._onTryConnectError.bind(this));
+        //     return true;
+        // }
         return false;
     }
 

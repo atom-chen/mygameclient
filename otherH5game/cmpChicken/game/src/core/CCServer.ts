@@ -14,6 +14,9 @@ class CCServer extends egret.EventDispatcher {
 	protected _clientId: number = 1;
 	protected _session: number = 0;
 	protected _uid: number;
+	protected _id: string;
+	protected _pwd: string;
+
 
 	public _isInDDZ: boolean = false;
 	public _isFirstFromDDZ: boolean = false;
@@ -352,7 +355,11 @@ class CCServer extends egret.EventDispatcher {
 			console.log("onSocketData--------->", nameId);
 		switch (Number(nameId)) {
 			case 0://登录成功
-				this.onLoginSucc();
+				
+				let uid: number = parseInt(bytes.readUTFBytes(bytes.bytesAvailable));
+				this._uid = uid;
+				this.onLoginSucc(uid);
+				// this.onLoginSucc();
 				break;
 			case 1://登录失败
 				let errorId: number = parseInt(bytes.readUTFBytes(bytes.bytesAvailable));
@@ -530,10 +537,10 @@ class CCServer extends egret.EventDispatcher {
 		}
 	}
 
-	private onLoginSucc(): void {
+	private onLoginSucc(uid:number): void {
 		this.sendHeartPackage();
 		this._sendHeartTimer.start();
-		this.dispatchEventWith(CCGlobalEventNames.USER_LOGIN_RESPONSE, false, { code: 0 });
+		this.dispatchEventWith(CCGlobalEventNames.USER_LOGIN_RESPONSE, false, { code: 0, uid:uid });
 	}
 
 	private inShowList(name: string): boolean {
@@ -756,8 +763,10 @@ class CCServer extends egret.EventDispatcher {
 	 * @param uid
 	 * @param token
 	 */
-	login(uid: string, token: string): void {
-		this._token = token;
+	login(id: string, pwd: string): void {
+		// this._token = token;
+		this._id = id;
+		this._pwd = pwd;
 
 		let _platformId = 1; //H5
 		let _platform = egret.Capabilities.os;
@@ -773,11 +782,11 @@ class CCServer extends egret.EventDispatcher {
 				_platformId = 3;
 			}
 		}
-		this._uid = parseInt(uid);
+		// this._uid = parseInt(uid);
 		let params = [
-			this._uid,
+			this._id,
 			1,
-			token,
+			this._pwd,
 			ccddzwebService.uuid,
 			CCDDZEnvironment.channel_id,
 			_platformId,//平台ID

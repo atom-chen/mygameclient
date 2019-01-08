@@ -36,7 +36,7 @@ class CCLoginService extends CCService {
 	 * 连接游戏服务器成功
 	 */
   	private _onConnectToServer(event: egret.Event): void {
-        ccserver.login(this._loginData.uid,this._loginData.token);
+        ccserver.login(this._loginData.id,this._loginData.password);
     }
 
 	/**
@@ -47,6 +47,7 @@ class CCLoginService extends CCService {
         this._clearReconnectInterval();
         switch(data.code) {
             case 0:
+                this._loginData.uid = data.uid;
                 this._setCanReconnect(true);
 			    CCGlobalGameConfig.getExAliRedInfo();
                 CCGlobalGameConfig.initGameUrlsCfg(()=>{
@@ -126,31 +127,31 @@ class CCLoginService extends CCService {
 	/**
 	 * 验证code成功，登录游戏服务器
 	 */
-    private tryLogin(data: any) {
+    public tryLogin(data: any) {
         this._loginData = data;
-        let userData: CCGlobalUserData = CCGlobalUserData.instance;
-        userData.setUid(this._loginData.uid);
-        userData.setSk(this._loginData.sk);
-        userData.setItem('username',this._loginData.username);
-        userData.setItem('type',this._loginData.type);
-        userData.setBindPhone(this._loginData.bindinfo);
-        userData.saveLocalPhone(data.phone);
-        userData.setToken(this._loginData.token,true);
+        // let userData: CCGlobalUserData = CCGlobalUserData.instance;
+        // userData.setUid(this._loginData.uid);
+        // userData.setSk(this._loginData.sk);
+        // userData.setItem('username',this._loginData.username);
+        // userData.setItem('type',this._loginData.type);
+        // userData.setBindPhone(this._loginData.bindinfo);
+        // userData.saveLocalPhone(data.phone);
+        // userData.setToken(this._loginData.token,true);
 
-        let _uid = this._loginData.uid;
-        if(CCalien.Native.instance.isNative && egret.Capabilities.os == "Android"){
-            CCalien.Native.instance.getAppChannelId(function(channelId){
-                ccddzwebService.doBindChannel(_uid,channelId)
-            })
-        }
+        // let _uid = this._loginData.uid;
+        // if(CCalien.Native.instance.isNative && egret.Capabilities.os == "Android"){
+        //     CCalien.Native.instance.getAppChannelId(function(channelId){
+        //         ccddzwebService.doBindChannel(_uid,channelId)
+        //     })
+        // }
         
 
-        if(!this._loginData.sk){
-            CCDDZReportor.instance.reportCodeError("sk error tryLogin");
-        }
-        ccddzwebService.doUserInit(this._loginData.uid);
-        CCGlobalWxHelper.doWebH5ShareCfg();
-        CCGlobalGameConfig.initServer(data.server);
+        // if(!this._loginData.sk){
+        //     CCDDZReportor.instance.reportCodeError("sk error tryLogin");
+        // }
+        // ccddzwebService.doUserInit(this._loginData.uid);
+        // CCGlobalWxHelper.doWebH5ShareCfg();
+        // CCGlobalGameConfig.initServer(data.server);
         CCDDZSceneLoading.setLoadingText("验证登录中。。。");
         ccserver.connect();
         //ccserver.tryConnect(this._loginData.uid);

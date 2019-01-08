@@ -123,8 +123,9 @@ class CCDDZSceneLogin extends CCalien.CCDDZSceneBase {
                 break;
             case 'confirm':
                 //CCalien.CCDDZDispatcher.dispatch(CCGlobalEventNames.SHOW_WAITING,{ content: lang.login_waiting });
-                ccddzwebService.login(params.id,params.password,_loginService.onVerifyResponse.bind(_loginService));
-               
+                // ccddzwebService.login(params.id,params.password,_loginService.onVerifyResponse.bind(_loginService));
+               _loginService.tryLogin({id:params.id, password:params.password});
+
                 break;
         }
     }
