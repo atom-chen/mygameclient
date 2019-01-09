@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FishShowItemSkin" width="50" height="60" currentState="small" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="small,big" >
+	<e:Image source="lankuang" source.big="jinkuang" fillMode.small="scale" fillMode.big="scale" width.big="50" height.big="60" width.small="50" height.small="60"/>
+</e:Skin>

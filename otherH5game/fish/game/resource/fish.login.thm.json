@@ -1,0 +1,18 @@
+{
+  "autoGenerateExmlsList": true,
+  "exmls": [
+    "resource/skins/FishActivityButtonSkin.exml",
+    "resource/skins/FishShopTypeButtonSkin.exml",
+    "resource/skins/FishCaptchaButtonSkin.exml",
+    "resource/skins/FishInputSkin.exml",
+    "resource/skins/FishGetButtonSkin.exml",
+    "resource/skins/FishSignItemSkin.exml",
+    "resource/skins/FishActivitySkin.exml",
+    "resource/skins/FishWxLoginButtonSkin.exml",
+    "resource/skins/FishLoginSkin.exml",
+    "resource/skins/FishRoomButtonSkin.exml",
+    "resource/skins/FishRoomItemSkin.exml",
+    "resource/skins/FishRoomSkin.exml"
+  ],
+  "skins": {}
+}

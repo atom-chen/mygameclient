@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FishShopSkin" width="780" height="480" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image x="0" width="100%" source="datanchuang" bottom="0"/>
+	<e:Image fillMode="clip" anchorOffsetX="0" horizontalCenter="0" top="0" source="fish_title_bg"/>
+	<e:Image width="144" height="90" x="422" y="20" source="fish_title_shop"/>
+	<e:Button id="fish_btn_close" label="Button" x="706" y="55" skinName="FishCloseButtonSkin"/>
+	<e:Rect width="162.5" height="364" x="10.5" y="108" anchorOffsetX="0" anchorOffsetY="0" ellipseWidth="20" ellipseHeight="20" fillColor="0x5a5fa4" fillAlpha="0.5"/>
+	<e:Scroller width="582" height="342" x="181" y="119" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Group id="fish_shop_group" anchorOffsetX="0" width="581" anchorOffsetY="0" height="341" x="113" y="0">
+			<e:Group id="fish_shop_group_big" width="200" height="139" x="197" y="8" anchorOffsetY="0" scaleX="1" scaleY="1"/>
+			<e:Group id="fish_shop_group_small" width="200" height="175" x="196.5" y="162" anchorOffsetY="0" scaleX="1" scaleY="1"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Button id="fish_shop_type_btn_gold" label="Button" x="20" y="122" skinName="FishShopTypeButtonSkin"/>
+	<e:Button id="fish_shop_type_btn_diamond" label="Button" x="20" y="183" skinName="FishShopTypeButtonSkin" visible="false"/>
+	<e:Button id="fish_shop_type_btn_redpacket" label="Button" x="20" y="180.51" skinName="FishShopTypeButtonSkin" visible="false"/>
+	<e:Button id="fish_shop_type_btn_jd" label="Button" x="20" y="305.5" skinName="FishShopTypeButtonSkin" visible="false"/>
+	<e:Button id="fish_shop_type_btn_alipay" label="Button" x="20" y="366.5" skinName="FishShopTypeButtonSkin" visible="false"/>
+	<e:Image x="15.5" y="436" source="fish_shop_tixing"/>
+</e:Skin>

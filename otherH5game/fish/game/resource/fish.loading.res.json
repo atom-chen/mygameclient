@@ -1,0 +1,15 @@
+{
+	"groups": [
+		{
+			"keys": "loading_png",
+			"name": "loading"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/loading/loading.png",
+			"type": "image",
+			"name": "loading_png"
+		}
+	]
+}

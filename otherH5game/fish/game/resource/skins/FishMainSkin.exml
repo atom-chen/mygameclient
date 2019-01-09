@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FishMainSkin" width="1280" height="720" currentState="normal" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" states="normal,match,personalGame" >
+	<e:Image width="100%" height="100%" source="fish_bg"/>
+	<e:Label id="fish_label_version" text="v0.0.0" size="14" anchorOffsetX="0" width="449.5" textAlign="center" horizontalCenter="0" top="8" anchorOffsetY="0" height="38" verticalAlign="middle" textColor="0x162942"/>
+	<e:Group id="fish_ground" width="1280" height="720" touchEnabled="true" touchChildren="true" blendMode="normal" visible="true">
+	</e:Group>
+	<e:Group id="fish_caustic" width="1280" height="720" touchEnabled="false" touchChildren="false" blendMode="normal" visible="true">
+	</e:Group>
+	<e:Button id="fish_btn_type" label="Button" skinName="FishTypeButtonSkin" left="18" y="204.79"/>
+	<e:Button id="fish_btn_exit" label="Button" skinName="FishExitButtonSkin" y="451.42" x="18"/>
+	<e:Button id="fish_btn_room" label="Button" y="368.94" x="18" skinName="FishRoomButtonSkin"/>
+	<e:Button id="fish_btn_sound_on" label="Button" x="18" y="288.03" skinName="FishSoundOnButtonSkin"/>
+	<e:Button id="fish_btn_sound_off" label="Button" x="18" y="288.35" skinName="FishSoundOffButtonSkin" visible="false"/>
+	<e:Button id="fish_btn_shop" label="Button" skinName="FishShopButtonSkin" left="18" y="121.91"/>
+	<ns1:FishCannon id="fish_cannon_1" left="250" bottom="0" skinName="FishCannonSkin" anchorOffsetX="93" anchorOffsetY="158.5" name="cannon1"/>
+	<ns1:FishCannon id="fish_cannon_2" right="250" bottom="0" skinName="FishCannonSkin" anchorOffsetX="93" anchorOffsetY="158.5" name="cannon2"/>
+	<ns1:FishCannon id="fish_cannon_3" right="250" top="0" skinName="FishCannonSkin" anchorOffsetX="93" anchorOffsetY="158.5" rotation="180" name="cannon3"/>
+	<ns1:FishCannon id="fish_cannon_4" left="250" top="0" skinName="FishCannonSkin" anchorOffsetX="93" anchorOffsetY="158.5" rotation="180" name="cannon4"/>
+	<ns1:FishUserInfo id="fish_userinfo_1" left="10" bottom="1" skinName="FishUserInfoSkin" width="192"/>
+	<ns1:FishUserInfo id="fish_userinfo_2" right="10" bottom="1" skinName="FishUserInfoSkin" width="192"/>
+	<ns1:FishUserInfo id="fish_userinfo_3" right="10" top="1" skinName="FishUserInfoSkin" width="192"/>
+	<ns1:FishUserInfo id="fish_userinfo_4" left="10" top="1" skinName="FishUserInfoSkin" width="192"/>
+	<e:Button id="fish_btn_auto" label="Button" x="474.64" y="651.64" skinName="FishAutoFireButtonSkin"/>
+	<ns1:FishBtnRedpacket id="fish_btn_redpacket" label="Button" x="565" y="651.64" skinName="FishRedPacketButtonSkin"/>
+	<e:Button id="fish_btn_future1" label="Button" x="654" y="651.64" skinName="FishFutureButtonSkin"/>
+	<e:Button id="fish_btn_future2" label="Button" x="743.7" y="651.64" skinName="FishFutureButtonSkin"/>
+	<e:Button id="fish_btn_activity" label="Button" skinName="FishActivityButtonSkin" verticalCenter="0" right="0"/>
+	<e:Label id="fish_label_redpacket_tip" text="+0.0奖杯" x="598.31" y="625.96" size="24" strokeColor="0xff7200" width="150" verticalAlign="middle" textAlign="center" touchEnabled="false" anchorOffsetX="75" textColor="0x071c3b" bold="true" fontFamily="Microsoft YaHei" visible="false"/>
+	<e:Group id="fish_group_tip" height="720" width="1280" touchChildren="false" touchEnabled="false">
+		<e:Panel id="fish_panel_timeout_tip" width="1280" height="50" y="100" horizontalCenter="0" visible="false">
+			<e:Rect width="800" height="50" scaleX="1" scaleY="1" strokeAlpha="0" fillAlpha="0.3" horizontalCenter="0" x="-627" verticalCenter="0" ellipseWidth="15" ellipseHeight="15"/>
+			<e:Label text="超过1分钟没有操作，将在           秒后被移出房间" horizontalCenter="0" x="-551" scaleX="1" scaleY="1" verticalCenter="0"/>
+			<e:BitmapLabel id="fish_timeout_time" width="60" height="40" x="680" text=" 9" font="fish_font_2_fnt" verticalCenter="0"/>
+		</e:Panel>
+		<e:Panel id="fish_panel_tip" width="1280" height="50" y="100" horizontalCenter="0" x="10" visible="false">
+			<e:Rect width="600" height="50" scaleX="1" scaleY="1" strokeAlpha="0" fillAlpha="0.3" horizontalCenter="0" x="-627" verticalCenter="0" ellipseWidth="15" ellipseHeight="15"/>
+			<e:Label id="fish_panel_tip_text" text="正在切换房间..." horizontalCenter="0" x="-551" scaleX="1" scaleY="1" verticalCenter="0"/>
+		</e:Panel>
+	</e:Group>
+	<e:Group id="fish_group_top" height="720" width="1280" touchEnabled="false">
+	</e:Group>
+</e:Skin>

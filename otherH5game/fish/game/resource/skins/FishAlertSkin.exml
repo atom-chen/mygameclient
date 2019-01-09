@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FishAlertSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="1280" height="720">
+	<e:Group width="100%" height="100%" verticalCenter="0" horizontalCenter="0" touchEnabled="true" touchThrough="false" touchChildren="true">
+		<e:Image source="xiaotanchuang" horizontalCenter="0" verticalCenter="0" x="-184" y="30" scaleX="1" scaleY="1"/>
+		<e:Label id="fish_label_msg" text="标签" width="481" horizontalCenter="0" verticalCenter="-23" textAlign="left" lineSpacing="5" anchorOffsetX="0" anchorOffsetY="0" height="105" textColor="0xffffff" x="-151" y="125" scaleX="1" scaleY="1"/>
+		<e:Button id="fish_btn_close" x="878" y="186" skinName="FishCloseButtonSkin" scaleX="1" scaleY="1" visible="false"/>
+		<e:Button id="fish_alert_cancel" label="Button" x="662.18" y="455" skinName="FishCancelButtonSkin" scaleX="1" scaleY="1"/>
+		<e:Button id="fish_alert_ok" label="Button" x="439.18" y="455" skinName="FishOKButtonSkin" scaleX="1" scaleY="1"/>
+		<e:Button id="fish_alert_ok1" label="Button" y="455" skinName="FishOKButtonSkin" scaleX="1" scaleY="1" horizontalCenter="0.5"/>
+		<e:Image y="201" source="tishi" horizontalCenter="0" x="58" scaleX="1" scaleY="1"/>
+	</e:Group>
+</e:Skin>

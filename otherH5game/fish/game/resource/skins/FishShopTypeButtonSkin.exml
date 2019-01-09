@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FishShopTypeButtonSkin" states="up,down,disabled,upAndSelected,downAndSelected,disabledAndSelected" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width.downAndSelected="149" width.upAndSelected="149" width.disabledAndSelected="149">
+    <e:Image source.downAndSelected="fish_shop_btnY" source.disabled="fish_shop_btnB" source.down="fish_shop_btnB" source.upAndSelected="fish_shop_btnY" source.disabledAndSelected="fish_shop_btnY" source="fish_shop_btnB" width="142" height="52" width.upAndSelected="149" width.downAndSelected="149" width.disabledAndSelected="149"/>
+	<e:Label id="fish_shoptype_label" text="钻石" x="3" size="24" border="false" stroke="2" borderColor="0xd61515" strokeColor="0x4f55b2" anchorOffsetX="0" width="137" verticalAlign="middle" textAlign="center" strokeColor.down="0xcc3300" strokeColor.upAndSelected="0xcc3300" strokeColor.downAndSelected="0xcc3300" strokeColor.disabledAndSelected="0xcc3300" verticalCenter="0"/>
+</e:Skin>

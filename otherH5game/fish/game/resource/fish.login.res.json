@@ -1,0 +1,16 @@
+{
+	"groups": [
+		{
+			"name": "fish_login",
+			"keys": "fish_login_json"
+		}
+	],
+	"resources": [
+		{
+			"name": "fish_login_json",
+			"type": "sheet",
+			"url": "assets/login/fish_login.json",
+			"subkeys": "fish_wd_login,fish_wd_name,fish_wd_wechat"
+		}
+	]
+}

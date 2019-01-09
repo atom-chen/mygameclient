@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FishAutoFireButtonSkin" states="normal,auto" currentState="normal" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="68" height="68">
+	<e:Image includeIn="normal,auto" source="fire_bg"/>
+	<e:Image includeIn="auto" source="fire_stop"/>
+	<e:Image includeIn="normal" source="fire_start"/>
+</e:Skin>

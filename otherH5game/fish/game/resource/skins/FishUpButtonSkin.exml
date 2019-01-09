@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FishUpButtonSkin" states="up,down,disabled,upAndSelected,downAndSelected,disabledAndSelected" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="90" height="90">
+    <e:Image source="paolv" rotation="90" horizontalCenter="0" verticalCenter="0"/>
+    <e:Image source.downAndSelected="jia" source="jia" source.disabled="jia" source.down="jia" source.upAndSelected="jia" source.disabledAndSelected="jia" horizontalCenter="-4.5" verticalCenter="6.5"/>
+</e:Skin>

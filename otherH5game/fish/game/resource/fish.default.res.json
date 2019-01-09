@@ -1,0 +1,301 @@
+{
+	"groups": [
+		{
+			"keys": "langFish,fish0_7_json,fish0_7_png,fish12_14_json,fish12_14_png,fish15_json,fish15_png,fish16_json,fish16_png,net_json,net_png,fish_font_1_fnt,fish_font_1_png,fish_font_2_fnt,fish_font_2_png,fish_font_3_fnt,fish_font_3_png,fish_user_proto,fish_game_proto,fish_coin_json,fish_coin_png,fish_json,shop_json,gun_json,gun_png,fish17_21_json,fish17_21_png,fish_font_4_fnt,fish_font_4_png,catch0_mp3,catch7_mp3,catch8_mp3,catch9_mp3,catch10_mp3,catch11_mp3,catch12_mp3,catch13_mp3,catch14_mp3,catch15_mp3,catch16_mp3,catch17_mp3,catch18_mp3,catch19_mp3,catch21_mp3,catch20_mp3,catch22_mp3,huangong_mp3,scene0_mp3,shejiang_mp3,loading_png,fish8_11_json,fish8_11_png,caustic_json,caustic_png,fish_font_5_fnt,fish_font_5_png,fish_ui_json",
+			"name": "fish_preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/fish/caustic.json",
+			"type": "json",
+			"name": "caustic_json"
+		},
+		{
+			"url": "assets/fish/caustic.png",
+			"type": "image",
+			"name": "caustic_png"
+		},
+		{
+			"url": "assets/fish/fish0_7.json",
+			"type": "json",
+			"name": "fish0_7_json"
+		},
+		{
+			"url": "assets/fish/fish0_7.png",
+			"type": "image",
+			"name": "fish0_7_png"
+		},
+		{
+			"url": "assets/fish/fish12_14.json",
+			"type": "json",
+			"name": "fish12_14_json"
+		},
+		{
+			"url": "assets/fish/fish12_14.png",
+			"type": "image",
+			"name": "fish12_14_png"
+		},
+		{
+			"url": "assets/fish/fish15.json",
+			"type": "json",
+			"name": "fish15_json"
+		},
+		{
+			"url": "assets/fish/fish15.png",
+			"type": "image",
+			"name": "fish15_png"
+		},
+		{
+			"url": "assets/fish/fish16.json",
+			"type": "json",
+			"name": "fish16_json"
+		},
+		{
+			"url": "assets/fish/fish16.png",
+			"type": "image",
+			"name": "fish16_png"
+		},
+		{
+			"url": "assets/fish/net.json",
+			"type": "json",
+			"name": "net_json"
+		},
+		{
+			"url": "assets/fish/net.png",
+			"type": "image",
+			"name": "net_png"
+		},
+		{
+			"url": "assets/fonts/fish_font_1.fnt",
+			"type": "font",
+			"name": "fish_font_1_fnt"
+		},
+		{
+			"url": "assets/fonts/fish_font_1.png",
+			"type": "image",
+			"name": "fish_font_1_png"
+		},
+		{
+			"url": "assets/fonts/fish_font_2.fnt",
+			"type": "font",
+			"name": "fish_font_2_fnt"
+		},
+		{
+			"url": "assets/fonts/fish_font_2.png",
+			"type": "image",
+			"name": "fish_font_2_png"
+		},
+		{
+			"url": "assets/fonts/fish_font_3.fnt",
+			"type": "font",
+			"name": "fish_font_3_fnt"
+		},
+		{
+			"url": "assets/fonts/fish_font_3.png",
+			"type": "image",
+			"name": "fish_font_3_png"
+		},
+		{
+			"url": "assets/fish/fish_bg.jpg",
+			"type": "image",
+			"name": "fish_bg"
+		},
+		{
+			"url": "proto/fishgame.proto",
+			"type": "text",
+			"name": "fish_game_proto"
+		},
+		{
+			"url": "proto/fishuser.proto",
+			"type": "text",
+			"name": "fish_user_proto"
+		},
+		{
+			"url": "assets/fish/coin.json",
+			"type": "json",
+			"name": "fish_coin_json"
+		},
+		{
+			"url": "assets/fish/coin.png",
+			"type": "image",
+			"name": "fish_coin_png"
+		},
+		{
+			"url": "config/fish.json",
+			"type": "json",
+			"name": "fish_json"
+		},
+		{
+			"url": "config/shop.json",
+			"type": "json",
+			"name": "shop_json"
+		},
+		{
+			"url": "assets/fish/gun.json",
+			"type": "json",
+			"name": "gun_json"
+		},
+		{
+			"url": "assets/fish/gun.png",
+			"type": "image",
+			"name": "gun_png"
+		},
+		{
+			"url": "assets/fish/fish17_21.json",
+			"type": "json",
+			"name": "fish17_21_json"
+		},
+		{
+			"url": "assets/fish/fish17_21.png",
+			"type": "image",
+			"name": "fish17_21_png"
+		},
+		{
+			"url": "assets/fonts/fish_font_4.fnt",
+			"type": "font",
+			"name": "fish_font_4_fnt"
+		},
+		{
+			"url": "assets/fonts/fish_font_4.png",
+			"type": "image",
+			"name": "fish_font_4_png"
+		},
+		{
+			"url": "config/langFish.json",
+			"type": "json",
+			"name": "langFish"
+		},
+		{
+			"url": "assets/sound/catch0.mp3",
+			"type": "sound",
+			"name": "catch0_mp3"
+		},
+		{
+			"url": "assets/sound/catch7.mp3",
+			"type": "sound",
+			"name": "catch7_mp3"
+		},
+		{
+			"url": "assets/sound/catch8.mp3",
+			"type": "sound",
+			"name": "catch8_mp3"
+		},
+		{
+			"url": "assets/sound/catch9.mp3",
+			"type": "sound",
+			"name": "catch9_mp3"
+		},
+		{
+			"url": "assets/sound/catch10.mp3",
+			"type": "sound",
+			"name": "catch10_mp3"
+		},
+		{
+			"url": "assets/sound/catch11.mp3",
+			"type": "sound",
+			"name": "catch11_mp3"
+		},
+		{
+			"url": "assets/sound/catch12.mp3",
+			"type": "sound",
+			"name": "catch12_mp3"
+		},
+		{
+			"url": "assets/sound/catch13.mp3",
+			"type": "sound",
+			"name": "catch13_mp3"
+		},
+		{
+			"url": "assets/sound/catch14.mp3",
+			"type": "sound",
+			"name": "catch14_mp3"
+		},
+		{
+			"url": "assets/sound/catch15.mp3",
+			"type": "sound",
+			"name": "catch15_mp3"
+		},
+		{
+			"url": "assets/sound/catch16.mp3",
+			"type": "sound",
+			"name": "catch16_mp3"
+		},
+		{
+			"url": "assets/sound/catch17.mp3",
+			"type": "sound",
+			"name": "catch17_mp3"
+		},
+		{
+			"url": "assets/sound/catch18.mp3",
+			"type": "sound",
+			"name": "catch18_mp3"
+		},
+		{
+			"url": "assets/sound/catch19.mp3",
+			"type": "sound",
+			"name": "catch19_mp3"
+		},
+		{
+			"url": "assets/sound/catch21.mp3",
+			"type": "sound",
+			"name": "catch21_mp3"
+		},
+		{
+			"url": "assets/sound/catch20.mp3",
+			"type": "sound",
+			"name": "catch20_mp3"
+		},
+		{
+			"url": "assets/sound/catch22.mp3",
+			"type": "sound",
+			"name": "catch22_mp3"
+		},
+		{
+			"url": "assets/sound/huangong.mp3",
+			"type": "sound",
+			"name": "huangong_mp3"
+		},
+		{
+			"url": "assets/sound/scene0.mp3",
+			"type": "sound",
+			"name": "scene0_mp3"
+		},
+		{
+			"url": "assets/sound/shejiang.mp3",
+			"type": "sound",
+			"name": "shejiang_mp3"
+		},
+		{
+			"url": "assets/loading/loading.png",
+			"type": "image",
+			"name": "loading_png"
+		},
+		{
+			"url": "assets/fish/fish8_11.json",
+			"type": "json",
+			"name": "fish8_11_json"
+		},
+		{
+			"url": "assets/fish/fish8_11.png",
+			"type": "image",
+			"name": "fish8_11_png"
+		},
+		{
+			"url": "assets/fonts/fish_font_5.fnt",
+			"type": "font",
+			"name": "fish_font_5_fnt"
+		},
+		{
+			"url": "assets/fonts/fish_font_5.png",
+			"type": "image",
+			"name": "fish_font_5_png"
+		},
+		{
+			"url": "assets/fish/fish_ui.json",
+			"type": "sheet",
+			"name": "fish_ui_json",
+			"subkeys": "User_touxiang,btn_hz_n,btn_hz_p,btn_jineng_01,btn_jineng_02,btn_jineng_03,btn_shop_01,btn_shop_02,btn_shop_03,btn_tuichu_01,btn_tuichu_02,btn_tuichu_03,btn_yinoff_01,btn_yinoff_02,btn_yinoff_03,btn_yinon_01,btn_yinon_02,btn_yinon_03,btn_yulei_01,btn_yulei_02,btn_yulei_03,cjf,datanchuang,dengdai,dingwei,expect,fire_bg,fire_start,fire_stop,fish__lable_bg,fish__lable_jqdh,fish__lable_ylq,fish_btn_gray,fish_btn_purple,fish_btn_yellow,fish_com_red,fish_fonts_lingqu,fish_fonts_lingqu01,fish_fonts_queding,fish_fonts_quxiao,fish_gold,fish_gold_fx,fish_hd_bdsjh,fish_hd_fgx,fish_hd_huikuang,fish_hd_lvkuang,fish_hd_mrqd,fish_hd_qdbg,fish_hd_srk,fish_hongbao,fish_ico_guang,fish_ico_hongbao,fish_ico_huodong,fish_jiangquan,fish_jiasong_bg,fish_shop_110w,fish_shop_1200,fish_shop_20,fish_shop_24,fish_shop_50w,fish_shop_550,fish_shop_btnB,fish_shop_btnY,fish_shop_btn_buy,fish_shop_czk,fish_shop_gold_1,fish_shop_gold_2,fish_shop_golds,fish_shop_hongbao,fish_shop_jd,fish_shop_jq,fish_shop_jsbg,fish_shop_kuang,fish_shop_lab_bg,fish_shop_more10,fish_shop_shu10,fish_shop_tixing,fish_shop_zuan,fish_shop_zuan1,fish_title_bg,fish_title_hd,fish_title_shop,fish_touxiang,fish_user_bg,fish_user_xinxi,fx_01,fx_02,fx_03,gdjq,gjf,guanbi,hongbao_fly,icn_cjf,icn_gjf,icn_p,icn_zjf,ico_gold,ico_zuanshi,jb_bg,jia,jian,jinkuang,kinds,lankuang,paodi,paohong,paolv,paozhong,tishi,title_xzfj,wang,xiaotanchuang,xuanzhuan,zheli,zidan,zjf"
+		}
+	]
+}

@@ -1,0 +1,13 @@
+{"file":"fish_font_3.png","frames":{
+"-":{"x":88,"y":83,"w":28,"h":14,"offX":0,"offY":13,"sourceW":28,"sourceH":40},
+"+":{"x":58,"y":84,"w":28,"h":32,"offX":0,"offY":4,"sourceW":28,"sourceH":40},
+"0":{"x":1,"y":1,"w":27,"h":40,"offX":1,"offY":0,"sourceW":28,"sourceH":40},
+"1":{"x":86,"y":42,"w":16,"h":39,"offX":5,"offY":0,"sourceW":28,"sourceH":40},
+"2":{"x":87,"y":1,"w":25,"h":39,"offX":2,"offY":0,"sourceW":28,"sourceH":40},
+"3":{"x":30,"y":42,"w":26,"h":40,"offX":1,"offY":0,"sourceW":28,"sourceH":40},
+"4":{"x":30,"y":1,"w":27,"h":39,"offX":1,"offY":0,"sourceW":28,"sourceH":40},
+"5":{"x":59,"y":1,"w":26,"h":39,"offX":1,"offY":0,"sourceW":28,"sourceH":40},
+"6":{"x":1,"y":43,"w":27,"h":40,"offX":1,"offY":0,"sourceW":28,"sourceH":40},
+"7":{"x":1,"y":85,"w":27,"h":39,"offX":0,"offY":0,"sourceW":28,"sourceH":40},
+"8":{"x":58,"y":42,"w":26,"h":40,"offX":1,"offY":0,"sourceW":28,"sourceH":40},
+"9":{"x":30,"y":84,"w":26,"h":40,"offX":1,"offY":0,"sourceW":28,"sourceH":40}}}

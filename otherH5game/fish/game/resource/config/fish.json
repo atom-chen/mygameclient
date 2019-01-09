@@ -1,0 +1,23 @@
+[
+	{ "typeid": 0, "name": "小黄鱼", "multiple": 2 },
+	{ "typeid": 1, "name": "小草鱼", "multiple": 2 },
+	{ "typeid": 2, "name": "热带鱼", "multiple": 3 },
+	{ "typeid": 3, "name": "小眼泡鱼", "multiple": 4 },
+	{ "typeid": 4, "name": "扁嘴鱼", "multiple": 5 },
+	{ "typeid": 5, "name": "小丑鱼", "multiple": 6 },
+	{ "typeid": 6, "name": "刺猬鱼", "multiple": 7 },
+	{ "typeid": 7, "name": "石头鱼", "multiple": 8 },
+	{ "typeid": 8, "name": "灯笼鱼", "multiple": 9 },
+	{ "typeid": 9, "name": "燕尾鱼", "multiple": 12 },
+	{ "typeid": 10, "name": "乌龟", "multiple": 10 },
+	{ "typeid": 11, "name": "箭鱼", "multiple": 30 },
+	{ "typeid": 12, "name": "公主鱼", "multiple": 18 },
+	{ "typeid": 13, "name": "蝴蝶鱼", "multiple": 40 },
+	{ "typeid": 14, "name": "蝙蝠鱼", "multiple": 25 },
+	{ "typeid": 15, "name": "银色双头鲸", "multiple": 130 },
+	{ "typeid": 16, "name": "金色双头鲸", "multiple": 150 },
+	{ "typeid": 17, "name": "金龙", "multiple": 250 },
+	{ "typeid": 18, "name": "金鲨", "multiple": 200 },
+	{ "typeid": 19, "name": "金色鲸", "multiple": 100 },
+	{ "typeid": 20, "name": "虎头鱼", "multiple": 20 }
+]

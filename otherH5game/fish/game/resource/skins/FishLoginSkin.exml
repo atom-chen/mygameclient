@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FishLoginSkin" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="fish_login_img_bg" source="fish_wd_login" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image id="fish_login_img_logo" source="fish_wd_name" horizontalCenter="0" verticalCenter="-86"/>
+	<e:Button id="fish_login_btn_wx" label="Button" skinName="FishWxLoginButtonSkin" horizontalCenter="0" bottom="86"/>
+</e:Skin>

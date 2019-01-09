@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FishActivityButtonSkin" states="up,down,disabled,upAndSelected,downAndSelected,disabledAndSelected" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="153" height="153" source="fish_ico_guang"/>
+    <e:Image source.downAndSelected="fish_ico_huodong" source.disabled="fish_ico_huodong" source.down="fish_ico_huodong" source.upAndSelected="fish_ico_huodong" source.disabledAndSelected="fish_ico_huodong" source="fish_ico_huodong" width="131" height="89" fillMode="clip" horizontalCenter="0" verticalCenter="0"/>
+</e:Skin>

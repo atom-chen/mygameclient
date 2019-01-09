@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FishTypeItemSkin" width="130" height="151" currentState="small" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="small,big" >
+	<e:Image source="lankuang" source.big="jinkuang"/>
+	<e:Label id="fish_type_item_name" text="鱼名称" includeIn="small,big" x="8.2" y="7" size="20" anchorOffsetX="0" width="113.6" textAlign="center"/>
+	<e:BitmapLabel id="fish_type_item_multi" width="88.9" height="35.05" includeIn="small,big" x="34.1" y="111.15" anchorOffsetX="0" anchorOffsetY="0" text="300倍" font="fish_font_1_fnt" width.big="85.8" x.big="37.2" y.small="115.15" y.big="116.15"/>
+	<e:Label id="fish_type_item_specific" text="特殊奖励" includeIn="big" x="6" y="121" size="20" height="24" anchorOffsetX="0" width="117" verticalAlign="middle" textAlign="center" textColor="0xffffff"/>
+</e:Skin>

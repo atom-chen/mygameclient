@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FishInputSkin" minHeight="40" minWidth="300" states="normal,disabled,normalWithPrompt,disabledWithPrompt" currentState="normalWithPrompt" xmlns:e="http://ns.egret.com/eui">
+    <e:Image width="100%" height="100%" source="fish_hd_srk" scale9Grid="4,15,4,4"/>
+    <e:EditableText id="textDisplay" verticalCenter="0" left="10" right="10"
+                    textColor="0xffffff" textColor.disabled="0x222222" width="100%" height="24" size="22" />
+    <e:Label id="promptDisplay" verticalCenter="0" left="10" right="10" text=""
+                    textColor="0xa9a9a9" width="100%" height="24" size="22" touchEnabled="false" includeIn="normalWithPrompt,disabledWithPrompt"/>
+</e:Skin>

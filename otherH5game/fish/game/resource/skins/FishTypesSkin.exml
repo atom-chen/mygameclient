@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FishTypesSkin" width="620" height="423" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image x="0" y="0" source="datanchuang"/>
+	<e:Image x="208" y="10" source="kinds"/>
+	<e:Button id="fish_btn_close" label="Button" x="563" y="0" skinName="FishCloseButtonSkin"/>
+	<e:Scroller width="589" height="330" x="15" y="78" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Group id="fish_group_types" anchorOffsetX="0" width="588" anchorOffsetY="0" height="329" x="0" y="12"/>
+	</e:Scroller>
+	<e:Label text="* 提高炮台倍数会有更大概率获得奖杯哦！" x="17" y="56" size="18"/>
+</e:Skin>

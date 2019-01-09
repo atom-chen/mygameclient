@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FishPathExportSkin" width="620" height="423" currentState="export" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="export,import" >
+	<e:Image x="0" y="0" source="datanchuang"/>
+	<e:Button id="fish_btn_close" label="Button" x="551" y="10" skinName="FishCloseButtonSkin"/>
+	<e:EditableText id="fish_path_export_script" width="596" height="234" text="导出的配置" x="12" y="120" anchorOffsetX="0" anchorOffsetY="0" size="20" border="true" multiline="true" left="12"/>
+	<e:Label id="fish_path_export_label" text="请将下方的路径配置，复制并保存成json文件" x="16" y="67" anchorOffsetX="0" width="587" verticalAlign="middle" textAlign="center" size="20" anchorOffsetY="0" height="41" text.import="已自动将剪贴板中的路径放置到下方，点击导入即可"/>
+	<e:Button id="fish_path_export_copy" label="Button" x="259" y="371" skinName="FishBuyButtonSkin"/>
+	<e:Label text="复制" x="289.5" y="378.5" textColor="0x1e0a0a" size="20" touchEnabled="false" text.import="导入" verticalAlign.import="middle" textAlign.import="center" x.import="289.5"/>
+</e:Skin>

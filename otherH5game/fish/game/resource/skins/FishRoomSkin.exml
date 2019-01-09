@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FishRoomSkin" width="780" height="480" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image x="0" width="100%" source="datanchuang" height="100%" y="0"/>
+	<e:Image fillMode="clip" anchorOffsetX="0" horizontalCenter="0" top="13" source="title_xzfj"/>
+	<e:Button id="fish_btn_close" label="Button" x="706" y="7" skinName="FishCloseButtonSkin"/>
+	<e:Group id="fish_room_1" horizontalCenter="-250" verticalCenter="22">
+		<e:Button id="fish_btn_room1" label="" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="icn_cjf"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image id="fish_room_current_flag1" source="icn_p" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" touchEnabled="false"/>
+		<e:Image source="cjf" horizontalCenter="0" bottom="66" touchEnabled="false"/>
+		<e:Image source="jb_bg" horizontalCenter="0" bottom="32" touchEnabled="false"/>
+		<e:Label id="limitLabel1" text="1-20万" size="24" horizontalCenter="0.5" bottom="35" touchEnabled="false"/>
+	</e:Group>
+	<e:Group id="fish_room_2" verticalCenter="22" horizontalCenter="0">
+		<e:Button id="fish_btn_room2" label="" horizontalCenter="0" verticalCenter="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="icn_zjf"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image id="fish_room_current_flag2" source="icn_p" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" touchEnabled="false" visible="false"/>
+		<e:Image horizontalCenter="0" bottom="66" source="zjf" touchEnabled="false"/>
+		<e:Image horizontalCenter="0" bottom="111" touchEnabled="false" source="gdjq"/>
+		<e:Image source="jb_bg" horizontalCenter="0" bottom="32" touchEnabled="false"/>
+		<e:Label id="limitLabel2" text="10万以上" size="24" horizontalCenter="0.5" bottom="35" touchEnabled="false"/>
+	</e:Group>
+	<e:Group id="fish_room_3" verticalCenter="22" horizontalCenter="250">
+		<e:Button id="fish_btn_room3" label="" horizontalCenter="0" verticalCenter="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="icn_gjf"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image id="fish_room_current_flag3" source="icn_p" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" touchEnabled="false" visible="false"/>
+		<e:Image horizontalCenter="0" bottom="66" touchEnabled="false" source="gjf"/>
+		<e:Image horizontalCenter="0" bottom="111" touchEnabled="false" source="gdjq"/>
+		<e:Image source="jb_bg" horizontalCenter="0" bottom="32" touchEnabled="false"/>
+		<e:Label id="limitLabel3" text="30万以上" size="24" horizontalCenter="0.5" bottom="35" touchEnabled="false"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FishWxLoginButtonSkin" states="up,down,disabled,upAndSelected,downAndSelected,disabledAndSelected" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Image source.downAndSelected="fish_wd_wechat" source.disabled="fish_wd_wechat" source.down="fish_wd_wechat" source.upAndSelected="fish_wd_wechat" source.disabledAndSelected="fish_wd_wechat" source="fish_wd_wechat" width="424" height="120"/>
+</e:Skin>

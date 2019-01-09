@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FishUserInfoSkin" width="192" height="114" currentState="wait" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="wait,normal,other"  width.normal="192" height.normal="114" width.other="192" height.other="90">
+	<e:Image x="0" y="0" includeIn="normal,other" visible="true" source="fish_user_bg" scale9Grid.other="4,4,4,4" anchorOffsetY.other="0" height.other="90"/>
+	<e:Image width="46" height="46" includeIn="normal,other" x="8" y="7" source="User_touxiang"/>
+	<e:Image id="fish_img_avatar" width="46" height="46" includeIn="normal,other" x="8" y="7" source=""/>
+	<e:Label id="fish_label_nickname" text="昵称" includeIn="normal,other" x="59" y="8.25" size="20" textAlign="left" textColor="0x27e3e8" anchorOffsetX="0" width="126.5" anchorOffsetY="0" height="22.75" verticalAlign="middle" multiline="false" wordWrap="false" y.normal="18" x.normal="60" x.other="60" y.other="18"/>
+	<e:Label id="fish_label_id" text="id" includeIn="normal,other" x="59" y="31.25" size="16" textAlign="left" textColor="0x27e3e8" anchorOffsetX="0" width="126.5" anchorOffsetY="0" height="21.75" verticalAlign="middle" multiline="false" wordWrap="false" visible.normal="false" visible.other="false"/>
+	<e:Image width="178" height="26" includeIn="normal,other" x="7" y="57" source="fish_user_xinxi" scale9Grid="4,4,4,4" anchorOffsetX="0"/>
+	<e:Image width="86" height="26" includeIn="normal" x="7" y="85" source="fish_user_xinxi" scale9Grid="4,4,4,4" anchorOffsetX="0"/>
+	<e:Image width="22" height="22" includeIn="normal,other" x="9.5" y="60" source="ico_gold"/>
+	<e:Image includeIn="normal" x="9.5" y="89.5" source="ico_zuanshi"/>
+	<e:Label id="fish_label_gold" text="888888" includeIn="normal,other" x="35" y="62" size="15" anchorOffsetX="0" width="148.25" anchorOffsetY="0" height="16.25" verticalAlign="middle" textColor="0x84abee"/>
+	<e:Label id="fish_label_diamond" text="0" includeIn="normal" x="35.5" y="90.38" size="15" anchorOffsetX="0" width="53.25" anchorOffsetY="0" height="16.25" verticalAlign="middle" textColor="0x84ABEE" textAlign="left"/>
+	<e:Image width="87.5" height="26" includeIn="normal" x="98" y="85" source="fish_user_xinxi" scale9Grid="4,4,4,4" anchorOffsetX="0"/>
+	<e:Image includeIn="normal" x="99.25" y="86.01" source="fish_ico_hongbao"/>
+	<e:Label id="fish_label_redcoin" text="0" includeIn="normal" x="126" y="90.38" size="15" anchorOffsetX="0" width="56.25" anchorOffsetY="0" height="16.25" verticalAlign="middle" textColor="0x84ABEE" textAlign="left"/>
+</e:Skin>

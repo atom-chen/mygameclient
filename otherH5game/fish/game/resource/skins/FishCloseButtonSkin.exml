@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FishCloseButtonSkin" states="up,down,disabled,upAndSelected,downAndSelected,disabledAndSelected" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Image source.downAndSelected="guanbi" source.disabled="guanbi" source.down="guanbi" source.upAndSelected="guanbi" source.disabledAndSelected="guanbi" source="guanbi" width="57" height="57"/>
+</e:Skin>

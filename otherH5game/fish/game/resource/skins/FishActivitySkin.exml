@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FishActivitySkin" width="780" height="480" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image x="0" width="100%" source="datanchuang" bottom="0"/>
+	<e:Image fillMode="clip" anchorOffsetX="0" horizontalCenter="0" top="0" source="fish_title_bg"/>
+	<e:Image width="144" height="90" x="423" y="19" source="fish_title_hd"/>
+	<e:Button id="fish_btn_close" label="Button" x="706" y="55" skinName="FishCloseButtonSkin"/>
+	<e:Rect width="162.5" height="364" x="10.5" y="108" anchorOffsetX="0" anchorOffsetY="0" ellipseWidth="20" ellipseHeight="20" fillColor="0x5a5fa4" fillAlpha="0.5"/>
+	<e:Button id="fish_activity_type_btn_bind" label="Button" x="20" y="183" skinName="FishShopTypeButtonSkin"/>
+	<e:Button id="fish_activity_type_btn_sign" label="Button" x="20" y="122" skinName="FishShopTypeButtonSkin"/>
+	<e:Image x="15.5" y="436" source="fish_shop_tixing"/>
+	<e:Panel id="fish_activity_panel_bind" width="575" height="340.5" x="184" y="122" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image width="441" height="97" source="fish_hd_bdsjh" horizontalCenter="0" top="16"/>
+		<e:Button id="fish_activity_btn_captcha" label="Button" x="300" y="200" skinName="FishCaptchaButtonSkin" anchorOffsetX="0" width="136"/>
+		<e:Image width="448" height="2" y="136" source="fish_hd_fgx" horizontalCenter="0"/>
+		<ns1:FishInput id="fish_activity_input_phone" width="300" height="40" x="138" y="150" skinName="FishInputSkin"/>
+		<ns1:FishInput id="fish_activity_input_captcha" width="153" height="40" x="138" y="200" skinName="FishInputSkin"/>
+		<e:Button id="fish_activity_btn_bind" label="Button" x="195" y="269" skinName="FishOKButtonSkin"/>
+	</e:Panel>
+	<e:Panel id="fish_activity_panel_sign" width="575" height="340.5" x="184" y="122" visible="false">
+		<e:Image width="448" height="2" source="fish_hd_fgx" horizontalCenter="0.5" verticalCenter="-33.25"/>
+		<e:Button id="fish_sign_btn_get" label="Button" horizontalCenter="0" bottom="5.5" skinName="FishGetButtonSkin"/>
+		<e:Image width="476" height="145" source="fish_hd_mrqd" horizontalCenter="0.5" top="-7"/>
+		<ns1:FishSignItem id="fish_sign_item_1" width="72" height="112" x="20" y="146" skinName="FishSignItemSkin"/>
+		<ns1:FishSignItem id="fish_sign_item_2" width="72" height="112" x="96.83333333333333" y="146" skinName="FishSignItemSkin"/>
+		<ns1:FishSignItem id="fish_sign_item_3" width="72" height="112" x="174.66666666666666" y="146" skinName="FishSignItemSkin"/>
+		<ns1:FishSignItem id="fish_sign_item_4" width="72" height="112" x="251.5" y="146" skinName="FishSignItemSkin"/>
+		<ns1:FishSignItem id="fish_sign_item_5" width="72" height="112" x="329.3333333333333" y="146" skinName="FishSignItemSkin"/>
+		<ns1:FishSignItem id="fish_sign_item_6" width="72" height="112" x="406.16666666666663" y="146" skinName="FishSignItemSkin"/>
+		<ns1:FishSignItem id="fish_sign_item_7" width="72" height="112" x="484" y="146" skinName="FishSignItemSkin"/>
+	</e:Panel>
+</e:Skin>

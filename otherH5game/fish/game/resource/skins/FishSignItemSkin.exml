@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FishSignItemSkin" width="72" height="112" currentState="unsigned" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="unsigned,signed" >
+	<e:Image width="72" height="112" source="fish_hd_qdbg"/>
+	<e:Label id="fish_sign_item_title" text="第一天" size="18" textAlign="center" verticalAlign="middle" horizontalCenter="0" top="0" anchorOffsetX="0" width="70" anchorOffsetY="0" height="27.6"/>
+	<e:Image width="90" height="59" source="fish_shop_gold_2" horizontalCenter="0" fillMode="clip" scaleX="0.7" scaleY="0.7" verticalCenter="0"/>
+	<e:BitmapLabel id="fish_sign_item_amount" width="113.6" height="44" x="8" y="85" text="9999" font="fish_font_2_fnt" anchorOffsetX="0" scaleX="0.5" scaleY="0.5" anchorOffsetY="0"/>
+	<e:Image width="68" height="71" includeIn="signed" x="-1.75" y="-5.25" source="fish__lable_bg" scaleX="1" scaleY="1"/>
+	<e:Image width="46" height="46" includeIn="signed" x="0" y="0" source="fish__lable_ylq"/>
+</e:Skin>

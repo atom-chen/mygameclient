@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FishCaptchaButtonSkin" states="up,down,disabled,upAndSelected,downAndSelected,disabledAndSelected" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Image source.downAndSelected="fish_hd_lvkuang" source.disabled="fish_hd_huikuang" source.down="fish_hd_lvkuang" source.upAndSelected="fish_hd_lvkuang" source.disabledAndSelected="fish_hd_huikuang" source="fish_hd_lvkuang" width="100%" height="100%" scale9Grid="4,10,2,20"/>
+	<e:Label id="fish_btn_captcha_title" text="获取验证码" size="20" horizontalCenter="0" verticalCenter="0" textColor="0x44690f" textColor.disabled="0xa3a5a0" textColor.disabledAndSelected="0x8a8c88" text.down="获取验证码" text.downAndSelected="重新获取"/>
+</e:Skin>

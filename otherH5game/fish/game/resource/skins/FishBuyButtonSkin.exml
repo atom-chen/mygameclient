@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FishBuyButtonSkin" states="up,down,disabled,upAndSelected,downAndSelected,disabledAndSelected" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Image source.downAndSelected="fish_shop_btn_buy" source.disabled="fish_shop_btn_buy" source.down="fish_shop_btn_buy" source.upAndSelected="fish_shop_btn_buy" source.disabledAndSelected="fish_shop_btn_buy" source="fish_shop_btn_buy" width="102" height="35"/>
+</e:Skin>

@@ -1,0 +1,9 @@
+{
+	"resourcePlugin":{
+		"configs":[{
+			"configPath":"resource/fish.default.res.json",
+			"relativePath":"resource/"
+		}]
+	},
+	"theme":"resource/fish.default.thm.json"
+}

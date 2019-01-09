@@ -1,0 +1,25 @@
+[
+	{ "itemtype": 0, "itemid": 10006, "icon": "fish_shop_gold_1", "name": "折扣优惠", "type": 1, "price": "￥100元", "gift":10, "total": "110万" },
+	{ "itemtype": 0, "itemid": 10003, "icon": "fish_shop_gold_1", "name": "火爆热销", "type": 1, "price": "￥10元", "total": "10万" },
+	{ "itemtype": 0, "itemid": 10002, "icon": "fish_shop_gold_2", "name": "30000金豆", "type": 2, "price": "￥3元" },
+	{ "itemtype": 0, "itemid": 10001, "icon": "fish_shop_gold_2", "name": "10000金豆", "type": 2, "price": "￥1元" },
+	{ "itemtype": 0, "itemid": 24, "icon": "fish_shop_gold_2", "name": "       50000金豆", "type": 2, "price": "5", "exchange": true, "ticket": true },
+	{ "itemtype": 0, "itemid": 1, "icon": "fish_shop_gold_2", "name": "       5000金豆", "type": 2, "price": "0.5", "exchange": true, "ticket": true },
+
+	{ "itemtype": 1, "itemid": 10015, "icon": "fish_shop_zuan", "name": "折扣优惠", "type": 1, "price": "￥100元", "gift":20, "total": "1200钻" },
+	{ "itemtype": 1, "itemid": 10014, "icon": "fish_shop_zuan", "name": "火爆热销", "type": 1, "price": "￥50元", "gift":10, "total": "550钻" },
+	{ "itemtype": 1, "itemid": 10012, "icon": "fish_shop_zuan1", "name": "180钻石", "type": 2, "price": "￥18元" },
+	{ "itemtype": 1, "itemid": 10011, "icon": "fish_shop_zuan1", "name": "60钻石", "type": 2, "price": "￥6元" },
+	{ "itemtype": 1, "itemid": 9, "icon": "fish_shop_zuan1", "name": "     62钻石", "type": 2, "price": "5", "gift": 24, "exchange": true, "ticket": true },
+	{ "itemtype": 1, "itemid": 8, "icon": "fish_shop_zuan1", "name": "     20钻石", "type": 2, "price": "2", "exchange": true, "ticket": true },
+
+	{ "itemtype": 2, "itemid": 18, "icon": "fish_shop_czk", "name": "热门推荐", "type": 1, "price": "100", "total": "100元话费", "ticket": true },
+	{ "itemtype": 2, "itemid": 17, "icon": "fish_shop_czk", "name": "热门兑换", "type": 1, "price": "50", "total": "50元话费", "ticket": true },
+	{ "itemtype": 2, "itemid": 10, "icon": "fish_shop_czk", "name": "30元话费", "type": 2, "price": "30", "ticket": true },
+	{ "itemtype": 2, "itemid": 7, "icon": "fish_shop_czk", "name": "20元话费", "type": 2, "price": "20", "ticket": true },
+	{ "itemtype": 2, "itemid": 6, "icon": "fish_shop_czk", "name": "10元话费", "type": 2, "price": "10", "ticket": true },
+	{ "itemtype": 2, "itemid": 5, "icon": "fish_shop_czk", "name": "5元话费", "type": 2, "price": "5", "ticket": true },
+
+	{ "itemtype": 3, "itemid": 14, "icon": "fish_shop_jd", "name": "热门推荐", "type": 1, "price": "100", "total": "100元京东卡", "ticket": true },
+	{ "itemtype": 3, "itemid": 13, "icon": "fish_shop_jd", "name": "热门兑换", "type": 1, "price": "50", "total": "50元京东卡", "ticket": true }
+]

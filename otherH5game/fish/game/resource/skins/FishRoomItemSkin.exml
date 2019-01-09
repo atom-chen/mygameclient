@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FishRoomItemSkin" width="272" height="152" currentState="small" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="small,big" width.small="130">
+	<e:Image source="lankuang" source.small="lankuang" source.big="fish_shop_kuang"/>
+	<e:Image includeIn="big" x="-4.2" y="-0.8" source="fish_shop_lab_bg"/>
+	<e:Label id="fish_shop_item_name_big" text="火爆热销" includeIn="big" x="3.5" y="0" anchorOffsetX="0" width="120" verticalAlign="middle" textAlign="center" size="20" anchorOffsetY="0" height="24"/>
+	<e:Image id="fish_shop_item_icon_big" includeIn="big" source="fish_shop_gold_1" fillMode="clip" scaleX="1" scaleY="1" verticalCenter="9.5" left="20"/>
+	<e:Button id="fish_shop_item_buy_big" label="Button" includeIn="big" x="134.4" y="105.4" skinName="FishBuyButtonSkin"/>
+	<e:Label id="fish_shop_item_price_big" text="￥1000元" includeIn="big" x="142" y="107.9" anchorOffsetX="0" width="86.4" size="20" anchorOffsetY="0" height="28.4" verticalAlign="middle" textAlign="center" textColor="0x6d2626" bold="true" touchEnabled="false"/>
+	<e:BitmapLabel id="fish_shop_item_total_big" width="185.4" height="30" x="83.8" y="69" text="100元话费" font="fish_font_5_fnt" anchorOffsetX="0" anchorOffsetY="0" includeIn="big"/>
+	<e:Image id="fish_shop_item_ticket_big" x="140.5" y="102.5" includeIn="big" source="fish_shop_jq"/>
+	<e:Group id="fish_shop_item_big_top" width="272" height="152" includeIn="big" x="0" y="0" touchEnabled="true">
+	</e:Group>
+	<e:Label id="fish_shop_item_name_small" text="8888888金豆" includeIn="small" x="5.2" y="4.8" anchorOffsetX="0" width="118.8" anchorOffsetY="0" height="27.2" verticalAlign="middle" textAlign="center" size="20" multiline="false"/>
+	<e:Image id="fish_shop_item_icon_small" includeIn="small" source="fish_shop_gold_2" fillMode="clip" anchorOffsetX="45" anchorOffsetY="30" horizontalCenter="0" verticalCenter="-18.5"/>
+	<e:Button id="fish_shop_item_buy_small" label="Button" includeIn="small" x="14" y="108.4" skinName="FishBuyButtonSkin"/>
+	<e:Label id="fish_shop_item_price_small" text="￥888元" includeIn="small" x="21.6" y="110.9" anchorOffsetX="0" width="86" verticalAlign="middle" textAlign="center" textColor="0x750101" size="20" anchorOffsetY="0" height="28.8" touchEnabled="false"/>
+	<e:Image id="fish_shop_item_hot_flag" width="68" height="71" x="-2" y="-6" source.small="fish__lable_bg" width.small="68" height.small="71" y.small="-6" x.small="-2" includeIn="small" source="fish__lable_bg"/>
+	<e:Image id="fish_shop_item_hot_title" width="46" height="46" x="1" y="-1" includeIn="small" source="fish__lable_jqdh"/>
+	<e:Image id="fish_shop_item_ticket_small" x="19.5" y="105" source="fish_shop_jq" includeIn="small"/>
+	<e:Image id="fish_shop_item_gift" x="36" y="47" source="fish_shop_jsbg" x.small="79" y.small="33" x.big="99" y.big="28"/>
+	<e:Label id="fish_shop_item_giftlabel" text="加送\n0%" x="43" y="61" size="12" y.small="42" x.small="89" verticalAlign.small="middle" textAlign.small="center" x.big="108" y.big="37" verticalAlign="middle" textAlign="center"/>
+	<e:Group id="fish_shop_item_small_top" width="130" height="152" includeIn="small" touchEnabled="true">
+	</e:Group>
+</e:Skin>

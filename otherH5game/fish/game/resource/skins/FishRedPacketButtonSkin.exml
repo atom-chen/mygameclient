@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FishRedPacketButtonSkin" width="68" height="68" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="fire_bg" x="0" y="0"/>
+	<e:Image source="fish_hongbao" x="0" y="0"/>
+	<e:Group id="redGrp" x="41">
+		<e:Image x="0" y="0" source="fish_com_red" scaleX="1" scaleY="1"/>
+		<e:Label id="fish_redpacket" text="0" x="-4" anchorOffsetX="0" width="40" anchorOffsetY="0" size="18" verticalAlign="middle" textAlign="center" bold="true" y="3" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" textColor="0xffffff"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,51 @@
+{
+  "native": {
+    "path_ignore": []
+  },
+  "publish": {
+    "web": 0,
+    "native": 1,
+    "path": "bin-release"
+  },
+  "egret_version": "5.0.13",
+  "modules": [
+    {
+			"name": "egret"
+		},
+		{
+			"name": "eui"
+		},
+		{
+			"name": "res"
+		},
+		{
+			"name": "tween"
+		},
+		{
+			"name": "socket"
+		},
+		{
+			"name": "protobuf",
+			"path": "./../thirdlib/protobuf"
+		},
+		{
+			"name": "md5",
+			"path": "./../thirdlib/md5"
+		},
+		{
+			"name": "clipbord",
+			"path": "./../thirdlib/clipbord"
+		},
+		{
+			"name": "game"
+		},
+		{
+			"name": "physics",
+			"path": "./../thirdlib/physics"
+		},
+		{
+			"name": "greensock",
+			"path": "./../thirdlib/greensock"
+		}
+  ]
+}

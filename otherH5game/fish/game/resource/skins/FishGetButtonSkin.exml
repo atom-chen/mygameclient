@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FishGetButtonSkin" states="up,down,disabled,upAndSelected,downAndSelected,disabledAndSelected" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Image source.downAndSelected="fish_btn_yellow" source.disabled="fish_btn_gray" source.down="fish_btn_yellow" source.upAndSelected="fish_btn_yellow" source.disabledAndSelected="fish_btn_gray" source="fish_btn_yellow" width="187" height="66"/>
+	<e:Image width="60" height="30" source="fish_fonts_lingqu" source.disabled="fish_fonts_lingqu01" source.disabledAndSelected="fish_fonts_lingqu01" horizontalCenter="0.5" verticalCenter="-7"/>
+</e:Skin>

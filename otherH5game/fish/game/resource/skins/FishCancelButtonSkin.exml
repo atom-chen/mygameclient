@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FishCancelButtonSkin" states="up,down,disabled,upAndSelected,downAndSelected,disabledAndSelected" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Image source.downAndSelected="fish_btn_purple" source.disabled="fish_btn_purple" source.down="fish_btn_purple" source.upAndSelected="fish_btn_purple" source.disabledAndSelected="fish_btn_purple" source="fish_btn_purple" width="186" height="65"/>
+	<e:Image width="60" height="30" source="fish_fonts_quxiao" horizontalCenter="0" verticalCenter="-4.5"/>
+</e:Skin>

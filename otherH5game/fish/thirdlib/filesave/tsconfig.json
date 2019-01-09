@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "outFile": "bin/FileSave/FileSave.js",
+        "allowJs": true
+    },
+    "files": [
+		"src/FileSave.min.js"
+    ]
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>触玩捕鱼</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="true"/>
+    <meta name="screen-orientation" content="landscape"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+    <style>
+        html, body {
+            -ms-touch-action: none;
+            background: #000000;
+            /*background-image: url(https://client-h5buyu.hztangyou.com/cssbg.jpg);
+            background-size:100% 100%;*/
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+    </style>
+
+    <!--这个标签为通过egret提供的第三方库的方式生成的 javascript 文件。删除 modules_files 标签后，库文件加载列表将不会变化，请谨慎操作！-->
+    <!--modules_files_start-->
+	<script egret="lib" src="libs/modules/egret/egret.js"></script>
+	<script egret="lib" src="libs/modules/egret/egret.web.js"></script>
+	<script egret="lib" src="libs/modules/eui/eui.js"></script>
+	<script egret="lib" src="libs/modules/res/res.js"></script>
+	<script egret="lib" src="libs/modules/tween/tween.js"></script>
+	<script egret="lib" src="libs/modules/socket/socket.js"></script>
+	<script egret="lib" src="libs/modules/protobuf/protobuf.js"></script>
+	<script egret="lib" src="libs/modules/md5/md5.js"></script>
+	<script egret="lib" src="libs/modules/clipbord/clipbord.js"></script>
+	<script egret="lib" src="libs/modules/game/game.js"></script>
+	<script egret="lib" src="libs/modules/physics/physics.js"></script>
+	<script egret="lib" src="libs/modules/greensock/greensock.js"></script>
+	<!--modules_files_end-->
+
+    <!--这个标签为不通过egret提供的第三方库的方式使用的 javascript 文件，请将这些文件放在libs下，但不要放在modules下面。-->
+    
+
+    <!--这个标签会被替换为项目中所有的 javascript 文件。删除 game_files 标签后，项目文件加载列表将不会变化，请谨慎操作！-->
+    <!--game_files_start-->
+	<script egret="lib" src="bin-debug/base/FishUtils.js"></script>
+	<script egret="lib" src="bin-debug/base/FishSocket.js"></script>
+	<script egret="lib" src="bin-debug/base/FishUserInfoData.js"></script>
+	<script egret="lib" src="bin-debug/fish/FishBase.js"></script>
+	<script egret="lib" src="bin-debug/fish/FishPhysics.js"></script>
+	<script egret="lib" src="bin-debug/fish/FishCannon.js"></script>
+	<script egret="lib" src="bin-debug/base/FishProto.js"></script>
+	<script egret="lib" src="bin-debug/editor/FishEditorElement.js"></script>
+	<script egret="lib" src="bin-debug/editor/FishPathEditor.js"></script>
+	<script egret="lib" src="bin-debug/editor/FishPathItem.js"></script>
+	<script egret="lib" src="bin-debug/editor/FishShowItem.js"></script>
+	<script egret="lib" src="bin-debug/fish/FishActivity.js"></script>
+	<script egret="lib" src="bin-debug/fish/FishActor.js"></script>
+	<script egret="lib" src="bin-debug/fish/FishAlert.js"></script>
+	<script egret="lib" src="bin-debug/fish/FishAssetAdapter.js"></script>
+	<script egret="lib" src="bin-debug/FishMain.js"></script>
+	<script egret="lib" src="bin-debug/fish/FishBullet.js"></script>
+	<script egret="lib" src="bin-debug/fish/FishButtons.js"></script>
+	<script egret="lib" src="bin-debug/base/FishJsBridge.js"></script>
+	<script egret="lib" src="bin-debug/fish/FishCaustic.js"></script>
+	<script egret="lib" src="bin-debug/fish/FishCoin.js"></script>
+	<script egret="lib" src="bin-debug/fish/FishConfig.js"></script>
+	<script egret="lib" src="bin-debug/fish/FishEvent.js"></script>
+	<script egret="lib" src="bin-debug/fish/FishInput.js"></script>
+	<script egret="lib" src="bin-debug/fish/FishLoading.js"></script>
+	<script egret="lib" src="bin-debug/fish/FishLogin.js"></script>
+	<script egret="lib" src="bin-debug/fish/FishNet.js"></script>
+	<script egret="lib" src="bin-debug/fish/FishObjectPool.js"></script>
+	<script egret="lib" src="bin-debug/base/FishNativeBridge.js"></script>
+	<script egret="lib" src="bin-debug/fish/FishRoom.js"></script>
+	<script egret="lib" src="bin-debug/fish/FishScene.js"></script>
+	<script egret="lib" src="bin-debug/fish/FishServer.js"></script>
+	<script egret="lib" src="bin-debug/fish/FishShop.js"></script>
+	<script egret="lib" src="bin-debug/fish/FishSound.js"></script>
+	<script egret="lib" src="bin-debug/fish/FishThemeAdapter.js"></script>
+	<script egret="lib" src="bin-debug/fish/FishTypes.js"></script>
+	<script egret="lib" src="bin-debug/fish/FishUserInfo.js"></script>
+	<!--game_files_end-->
+</head>
+<body>
+
+    <div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
+        data-entry-class="FishMain"
+        data-orientation="landscape"
+        data-scale-mode="showAll"
+        data-frame-rate="60"
+        data-content-width="1280"
+        data-content-height="720"
+        data-show-paint-rect="false"
+        data-multi-fingered="2"
+        data-show-fps="false" data-show-log="false"
+        data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
+        <input id="fishCopyTex" type ="text" value="" style="visibility: hidden"/>
+        <input id="file-input" type="file" style="visibility: hidden" accept=".json"/>
+        <input id="file-save" href="" style="visibility: hidden"/>
+        <button id="fishCopyBtn" type="button" class="copyBtn" style="visibility: hidden" data-clipboard-action="copy" data-clipboard-target="#fishCopyTex"/>
+    </div>
+
+    <script>
+        /**
+         * {
+         * "renderMode":, //引擎渲染模式，"canvas" 或者 "webgl"
+         * "audioType": "" //使用的音频类型，0:默认，1:qq audio，2:web audio，3:audio
+         * "antialias": //WebGL模式下是否开启抗锯齿，true:开启，false:关闭，默认为false
+         * }
+         **/
+
+        //关闭窗口通知
+        window.onbeforeunload = function() {
+            window.platformInstance.jsCallTsFunc("beforeunload");
+        }
+        window.onload = function() {
+            window.fileinput = document.getElementById("file-input");
+            window.fileinput.onclick = function () {
+                this.value = null;
+            }
+        }
+
+        //读取文件
+        function readJsonFile(file, callback) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                var contents = e.target.result;
+                if (callback) callback(contents);
+            };
+            reader.readAsText(file);
+        }
+
+        //保存文件
+        function writeToFile(filename, text) {
+            var pom = document.createElement('a');
+            pom.setAttribute('href', 'data:text/json;charset=utf-8,' + encodeURIComponent(text));
+            pom.setAttribute('download', filename);
+            if (document.createEvent) {
+                var event = document.createEvent('MouseEvents');
+                event.initEvent('click', true, true);
+                pom.dispatchEvent(event);
+            }
+            else {
+                pom.click();
+            }
+        }
+
+        //js给ts调用的函数
+        function callJSFunction(msg, param, callback) {
+            switch(msg) {
+                case 'closewindow':
+                    window.close();
+                    break;
+                case 'settitle':
+                    document.title = param;
+                    break;
+                case 'getselectfilecontent':
+                    var file = window.fileinput.files[0];
+                    readJsonFile(file, callback);
+                    break;
+                case 'setstyle':
+                    var body = document.body;
+                    body.style.backgroundImage = "url(https://client-h5buyu.hztangyou.com/cssbg.jpg)";
+                    body.style.backgroundSize = "100% 100%";
+                    break;
+                case 'savejsonfile':
+                    writeToFile('path_x.json', param);
+                    break;
+                case 'reload':
+                    window.location.reload();
+                    break;
+            }
+            return '';
+        }
+
+        egret.runEgret({renderMode:"webgl", audioType:0});
+    </script>
+</body>
+</html>
