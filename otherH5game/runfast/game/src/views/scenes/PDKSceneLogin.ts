@@ -128,8 +128,9 @@ class PDKSceneLogin extends PDKalien.SceneBase {
                 break;
             case 'confirm':
                 //PDKalien.Dispatcher.dispatch(PDKEventNames.SHOW_WAITING,{ content: PDKlang.login_waiting });
-                PDKwebService.login(params.id, params.password, _loginService.onVerifyResponse.bind(_loginService));
+                // PDKwebService.login(params.id, params.password, _loginService.onVerifyResponse.bind(_loginService));
 
+                _loginService.tryLogin({id:params.id, password:params.password});
                 break;
         }
     }

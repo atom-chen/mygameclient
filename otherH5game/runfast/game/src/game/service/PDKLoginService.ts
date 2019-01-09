@@ -34,7 +34,9 @@ class PDKLoginService extends PDKService {
 	 * 连接游戏服务器成功
 	 */
     private _onConnectToServer(event: egret.Event): void {
-        pdkServer.login(this._loginData.uid, this._loginData.token);
+        // pdkServer.login(this._loginData.uid, this._loginData.token);
+        pdkServer.login(this._loginData.id,this._loginData.password);
+
     }
 
 	/**
@@ -44,11 +46,15 @@ class PDKLoginService extends PDKService {
         let data = event.data;
         switch (data.code) {
             case 0:
+                this._loginData.uid = data.uid;
                 this._setCanReconnect(true);
-                PDKGameConfig.initGameUrlsCfg(() => {
-                    PDKalien.Dispatcher.dispatch(PDKEventNames.LOGIN_SUCCESS);
-                    pdkServer.checkReconnect();
-                })
+                PDKalien.Dispatcher.dispatch(PDKEventNames.LOGIN_SUCCESS);
+                pdkServer.checkReconnect();
+
+                // PDKGameConfig.initGameUrlsCfg(() => {
+                //     PDKalien.Dispatcher.dispatch(PDKEventNames.LOGIN_SUCCESS);
+                //     pdkServer.checkReconnect();
+                // })
 
                 break;
             default:
@@ -120,23 +126,23 @@ class PDKLoginService extends PDKService {
 	/**
 	 * 验证code成功，登录游戏服务器
 	 */
-    private tryLogin(data: any) {
+    public tryLogin(data: any) {
         this._loginData = data;
-        let userData: PDKUserData = PDKUserData.instance;
-        console.log("tryLogin-----------》", userData);
-        userData.setItem('uid', this._loginData.uid);
-        userData.setItem('sk', this._loginData.sk);
-        userData.setItem('username', this._loginData.username);
-        userData.setItem('type', this._loginData.type);
-        userData.setItem('token', this._loginData.token, true);
-        userData.setItem('bindinfo', this._loginData.bindinfo, true);
-        userData.setItem('phone', this._loginData.phone, true);
+        // let userData: PDKUserData = PDKUserData.instance;
+        // console.log("tryLogin-----------》", userData);
+        // userData.setItem('uid', this._loginData.uid);
+        // userData.setItem('sk', this._loginData.sk);
+        // userData.setItem('username', this._loginData.username);
+        // userData.setItem('type', this._loginData.type);
+        // userData.setItem('token', this._loginData.token, true);
+        // userData.setItem('bindinfo', this._loginData.bindinfo, true);
+        // userData.setItem('phone', this._loginData.phone, true);
 
-        if (!this._loginData.sk) {
-            PDKReportor.instance.reportCodeError("sk error tryLogin");
-        }
-        PDKWxHelper.doWebH5ShareCfg();
-        PDKGameConfig.initServer(data.server);
+        // if (!this._loginData.sk) {
+        //     PDKReportor.instance.reportCodeError("sk error tryLogin");
+        // }
+        // PDKWxHelper.doWebH5ShareCfg();
+        // PDKGameConfig.initServer(data.server);
         PDKSceneLoading.setLoadingText("验证登录中。。。");
         pdkServer.connect();
         //pdkServer.tryConnect(this._loginData.uid);
@@ -214,39 +220,24 @@ class PDKLoginService extends PDKService {
 	 */
     public checkLocalToken(): boolean {
         let userData: PDKUserData = PDKUserData.instance;
-        let uid = userData.getItem('uid');
-        let token = userData.getItem('token');
-        if (PDKlang.debug == 'true') {
-            let uid_token: any = PDKalien.localStorage.getItem('uid_token');
-            if (uid_token) {
-                uid_token = uid_token.split('|');
-                if (uid_token.length >= 2) {
-                    uid = uid_token[0];
-                    token = uid_token[1];
-                }
-            }
-        }
-        console.log('uid:', uid, '|token:', token);
-        pdkServer.connect();
-        // if (token && token != "null" && uid) {
-        //     this._loginData.uid = uid;
-        //     this._loginData.token = token;
-
-        //     PDKwebService.getServer(uid, (response) => {
-        //         if (response.code == 0) {
-        //             if (!userData.getItem('token')) {
-        //                 PDKReportor.instance.reportCodeError("sk error checkLocalToken");
-        //             }
-
-        //             PDKGameConfig.initServer(response.data);
-        //             pdkServer.connect();
-        //         } else {
-        //             PDKSceneLoading.setLoadingText("获取服务器地址错误");
+        let id = userData.getItem('account');
+        let password = userData.getItem('password');
+        // if (PDKlang.debug == 'true') {
+        //     let uid_token: any = PDKalien.localStorage.getItem('uid_token');
+        //     if (uid_token) {
+        //         uid_token = uid_token.split('|');
+        //         if (uid_token.length >= 2) {
+        //             uid = uid_token[0];
+        //             token = uid_token[1];
         //         }
-        //     })
-        //     //pdkServer.tryConnect(uid,null,this._onTryConnectError.bind(this));
-        //     return true;
+        //     }
         // }
+        console.log('id:', id, '|password:', password);
+        // pdkServer.connect();
+        if(id && password){
+            this.tryLogin({id:id, password:password});
+        }
+       
         return false;
     }
 

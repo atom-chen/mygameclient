@@ -14,6 +14,9 @@ class PDKServer extends egret.EventDispatcher {
 	protected _clientId: number = 1;
 	protected _session: number = 0;
 	protected _uid: number;
+	protected _id: string;
+	protected _pwd: string;
+
 	public _isInDDZ: boolean = false;
 	public _isFirstFromDDZ: boolean = false;
 	public _isReconnected: boolean = false;
@@ -351,7 +354,10 @@ class PDKServer extends egret.EventDispatcher {
 			case 0://登录成功
 				this.onHeartTimer();
 				this._heartTimer.start();
-				this.dispatchEventWith(PDKEventNames.USER_LOGIN_RESPONSE, false, { code: 0 });
+
+				let uid: number = parseInt(bytes.readUTFBytes(bytes.bytesAvailable));
+                this._uid = uid;
+				this.dispatchEventWith(PDKEventNames.USER_LOGIN_RESPONSE, false, { code: 0,uid:uid });
 				break;
 			case 1://登录失败
 				let errorId: number = parseInt(bytes.readUTFBytes(bytes.bytesAvailable));
@@ -746,8 +752,8 @@ class PDKServer extends egret.EventDispatcher {
 	 * @param uid
 	 * @param token
 	 */
-	login(uid: string, token: string): void {
-		this._token = token;
+	login(id: string, pwd: string): void {
+		this._id = id;
 
 		let _platformId = 1; //H5
 		if (PDKalien.Native.instance.isNative) {
@@ -758,11 +764,11 @@ class PDKServer extends egret.EventDispatcher {
 				_platformId = 3;
 			}
 		}
-		this._uid = parseInt(uid);
+		// this._uid = parseInt(uid);
 		let params = [
-			this._uid,
+			this._id,
 			1,
-			token,
+			pwd,
 			PDKwebService.uuid,
 			PDKEnvironment.channel_id,
 			_platformId,//平台ID

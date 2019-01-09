@@ -32,7 +32,7 @@ class GameConfig {
 	static SERVER_URL:string = 'ws://129.211.1.47:9001/ws';
 	static SERVER_URL_TAIL:string;
     static WX_LOGIN_URL: string = 'http://www.htgames.cn/zhanghaichuan';
-    static WEB_SERVICE_URL: string = "http://129.211.1.47:80/";//'http://kungu.ngrok.club/';
+    static WEB_SERVICE_URL: string = "http://www.iamendless.cn/";//'http://kungu.ngrok.club/';
 //    static WEB_SERVICE_URL: string = 'http://u169j32762.iok.la/';
 	static REPORT_URL:string = 'http://120.27.162.46:8866/_.gif';
 	static RESOURCE_URL:string = 'http://192.168.0.81/laoqifeng/platform/';
